@@ -1,0 +1,29 @@
+PODS:
+  - AKMaskField (2.0.3)
+  - FlagKit (2.0.1)
+  - PhoneNumberKit (2.6.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.6.0)
+    - PhoneNumberKit/UIKit (= 2.6.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.6.0)
+  - PhoneNumberKit/UIKit (2.6.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+
+DEPENDENCIES:
+  - AKMaskField
+  - FlagKit (~> 2.0.1)
+  - PhoneNumberKit (~> 2.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AKMaskField
+    - FlagKit
+    - PhoneNumberKit
+
+SPEC CHECKSUMS:
+  AKMaskField: b6d147524813e62cd3f15475fa2200ce7a3d2620
+  FlagKit: 75c64346179f254d1753bebdc5b1f9cbe7890748
+  PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
+
+PODFILE CHECKSUM: c0631b890b429d8993b4bcd66e651e296e47c7ac
+
+COCOAPODS: 1.6.1

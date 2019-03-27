@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oAd-5J-IYX">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kelson Sans Regular RU.otf">
+            <string>KelsonSans-RegularRU</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Card IssueVC-->
+        <scene sceneID="Wux-zU-vxT">
+            <objects>
+                <viewController storyboardIdentifier="CardIssueMain" id="oAd-5J-IYX" customClass="CardIssueVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6k0-Df-gT0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fum-p4-P8G">
+                                <rect key="frame" x="0.0" y="788" width="24" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="m0U-9G-bQo"/>
+                                    <constraint firstAttribute="height" constant="24" id="ukK-LU-gq4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4d1-d1-YwW">
+                                <rect key="frame" x="351" y="788" width="24" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="1GK-1d-Sn5"/>
+                                    <constraint firstAttribute="width" constant="24" id="9tl-38-QwY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkz-tx-8PV">
+                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-iO-Mo6">
+                                        <rect key="frame" x="18" y="553" width="339" height="62"/>
+                                        <color key="backgroundColor" red="0.50196078430000002" green="0.92156862750000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="mIV-iO-Mo6" secondAttribute="height" multiplier="339:62" id="orb-Yr-vP4"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Выпустить карту &gt;">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="24" name="KelsonSans-RegularRU"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nyQ-VY-DGs">
+                                        <rect key="frame" x="0.0" y="19.999999999999986" width="375" height="216.66666666666663"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="CHk-5o-6Ws">
+                                            <size key="itemSize" width="336" height="185"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardIssueCell" id="oqD-Ae-f3B" customClass="CardIssueCollectionCell" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="336" height="185"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="336" height="185"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKX-UA-J94">
+                                                            <rect key="frame" x="28" y="0.0" width="280" height="185"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dev-ue-Jji">
+                                                            <rect key="frame" x="18" y="0.0" width="300" height="185"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </view>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="AKX-UA-J94" firstAttribute="trailing" secondItem="Dev-ue-Jji" secondAttribute="trailing" constant="-10" id="3HR-R5-l5t"/>
+                                                    <constraint firstItem="AKX-UA-J94" firstAttribute="top" secondItem="Dev-ue-Jji" secondAttribute="top" id="FAW-r9-bMb"/>
+                                                    <constraint firstItem="Dev-ue-Jji" firstAttribute="leading" secondItem="oqD-Ae-f3B" secondAttribute="leading" constant="18" id="J6t-vl-aLr"/>
+                                                    <constraint firstItem="AKX-UA-J94" firstAttribute="leading" secondItem="Dev-ue-Jji" secondAttribute="leading" constant="10" id="LEu-W3-Feh"/>
+                                                    <constraint firstItem="AKX-UA-J94" firstAttribute="bottom" secondItem="Dev-ue-Jji" secondAttribute="bottom" id="Qdo-KL-fIG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Dev-ue-Jji" secondAttribute="bottom" id="aee-PT-dYa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Dev-ue-Jji" secondAttribute="trailing" constant="18" id="fPR-Mx-Ahf"/>
+                                                    <constraint firstItem="Dev-ue-Jji" firstAttribute="top" secondItem="oqD-Ae-f3B" secondAttribute="top" id="ozC-go-3Fz"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="imCard" destination="Dev-ue-Jji" id="V2R-to-Ymi"/>
+                                                    <outlet property="viewShadow" destination="AKX-UA-J94" id="IuX-ES-oc7"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="oAd-5J-IYX" id="H8X-YM-KP1"/>
+                                            <outlet property="delegate" destination="oAd-5J-IYX" id="Grn-ah-lah"/>
+                                        </connections>
+                                    </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaN-xk-HAB">
+                                        <rect key="frame" x="18" y="286.66666666666669" width="339" height="248.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тариф &quot;По-братски&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8P-3H-WTF" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="33.999999999999986" y="0.0" width="213.66666666666663" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="0kt-mi-FhE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1u-vk-VVu">
+                                                <rect key="frame" x="35" y="36.000000000000014" width="296" height="194.33333333333337"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">- Именная карта
+- Бесконтактные платежи
+- Мультивалютная карта с доступом к наличным в RUB, USD, EUR
+- Конвертация валюты по курсу ЦБ +1%
+- Бесплатная оплата покупок за рубежом в валютах USD, EUR
+- Интеграция с apple pay и android pay
+- Приоритетная поддержка 
+- Бесплатный выпуск и доставка карты
+- Снимайте без комиссии до 15 000</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098039215685" green="0.63137254901960782" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="1" paragraphSpacingBefore="1" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="₽">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098039215685" green="0.63137254901960782" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="12" name="SFMono-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="1" paragraphSpacingBefore="1" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" или 200$ в месяц">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098039215685" green="0.63137254901960782" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="1" paragraphSpacingBefore="1" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обслуживание &quot;По-братски&quot; 99 руб в месяц" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpI-sn-bW5" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="51.666666666666686" y="236.33333333333331" width="236" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="Rzg-HF-ALV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="12"/>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="m1u-vk-VVu" secondAttribute="trailing" constant="8" id="9uO-J1-Mg7"/>
+                                            <constraint firstAttribute="bottom" secondItem="FpI-sn-bW5" secondAttribute="bottom" id="BPZ-Th-ihu"/>
+                                            <constraint firstItem="m1u-vk-VVu" firstAttribute="top" secondItem="C8P-3H-WTF" secondAttribute="bottom" constant="10" id="ORV-9T-ROc"/>
+                                            <constraint firstItem="C8P-3H-WTF" firstAttribute="leading" secondItem="GaN-xk-HAB" secondAttribute="leading" constant="34" id="SHT-Jq-Xj2"/>
+                                            <constraint firstItem="m1u-vk-VVu" firstAttribute="leading" secondItem="GaN-xk-HAB" secondAttribute="leading" constant="35" id="cX7-mD-Nr4"/>
+                                            <constraint firstAttribute="bottom" secondItem="FpI-sn-bW5" secondAttribute="bottom" id="d7P-jH-kAX"/>
+                                            <constraint firstAttribute="bottom" secondItem="m1u-vk-VVu" secondAttribute="bottom" constant="18" id="dLI-3B-I9P"/>
+                                            <constraint firstItem="FpI-sn-bW5" firstAttribute="centerX" secondItem="GaN-xk-HAB" secondAttribute="centerX" id="kbR-LZ-Tt1"/>
+                                            <constraint firstItem="C8P-3H-WTF" firstAttribute="top" secondItem="GaN-xk-HAB" secondAttribute="top" id="r4X-Ks-2C5"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaR-DU-dFn">
+                                        <rect key="frame" x="111.66666666666669" y="615" width="152" height="54"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Подробнее о лимитах карты">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.62745098039215685" green="0.63137254901960782" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mIV-iO-Mo6" firstAttribute="top" secondItem="GaN-xk-HAB" secondAttribute="bottom" constant="18" id="4GQ-QL-rNg"/>
+                                    <constraint firstItem="mIV-iO-Mo6" firstAttribute="centerX" secondItem="dkz-tx-8PV" secondAttribute="centerX" id="IJA-EC-0WG"/>
+                                    <constraint firstItem="GaN-xk-HAB" firstAttribute="top" secondItem="nyQ-VY-DGs" secondAttribute="bottom" constant="50" id="KSq-C4-ejC"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="IaR-DU-dFn" secondAttribute="bottom" id="NBu-Cj-T3Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="nyQ-VY-DGs" secondAttribute="trailing" id="Otj-9B-ASI"/>
+                                    <constraint firstItem="IaR-DU-dFn" firstAttribute="top" secondItem="mIV-iO-Mo6" secondAttribute="bottom" id="RNq-DA-utX"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="mIV-iO-Mo6" secondAttribute="bottom" constant="54" id="TMA-jW-Gtd"/>
+                                    <constraint firstItem="nyQ-VY-DGs" firstAttribute="leading" secondItem="dkz-tx-8PV" secondAttribute="leading" id="Ut8-MQ-s0Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="GaN-xk-HAB" secondAttribute="trailing" constant="18" id="ZbX-HQ-ZGO"/>
+                                    <constraint firstItem="GaN-xk-HAB" firstAttribute="leading" secondItem="dkz-tx-8PV" secondAttribute="leading" constant="18" id="c16-go-NTb"/>
+                                    <constraint firstAttribute="trailing" secondItem="mIV-iO-Mo6" secondAttribute="trailing" constant="18" id="fUr-Lh-DdE"/>
+                                    <constraint firstItem="nyQ-VY-DGs" firstAttribute="centerX" secondItem="dkz-tx-8PV" secondAttribute="centerX" id="j3p-s8-er4"/>
+                                    <constraint firstItem="IaR-DU-dFn" firstAttribute="centerX" secondItem="dkz-tx-8PV" secondAttribute="centerX" id="n9X-bH-DOq"/>
+                                    <constraint firstItem="nyQ-VY-DGs" firstAttribute="top" secondItem="dkz-tx-8PV" secondAttribute="top" constant="20" id="nUG-yd-ZwD"/>
+                                    <constraint firstItem="mIV-iO-Mo6" firstAttribute="leading" secondItem="dkz-tx-8PV" secondAttribute="leading" constant="18" id="pxN-1a-oLq"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выпуск карты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-ET-Iak" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                <rect key="frame" x="18.000000000000014" y="53" width="227.33333333333337" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="6Fk-9A-5Vf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ajy-Vq-aDF">
+                                <rect key="frame" x="176" y="337.66666666666669" width="23" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="0.1990047089041096" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Fum-p4-P8G" secondAttribute="bottom" id="3Ly-Ef-qAB"/>
+                            <constraint firstAttribute="bottom" secondItem="4d1-d1-YwW" secondAttribute="bottom" id="9oC-3u-stG"/>
+                            <constraint firstItem="bNw-ET-Iak" firstAttribute="leading" secondItem="HIi-TP-VZM" secondAttribute="leading" constant="18" id="AX6-ZG-LsY"/>
+                            <constraint firstItem="dkz-tx-8PV" firstAttribute="top" secondItem="bNw-ET-Iak" secondAttribute="bottom" constant="9" id="Ao4-3e-d1Q"/>
+                            <constraint firstItem="Fum-p4-P8G" firstAttribute="leading" secondItem="HIi-TP-VZM" secondAttribute="leading" id="Hfy-FS-aRg"/>
+                            <constraint firstAttribute="trailing" secondItem="4d1-d1-YwW" secondAttribute="trailing" id="Z9H-aR-2S3"/>
+                            <constraint firstItem="dkz-tx-8PV" firstAttribute="leading" secondItem="HIi-TP-VZM" secondAttribute="leading" id="ZCD-lY-IAp"/>
+                            <constraint firstAttribute="bottom" secondItem="dkz-tx-8PV" secondAttribute="bottom" id="gkb-Jl-SwP"/>
+                            <constraint firstItem="dkz-tx-8PV" firstAttribute="top" secondItem="bNw-ET-Iak" secondAttribute="bottom" constant="9" id="lSv-Kv-2ep"/>
+                            <constraint firstItem="nyQ-VY-DGs" firstAttribute="height" secondItem="6k0-Df-gT0" secondAttribute="height" multiplier="190:712" id="oJd-gd-Ytu"/>
+                            <constraint firstItem="bNw-ET-Iak" firstAttribute="top" secondItem="HIi-TP-VZM" secondAttribute="top" constant="9" id="pAw-sK-clo"/>
+                            <constraint firstItem="Ajy-Vq-aDF" firstAttribute="centerX" secondItem="6k0-Df-gT0" secondAttribute="centerX" id="peZ-b5-QYg"/>
+                            <constraint firstItem="Ajy-Vq-aDF" firstAttribute="top" secondItem="nyQ-VY-DGs" secondAttribute="bottom" id="pi5-wZ-RFz"/>
+                            <constraint firstItem="dkz-tx-8PV" firstAttribute="trailing" secondItem="HIi-TP-VZM" secondAttribute="trailing" id="rDk-JQ-BHp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HIi-TP-VZM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i6y-qC-zFq"/>
+                    <connections>
+                        <outlet property="butNext" destination="mIV-iO-Mo6" id="OVc-V4-glR"/>
+                        <outlet property="collectionView" destination="nyQ-VY-DGs" id="4sX-UG-g3V"/>
+                        <outlet property="constrCardText" destination="KSq-C4-ejC" id="idA-bv-XJo"/>
+                        <outlet property="labNotRequired" destination="FpI-sn-bW5" id="fPg-f9-374"/>
+                        <outlet property="labTitle" destination="C8P-3H-WTF" id="JsC-np-OOs"/>
+                        <outlet property="pageControl" destination="Ajy-Vq-aDF" id="v9Z-Yk-mXQ"/>
+                        <outlet property="textViewDescribtion" destination="m1u-vk-VVu" id="ZOL-2f-Wsx"/>
+                        <outlet property="viewBigWhite" destination="dkz-tx-8PV" id="HTb-u5-KrI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJz-4i-Xgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="185"/>
+        </scene>
+    </scenes>
+</document>

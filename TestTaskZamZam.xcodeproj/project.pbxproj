@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B7DFEAD222FFAC200ECF0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEAC222FFAC200ECF0D3 /* AppDelegate.swift */; };
+		5B7DFEAF222FFAC200ECF0D3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEAE222FFAC200ECF0D3 /* MainVC.swift */; };
+		5B7DFEB2222FFAC200ECF0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEB0222FFAC200ECF0D3 /* Main.storyboard */; };
+		5B7DFEB4222FFAC500ECF0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEB3222FFAC500ECF0D3 /* Assets.xcassets */; };
+		5B7DFEB7222FFAC500ECF0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEB5222FFAC500ECF0D3 /* LaunchScreen.storyboard */; };
+		5B7DFEC8223007D500ECF0D3 /* Kelson Sans Regular RU.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEC7223007D500ECF0D3 /* Kelson Sans Regular RU.otf */; };
+		5B7DFECA223012B400ECF0D3 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEC9223012B400ECF0D3 /* Bill.swift */; };
+		5B7DFECE223014C700ECF0D3 /* BillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFECD223014C700ECF0D3 /* BillCell.swift */; };
+		5B7DFED4223021AF00ECF0D3 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFED3223021AF00ECF0D3 /* CollectionViewCell1.swift */; };
+		5B7DFED6223027D300ECF0D3 /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFED5223027D300ECF0D3 /* CollectionViewCell2.swift */; };
+		5B7DFEDB2230685A00ECF0D3 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEDA2230685A00ECF0D3 /* TableView.swift */; };
+		5B7DFEDD2230698200ECF0D3 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEDC2230698200ECF0D3 /* CollectionView.swift */; };
+		5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEE022306A8D00ECF0D3 /* Gradient.swift */; };
+		5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEE322306CC800ECF0D3 /* SeparatorForNumbers.swift */; };
+		5B7DFEE62230702B00ECF0D3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEE52230702B00ECF0D3 /* .gitignore */; };
+		AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */; };
+		AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */; };
+		AC110A9E223A59DD00D1F8D8 /* WhatCountryTablevView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A9D223A59DD00D1F8D8 /* WhatCountryTablevView.swift */; };
+		AC110AA2223A5A5100D1F8D8 /* WhatCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110AA1223A5A5100D1F8D8 /* WhatCountryCell.swift */; };
+		AC110AA7223A6E0100D1F8D8 /* Kelson Sans Light RU.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AA4223A6E0100D1F8D8 /* Kelson Sans Light RU.otf */; };
+		AC110AA8223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AA5223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf */; };
+		AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */; };
+		AC110AB5223A8AD200D1F8D8 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */; };
+		AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */; };
+		AC436CAD224A6503006FA348 /* Pods_TestTaskZamZam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */; };
+		AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC567564223BC5EE001BBE66 /* SumAndCurrencyVC.swift */; };
+		AC56756C223BE3D2001BBE66 /* AlertViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */; };
+		AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56756D223BE652001BBE66 /* SomethingWrongVC.swift */; };
+		AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56756F223BEF0F001BBE66 /* UIColor+Additions.swift */; };
+		AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA1682239353700EDA066 /* TransfersVC.swift */; };
+		AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */; };
+		AC5EA173223940C900EDA066 /* TransCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA172223940C900EDA066 /* TransCell.swift */; };
+		ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE139BB2242549D004EDB38 /* CardIssue.storyboard */; };
+		ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139BE224259F6004EDB38 /* CardIssueVC.swift */; };
+		ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */; };
+		ACE139C622427D40004EDB38 /* CardIssueCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139C522427D40004EDB38 /* CardIssueCollectionCell.swift */; };
+		ACFAF764223F754A008C731B /* RecipientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF763223F754A008C731B /* RecipientVC.swift */; };
+		ACFAF767223F8B07008C731B /* SenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF766223F8B07008C731B /* SenderVC.swift */; };
+		ACFAF76A223F8B49008C731B /* SenderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF769223F8B49008C731B /* SenderTableView.swift */; };
+		ACFAF76C223F8B6C008C731B /* SenderCellPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF76B223F8B6C008C731B /* SenderCellPhoneNumber.swift */; };
+		ACFAF76E223F8B82008C731B /* SenderCellCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF76D223F8B82008C731B /* SenderCellCountry.swift */; };
+		ACFAF770223F8B99008C731B /* SenderCellField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF76F223F8B99008C731B /* SenderCellField.swift */; };
+		ACFAF775223F9B94008C731B /* TFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF774223F9B94008C731B /* TFDelegate.swift */; };
+		ACFAF777223FCBF4008C731B /* BorderAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF776223FCBF4008C731B /* BorderAnimation.swift */; };
+		ACFBAC2D2240C419001D9D94 /* myLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC2C2240C419001D9D94 /* myLabel.swift */; };
+		ACFBAC2F2240DB8E001D9D94 /* WhatCountryTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC2E2240DB8E001D9D94 /* WhatCountryTFDelegate.swift */; };
+		ACFBAC322240DEB6001D9D94 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC312240DEB6001D9D94 /* PaymentVC.swift */; };
+		ACFBAC352240FAF8001D9D94 /* PaymentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC342240FAF8001D9D94 /* PaymentTableView.swift */; };
+		ACFBAC382240FB1F001D9D94 /* TotalInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC372240FB1F001D9D94 /* TotalInfoCell.swift */; };
+		ACFBAC3A2240FB35001D9D94 /* ZamBillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC392240FB35001D9D94 /* ZamBillCell.swift */; };
+		ACFBAC3C2240FB44001D9D94 /* AddNewCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC3B2240FB44001D9D94 /* AddNewCardCell.swift */; };
+		ACFBAC3E2240FB5D001D9D94 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC3D2240FB5D001D9D94 /* CardCell.swift */; };
+		ACFBAC402240FB6B001D9D94 /* CardDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC3F2240FB6B001D9D94 /* CardDataCell.swift */; };
+		ACFBAC4622412ECF001D9D94 /* PaymentTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAC4522412ECF001D9D94 /* PaymentTFDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D47AB8E0D67202E50D8162A /* Pods-TestTaskZamZam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskZamZam.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskZamZam/Pods-TestTaskZamZam.debug.xcconfig"; sourceTree = "<group>"; };
+		5431067917531F8F88E45F19 /* Pods_TestTaskZamZam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskZamZam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7DFEA9222FFAC200ECF0D3 /* TestTaskZamZam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskZamZam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7DFEAC222FFAC200ECF0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B7DFEAE222FFAC200ECF0D3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		5B7DFEB1222FFAC200ECF0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B7DFEB3222FFAC500ECF0D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B7DFEB6222FFAC500ECF0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B7DFEB8222FFAC500ECF0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B7DFEC7223007D500ECF0D3 /* Kelson Sans Regular RU.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kelson Sans Regular RU.otf"; sourceTree = "<group>"; };
+		5B7DFEC9223012B400ECF0D3 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		5B7DFECD223014C700ECF0D3 /* BillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCell.swift; sourceTree = "<group>"; };
+		5B7DFED3223021AF00ECF0D3 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
+		5B7DFED5223027D300ECF0D3 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
+		5B7DFEDA2230685A00ECF0D3 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		5B7DFEDC2230698200ECF0D3 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		5B7DFEE022306A8D00ECF0D3 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		5B7DFEE322306CC800ECF0D3 /* SeparatorForNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorForNumbers.swift; sourceTree = "<group>"; };
+		5B7DFEE52230702B00ECF0D3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6FEFA5C3705F6AB54AA6D217 /* Pods-TestTaskZamZam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskZamZam.release.xcconfig"; path = "Target Support Files/Pods-TestTaskZamZam/Pods-TestTaskZamZam.release.xcconfig"; sourceTree = "<group>"; };
+		AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransDescribtionCell.swift; sourceTree = "<group>"; };
+		AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryVC.swift; sourceTree = "<group>"; };
+		AC110A9D223A59DD00D1F8D8 /* WhatCountryTablevView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryTablevView.swift; sourceTree = "<group>"; };
+		AC110AA1223A5A5100D1F8D8 /* WhatCountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryCell.swift; sourceTree = "<group>"; };
+		AC110AA4223A6E0100D1F8D8 /* Kelson Sans Light RU.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kelson Sans Light RU.otf"; path = "../../../../Library/Fonts/Kelson Sans Light RU.otf"; sourceTree = "<group>"; };
+		AC110AA5223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kelson Sans Bold RU.otf"; path = "../../../../Library/Fonts/Kelson Sans Bold RU.otf"; sourceTree = "<group>"; };
+		AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryTextField.swift; sourceTree = "<group>"; };
+		AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "../../../../Library/Fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferGoneVC.swift; sourceTree = "<group>"; };
+		AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestTaskZamZam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC567564223BC5EE001BBE66 /* SumAndCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAndCurrencyVC.swift; sourceTree = "<group>"; };
+		AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertViewControllers.storyboard; sourceTree = "<group>"; };
+		AC56756D223BE652001BBE66 /* SomethingWrongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingWrongVC.swift; sourceTree = "<group>"; };
+		AC56756F223BEF0F001BBE66 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Additions.swift"; path = "TestTaskZamZam/UIColor+Additions.swift"; sourceTree = SOURCE_ROOT; };
+		AC5EA1682239353700EDA066 /* TransfersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersVC.swift; sourceTree = "<group>"; };
+		AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersTableView.swift; sourceTree = "<group>"; };
+		AC5EA172223940C900EDA066 /* TransCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransCell.swift; sourceTree = "<group>"; };
+		ACE139BB2242549D004EDB38 /* CardIssue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardIssue.storyboard; sourceTree = "<group>"; };
+		ACE139BE224259F6004EDB38 /* CardIssueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueVC.swift; sourceTree = "<group>"; };
+		ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueCollectionView.swift; sourceTree = "<group>"; };
+		ACE139C522427D40004EDB38 /* CardIssueCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueCollectionCell.swift; sourceTree = "<group>"; };
+		ACFAF763223F754A008C731B /* RecipientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientVC.swift; sourceTree = "<group>"; };
+		ACFAF766223F8B07008C731B /* SenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderVC.swift; sourceTree = "<group>"; };
+		ACFAF769223F8B49008C731B /* SenderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTableView.swift; sourceTree = "<group>"; };
+		ACFAF76B223F8B6C008C731B /* SenderCellPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderCellPhoneNumber.swift; sourceTree = "<group>"; };
+		ACFAF76D223F8B82008C731B /* SenderCellCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderCellCountry.swift; sourceTree = "<group>"; };
+		ACFAF76F223F8B99008C731B /* SenderCellField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderCellField.swift; sourceTree = "<group>"; };
+		ACFAF774223F9B94008C731B /* TFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFDelegate.swift; sourceTree = "<group>"; };
+		ACFAF776223FCBF4008C731B /* BorderAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderAnimation.swift; sourceTree = "<group>"; };
+		ACFBAC2C2240C419001D9D94 /* myLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myLabel.swift; sourceTree = "<group>"; };
+		ACFBAC2E2240DB8E001D9D94 /* WhatCountryTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryTFDelegate.swift; sourceTree = "<group>"; };
+		ACFBAC312240DEB6001D9D94 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		ACFBAC342240FAF8001D9D94 /* PaymentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableView.swift; sourceTree = "<group>"; };
+		ACFBAC372240FB1F001D9D94 /* TotalInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalInfoCell.swift; sourceTree = "<group>"; };
+		ACFBAC392240FB35001D9D94 /* ZamBillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZamBillCell.swift; sourceTree = "<group>"; };
+		ACFBAC3B2240FB44001D9D94 /* AddNewCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardCell.swift; sourceTree = "<group>"; };
+		ACFBAC3D2240FB5D001D9D94 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		ACFBAC3F2240FB6B001D9D94 /* CardDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataCell.swift; sourceTree = "<group>"; };
+		ACFBAC4522412ECF001D9D94 /* PaymentTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTFDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B7DFEA6222FFAC200ECF0D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC436CAD224A6503006FA348 /* Pods_TestTaskZamZam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B7DFEA0222FFAC200ECF0D3 = {
+			isa = PBXGroup;
+			children = (
+				5B7DFEE52230702B00ECF0D3 /* .gitignore */,
+				5B7DFEAB222FFAC200ECF0D3 /* TestTaskZamZam */,
+				5B7DFEB8222FFAC500ECF0D3 /* Info.plist */,
+				5B7DFEAA222FFAC200ECF0D3 /* Products */,
+				F374D9C9B0F9E58936927959 /* Pods */,
+				B49282D93256E3D983329916 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B7DFEAA222FFAC200ECF0D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B7DFEA9222FFAC200ECF0D3 /* TestTaskZamZam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B7DFEAB222FFAC200ECF0D3 /* TestTaskZamZam */ = {
+			isa = PBXGroup;
+			children = (
+				AC567566223BD26D001BBE66 /* Entities + Services */,
+				5B7DFED72230682700ECF0D3 /* Main */,
+				AC5EA167223934DA00EDA066 /* Transfers */,
+				AC110A9A223A599A00D1F8D8 /* WhatCountry */,
+				AC567563223BC5B5001BBE66 /* SumAndCurrency */,
+				ACFAF762223F7522008C731B /* Recipient */,
+				ACFAF765223F8AE4008C731B /* Sender */,
+				ACFBAC302240DE81001D9D94 /* Payment */,
+				ACE139BD224259D8004EDB38 /* CardIssue */,
+				ACFAF761223F7239008C731B /* Alerts */,
+				5BD1986A22313EDE008011C8 /* Supporting files */,
+				5B7DFEC02230078A00ECF0D3 /* Шрифты */,
+			);
+			path = TestTaskZamZam;
+			sourceTree = "<group>";
+		};
+		5B7DFEC02230078A00ECF0D3 /* Шрифты */ = {
+			isa = PBXGroup;
+			children = (
+				AC110AA5223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf */,
+				AC110AA4223A6E0100D1F8D8 /* Kelson Sans Light RU.otf */,
+				AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */,
+				5B7DFEC7223007D500ECF0D3 /* Kelson Sans Regular RU.otf */,
+			);
+			path = "Шрифты";
+			sourceTree = "<group>";
+		};
+		5B7DFED72230682700ECF0D3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5B7DFEAE222FFAC200ECF0D3 /* MainVC.swift */,
+				5B7DFEDA2230685A00ECF0D3 /* TableView.swift */,
+				5B7DFEDC2230698200ECF0D3 /* CollectionView.swift */,
+				5B7DFEE222306C7A00ECF0D3 /* Entities + Services */,
+				5B7DFEDE22306A0000ECF0D3 /* Cells */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5B7DFEDE22306A0000ECF0D3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5B7DFECD223014C700ECF0D3 /* BillCell.swift */,
+				5B7DFED3223021AF00ECF0D3 /* CollectionViewCell1.swift */,
+				5B7DFED5223027D300ECF0D3 /* CollectionViewCell2.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5B7DFEE222306C7A00ECF0D3 /* Entities + Services */ = {
+			isa = PBXGroup;
+			children = (
+				5B7DFEE322306CC800ECF0D3 /* SeparatorForNumbers.swift */,
+			);
+			path = "Entities + Services";
+			sourceTree = "<group>";
+		};
+		5BD1986A22313EDE008011C8 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				5B7DFEAC222FFAC200ECF0D3 /* AppDelegate.swift */,
+				5B7DFEB0222FFAC200ECF0D3 /* Main.storyboard */,
+				ACE139BB2242549D004EDB38 /* CardIssue.storyboard */,
+				AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */,
+				5B7DFEB5222FFAC500ECF0D3 /* LaunchScreen.storyboard */,
+				5B7DFEB3222FFAC500ECF0D3 /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		AC110A9A223A599A00D1F8D8 /* WhatCountry */ = {
+			isa = PBXGroup;
+			children = (
+				AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */,
+				ACFBAC2E2240DB8E001D9D94 /* WhatCountryTFDelegate.swift */,
+				AC110AA9223A7CE100D1F8D8 /* WhatCountryTableView */,
+				AC110AAD223A838900D1F8D8 /* Entities + Servicies */,
+			);
+			path = WhatCountry;
+			sourceTree = "<group>";
+		};
+		AC110AA9223A7CE100D1F8D8 /* WhatCountryTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AC110A9D223A59DD00D1F8D8 /* WhatCountryTablevView.swift */,
+				AC110AA1223A5A5100D1F8D8 /* WhatCountryCell.swift */,
+			);
+			path = WhatCountryTableView;
+			sourceTree = "<group>";
+		};
+		AC110AAD223A838900D1F8D8 /* Entities + Servicies */ = {
+			isa = PBXGroup;
+			children = (
+				AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */,
+			);
+			path = "Entities + Servicies";
+			sourceTree = "<group>";
+		};
+		AC567563223BC5B5001BBE66 /* SumAndCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				AC567564223BC5EE001BBE66 /* SumAndCurrencyVC.swift */,
+			);
+			path = SumAndCurrency;
+			sourceTree = "<group>";
+		};
+		AC567566223BD26D001BBE66 /* Entities + Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC56756F223BEF0F001BBE66 /* UIColor+Additions.swift */,
+				ACFBAC2C2240C419001D9D94 /* myLabel.swift */,
+				5B7DFEE022306A8D00ECF0D3 /* Gradient.swift */,
+				ACFAF776223FCBF4008C731B /* BorderAnimation.swift */,
+				5B7DFEC9223012B400ECF0D3 /* Bill.swift */,
+			);
+			path = "Entities + Services";
+			sourceTree = "<group>";
+		};
+		AC5EA167223934DA00EDA066 /* Transfers */ = {
+			isa = PBXGroup;
+			children = (
+				AC5EA1682239353700EDA066 /* TransfersVC.swift */,
+				AC5EA1712239408400EDA066 /* TransTableView */,
+			);
+			path = Transfers;
+			sourceTree = "<group>";
+		};
+		AC5EA1712239408400EDA066 /* TransTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */,
+				AC5EA172223940C900EDA066 /* TransCell.swift */,
+				AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */,
+			);
+			path = TransTableView;
+			sourceTree = "<group>";
+		};
+		ACE139BD224259D8004EDB38 /* CardIssue */ = {
+			isa = PBXGroup;
+			children = (
+				ACE139BE224259F6004EDB38 /* CardIssueVC.swift */,
+				ACE139C022427C48004EDB38 /* CardIssueCollection */,
+			);
+			path = CardIssue;
+			sourceTree = "<group>";
+		};
+		ACE139C022427C48004EDB38 /* CardIssueCollection */ = {
+			isa = PBXGroup;
+			children = (
+				ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */,
+				ACE139C522427D40004EDB38 /* CardIssueCollectionCell.swift */,
+			);
+			path = CardIssueCollection;
+			sourceTree = "<group>";
+		};
+		ACFAF761223F7239008C731B /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				AC56756D223BE652001BBE66 /* SomethingWrongVC.swift */,
+				AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		ACFAF762223F7522008C731B /* Recipient */ = {
+			isa = PBXGroup;
+			children = (
+				ACFAF763223F754A008C731B /* RecipientVC.swift */,
+			);
+			path = Recipient;
+			sourceTree = "<group>";
+		};
+		ACFAF765223F8AE4008C731B /* Sender */ = {
+			isa = PBXGroup;
+			children = (
+				ACFAF766223F8B07008C731B /* SenderVC.swift */,
+				ACFAF774223F9B94008C731B /* TFDelegate.swift */,
+				ACFAF768223F8B25008C731B /* SenderTableView */,
+			);
+			path = Sender;
+			sourceTree = "<group>";
+		};
+		ACFAF768223F8B25008C731B /* SenderTableView */ = {
+			isa = PBXGroup;
+			children = (
+				ACFAF769223F8B49008C731B /* SenderTableView.swift */,
+				ACFAF771223F8E2D008C731B /* SenderTableViewCells */,
+			);
+			path = SenderTableView;
+			sourceTree = "<group>";
+		};
+		ACFAF771223F8E2D008C731B /* SenderTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				ACFAF76B223F8B6C008C731B /* SenderCellPhoneNumber.swift */,
+				ACFAF76D223F8B82008C731B /* SenderCellCountry.swift */,
+				ACFAF76F223F8B99008C731B /* SenderCellField.swift */,
+			);
+			path = SenderTableViewCells;
+			sourceTree = "<group>";
+		};
+		ACFBAC302240DE81001D9D94 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				ACFBAC312240DEB6001D9D94 /* PaymentVC.swift */,
+				ACFBAC332240FADB001D9D94 /* PaymentTableView */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		ACFBAC332240FADB001D9D94 /* PaymentTableView */ = {
+			isa = PBXGroup;
+			children = (
+				ACFBAC342240FAF8001D9D94 /* PaymentTableView.swift */,
+				ACFBAC4522412ECF001D9D94 /* PaymentTFDelegate.swift */,
+				ACFBAC362240FB01001D9D94 /* PaymentCells */,
+			);
+			path = PaymentTableView;
+			sourceTree = "<group>";
+		};
+		ACFBAC362240FB01001D9D94 /* PaymentCells */ = {
+			isa = PBXGroup;
+			children = (
+				ACFBAC372240FB1F001D9D94 /* TotalInfoCell.swift */,
+				ACFBAC392240FB35001D9D94 /* ZamBillCell.swift */,
+				ACFBAC3B2240FB44001D9D94 /* AddNewCardCell.swift */,
+				ACFBAC3D2240FB5D001D9D94 /* CardCell.swift */,
+				ACFBAC3F2240FB6B001D9D94 /* CardDataCell.swift */,
+			);
+			path = PaymentCells;
+			sourceTree = "<group>";
+		};
+		B49282D93256E3D983329916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */,
+				5431067917531F8F88E45F19 /* Pods_TestTaskZamZam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F374D9C9B0F9E58936927959 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D47AB8E0D67202E50D8162A /* Pods-TestTaskZamZam.debug.xcconfig */,
+				6FEFA5C3705F6AB54AA6D217 /* Pods-TestTaskZamZam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B7DFEA8222FFAC200ECF0D3 /* TestTaskZamZam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7DFEBB222FFAC500ECF0D3 /* Build configuration list for PBXNativeTarget "TestTaskZamZam" */;
+			buildPhases = (
+				1BCACAF561D9D530D867FCB8 /* [CP] Check Pods Manifest.lock */,
+				5B7DFEA5222FFAC200ECF0D3 /* Sources */,
+				5B7DFEA6222FFAC200ECF0D3 /* Frameworks */,
+				5B7DFEA7222FFAC200ECF0D3 /* Resources */,
+				E42274BC9BF4FFED7A1B18D5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestTaskZamZam;
+			productName = TestTaskZamZam;
+			productReference = 5B7DFEA9222FFAC200ECF0D3 /* TestTaskZamZam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B7DFEA1222FFAC200ECF0D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = a.s.bitsoev;
+				TargetAttributes = {
+					5B7DFEA8222FFAC200ECF0D3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 5B7DFEA4222FFAC200ECF0D3 /* Build configuration list for PBXProject "TestTaskZamZam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B7DFEA0222FFAC200ECF0D3;
+			productRefGroup = 5B7DFEAA222FFAC200ECF0D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B7DFEA8222FFAC200ECF0D3 /* TestTaskZamZam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B7DFEA7222FFAC200ECF0D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */,
+				AC110AB5223A8AD200D1F8D8 /* NotoSans-Regular.ttf in Resources */,
+				5B7DFEB7222FFAC500ECF0D3 /* LaunchScreen.storyboard in Resources */,
+				AC110AA8223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf in Resources */,
+				5B7DFEE62230702B00ECF0D3 /* .gitignore in Resources */,
+				5B7DFEC8223007D500ECF0D3 /* Kelson Sans Regular RU.otf in Resources */,
+				5B7DFEB4222FFAC500ECF0D3 /* Assets.xcassets in Resources */,
+				5B7DFEB2222FFAC200ECF0D3 /* Main.storyboard in Resources */,
+				AC56756C223BE3D2001BBE66 /* AlertViewControllers.storyboard in Resources */,
+				AC110AA7223A6E0100D1F8D8 /* Kelson Sans Light RU.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BCACAF561D9D530D867FCB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTaskZamZam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E42274BC9BF4FFED7A1B18D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskZamZam/Pods-TestTaskZamZam-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AKMaskField/AKMaskField.framework",
+				"${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework",
+				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AKMaskField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlagKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskZamZam/Pods-TestTaskZamZam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B7DFEA5222FFAC200ECF0D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7DFED4223021AF00ECF0D3 /* CollectionViewCell1.swift in Sources */,
+				AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */,
+				AC110AA2223A5A5100D1F8D8 /* WhatCountryCell.swift in Sources */,
+				ACFBAC3A2240FB35001D9D94 /* ZamBillCell.swift in Sources */,
+				ACFAF764223F754A008C731B /* RecipientVC.swift in Sources */,
+				ACFBAC4622412ECF001D9D94 /* PaymentTFDelegate.swift in Sources */,
+				AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */,
+				AC5EA173223940C900EDA066 /* TransCell.swift in Sources */,
+				ACFAF76C223F8B6C008C731B /* SenderCellPhoneNumber.swift in Sources */,
+				AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */,
+				ACFAF777223FCBF4008C731B /* BorderAnimation.swift in Sources */,
+				ACFBAC402240FB6B001D9D94 /* CardDataCell.swift in Sources */,
+				5B7DFECE223014C700ECF0D3 /* BillCell.swift in Sources */,
+				ACFAF770223F8B99008C731B /* SenderCellField.swift in Sources */,
+				ACFAF775223F9B94008C731B /* TFDelegate.swift in Sources */,
+				AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */,
+				AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */,
+				5B7DFEAF222FFAC200ECF0D3 /* MainVC.swift in Sources */,
+				AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */,
+				AC110A9E223A59DD00D1F8D8 /* WhatCountryTablevView.swift in Sources */,
+				5B7DFEDB2230685A00ECF0D3 /* TableView.swift in Sources */,
+				5B7DFED6223027D300ECF0D3 /* CollectionViewCell2.swift in Sources */,
+				ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */,
+				ACFBAC2F2240DB8E001D9D94 /* WhatCountryTFDelegate.swift in Sources */,
+				5B7DFECA223012B400ECF0D3 /* Bill.swift in Sources */,
+				ACFBAC3C2240FB44001D9D94 /* AddNewCardCell.swift in Sources */,
+				ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */,
+				AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */,
+				ACFAF76E223F8B82008C731B /* SenderCellCountry.swift in Sources */,
+				AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */,
+				5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */,
+				ACFAF767223F8B07008C731B /* SenderVC.swift in Sources */,
+				5B7DFEDD2230698200ECF0D3 /* CollectionView.swift in Sources */,
+				ACFBAC3E2240FB5D001D9D94 /* CardCell.swift in Sources */,
+				ACFAF76A223F8B49008C731B /* SenderTableView.swift in Sources */,
+				ACFBAC352240FAF8001D9D94 /* PaymentTableView.swift in Sources */,
+				ACFBAC322240DEB6001D9D94 /* PaymentVC.swift in Sources */,
+				ACFBAC2D2240C419001D9D94 /* myLabel.swift in Sources */,
+				5B7DFEAD222FFAC200ECF0D3 /* AppDelegate.swift in Sources */,
+				ACE139C622427D40004EDB38 /* CardIssueCollectionCell.swift in Sources */,
+				5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */,
+				ACFBAC382240FB1F001D9D94 /* TotalInfoCell.swift in Sources */,
+				AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B7DFEB0222FFAC200ECF0D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B7DFEB1222FFAC200ECF0D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B7DFEB5222FFAC500ECF0D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B7DFEB6222FFAC500ECF0D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B7DFEB9222FFAC500ECF0D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B7DFEBA222FFAC500ECF0D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B7DFEBC222FFAC500ECF0D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D47AB8E0D67202E50D8162A /* Pods-TestTaskZamZam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89WB9E7UEU;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = a.s.bitsoev.TestTaskZamZam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5B7DFEBD222FFAC500ECF0D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FEFA5C3705F6AB54AA6D217 /* Pods-TestTaskZamZam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89WB9E7UEU;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = a.s.bitsoev.TestTaskZamZam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B7DFEA4222FFAC200ECF0D3 /* Build configuration list for PBXProject "TestTaskZamZam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7DFEB9222FFAC500ECF0D3 /* Debug */,
+				5B7DFEBA222FFAC500ECF0D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7DFEBB222FFAC500ECF0D3 /* Build configuration list for PBXNativeTarget "TestTaskZamZam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7DFEBC222FFAC500ECF0D3 /* Debug */,
+				5B7DFEBD222FFAC500ECF0D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B7DFEA1222FFAC200ECF0D3 /* Project object */;
+}
