@@ -12,6 +12,7 @@ enum CurrencyType {
     
     case rubble
     case dollar
+    case euro
     
 }
 
@@ -24,6 +25,8 @@ class CurrencyManager {
             return CurrencyRubble()
         case .dollar:
             return CurrencyDollar()
+        case .euro:
+            return CurrencyEuro()
         }
     }
     
@@ -50,5 +53,13 @@ struct CurrencyDollar: CurrencyProtocol {
     let fullName: String = "Dollar"
     let shortName: String = "USD"
     let symbol: String = "$"
+    
+}
+
+struct CurrencyEuro: CurrencyProtocol {
+    
+    let fullName: String = "Euro"
+    let shortName: String = "EUR"
+    let symbol: String = "€"
     
 }
