@@ -27,11 +27,11 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         masOfBills = [Bill(name: "Zam счет RUB",
                            sum: 21324.00,
                            last4numbers: 1111,
-                           valuta: "RUB"),
+                           valuta: .rubble),
                       Bill(name: "Zam счет USD",
                            sum: 192.01,
                            last4numbers: 3513,
-                           valuta: "USD")]
+                           valuta: .dollar)]
         
         let longpress = UILongPressGestureRecognizer(target: self,
                                                      action: #selector(longPressGestureRecognized(gestureRecognizer:)))
@@ -65,25 +65,6 @@ class MainVC: UIViewController, UICollectionViewDelegate {
                                   right: self.tabBarController!.tabBar.bounds.width/2 - 16)
         imageView.frame = self.tabBarController!.tabBar.bounds.inset(by: insets)
         self.tabBarController!.tabBar.addSubview(imageView)
-    }
-    
-    func getSymbolFromValuta(valuta: String) -> String? {
-        switch valuta {
-        case "RUB":
-            
-            return "₽"
-            
-        case "EUR":
-            
-            return "€"
-            
-        case "USD":
-            
-            return "$"
-            
-        default:
-            return nil
-        }
     }
     
     
