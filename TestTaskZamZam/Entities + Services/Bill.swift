@@ -13,16 +13,16 @@ class Bill {
     var name: String
     var sum: Float
     var last4numbers: Int
-    var valuta: CurrencyType
+    var currency: CurrencyType
     
     init (name: String,
           sum: Float,
           last4numbers: Int,
-          valuta: CurrencyType) {
+          currency: CurrencyType) {
         self.name = name
         self.sum = sum
         self.last4numbers = last4numbers
-        self.valuta = valuta
+        self.currency = currency
     }
     
 }

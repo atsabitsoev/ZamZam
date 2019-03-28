@@ -27,11 +27,11 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         masOfBills = [Bill(name: "Zam счет RUB",
                            sum: 21324.00,
                            last4numbers: 1111,
-                           valuta: .rubble),
+                           currency: .rubble),
                       Bill(name: "Zam счет USD",
                            sum: 192.01,
                            last4numbers: 3513,
-                           valuta: .dollar)]
+                           currency: .dollar)]
         
         let longpress = UILongPressGestureRecognizer(target: self,
                                                      action: #selector(longPressGestureRecognized(gestureRecognizer:)))

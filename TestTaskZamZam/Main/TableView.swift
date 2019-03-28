@@ -19,7 +19,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         let bill = masOfBills![indexPath.row]
         
         cell.labName.text = bill.name
-        cell.labValuta.text = CurrencyManager.getCurrency(byType: bill.valuta).symbol
+        cell.labValuta.text = CurrencyManager.getCurrency(byType: bill.currency).symbol
         cell.labCard.text = String(bill.last4numbers)
         cell.labSum.text = bill.sum.formattedWithSeparator
         
