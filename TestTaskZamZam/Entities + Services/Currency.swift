@@ -15,6 +15,20 @@ enum CurrencyType {
     
 }
 
+class CurrencyManager {
+    private init() {}
+    
+    static func getCurrency(byType type: CurrencyType) -> CurrencyProtocol {
+        switch type {
+        case .rubble:
+            return CurrencyRubble()
+        case .dollar:
+            return CurrencyDollar()
+        }
+    }
+    
+}
+
 protocol CurrencyProtocol {
     
     var fullName: String { get }
@@ -36,19 +50,5 @@ struct CurrencyDollar: CurrencyProtocol {
     let fullName: String = "Dollar"
     let shortName: String = "USD"
     let symbol: String = "$"
-    
-}
-
-class CurrencyManager {
-    private init() {}
-
-    static func getCurrency(byType type: CurrencyType) -> CurrencyProtocol {
-        switch type {
-        case .rubble:
-            return CurrencyRubble()
-        case .dollar:
-            return CurrencyDollar()
-        }
-    }
     
 }
