@@ -44,9 +44,6 @@ class CardDataCell: UITableViewCell {
             title?.layer.borderWidth = 1
             title?.layer.borderColor = #colorLiteral(red: 0.2470588235, green: 0.6941176471, blue: 0.9490196078, alpha: 1)
         }
-        print(labCVV.text)
-        
-        
     }
 
     override func awakeFromNib() {
