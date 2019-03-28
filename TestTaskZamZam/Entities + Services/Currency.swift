@@ -43,14 +43,12 @@ class CurrencyManager {
     private init() {}
 
     static func getCurrency(ofType type: CurrencyType) -> CurrencyProtocol {
-        
         switch type {
         case .rubble:
             return CurrencyRubble()
         case .dollar:
             return CurrencyDollar()
         }
-        
     }
     
 }
