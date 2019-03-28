@@ -42,7 +42,7 @@ struct CurrencyDollar: CurrencyProtocol {
 class CurrencyManager {
     private init() {}
 
-    static func getCurrency(ofType type: CurrencyType) -> CurrencyProtocol {
+    static func getCurrency(byType type: CurrencyType) -> CurrencyProtocol {
         switch type {
         case .rubble:
             return CurrencyRubble()
