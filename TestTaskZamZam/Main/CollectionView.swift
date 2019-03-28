@@ -10,7 +10,6 @@ import UIKit
 
 extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
@@ -98,7 +97,6 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         
         
         return cell!
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -120,7 +118,6 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             print("Error")
         }
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         

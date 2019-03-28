@@ -10,7 +10,6 @@ import UIKit
 
 class TransCell: UITableViewCell {
 
-    
     @IBOutlet weak var labTitle: myLabel!
     @IBOutlet weak var labDescribtion: myLabel!
     @IBOutlet weak var viewUnderPicture: UIView!
@@ -22,7 +21,6 @@ class TransCell: UITableViewCell {
         super.awakeFromNib()
         
         viewMain.layer.cornerRadius = 8
-        
         viewMain.layer.shadowColor = #colorLiteral(red: 0.7843137255, green: 0.7843137255, blue: 0.7843137255, alpha: 1)
         viewMain.layer.shadowOpacity = 0.65
         viewMain.layer.shadowOffset = CGSize(width: 0, height: 10)
@@ -30,12 +28,6 @@ class TransCell: UITableViewCell {
         
         viewUnderPicture.layer.cornerRadius = 20
         
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

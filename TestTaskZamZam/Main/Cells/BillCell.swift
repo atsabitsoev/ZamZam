@@ -10,7 +10,6 @@ import UIKit
 
 class BillCell: UITableViewCell {
     
-    
     @IBOutlet weak var labName: myLabel!
     @IBOutlet weak var labSum: myLabel!
     @IBOutlet weak var imChain: UIImageView!
@@ -20,13 +19,9 @@ class BillCell: UITableViewCell {
     @IBOutlet weak var viewCard: UIView!
     @IBOutlet weak var labCard: myLabel!
     
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        viewMain.layer.cornerRadius = 8
-        
         viewMain.layer.cornerRadius = 8
         viewMain.layer.shadowOffset = CGSize(width: 0, height: 10)
         viewMain.layer.shadowOpacity = 0.65
@@ -35,12 +30,6 @@ class BillCell: UITableViewCell {
         
         viewValuta.layer.cornerRadius = 18
         viewCard.layer.cornerRadius = 5
-        
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
     }
 
 }

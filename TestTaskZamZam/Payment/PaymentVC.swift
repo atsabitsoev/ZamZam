@@ -10,6 +10,7 @@ import UIKit
 
 class PaymentVC: UIViewController {
     
+    
     @IBOutlet weak var butNext: UIButton!
     @IBOutlet weak var butBack: UIButton!
     @IBOutlet weak var butClose: UIButton!
@@ -20,10 +21,11 @@ class PaymentVC: UIViewController {
     var cards = ["card1","card2"]
     var cardAdding = false
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     
     override func viewWillLayoutSubviews() {
         configureButNext()
@@ -32,14 +34,12 @@ class PaymentVC: UIViewController {
         viewBigWhite.clipsToBounds = true
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         tableView.selectRow(at: [0,0], animated: false, scrollPosition: .top)
     }
     
     
     func configureNavigationButtons() {
-        
         butBack.layer.cornerRadius = butBack.bounds.height/2
         butBack.layer.shadowOffset = CGSize(width: 0, height: 6)
         butBack.layer.shadowRadius = 16
@@ -57,7 +57,6 @@ class PaymentVC: UIViewController {
         butClose.layer.shadowOpacity = 0.18
         butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
     }
-    
     
     func configureButNext() {
         print("Рамка кнопки некст: \(butNext.bounds)")
@@ -81,20 +80,16 @@ class PaymentVC: UIViewController {
         let insetedBounds = bounds.inset(by: UIEdgeInsets(top: 20, left: 10, bottom: -10, right: 10))
         
         butNext.layer.shadowPath = CGPath(rect: insetedBounds, transform: nil)
-        
     }
     
     
     @IBAction func butBackTapped(_ sender: Any) {
-        
         self.navigationController?.popViewController(animated: true)
         
     }
-    @IBAction func butCloseTapped(_ sender: Any) {
-        
-        self.navigationController?.dismiss(animated: true, completion: nil)
-        
-    }
     
+    @IBAction func butCloseTapped(_ sender: Any) {
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
     
 }

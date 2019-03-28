@@ -14,10 +14,12 @@ class CollectionViewCell2: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var viewImage: UIView!
     
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         self.layoutIfNeeded()
         
         self.layer.cornerRadius = 8
     }
+    
 }

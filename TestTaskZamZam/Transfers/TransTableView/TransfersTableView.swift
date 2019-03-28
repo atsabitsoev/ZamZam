@@ -10,16 +10,13 @@ import UIKit
 
 extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
     
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -130,13 +127,8 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
             mainCell = cell
             
         }
-        
-        
-        
         return mainCell
-        
     }
-    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
@@ -150,7 +142,6 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
             return 20
@@ -159,11 +150,9 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return UIView()
     }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath {
@@ -177,7 +166,5 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
             print("error")
         }
     }
-    
-    
     
 }

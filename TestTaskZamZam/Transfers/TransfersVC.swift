@@ -10,7 +10,6 @@ import UIKit
 
 class TransfersVC: UIViewController {
 
-    
     @IBOutlet weak var bigWhiteView: UIView!
     @IBOutlet weak var viewCashBack: UIView!
     @IBOutlet weak var butBack: UIButton!
@@ -21,7 +20,6 @@ class TransfersVC: UIViewController {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
     }
-    
     
     override func viewWillLayoutSubviews() {
         viewCashBack.addGradient(colors: [_ColorLiteralType(red: 0.9176470588,
@@ -54,18 +52,14 @@ class TransfersVC: UIViewController {
         butClose.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         butClose.layer.shadowOpacity = 0.18
         butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
-        
     }
     
     
     @IBAction func butBackTapped(_ sender: UIButton) {
-        print("Назад")
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func butCloseTapped(_ sender: UIButton) {
-        print("Закрыть")
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
     

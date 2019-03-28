@@ -20,14 +20,16 @@ class CollectionViewCell1: UICollectionViewCell {
         super.layoutSubviews()
         self.layoutIfNeeded()
         
-        let myString = NSMutableAttributedString(string: "+1%", attributes: [NSAttributedString.Key.kern : -0.71])
+        let myString = NSMutableAttributedString(string: "+1%",
+                                                 attributes: [NSAttributedString.Key.kern : -0.71])
         myString.addAttribute(NSAttributedString.Key.font,
-                              value: UIFont(name: "Kelson Sans RU", size: 20),
+                              value: UIFont(name: "Kelson Sans RU",
+                                            size: 20)!,
                               range: NSRange(location: 0,
                                              length: myString.length))
         
         labBlue.attributedText = myString
-        
         self.layer.cornerRadius = 8
     }
+    
 }

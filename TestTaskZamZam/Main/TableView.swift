@@ -43,7 +43,6 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     
     @objc func longPressGestureRecognized(gestureRecognizer: UIGestureRecognizer) {
-        
         let longpress = gestureRecognizer as! UILongPressGestureRecognizer
         let state = longpress.state
         let locationInView = longpress.location(in: self.tableView)
@@ -105,7 +104,6 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func snapshopOfCell(inputView: UIView) -> UIView {
-        
         UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, false, 0.0)
         inputView.layer.render(in: UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()!
