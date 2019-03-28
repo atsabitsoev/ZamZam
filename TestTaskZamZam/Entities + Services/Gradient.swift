@@ -28,7 +28,7 @@ extension UIView {
         
         gradient.cornerRadius = cornerRadius
         
-        print(self.layer.sublayers?.count)
+        print(self.layer.sublayers!.count)
         
         self.layer.insertSublayer(gradient, at: 0)
         
