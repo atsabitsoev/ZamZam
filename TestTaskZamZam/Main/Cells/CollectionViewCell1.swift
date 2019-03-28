@@ -27,7 +27,6 @@ class CollectionViewCell1: UICollectionViewCell {
                                             size: 20)!,
                               range: NSRange(location: 0,
                                              length: myString.length))
-        
         labBlue.attributedText = myString
         self.layer.cornerRadius = 8
     }

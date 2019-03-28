@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIView {
+    
     func animateBorderColor(toColor: UIColor, duration: Double) {
         let animation:CABasicAnimation = CABasicAnimation(keyPath: "borderColor")
         animation.fromValue = layer.borderColor
@@ -17,4 +18,5 @@ extension UIView {
         layer.add(animation, forKey: "borderColor")
         layer.borderColor = toColor.cgColor
     }
+    
 }

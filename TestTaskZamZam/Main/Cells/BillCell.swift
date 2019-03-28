@@ -22,14 +22,20 @@ class BillCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewMain.layer.cornerRadius = 8
-        viewMain.layer.shadowOffset = CGSize(width: 0, height: 10)
-        viewMain.layer.shadowOpacity = 0.65
-        viewMain.layer.shadowColor = #colorLiteral(red: 0.8705882353, green: 0.8705882353, blue: 0.8705882353, alpha: 1)
-        viewMain.layer.shadowRadius = 10
         
+        configureViewMain()
         viewValuta.layer.cornerRadius = 18
         viewCard.layer.cornerRadius = 5
+    }
+    
+    
+    func configureViewMain() {
+        let layer = viewMain.layer
+        layer.cornerRadius = 8
+        layer.shadowOffset = CGSize(width: 0, height: 10)
+        layer.shadowOpacity = 0.65
+        layer.shadowColor = UIColor(white: 0.84, alpha: 1).cgColor
+        layer.shadowRadius = 10
     }
 
 }

@@ -15,10 +15,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! BillCell
-        
-        
         let bill = masOfBills![indexPath.row]
         
         cell.labName.text = bill.name
@@ -34,11 +31,9 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        
         let bill = masOfBills![sourceIndexPath.row]
         masOfBills?.insert(bill, at: destinationIndexPath.row)
         masOfBills?.remove(at: sourceIndexPath.row)
-        
     }
     
     
@@ -108,6 +103,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         inputView.layer.render(in: UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
+        
         let cellSnapshot : UIView = UIImageView(image: image)
         cellSnapshot.layer.masksToBounds = false
         cellSnapshot.layer.cornerRadius = 0.0

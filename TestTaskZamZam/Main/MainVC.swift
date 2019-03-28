@@ -12,7 +12,7 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var viewCheta: UIView!
-    @IBOutlet weak var viewCashBack: UIView!{
+    @IBOutlet weak var viewCashBack: UIView! {
         didSet{
             viewCashBack.layer.cornerRadius = 8
         }

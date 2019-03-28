@@ -15,14 +15,12 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         var cell: UICollectionViewCell?
         
         switch indexPath.row {
         case 0:
             
             let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem1", for: indexPath) as! CollectionViewCell1
-            
             cell1.viewImage.backgroundColor = #colorLiteral(red: 0.337254902, green: 0.7529411765, blue: 0.9921568627, alpha: 1)
             
             let layer = cell1.viewImage.layer
@@ -39,7 +37,6 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         case 1:
             
             let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
-            
             cell1.viewImage.backgroundColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
             
             let layer = cell1.viewImage.layer
@@ -56,7 +53,6 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         case 2:
             
             let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
-            
             cell1.viewImage.backgroundColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
             
             let layer = cell1.viewImage.layer
@@ -75,7 +71,6 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         case 3:
             
             let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
-            
             cell1.viewImage.backgroundColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
             
             let layer = cell1.viewImage.layer

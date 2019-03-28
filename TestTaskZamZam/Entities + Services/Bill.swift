@@ -19,12 +19,10 @@ class Bill {
           sum: Float,
           last4numbers: Int,
           valuta: String) {
-    
         self.name = name
         self.sum = sum
         self.last4numbers = last4numbers
         self.valuta = valuta
-    
     }
     
 }
