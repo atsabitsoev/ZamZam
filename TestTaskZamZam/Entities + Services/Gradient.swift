@@ -11,9 +11,7 @@ import UIKit
 extension UIView {
     
     func addGradient(colors: [CGColor], coordinatesX: [Int], coordinatesY:[Int], cornerRadius: CGFloat = 0) {
-        if self.layer.sublayers == nil {
-            return
-        }
+        if self.layer.sublayers == nil { return }
         
         let gradient = CAGradientLayer()
         gradient.frame = self.bounds
