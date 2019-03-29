@@ -18,18 +18,18 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         var cell: UICollectionViewCell?
         
         switch indexPath.row {
+            
         case 0:
             
             let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem1", for: indexPath) as! CollectionViewCell1
-            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.337254902, green: 0.7529411765, blue: 0.9921568627, alpha: 1)
             
+            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.337254902, green: 0.7529411765, blue: 0.9921568627, alpha: 1)
             let layer = cell1.viewImage.layer
             layer.cornerRadius = 20
             layer.shadowRadius = 12
             layer.shadowColor = #colorLiteral(red: 0.337254902, green: 0.7529411765, blue: 0.9921568627, alpha: 1)
             layer.shadowOpacity = 0.4
             layer.shadowOffset = CGSize(width: 0, height: 4)
-            
             cell1.image.image = UIImage(named: "arrowUpRight")
             
             cell = cell1
@@ -37,15 +37,14 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         case 1:
             
             let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
-            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
             
+            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
             let layer = cell1.viewImage.layer
             layer.cornerRadius = 20
             layer.shadowRadius = 12
             layer.shadowColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
             layer.shadowOpacity = 0.4
             layer.shadowOffset = CGSize(width: 0, height: 4)
-            
             cell1.image.image = UIImage(named: "creditCard")
             
             cell = cell1
@@ -53,44 +52,38 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         case 2:
             
             let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
-            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
             
+            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
             let layer = cell1.viewImage.layer
             layer.cornerRadius = 20
             layer.shadowRadius = 12
             layer.shadowColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
             layer.shadowOpacity = 0.4
             layer.shadowOffset = CGSize(width: 0, height: 4)
-            
-            cell1.labTitle.text = "Пополнить"
-            
             cell1.image.image = UIImage(named: "arrowDownLeft")
+            cell1.labTitle.text = "Пополнить"
             
             cell = cell1
             
         case 3:
             
             let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
-            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
             
+            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
             let layer = cell1.viewImage.layer
             layer.cornerRadius = 20
             layer.shadowRadius = 12
             layer.shadowColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
             layer.shadowOpacity = 0.4
             layer.shadowOffset = CGSize(width: 0, height: 4)
-            
-            cell1.labTitle.text = "Оплата моб. связи"
-            
             cell1.image.image = UIImage(named: "phoneIncoming")
+            cell1.labTitle.text = "Оплата моб. связи"
             
             cell = cell1
             
         default:
             print("error")
         }
-        
-        
         return cell!
     }
     
@@ -119,7 +112,7 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         let width = (UIScreen.main.bounds.width - 40)/2
         let height = (collectionView.bounds.height - 4)/2
         let size = CGSize(width: width, height: height)
-        print("done")
+        
         return size
     }
     

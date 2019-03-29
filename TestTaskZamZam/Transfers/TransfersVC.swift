@@ -32,10 +32,13 @@ class TransfersVC: UIViewController {
                                                             alpha: 1).cgColor],
                                  coordinatesX: [0,1],
                                  coordinatesY: [0,0])
-        
         viewCashBack.layer.cornerRadius = 8
         bigWhiteView.layer.cornerRadius = 16
-        
+        configureNavigationButtons()
+    }
+    
+    
+    func configureNavigationButtons() {
         butBack.layer.cornerRadius = butBack.bounds.height/2
         butBack.layer.shadowOffset = CGSize(width: 0, height: 6)
         butBack.layer.shadowRadius = 16
@@ -45,7 +48,7 @@ class TransfersVC: UIViewController {
         let leftImage = UIImage(cgImage: rightImage!, scale: 0, orientation: UIImage.Orientation.down)
         butBack.setImage(leftImage, for: .normal)
         butBack.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
-
+        
         butClose.layer.cornerRadius = butClose.bounds.height/2
         butClose.layer.shadowOffset = CGSize(width: 0, height: 6)
         butClose.layer.shadowRadius = 16
@@ -68,5 +71,4 @@ class TransfersVC: UIViewController {
         return .lightContent
     }
     
-
 }

@@ -32,7 +32,6 @@ class MainVC: UIViewController, UICollectionViewDelegate {
                            sum: 192.01,
                            last4numbers: 3513,
                            currency: .dollar)]
-        
         let longpress = UILongPressGestureRecognizer(target: self,
                                                      action: #selector(longPressGestureRecognized(gestureRecognizer:)))
         self.tableView.addGestureRecognizer(longpress)
