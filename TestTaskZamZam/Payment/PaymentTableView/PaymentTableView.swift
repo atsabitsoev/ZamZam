@@ -107,7 +107,6 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.row == tableView.numberOfRows(inSection: 0) - 1 {
@@ -144,7 +143,6 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
         return true
     }
     
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         var height = CGFloat()
@@ -171,7 +169,6 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
         
         return height
     }
-    
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         switch section {
@@ -235,8 +232,5 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
         return view
         
     }
-    
-    
-    
     
 }

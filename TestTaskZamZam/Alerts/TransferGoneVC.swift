@@ -10,8 +10,6 @@ import UIKit
 
 class TransferGoneVC: UIViewController {
     
-    
-    
     @IBOutlet weak var viewGreen: UIView!
     @IBOutlet weak var imOk: UIImageView!
     @IBOutlet weak var viewSumWhite: UIView!
@@ -25,9 +23,6 @@ class TransferGoneVC: UIViewController {
     @IBOutlet weak var butClose: UIButton!
     
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -55,14 +50,11 @@ class TransferGoneVC: UIViewController {
                                     height: 6)
         layer.shadowOpacity = 0.19
         layer.shadowRadius = 20
-        
     }
     
-
     func setTint(to imageView: UIImageView) {
         imageView.image = imageView.image?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
     }
-    
     
     
     @IBAction func butCloseTapped(_ sender: UIButton) {

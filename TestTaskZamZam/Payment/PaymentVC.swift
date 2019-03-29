@@ -10,7 +10,6 @@ import UIKit
 
 class PaymentVC: UIViewController {
     
-    
     @IBOutlet weak var butNext: UIButton!
     @IBOutlet weak var butBack: UIButton!
     @IBOutlet weak var butClose: UIButton!
@@ -20,7 +19,6 @@ class PaymentVC: UIViewController {
     
     var cards = ["card1","card2"]
     var cardAdding = false
-    
     
     
     override func viewDidLoad() {

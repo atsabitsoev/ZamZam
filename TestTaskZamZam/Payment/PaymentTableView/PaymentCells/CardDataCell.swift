@@ -25,7 +25,9 @@ class CardDataCell: UITableViewCell {
     @IBOutlet weak var tfHolderOfCard: AKMaskField!
     @IBOutlet weak var labHolderOfCard: myLabel!
     
+    
     lazy var textFields: [AKMaskField] = [tfHolderOfCard, tfDate, tfCardNumber, tfCVV]
+    
     
     override func layoutSubviews() {
         viewGrayMain.layer.cornerRadius = 8
@@ -44,17 +46,6 @@ class CardDataCell: UITableViewCell {
             title?.layer.borderWidth = 1
             title?.layer.borderColor = #colorLiteral(red: 0.2470588235, green: 0.6941176471, blue: 0.9490196078, alpha: 1)
         }
-    }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-       
-        // Configure the view for the selected state
     }
 
 }

@@ -9,20 +9,16 @@
 import UIKit
 
 class SomethingWrongVC: UIViewController {
-
     
     @IBOutlet weak var viewUnderX: UIView!
     @IBOutlet weak var butClose: UIButton!
     @IBOutlet weak var imX: UIImageView!
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
     
     override func viewWillLayoutSubviews() {
         viewUnderX.layer.cornerRadius = viewUnderX.bounds.width/2
@@ -38,14 +34,12 @@ class SomethingWrongVC: UIViewController {
     
     
     func setShadowToViewUnderX() {
-        
         let layer = viewUnderX.layer
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0,
                                     height: 6)
         layer.shadowOpacity = 0.19
         layer.shadowRadius = 20
-        
     }
     
     
@@ -58,5 +52,4 @@ class SomethingWrongVC: UIViewController {
         return .lightContent
     }
     
-
 }

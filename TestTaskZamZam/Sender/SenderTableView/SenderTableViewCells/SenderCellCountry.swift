@@ -9,8 +9,6 @@
 import UIKit
 
 class SenderCellCountry: UITableViewCell {
-
-    
     
     @IBOutlet weak var viewWhite: UIView!
     @IBOutlet weak var labCountry: myLabel!
@@ -20,18 +18,6 @@ class SenderCellCountry: UITableViewCell {
     
     override func layoutSubviews() {
         imChevron.image = imChevron.image?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
-    }
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

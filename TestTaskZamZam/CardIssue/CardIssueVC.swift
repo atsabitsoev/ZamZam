@@ -10,7 +10,6 @@ import UIKit
 
 class CardIssueVC: UIViewController {
     
-    
     @IBOutlet weak var constrCardText: NSLayoutConstraint!
     @IBOutlet weak var labTitle: myLabel!
     @IBOutlet weak var textViewDescribtion: UITextView!
@@ -32,7 +31,6 @@ class CardIssueVC: UIViewController {
         super.viewDidLoad()
         
         setConstraints()
-        
         setAttributedStrings()
         setArrayOfTitles()
     }
@@ -68,9 +66,7 @@ class CardIssueVC: UIViewController {
             self.labTitle.text = self.arrayOfTitles[item]
             self.textViewDescribtion.attributedText = self.describtionAttrStrings[item]
         }
-        
     }
-    
     
     func setAttributedStrings() {
         
@@ -95,16 +91,11 @@ class CardIssueVC: UIViewController {
         attributedString1.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: attributedString1.length))
         
         describtionAttrStrings = [attributedString0,attributedString1]
-        
     }
-    
     
     func setArrayOfTitles() {
-        
         arrayOfTitles = ["Тариф \"По-братски\"","Виртуальная карта"]
-        
     }
-    
     
     func setConstraints() {
         
@@ -113,7 +104,6 @@ class CardIssueVC: UIViewController {
         if newConstant <= 50 {
             constrCardText.constant = newConstant
         }
-        
     }
     
     func configureButNext() {
@@ -139,8 +129,6 @@ class CardIssueVC: UIViewController {
         let insetedBounds = bounds.inset(by: UIEdgeInsets(top: 20, left: 10, bottom: -10, right: 10))
         
         butNext.layer.shadowPath = CGPath(rect: insetedBounds, transform: nil)
-        
     }
-    
     
 }

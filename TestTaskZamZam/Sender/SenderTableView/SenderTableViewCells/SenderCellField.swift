@@ -10,22 +10,8 @@ import UIKit
 
 class SenderCellField: UITableViewCell {
     
-    
-    
     @IBOutlet weak var viewWhite: UIView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var labTitle: myLabel!
-    
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 
 }

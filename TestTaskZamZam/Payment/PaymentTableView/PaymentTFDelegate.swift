@@ -38,13 +38,12 @@ extension PaymentVC: AKMaskFieldDelegate {
         lab.layer.borderColor = #colorLiteral(red: 0.2470588235, green: 0.6941176471, blue: 0.9490196078, alpha: 1)
     }
     
-    
     func maskFieldDidEndEditing(_ maskField: AKMaskField) {
         
         let cell = tableView.cellForRow(at: [1,0]) as! CardDataCell
         var view = UIView()
         var lab = UILabel()
-        print("nil")
+        
         switch maskField.tag {
         case 0:
             view = cell.viewCardNumber
@@ -79,10 +78,7 @@ extension PaymentVC: AKMaskFieldDelegate {
             
         }
         
-        print(maskField.text!)
-        
     }
-    
     
     func maskFieldShouldReturn(_ maskField: AKMaskField) -> Bool {
         self.view.endEditing(true)

@@ -18,7 +18,6 @@ class SenderVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
-    
     let masFieldTitles = [[" Номер телефона отправителя "],
                         [" Имя "," Фамилия "," Отчество "," Дата рождения ДД/ММ/ГГГГ "],
                         [" Страна "," Город регистрации "," Адрес регистрации "],
@@ -44,7 +43,6 @@ class SenderVC: UIViewController {
         viewWhiteBig.layer.cornerRadius = 16
         
     }
-    
     
     override func viewWillLayoutSubviews() {
         configureButNext()
@@ -72,7 +70,6 @@ class SenderVC: UIViewController {
         butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
     }
     
-    
     func configureButNext() {
         print("Рамка кнопки некст: \(butNext.bounds)")
         butNext.layer.cornerRadius = 8
@@ -99,7 +96,6 @@ class SenderVC: UIViewController {
     }
     
     
-    
     @IBAction func butBackTapped(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
@@ -117,7 +113,4 @@ class SenderVC: UIViewController {
         return .lightContent
     }
     
-    
-    
-
 }

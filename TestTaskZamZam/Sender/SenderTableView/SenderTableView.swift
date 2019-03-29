@@ -84,11 +84,8 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
             cell = myCell
             
         }
-        
-        
         return cell
     }
-    
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
@@ -105,15 +102,19 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
             return UIView()
         }
         
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 30))
-        
-        let label = UILabel(frame: CGRect(x: 18, y: 0, width: tableView.bounds.width, height: 15))
+        let view = UIView(frame: CGRect(x: 0,
+                                        y: 0,
+                                        width: tableView.bounds.width,
+                                        height: 30))
+        let label = UILabel(frame: CGRect(x: 18,
+                                          y: 0,
+                                          width: tableView.bounds.width,
+                                          height: 15))
         let myString = NSMutableAttributedString(string: self.masSectionNames[section],
                                                  attributes: [NSAttributedString.Key.font : UIFont(name: "KelsonSans-RegularRU",
                                                                                                    size: 14)!,
@@ -122,20 +123,24 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
                                                                                                               blue: 104/255,
                                                                                                               alpha: 1)])
         label.attributedText = myString
-        
         view.addSubview(label)
         
         return view
     }
     
-    
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         
         if section == 0 {
             
-            let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 47))
+            let view = UIView(frame: CGRect(x: 0,
+                                            y: 0,
+                                            width: tableView.bounds.width,
+                                            height: 47))
             
-            let label = UILabel(frame: CGRect(x: 28, y: 6, width: tableView.bounds.width - 56, height: 15))
+            let label = UILabel(frame: CGRect(x: 28,
+                                              y: 6,
+                                              width: tableView.bounds.width - 56,
+                                              height: 15))
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 4
             let myString = NSMutableAttributedString(string: "На этот номер будет отправлено уведомление.",
@@ -153,9 +158,15 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
             
         } else if section == 3 {
             
-            let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 47))
+            let view = UIView(frame: CGRect(x: 0,
+                                            y: 0,
+                                            width: tableView.bounds.width,
+                                            height: 47))
             
-            let label = UILabel(frame: CGRect(x: 21, y: 30, width: tableView.bounds.width - 42, height: 48))
+            let label = UILabel(frame: CGRect(x: 21,
+                                              y: 30,
+                                              width: tableView.bounds.width - 42,
+                                              height: 48))
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 4
             let myString = NSMutableAttributedString(string: "Данные должны полностью совпадать с документом. Обязательно перепроверьте данные перед отправкой.",
@@ -168,14 +179,16 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
                                                                   NSAttributedString.Key.paragraphStyle: paragraphStyle])
             label.numberOfLines = 0
             label.attributedText = myString
-            
             view.addSubview(label)
+            
             return view
+            
         } else {
+            
             return UIView()
+            
         }
         
     }
-    
     
 }

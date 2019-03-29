@@ -21,10 +21,4 @@ class TotalInfoCell: UITableViewCell {
         viewGreenUnderCashBack.layer.cornerRadius = 8
     }
     
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
 }

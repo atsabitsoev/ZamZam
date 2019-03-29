@@ -11,7 +11,6 @@ import FlagKit
 
 class SumAndCurrencyVC: UIViewController {
     
-    
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var viewCurrency: UIView!
     @IBOutlet weak var viewSum: UIView!
@@ -69,9 +68,7 @@ class SumAndCurrencyVC: UIViewController {
     
     
     @objc func endEditing() {
-        
         self.view.endEditing(true)
-        
     }
     
     
@@ -97,7 +94,6 @@ class SumAndCurrencyVC: UIViewController {
         let insetedBounds = bounds.inset(by: UIEdgeInsets(top: 20, left: 10, bottom: -10, right: 10))
         
         butNext.layer.shadowPath = CGPath(rect: insetedBounds, transform: nil)
-        
     }
     
     func configureNavigationButtons() {

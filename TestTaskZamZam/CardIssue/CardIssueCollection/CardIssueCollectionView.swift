@@ -55,5 +55,4 @@ extension CardIssueVC: UICollectionViewDelegate, UICollectionViewDataSource, UIC
         }
     }
     
-    
 }
