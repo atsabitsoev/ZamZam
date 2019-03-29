@@ -27,7 +27,6 @@ class TransCell: UITableViewCell {
         viewMain.layer.shadowRadius = 30
         
         viewUnderPicture.layer.cornerRadius = 20
-        
     }
 
 }
