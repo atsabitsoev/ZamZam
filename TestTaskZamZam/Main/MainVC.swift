@@ -57,7 +57,12 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         imageView.contentMode = .scaleToFill
         
         let window = UIApplication.shared.keyWindow
-        let bottomPadding = window?.safeAreaInsets.bottom
+        var bottomPadding: CGFloat?
+        if #available(iOS 11.0, *) {
+            bottomPadding = window?.safeAreaInsets.bottom
+        } else {
+            bottomPadding = bottomLayoutGuide.length
+        }
         let insets = UIEdgeInsets(top: 8,
                                   left: self.tabBarController!.tabBar.bounds.width/2 - 16,
                                   bottom: bottomPadding! + 9,

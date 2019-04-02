@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,7 +41,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84i-Yb-mmS" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                         <rect key="frame" x="138.33333333333334" y="6" width="20.666666666666657" height="36"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
-                                        <color key="textColor" name="skyBlue"/>
+                                        <color key="textColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -95,7 +94,7 @@
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="m1y-HR-yEi"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="KelsonSans-BoldRU" family="Kelson Sans RU" pointSize="20"/>
-                                                    <color key="textColor" name="skyBlue"/>
+                                                    <color key="textColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnG-3f-oeE">
@@ -243,7 +242,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21,324.00 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-dL-YpM" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                                                     <rect key="frame" x="67" y="36" width="94.666666666666686" height="20"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="20"/>
-                                                                    <color key="textColor" name="skyBlue"/>
+                                                                    <color key="textColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="link2" translatesAutoresizingMaskIntoConstraints="NO" id="fjh-aw-R92">
@@ -1037,7 +1036,7 @@
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMx-pg-Smz">
                                         <rect key="frame" x="19" y="170" width="24" height="24"/>
-                                        <color key="backgroundColor" name="skyBlue"/>
+                                        <color key="backgroundColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rMx-pg-Smz" secondAttribute="height" multiplier="1:1" id="LEg-Aq-mIz"/>
                                         </constraints>
@@ -1489,7 +1488,7 @@
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-Jl-PEg">
                                                                     <rect key="frame" x="11" y="9" width="30" height="30"/>
-                                                                    <color key="backgroundColor" name="skyBlue"/>
+                                                                    <color key="backgroundColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="30" id="GL7-Bu-AiJ"/>
                                                                         <constraint firstAttribute="width" constant="30" id="zAO-8K-fNK"/>
@@ -1803,7 +1802,7 @@
                                                                 <constraint firstAttribute="height" constant="19" id="PKr-va-aCc"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
-                                                            <color key="textColor" name="skyBlue"/>
+                                                            <color key="textColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRr-Ol-0IR">
@@ -2554,8 +2553,5 @@
         <image name="transaction" width="24" height="24"/>
         <image name="usersCopy" width="24" height="24"/>
         <image name="x" width="24" height="24"/>
-        <namedColor name="skyBlue">
-            <color red="0.33700001239776611" green="0.75300002098083496" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>
