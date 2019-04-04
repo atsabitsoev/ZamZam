@@ -31,22 +31,10 @@ class VerifyPhoneVC: UIViewController {
         super.viewDidLoad()
         
         addObservers()
-        setDelegatesOfAndTagsTFs()
     }
     
     override func viewWillLayoutSubviews() {
         configureView()
-    }
-    
-    
-    func setDelegatesOfAndTagsTFs() {
-        tfCountryCode.delegate = self
-        tfShortCode.delegate = self
-        tfPhoneNumber.delegate = self
-        
-        tfCountryCode.tag = 0
-        tfPhoneNumber.tag = 1
-        tfShortCode.tag = 2
     }
 
     func addObservers() {
@@ -110,6 +98,22 @@ class VerifyPhoneVC: UIViewController {
         
     }
     
+    
+    @IBAction func tFCountryCodeTextChanged(_ sender: UITextField) {
+        
+        let text = sender.text!
+        let code = UInt64(text) ?? 0
+        if let country = PhoneNumberKit().mainCountry(forCode: code) {
+            print(PhoneNumberKit().countries(withCode: code))
+            print("\n")
+        } else {
+            imCountry.image = UIImage()
+        }
+        
+    }
+    
+    @IBAction func tFShortCodeTextChanged(_ sender: UITextField) {
+    }
     
     @IBAction func butBackTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

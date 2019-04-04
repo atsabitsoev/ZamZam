@@ -43,7 +43,6 @@
 		AC5EA173223940C900EDA066 /* TransCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA172223940C900EDA066 /* TransCell.swift */; };
 		ACA8A0DC2255F8EA00EFBE1A /* RegOrLogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
-		ACA8A0E22255FA2A00EFBE1A /* VerifyPhoneTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E12255FA2A00EFBE1A /* VerifyPhoneTF.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
 		ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */; };
 		ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE139BB2242549D004EDB38 /* CardIssue.storyboard */; };
@@ -112,7 +111,6 @@
 		AC5EA172223940C900EDA066 /* TransCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransCell.swift; sourceTree = "<group>"; };
 		ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegOrLogScreen.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
-		ACA8A0E12255FA2A00EFBE1A /* VerifyPhoneTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneTF.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
 		ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Registration+LogIn.storyboard"; sourceTree = "<group>"; };
 		ACE139BB2242549D004EDB38 /* CardIssue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardIssue.storyboard; sourceTree = "<group>"; };
@@ -345,7 +343,6 @@
 			isa = PBXGroup;
 			children = (
 				ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */,
-				ACA8A0E12255FA2A00EFBE1A /* VerifyPhoneTF.swift */,
 			);
 			path = VerifyPhoneVC;
 			sourceTree = "<group>";
@@ -629,7 +626,6 @@
 				ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */,
 				ACFBAC2F2240DB8E001D9D94 /* WhatCountryTFDelegate.swift in Sources */,
 				5B7DFECA223012B400ECF0D3 /* Bill.swift in Sources */,
-				ACA8A0E22255FA2A00EFBE1A /* VerifyPhoneTF.swift in Sources */,
 				ACFBAC3C2240FB44001D9D94 /* AddNewCardCell.swift in Sources */,
 				ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */,
 				AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */,

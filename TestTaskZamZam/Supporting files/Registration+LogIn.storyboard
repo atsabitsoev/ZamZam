@@ -92,6 +92,9 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="tFCountryCodeTextChanged:" destination="eC9-ib-Pcp" eventType="editingChanged" id="vFu-cV-v63"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-Vk-CGZ">
                                         <rect key="frame" x="83" y="80" width="284" height="48"/>
@@ -151,6 +154,9 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="tFShortCodeTextChanged:" destination="eC9-ib-Pcp" eventType="editingChanged" id="koq-sa-yxR"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,7 +254,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2y0-ao-haX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-0.80000000000000004" y="72.413793103448285"/>
+            <point key="canvasLocation" x="198" y="72"/>
         </scene>
     </scenes>
     <resources>
