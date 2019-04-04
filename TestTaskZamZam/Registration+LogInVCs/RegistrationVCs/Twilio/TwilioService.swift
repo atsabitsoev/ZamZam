@@ -33,6 +33,7 @@ class TwilioService {
     }
     
     private var shortCodeSid: String?
+    private var usersPhone: String?
     
     
     func sendShortCode(phone: String) {
@@ -57,6 +58,7 @@ class TwilioService {
                         if status == "pending" {
                             let sid = json["sid"].stringValue
                             self.shortCodeSid = sid
+                            self.usersPhone = phone
                             self.shortCodeSent = true
                         }
 
@@ -72,10 +74,11 @@ class TwilioService {
         
     }
     
-    func checkShortCode(phone: String, code: String) {
+    func checkShortCode(code: String) {
+        guard usersPhone != nil else { return }
         
         if shortCodeSent && shortCodeSid != nil {
-            let parameters = ["To": phone,
+            let parameters = ["To": usersPhone,
                               "Sid": shortCodeSid,
                               "Code": code]
             
@@ -83,7 +86,6 @@ class TwilioService {
                        method: .post,
                        parameters: parameters,
                        headers: [:])
-                .authenticate(username: "AC7284e1760897943713163c817d6bc5bb", password: "f7c3c685ce75cb4cc69c0bd7f0472ee0")
                 .responseJSON { (response) in
                     
                     switch response.result {

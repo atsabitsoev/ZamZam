@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FlagKit
+import PhoneNumberKit
 
 class VerifyPhoneVC: UIViewController {
     
@@ -29,12 +31,23 @@ class VerifyPhoneVC: UIViewController {
         super.viewDidLoad()
         
         addObservers()
+        setDelegatesOfAndTagsTFs()
     }
     
     override func viewWillLayoutSubviews() {
         configureView()
     }
     
+    
+    func setDelegatesOfAndTagsTFs() {
+        tfCountryCode.delegate = self
+        tfShortCode.delegate = self
+        tfPhoneNumber.delegate = self
+        
+        tfCountryCode.tag = 0
+        tfPhoneNumber.tag = 1
+        tfShortCode.tag = 2
+    }
 
     func addObservers() {
         
@@ -59,7 +72,19 @@ class VerifyPhoneVC: UIViewController {
         butNext.layer.cornerRadius = butNext.bounds.height/2
         butNext.clipsToBounds = true
         setVisibleTFs()
+        setCountryFlag()
         
+    }
+    
+    func setCountryFlag() {
+        
+        guard let countryCode = UInt64(tfCountryCode!.text!) else { return }
+        let phoneNumberKit = PhoneNumberKit()
+        if let country = phoneNumberKit.mainCountry(forCode: countryCode) {
+            let flagImage = Flag(countryCode: country)?.image(style: .circle)
+            imCountry.image = flagImage
+        }
+
     }
     
     
@@ -94,7 +119,7 @@ class VerifyPhoneVC: UIViewController {
         
         if twilioService.shortCodeSent {
             if let code = tfShortCode.text {
-                twilioService.checkShortCode(phone: "+79777872475", code: code)
+                twilioService.checkShortCode(code: code)
             }
         } else {
             twilioService.sendShortCode(phone: "+79777872475")
