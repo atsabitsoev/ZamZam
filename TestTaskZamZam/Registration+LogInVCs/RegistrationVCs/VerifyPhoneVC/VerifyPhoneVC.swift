@@ -22,7 +22,6 @@ class VerifyPhoneVC: UIViewController {
     
     
     let twilioService = TwilioService.standard
-    let codeSent = TwilioService.standard.shortCodeSent
     let codeVerified = TwilioService.standard.shortCodeVerified
     
 
@@ -39,10 +38,15 @@ class VerifyPhoneVC: UIViewController {
 
     func addObservers() {
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(setVisibleTFs),
-                                               name: NSNotification.Name("CodeSent"),
-                                               object: nil)
+        let center = NotificationCenter.default
+        center.addObserver(self,
+                           selector: #selector(setVisibleTFs),
+                           name: NSNotification.Name(NotificationType.codeSent.rawValue),
+                           object: nil)
+        center.addObserver(self,
+                           selector: #selector(verificationSucceed),
+                           name: NSNotification.Name(NotificationType.codeVerified.rawValue),
+                           object: nil)
         
     }
     
@@ -58,8 +62,9 @@ class VerifyPhoneVC: UIViewController {
         
     }
     
+    
     @objc func setVisibleTFs() {
-        switch codeSent {
+        switch twilioService.shortCodeSent {
         case true:
             UIView.animate(withDuration: 0.3) {
                 self.labEnterShortCode.alpha = 1
@@ -74,17 +79,27 @@ class VerifyPhoneVC: UIViewController {
         }
     }
     
+    @objc func verificationSucceed() {
+        
+        print("verification succeed")
+        
+    }
+    
     
     @IBAction func butBackTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func butNextTapped(_ sender: Any) {
-        if codeSent {
-            twilioService.checkShortCode()
+        
+        if twilioService.shortCodeSent {
+            if let code = tfShortCode.text {
+                twilioService.checkShortCode(phone: "+79777872475", code: code)
+            }
         } else {
-            twilioService.sendShortCode()
+            twilioService.sendShortCode(phone: "+79777872475")
         }
     }
+    
     
 }

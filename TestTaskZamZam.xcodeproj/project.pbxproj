@@ -33,6 +33,7 @@
 		AC2859EC224CF85E004852C4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2859EB224CF85E004852C4 /* Currency.swift */; };
 		AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */; };
 		AC436CAD224A6503006FA348 /* Pods_TestTaskZamZam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */; };
+		AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53F9DC225627B70086A0D3 /* NotificationType.swift */; };
 		AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC567564223BC5EE001BBE66 /* SumAndCurrencyVC.swift */; };
 		AC56756C223BE3D2001BBE66 /* AlertViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */; };
 		AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56756D223BE652001BBE66 /* SomethingWrongVC.swift */; };
@@ -101,6 +102,7 @@
 		AC2859EB224CF85E004852C4 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferGoneVC.swift; sourceTree = "<group>"; };
 		AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestTaskZamZam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC53F9DC225627B70086A0D3 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
 		AC567564223BC5EE001BBE66 /* SumAndCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAndCurrencyVC.swift; sourceTree = "<group>"; };
 		AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertViewControllers.storyboard; sourceTree = "<group>"; };
 		AC56756D223BE652001BBE66 /* SomethingWrongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingWrongVC.swift; sourceTree = "<group>"; };
@@ -272,6 +274,15 @@
 			path = "Entities + Servicies";
 			sourceTree = "<group>";
 		};
+		AC53F9DB225627A30086A0D3 /* Twilio */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8A0E32256024400EFBE1A /* TwilioService.swift */,
+				AC53F9DC225627B70086A0D3 /* NotificationType.swift */,
+			);
+			path = Twilio;
+			sourceTree = "<group>";
+		};
 		AC567563223BC5B5001BBE66 /* SumAndCurrency */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,7 +335,7 @@
 		ACA8A0DD2255F90F00EFBE1A /* RegistrationVCs */ = {
 			isa = PBXGroup;
 			children = (
-				ACA8A0E32256024400EFBE1A /* TwilioService.swift */,
+				AC53F9DB225627A30086A0D3 /* Twilio */,
 				ACA8A0E02255FA0900EFBE1A /* VerifyPhoneVC */,
 			);
 			path = RegistrationVCs;
@@ -566,6 +577,7 @@
 				"${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -576,6 +588,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlagKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -637,6 +650,7 @@
 				5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */,
 				ACFBAC382240FB1F001D9D94 /* TotalInfoCell.swift in Sources */,
 				AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */,
+				AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

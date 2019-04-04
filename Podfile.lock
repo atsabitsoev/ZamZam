@@ -9,6 +9,7 @@ PODS:
   - PhoneNumberKit/PhoneNumberKitCore (2.6.0)
   - PhoneNumberKit/UIKit (2.6.0):
     - PhoneNumberKit/PhoneNumberKitCore
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - AKMaskField
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - FlagKit (~> 2.0.1)
   - Hero
   - PhoneNumberKit (~> 2.6)
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -24,6 +26,7 @@ SPEC REPOS:
     - FlagKit
     - Hero
     - PhoneNumberKit
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   AKMaskField: b6d147524813e62cd3f15475fa2200ce7a3d2620
@@ -31,7 +34,8 @@ SPEC CHECKSUMS:
   FlagKit: 75c64346179f254d1753bebdc5b1f9cbe7890748
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 8112531b056460a2073da0d9d9b1875ee228cd4e
+PODFILE CHECKSUM: 3e9f428d3d9ee44d5608f2a6c74bd62bb58af5ec
 
 COCOAPODS: 1.6.1

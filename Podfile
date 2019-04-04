@@ -12,5 +12,6 @@ target 'TestTaskZamZam' do
   pod 'PhoneNumberKit', '~> 2.6'
   pod 'Hero'
   pod 'Alamofire', '~> 5.0.0-beta.3'
+  pod 'SwiftyJSON', '~> 4.0'
 
 end
