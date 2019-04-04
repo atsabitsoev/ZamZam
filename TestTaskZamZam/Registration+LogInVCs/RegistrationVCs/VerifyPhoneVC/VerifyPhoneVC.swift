@@ -103,8 +103,8 @@ class VerifyPhoneVC: UIViewController {
         
         let text = sender.text!
         let code = UInt64(text) ?? 0
-        if let country = PhoneNumberKit().mainCountry(forCode: code) {
-            print(PhoneNumberKit().countries(withCode: code))
+        if PhoneNumberKit().mainCountry(forCode: code) != nil {
+            print(PhoneNumberKit().countries(withCode: code)!)
             print("\n")
         } else {
             imCountry.image = UIImage()
