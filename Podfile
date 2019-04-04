@@ -10,5 +10,7 @@ target 'TestTaskZamZam' do
   pod 'AKMaskField'
   pod 'FlagKit', '~> 2.0.1'
   pod 'PhoneNumberKit', '~> 2.6'
-  
+  pod 'Hero'
+  pod 'Alamofire', '~> 5.0.0-beta.3'
+
 end

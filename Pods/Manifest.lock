@@ -1,6 +1,8 @@
 PODS:
   - AKMaskField (2.0.3)
+  - Alamofire (5.0.0-beta.3)
   - FlagKit (2.0.1)
+  - Hero (1.4.0)
   - PhoneNumberKit (2.6.0):
     - PhoneNumberKit/PhoneNumberKitCore (= 2.6.0)
     - PhoneNumberKit/UIKit (= 2.6.0)
@@ -10,20 +12,26 @@ PODS:
 
 DEPENDENCIES:
   - AKMaskField
+  - Alamofire (~> 5.0.0-beta.3)
   - FlagKit (~> 2.0.1)
+  - Hero
   - PhoneNumberKit (~> 2.6)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AKMaskField
+    - Alamofire
     - FlagKit
+    - Hero
     - PhoneNumberKit
 
 SPEC CHECKSUMS:
   AKMaskField: b6d147524813e62cd3f15475fa2200ce7a3d2620
+  Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
   FlagKit: 75c64346179f254d1753bebdc5b1f9cbe7890748
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
 
-PODFILE CHECKSUM: c0631b890b429d8993b4bcd66e651e296e47c7ac
+PODFILE CHECKSUM: 8112531b056460a2073da0d9d9b1875ee228cd4e
 
 COCOAPODS: 1.6.1

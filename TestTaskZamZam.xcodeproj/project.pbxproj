@@ -40,6 +40,11 @@
 		AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA1682239353700EDA066 /* TransfersVC.swift */; };
 		AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */; };
 		AC5EA173223940C900EDA066 /* TransCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA172223940C900EDA066 /* TransCell.swift */; };
+		ACA8A0DC2255F8EA00EFBE1A /* RegOrLogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */; };
+		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
+		ACA8A0E22255FA2A00EFBE1A /* VerifyPhoneTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E12255FA2A00EFBE1A /* VerifyPhoneTF.swift */; };
+		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
+		ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */; };
 		ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE139BB2242549D004EDB38 /* CardIssue.storyboard */; };
 		ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139BE224259F6004EDB38 /* CardIssueVC.swift */; };
 		ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */; };
@@ -103,6 +108,11 @@
 		AC5EA1682239353700EDA066 /* TransfersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersVC.swift; sourceTree = "<group>"; };
 		AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersTableView.swift; sourceTree = "<group>"; };
 		AC5EA172223940C900EDA066 /* TransCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransCell.swift; sourceTree = "<group>"; };
+		ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegOrLogScreen.swift; sourceTree = "<group>"; };
+		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
+		ACA8A0E12255FA2A00EFBE1A /* VerifyPhoneTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneTF.swift; sourceTree = "<group>"; };
+		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
+		ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Registration+LogIn.storyboard"; sourceTree = "<group>"; };
 		ACE139BB2242549D004EDB38 /* CardIssue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardIssue.storyboard; sourceTree = "<group>"; };
 		ACE139BE224259F6004EDB38 /* CardIssueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueVC.swift; sourceTree = "<group>"; };
 		ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueCollectionView.swift; sourceTree = "<group>"; };
@@ -171,6 +181,7 @@
 				ACFAF765223F8AE4008C731B /* Sender */,
 				ACFBAC302240DE81001D9D94 /* Payment */,
 				ACE139BD224259D8004EDB38 /* CardIssue */,
+				ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */,
 				ACFAF761223F7239008C731B /* Alerts */,
 				5BD1986A22313EDE008011C8 /* Supporting files */,
 				5B7DFEC02230078A00ECF0D3 /* Шрифты */,
@@ -227,6 +238,7 @@
 				ACE139BB2242549D004EDB38 /* CardIssue.storyboard */,
 				AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */,
 				5B7DFEB5222FFAC500ECF0D3 /* LaunchScreen.storyboard */,
+				ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */,
 				5B7DFEB3222FFAC500ECF0D3 /* Assets.xcassets */,
 			);
 			path = "Supporting files";
@@ -298,6 +310,33 @@
 				AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */,
 			);
 			path = TransTableView;
+			sourceTree = "<group>";
+		};
+		ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */,
+				ACA8A0DD2255F90F00EFBE1A /* RegistrationVCs */,
+			);
+			path = "Registration+LogInVCs";
+			sourceTree = "<group>";
+		};
+		ACA8A0DD2255F90F00EFBE1A /* RegistrationVCs */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8A0E32256024400EFBE1A /* TwilioService.swift */,
+				ACA8A0E02255FA0900EFBE1A /* VerifyPhoneVC */,
+			);
+			path = RegistrationVCs;
+			sourceTree = "<group>";
+		};
+		ACA8A0E02255FA0900EFBE1A /* VerifyPhoneVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */,
+				ACA8A0E12255FA2A00EFBE1A /* VerifyPhoneTF.swift */,
+			);
+			path = VerifyPhoneVC;
 			sourceTree = "<group>";
 		};
 		ACE139BD224259D8004EDB38 /* CardIssue */ = {
@@ -479,6 +518,7 @@
 				5B7DFEB7222FFAC500ECF0D3 /* LaunchScreen.storyboard in Resources */,
 				AC110AA8223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf in Resources */,
 				5B7DFEE62230702B00ECF0D3 /* .gitignore in Resources */,
+				ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */,
 				5B7DFEC8223007D500ECF0D3 /* Kelson Sans Regular RU.otf in Resources */,
 				5B7DFEB4222FFAC500ECF0D3 /* Assets.xcassets in Resources */,
 				5B7DFEB2222FFAC200ECF0D3 /* Main.storyboard in Resources */,
@@ -522,7 +562,9 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestTaskZamZam/Pods-TestTaskZamZam-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AKMaskField/AKMaskField.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -530,7 +572,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AKMaskField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlagKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,6 +596,7 @@
 				ACFAF764223F754A008C731B /* RecipientVC.swift in Sources */,
 				ACFBAC4622412ECF001D9D94 /* PaymentTFDelegate.swift in Sources */,
 				AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */,
+				ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */,
 				AC5EA173223940C900EDA066 /* TransCell.swift in Sources */,
 				ACFAF76C223F8B6C008C731B /* SenderCellPhoneNumber.swift in Sources */,
 				AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */,
@@ -563,6 +608,7 @@
 				AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */,
 				AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */,
 				5B7DFEAF222FFAC200ECF0D3 /* MainVC.swift in Sources */,
+				ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */,
 				AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */,
 				AC110A9E223A59DD00D1F8D8 /* WhatCountryTablevView.swift in Sources */,
 				5B7DFEDB2230685A00ECF0D3 /* TableView.swift in Sources */,
@@ -570,6 +616,7 @@
 				ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */,
 				ACFBAC2F2240DB8E001D9D94 /* WhatCountryTFDelegate.swift in Sources */,
 				5B7DFECA223012B400ECF0D3 /* Bill.swift in Sources */,
+				ACA8A0E22255FA2A00EFBE1A /* VerifyPhoneTF.swift in Sources */,
 				ACFBAC3C2240FB44001D9D94 /* AddNewCardCell.swift in Sources */,
 				ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */,
 				AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */,
@@ -579,6 +626,7 @@
 				5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */,
 				ACFAF767223F8B07008C731B /* SenderVC.swift in Sources */,
 				5B7DFEDD2230698200ECF0D3 /* CollectionView.swift in Sources */,
+				ACA8A0DC2255F8EA00EFBE1A /* RegOrLogScreen.swift in Sources */,
 				ACFBAC3E2240FB5D001D9D94 /* CardCell.swift in Sources */,
 				ACFAF76A223F8B49008C731B /* SenderTableView.swift in Sources */,
 				ACFBAC352240FAF8001D9D94 /* PaymentTableView.swift in Sources */,

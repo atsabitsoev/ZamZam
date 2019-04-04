@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iAy-Lc-hIL">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kelson Sans Regular RU.otf">
+            <string>KelsonSans-RegularRU</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Reg Or Log Screen-->
+        <scene sceneID="ywU-ff-UIv">
+            <objects>
+                <viewController id="jDJ-B3-gmg" customClass="RegOrLogScreen" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AVZ-tk-cyx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qQ-RT-19f">
+                                <rect key="frame" x="92.666666666666686" y="675" width="190" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="3IA-Cy-nC1"/>
+                                    <constraint firstAttribute="width" constant="190" id="enM-Ic-HIT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
+                                <state key="normal" title="РЕГИСТРАЦИЯ">
+                                    <color key="titleColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eC9-ib-Pcp" kind="show" id="7nH-tc-PWj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl9-CX-y3c">
+                                <rect key="frame" x="158.66666666666666" y="737" width="58" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="2u2-FU-HFU"/>
+                                    <constraint firstAttribute="height" constant="33" id="Nd7-wa-oDp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
+                                <state key="normal" title="ВОЙТИ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cl9-CX-y3c" firstAttribute="top" secondItem="3qQ-RT-19f" secondAttribute="bottom" constant="8" id="CSi-yI-Rqh"/>
+                            <constraint firstItem="3qQ-RT-19f" firstAttribute="centerX" secondItem="AVZ-tk-cyx" secondAttribute="centerX" id="UwV-qm-oEC"/>
+                            <constraint firstItem="cl9-CX-y3c" firstAttribute="bottom" secondItem="hzI-Un-Pzg" secondAttribute="bottom" constant="-8" id="W8H-aP-qiF"/>
+                            <constraint firstItem="cl9-CX-y3c" firstAttribute="centerX" secondItem="AVZ-tk-cyx" secondAttribute="centerX" id="jx2-gf-IBu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hzI-Un-Pzg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OkW-rx-e4h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rca-5o-27N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="72.413793103448285"/>
+        </scene>
+        <!--Verify PhoneVC-->
+        <scene sceneID="X85-8q-xYk">
+            <objects>
+                <viewController id="eC9-ib-Pcp" customClass="VerifyPhoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ltG-sa-ipI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTz-wi-PfL">
+                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите номер телефона" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5o-0V-PLl" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="32" width="359" height="24"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+7" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ueJ-d7-za9">
+                                        <rect key="frame" x="8" y="80" width="67" height="48"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="8eM-uC-sh4"/>
+                                            <constraint firstAttribute="width" constant="67" id="nLG-lF-KYO"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-Vk-CGZ">
+                                        <rect key="frame" x="83" y="80" width="284" height="48"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RU" translatesAutoresizingMaskIntoConstraints="NO" id="G3L-Qb-Llp">
+                                        <rect key="frame" x="167.66666666666666" y="164" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="U96-Qm-9pw"/>
+                                            <constraint firstAttribute="height" constant="40" id="c1s-Ce-s3t"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diz-aI-ovZ">
+                                        <rect key="frame" x="164.66666666666666" y="632" width="46" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="3FF-EN-M7J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="17"/>
+                                        <state key="normal" title="Назад">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="butBackTapped:" destination="eC9-ib-Pcp" eventType="touchUpInside" id="CSt-fD-4Yb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="par-r8-jpJ">
+                                        <rect key="frame" x="103.66666666666669" y="574" width="168" height="50"/>
+                                        <color key="backgroundColor" red="0.50196078430000002" green="0.92156862750000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="168" id="bDp-FJ-ykv"/>
+                                            <constraint firstAttribute="height" constant="50" id="gJh-uc-edz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                        <state key="normal" title="Далее">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="butNextTapped:" destination="eC9-ib-Pcp" eventType="touchUpInside" id="QQT-0E-qS6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код из смс" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLP-ZY-8HD" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="240" width="359" height="24"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ztX-2P-2DB">
+                                        <rect key="frame" x="137.66666666666666" y="288" width="100" height="48"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="EFG-oK-hUS"/>
+                                            <constraint firstAttribute="width" constant="100" id="OQ8-SK-aoq"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wLP-ZY-8HD" firstAttribute="leading" secondItem="pTz-wi-PfL" secondAttribute="leading" constant="8" id="2u7-vB-qbD"/>
+                                    <constraint firstItem="u5o-0V-PLl" firstAttribute="top" secondItem="pTz-wi-PfL" secondAttribute="top" constant="32" id="39Q-7X-tEq"/>
+                                    <constraint firstItem="G3L-Qb-Llp" firstAttribute="centerX" secondItem="pTz-wi-PfL" secondAttribute="centerX" id="3ZC-3J-G4U"/>
+                                    <constraint firstItem="G3L-Qb-Llp" firstAttribute="top" secondItem="ueJ-d7-za9" secondAttribute="bottom" constant="36" id="5KT-J8-01q"/>
+                                    <constraint firstItem="cgz-Vk-CGZ" firstAttribute="leading" secondItem="ueJ-d7-za9" secondAttribute="trailing" constant="8" id="7kb-3c-eeg"/>
+                                    <constraint firstAttribute="trailing" secondItem="u5o-0V-PLl" secondAttribute="trailing" constant="8" id="HTv-nq-N6G"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="par-r8-jpJ" secondAttribute="bottom" constant="45" id="Hq8-Ca-0FO"/>
+                                    <constraint firstItem="ueJ-d7-za9" firstAttribute="leading" secondItem="pTz-wi-PfL" secondAttribute="leading" constant="8" id="NPj-hf-3E1"/>
+                                    <constraint firstItem="ztX-2P-2DB" firstAttribute="top" secondItem="wLP-ZY-8HD" secondAttribute="bottom" constant="24" id="SZl-PR-ooF"/>
+                                    <constraint firstAttribute="trailing" secondItem="cgz-Vk-CGZ" secondAttribute="trailing" constant="8" id="Swf-l1-nS8"/>
+                                    <constraint firstItem="diz-aI-ovZ" firstAttribute="centerX" secondItem="pTz-wi-PfL" secondAttribute="centerX" id="UnJ-fL-v0b"/>
+                                    <constraint firstItem="cgz-Vk-CGZ" firstAttribute="top" secondItem="u5o-0V-PLl" secondAttribute="bottom" constant="24" id="UnX-7U-ibN"/>
+                                    <constraint firstItem="diz-aI-ovZ" firstAttribute="top" secondItem="par-r8-jpJ" secondAttribute="bottom" constant="8" id="XzL-4u-ewv"/>
+                                    <constraint firstItem="ueJ-d7-za9" firstAttribute="top" secondItem="u5o-0V-PLl" secondAttribute="bottom" constant="24" id="awg-wg-eBt"/>
+                                    <constraint firstItem="wLP-ZY-8HD" firstAttribute="top" secondItem="G3L-Qb-Llp" secondAttribute="bottom" constant="36" id="b0D-al-jsC"/>
+                                    <constraint firstItem="ztX-2P-2DB" firstAttribute="centerX" secondItem="pTz-wi-PfL" secondAttribute="centerX" id="cds-wi-TjK"/>
+                                    <constraint firstItem="cgz-Vk-CGZ" firstAttribute="height" secondItem="ueJ-d7-za9" secondAttribute="height" id="gBN-jE-8i0"/>
+                                    <constraint firstItem="par-r8-jpJ" firstAttribute="centerX" secondItem="pTz-wi-PfL" secondAttribute="centerX" id="gpx-Uk-kUw"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="diz-aI-ovZ" secondAttribute="bottom" constant="8" id="sI2-uj-2Te"/>
+                                    <constraint firstItem="u5o-0V-PLl" firstAttribute="leading" secondItem="pTz-wi-PfL" secondAttribute="leading" constant="8" id="xas-8q-6QF"/>
+                                    <constraint firstAttribute="trailing" secondItem="wLP-ZY-8HD" secondAttribute="trailing" constant="8" id="yRr-g4-KJp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8g-hi-oib" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                <rect key="frame" x="18" y="53" width="204" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="8ze-RH-T9m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y8g-hi-oib" firstAttribute="leading" secondItem="6bi-CJ-Ymg" secondAttribute="leading" constant="18" id="7W5-Wz-u5F"/>
+                            <constraint firstItem="pTz-wi-PfL" firstAttribute="leading" secondItem="6bi-CJ-Ymg" secondAttribute="leading" id="8Mf-0M-gu4"/>
+                            <constraint firstItem="pTz-wi-PfL" firstAttribute="top" secondItem="Y8g-hi-oib" secondAttribute="bottom" constant="9" id="TZr-15-Glw"/>
+                            <constraint firstAttribute="bottom" secondItem="pTz-wi-PfL" secondAttribute="bottom" id="hFb-gc-Pjn"/>
+                            <constraint firstItem="Y8g-hi-oib" firstAttribute="top" secondItem="6bi-CJ-Ymg" secondAttribute="top" constant="9" id="nQQ-k7-kFd"/>
+                            <constraint firstItem="pTz-wi-PfL" firstAttribute="trailing" secondItem="6bi-CJ-Ymg" secondAttribute="trailing" id="xg1-0c-jrA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6bi-CJ-Ymg"/>
+                    </view>
+                    <connections>
+                        <outlet property="butBack" destination="diz-aI-ovZ" id="ecL-Dz-Y7q"/>
+                        <outlet property="butNext" destination="par-r8-jpJ" id="gEh-AD-6wZ"/>
+                        <outlet property="imCountry" destination="G3L-Qb-Llp" id="5HG-LA-or7"/>
+                        <outlet property="labEnterShortCode" destination="wLP-ZY-8HD" id="zr2-XO-pfI"/>
+                        <outlet property="tfCountryCode" destination="ueJ-d7-za9" id="74x-JW-4ce"/>
+                        <outlet property="tfPhoneNumber" destination="cgz-Vk-CGZ" id="2dS-ck-fSX"/>
+                        <outlet property="tfShortCode" destination="ztX-2P-2DB" id="D6l-E0-uY9"/>
+                        <outlet property="viewBigWhite" destination="pTz-wi-PfL" id="p77-ZR-N81"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6P-HA-dx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.2" y="72.413793103448285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dVA-A9-LZx">
+            <objects>
+                <viewController id="GMa-Hd-QQu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k1l-Gk-yTq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xcR-nC-wYO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ko-PC-gd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2450" y="72"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2bc-g3-DQH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iAy-Lc-hIL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q24-vE-9cZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jDJ-B3-gmg" kind="relationship" relationship="rootViewController" id="G95-IA-TYR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2y0-ao-haX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-0.80000000000000004" y="72.413793103448285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RU" width="21" height="15"/>
+    </resources>
+</document>
