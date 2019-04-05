@@ -85,9 +85,15 @@ class VerifyPhoneVC: UIViewController {
         tfPhoneNumber.becomeFirstResponder()
     }
     
-    func checkPlus(_ field: UITextField) {
-        if (field.text != nil) && !field.text!.hasPrefix("+") {
-            field.text!.insert("+", at: field.text!.startIndex)
+    func checkPrefix(prefix: String,_ field: UITextField) {
+        if (field.text != nil) && !field.text!.hasPrefix(prefix) {
+            for char in prefix {
+                if field.text!.hasPrefix(prefix) {
+                    return
+                }
+                field.text!.insert(char, at: field.text!.startIndex)
+            }
+            
         }
     }
     
@@ -126,10 +132,15 @@ class VerifyPhoneVC: UIViewController {
     
     @IBAction func tFCountryCodeTextChanged(_ sender: UITextField) {
         setCountryFlag()
-        checkPlus(sender)
+        checkPrefix(prefix: "+", sender)
         checkMaxCharacters(count: 1 + maxCountryCodeLength,
                            field: sender)
     }
+    
+    @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
+        checkPrefix(prefix: "  ", sender)
+    }
+    
     
     @IBAction func tFShortCodeTextChanged(_ sender: UITextField) {
         if let code = sender.text, code.count == 6 {

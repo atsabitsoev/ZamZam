@@ -41,6 +41,7 @@
 		AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA1682239353700EDA066 /* TransfersVC.swift */; };
 		AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */; };
 		AC5EA173223940C900EDA066 /* TransCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA172223940C900EDA066 /* TransCell.swift */; };
+		AC8D62C122574323004D0323 /* SetNewPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C022574323004D0323 /* SetNewPassVC.swift */; };
 		ACA8A0DC2255F8EA00EFBE1A /* RegOrLogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
@@ -109,6 +110,7 @@
 		AC5EA1682239353700EDA066 /* TransfersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersVC.swift; sourceTree = "<group>"; };
 		AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersTableView.swift; sourceTree = "<group>"; };
 		AC5EA172223940C900EDA066 /* TransCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransCell.swift; sourceTree = "<group>"; };
+		AC8D62C022574323004D0323 /* SetNewPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPassVC.swift; sourceTree = "<group>"; };
 		ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegOrLogScreen.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
@@ -321,10 +323,19 @@
 			path = TransTableView;
 			sourceTree = "<group>";
 		};
+		AC8D62C222574332004D0323 /* SetNewPassVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D62C022574323004D0323 /* SetNewPassVC.swift */,
+			);
+			path = SetNewPassVC;
+			sourceTree = "<group>";
+		};
 		ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */ = {
 			isa = PBXGroup;
 			children = (
 				ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */,
+				AC53F9DB225627A30086A0D3 /* Twilio */,
 				ACA8A0DD2255F90F00EFBE1A /* RegistrationVCs */,
 			);
 			path = "Registration+LogInVCs";
@@ -333,8 +344,8 @@
 		ACA8A0DD2255F90F00EFBE1A /* RegistrationVCs */ = {
 			isa = PBXGroup;
 			children = (
-				AC53F9DB225627A30086A0D3 /* Twilio */,
 				ACA8A0E02255FA0900EFBE1A /* VerifyPhoneVC */,
+				AC8D62C222574332004D0323 /* SetNewPassVC */,
 			);
 			path = RegistrationVCs;
 			sourceTree = "<group>";
@@ -645,6 +656,7 @@
 				ACE139C622427D40004EDB38 /* CardIssueCollectionCell.swift in Sources */,
 				5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */,
 				ACFBAC382240FB1F001D9D94 /* TotalInfoCell.swift in Sources */,
+				AC8D62C122574323004D0323 /* SetNewPassVC.swift in Sources */,
 				AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */,
 				AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */,
 			);
