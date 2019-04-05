@@ -228,7 +228,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGP-Mw-9KZ">
-                                                            <rect key="frame" x="18" y="0.0" width="732" height="68"/>
+                                                            <rect key="frame" x="18" y="0.0" width="339" height="68"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zam счет RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nX-TH-Fgz" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                                                     <rect key="frame" x="68" y="17" width="73.666666666666686" height="12"/>
@@ -246,7 +246,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="link2" translatesAutoresizingMaskIntoConstraints="NO" id="fjh-aw-R92">
-                                                                    <rect key="frame" x="649" y="26" width="16" height="16"/>
+                                                                    <rect key="frame" x="256" y="26" width="16" height="16"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="16" id="L0k-qd-8pF"/>
                                                                         <constraint firstAttribute="width" constant="16" id="hBK-Mk-9EK"/>
@@ -273,7 +273,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyI-WO-9k4">
-                                                                    <rect key="frame" x="673" y="20" width="41" height="28"/>
+                                                                    <rect key="frame" x="280" y="20" width="41" height="28"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1101" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="dl6-f9-QAb" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                                                             <rect key="frame" x="5" y="0.0" width="31" height="28"/>
@@ -466,7 +466,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbF-Ew-aiu">
-                                                            <rect key="frame" x="18" y="0.0" width="732" height="68"/>
+                                                            <rect key="frame" x="18" y="0.0" width="339" height="68"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-nL-vzS">
                                                                     <rect key="frame" x="10" y="14" width="40" height="40"/>
@@ -501,7 +501,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="GHz-R7-ufq">
-                                                                    <rect key="frame" x="691" y="22" width="24" height="24"/>
+                                                                    <rect key="frame" x="298" y="22" width="24" height="24"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="24" id="93f-Ur-Oey"/>
                                                                         <constraint firstAttribute="width" constant="24" id="XpE-CQ-blQ"/>
@@ -548,7 +548,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Lsf-F7-rf8">
-                                                            <rect key="frame" x="29" y="9" width="685" height="80"/>
+                                                            <rect key="frame" x="29" y="9" width="292" height="80"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="G34-Q2-TY8"/>
@@ -1484,7 +1484,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ago-ha-3Dm">
-                                                            <rect key="frame" x="18" y="5" width="732" height="48"/>
+                                                            <rect key="frame" x="18" y="5" width="339" height="48"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-Jl-PEg">
                                                                     <rect key="frame" x="11" y="9" width="30" height="30"/>
@@ -1495,7 +1495,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+7 916 232-33-99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8r-jG-H6F">
-                                                                    <rect key="frame" x="55" y="13" width="659" height="21"/>
+                                                                    <rect key="frame" x="55" y="13" width="266" height="21"/>
                                                                     <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                     <textInputTraits key="textInputTraits"/>
@@ -1544,10 +1544,10 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwQ-xt-Vtb">
-                                                            <rect key="frame" x="18" y="5" width="732" height="48"/>
+                                                            <rect key="frame" x="18" y="5" width="339" height="48"/>
                                                             <subviews>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0h9-MC-rWW">
-                                                                    <rect key="frame" x="11" y="4" width="710" height="44"/>
+                                                                    <rect key="frame" x="11" y="4" width="317" height="44"/>
                                                                     <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done" smartDashesType="yes"/>
@@ -1593,7 +1593,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocs-PF-gYR">
-                                                            <rect key="frame" x="18" y="5" width="732" height="48"/>
+                                                            <rect key="frame" x="18" y="5" width="339" height="48"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РОССИЯ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBE-zS-8kf" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                                                     <rect key="frame" x="14" y="16" width="56" height="16"/>
@@ -1602,7 +1602,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="I1h-Jd-Udh">
-                                                                    <rect key="frame" x="690" y="12" width="24" height="24"/>
+                                                                    <rect key="frame" x="297" y="12" width="24" height="24"/>
                                                                     <color key="tintColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="I1h-Jd-Udh" secondAttribute="height" multiplier="1:1" id="e7f-YI-JhK"/>
@@ -1806,10 +1806,10 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRr-Ol-0IR">
-                                                            <rect key="frame" x="720" y="6.6666666666666679" width="27" height="27.000000000000004"/>
+                                                            <rect key="frame" x="327" y="6.6666666666666679" width="27" height="27.000000000000004"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="EYV-MF-YnF">
-                                                                    <rect key="frame" x="1.6666666666666288" y="1.3333333333333321" width="24" height="24"/>
+                                                                    <rect key="frame" x="1.6666666666666856" y="1.3333333333333321" width="24" height="24"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="24" id="1gU-FV-qMb"/>
@@ -1826,7 +1826,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZrQ-fN-CSm">
-                                                            <rect key="frame" x="21" y="39" width="730" height="1"/>
+                                                            <rect key="frame" x="21" y="39" width="337" height="1"/>
                                                             <color key="backgroundColor" red="0.87450980389999999" green="0.87843137250000003" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="kdp-6t-qek"/>
@@ -1878,10 +1878,10 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-WX-rPn">
-                                                            <rect key="frame" x="720" y="6.6666666666666679" width="27" height="27.000000000000004"/>
+                                                            <rect key="frame" x="327" y="6.6666666666666679" width="27" height="27.000000000000004"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="zVg-A4-kyA">
-                                                                    <rect key="frame" x="1.6666666666666288" y="1.3333333333333321" width="24" height="24"/>
+                                                                    <rect key="frame" x="1.6666666666666856" y="1.3333333333333321" width="24" height="24"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="24" id="M1a-tV-OHY"/>
@@ -1898,7 +1898,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6b-tb-7a0">
-                                                            <rect key="frame" x="21" y="39" width="730" height="1"/>
+                                                            <rect key="frame" x="21" y="39" width="337" height="1"/>
                                                             <color key="backgroundColor" red="0.87450980389999999" green="0.87843137250000003" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="MF5-bd-YZz"/>
@@ -1948,10 +1948,10 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhP-r4-Bii">
-                                                            <rect key="frame" x="720" y="9" width="27" height="27"/>
+                                                            <rect key="frame" x="327" y="9" width="27" height="27"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="2Uj-2o-owC">
-                                                                    <rect key="frame" x="1.6666666666666288" y="1.6666666666666661" width="24" height="24"/>
+                                                                    <rect key="frame" x="1.6666666666666856" y="1.6666666666666661" width="24" height="24"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="24" id="ddW-RF-cd5"/>
@@ -1968,7 +1968,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1F-sm-5iV">
-                                                            <rect key="frame" x="21" y="44" width="730" height="1"/>
+                                                            <rect key="frame" x="21" y="44" width="337" height="1"/>
                                                             <color key="backgroundColor" red="0.87450980392156863" green="0.8784313725490196" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="jnB-GQ-a7v"/>
@@ -2004,13 +2004,13 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9z-99-ajK">
-                                                            <rect key="frame" x="8" y="12" width="752" height="190"/>
+                                                            <rect key="frame" x="8" y="12" width="359" height="190"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPv-Ho-R9R">
-                                                                    <rect key="frame" x="10" y="14" width="732" height="48"/>
+                                                                    <rect key="frame" x="10" y="14" width="339" height="48"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер карты" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Krl-Ct-NDV" customClass="AKMaskField" customModule="AKMaskField">
-                                                                            <rect key="frame" x="11" y="4" width="710" height="44"/>
+                                                                            <rect key="frame" x="11" y="4" width="317" height="44"/>
                                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="cc-number"/>
@@ -2030,10 +2030,10 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFQ-S7-LB3">
-                                                                    <rect key="frame" x="10" y="72" width="244" height="48"/>
+                                                                    <rect key="frame" x="10" y="72" width="113" height="48"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ММ/ГГ" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="THR-SM-9zO" customClass="AKMaskField" customModule="AKMaskField">
-                                                                            <rect key="frame" x="11" y="4" width="222" height="44"/>
+                                                                            <rect key="frame" x="11" y="4" width="91" height="44"/>
                                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="cc-number"/>
@@ -2053,10 +2053,10 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhK-RC-JLn">
-                                                                    <rect key="frame" x="498" y="72" width="244" height="48"/>
+                                                                    <rect key="frame" x="236" y="72" width="113" height="48"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6i3-1p-lnE" customClass="AKMaskField" customModule="AKMaskField">
-                                                                            <rect key="frame" x="11" y="4" width="222" height="44"/>
+                                                                            <rect key="frame" x="11" y="4" width="91" height="44"/>
                                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="cc-number"/>
@@ -2076,10 +2076,10 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pmo-bO-GaM">
-                                                                    <rect key="frame" x="10" y="132" width="732" height="48"/>
+                                                                    <rect key="frame" x="10" y="132" width="339" height="48"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Держатель карты" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IOr-Gr-jaA" customClass="AKMaskField" customModule="AKMaskField">
-                                                                            <rect key="frame" x="11" y="4" width="710" height="44"/>
+                                                                            <rect key="frame" x="11" y="4" width="317" height="44"/>
                                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                             <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="done" smartInsertDeleteType="no"/>
@@ -2137,7 +2137,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" CVV " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAE-On-1Hw" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="517" y="77" width="19" height="14"/>
+                                                            <rect key="frame" x="255" y="77" width="19" height="14"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="14" id="5j4-2E-Ptr"/>
@@ -2157,7 +2157,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51k-Wl-XFg">
-                                                            <rect key="frame" x="19" y="220" width="733" height="1"/>
+                                                            <rect key="frame" x="19" y="220" width="340" height="1"/>
                                                             <color key="backgroundColor" red="0.87450980389999999" green="0.87843137250000003" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="Pht-Ra-fOr"/>
@@ -2215,7 +2215,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,00 USD = 67,51 RUB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6d-hO-L9y" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="637.66666666666663" y="18" width="104.33333333333337" height="12"/>
+                                                            <rect key="frame" x="244.66666666666663" y="18" width="104.33333333333334" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="Jq3-UE-SqD"/>
                                                             </constraints>
@@ -2233,7 +2233,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Без комиссии (0%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pg-lb-JSs" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="642.66666666666663" y="48" width="99.333333333333371" height="12"/>
+                                                            <rect key="frame" x="249.66666666666663" y="48" width="99.333333333333343" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="ZUs-H5-yyD"/>
                                                             </constraints>
@@ -2252,7 +2252,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-qQ-oHp">
-                                                            <rect key="frame" x="656" y="71" width="86" height="34"/>
+                                                            <rect key="frame" x="263" y="71" width="86" height="34"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+101,26 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEg-36-3nS" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                                                     <rect key="frame" x="13" y="8" width="57" height="18"/>
@@ -2278,7 +2278,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 126,50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7e-cb-fqc" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="658" y="125" width="84" height="22"/>
+                                                            <rect key="frame" x="265" y="125" width="84" height="22"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="22"/>
                                                             <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -2422,7 +2422,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="DOY-5L-atg">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IDH-rR-tYB" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="IDH-rR-tYB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="centered" id="vOB-kK-9gi">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="49"/>

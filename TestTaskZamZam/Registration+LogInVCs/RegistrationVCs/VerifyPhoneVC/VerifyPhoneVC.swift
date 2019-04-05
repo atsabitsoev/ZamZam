@@ -106,7 +106,11 @@ class VerifyPhoneVC: UIViewController {
         
         let setNewPassVC = UIStoryboard(name: "Registration+LogIn",
                                         bundle: nil)
-            .instantiateViewController(withIdentifier: "SetNewPassVC")
+            .instantiateViewController(withIdentifier: "SetNewPassVC") as! SetNewPassVC
+        
+        let phone = tfCountryCode.text! + tfPhoneNumber.text!.withoutSpaces()
+        setNewPassVC.phoneNumber = phone
+        
         self.navigationController?.show(setNewPassVC, sender: nil)
         
     }
@@ -137,7 +141,7 @@ class VerifyPhoneVC: UIViewController {
     @IBAction func butNextTapped(_ sender: UIButton) {
         sender.setTitle("Отправить еще раз", for: .normal)
         
-        let phone = tfCountryCode.text! + tfPhoneNumber.text!
+        let phone = tfCountryCode.text! + tfPhoneNumber.text!.withoutSpaces()
         twilioService.sendShortCode(phone: phone)
     }
     

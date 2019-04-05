@@ -8,6 +8,7 @@
 
 import UIKit
 import KeychainSwift
+import AKMaskField
 
 class SetNewPassVC: UIViewController {
     
@@ -16,16 +17,17 @@ class SetNewPassVC: UIViewController {
     @IBOutlet weak var tfNewPassword: UITextField!
     @IBOutlet weak var tfRepeatPassword: UITextField!
     @IBOutlet weak var butEnter: UIButton!
+    @IBOutlet weak var tfCodeToEnterInApp: AKMaskField!
     
     
     let keychain = KeychainSwift()
-    var phoneNumber: String? = "89"
+    var phoneNumber: String?
     let minPasswordCharacters = 8
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(phoneNumber)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,19 +40,31 @@ class SetNewPassVC: UIViewController {
         tfNewPassword.layer.cornerRadius = 8
         tfRepeatPassword.layer.cornerRadius = 8
         butEnter.layer.cornerRadius = 8
+        tfCodeToEnterInApp.layer.cornerRadius = 8
     }
     
     func savePass() {
+        
+        
         guard let pass = tfNewPassword.text else { return }
         guard let repeatedPass = tfRepeatPassword.text else { return }
         guard pass == repeatedPass else { return }
         guard let phoneNumber = phoneNumber else { return }
         
         keychain.set(pass, forKey: phoneNumber)
+        print(keychain.get(phoneNumber))
+    }
+    
+    func saveCodeToEnterInApp() {
+        if let text = tfCodeToEnterInApp.text, text.countOfNumbers() == 4 {
+            keychain.set(text, forKey: "PIN")
+        }
+        
     }
     
     func goToEnterVC() {
-        self.navigationController
+        let enterVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "EnterVC")
+        self.present(enterVC, animated: true, completion: nil)
     }
     
     
@@ -66,6 +80,7 @@ class SetNewPassVC: UIViewController {
     
     @IBAction func butEnterTapped(_ sender: UIButton) {
         savePass()
+        saveCodeToEnterInApp()
         goToEnterVC()
     }
     
