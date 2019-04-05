@@ -36,6 +36,15 @@ class EnterVC: UIViewController {
         butEnter.layer.cornerRadius = 8
     }
     
+    func goToMainVC() {
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        self.present(mainVC!, animated: true, completion: nil)
+    }
+    
+    func rememberUser() {
+        UserDefaults.standard.set(true, forKey: "userEntered")
+    }
+    
     
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
         TFService.checkPrefix(prefix: "+", sender)
@@ -51,9 +60,8 @@ class EnterVC: UIViewController {
         guard let rightPassword = keychain.get(phone) else { return }
         
         if password == rightPassword {
-            let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-            self.present(mainVC!, animated: true, completion: nil)
-            
+            rememberUser()
+            goToMainVC()
         }
     }
     
