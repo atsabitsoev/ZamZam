@@ -3,6 +3,7 @@ PODS:
   - Alamofire (5.0.0-beta.3)
   - FlagKit (2.0.1)
   - Hero (1.4.0)
+  - KeychainSwift (13.0.0)
   - PhoneNumberKit (2.6.0):
     - PhoneNumberKit/PhoneNumberKitCore (= 2.6.0)
     - PhoneNumberKit/UIKit (= 2.6.0)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.3)
   - FlagKit (~> 2.0.1)
   - Hero
+  - KeychainSwift
   - PhoneNumberKit (~> 2.6)
   - SwiftyJSON (~> 4.0)
 
@@ -25,6 +27,7 @@ SPEC REPOS:
     - Alamofire
     - FlagKit
     - Hero
+    - KeychainSwift
     - PhoneNumberKit
     - SwiftyJSON
 
@@ -33,9 +36,10 @@ SPEC CHECKSUMS:
   Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
   FlagKit: 75c64346179f254d1753bebdc5b1f9cbe7890748
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
   PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 3e9f428d3d9ee44d5608f2a6c74bd62bb58af5ec
+PODFILE CHECKSUM: 87a7bcebffe4f4ca8e9cbaf8931a369011653de6
 
 COCOAPODS: 1.6.1

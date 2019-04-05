@@ -42,6 +42,8 @@
 		AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */; };
 		AC5EA173223940C900EDA066 /* TransCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA172223940C900EDA066 /* TransCell.swift */; };
 		AC8D62C122574323004D0323 /* SetNewPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C022574323004D0323 /* SetNewPassVC.swift */; };
+		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
+		AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C82257544F004D0323 /* EnterVC.swift */; };
 		ACA8A0DC2255F8EA00EFBE1A /* RegOrLogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
@@ -111,6 +113,8 @@
 		AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersTableView.swift; sourceTree = "<group>"; };
 		AC5EA172223940C900EDA066 /* TransCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransCell.swift; sourceTree = "<group>"; };
 		AC8D62C022574323004D0323 /* SetNewPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPassVC.swift; sourceTree = "<group>"; };
+		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
+		AC8D62C82257544F004D0323 /* EnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterVC.swift; sourceTree = "<group>"; };
 		ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegOrLogScreen.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
@@ -331,12 +335,22 @@
 			path = SetNewPassVC;
 			sourceTree = "<group>";
 		};
+		AC8D62C72257543F004D0323 /* EnterVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D62C82257544F004D0323 /* EnterVC.swift */,
+			);
+			path = EnterVC;
+			sourceTree = "<group>";
+		};
 		ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */ = {
 			isa = PBXGroup;
 			children = (
 				ACA8A0DB2255F8EA00EFBE1A /* RegOrLogScreen.swift */,
+				AC8D62C322574664004D0323 /* TFService.swift */,
 				AC53F9DB225627A30086A0D3 /* Twilio */,
 				ACA8A0DD2255F90F00EFBE1A /* RegistrationVCs */,
+				AC8D62C72257543F004D0323 /* EnterVC */,
 			);
 			path = "Registration+LogInVCs";
 			sourceTree = "<group>";
@@ -584,6 +598,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -595,6 +610,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlagKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -611,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B7DFED4223021AF00ECF0D3 /* CollectionViewCell1.swift in Sources */,
+				AC8D62C422574664004D0323 /* TFService.swift in Sources */,
 				AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */,
 				AC110AA2223A5A5100D1F8D8 /* WhatCountryCell.swift in Sources */,
 				ACFBAC3A2240FB35001D9D94 /* ZamBillCell.swift in Sources */,
@@ -642,6 +659,7 @@
 				AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */,
 				AC2859EC224CF85E004852C4 /* Currency.swift in Sources */,
 				ACFAF76E223F8B82008C731B /* SenderCellCountry.swift in Sources */,
+				AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */,
 				AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */,
 				5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */,
 				ACFAF767223F8B07008C731B /* SenderVC.swift in Sources */,

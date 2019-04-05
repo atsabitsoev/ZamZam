@@ -85,24 +85,6 @@ class VerifyPhoneVC: UIViewController {
         tfPhoneNumber.becomeFirstResponder()
     }
     
-    func checkPrefix(prefix: String,_ field: UITextField) {
-        if (field.text != nil) && !field.text!.hasPrefix(prefix) {
-            for char in prefix {
-                if field.text!.hasPrefix(prefix) {
-                    return
-                }
-                field.text!.insert(char, at: field.text!.startIndex)
-            }
-            
-        }
-    }
-    
-    func checkMaxCharacters(count: Int, field: UITextField) {
-        if let text = field.text, text.count > count {
-            field.text!.removeLast(text.count - count)
-        }
-    }
-    
     
     @objc func setVisibleTFs() {
         switch twilioService.shortCodeSent {
@@ -132,13 +114,13 @@ class VerifyPhoneVC: UIViewController {
     
     @IBAction func tFCountryCodeTextChanged(_ sender: UITextField) {
         setCountryFlag()
-        checkPrefix(prefix: "+", sender)
-        checkMaxCharacters(count: 1 + maxCountryCodeLength,
+        TFService.checkPrefix(prefix: "+", sender)
+        TFService.checkMaxCharacters(count: 1 + maxCountryCodeLength,
                            field: sender)
     }
     
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
-        checkPrefix(prefix: "  ", sender)
+        TFService.checkPrefix(prefix: "  ", sender)
     }
     
     
