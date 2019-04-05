@@ -60,6 +60,9 @@
                         <viewLayoutGuide key="safeArea" id="hzI-Un-Pzg"/>
                     </view>
                     <navigationItem key="navigationItem" id="OkW-rx-e4h"/>
+                    <connections>
+                        <outlet property="butReg" destination="3qQ-RT-19f" id="Sph-NR-9G2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rca-5o-27N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +85,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+7" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ueJ-d7-za9">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+7" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ueJ-d7-za9">
                                         <rect key="frame" x="8" y="80" width="67" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -92,8 +95,12 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="maskExpression" value="+{ddd}"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="maskTemplate" value=" "/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="tFCountryCodeTextChanged:" destination="eC9-ib-Pcp" eventType="editingChanged" id="vFu-cV-v63"/>
+                                            <action selector="tFCountryCodeTextChanged:" destination="eC9-ib-Pcp" eventType="editingChanged" id="MYH-YF-bta"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-Vk-CGZ">
@@ -130,8 +137,8 @@
                                             <constraint firstAttribute="width" constant="168" id="bDp-FJ-ykv"/>
                                             <constraint firstAttribute="height" constant="50" id="gJh-uc-edz"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                        <state key="normal" title="Далее">
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="18"/>
+                                        <state key="normal" title="Отпрвить код">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -154,6 +161,9 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="maskExpression" value="{dddddd}"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="tFShortCodeTextChanged:" destination="eC9-ib-Pcp" eventType="editingChanged" id="koq-sa-yxR"/>
                                         </connections>
@@ -223,11 +233,27 @@
         <!--View Controller-->
         <scene sceneID="dVA-A9-LZx">
             <objects>
-                <viewController id="GMa-Hd-QQu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetNewPassVC" id="GMa-Hd-QQu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k1l-Gk-yTq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ура!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqe-uE-Wn4">
+                                <rect key="frame" x="92" y="346" width="191" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Ob7-FR-6TM"/>
+                                    <constraint firstAttribute="width" constant="191" id="gWa-F1-AYI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qqe-uE-Wn4" firstAttribute="centerY" secondItem="k1l-Gk-yTq" secondAttribute="centerY" id="dXD-BP-Jxv"/>
+                            <constraint firstItem="Qqe-uE-Wn4" firstAttribute="centerX" secondItem="k1l-Gk-yTq" secondAttribute="centerX" id="w6k-pj-21v"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xcR-nC-wYO"/>
                     </view>
                 </viewController>

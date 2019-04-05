@@ -25,6 +25,7 @@ class VerifyPhoneVC: UIViewController {
     
     let twilioService = TwilioService.standard
     let codeVerified = TwilioService.standard.shortCodeVerified
+    let maxCountryCodeLength = 3
     
 
     override func viewDidLoad() {
@@ -51,28 +52,49 @@ class VerifyPhoneVC: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setCountryFlag()
+    }
+    
     func configureView() {
         
         viewBigWhite.layer.cornerRadius = 16
         tfShortCode.layer.cornerRadius = 8
         tfPhoneNumber.layer.cornerRadius = 8
         tfCountryCode.layer.cornerRadius = 8
-        butNext.layer.cornerRadius = butNext.bounds.height/2
+        butNext.layer.cornerRadius = 8
         butNext.clipsToBounds = true
         setVisibleTFs()
-        setCountryFlag()
         
     }
     
     func setCountryFlag() {
-        
-        guard let countryCode = UInt64(tfCountryCode!.text!) else { return }
         let phoneNumberKit = PhoneNumberKit()
-        if let country = phoneNumberKit.mainCountry(forCode: countryCode) {
-            let flagImage = Flag(countryCode: country)?.image(style: .circle)
-            imCountry.image = flagImage
+        
+        guard let countryCode = UInt64(tfCountryCode!.text!) else {
+            imCountry.image = UIImage()
+            return
         }
-
+        guard let country = phoneNumberKit.mainCountry(forCode: countryCode) else {
+            imCountry.image = UIImage()
+            return
+        }
+    
+        let flagImage = Flag(countryCode: country)?.image(style: .circle)
+        imCountry.image = flagImage
+        tfPhoneNumber.becomeFirstResponder()
+    }
+    
+    func checkPlus(_ field: UITextField) {
+        if (field.text != nil) && !field.text!.hasPrefix("+") {
+            field.text!.insert("+", at: field.text!.startIndex)
+        }
+    }
+    
+    func checkMaxCharacters(count: Int, field: UITextField) {
+        if let text = field.text, text.count > count {
+            field.text!.removeLast(text.count - count)
+        }
     }
     
     
@@ -94,40 +116,36 @@ class VerifyPhoneVC: UIViewController {
     
     @objc func verificationSucceed() {
         
-        print("verification succeed")
+        let setNewPassVC = UIStoryboard(name: "Registration+LogIn",
+                                        bundle: nil)
+            .instantiateViewController(withIdentifier: "SetNewPassVC")
+        self.navigationController?.show(setNewPassVC, sender: nil)
         
     }
     
     
     @IBAction func tFCountryCodeTextChanged(_ sender: UITextField) {
-        
-        let text = sender.text!
-        let code = UInt64(text) ?? 0
-        if PhoneNumberKit().mainCountry(forCode: code) != nil {
-            print(PhoneNumberKit().countries(withCode: code)!)
-            print("\n")
-        } else {
-            imCountry.image = UIImage()
-        }
-        
+        setCountryFlag()
+        checkPlus(sender)
+        checkMaxCharacters(count: 1 + maxCountryCodeLength,
+                           field: sender)
     }
     
     @IBAction func tFShortCodeTextChanged(_ sender: UITextField) {
+        if let code = sender.text, code.count == 6 {
+            twilioService.checkShortCode(code: code)
+        }
     }
     
     @IBAction func butBackTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func butNextTapped(_ sender: Any) {
+    @IBAction func butNextTapped(_ sender: UIButton) {
+        sender.setTitle("Отправить еще раз", for: .normal)
         
-        if twilioService.shortCodeSent {
-            if let code = tfShortCode.text {
-                twilioService.checkShortCode(code: code)
-            }
-        } else {
-            twilioService.sendShortCode(phone: "+79777872475")
-        }
+        let phone = tfCountryCode.text! + tfPhoneNumber.text!
+        twilioService.sendShortCode(phone: phone)
     }
     
     

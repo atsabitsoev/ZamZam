@@ -9,10 +9,18 @@
 import UIKit
 
 class RegOrLogScreen: UIViewController {
-
+    
+    
+    @IBOutlet weak var butReg: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewWillLayoutSubviews() {
+        butReg.layer.cornerRadius = 8
     }
 
 }
