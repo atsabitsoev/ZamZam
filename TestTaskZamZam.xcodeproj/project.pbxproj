@@ -30,6 +30,7 @@
 		AC110AA8223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AA5223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf */; };
 		AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */; };
 		AC110AB5223A8AD200D1F8D8 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */; };
+		AC1A5274225B26F70021B79C /* PIN VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1A5273225B26F70021B79C /* PIN VC.swift */; };
 		AC2859EC224CF85E004852C4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2859EB224CF85E004852C4 /* Currency.swift */; };
 		AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */; };
 		AC436CAD224A6503006FA348 /* Pods_TestTaskZamZam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */; };
@@ -102,6 +103,7 @@
 		AC110AA5223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kelson Sans Bold RU.otf"; path = "../../../../Library/Fonts/Kelson Sans Bold RU.otf"; sourceTree = "<group>"; };
 		AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryTextField.swift; sourceTree = "<group>"; };
 		AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "../../../../Library/Fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		AC1A5273225B26F70021B79C /* PIN VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PIN VC.swift"; sourceTree = "<group>"; };
 		AC2859EB224CF85E004852C4 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferGoneVC.swift; sourceTree = "<group>"; };
 		AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestTaskZamZam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -280,6 +282,14 @@
 			path = "Entities + Servicies";
 			sourceTree = "<group>";
 		};
+		AC1A5272225B26DB0021B79C /* PIN VC */ = {
+			isa = PBXGroup;
+			children = (
+				AC1A5273225B26F70021B79C /* PIN VC.swift */,
+			);
+			path = "PIN VC";
+			sourceTree = "<group>";
+		};
 		AC53F9DB225627A30086A0D3 /* Twilio */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +364,7 @@
 				AC53F9DB225627A30086A0D3 /* Twilio */,
 				ACA8A0DD2255F90F00EFBE1A /* RegistrationVCs */,
 				AC8D62C72257543F004D0323 /* EnterVC */,
+				AC1A5272225B26DB0021B79C /* PIN VC */,
 			);
 			path = "Registration+LogInVCs";
 			sourceTree = "<group>";
@@ -663,6 +674,7 @@
 				AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */,
 				AC2859EC224CF85E004852C4 /* Currency.swift in Sources */,
 				ACFAF76E223F8B82008C731B /* SenderCellCountry.swift in Sources */,
+				AC1A5274225B26F70021B79C /* PIN VC.swift in Sources */,
 				AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */,
 				AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */,
 				5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */,
