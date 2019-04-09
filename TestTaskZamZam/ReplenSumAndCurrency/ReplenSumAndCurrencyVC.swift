@@ -11,6 +11,7 @@ import UIKit
 class ReplenSumAndCurrencyVC: UIViewController {
     
     
+    @IBOutlet weak var viewBigWhite: UIView!
     @IBOutlet weak var labTitleSum: myLabel!
     @IBOutlet weak var viewSum: UIView!
     @IBOutlet weak var tfSum: UITextField!
@@ -24,17 +25,29 @@ class ReplenSumAndCurrencyVC: UIViewController {
     @IBOutlet weak var butBack: UIButton!
     @IBOutlet weak var butClose: UIButton!
     
+    
+    var currentCurrencyCourse: CGFloat? = 67.51
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewBigWhite.layer.cornerRadius = 16
     }
     
     override func viewWillLayoutSubviews() {
+        
         configureButNext()
         configureNavigationButtons()
+        setGrayBorder(to: viewSum)
+        setGrayBorder(to: viewCurrency)
     }
     
+    
+    func setGrayBorder(to view: UIView) {
+        view.layer.borderColor = #colorLiteral(red: 0.8745098039, green: 0.8784313725, blue: 0.9254901961, alpha: 1)
+        view.layer.borderWidth = 2
+        view.layer.cornerRadius = 8
+    }
     
     func configureButNext() {
         print("Рамка кнопки некст: \(butNext.bounds)")
@@ -81,6 +94,29 @@ class ReplenSumAndCurrencyVC: UIViewController {
     }
     
     
+    @IBAction func tfSumTextChanged(_ sender: UITextField) {
+        
+        if let sum = Int(tfSum.text ?? "") {
+            var sumInRubbles = CGFloat(sum) * currentCurrencyCourse!
+            print(CGFloat(sum))
+            print(currentCurrencyCourse!)
+            print(sumInRubbles)
+            sumInRubbles *= 100
+            sumInRubbles.round(.toNearestOrEven)
+            sumInRubbles /= 100
+            
+            var sumInRubblesString = "\(sumInRubbles)"
+            if sumInRubblesString.hasSuffix(".0") {
+                sumInRubblesString.removeLast(2)
+            }
+            sumInRubblesString = "\(sumInRubblesString) RUB"
+            labTotalSum.text = sumInRubblesString
+        } else {
+            labTotalSum.text = "0 RUB"
+        }
+        
+    }
+    
     @IBAction func butBackTapped(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -89,5 +125,7 @@ class ReplenSumAndCurrencyVC: UIViewController {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     
 }

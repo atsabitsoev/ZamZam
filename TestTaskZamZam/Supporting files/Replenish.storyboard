@@ -265,14 +265,34 @@
                                     <constraint firstItem="cXN-kV-Ev7" firstAttribute="leading" secondItem="sno-c7-rn7" secondAttribute="leading" constant="18" id="htX-h4-Yn2"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzy-TO-1lM">
+                                <rect key="frame" x="355" y="792" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6Xo-8r-kX5"/>
+                                    <constraint firstAttribute="width" constant="20" id="GMj-NJ-LNX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsn-JW-8qA">
+                                <rect key="frame" x="0.0" y="792" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2O7-z6-1jy"/>
+                                    <constraint firstAttribute="width" constant="20" id="5cw-HF-IOZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1259082258" green="0.16076499220000001" blue="0.39217829700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="tsn-JW-8qA" firstAttribute="leading" secondItem="gaN-wQ-gR8" secondAttribute="leading" id="ADd-7h-c6a"/>
                             <constraint firstItem="sno-c7-rn7" firstAttribute="leading" secondItem="Hau-o7-hne" secondAttribute="leading" id="AyM-7l-QN0"/>
                             <constraint firstItem="qFF-lF-ia9" firstAttribute="leading" secondItem="Hau-o7-hne" secondAttribute="leading" constant="16" id="Eyw-Yf-lNE"/>
+                            <constraint firstAttribute="bottom" secondItem="tsn-JW-8qA" secondAttribute="bottom" id="Gx6-tC-vJ1"/>
+                            <constraint firstAttribute="bottom" secondItem="qzy-TO-1lM" secondAttribute="bottom" id="Mdh-vq-G1E"/>
                             <constraint firstItem="sno-c7-rn7" firstAttribute="trailing" secondItem="Hau-o7-hne" secondAttribute="trailing" id="dp8-Qt-FcT"/>
                             <constraint firstItem="sno-c7-rn7" firstAttribute="top" secondItem="qFF-lF-ia9" secondAttribute="bottom" constant="9" id="s9y-Ws-Na4"/>
                             <constraint firstAttribute="bottom" secondItem="sno-c7-rn7" secondAttribute="bottom" id="tYD-Rm-wIo"/>
+                            <constraint firstItem="qzy-TO-1lM" firstAttribute="trailing" secondItem="Hau-o7-hne" secondAttribute="trailing" id="w2T-2s-cV7"/>
                             <constraint firstItem="qFF-lF-ia9" firstAttribute="top" secondItem="Hau-o7-hne" secondAttribute="top" constant="9" id="zf3-4U-jLs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hau-o7-hne"/>
@@ -287,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJJ-Oa-CAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1180" y="55.418719211822662"/>
+            <point key="canvasLocation" x="887" y="55"/>
         </scene>
         <!--Replen Sum And CurrencyVC-->
         <scene sceneID="Dv1-wr-Y0p">
@@ -343,7 +363,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Vzu-Ic-tqi" secondAttribute="trailing" constant="8" id="07t-Gg-pfo"/>
                                             <constraint firstAttribute="width" secondItem="ndn-eN-AIp" secondAttribute="height" multiplier="85:48" id="0Za-XC-gXO"/>
@@ -359,9 +378,11 @@
                                                 <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="tfSumTextChanged:" destination="W2x-ug-KvM" eventType="editingChanged" id="OlZ-IC-bl7"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Ei9-Eu-ZVY" secondAttribute="trailing" constant="8" id="FRj-R4-Cjo"/>
                                             <constraint firstAttribute="width" secondItem="t9H-pF-K9s" secondAttribute="height" multiplier="5:1" id="Ugf-bj-D7d"/>
@@ -423,8 +444,8 @@
                                         <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9344,34 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyD-yW-GWI" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="229.66666666666666" y="171" width="118.33333333333334" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 RUB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyD-yW-GWI" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="293.33333333333331" y="171" width="54.666666666666686" height="22"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="22"/>
                                         <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -496,6 +517,22 @@
                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mga-jG-4ml">
+                                <rect key="frame" x="0.0" y="792" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="tFS-mI-zo7"/>
+                                    <constraint firstAttribute="width" constant="20" id="yIf-6p-LSf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hD-rx-NSa">
+                                <rect key="frame" x="355" y="792" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="53S-C6-g4d"/>
+                                    <constraint firstAttribute="width" constant="20" id="YiD-c6-yVA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1259082258" green="0.16076499220000001" blue="0.39217829700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -503,10 +540,14 @@
                             <constraint firstItem="zGY-KV-dOK" firstAttribute="leading" secondItem="oIF-nR-dKY" secondAttribute="leading" constant="18" id="HUt-dD-Oku"/>
                             <constraint firstItem="vpd-ru-OE2" firstAttribute="top" secondItem="zGY-KV-dOK" secondAttribute="bottom" constant="9" id="Pza-ar-dz1"/>
                             <constraint firstItem="vpd-ru-OE2" firstAttribute="leading" secondItem="oIF-nR-dKY" secondAttribute="leading" id="Ruk-Xo-U1x"/>
+                            <constraint firstItem="Mga-jG-4ml" firstAttribute="leading" secondItem="oIF-nR-dKY" secondAttribute="leading" id="VTo-2V-7xj"/>
                             <constraint firstItem="vpd-ru-OE2" firstAttribute="trailing" secondItem="oIF-nR-dKY" secondAttribute="trailing" id="YIn-G6-A1K"/>
                             <constraint firstItem="UNl-RE-b0R" firstAttribute="leading" secondItem="t9H-pF-K9s" secondAttribute="leading" constant="11" id="i9W-Mc-fZC"/>
                             <constraint firstItem="UNl-RE-b0R" firstAttribute="top" secondItem="t9H-pF-K9s" secondAttribute="top" constant="-5" id="jvI-As-hkQ"/>
+                            <constraint firstAttribute="trailing" secondItem="3hD-rx-NSa" secondAttribute="trailing" id="m47-Ts-LQl"/>
                             <constraint firstAttribute="bottom" secondItem="vpd-ru-OE2" secondAttribute="bottom" id="oR1-bg-3CG"/>
+                            <constraint firstAttribute="bottom" secondItem="Mga-jG-4ml" secondAttribute="bottom" id="oq7-fe-KT3"/>
+                            <constraint firstAttribute="bottom" secondItem="3hD-rx-NSa" secondAttribute="bottom" id="sOe-pz-1l9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oIF-nR-dKY"/>
                     </view>
@@ -521,13 +562,72 @@
                         <outlet property="labTitleSum" destination="UNl-RE-b0R" id="WJd-6O-ggC"/>
                         <outlet property="labTotalSum" destination="SyD-yW-GWI" id="9tp-Wy-yTD"/>
                         <outlet property="tfSum" destination="Ei9-Eu-ZVY" id="90J-r1-KMF"/>
+                        <outlet property="viewBigWhite" destination="vpd-ru-OE2" id="lzt-uK-zso"/>
                         <outlet property="viewCurrency" destination="ndn-eN-AIp" id="DD3-3G-xhK"/>
                         <outlet property="viewSum" destination="t9H-pF-K9s" id="fOO-KU-ls1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tq-Pa-gbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1997.5999999999999" y="54.679802955665025"/>
+            <point key="canvasLocation" x="1594" y="55"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fah-4H-7QY">
+            <objects>
+                <viewController id="rBv-F8-2la" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YQA-M4-n7i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пополнить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgU-gu-bsk" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                <rect key="frame" x="18" y="53" width="172" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="6MP-dC-xte"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98Y-TV-7WU">
+                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiR-Kf-td9">
+                                <rect key="frame" x="0.0" y="792" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="MmT-Jm-E4t"/>
+                                    <constraint firstAttribute="width" constant="20" id="ZcC-GD-pcu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55a-xT-RsW">
+                                <rect key="frame" x="355" y="792" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="3Gh-w9-pK1"/>
+                                    <constraint firstAttribute="height" constant="20" id="Wfm-gu-IGD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1259082258" green="0.16076499220000001" blue="0.39217829700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="EiR-Kf-td9" firstAttribute="leading" secondItem="YQA-M4-n7i" secondAttribute="leading" id="8ZZ-s6-sVU"/>
+                            <constraint firstAttribute="bottom" secondItem="55a-xT-RsW" secondAttribute="bottom" id="KFh-qk-wRt"/>
+                            <constraint firstItem="pgU-gu-bsk" firstAttribute="leading" secondItem="aY0-ez-S0y" secondAttribute="leading" constant="18" id="OWr-Kp-ms3"/>
+                            <constraint firstAttribute="bottom" secondItem="98Y-TV-7WU" secondAttribute="bottom" id="Qje-ah-bz3"/>
+                            <constraint firstItem="98Y-TV-7WU" firstAttribute="leading" secondItem="aY0-ez-S0y" secondAttribute="leading" id="Wdv-1l-fhu"/>
+                            <constraint firstItem="aY0-ez-S0y" firstAttribute="trailing" secondItem="55a-xT-RsW" secondAttribute="trailing" id="ZKd-2q-gjK"/>
+                            <constraint firstItem="98Y-TV-7WU" firstAttribute="top" secondItem="pgU-gu-bsk" secondAttribute="bottom" constant="9" id="f9O-ok-s1Y"/>
+                            <constraint firstItem="98Y-TV-7WU" firstAttribute="trailing" secondItem="aY0-ez-S0y" secondAttribute="trailing" id="fxw-p0-k4g"/>
+                            <constraint firstAttribute="bottom" secondItem="EiR-Kf-td9" secondAttribute="bottom" id="l9r-M3-6Sc"/>
+                            <constraint firstItem="pgU-gu-bsk" firstAttribute="top" secondItem="aY0-ez-S0y" secondAttribute="top" constant="9" id="sXd-hJ-nkb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aY0-ez-S0y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnv-DG-beP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2293.5999999999999" y="54.679802955665025"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Aa-Hy-m8B">
@@ -544,7 +644,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwH-bV-kjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237.59999999999999" y="55.418719211822662"/>
+            <point key="canvasLocation" x="180" y="55"/>
         </scene>
     </scenes>
     <resources>
