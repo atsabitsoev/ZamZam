@@ -81,11 +81,10 @@ extension ReplenChooseCardVC: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath == [cards.count + 1,0] {
-            if !cardAdding {
-                cardAdding = true
-                self.tableView.reloadSections([indexPath.section], with: .automatic)
-            }
+        if indexPath == [cards.count + 1,0] && !cardAdding {
+            cardAdding = true
+            self.tableView.reloadSections([indexPath.section], with: .automatic)
+            
         }
     }
     
