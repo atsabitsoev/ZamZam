@@ -39,7 +39,6 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
-        viewCheta.layer.cornerRadius = 16
     }
     
     override func viewWillLayoutSubviews() {
@@ -48,6 +47,8 @@ class MainVC: UIViewController, UICollectionViewDelegate {
                                  coordinatesX: [0,1],
                                  coordinatesY: [0,0])
         setImageToTabBar()
+        viewCheta.layer.cornerRadius = 16
+        
     }
     
     
