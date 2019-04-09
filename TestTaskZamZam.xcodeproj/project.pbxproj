@@ -58,6 +58,7 @@
 		ACC5CB0B225C96B900B28E62 /* ReplenCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB0A225C96B900B28E62 /* ReplenCardCell.swift */; };
 		ACC5CB0D225C96CC00B28E62 /* ReplenAddCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB0C225C96CC00B28E62 /* ReplenAddCardCell.swift */; };
 		ACC5CB0F225C96DA00B28E62 /* ReplenNewCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB0E225C96DA00B28E62 /* ReplenNewCardCell.swift */; };
+		ACC5CB11225CBD2C00B28E62 /* ReplenTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB10225CBD2C00B28E62 /* ReplenTFDelegate.swift */; };
 		ACCF259A2257743D0028C16A /* Extensions for String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF25992257743D0028C16A /* Extensions for String.swift */; };
 		ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */; };
 		ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE139BB2242549D004EDB38 /* CardIssue.storyboard */; };
@@ -141,6 +142,7 @@
 		ACC5CB0A225C96B900B28E62 /* ReplenCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenCardCell.swift; sourceTree = "<group>"; };
 		ACC5CB0C225C96CC00B28E62 /* ReplenAddCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenAddCardCell.swift; sourceTree = "<group>"; };
 		ACC5CB0E225C96DA00B28E62 /* ReplenNewCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenNewCardCell.swift; sourceTree = "<group>"; };
+		ACC5CB10225CBD2C00B28E62 /* ReplenTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenTFDelegate.swift; sourceTree = "<group>"; };
 		ACCF25992257743D0028C16A /* Extensions for String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions for String.swift"; sourceTree = "<group>"; };
 		ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Registration+LogIn.storyboard"; sourceTree = "<group>"; };
 		ACE139BB2242549D004EDB38 /* CardIssue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardIssue.storyboard; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC5CB00225C962100B28E62 /* ReplenChooseCardVC.swift */,
+				ACC5CB10225CBD2C00B28E62 /* ReplenTFDelegate.swift */,
 				ACC5CAFF225C95EF00B28E62 /* ReplenChooseCardTableview */,
 			);
 			path = ReplenChooseCard;
@@ -726,6 +729,7 @@
 				ACC5CAF8225C718A00B28E62 /* ReplenishDescribtionCell.swift in Sources */,
 				ACC5CAFB225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift in Sources */,
 				ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */,
+				ACC5CB11225CBD2C00B28E62 /* ReplenTFDelegate.swift in Sources */,
 				ACC5CB0F225C96DA00B28E62 /* ReplenNewCardCell.swift in Sources */,
 				AC5EA173223940C900EDA066 /* TransCell.swift in Sources */,
 				ACFAF76C223F8B6C008C731B /* SenderCellPhoneNumber.swift in Sources */,

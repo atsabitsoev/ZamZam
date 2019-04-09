@@ -37,11 +37,20 @@ extension ReplenChooseCardVC: UITableViewDelegate, UITableViewDataSource {
             
         case cards.count + 1:
             
-            if !newCardIsOpened {
+            if !cardAdding {
                 let addCardCell = tableView.dequeueReusableCell(withIdentifier: "ReplenAddCardCell")!
                 cell = addCardCell
             } else {
                 let newCardCell = tableView.dequeueReusableCell(withIdentifier: "ReplenNewCardCell") as! ReplenNewCardCell
+                
+                for tf in newCardCell.textFields {
+                    tf.maskDelegate = self
+                }
+                newCardCell.tfCardNumber.tag = 0
+                newCardCell.tfDate.tag = 1
+                newCardCell.tfCVV.tag = 2
+                newCardCell.tfHolderOfCard.tag = 3
+                
                 cell = newCardCell
             }
             
@@ -59,7 +68,7 @@ extension ReplenChooseCardVC: UITableViewDelegate, UITableViewDataSource {
         case 1...cards.count:
             return 76
         case cards.count + 1:
-            if !newCardIsOpened {
+            if !cardAdding {
                 return 76
             } else {
                 return 221
@@ -67,6 +76,16 @@ extension ReplenChooseCardVC: UITableViewDelegate, UITableViewDataSource {
         default:
             print("Error")
             return 68
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath == [cards.count + 1,0] {
+            if !cardAdding {
+                cardAdding = true
+                self.tableView.reloadSections([indexPath.section], with: .automatic)
+            }
         }
     }
     

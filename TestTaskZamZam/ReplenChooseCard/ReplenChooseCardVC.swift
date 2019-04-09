@@ -15,21 +15,33 @@ class ReplenChooseCardVC: UIViewController {
     @IBOutlet weak var butBack: UIButton!
     @IBOutlet weak var butClose: UIButton!
     @IBOutlet weak var butNext: UIButton!
+    @IBOutlet weak var tableView: UITableView!
     
     
     var cards = ["2323 **** **** 8393",
                  "8484 **** **** 8383"]
-    var newCardIsOpened = false
+    var cardAdding = false {
+        didSet(adding) {
+            if adding {
+                butNext.isHidden = true
+            } else {
+                butNext.isHidden = false
+            }
+        }
+    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        butNext.isHidden = true
 
     }
     
     override func viewWillLayoutSubviews() {
         configureButNext()
         configureNavigationButtons()
+        viewBigWhite.layer.cornerRadius = 16
     }
     
     
@@ -77,5 +89,13 @@ class ReplenChooseCardVC: UIViewController {
         butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
     }
     
-
+    
+    @IBAction func butBackTapped(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func butCloseTapped(_ sender: UIButton) {
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
+    
 }
