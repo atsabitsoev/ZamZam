@@ -29,14 +29,14 @@ extension ReplenishVC: UITableViewDelegate, UITableViewDataSource {
             switch indexPath.section {
             case 0:
                 
-                cell.labTitle.text = "Переводы за рубеж"
+                cell.labTitle.text = "Картой любого банка"
                 cell.labDescribtion.text = "180 стран мира"
                 let im = UIImage(named: "globe")
                 cell.imSmall.image = im?.withRenderingMode(.alwaysTemplate)
                 
             case 1:
                 
-                cell.labTitle.text = "Со счета на счет ZAM"
+                cell.labTitle.text = "Наличные"
                 cell.labDescribtion.text = "По номеру телефона"
                 let im = UIImage(named: "repeat")
                 cell.imSmall.image = im?.withRenderingMode(.alwaysTemplate)
@@ -57,7 +57,7 @@ extension ReplenishVC: UITableViewDelegate, UITableViewDataSource {
                 
             case 0:
                 
-                attributedString = NSMutableAttributedString(string: "- Комиссия 0% за валютные переводы\n- Кэшбэк 1% от суммы перевода \n- Оплачивайте перевод картой любого банка\n- Получить перевод можно в одной из 3000 точек обслуживания",
+                attributedString = NSMutableAttributedString(string: "- Комиссия 0%",
                                                              attributes: [
                                                                 .font: UIFont(name: "KelsonSans-RegularRU",
                                                                               size: 10.0)!,
@@ -71,21 +71,10 @@ extension ReplenishVC: UITableViewDelegate, UITableViewDataSource {
                                               value: UIFont(name: "KelsonSans-BoldRU",
                                                             size: 10.0)!, range: NSRange(location: 0,
                                                                                          length: 13))
-                attributedString.addAttribute(.font,
-                                              value: UIFont(name: "KelsonSans-BoldRU",
-                                                            size: 10.0)!,
-                                              range: NSRange(location: 35,
-                                                             length: 11))
-                attributedString.addAttribute(.foregroundColor, value: UIColor(red: 86/255,
-                                                                               green: 192/255,
-                                                                               blue: 253/255,
-                                                                               alpha: 1),
-                                              range: NSRange(location: 149,
-                                                             length: 18))
                 
             case 1:
                 
-                attributedString = NSMutableAttributedString(string: "- Комиссия 0%\n- Переводите по номеру телефона\n- Оплачивайте перевод картой любого банка\n- Получить перевод можно в одной из 3000 точек обслуживания",
+                attributedString = NSMutableAttributedString(string: "- Комиссия 0%",
                                                              attributes: [
                                                                 .font: UIFont(name: "KelsonSans-RegularRU",
                                                                               size: 10.0)!,
@@ -99,14 +88,7 @@ extension ReplenishVC: UITableViewDelegate, UITableViewDataSource {
                                               value: UIFont(name: "KelsonSans-BoldRU",
                                                             size: 10.0)!,
                                               range: NSRange(location: 0,
-                                                             length: 15))
-                attributedString.addAttribute(.foregroundColor,
-                                              value: UIColor(red: 86/255,
-                                                             green: 192/255,
-                                                             blue: 253/255,
-                                                             alpha: 1),
-                                              range: NSRange(location: 129,
-                                                             length: 18))
+                                                             length: attributedString.length))
                 
             default:
                 
@@ -135,7 +117,7 @@ extension ReplenishVC: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return 68
         case 1:
-            return 119
+            return 40
         default:
             print("Error")
             return 68

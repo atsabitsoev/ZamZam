@@ -102,6 +102,12 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             let cardIssueNav = storyboard.instantiateViewController(withIdentifier: "CardIssueMain")
             self.navigationController?.show(cardIssueNav, sender: nil)
             
+        case 2:
+            
+            let storyboard = UIStoryboard(name: "Replenish", bundle: nil)
+            let replenishNav = storyboard.instantiateViewController(withIdentifier: "ReplenishNav")
+            self.tabBarController?.show(replenishNav, sender: nil)
+            
         default:
             print("Error")
         }

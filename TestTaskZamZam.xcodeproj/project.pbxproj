@@ -61,6 +61,7 @@
 		ACC5CB11225CBD2C00B28E62 /* ReplenTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB10225CBD2C00B28E62 /* ReplenTFDelegate.swift */; };
 		ACCF259A2257743D0028C16A /* Extensions for String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF25992257743D0028C16A /* Extensions for String.swift */; };
 		ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */; };
+		ACD357ED225CD9BC0018243B /* ReplenSMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD357EC225CD9BC0018243B /* ReplenSMSVC.swift */; };
 		ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE139BB2242549D004EDB38 /* CardIssue.storyboard */; };
 		ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139BE224259F6004EDB38 /* CardIssueVC.swift */; };
 		ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */; };
@@ -145,6 +146,7 @@
 		ACC5CB10225CBD2C00B28E62 /* ReplenTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenTFDelegate.swift; sourceTree = "<group>"; };
 		ACCF25992257743D0028C16A /* Extensions for String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions for String.swift"; sourceTree = "<group>"; };
 		ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Registration+LogIn.storyboard"; sourceTree = "<group>"; };
+		ACD357EC225CD9BC0018243B /* ReplenSMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenSMSVC.swift; sourceTree = "<group>"; };
 		ACE139BB2242549D004EDB38 /* CardIssue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardIssue.storyboard; sourceTree = "<group>"; };
 		ACE139BE224259F6004EDB38 /* CardIssueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueVC.swift; sourceTree = "<group>"; };
 		ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueCollectionView.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				ACC5CAED225C707800B28E62 /* Replenish */,
 				ACC5CAF9225C7CF900B28E62 /* ReplenSumAndCurrency */,
 				ACC5CAFC225C95B400B28E62 /* ReplenChooseCard */,
+				ACD357EB225CD9960018243B /* ReplenSMS */,
 				ACE139BD224259D8004EDB38 /* CardIssue */,
 				ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */,
 				ACFAF761223F7239008C731B /* Alerts */,
@@ -458,6 +461,14 @@
 			);
 			name = ReplenChooseCardTableview;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		ACD357EB225CD9960018243B /* ReplenSMS */ = {
+			isa = PBXGroup;
+			children = (
+				ACD357EC225CD9BC0018243B /* ReplenSMSVC.swift */,
+			);
+			path = ReplenSMS;
 			sourceTree = "<group>";
 		};
 		ACE139BD224259D8004EDB38 /* CardIssue */ = {
@@ -745,6 +756,7 @@
 				ACC5CB01225C962100B28E62 /* ReplenChooseCardVC.swift in Sources */,
 				ACCF259A2257743D0028C16A /* Extensions for String.swift in Sources */,
 				ACC5CAEF225C711600B28E62 /* ReplenishVC.swift in Sources */,
+				ACD357ED225CD9BC0018243B /* ReplenSMSVC.swift in Sources */,
 				ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */,
 				AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */,
 				AC110A9E223A59DD00D1F8D8 /* WhatCountryTablevView.swift in Sources */,
