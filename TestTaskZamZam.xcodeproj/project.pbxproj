@@ -53,6 +53,11 @@
 		ACC5CAF6225C717700B28E62 /* ReplenishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CAF5225C717700B28E62 /* ReplenishCell.swift */; };
 		ACC5CAF8225C718A00B28E62 /* ReplenishDescribtionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CAF7225C718A00B28E62 /* ReplenishDescribtionCell.swift */; };
 		ACC5CAFB225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CAFA225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift */; };
+		ACC5CB01225C962100B28E62 /* ReplenChooseCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB00225C962100B28E62 /* ReplenChooseCardVC.swift */; };
+		ACC5CB03225C963500B28E62 /* ReplenChooseCardTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB02225C963500B28E62 /* ReplenChooseCardTableview.swift */; };
+		ACC5CB0B225C96B900B28E62 /* ReplenCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB0A225C96B900B28E62 /* ReplenCardCell.swift */; };
+		ACC5CB0D225C96CC00B28E62 /* ReplenAddCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB0C225C96CC00B28E62 /* ReplenAddCardCell.swift */; };
+		ACC5CB0F225C96DA00B28E62 /* ReplenNewCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB0E225C96DA00B28E62 /* ReplenNewCardCell.swift */; };
 		ACCF259A2257743D0028C16A /* Extensions for String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF25992257743D0028C16A /* Extensions for String.swift */; };
 		ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */; };
 		ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE139BB2242549D004EDB38 /* CardIssue.storyboard */; };
@@ -131,6 +136,11 @@
 		ACC5CAF5225C717700B28E62 /* ReplenishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenishCell.swift; sourceTree = "<group>"; };
 		ACC5CAF7225C718A00B28E62 /* ReplenishDescribtionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenishDescribtionCell.swift; sourceTree = "<group>"; };
 		ACC5CAFA225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenSumAndCurrencyVC.swift; sourceTree = "<group>"; };
+		ACC5CB00225C962100B28E62 /* ReplenChooseCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenChooseCardVC.swift; sourceTree = "<group>"; };
+		ACC5CB02225C963500B28E62 /* ReplenChooseCardTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenChooseCardTableview.swift; sourceTree = "<group>"; };
+		ACC5CB0A225C96B900B28E62 /* ReplenCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenCardCell.swift; sourceTree = "<group>"; };
+		ACC5CB0C225C96CC00B28E62 /* ReplenAddCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenAddCardCell.swift; sourceTree = "<group>"; };
+		ACC5CB0E225C96DA00B28E62 /* ReplenNewCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenNewCardCell.swift; sourceTree = "<group>"; };
 		ACCF25992257743D0028C16A /* Extensions for String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions for String.swift"; sourceTree = "<group>"; };
 		ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Registration+LogIn.storyboard"; sourceTree = "<group>"; };
 		ACE139BB2242549D004EDB38 /* CardIssue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardIssue.storyboard; sourceTree = "<group>"; };
@@ -202,6 +212,7 @@
 				ACFBAC302240DE81001D9D94 /* Payment */,
 				ACC5CAED225C707800B28E62 /* Replenish */,
 				ACC5CAF9225C7CF900B28E62 /* ReplenSumAndCurrency */,
+				ACC5CAFC225C95B400B28E62 /* ReplenChooseCard */,
 				ACE139BD224259D8004EDB38 /* CardIssue */,
 				ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */,
 				ACFAF761223F7239008C731B /* Alerts */,
@@ -423,6 +434,27 @@
 				ACC5CAFA225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift */,
 			);
 			path = ReplenSumAndCurrency;
+			sourceTree = "<group>";
+		};
+		ACC5CAFC225C95B400B28E62 /* ReplenChooseCard */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5CB00225C962100B28E62 /* ReplenChooseCardVC.swift */,
+				ACC5CAFF225C95EF00B28E62 /* ReplenChooseCardTableview */,
+			);
+			path = ReplenChooseCard;
+			sourceTree = "<group>";
+		};
+		ACC5CAFF225C95EF00B28E62 /* ReplenChooseCardTableview */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5CB02225C963500B28E62 /* ReplenChooseCardTableview.swift */,
+				ACC5CB0A225C96B900B28E62 /* ReplenCardCell.swift */,
+				ACC5CB0C225C96CC00B28E62 /* ReplenAddCardCell.swift */,
+				ACC5CB0E225C96DA00B28E62 /* ReplenNewCardCell.swift */,
+			);
+			name = ReplenChooseCardTableview;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		ACE139BD224259D8004EDB38 /* CardIssue */ = {
@@ -684,14 +716,17 @@
 				AC8D62C422574664004D0323 /* TFService.swift in Sources */,
 				AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */,
 				AC110AA2223A5A5100D1F8D8 /* WhatCountryCell.swift in Sources */,
+				ACC5CB03225C963500B28E62 /* ReplenChooseCardTableview.swift in Sources */,
 				ACFBAC3A2240FB35001D9D94 /* ZamBillCell.swift in Sources */,
 				ACFAF764223F754A008C731B /* RecipientVC.swift in Sources */,
 				ACC5CAF6225C717700B28E62 /* ReplenishCell.swift in Sources */,
 				ACFBAC4622412ECF001D9D94 /* PaymentTFDelegate.swift in Sources */,
 				AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */,
+				ACC5CB0D225C96CC00B28E62 /* ReplenAddCardCell.swift in Sources */,
 				ACC5CAF8225C718A00B28E62 /* ReplenishDescribtionCell.swift in Sources */,
 				ACC5CAFB225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift in Sources */,
 				ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */,
+				ACC5CB0F225C96DA00B28E62 /* ReplenNewCardCell.swift in Sources */,
 				AC5EA173223940C900EDA066 /* TransCell.swift in Sources */,
 				ACFAF76C223F8B6C008C731B /* SenderCellPhoneNumber.swift in Sources */,
 				AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */,
@@ -703,6 +738,7 @@
 				AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */,
 				AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */,
 				5B7DFEAF222FFAC200ECF0D3 /* MainVC.swift in Sources */,
+				ACC5CB01225C962100B28E62 /* ReplenChooseCardVC.swift in Sources */,
 				ACCF259A2257743D0028C16A /* Extensions for String.swift in Sources */,
 				ACC5CAEF225C711600B28E62 /* ReplenishVC.swift in Sources */,
 				ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */,
@@ -737,6 +773,7 @@
 				AC8D62C122574323004D0323 /* SetNewPassVC.swift in Sources */,
 				AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */,
 				AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */,
+				ACC5CB0B225C96B900B28E62 /* ReplenCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
