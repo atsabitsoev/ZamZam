@@ -149,10 +149,22 @@
                                     <action selector="tFPinTextChanged:" destination="zSz-Lf-Hom" eventType="editingChanged" id="xde-yc-Ffz"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-n6-QiB">
+                                <rect key="frame" x="99" y="184" width="177" height="27"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="15"/>
+                                <state key="normal" title="Войти по логину и паролю">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iAy-Lc-hIL" kind="presentation" id="SUh-rP-6ZM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="FfB-n6-QiB" firstAttribute="top" secondItem="aNB-0e-q0A" secondAttribute="bottom" constant="16" id="R2z-bl-Ylf"/>
                             <constraint firstItem="aNB-0e-q0A" firstAttribute="centerX" secondItem="dgG-XG-Z4g" secondAttribute="centerX" id="gEb-W2-SQT"/>
+                            <constraint firstItem="FfB-n6-QiB" firstAttribute="centerX" secondItem="dgG-XG-Z4g" secondAttribute="centerX" id="n54-FS-MBK"/>
                             <constraint firstItem="CqQ-Aa-r6i" firstAttribute="centerY" secondItem="dgG-XG-Z4g" secondAttribute="centerY" id="n80-WR-NIf"/>
                             <constraint firstItem="aNB-0e-q0A" firstAttribute="top" secondItem="Lrl-IP-zSP" secondAttribute="top" constant="100" id="xcF-mD-d8E"/>
                             <constraint firstItem="CqQ-Aa-r6i" firstAttribute="centerX" secondItem="dgG-XG-Z4g" secondAttribute="centerX" id="yNN-gZ-Ob5"/>

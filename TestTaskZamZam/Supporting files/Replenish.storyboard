@@ -1062,8 +1062,8 @@
                                             <constraint firstItem="Ovt-G1-FID" firstAttribute="leading" secondItem="rHI-xC-LfO" secondAttribute="leading" constant="11" id="oTu-Li-Dqw"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Код из СМС" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0V-Zr-faG" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="29.000000000000004" y="276.66666666666669" width="45.333333333333343" height="9"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Код из СМС " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0V-Zr-faG" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="28.999999999999996" y="276.66666666666669" width="49.666666666666657" height="9"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="9" id="3S9-kj-2vz"/>
