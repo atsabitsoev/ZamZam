@@ -308,20 +308,110 @@
             </objects>
             <point key="canvasLocation" x="905" y="174"/>
         </scene>
-        <!--View Controller-->
+        <!--Replenish GoneVC-->
         <scene sceneID="nC7-99-pMb">
             <objects>
-                <viewController id="JRT-h9-1aC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReplenishGoneVC" id="JRT-h9-1aC" customClass="ReplenishGoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qve-Ve-UrV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sA-oR-Jhe">
+                                <rect key="frame" x="0.0" y="194.66666666666663" width="375" height="423"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2G-Ci-zQX">
+                                        <rect key="frame" x="161" y="0.0" width="53" height="53"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="Qgu-8q-kao">
+                                                <rect key="frame" x="8.6666666666666572" y="8.3333333333333428" width="36" height="36"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="a8A-eP-SBL"/>
+                                                    <constraint firstAttribute="width" constant="36" id="lVx-9D-8t0"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.50196078430000002" green="0.92156862750000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Qgu-8q-kao" firstAttribute="centerX" secondItem="b2G-Ci-zQX" secondAttribute="centerX" id="TsG-jz-6dn"/>
+                                            <constraint firstAttribute="width" constant="53" id="gM5-8k-Big"/>
+                                            <constraint firstAttribute="height" constant="53" id="h2f-LY-FlM"/>
+                                            <constraint firstItem="Qgu-8q-kao" firstAttribute="centerY" secondItem="b2G-Ci-zQX" secondAttribute="centerY" id="nmz-Hr-EXc"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш счет пополнен на сумму" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1G-6O-M17" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="96.333333333333329" y="160.00000000000003" width="182.33333333333337" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="NfA-Ns-v7i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150$" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLE-0W-RUp" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="173.66666666666666" y="232.00000000000003" width="27.666666666666657" height="14"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="0.5997163955" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9761,92 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1Y-am-jvN" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="123.33333333333333" y="199.00000000000003" width="128.66666666666669" height="25"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LLE-0W-RUp" firstAttribute="centerX" secondItem="9sA-oR-Jhe" secondAttribute="centerX" id="5ZF-Sa-ky1"/>
+                                    <constraint firstItem="D1Y-am-jvN" firstAttribute="centerX" secondItem="9sA-oR-Jhe" secondAttribute="centerX" id="8Il-ck-dIC"/>
+                                    <constraint firstItem="D1Y-am-jvN" firstAttribute="top" secondItem="u1G-6O-M17" secondAttribute="bottom" constant="24" id="BAL-df-kl5"/>
+                                    <constraint firstItem="u1G-6O-M17" firstAttribute="centerX" secondItem="9sA-oR-Jhe" secondAttribute="centerX" id="NkO-Cm-geZ"/>
+                                    <constraint firstItem="LLE-0W-RUp" firstAttribute="top" secondItem="D1Y-am-jvN" secondAttribute="bottom" constant="8" id="Ywg-zZ-lUK"/>
+                                    <constraint firstItem="D1Y-am-jvN" firstAttribute="centerY" secondItem="9sA-oR-Jhe" secondAttribute="centerY" id="at1-Nw-xq3"/>
+                                    <constraint firstItem="b2G-Ci-zQX" firstAttribute="top" secondItem="9sA-oR-Jhe" secondAttribute="top" id="coR-7L-bqe"/>
+                                    <constraint firstItem="b2G-Ci-zQX" firstAttribute="centerX" secondItem="9sA-oR-Jhe" secondAttribute="centerX" id="k7e-if-RsS"/>
+                                    <constraint firstAttribute="height" constant="423" id="kaC-Re-sfA"/>
+                                    <constraint firstItem="D1Y-am-jvN" firstAttribute="centerX" secondItem="9sA-oR-Jhe" secondAttribute="centerX" id="qxf-Vx-tpI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybk-P2-1bF">
+                                <rect key="frame" x="163.66666666666666" y="737" width="48" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2zc-Op-rIS"/>
+                                    <constraint firstAttribute="width" constant="48" id="4D7-ua-YPN"/>
+                                </constraints>
+                                <state key="normal" image="x"/>
+                                <connections>
+                                    <action selector="butCloseTapped:" destination="JRT-h9-1aC" eventType="touchUpInside" id="JEI-qW-ogt"/>
+                                    <action selector="butCloseTapped:" destination="IOW-Vb-ZKc" eventType="touchUpInside" id="v7D-Ng-PXd"/>
+                                    <action selector="butClosedTapped:" destination="U0Y-r4-D6S" eventType="touchUpInside" id="ibC-dj-Iva"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.13307759165763855" green="0.16575360298156738" blue="0.37649065256118774" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ybk-P2-1bF" secondAttribute="bottom" constant="27" id="3Xx-Aa-nEy"/>
+                            <constraint firstItem="Ybk-P2-1bF" firstAttribute="centerX" secondItem="qve-Ve-UrV" secondAttribute="centerX" id="6kt-j3-l0d"/>
+                            <constraint firstItem="9sA-oR-Jhe" firstAttribute="trailing" secondItem="t0Y-Fg-sWY" secondAttribute="trailing" id="Bac-zB-1xY"/>
+                            <constraint firstItem="9sA-oR-Jhe" firstAttribute="centerX" secondItem="qve-Ve-UrV" secondAttribute="centerX" id="C2U-6r-sn4"/>
+                            <constraint firstItem="9sA-oR-Jhe" firstAttribute="centerY" secondItem="qve-Ve-UrV" secondAttribute="centerY" id="QfV-np-r5Q"/>
+                            <constraint firstItem="9sA-oR-Jhe" firstAttribute="leading" secondItem="t0Y-Fg-sWY" secondAttribute="leading" id="oMe-aB-usG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="t0Y-Fg-sWY"/>
                     </view>
+                    <connections>
+                        <outlet property="butClose" destination="Ybk-P2-1bF" id="g0R-oN-Y1i"/>
+                        <outlet property="imOk" destination="Qgu-8q-kao" id="Cvt-h2-eq1"/>
+                        <outlet property="labSumDoll" destination="LLE-0W-RUp" id="135-9A-fBV"/>
+                        <outlet property="labSumRub" destination="D1Y-am-jvN" id="czU-0x-1fZ"/>
+                        <outlet property="viewGreen" destination="b2G-Ci-zQX" id="eud-ua-Bzm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbF-1e-WBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1596" y="174"/>
+            <point key="canvasLocation" x="1596" y="173.64532019704436"/>
         </scene>
     </scenes>
     <resources>

@@ -7,9 +7,8 @@
 //
 
 import UIKit
-
+var alertOpened = false
 class ReplenSMSVC: UIViewController {
-    
     
     @IBOutlet weak var viewBigWhite: UIView!
     @IBOutlet weak var viewSMSCode: UIView!
@@ -17,20 +16,62 @@ class ReplenSMSVC: UIViewController {
     @IBOutlet weak var butClose: UIButton!
     @IBOutlet weak var butBack: UIButton!
     
+    
+    var buttonsConfigured = (false, false)
+    let phoneNumber = "+79777872475"
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewBigWhite.layer.cornerRadius = 16
         
+        addObservers()
+        
+        if timerService != nil {
+            invalidateButNext()
+        } else {
+            butNextTapped()
+        }
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if alertOpened {
+            self.navigationController?.dismiss(animated: true, completion: nil)
+            alertOpened = false
+        }
     }
     
     override func viewWillLayoutSubviews() {
         configureViewSMSCode()
-        configureButNext()
-        configureNavigationButtons()
+        if !buttonsConfigured.0 {
+            buttonsConfigured.0 = true
+        } else if !buttonsConfigured.1 {
+            configureNavigationButtons()
+            configureButNext()
+            buttonsConfigured.1 = true
+            print("buttonsconfigured")
+        }
+        
     }
     
+    
+    func addObservers() {
+        let center = NotificationCenter.default
+        center.addObserver(self,
+                        selector: #selector(secondPast),
+                        name: NSNotification.Name(rawValue: "SecondPast"),
+                        object: nil)
+        center.addObserver(self,
+                           selector: #selector(timerStopped),
+                           name: NSNotification.Name(rawValue: "TimerStopped"),
+                           object: nil)
+        center.addObserver(self,
+                           selector: #selector(verificationSucceed),
+                           name: NSNotification.Name(NotificationType.codeVerified.rawValue),
+                           object: nil)
+    }
     
     func configureViewSMSCode() {
         
@@ -84,6 +125,71 @@ class ReplenSMSVC: UIViewController {
         butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
     }
     
+    func invalidateButNext() {
+        butNext.isUserInteractionEnabled = false
+        butNext.alpha = 0.5
+    }
+    
+    func sendCode(phone: String) {
+        TwilioService.standard.sendShortCode(phone: phone)
+    }
+    
+    func checkCode(code: String) {
+        TwilioService.standard.checkShortCode(code: code)
+    }
+    
+    func validateButNext() {
+        let title = "Отправить код"
+        UIView.setAnimationsEnabled(false)
+        butNext.setTitle(title, for: .normal)
+        UIView.setAnimationsEnabled(true)
+        butNext.isUserInteractionEnabled = true
+        butNext.alpha = 1
+    }
+    
+    func butNextTapped() {
+        sendCode(phone: phoneNumber)
+        timerService = TimerService(time: 60)
+        invalidateButNext()
+    }
+    
+    func presentAlertVC() {
+        let replenishGoneVC = UIStoryboard(name: "AlertViewControllers",
+                                           bundle: nil).instantiateViewController(withIdentifier: "ReplenishGoneVC") as! ReplenishGoneVC
+        alertOpened = true
+        self.present(replenishGoneVC, animated: true)
+    }
+    
+    @objc func secondPast() {
+        print("second")
+        let timeRest = timerService?.timeRest
+        let title = "Отправить код через \(timeRest!) сек"
+        UIView.setAnimationsEnabled(false)
+        butNext.setTitle(title, for: .normal)
+        UIView.setAnimationsEnabled(true)
+    }
+    
+    @objc func timerStopped() {
+        timerService = nil
+        validateButNext()
+    }
+    
+    @objc func verificationSucceed() {
+        presentAlertVC()
+    }
+    
+    
+    @IBAction func butNextTapped(_ sender: UIButton) {
+        butNextTapped()
+    }
+    
+    @IBAction func tfCodeTextChanged(_ sender: UITextField) {
+        
+        if let text = sender.text, text.count == 6 {
+            checkCode(code: text)
+        }
+        
+    }
     
     @IBAction func butBackTapped(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
@@ -92,5 +198,6 @@ class ReplenSMSVC: UIViewController {
     @IBAction func butCloseTapped(_ sender: UIButton) {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
+    
     
 }
