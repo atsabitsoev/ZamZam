@@ -137,11 +137,8 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lNu-Ck-8XR">
-                                                            <rect key="frame" x="29" y="9" width="292" height="20"/>
+                                                            <rect key="frame" x="29" y="0.0" width="292" height="28"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="20" id="iJA-JZ-QtN"/>
-                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -151,12 +148,12 @@
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="lNu-Ck-8XR" secondAttribute="trailing" constant="54" id="0Jn-kv-3nf"/>
                                                         <constraint firstItem="lNu-Ck-8XR" firstAttribute="leading" secondItem="W5y-wr-dPM" secondAttribute="leading" constant="29" id="p05-0G-cmw"/>
-                                                        <constraint firstItem="lNu-Ck-8XR" firstAttribute="top" secondItem="W5y-wr-dPM" secondAttribute="top" constant="9" id="zeT-xX-nAY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="lNu-Ck-8XR" secondAttribute="bottom" id="rek-iT-o83"/>
+                                                        <constraint firstItem="lNu-Ck-8XR" firstAttribute="top" secondItem="W5y-wr-dPM" secondAttribute="top" id="zeT-xX-nAY"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
-                                                    <outlet property="heightConstr" destination="iJA-JZ-QtN" id="3jM-qx-hmT"/>
                                                     <outlet property="label" destination="lNu-Ck-8XR" id="eXH-4M-jgC"/>
                                                 </connections>
                                             </tableViewCell>

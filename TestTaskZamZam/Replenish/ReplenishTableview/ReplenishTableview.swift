@@ -67,10 +67,6 @@ extension ReplenishVC: UITableViewDelegate, UITableViewDataSource {
                                                                                           alpha: 1.0),
                                                                 .kern: 0.0
                     ])
-                attributedString.addAttribute(.font,
-                                              value: UIFont(name: "KelsonSans-BoldRU",
-                                                            size: 10.0)!, range: NSRange(location: 0,
-                                                                                         length: 13))
                 
             case 1:
                 
@@ -84,11 +80,6 @@ extension ReplenishVC: UITableViewDelegate, UITableViewDataSource {
                                                                                           alpha: 1.0),
                                                                 .kern: 0.0
                     ])
-                attributedString.addAttribute(.font,
-                                              value: UIFont(name: "KelsonSans-BoldRU",
-                                                            size: 10.0)!,
-                                              range: NSRange(location: 0,
-                                                             length: attributedString.length))
                 
             default:
                 
@@ -100,7 +91,8 @@ extension ReplenishVC: UITableViewDelegate, UITableViewDataSource {
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 10
             paragraphStyle.lineHeightMultiple = 0
-            attributedString.addAttribute(.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: attributedString.length))
+            
+//            attributedString.addAttribute(.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: attributedString.length))
             
             cell.label.attributedText = attributedString
             cell.label.numberOfLines = 0
