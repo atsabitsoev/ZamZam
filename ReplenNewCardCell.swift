@@ -46,8 +46,8 @@ class ReplenNewCardCell: UITableViewCell {
             title?.clipsToBounds = true
         }
         
-        viewGrayMain.layer.borderColor = #colorLiteral(red: 0.3297697008, green: 0.3307734132, blue: 0.3431242108, alpha: 1)
-        viewGrayMain.layer.borderWidth = 4
+        viewGrayMain.layer.borderColor = #colorLiteral(red: 0.1245268062, green: 0.1670093238, blue: 0.3904778957, alpha: 1)
+        viewGrayMain.layer.borderWidth = 2
         
     }
 

@@ -16,6 +16,7 @@ class ZamBillCell: UITableViewCell {
     @IBOutlet weak var imCheck: UIImageView!
     @IBOutlet weak var viewBackground: UIView!
     
+    var gradientAdded: Bool?
     
     override func layoutSubviews() {
         
@@ -23,7 +24,11 @@ class ZamBillCell: UITableViewCell {
         imCheck.image = imCheck.image?.withRenderingMode(.alwaysTemplate)
         viewBackground.layer.cornerRadius = 8
         addGreenBordersToViewUnderCheck()
+        
+        viewBackground.layoutIfNeeded()
+        viewBackground.addGradient(colors: [#colorLiteral(red: 0.1529411765, green: 0.631372549, blue: 0.9058823529, alpha: 1).cgColor, #colorLiteral(red: 0.337254902, green: 0.7529411765, blue: 0.9921568627, alpha: 1).cgColor], coordinatesX: [0,1], coordinatesY: [0,0], cornerRadius: 8)
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

@@ -151,15 +151,15 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
             height = 47
         case 1:
 
-            height = 0
+            height = 0.001
 
         case 2:
 
-            height = 0
+            height = 0.001
 
         default:
 
-            height = 0
+            height = 0.001
         }
         
         return height
@@ -168,17 +168,17 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         switch section {
         case 0:
-            return 0
+            return 0.001
         case 1:
             if tableView.numberOfSections == 2 {
                 return 36
             } else {
-                return 0
+                return 0.001
             }
         case 2:
             return 36
         default:
-            return 0
+            return 0.001
         }
     }
     

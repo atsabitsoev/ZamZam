@@ -22,6 +22,9 @@ class CardCell: UITableViewCell {
         imCheck.image = imCheck.image?.withRenderingMode(.alwaysTemplate)
         viewBackground.layer.cornerRadius = 8
         addBordersToViewUnderCheck()
+        
+        viewBackground.layoutIfNeeded()
+        viewBackground.addGradient(colors: [#colorLiteral(red: 0.1245268062, green: 0.1670093238, blue: 0.3904778957, alpha: 1).cgColor, #colorLiteral(red: 0.2117647059, green: 0.2509803922, blue: 0.462745098, alpha: 1).cgColor], coordinatesX: [0,1], coordinatesY: [0,0], cornerRadius: 8)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

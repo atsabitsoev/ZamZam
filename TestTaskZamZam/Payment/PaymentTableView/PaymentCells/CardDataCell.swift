@@ -42,9 +42,9 @@ class CardDataCell: UITableViewCell {
         for title in titles {
             title?.alpha = 0
             title?.layer.cornerRadius = 2
-            title?.clipsToBounds = true
-            title?.layer.borderWidth = 1
-            title?.layer.borderColor = #colorLiteral(red: 0.2470588235, green: 0.6941176471, blue: 0.9490196078, alpha: 1)
+//            title?.clipsToBounds = true
+//            title?.layer.borderWidth = 1
+//            title?.layer.borderColor = #colorLiteral(red: 0.2470588235, green: 0.6941176471, blue: 0.9490196078, alpha: 1)
         }
         
         viewGrayMain.layer.borderWidth = 2
