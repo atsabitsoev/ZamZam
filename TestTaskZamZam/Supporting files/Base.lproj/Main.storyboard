@@ -1337,12 +1337,64 @@
                                             <constraint firstAttribute="height" constant="40" id="fA5-X9-3dA"/>
                                         </constraints>
                                     </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SGg-dI-aUW">
+                                        <rect key="frame" x="0.0" y="117" width="375" height="441"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="18" maxY="0.0"/>
+                                        <view key="tableFooterView" contentMode="scaleToFill" id="J4E-E9-UeG">
+                                            <rect key="frame" x="0.0" y="68" width="375" height="0.0"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipientHistoryCell" rowHeight="40" id="Vdb-JV-8KM" customClass="RecipientHistoryCell" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="40"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vdb-JV-8KM" id="KNE-nn-ceb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="39.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+988 32-123-4567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ag4-d1-yp8" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="12" width="126" height="16"/>
+                                                            <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                            <color key="textColor" red="0.44705882352941173" green="0.45490196078431372" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 10 126,50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="C0v-Wq-Pp6" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                            <rect key="frame" x="256" y="9" width="101" height="22"/>
+                                                            <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="22"/>
+                                                            <color key="textColor" red="0.11764705882352941" green="0.16078431372549018" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="C0v-Wq-Pp6" secondAttribute="trailing" constant="18" id="A9c-hW-WZh"/>
+                                                        <constraint firstItem="Ag4-d1-yp8" firstAttribute="leading" secondItem="KNE-nn-ceb" secondAttribute="leading" constant="20" id="DTe-RT-Lgf"/>
+                                                        <constraint firstItem="C0v-Wq-Pp6" firstAttribute="centerY" secondItem="KNE-nn-ceb" secondAttribute="centerY" id="UkI-II-fJS"/>
+                                                        <constraint firstItem="C0v-Wq-Pp6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ag4-d1-yp8" secondAttribute="trailing" constant="20" id="Xk1-Ni-Rls"/>
+                                                        <constraint firstItem="Ag4-d1-yp8" firstAttribute="centerY" secondItem="KNE-nn-ceb" secondAttribute="centerY" id="kTq-eU-2DJ"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="labPhone" destination="Ag4-d1-yp8" id="6kh-tz-u60"/>
+                                                    <outlet property="labSum" destination="C0v-Wq-Pp6" id="ffF-eT-ECW"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="UhQ-pb-gYp" id="War-Wn-oEe"/>
+                                            <outlet property="delegate" destination="UhQ-pb-gYp" id="3AE-Gk-ZrV"/>
+                                        </connections>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SGg-dI-aUW" secondAttribute="trailing" id="KlH-kp-Ar9"/>
                                     <constraint firstAttribute="bottom" secondItem="DF7-GS-8X6" secondAttribute="bottom" constant="27" id="QsH-fO-IZS"/>
                                     <constraint firstItem="DF7-GS-8X6" firstAttribute="centerX" secondItem="dCc-iO-DUI" secondAttribute="centerX" id="RaW-aV-0Ts"/>
                                     <constraint firstItem="DF7-GS-8X6" firstAttribute="top" secondItem="W9y-lP-Jwb" secondAttribute="bottom" constant="16" id="SMo-DU-Nsj"/>
+                                    <constraint firstItem="W9y-lP-Jwb" firstAttribute="top" secondItem="SGg-dI-aUW" secondAttribute="bottom" constant="8" id="aNh-Ng-IHJ"/>
+                                    <constraint firstItem="SGg-dI-aUW" firstAttribute="leading" secondItem="dCc-iO-DUI" secondAttribute="leading" id="auc-ew-u5z"/>
                                     <constraint firstItem="W9y-lP-Jwb" firstAttribute="width" secondItem="W9y-lP-Jwb" secondAttribute="height" multiplier="339:62" id="biU-tC-QZT"/>
                                     <constraint firstItem="W9y-lP-Jwb" firstAttribute="leading" secondItem="dCc-iO-DUI" secondAttribute="leading" constant="18" id="gUg-E7-QNn"/>
                                     <constraint firstAttribute="trailing" secondItem="W9y-lP-Jwb" secondAttribute="trailing" constant="18" id="vWt-B6-G7H"/>
@@ -1381,8 +1433,8 @@
                                     <constraint firstAttribute="bottom" secondItem="BvV-ju-1aZ" secondAttribute="bottom" id="zVs-NM-RCA"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Получатель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnS-8U-RBT" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="53" width="188" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кому?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnS-8U-RBT" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                <rect key="frame" x="17.999999999999993" y="53" width="97.333333333333314" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="gD9-RT-NXU"/>
                                 </constraints>
@@ -1434,6 +1486,7 @@
                             <constraint firstItem="hRr-4V-PSc" firstAttribute="width" secondItem="hRr-4V-PSc" secondAttribute="height" multiplier="113:16" id="gjG-mO-LvH"/>
                             <constraint firstItem="GnS-8U-RBT" firstAttribute="leading" secondItem="GRt-ZQ-MGs" secondAttribute="leading" constant="18" id="il4-fl-NPs"/>
                             <constraint firstItem="eWw-Uz-PnM" firstAttribute="top" secondItem="dCc-iO-DUI" secondAttribute="top" constant="16" id="lxy-Iw-Qm8"/>
+                            <constraint firstItem="SGg-dI-aUW" firstAttribute="top" secondItem="BvV-ju-1aZ" secondAttribute="bottom" constant="47" id="oao-T5-NtH"/>
                             <constraint firstItem="hRr-4V-PSc" firstAttribute="leading" secondItem="GRt-ZQ-MGs" secondAttribute="leading" constant="18" id="vhl-5b-R8B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GRt-ZQ-MGs"/>
@@ -2152,11 +2205,6 @@
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="51k-Wl-XFg">
-                                                            <rect key="frame" x="19" y="204" width="340" height="1"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="backgroundColor" red="0.87450980389999999" green="0.87843137250000003" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="dxH-vW-ZDm" firstAttribute="leading" secondItem="kPv-Ho-R9R" secondAttribute="leading" constant="11" id="1Ga-YD-wgH"/>

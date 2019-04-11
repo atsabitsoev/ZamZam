@@ -22,6 +22,7 @@ class RecipientVC: UIViewController, UITextFieldDelegate {
     
     
     var currentRegion: String?
+    var lastOperations = ["+988 32-123-4567","+988 32-123-4567","+988 32-123-4567","+988 22-223-8900"]
     
     
     override func viewDidLoad() {

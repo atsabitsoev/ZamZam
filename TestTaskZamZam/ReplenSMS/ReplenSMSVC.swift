@@ -24,6 +24,7 @@ class ReplenSMSVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         phoneNumber = UserDefaults.standard.string(forKey: "userPhone")!
+        print(phoneNumber)
         
         viewBigWhite.layer.cornerRadius = 16
         
