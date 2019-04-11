@@ -12,13 +12,22 @@ extension RecipientVC: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lastOperations.count
+        return lastOperations.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RecipientHistoryCell") as! RecipientHistoryCell
+        var cell = UITableViewCell()
         
-        cell.labPhone.text = lastOperations[indexPath.row]
+        if indexPath == [0,0] {
+            let headerCell = tableView.dequeueReusableCell(withIdentifier: "RecipientHeaderCell")!
+            cell = headerCell
+        } else {
+            let operationCell = tableView.dequeueReusableCell(withIdentifier: "RecipientHistoryCell") as! RecipientHistoryCell
+            operationCell.labPhone.text = lastOperations[indexPath.row - 1]
+            cell = operationCell
+        }
+        
+
         
         return cell
     }

@@ -1342,7 +1342,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="18" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="J4E-E9-UeG">
-                                            <rect key="frame" x="0.0" y="68" width="375" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="108" width="375" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -1379,6 +1379,26 @@
                                                     <outlet property="labPhone" destination="Ag4-d1-yp8" id="6kh-tz-u60"/>
                                                     <outlet property="labSum" destination="C0v-Wq-Pp6" id="ffF-eT-ECW"/>
                                                 </connections>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipientHeaderCell" rowHeight="40" id="kxx-EW-H2T">
+                                                <rect key="frame" x="0.0" y="68" width="375" height="40"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kxx-EW-H2T" id="uqP-vF-nyl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="39.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предыдущие переводы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM9-QZ-Ijj">
+                                                            <rect key="frame" x="18" y="12.666666666666664" width="150" height="14"/>
+                                                            <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                                            <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="fM9-QZ-Ijj" secondAttribute="bottom" constant="13" id="d4B-6c-oFN"/>
+                                                        <constraint firstItem="fM9-QZ-Ijj" firstAttribute="leading" secondItem="uqP-vF-nyl" secondAttribute="leading" constant="18" id="sNV-vV-hn3"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>

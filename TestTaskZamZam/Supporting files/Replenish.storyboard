@@ -23,11 +23,11 @@
             <objects>
                 <viewController id="o8e-BX-jGZ" customClass="ReplenishVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gaN-wQ-gR8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пополнить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFF-lF-ia9" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="16" y="53" width="172" height="39"/>
+                                <rect key="frame" x="16" y="9" width="172" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="0Gs-X9-R8y"/>
                                 </constraints>
@@ -36,10 +36,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sno-c7-rn7">
-                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
+                                <rect key="frame" x="0.0" y="57" width="375" height="667"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="68" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9yK-yo-wYr">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="476"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="Yrt-AW-3Wx">
                                             <rect key="frame" x="0.0" y="124" width="375" height="0.0"/>
@@ -164,7 +164,7 @@
                                         </connections>
                                     </tableView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXN-kV-Ev7">
-                                        <rect key="frame" x="18" y="540" width="339" height="80"/>
+                                        <rect key="frame" x="18" y="496" width="339" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Получай кэшбэк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfM-yw-QaZ">
                                                 <rect key="frame" x="13" y="9" width="139.33333333333334" height="18"/>
@@ -210,7 +210,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DJ-o3-RT2">
-                                        <rect key="frame" x="0.0" y="633" width="375" height="58"/>
+                                        <rect key="frame" x="0.0" y="589" width="375" height="58"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uSg-1j-kSM">
                                                 <rect key="frame" x="141.66666666666666" y="11" width="92" height="40"/>
@@ -269,7 +269,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzy-TO-1lM">
-                                <rect key="frame" x="355" y="792" width="20" height="20"/>
+                                <rect key="frame" x="355" y="704" width="20" height="20"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="6Xo-8r-kX5"/>
@@ -277,7 +277,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsn-JW-8qA">
-                                <rect key="frame" x="0.0" y="792" width="20" height="20"/>
+                                <rect key="frame" x="0.0" y="704" width="20" height="20"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="2O7-z6-1jy"/>
@@ -1207,9 +1207,10 @@
         <!--Navigation Controller-->
         <scene sceneID="9Aa-Hy-m8B">
             <objects>
-                <navigationController storyboardIdentifier="ReplenishNav" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="r1g-Zp-8nU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ReplenishNav" automaticallyAdjustsScrollViewInsets="NO" id="r1g-Zp-8nU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="SOV-ps-aJW">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="SOV-ps-aJW">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
