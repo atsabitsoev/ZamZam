@@ -22,13 +22,24 @@ class EnterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addGestureRec()
     }
     
     override func viewWillLayoutSubviews() {
         configureView()
     }
     
+    
+    func addGestureRec() {
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
+        
+    }
+    
+    @objc func hideKeyboard() {
+        self.becomeFirstResponder()
+        self.view.endEditing(true)
+    }
     
     func configureView() {
         tfPhoneNumber.layer.cornerRadius = 8
@@ -41,8 +52,9 @@ class EnterVC: UIViewController {
         self.present(mainVC!, animated: true, completion: nil)
     }
     
-    func rememberUser() {
+    func rememberUser(phone: String) {
         UserDefaults.standard.set(true, forKey: "userEntered")
+        UserDefaults.standard.setValue(phone, forKey: "userPhone")
     }
     
     
@@ -60,7 +72,7 @@ class EnterVC: UIViewController {
         guard let rightPassword = keychain.get(phone) else { return }
         
         if password == rightPassword {
-            rememberUser()
+            rememberUser(phone: phone)
             goToMainVC()
         }
     }

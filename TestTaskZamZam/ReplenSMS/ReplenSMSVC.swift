@@ -23,6 +23,7 @@ class ReplenSMSVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        phoneNumber = UserDefaults.standard.string(forKey: "userPhone")
         
         viewBigWhite.layer.cornerRadius = 16
         
@@ -33,6 +34,8 @@ class ReplenSMSVC: UIViewController {
         } else {
             butNextTapped()
         }
+        
+        addGestureRec()
         
     }
     
@@ -159,6 +162,19 @@ class ReplenSMSVC: UIViewController {
         alertOpened = true
         self.present(replenishGoneVC, animated: true)
     }
+    
+    func addGestureRec() {
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
+        
+    }
+    
+    
+    @objc func hideKeyboard() {
+        self.becomeFirstResponder()
+        self.view.endEditing(true)
+    }
+    
     
     @objc func secondPast() {
         print("second")

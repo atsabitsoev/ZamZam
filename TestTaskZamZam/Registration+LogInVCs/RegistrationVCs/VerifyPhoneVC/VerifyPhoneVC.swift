@@ -32,6 +32,7 @@ class VerifyPhoneVC: UIViewController {
         super.viewDidLoad()
         
         addObservers()
+        addGestureRec()
     }
     
     override func viewWillLayoutSubviews() {
@@ -85,6 +86,17 @@ class VerifyPhoneVC: UIViewController {
         tfPhoneNumber.becomeFirstResponder()
     }
     
+    func addGestureRec() {
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
+        
+    }
+    
+    
+    @objc func hideKeyboard() {
+        self.becomeFirstResponder()
+        self.view.endEditing(true)
+    }
     
     @objc func setVisibleTFs() {
         switch twilioService.shortCodeSent {

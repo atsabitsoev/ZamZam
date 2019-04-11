@@ -28,6 +28,7 @@ class SetNewPassVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(phoneNumber)
+        addGestureRec()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,6 +66,18 @@ class SetNewPassVC: UIViewController {
     func goToEnterVC() {
         let enterVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "EnterVC")
         self.present(enterVC, animated: true, completion: nil)
+    }
+    
+    func addGestureRec() {
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
+        
+    }
+    
+    
+    @objc func hideKeyboard() {
+        self.becomeFirstResponder()
+        self.view.endEditing(true)
     }
     
     

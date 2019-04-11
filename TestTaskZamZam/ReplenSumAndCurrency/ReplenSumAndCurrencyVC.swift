@@ -32,6 +32,7 @@ class ReplenSumAndCurrencyVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewBigWhite.layer.cornerRadius = 16
+        addGestureRec()
     }
     
     override func viewWillLayoutSubviews() {
@@ -91,6 +92,18 @@ class ReplenSumAndCurrencyVC: UIViewController {
         butClose.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         butClose.layer.shadowOpacity = 0.18
         butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
+    }
+    
+    func addGestureRec() {
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
+        
+    }
+    
+    
+    @objc func hideKeyboard() {
+        self.becomeFirstResponder()
+        self.view.endEditing(true)
     }
     
     
