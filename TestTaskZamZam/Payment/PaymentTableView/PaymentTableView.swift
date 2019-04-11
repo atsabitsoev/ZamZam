@@ -14,7 +14,12 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return cards.count + 2
+            if cardAdding {
+                return cards.count + 1
+            } else {
+                return cards.count + 2
+            }
+            
         default:
             return 1
         }
@@ -31,15 +36,11 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            if indexPath.row == cards.count + 1 {
-                return 45
-            } else {
-                return 40
-            }
+            return 71
         case 1:
             
             if cardAdding {
-                return 221
+                return 205
             } else {
                 return 150
             }
@@ -109,7 +110,7 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.row == tableView.numberOfRows(inSection: 0) - 1 {
+        if indexPath.row == tableView.numberOfRows(inSection: 0) - 1 && tableView.numberOfRows(inSection: 0) == cards.count + 2 {
             if cardAdding {
                 return
             }
@@ -120,20 +121,18 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
             
             cardAdding = true
             tableView.beginUpdates()
-            tableView.insertSections([1], with: .automatic)
+            tableView.deleteRows(at: [[0,cards.count + 1]], with: .fade)
+            tableView.insertSections([1], with: .fade)
             tableView.endUpdates()
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        
-        if indexPath.row == tableView.numberOfRows(inSection: 0) - 1 {
+            
+        } else if cardAdding {
+            
             cardAdding = false
             tableView.beginUpdates()
-            tableView.deleteSections([1], with: .automatic)
+            tableView.insertRows(at: [[0,cards.count + 1]], with: .fade)
+            tableView.deleteSections([1], with: .fade)
             tableView.endUpdates()
         }
-        
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -151,19 +150,15 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
         case 0:
             height = 47
         case 1:
-            
-            if tableView.numberOfSections == 2 {
-                height = 0
-            } else {
-                height = 54
-            }
-            
-        case 2:
-            
+
             height = 0
-            
+
+        case 2:
+
+            height = 0
+
         default:
-            
+
             height = 0
         }
         
@@ -207,21 +202,21 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
             
             view = myView
             
-        case 1:
-            if !(tableView.numberOfSections == 2) {
-                
-                let myView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 54))
-                
-                let label = UILabel(frame: CGRect(x: 18, y: 39, width: tableView.bounds.width, height: 15))
-                let attributedString = NSMutableAttributedString(string: "Данные карты отправителя",
-                                                                 attributes: [NSAttributedString.Key.font : font,
-                                                                              NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)])
-                label.attributedText = attributedString
-                myView.addSubview(label)
-                
-                view = myView
-                
-            }
+//        case 1:
+//            if !(tableView.numberOfSections == 2) {
+//
+//                let myView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 54))
+//
+//                let label = UILabel(frame: CGRect(x: 18, y: 39, width: tableView.bounds.width, height: 15))
+//                let attributedString = NSMutableAttributedString(string: "Данные карты отправителя",
+//                                                                 attributes: [NSAttributedString.Key.font : font,
+//                                                                              NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)])
+//                label.attributedText = attributedString
+//                myView.addSubview(label)
+//
+//                view = myView
+//
+//            }
             
         case 2:
             return view

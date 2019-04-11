@@ -40,42 +40,44 @@ extension PaymentVC: AKMaskFieldDelegate {
     
     func maskFieldDidEndEditing(_ maskField: AKMaskField) {
         
-        let cell = tableView.cellForRow(at: [1,0]) as! CardDataCell
-        var view = UIView()
-        var lab = UILabel()
-        
-        switch maskField.tag {
-        case 0:
-            view = cell.viewCardNumber
-            lab = cell.labTitleCardNumber
-        case 1:
-            view = cell.viewDate
-            lab = cell.labDate
-        case 2:
-            view = cell.viewCVV
-            lab = cell.labCVV
-        case 3:
-            view = cell.viewHolderOfCard
-            lab = cell.labHolderOfCard
-        default:
-            print("error")
-        }
-        
-        if maskField.text != nil && maskField.text != "" {
+        if let cell = tableView.cellForRow(at: [1,0]) as? CardDataCell {
             
-            view.animateBorderColor(toColor: #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1), duration: 0.3)
-            lab.alpha = 1
-            lab.textColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
-            lab.layer.borderColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
+            var view = UIView()
+            var lab = UILabel()
             
-        } else {
+            switch maskField.tag {
+            case 0:
+                view = cell.viewCardNumber
+                lab = cell.labTitleCardNumber
+            case 1:
+                view = cell.viewDate
+                lab = cell.labDate
+            case 2:
+                view = cell.viewCVV
+                lab = cell.labCVV
+            case 3:
+                view = cell.viewHolderOfCard
+                lab = cell.labHolderOfCard
+            default:
+                print("error")
+            }
             
-            view.animateBorderColor(toColor: #colorLiteral(red: 0.8745098039, green: 0.8784313725, blue: 0.9254901961, alpha: 1), duration: 0.3)
-            lab.alpha = 0
-            print(lab.text!)
-            lab.textColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
-            lab.layer.borderColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
-            
+            if maskField.text != nil && maskField.text != "" {
+                
+                view.animateBorderColor(toColor: UIColor(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1), duration: 0.3)
+                lab.alpha = 1
+                lab.textColor =  UIColor(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
+                lab.layer.borderColor =  UIColor(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1).cgColor
+                
+            } else {
+                
+                view.animateBorderColor(toColor:  UIColor(red: 0.8745098039, green: 0.8784313725, blue: 0.9254901961, alpha: 1), duration: 0.3)
+                lab.alpha = 0
+                print(lab.text!)
+                lab.textColor =  UIColor(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
+                lab.layer.borderColor =  UIColor(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1).cgColor
+                
+            }
         }
         
     }
