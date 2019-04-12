@@ -27,7 +27,7 @@ class SetNewPassVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(phoneNumber)
+        print(phoneNumber ?? "телефон не передан")
         addGestureRec()
     }
     
@@ -53,7 +53,7 @@ class SetNewPassVC: UIViewController {
         guard let phoneNumber = phoneNumber else { return }
         
         keychain.set(pass, forKey: phoneNumber)
-        print(keychain.get(phoneNumber))
+        print(keychain.get(phoneNumber) ??  "Невозможно получить пароль от этого телефона")
     }
     
     func saveCodeToEnterInApp() {
