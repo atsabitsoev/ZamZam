@@ -214,21 +214,13 @@
 		5B7DFEAB222FFAC200ECF0D3 /* TestTaskZamZam */ = {
 			isa = PBXGroup;
 			children = (
-				AC567566223BD26D001BBE66 /* Entities + Services */,
 				5B7DFED72230682700ECF0D3 /* Main */,
-				AC5EA167223934DA00EDA066 /* Transfers */,
-				AC110A9A223A599A00D1F8D8 /* WhatCountry */,
-				AC567563223BC5B5001BBE66 /* SumAndCurrency */,
-				ACFAF762223F7522008C731B /* Recipient */,
-				ACFAF765223F8AE4008C731B /* Sender */,
-				ACFBAC302240DE81001D9D94 /* Payment */,
-				ACC5CAED225C707800B28E62 /* Replenish */,
-				ACC5CAF9225C7CF900B28E62 /* ReplenSumAndCurrency */,
-				ACC5CAFC225C95B400B28E62 /* ReplenChooseCard */,
-				ACD357EB225CD9960018243B /* ReplenSMS */,
+				ACB26A0C22606B64007AD399 /* Transfers */,
+				ACB26A0D22606BB9007AD399 /* Replenish */,
 				ACE139BD224259D8004EDB38 /* CardIssue */,
 				ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */,
 				ACFAF761223F7239008C731B /* Alerts */,
+				AC567566223BD26D001BBE66 /* Entities + Services */,
 				5BD1986A22313EDE008011C8 /* Supporting files */,
 				5B7DFEC02230078A00ECF0D3 /* Шрифты */,
 			);
@@ -360,13 +352,13 @@
 			path = "Entities + Services";
 			sourceTree = "<group>";
 		};
-		AC5EA167223934DA00EDA066 /* Transfers */ = {
+		AC5EA167223934DA00EDA066 /* TransfersHome */ = {
 			isa = PBXGroup;
 			children = (
 				AC5EA1682239353700EDA066 /* TransfersVC.swift */,
 				AC5EA1712239408400EDA066 /* TransTableView */,
 			);
-			path = Transfers;
+			path = TransfersHome;
 			sourceTree = "<group>";
 		};
 		AC5EA1712239408400EDA066 /* TransTableView */ = {
@@ -432,13 +424,37 @@
 			path = VerifyPhoneVC;
 			sourceTree = "<group>";
 		};
-		ACC5CAED225C707800B28E62 /* Replenish */ = {
+		ACB26A0C22606B64007AD399 /* Transfers */ = {
+			isa = PBXGroup;
+			children = (
+				AC5EA167223934DA00EDA066 /* TransfersHome */,
+				AC110A9A223A599A00D1F8D8 /* WhatCountry */,
+				AC567563223BC5B5001BBE66 /* SumAndCurrency */,
+				ACFAF762223F7522008C731B /* Recipient */,
+				ACFAF765223F8AE4008C731B /* Sender */,
+				ACFBAC302240DE81001D9D94 /* Payment */,
+			);
+			path = Transfers;
+			sourceTree = "<group>";
+		};
+		ACB26A0D22606BB9007AD399 /* Replenish */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5CAED225C707800B28E62 /* ReplenishHome */,
+				ACC5CAF9225C7CF900B28E62 /* ReplenSumAndCurrency */,
+				ACC5CAFC225C95B400B28E62 /* ReplenChooseCard */,
+				ACD357EB225CD9960018243B /* ReplenSMS */,
+			);
+			path = Replenish;
+			sourceTree = "<group>";
+		};
+		ACC5CAED225C707800B28E62 /* ReplenishHome */ = {
 			isa = PBXGroup;
 			children = (
 				ACC5CAEE225C711600B28E62 /* ReplenishVC.swift */,
 				ACC5CAF0225C712300B28E62 /* ReplenishTableview */,
 			);
-			path = Replenish;
+			path = ReplenishHome;
 			sourceTree = "<group>";
 		};
 		ACC5CAF0225C712300B28E62 /* ReplenishTableview */ = {
