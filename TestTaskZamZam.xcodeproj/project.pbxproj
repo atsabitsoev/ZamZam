@@ -50,6 +50,10 @@
 		AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C82257544F004D0323 /* EnterVC.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
+		ACBF140522670E8C00019545 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140422670E8C00019545 /* SplashVC.swift */; };
+		ACBF140A22670ECB00019545 /* SplashCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140922670ECB00019545 /* SplashCollectionView.swift */; };
+		ACBF140E22670FE000019545 /* SplashStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140D22670FE000019545 /* SplashStruct.swift */; };
+		ACBF14102267117D00019545 /* SplashCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140F2267117D00019545 /* SplashCollectionCell.swift */; };
 		ACC5CAEC225C6CB500B28E62 /* Replenish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC5CAEB225C6CB500B28E62 /* Replenish.storyboard */; };
 		ACC5CAEF225C711600B28E62 /* ReplenishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CAEE225C711600B28E62 /* ReplenishVC.swift */; };
 		ACC5CAF2225C714100B28E62 /* ReplenishTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CAF1225C714100B28E62 /* ReplenishTableview.swift */; };
@@ -139,6 +143,10 @@
 		AC8D62C82257544F004D0323 /* EnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterVC.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
+		ACBF140422670E8C00019545 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		ACBF140922670ECB00019545 /* SplashCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCollectionView.swift; sourceTree = "<group>"; };
+		ACBF140D22670FE000019545 /* SplashStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashStruct.swift; sourceTree = "<group>"; };
+		ACBF140F2267117D00019545 /* SplashCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCollectionCell.swift; sourceTree = "<group>"; };
 		ACC5CAEB225C6CB500B28E62 /* Replenish.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Replenish.storyboard; sourceTree = "<group>"; };
 		ACC5CAEE225C711600B28E62 /* ReplenishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenishVC.swift; sourceTree = "<group>"; };
 		ACC5CAF1225C714100B28E62 /* ReplenishTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenishTableview.swift; sourceTree = "<group>"; };
@@ -400,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				AC8D62C322574664004D0323 /* TFService.swift */,
+				ACBF140322670E7800019545 /* SplashVC */,
 				ACA8A0DD2255F90F00EFBE1A /* RegistrationVCs */,
 				AC8D62C72257543F004D0323 /* EnterVC */,
 				AC1A5272225B26DB0021B79C /* PIN VC */,
@@ -446,6 +455,25 @@
 				ACD357EB225CD9960018243B /* ReplenSMS */,
 			);
 			path = Replenish;
+			sourceTree = "<group>";
+		};
+		ACBF140322670E7800019545 /* SplashVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF140422670E8C00019545 /* SplashVC.swift */,
+				ACBF140D22670FE000019545 /* SplashStruct.swift */,
+				ACBF140822670EB300019545 /* SplashCollection */,
+			);
+			path = SplashVC;
+			sourceTree = "<group>";
+		};
+		ACBF140822670EB300019545 /* SplashCollection */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF140922670ECB00019545 /* SplashCollectionView.swift */,
+				ACBF140F2267117D00019545 /* SplashCollectionCell.swift */,
+			);
+			path = SplashCollection;
 			sourceTree = "<group>";
 		};
 		ACC5CAED225C707800B28E62 /* ReplenishHome */ = {
@@ -767,6 +795,7 @@
 				AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */,
 				AC110AA2223A5A5100D1F8D8 /* WhatCountryCell.swift in Sources */,
 				ACE7F2C4225DC0E100F001B0 /* TimerService.swift in Sources */,
+				ACBF140522670E8C00019545 /* SplashVC.swift in Sources */,
 				ACC5CB03225C963500B28E62 /* ReplenChooseCardTableview.swift in Sources */,
 				ACFBAC3A2240FB35001D9D94 /* ZamBillCell.swift in Sources */,
 				ACFAF764223F754A008C731B /* RecipientVC.swift in Sources */,
@@ -781,6 +810,7 @@
 				ACC5CB0F225C96DA00B28E62 /* ReplenNewCardCell.swift in Sources */,
 				AC5EA173223940C900EDA066 /* TransCell.swift in Sources */,
 				ACFAF76C223F8B6C008C731B /* SenderCellPhoneNumber.swift in Sources */,
+				ACBF14102267117D00019545 /* SplashCollectionCell.swift in Sources */,
 				AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */,
 				ACFAF777223FCBF4008C731B /* BorderAnimation.swift in Sources */,
 				ACFBAC402240FB6B001D9D94 /* CardDataCell.swift in Sources */,
@@ -789,6 +819,7 @@
 				ACFAF775223F9B94008C731B /* TFDelegate.swift in Sources */,
 				AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */,
 				AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */,
+				ACBF140E22670FE000019545 /* SplashStruct.swift in Sources */,
 				5B7DFEAF222FFAC200ECF0D3 /* MainVC.swift in Sources */,
 				ACC5CB01225C962100B28E62 /* ReplenChooseCardVC.swift in Sources */,
 				ACCF259A2257743D0028C16A /* Extensions for String.swift in Sources */,
@@ -798,6 +829,7 @@
 				ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */,
 				AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */,
 				AC110A9E223A59DD00D1F8D8 /* WhatCountryTablevView.swift in Sources */,
+				ACBF140A22670ECB00019545 /* SplashCollectionView.swift in Sources */,
 				5B7DFEDB2230685A00ECF0D3 /* TableView.swift in Sources */,
 				ACC5CAF2225C714100B28E62 /* ReplenishTableview.swift in Sources */,
 				5B7DFED6223027D300ECF0D3 /* CollectionViewCell2.swift in Sources */,
