@@ -71,7 +71,6 @@ class TwilioService {
                 }
         }
         
-        
     }
     
     func checkShortCode(code: String) {
