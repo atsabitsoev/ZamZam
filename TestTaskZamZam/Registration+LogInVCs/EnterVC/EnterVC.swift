@@ -12,9 +12,13 @@ import KeychainSwift
 class EnterVC: UIViewController {
     
     
+    @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var tfPhoneNumber: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
-    @IBOutlet weak var butEnter: UIButton!
+    @IBOutlet weak var butNext: UIButton!
+    @IBOutlet weak var labErrorMessage: UILabel!
+    @IBOutlet weak var viewPhoneNumber: UIView!
+    @IBOutlet weak var viewPassword: UIView!
     
     
     let keychain = KeychainSwift()
@@ -42,9 +46,20 @@ class EnterVC: UIViewController {
     }
     
     func configureView() {
+        viewMain.layer.cornerRadius = 16
         tfPhoneNumber.layer.cornerRadius = 8
         tfPassword.layer.cornerRadius = 8
-        butEnter.layer.cornerRadius = 8
+        configureButNext()
+        setBordersToTextFields()
+    }
+    
+    func setBordersToTextFields() {
+        viewPhoneNumber.layer.borderColor = #colorLiteral(red: 0.8745098039, green: 0.8784313725, blue: 0.9254901961, alpha: 1)
+        viewPhoneNumber.layer.borderWidth = 2
+        viewPhoneNumber.layer.cornerRadius = 8
+        viewPassword.layer.borderColor = #colorLiteral(red: 0.8745098039, green: 0.8784313725, blue: 0.9254901961, alpha: 1)
+        viewPassword.layer.borderWidth = 2
+        viewPassword.layer.cornerRadius = 8
     }
     
     func goToMainVC() {
@@ -55,6 +70,34 @@ class EnterVC: UIViewController {
     func rememberUser(phone: String) {
         UserDefaults.standard.set(true, forKey: "userEntered")
         UserDefaults.standard.setValue(phone, forKey: "userPhone")
+    }
+    
+    func wrongPasswordEntered() {
+        labErrorMessage.alpha = 1
+    }
+    
+    func configureButNext() {
+        print("Рамка кнопки некст: \(butNext.bounds)")
+        butNext.layer.cornerRadius = 8
+        butNext.addGradient(colors: [UIColor(red: 86/255,
+                                             green: 192/255,
+                                             blue: 253/255,
+                                             alpha: 1).cgColor,
+                                     UIColor(red: 40/255,
+                                             green: 161/255,
+                                             blue: 231/255,
+                                             alpha: 1).cgColor],
+                            coordinatesX: [0,0],
+                            coordinatesY: [0,1],
+                            cornerRadius: butNext.layer.cornerRadius)
+        
+        butNext.layer.shadowColor = #colorLiteral(red: 0.2509803922, green: 0.6980392157, blue: 0.9529411765, alpha: 1)
+        butNext.layer.shadowOpacity = 0.64
+        butNext.layer.shadowRadius = 10
+        let bounds = butNext.bounds
+        let insetedBounds = bounds.inset(by: UIEdgeInsets(top: 20, left: 10, bottom: -10, right: 10))
+        
+        butNext.layer.shadowPath = CGPath(rect: insetedBounds, transform: nil)
     }
     
     
@@ -74,6 +117,8 @@ class EnterVC: UIViewController {
         if password == rightPassword {
             rememberUser(phone: phone)
             goToMainVC()
+        } else {
+            wrongPasswordEntered()
         }
     }
     

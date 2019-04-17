@@ -48,6 +48,7 @@ class SplashVC: UIViewController {
     
     func itemChanged(to item: Int) {
         
+        currentItem = item
         pageControll.currentPage = item
     }
     

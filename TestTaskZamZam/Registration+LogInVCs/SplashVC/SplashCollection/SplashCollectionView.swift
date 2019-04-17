@@ -29,16 +29,17 @@ extension SplashVC: UICollectionViewDataSource, UICollectionViewDelegate, UIColl
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        if scrollView == self.collectionView {
-            var currentCellOffset = self.collectionView.contentOffset
-            currentCellOffset.x += self.collectionView.frame.width / 2
-            if let indexPath = self.collectionView.indexPathForItem(at: currentCellOffset) {
-                self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-            }
-        }
+//        if scrollView == self.collectionView {
+//            var currentCellOffset = self.collectionView.contentOffset
+//            currentCellOffset.x += self.collectionView.frame.width / 2
+//            if let indexPath = self.collectionView.indexPathForItem(at: currentCellOffset) {
+//                self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+//            }
+//        }
         
         let newItem = Int(collectionView.contentOffset.x/UIScreen.main.bounds.width)
         if newItem != self.currentItem {
+            
             self.itemChanged(to: newItem)
         }
     }
