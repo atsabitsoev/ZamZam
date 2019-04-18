@@ -19,17 +19,19 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     }
     
     
-    var masOfBills: [Bill]?
+    var masOfBills: [CardBill]?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        masOfBills = [Bill(name: "Zam счет RUB",
+        masOfBills = [CardBill(name: "Zam счет RUB",
                            sum: 21324.00,
+                           first4Numbers: 4566,
                            last4numbers: 1111,
                            currency: .rubble),
-                      Bill(name: "Zam счет USD",
+                      CardBill(name: "Zam счет USD",
                            sum: 192.01,
+                           first4Numbers: 3948,
                            last4numbers: 3513,
                            currency: .dollar)]
         let longpress = UILongPressGestureRecognizer(target: self,

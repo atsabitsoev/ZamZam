@@ -13,7 +13,7 @@
 		5B7DFEB4222FFAC500ECF0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEB3222FFAC500ECF0D3 /* Assets.xcassets */; };
 		5B7DFEB7222FFAC500ECF0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEB5222FFAC500ECF0D3 /* LaunchScreen.storyboard */; };
 		5B7DFEC8223007D500ECF0D3 /* Kelson Sans Regular RU.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEC7223007D500ECF0D3 /* Kelson Sans Regular RU.otf */; };
-		5B7DFECA223012B400ECF0D3 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEC9223012B400ECF0D3 /* Bill.swift */; };
+		5B7DFECA223012B400ECF0D3 /* CardBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEC9223012B400ECF0D3 /* CardBill.swift */; };
 		5B7DFECE223014C700ECF0D3 /* BillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFECD223014C700ECF0D3 /* BillCell.swift */; };
 		5B7DFED4223021AF00ECF0D3 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFED3223021AF00ECF0D3 /* CollectionViewCell1.swift */; };
 		5B7DFED6223027D300ECF0D3 /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFED5223027D300ECF0D3 /* CollectionViewCell2.swift */; };
@@ -51,6 +51,11 @@
 		AC9ADCF2226754FC0015FA53 /* WhatIsYourPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
+		ACBC5E0A22684BFF0005C355 /* PayPhoneBill.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */; };
+		ACBC5E0D22684E240005C355 /* PayPhoneBillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E0C22684E240005C355 /* PayPhoneBillVC.swift */; };
+		ACBC5E1022684E570005C355 /* PayPhoneBillTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E0F22684E570005C355 /* PayPhoneBillTableView.swift */; };
+		ACBC5E13226850400005C355 /* ZamBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E12226850400005C355 /* ZamBill.swift */; };
+		ACBC5E152268590C0005C355 /* PayPhoneTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E142268590C0005C355 /* PayPhoneTFDelegate.swift */; };
 		ACBF140522670E8C00019545 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140422670E8C00019545 /* SplashVC.swift */; };
 		ACBF140A22670ECB00019545 /* SplashCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140922670ECB00019545 /* SplashCollectionView.swift */; };
 		ACBF140E22670FE000019545 /* SplashStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140D22670FE000019545 /* SplashStruct.swift */; };
@@ -106,7 +111,7 @@
 		5B7DFEB6222FFAC500ECF0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B7DFEB8222FFAC500ECF0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B7DFEC7223007D500ECF0D3 /* Kelson Sans Regular RU.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kelson Sans Regular RU.otf"; sourceTree = "<group>"; };
-		5B7DFEC9223012B400ECF0D3 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		5B7DFEC9223012B400ECF0D3 /* CardBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBill.swift; sourceTree = "<group>"; };
 		5B7DFECD223014C700ECF0D3 /* BillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCell.swift; sourceTree = "<group>"; };
 		5B7DFED3223021AF00ECF0D3 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
 		5B7DFED5223027D300ECF0D3 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
@@ -145,6 +150,11 @@
 		AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsYourPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
+		ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayPhoneBill.storyboard; sourceTree = "<group>"; };
+		ACBC5E0C22684E240005C355 /* PayPhoneBillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneBillVC.swift; sourceTree = "<group>"; };
+		ACBC5E0F22684E570005C355 /* PayPhoneBillTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneBillTableView.swift; sourceTree = "<group>"; };
+		ACBC5E12226850400005C355 /* ZamBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZamBill.swift; sourceTree = "<group>"; };
+		ACBC5E142268590C0005C355 /* PayPhoneTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneTFDelegate.swift; sourceTree = "<group>"; };
 		ACBF140422670E8C00019545 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		ACBF140922670ECB00019545 /* SplashCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCollectionView.swift; sourceTree = "<group>"; };
 		ACBF140D22670FE000019545 /* SplashStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashStruct.swift; sourceTree = "<group>"; };
@@ -228,6 +238,7 @@
 				ACB26A0C22606B64007AD399 /* Transfers */,
 				ACB26A0D22606BB9007AD399 /* Replenish */,
 				ACE139BD224259D8004EDB38 /* CardIssue */,
+				ACBC5E0B22684DFF0005C355 /* PayPhoneBill */,
 				ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */,
 				ACFAF761223F7239008C731B /* Alerts */,
 				AC567566223BD26D001BBE66 /* Entities + Services */,
@@ -283,6 +294,7 @@
 			children = (
 				5B7DFEAC222FFAC200ECF0D3 /* AppDelegate.swift */,
 				5B7DFEB0222FFAC200ECF0D3 /* Main.storyboard */,
+				ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */,
 				ACC5CAEB225C6CB500B28E62 /* Replenish.storyboard */,
 				ACE139BB2242549D004EDB38 /* CardIssue.storyboard */,
 				AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */,
@@ -353,11 +365,13 @@
 				ACFBAC2C2240C419001D9D94 /* myLabel.swift */,
 				5B7DFEE022306A8D00ECF0D3 /* Gradient.swift */,
 				ACFAF776223FCBF4008C731B /* BorderAnimation.swift */,
-				5B7DFEC9223012B400ECF0D3 /* Bill.swift */,
+				5B7DFEC9223012B400ECF0D3 /* CardBill.swift */,
+				ACBC5E12226850400005C355 /* ZamBill.swift */,
 				AC2859EB224CF85E004852C4 /* Currency.swift */,
 				ACCF25992257743D0028C16A /* Extensions for String.swift */,
 				ACE7F2C3225DC0E100F001B0 /* TimerService.swift */,
 				AC53F9DB225627A30086A0D3 /* Twilio */,
+				ACFBAC362240FB01001D9D94 /* PaymentCells */,
 			);
 			path = "Entities + Services";
 			sourceTree = "<group>";
@@ -466,6 +480,16 @@
 				ACD357EB225CD9960018243B /* ReplenSMS */,
 			);
 			path = Replenish;
+			sourceTree = "<group>";
+		};
+		ACBC5E0B22684DFF0005C355 /* PayPhoneBill */ = {
+			isa = PBXGroup;
+			children = (
+				ACBC5E0C22684E240005C355 /* PayPhoneBillVC.swift */,
+				ACBC5E0F22684E570005C355 /* PayPhoneBillTableView.swift */,
+				ACBC5E142268590C0005C355 /* PayPhoneTFDelegate.swift */,
+			);
+			path = PayPhoneBill;
 			sourceTree = "<group>";
 		};
 		ACBF140322670E7800019545 /* SplashVC */ = {
@@ -624,7 +648,6 @@
 			children = (
 				ACFBAC342240FAF8001D9D94 /* PaymentTableView.swift */,
 				ACFBAC4522412ECF001D9D94 /* PaymentTFDelegate.swift */,
-				ACFBAC362240FB01001D9D94 /* PaymentCells */,
 			);
 			path = PaymentTableView;
 			sourceTree = "<group>";
@@ -638,8 +661,9 @@
 				ACFBAC3D2240FB5D001D9D94 /* CardCell.swift */,
 				ACFBAC3F2240FB6B001D9D94 /* CardDataCell.swift */,
 			);
-			path = PaymentCells;
-			sourceTree = "<group>";
+			name = PaymentCells;
+			path = "/Users/atsamaz/Desktop/IOS/TestTaskZamZam/Entities + Services/PaymentCells";
+			sourceTree = "<absolute>";
 		};
 		B49282D93256E3D983329916 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -732,6 +756,7 @@
 				ACC5CAEC225C6CB500B28E62 /* Replenish.storyboard in Resources */,
 				AC56756C223BE3D2001BBE66 /* AlertViewControllers.storyboard in Resources */,
 				AC110AA7223A6E0100D1F8D8 /* Kelson Sans Light RU.otf in Resources */,
+				ACBC5E0A22684BFF0005C355 /* PayPhoneBill.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,6 +861,7 @@
 				ACCF259A2257743D0028C16A /* Extensions for String.swift in Sources */,
 				ACC5CAEF225C711600B28E62 /* ReplenishVC.swift in Sources */,
 				ACD357ED225CD9BC0018243B /* ReplenSMSVC.swift in Sources */,
+				ACBC5E0D22684E240005C355 /* PayPhoneBillVC.swift in Sources */,
 				AC0D8568225DE696002C50B1 /* ReplenishGoneVC.swift in Sources */,
 				ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */,
 				AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */,
@@ -846,7 +872,8 @@
 				5B7DFED6223027D300ECF0D3 /* CollectionViewCell2.swift in Sources */,
 				ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */,
 				ACFBAC2F2240DB8E001D9D94 /* WhatCountryTFDelegate.swift in Sources */,
-				5B7DFECA223012B400ECF0D3 /* Bill.swift in Sources */,
+				5B7DFECA223012B400ECF0D3 /* CardBill.swift in Sources */,
+				ACBC5E1022684E570005C355 /* PayPhoneBillTableView.swift in Sources */,
 				AC6B2B6D225F5DF10057DCE8 /* RecipientTableview.swift in Sources */,
 				ACFBAC3C2240FB44001D9D94 /* AddNewCardCell.swift in Sources */,
 				ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */,
@@ -870,8 +897,10 @@
 				5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */,
 				ACFBAC382240FB1F001D9D94 /* TotalInfoCell.swift in Sources */,
 				AC8D62C122574323004D0323 /* SetNewPassVC.swift in Sources */,
+				ACBC5E13226850400005C355 /* ZamBill.swift in Sources */,
 				AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */,
 				AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */,
+				ACBC5E152268590C0005C355 /* PayPhoneTFDelegate.swift in Sources */,
 				AC6B2B6F225F5E6A0057DCE8 /* RecipientHistoryCell.swift in Sources */,
 				ACC5CB0B225C96B900B28E62 /* ReplenCardCell.swift in Sources */,
 			);
