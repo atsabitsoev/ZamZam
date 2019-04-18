@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UaI-Ww-csG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Ue-0V-vdG">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,10 +27,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHS-ca-CIg">
-                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
+                                <rect key="frame" x="0.0" y="145" width="375" height="667"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="ThG-fh-vX0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="566"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="522"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" red="0.87450980389999999" green="0.87843137250000003" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="separatorInset" minX="21" minY="0.0" maxX="17" maxY="0.0"/>
@@ -631,10 +631,10 @@
                                         </connections>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1W-Ta-jGB">
-                                        <rect key="frame" x="18" y="566" width="339" height="62"/>
+                                        <rect key="frame" x="18" y="522" width="339" height="62"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                        <state key="normal" title="Далее &gt;">
+                                        <state key="normal" title="Оплатить &gt;">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -652,7 +652,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплата моб. связи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeH-fD-6q8">
-                                <rect key="frame" x="18" y="53" width="293.66666666666669" height="39"/>
+                                <rect key="frame" x="18" y="97" width="293.66666666666669" height="39"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -668,6 +668,9 @@
                                             <constraint firstAttribute="width" constant="40" id="mqq-u7-yLm"/>
                                         </constraints>
                                         <state key="normal" image="chevronRight"/>
+                                        <connections>
+                                            <action selector="butBackTapped:" destination="UaI-Ww-csG" eventType="touchUpInside" id="SUg-nW-t2X"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMz-uc-EMR">
                                         <rect key="frame" x="52" y="0.0" width="40" height="40"/>
@@ -677,6 +680,9 @@
                                             <constraint firstAttribute="height" constant="40" id="z1h-S9-HNB"/>
                                         </constraints>
                                         <state key="normal" image="x"/>
+                                        <connections>
+                                            <action selector="butCloseTapped:" destination="UaI-Ww-csG" eventType="touchUpInside" id="QZf-sf-syg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -699,6 +705,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="V7z-Zp-RI7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Yta-mt-ia0"/>
                     <connections>
                         <outlet property="butBack" destination="ktA-4e-gxS" id="Tpk-A2-SP1"/>
                         <outlet property="butClose" destination="oMz-uc-EMR" id="6Cs-Ik-MR0"/>
@@ -708,6 +715,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AqW-Sv-CK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1223.2" y="226.84729064039411"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fbR-yR-PFj">
+            <objects>
+                <navigationController storyboardIdentifier="PayPhoneBillVC" automaticallyAdjustsScrollViewInsets="NO" id="0Ue-0V-vdG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="qpd-A7-HGc">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UaI-Ww-csG" kind="relationship" relationship="rootViewController" id="ei5-rb-5Pe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eN8-Ha-I0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="280.80000000000001" y="226.84729064039411"/>
         </scene>

@@ -101,5 +101,14 @@ class PayPhoneBillVC: UIViewController {
         
     }
     
+    
+    @IBAction func butBackTapped(_ sender: UIButton) {
+        self.navigationController!.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func butCloseTapped(_ sender: UIButton) {
+        self.navigationController!.dismiss(animated: true, completion: nil)
+    }
+    
 
 }

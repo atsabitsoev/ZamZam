@@ -129,7 +129,8 @@ extension WithdrawHomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //выбор ячейки
+        let withdrawVC = UIStoryboard(name: "Withdraw", bundle: nil).instantiateViewController(withIdentifier: "WithdrawPaymentVC")
+        self.navigationController?.show(withdrawVC, sender: nil)
     }
     
 }

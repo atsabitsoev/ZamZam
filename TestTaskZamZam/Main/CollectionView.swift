@@ -108,6 +108,12 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             let replenishNav = storyboard.instantiateViewController(withIdentifier: "ReplenishNav")
             self.tabBarController?.show(replenishNav, sender: nil)
             
+        case 3:
+            
+            let storyboard = UIStoryboard(name: "PayPhoneBill", bundle: nil)
+            let payPhoneBillVC = storyboard.instantiateViewController(withIdentifier: "PayPhoneBillVC")
+            self.tabBarController?.show(payPhoneBillVC, sender: nil)
+            
         default:
             print("Error")
         }

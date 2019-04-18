@@ -51,7 +51,7 @@ class ZamBillCell: UITableViewCell {
     }
     
     func addGreenBordersToViewUnderCheck() {
-        viewUnderCheck.layer.borderColor = #colorLiteral(red: 0.5600509048, green: 0.92213732, blue: 0.528396666, alpha: 1)
+        viewUnderCheck.layer.borderColor = #colorLiteral(red: 0.5607843137, green: 0.9215686275, blue: 0.5294117647, alpha: 1)
         viewUnderCheck.layer.borderWidth = 2
     }
 
