@@ -19,7 +19,7 @@ class PayPhoneBillVC: UIViewController {
     var masZamBills: [ZamBill]?
     var masCardBills: [CardBill]?
     var cardAdding = false
-    
+    lazy var indexPathForCardDataCell = IndexPath(row: masCardBills!.count + masZamBills!.count, section: 1)
 
     override func viewDidLoad() {
         super.viewDidLoad()

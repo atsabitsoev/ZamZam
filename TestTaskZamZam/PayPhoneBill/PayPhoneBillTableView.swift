@@ -89,6 +89,12 @@ extension PayPhoneBillVC: UITableViewDelegate, UITableViewDataSource {
                 
             }
             
+        case 2:
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PayPhoneInfoCell") as! PayPhoneInfoCell
+            
+            return cell
+            
         default:
             
             return UITableViewCell()
@@ -114,6 +120,28 @@ extension PayPhoneBillVC: UITableViewDelegate, UITableViewDataSource {
             return 150
         default:
             return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.section == 1 && indexPath.row == tableView.numberOfRows(inSection: 1) - 1 {
+            
+            if cardAdding {
+                return
+            } else {
+                cardAdding = true
+                tableView.beginUpdates()
+                tableView.deleteRows(at: [[1,tableView.numberOfRows(inSection: 1) - 1]], with: .fade)
+                tableView.insertRows(at: [[1,tableView.numberOfRows(inSection: 1) - 1]], with: .fade)
+                tableView.endUpdates()
+            }
+        } else if cardAdding {
+            cardAdding = false
+            tableView.beginUpdates()
+            tableView.insertRows(at: [[1,tableView.numberOfRows(inSection: 1) - 1]], with: .fade)
+            tableView.deleteRows(at: [[1,tableView.numberOfRows(inSection: 1) - 1]], with: .fade)
+            tableView.endUpdates()
         }
     }
     

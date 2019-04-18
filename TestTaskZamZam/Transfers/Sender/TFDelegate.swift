@@ -8,7 +8,6 @@
 
 import UIKit
 
-//TODO: Продолжить тут!!!!!
 
 extension SenderVC: UITextFieldDelegate {
     

@@ -48,6 +48,7 @@
 		AC8D62C122574323004D0323 /* SetNewPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C022574323004D0323 /* SetNewPassVC.swift */; };
 		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
 		AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C82257544F004D0323 /* EnterVC.swift */; };
+		AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */; };
 		AC9ADCF2226754FC0015FA53 /* WhatIsYourPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
@@ -147,6 +148,7 @@
 		AC8D62C022574323004D0323 /* SetNewPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPassVC.swift; sourceTree = "<group>"; };
 		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
 		AC8D62C82257544F004D0323 /* EnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterVC.swift; sourceTree = "<group>"; };
+		AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneInfoCell.swift; sourceTree = "<group>"; };
 		AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsYourPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
@@ -627,9 +629,7 @@
 		ACFAF771223F8E2D008C731B /* SenderTableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				ACFAF76B223F8B6C008C731B /* SenderCellPhoneNumber.swift */,
 				ACFAF76D223F8B82008C731B /* SenderCellCountry.swift */,
-				ACFAF76F223F8B99008C731B /* SenderCellField.swift */,
 			);
 			path = SenderTableViewCells;
 			sourceTree = "<group>";
@@ -655,11 +655,14 @@
 		ACFBAC362240FB01001D9D94 /* PaymentCells */ = {
 			isa = PBXGroup;
 			children = (
+				ACFAF76B223F8B6C008C731B /* SenderCellPhoneNumber.swift */,
+				ACFAF76F223F8B99008C731B /* SenderCellField.swift */,
 				ACFBAC372240FB1F001D9D94 /* TotalInfoCell.swift */,
 				ACFBAC392240FB35001D9D94 /* ZamBillCell.swift */,
 				ACFBAC3B2240FB44001D9D94 /* AddNewCardCell.swift */,
 				ACFBAC3D2240FB5D001D9D94 /* CardCell.swift */,
 				ACFBAC3F2240FB6B001D9D94 /* CardDataCell.swift */,
+				AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */,
 			);
 			name = PaymentCells;
 			path = "/Users/atsamaz/Desktop/IOS/TestTaskZamZam/Entities + Services/PaymentCells";
@@ -841,6 +844,7 @@
 				ACC5CB0D225C96CC00B28E62 /* ReplenAddCardCell.swift in Sources */,
 				ACC5CAF8225C718A00B28E62 /* ReplenishDescribtionCell.swift in Sources */,
 				ACC5CAFB225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift in Sources */,
+				AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */,
 				ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */,
 				ACC5CB11225CBD2C00B28E62 /* ReplenTFDelegate.swift in Sources */,
 				ACC5CB0F225C96DA00B28E62 /* ReplenNewCardCell.swift in Sources */,
