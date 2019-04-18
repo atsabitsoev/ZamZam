@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension WithdrawVC: UITableViewDelegate, UITableViewDataSource {
+extension WithdrawHomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
@@ -31,21 +31,21 @@ extension WithdrawVC: UITableViewDelegate, UITableViewDataSource {
                 
                 cell.labTitle.text = "На карту"
                 cell.labDescribtion.text = "180 стран мира"
-                let im = UIImage(named: "globe")
+                let im = UIImage(named: "creditCard")
                 cell.imSmall.image = im?.withRenderingMode(.alwaysTemplate)
                 
             case 1:
                 
                 cell.labTitle.text = "На баланс телефона"
                 cell.labDescribtion.text = "Любой оператор"
-                let im = UIImage(named: "repeat")
+                let im = UIImage(named: "phoneIncoming")
                 cell.imSmall.image = im?.withRenderingMode(.alwaysTemplate)
                 
             case 2:
                 
                 cell.labTitle.text = "Наличными"
                 cell.labDescribtion.text = "В любом отделении платежной системы CONTACT"
-                let im = UIImage(named: "repeat")
+                let im = UIImage(named: "usersCopy")
                 cell.imSmall.image = im?.withRenderingMode(.alwaysTemplate)
                 
             default:

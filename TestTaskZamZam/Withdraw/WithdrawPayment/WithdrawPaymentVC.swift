@@ -1,5 +1,5 @@
 //
-//  WithdrawVC.swift
+//  WithdrawPaymentVC.swift
 //  TestTaskZamZam
 //
 //  Created by Ацамаз Бицоев on 18/04/2019.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class WithdrawVC: UIViewController {
+class WithdrawPaymentVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
     }
-    
 
 }
