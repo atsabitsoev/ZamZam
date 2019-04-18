@@ -49,6 +49,9 @@
 		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
 		AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C82257544F004D0323 /* EnterVC.swift */; };
 		AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */; };
+		AC98BF80226891BC00E35745 /* Withdraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC98BF7F226891BC00E35745 /* Withdraw.storyboard */; };
+		AC98BF832268935100E35745 /* WithdrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF822268935100E35745 /* WithdrawVC.swift */; };
+		AC98BF862268946E00E35745 /* WithdrawTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF852268946E00E35745 /* WithdrawTableView.swift */; };
 		AC9ADCF2226754FC0015FA53 /* WhatIsYourPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
@@ -149,6 +152,9 @@
 		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
 		AC8D62C82257544F004D0323 /* EnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterVC.swift; sourceTree = "<group>"; };
 		AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneInfoCell.swift; sourceTree = "<group>"; };
+		AC98BF7F226891BC00E35745 /* Withdraw.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Withdraw.storyboard; sourceTree = "<group>"; };
+		AC98BF822268935100E35745 /* WithdrawVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawVC.swift; sourceTree = "<group>"; };
+		AC98BF852268946E00E35745 /* WithdrawTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawTableView.swift; sourceTree = "<group>"; };
 		AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsYourPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
@@ -241,6 +247,7 @@
 				ACB26A0D22606BB9007AD399 /* Replenish */,
 				ACE139BD224259D8004EDB38 /* CardIssue */,
 				ACBC5E0B22684DFF0005C355 /* PayPhoneBill */,
+				AC98BF812268933000E35745 /* Withdraw */,
 				ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */,
 				ACFAF761223F7239008C731B /* Alerts */,
 				AC567566223BD26D001BBE66 /* Entities + Services */,
@@ -297,6 +304,7 @@
 				5B7DFEAC222FFAC200ECF0D3 /* AppDelegate.swift */,
 				5B7DFEB0222FFAC200ECF0D3 /* Main.storyboard */,
 				ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */,
+				AC98BF7F226891BC00E35745 /* Withdraw.storyboard */,
 				ACC5CAEB225C6CB500B28E62 /* Replenish.storyboard */,
 				ACE139BB2242549D004EDB38 /* CardIssue.storyboard */,
 				AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */,
@@ -420,6 +428,23 @@
 				AC8D62C82257544F004D0323 /* EnterVC.swift */,
 			);
 			path = EnterVC;
+			sourceTree = "<group>";
+		};
+		AC98BF812268933000E35745 /* Withdraw */ = {
+			isa = PBXGroup;
+			children = (
+				AC98BF822268935100E35745 /* WithdrawVC.swift */,
+				AC98BF842268944D00E35745 /* WithdrawTableview */,
+			);
+			path = Withdraw;
+			sourceTree = "<group>";
+		};
+		AC98BF842268944D00E35745 /* WithdrawTableview */ = {
+			isa = PBXGroup;
+			children = (
+				AC98BF852268946E00E35745 /* WithdrawTableView.swift */,
+			);
+			path = WithdrawTableview;
 			sourceTree = "<group>";
 		};
 		AC9ADCF0226754BF0015FA53 /* WhatIsYourPhoneVC */ = {
@@ -753,6 +778,7 @@
 				AC110AA8223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf in Resources */,
 				5B7DFEE62230702B00ECF0D3 /* .gitignore in Resources */,
 				ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */,
+				AC98BF80226891BC00E35745 /* Withdraw.storyboard in Resources */,
 				5B7DFEC8223007D500ECF0D3 /* Kelson Sans Regular RU.otf in Resources */,
 				5B7DFEB4222FFAC500ECF0D3 /* Assets.xcassets in Resources */,
 				5B7DFEB2222FFAC200ECF0D3 /* Main.storyboard in Resources */,
@@ -844,6 +870,7 @@
 				ACC5CB0D225C96CC00B28E62 /* ReplenAddCardCell.swift in Sources */,
 				ACC5CAF8225C718A00B28E62 /* ReplenishDescribtionCell.swift in Sources */,
 				ACC5CAFB225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift in Sources */,
+				AC98BF862268946E00E35745 /* WithdrawTableView.swift in Sources */,
 				AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */,
 				ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */,
 				ACC5CB11225CBD2C00B28E62 /* ReplenTFDelegate.swift in Sources */,
@@ -874,6 +901,7 @@
 				5B7DFEDB2230685A00ECF0D3 /* TableView.swift in Sources */,
 				ACC5CAF2225C714100B28E62 /* ReplenishTableview.swift in Sources */,
 				5B7DFED6223027D300ECF0D3 /* CollectionViewCell2.swift in Sources */,
+				AC98BF832268935100E35745 /* WithdrawVC.swift in Sources */,
 				ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */,
 				ACFBAC2F2240DB8E001D9D94 /* WhatCountryTFDelegate.swift in Sources */,
 				5B7DFECA223012B400ECF0D3 /* CardBill.swift in Sources */,

@@ -32,8 +32,20 @@ extension PayPhoneBillVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.section {
         case 0:
             
-            print("Первая секция")
-            return UITableViewCell()
+            switch indexPath.row {
+            case 0:
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "SenderCellPhoneNumber") as! SenderCellPhoneNumber
+                return cell
+                
+            case 1:
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "SenderCellField") as! SenderCellField
+                return cell
+                
+            default:
+                return UITableViewCell()
+            }
             
         case 1:
             
@@ -142,6 +154,43 @@ extension PayPhoneBillVC: UITableViewDelegate, UITableViewDataSource {
             tableView.insertRows(at: [[1,tableView.numberOfRows(inSection: 1) - 1]], with: .fade)
             tableView.deleteRows(at: [[1,tableView.numberOfRows(inSection: 1) - 1]], with: .fade)
             tableView.endUpdates()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            
+            return 28
+            
+        } else if section == 1 {
+            
+            return 55
+            
+        } else {
+            
+            return 22
+            
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 1 {
+            let view = UIView(frame: tableView.rectForHeader(inSection: 1))
+            let label = myLabel(frame: CGRect(x: 21,
+                                              y: 23,
+                                              width: UIScreen.main.bounds.width - 21 - 20,
+                                              height: 15))
+            label.text = "Выберите счет или карту с которого хотите оплатить"
+            label.font = UIFont(name: "KelsonSans-RegularRU", size: 14)
+            label.numberOfLines = 0
+            label.textColor = #colorLiteral(red: 0.1055305973, green: 0.1625663936, blue: 0.4235753119, alpha: 1)
+            label.adjustsFontSizeToFitWidth = true
+            
+            view.addSubview(label)
+            return view
+            
+        } else {
+            return UIView()
         }
     }
     

@@ -54,7 +54,7 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
             
         default:
             
-            let myCell = tableView.dequeueReusableCell(withIdentifier: "CenderCellField") as! SenderCellField
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "SenderCellField") as! SenderCellField
             
             myCell.viewWhite.layer.cornerRadius = 8
             myCell.viewWhite.layer.borderWidth = 2
