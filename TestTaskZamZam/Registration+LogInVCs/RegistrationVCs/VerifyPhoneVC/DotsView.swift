@@ -17,30 +17,62 @@ class DotsView: UIView {
             setNeedsDisplay()
         }
     }
-    @IBInspectable var solidDots: Int = 3 {
+    @IBInspectable var solidDots: Int = 0 {
         didSet {
             setNeedsDisplay()
         }
     }
+    @IBInspectable var showableCode: String = "" {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    @IBInspectable var fontName: String = "KelsonSans-RegularRU"
     private var betweenCenters: CGFloat = 30
     private var radius: CGFloat = 8
     
     @IBInspectable var color: UIColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
+    
+    var masLabels: [myLabel] = []
+    
 
     override func draw(_ rect: CGRect) {
+        removeLabels()
+        
         let centers = getCenterPoints()
-        drawDots(in: centers)
+        drawDotsOrLabels(in: centers)
+        
+        addLabels()
     }
     
     
-    private func drawDots(in centers: [CGPoint]) {
+    private func addLabels() {
+        for lab in masLabels {
+            self.addSubview(lab)
+        }
+    }
+    
+    private func removeLabels() {
+        for lab in masLabels {
+            lab.alpha = 0
+        }
+    }
+    
+    private func drawDotsOrLabels(in centers: [CGPoint]) {
         var i = 0
         for center in centers {
-            if i < solidDots {
-                drawDot(in: center, solid: true)
+            if i < solidDots || i < showableCode.count {
+                
+                if showableCode == "" {
+                    drawDot(in: center, solid: true)
+                } else {
+                    setLabel(text: showableCode[String.Index(encodedOffset: i)], center: center, i: i)
+                }
+                
             } else {
                 drawDot(in: center, solid: false)
             }
+            
             i += 1
         }
         print(centers)
@@ -59,6 +91,19 @@ class DotsView: UIView {
             roundPath.lineWidth = 1
             roundPath.stroke()
         }
+    }
+    
+    private func setLabel(text: Character, center: CGPoint, i: Int) {
+        
+        let label = myLabel()
+        label.bounds.size = CGSize(width: 16, height: 35)
+        label.text = String(text)
+        label.font = UIFont(name: fontName, size: 30)
+        label.textAlignment = .center
+        label.center = center
+        label.textColor = #colorLiteral(red: 0.1074947491, green: 0.1614276171, blue: 0.4236208797, alpha: 1)
+        label.adjustsFontSizeToFitWidth = true
+        masLabels.append(label)
     }
     
     private func getCenterPoints() -> [CGPoint] {

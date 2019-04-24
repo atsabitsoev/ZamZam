@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cbP-4G-yfl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iAy-Lc-hIL">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -492,6 +492,9 @@
                                         <state key="normal" title="Дальше &gt;">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="cbP-4G-yfl" kind="show" id="zBX-Ka-Jsh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -610,41 +613,83 @@
             <objects>
                 <viewController id="cbP-4G-yfl" customClass="VerifyPhoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tLv-iM-ARZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CB-ij-Ywk">
-                                <rect key="frame" x="0.0" y="144" width="375" height="668"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CB-ij-Ywk">
+                                <rect key="frame" x="0.0" y="100" width="375" height="624"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSV-Bu-plb">
+                                        <rect key="frame" x="97" y="189" width="181" height="26"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                        <state key="normal" title="Повторный код через 56 сек">
+                                            <color key="titleColor" red="0.1188343093" green="0.15990385409999999" blue="0.40786582230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NrR-VL-7ME">
+                                        <rect key="frame" x="0.0" y="215" width="375" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="tFCodeTextChanged:" destination="cbP-4G-yfl" eventType="editingChanged" id="q3H-Bm-fSm"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NrR-VL-7ME" firstAttribute="top" secondItem="QSV-Bu-plb" secondAttribute="bottom" id="Q5X-nq-KV9"/>
+                                    <constraint firstAttribute="trailing" secondItem="NrR-VL-7ME" secondAttribute="trailing" id="tuT-Io-9mG"/>
+                                    <constraint firstItem="NrR-VL-7ME" firstAttribute="leading" secondItem="2CB-ij-Ywk" secondAttribute="leading" id="vCW-Ah-IJ6"/>
+                                    <constraint firstItem="QSV-Bu-plb" firstAttribute="centerX" secondItem="2CB-ij-Ywk" secondAttribute="centerX" id="wyq-jO-BLY"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код из СМС" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIt-Gl-y3a">
-                                <rect key="frame" x="18" y="53" width="357" height="82"/>
+                                <rect key="frame" x="18" y="9" width="357" height="82"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQK-fM-0BK" customClass="DotsView" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="263" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="189" width="375" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="HrH-DA-0Fh"/>
+                                    <constraint firstAttribute="height" constant="100" id="HrH-DA-0Fh"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalDots">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="solidDots">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
                                         <color key="value" red="0.1188343093" green="0.15990385409999999" blue="0.40786582230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="totalDots">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="solidDots">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIy-q1-O5p">
+                                <rect key="frame" x="0.0" y="684" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LAU-ee-2yi"/>
+                                    <constraint firstAttribute="width" constant="40" id="aG3-T9-1bc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FX-AV-DRh">
+                                <rect key="frame" x="335" y="684" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="giS-Hz-rbD"/>
+                                    <constraint firstAttribute="width" constant="40" id="jqt-S0-aZx"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.11883430927991867" green="0.15990385413169861" blue="0.40786582231521606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="2CB-ij-Ywk" secondAttribute="bottom" id="K5u-tX-hco"/>
+                            <constraint firstItem="sIy-q1-O5p" firstAttribute="leading" secondItem="tLv-iM-ARZ" secondAttribute="leading" id="MeR-zr-P8i"/>
                             <constraint firstItem="SQK-fM-0BK" firstAttribute="centerY" secondItem="tLv-iM-ARZ" secondAttribute="centerY" constant="-123" id="OYP-d6-k6B"/>
                             <constraint firstItem="SQK-fM-0BK" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" id="VGZ-eN-bJh"/>
                             <constraint firstItem="KIt-Gl-y3a" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" constant="18" id="VKK-Av-BvL"/>
@@ -652,12 +697,21 @@
                             <constraint firstItem="2CB-ij-Ywk" firstAttribute="trailing" secondItem="ZUW-iK-v3I" secondAttribute="trailing" id="Xkp-YV-q0T"/>
                             <constraint firstItem="2CB-ij-Ywk" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" id="YTr-ip-lIf"/>
                             <constraint firstItem="2CB-ij-Ywk" firstAttribute="top" secondItem="KIt-Gl-y3a" secondAttribute="bottom" constant="9" id="bPa-07-MWK"/>
+                            <constraint firstAttribute="bottom" secondItem="sIy-q1-O5p" secondAttribute="bottom" id="dq3-jO-lZv"/>
+                            <constraint firstItem="ZUW-iK-v3I" firstAttribute="trailing" secondItem="9FX-AV-DRh" secondAttribute="trailing" id="fXr-3J-Jxz"/>
                             <constraint firstItem="KIt-Gl-y3a" firstAttribute="top" secondItem="ZUW-iK-v3I" secondAttribute="top" constant="9" id="jxs-mA-dKk"/>
                             <constraint firstItem="ZUW-iK-v3I" firstAttribute="trailing" secondItem="KIt-Gl-y3a" secondAttribute="trailing" id="kIg-4q-bOQ"/>
                             <constraint firstItem="2CB-ij-Ywk" firstAttribute="top" secondItem="ZUW-iK-v3I" secondAttribute="top" constant="100" id="sXw-HN-wpX"/>
+                            <constraint firstAttribute="bottom" secondItem="9FX-AV-DRh" secondAttribute="bottom" id="uyR-9m-SGe"/>
+                            <constraint firstItem="QSV-Bu-plb" firstAttribute="top" secondItem="SQK-fM-0BK" secondAttribute="bottom" id="xjY-AU-aY3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZUW-iK-v3I"/>
                     </view>
+                    <connections>
+                        <outlet property="dotsView" destination="SQK-fM-0BK" id="cPB-KQ-AEt"/>
+                        <outlet property="tfCode" destination="NrR-VL-7ME" id="Dnv-of-r4w"/>
+                        <outlet property="viewBigWhite" destination="2CB-ij-Ywk" id="lq9-Ck-LDx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rhh-AZ-XOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
