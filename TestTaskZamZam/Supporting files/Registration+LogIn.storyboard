@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iAy-Lc-hIL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cbP-4G-yfl">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -433,171 +433,6 @@
             </objects>
             <point key="canvasLocation" x="197.59999999999999" y="758.86699507389164"/>
         </scene>
-        <!--Verify PhoneVC-->
-        <scene sceneID="X85-8q-xYk">
-            <objects>
-                <viewController id="eC9-ib-Pcp" customClass="VerifyPhoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ltG-sa-ipI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTz-wi-PfL">
-                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите номер телефона" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5o-0V-PLl" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="32" width="359" height="24"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+7" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ueJ-d7-za9">
-                                        <rect key="frame" x="16" y="80" width="67" height="60"/>
-                                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="8eM-uC-sh4"/>
-                                            <constraint firstAttribute="width" constant="67" id="nLG-lF-KYO"/>
-                                        </constraints>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="maskExpression" value="+{ddd}"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="maskTemplate" value=" "/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="tFCountryCodeTextChanged:" destination="eC9-ib-Pcp" eventType="editingChanged" id="MYH-YF-bta"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-Vk-CGZ">
-                                        <rect key="frame" x="91" y="80" width="268" height="60"/>
-                                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
-                                        <connections>
-                                            <action selector="tFPhoneNumberTextChanged:" destination="eC9-ib-Pcp" eventType="editingChanged" id="WDl-Ty-CCs"/>
-                                        </connections>
-                                    </textField>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RU" translatesAutoresizingMaskIntoConstraints="NO" id="G3L-Qb-Llp">
-                                        <rect key="frame" x="167.66666666666666" y="176" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="U96-Qm-9pw"/>
-                                            <constraint firstAttribute="height" constant="40" id="c1s-Ce-s3t"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diz-aI-ovZ">
-                                        <rect key="frame" x="164.66666666666666" y="632" width="46" height="29"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="46" id="3FF-EN-M7J"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="17"/>
-                                        <state key="normal" title="Назад">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="butBackTapped:" destination="eC9-ib-Pcp" eventType="touchUpInside" id="CSt-fD-4Yb"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="par-r8-jpJ">
-                                        <rect key="frame" x="103.66666666666669" y="574" width="168" height="50"/>
-                                        <color key="backgroundColor" red="0.50196078430000002" green="0.92156862750000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="168" id="bDp-FJ-ykv"/>
-                                            <constraint firstAttribute="height" constant="50" id="gJh-uc-edz"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="18"/>
-                                        <state key="normal" title="Отпрвить код">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="butNextTapped:" destination="eC9-ib-Pcp" eventType="touchUpInside" id="QQT-0E-qS6"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код из смс" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLP-ZY-8HD" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="252" width="359" height="24"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ztX-2P-2DB">
-                                        <rect key="frame" x="137.66666666666666" y="300" width="100" height="48"/>
-                                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="EFG-oK-hUS"/>
-                                            <constraint firstAttribute="width" constant="100" id="OQ8-SK-aoq"/>
-                                        </constraints>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="21"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="maskExpression" value="{dddddd}"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="tFShortCodeTextChanged:" destination="eC9-ib-Pcp" eventType="editingChanged" id="koq-sa-yxR"/>
-                                        </connections>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="wLP-ZY-8HD" firstAttribute="leading" secondItem="pTz-wi-PfL" secondAttribute="leading" constant="8" id="2u7-vB-qbD"/>
-                                    <constraint firstItem="u5o-0V-PLl" firstAttribute="top" secondItem="pTz-wi-PfL" secondAttribute="top" constant="32" id="39Q-7X-tEq"/>
-                                    <constraint firstItem="G3L-Qb-Llp" firstAttribute="centerX" secondItem="pTz-wi-PfL" secondAttribute="centerX" id="3ZC-3J-G4U"/>
-                                    <constraint firstItem="G3L-Qb-Llp" firstAttribute="top" secondItem="ueJ-d7-za9" secondAttribute="bottom" constant="36" id="5KT-J8-01q"/>
-                                    <constraint firstItem="cgz-Vk-CGZ" firstAttribute="leading" secondItem="ueJ-d7-za9" secondAttribute="trailing" constant="8" id="7kb-3c-eeg"/>
-                                    <constraint firstAttribute="trailing" secondItem="u5o-0V-PLl" secondAttribute="trailing" constant="8" id="HTv-nq-N6G"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="par-r8-jpJ" secondAttribute="bottom" constant="45" id="Hq8-Ca-0FO"/>
-                                    <constraint firstItem="ueJ-d7-za9" firstAttribute="leading" secondItem="pTz-wi-PfL" secondAttribute="leading" constant="16" id="NPj-hf-3E1"/>
-                                    <constraint firstItem="ztX-2P-2DB" firstAttribute="top" secondItem="wLP-ZY-8HD" secondAttribute="bottom" constant="24" id="SZl-PR-ooF"/>
-                                    <constraint firstAttribute="trailing" secondItem="cgz-Vk-CGZ" secondAttribute="trailing" constant="16" id="Swf-l1-nS8"/>
-                                    <constraint firstItem="diz-aI-ovZ" firstAttribute="centerX" secondItem="pTz-wi-PfL" secondAttribute="centerX" id="UnJ-fL-v0b"/>
-                                    <constraint firstItem="cgz-Vk-CGZ" firstAttribute="top" secondItem="u5o-0V-PLl" secondAttribute="bottom" constant="24" id="UnX-7U-ibN"/>
-                                    <constraint firstItem="diz-aI-ovZ" firstAttribute="top" secondItem="par-r8-jpJ" secondAttribute="bottom" constant="8" id="XzL-4u-ewv"/>
-                                    <constraint firstItem="ueJ-d7-za9" firstAttribute="top" secondItem="u5o-0V-PLl" secondAttribute="bottom" constant="24" id="awg-wg-eBt"/>
-                                    <constraint firstItem="wLP-ZY-8HD" firstAttribute="top" secondItem="G3L-Qb-Llp" secondAttribute="bottom" constant="36" id="b0D-al-jsC"/>
-                                    <constraint firstItem="ztX-2P-2DB" firstAttribute="centerX" secondItem="pTz-wi-PfL" secondAttribute="centerX" id="cds-wi-TjK"/>
-                                    <constraint firstItem="cgz-Vk-CGZ" firstAttribute="height" secondItem="ueJ-d7-za9" secondAttribute="height" id="gBN-jE-8i0"/>
-                                    <constraint firstItem="par-r8-jpJ" firstAttribute="centerX" secondItem="pTz-wi-PfL" secondAttribute="centerX" id="gpx-Uk-kUw"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="diz-aI-ovZ" secondAttribute="bottom" constant="8" id="sI2-uj-2Te"/>
-                                    <constraint firstItem="u5o-0V-PLl" firstAttribute="leading" secondItem="pTz-wi-PfL" secondAttribute="leading" constant="8" id="xas-8q-6QF"/>
-                                    <constraint firstAttribute="trailing" secondItem="wLP-ZY-8HD" secondAttribute="trailing" constant="8" id="yRr-g4-KJp"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8g-hi-oib" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="53" width="204" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="8ze-RH-T9m"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Y8g-hi-oib" firstAttribute="leading" secondItem="6bi-CJ-Ymg" secondAttribute="leading" constant="18" id="7W5-Wz-u5F"/>
-                            <constraint firstItem="pTz-wi-PfL" firstAttribute="leading" secondItem="6bi-CJ-Ymg" secondAttribute="leading" id="8Mf-0M-gu4"/>
-                            <constraint firstItem="pTz-wi-PfL" firstAttribute="top" secondItem="Y8g-hi-oib" secondAttribute="bottom" constant="9" id="TZr-15-Glw"/>
-                            <constraint firstAttribute="bottom" secondItem="pTz-wi-PfL" secondAttribute="bottom" id="hFb-gc-Pjn"/>
-                            <constraint firstItem="Y8g-hi-oib" firstAttribute="top" secondItem="6bi-CJ-Ymg" secondAttribute="top" constant="9" id="nQQ-k7-kFd"/>
-                            <constraint firstItem="pTz-wi-PfL" firstAttribute="trailing" secondItem="6bi-CJ-Ymg" secondAttribute="trailing" id="xg1-0c-jrA"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6bi-CJ-Ymg"/>
-                    </view>
-                    <connections>
-                        <outlet property="butBack" destination="diz-aI-ovZ" id="ecL-Dz-Y7q"/>
-                        <outlet property="butNext" destination="par-r8-jpJ" id="gEh-AD-6wZ"/>
-                        <outlet property="imCountry" destination="G3L-Qb-Llp" id="5HG-LA-or7"/>
-                        <outlet property="labEnterShortCode" destination="wLP-ZY-8HD" id="zr2-XO-pfI"/>
-                        <outlet property="tfCountryCode" destination="ueJ-d7-za9" id="74x-JW-4ce"/>
-                        <outlet property="tfPhoneNumber" destination="cgz-Vk-CGZ" id="2dS-ck-fSX"/>
-                        <outlet property="tfShortCode" destination="ztX-2P-2DB" id="D6l-E0-uY9"/>
-                        <outlet property="viewBigWhite" destination="pTz-wi-PfL" id="p77-ZR-N81"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o6P-HA-dx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1711" y="759"/>
-        </scene>
         <!--What Is Your PhoneVC-->
         <scene sceneID="XOa-Yy-5Cg">
             <objects>
@@ -770,6 +605,79 @@
             </objects>
             <point key="canvasLocation" x="1709.5999999999999" y="71.674876847290648"/>
         </scene>
+        <!--Verify PhoneVC-->
+        <scene sceneID="hFT-1C-0sC">
+            <objects>
+                <viewController id="cbP-4G-yfl" customClass="VerifyPhoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tLv-iM-ARZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CB-ij-Ywk">
+                                <rect key="frame" x="0.0" y="144" width="375" height="668"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код из СМС" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIt-Gl-y3a">
+                                <rect key="frame" x="18" y="53" width="357" height="82"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQK-fM-0BK" customClass="DotsView" customModule="TestTaskZamZam" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="263" width="375" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HrH-DA-0Fh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.1188343093" green="0.15990385409999999" blue="0.40786582230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalDots">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="solidDots">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11883430927991867" green="0.15990385413169861" blue="0.40786582231521606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2CB-ij-Ywk" secondAttribute="bottom" id="K5u-tX-hco"/>
+                            <constraint firstItem="SQK-fM-0BK" firstAttribute="centerY" secondItem="tLv-iM-ARZ" secondAttribute="centerY" constant="-123" id="OYP-d6-k6B"/>
+                            <constraint firstItem="SQK-fM-0BK" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" id="VGZ-eN-bJh"/>
+                            <constraint firstItem="KIt-Gl-y3a" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" constant="18" id="VKK-Av-BvL"/>
+                            <constraint firstItem="SQK-fM-0BK" firstAttribute="trailing" secondItem="ZUW-iK-v3I" secondAttribute="trailing" id="Xj2-5y-4Hd"/>
+                            <constraint firstItem="2CB-ij-Ywk" firstAttribute="trailing" secondItem="ZUW-iK-v3I" secondAttribute="trailing" id="Xkp-YV-q0T"/>
+                            <constraint firstItem="2CB-ij-Ywk" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" id="YTr-ip-lIf"/>
+                            <constraint firstItem="2CB-ij-Ywk" firstAttribute="top" secondItem="KIt-Gl-y3a" secondAttribute="bottom" constant="9" id="bPa-07-MWK"/>
+                            <constraint firstItem="KIt-Gl-y3a" firstAttribute="top" secondItem="ZUW-iK-v3I" secondAttribute="top" constant="9" id="jxs-mA-dKk"/>
+                            <constraint firstItem="ZUW-iK-v3I" firstAttribute="trailing" secondItem="KIt-Gl-y3a" secondAttribute="trailing" id="kIg-4q-bOQ"/>
+                            <constraint firstItem="2CB-ij-Ywk" firstAttribute="top" secondItem="ZUW-iK-v3I" secondAttribute="top" constant="100" id="sXw-HN-wpX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZUW-iK-v3I"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rhh-AZ-XOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2464.8000000000002" y="71.674876847290648"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bgj-qM-gg0">
+            <objects>
+                <viewController id="NCp-9N-4rH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R9h-90-yH0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="m0R-oo-t8h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I87-rM-y7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3260" y="54.679802955665025"/>
+        </scene>
         <!--Set New PassVC-->
         <scene sceneID="dVA-A9-LZx">
             <objects>
@@ -936,7 +844,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ko-PC-gd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448.8000000000002" y="71.674876847290648"/>
+            <point key="canvasLocation" x="2465" y="-610"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2bc-g3-DQH">
@@ -960,7 +868,4 @@
             <point key="canvasLocation" x="198" y="72"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="RU" width="21" height="15"/>
-    </resources>
 </document>

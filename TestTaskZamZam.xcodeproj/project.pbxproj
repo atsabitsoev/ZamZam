@@ -32,6 +32,7 @@
 		AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */; };
 		AC110AB5223A8AD200D1F8D8 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */; };
 		AC1A5274225B26F70021B79C /* PIN VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1A5273225B26F70021B79C /* PIN VC.swift */; };
+		AC1BA0332270534000E60848 /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1BA0322270534000E60848 /* DotsView.swift */; };
 		AC2859EC224CF85E004852C4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2859EB224CF85E004852C4 /* Currency.swift */; };
 		AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */; };
 		AC436CAD224A6503006FA348 /* Pods_TestTaskZamZam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */; };
@@ -137,6 +138,7 @@
 		AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryTextField.swift; sourceTree = "<group>"; };
 		AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "../../../../Library/Fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		AC1A5273225B26F70021B79C /* PIN VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PIN VC.swift"; sourceTree = "<group>"; };
+		AC1BA0322270534000E60848 /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
 		AC2859EB224CF85E004852C4 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferGoneVC.swift; sourceTree = "<group>"; };
 		AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestTaskZamZam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -511,6 +513,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */,
+				AC1BA0322270534000E60848 /* DotsView.swift */,
 			);
 			path = VerifyPhoneVC;
 			sourceTree = "<group>";
@@ -951,6 +954,7 @@
 				ACFBAC3E2240FB5D001D9D94 /* CardCell.swift in Sources */,
 				AC98BF8D22689F4F00E35745 /* WithdrawPaymentTableView.swift in Sources */,
 				ACFAF76A223F8B49008C731B /* SenderTableView.swift in Sources */,
+				AC1BA0332270534000E60848 /* DotsView.swift in Sources */,
 				ACFBAC352240FAF8001D9D94 /* PaymentTableView.swift in Sources */,
 				ACFBAC322240DEB6001D9D94 /* PaymentVC.swift in Sources */,
 				ACFBAC2D2240C419001D9D94 /* myLabel.swift in Sources */,
