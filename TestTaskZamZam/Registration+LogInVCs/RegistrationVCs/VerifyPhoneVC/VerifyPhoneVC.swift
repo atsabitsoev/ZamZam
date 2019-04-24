@@ -14,10 +14,19 @@ class VerifyPhoneVC: UIViewController {
     @IBOutlet weak var tfCode: UITextField!
     @IBOutlet weak var dotsView: DotsView!
     @IBOutlet weak var viewBigWhite: UIView!
+    @IBOutlet weak var butSendCode: UIButton!
+    
+    
+    var isButtonAvailable = false {
+        didSet {
+            butSendCode.isUserInteractionEnabled = isButtonAvailable
+        }
+    }
+    var secondsToWait = 60
     
     
     override func viewDidLoad() {
-        
+        sendCodeAndStartTimer()
     }
     
     override func viewWillLayoutSubviews() {
@@ -59,6 +68,43 @@ class VerifyPhoneVC: UIViewController {
         print(tfCode.text?.count)
     }
     
+    private func sendCode() {
+        //TODO: Отправить код
+        print("Отправляю код")
+    }
+    
+    private func startTimer() {
+        isButtonAvailable = false
+        secondsToWait = 60
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+            
+            self.secondsToWait -= 1
+            
+            UIView.setAnimationsEnabled(false)
+            self.butSendCode.setTitle("Повторный код через \(self.secondsToWait) сек", for: .normal)
+            UIView.setAnimationsEnabled(true)
+            
+            if self.secondsToWait <= 0 {
+                
+                timer.invalidate()
+                self.secondsToWait = 60
+                self.isButtonAvailable = true
+                UIView.setAnimationsEnabled(false)
+                self.butSendCode.setTitle("Отправить код", for: .normal)
+                UIView.setAnimationsEnabled(true)
+                
+            }
+            
+        }
+        
+    }
+    
+    private func sendCodeAndStartTimer() {
+        sendCode()
+        startTimer()
+    }
+    
+    
     
     @IBAction func tFCodeTextChanged(_ sender: UITextField) {
         guard let text = sender.text else { return }
@@ -68,4 +114,9 @@ class VerifyPhoneVC: UIViewController {
             codeEntered(code: sender.text!)
         }
     }
+    
+    @IBAction func butSendCodeTapped(_ sender: UIButton) {
+        sendCodeAndStartTimer()
+    }
+    
 }

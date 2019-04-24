@@ -542,7 +542,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Номер телефона " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QId-O2-fVQ">
-                                <rect key="frame" x="29.000000000000007" y="128" width="72.666666666666686" height="9"/>
+                                <rect key="frame" x="29" y="128" width="73" height="9"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -619,19 +619,22 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CB-ij-Ywk">
                                 <rect key="frame" x="0.0" y="100" width="375" height="624"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSV-Bu-plb">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSV-Bu-plb">
                                         <rect key="frame" x="97" y="189" width="181" height="26"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
-                                        <state key="normal" title="Повторный код через 56 сек">
+                                        <state key="normal" title="Повторный код через 60 сек">
                                             <color key="titleColor" red="0.1188343093" green="0.15990385409999999" blue="0.40786582230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="butSendCodeTapped:" destination="cbP-4G-yfl" eventType="touchUpInside" id="x2F-3h-F1D"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NrR-VL-7ME">
                                         <rect key="frame" x="0.0" y="215" width="375" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                         <connections>
                                             <action selector="tFCodeTextChanged:" destination="cbP-4G-yfl" eventType="editingChanged" id="q3H-Bm-fSm"/>
                                         </connections>
@@ -690,7 +693,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="2CB-ij-Ywk" secondAttribute="bottom" id="K5u-tX-hco"/>
                             <constraint firstItem="sIy-q1-O5p" firstAttribute="leading" secondItem="tLv-iM-ARZ" secondAttribute="leading" id="MeR-zr-P8i"/>
-                            <constraint firstItem="SQK-fM-0BK" firstAttribute="centerY" secondItem="tLv-iM-ARZ" secondAttribute="centerY" constant="-123" id="OYP-d6-k6B"/>
+                            <constraint firstItem="SQK-fM-0BK" firstAttribute="centerY" secondItem="tLv-iM-ARZ" secondAttribute="centerY" priority="750" constant="-123" id="OYP-d6-k6B"/>
                             <constraint firstItem="SQK-fM-0BK" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" id="VGZ-eN-bJh"/>
                             <constraint firstItem="KIt-Gl-y3a" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" constant="18" id="VKK-Av-BvL"/>
                             <constraint firstItem="SQK-fM-0BK" firstAttribute="trailing" secondItem="ZUW-iK-v3I" secondAttribute="trailing" id="Xj2-5y-4Hd"/>
@@ -699,6 +702,7 @@
                             <constraint firstItem="2CB-ij-Ywk" firstAttribute="top" secondItem="KIt-Gl-y3a" secondAttribute="bottom" constant="9" id="bPa-07-MWK"/>
                             <constraint firstAttribute="bottom" secondItem="sIy-q1-O5p" secondAttribute="bottom" id="dq3-jO-lZv"/>
                             <constraint firstItem="ZUW-iK-v3I" firstAttribute="trailing" secondItem="9FX-AV-DRh" secondAttribute="trailing" id="fXr-3J-Jxz"/>
+                            <constraint firstItem="SQK-fM-0BK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2CB-ij-Ywk" secondAttribute="top" constant="16" id="htY-NU-1Fi"/>
                             <constraint firstItem="KIt-Gl-y3a" firstAttribute="top" secondItem="ZUW-iK-v3I" secondAttribute="top" constant="9" id="jxs-mA-dKk"/>
                             <constraint firstItem="ZUW-iK-v3I" firstAttribute="trailing" secondItem="KIt-Gl-y3a" secondAttribute="trailing" id="kIg-4q-bOQ"/>
                             <constraint firstItem="2CB-ij-Ywk" firstAttribute="top" secondItem="ZUW-iK-v3I" secondAttribute="top" constant="100" id="sXw-HN-wpX"/>
@@ -708,6 +712,7 @@
                         <viewLayoutGuide key="safeArea" id="ZUW-iK-v3I"/>
                     </view>
                     <connections>
+                        <outlet property="butSendCode" destination="QSV-Bu-plb" id="63l-td-ia4"/>
                         <outlet property="dotsView" destination="SQK-fM-0BK" id="cPB-KQ-AEt"/>
                         <outlet property="tfCode" destination="NrR-VL-7ME" id="Dnv-of-r4w"/>
                         <outlet property="viewBigWhite" destination="2CB-ij-Ywk" id="lq9-Ck-LDx"/>
@@ -730,7 +735,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I87-rM-y7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3260" y="54.679802955665025"/>
+            <point key="canvasLocation" x="3196" y="72"/>
         </scene>
         <!--Set New PassVC-->
         <scene sceneID="dVA-A9-LZx">
