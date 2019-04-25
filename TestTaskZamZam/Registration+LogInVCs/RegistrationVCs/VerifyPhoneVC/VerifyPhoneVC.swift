@@ -58,7 +58,8 @@ class VerifyPhoneVC: UIViewController {
     }
     
     private func goNext() {
-        //TODO: Переход на следующий экран
+        let newPasswordVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "NewPasswordVC")
+        self.navigationController?.show(newPasswordVC, sender: nil)
     }
     
     private func wrongCode() {

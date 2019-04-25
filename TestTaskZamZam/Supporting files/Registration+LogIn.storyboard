@@ -722,20 +722,187 @@
             </objects>
             <point key="canvasLocation" x="2464.8000000000002" y="71.674876847290648"/>
         </scene>
-        <!--View Controller-->
+        <!--New PasswordVC-->
         <scene sceneID="Bgj-qM-gg0">
             <objects>
-                <viewController id="NCp-9N-4rH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewPasswordVC" id="NCp-9N-4rH" customClass="NewPasswordVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R9h-90-yH0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwd-bx-498">
+                                <rect key="frame" x="0.0" y="144" width="375" height="668"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epw-UY-208">
+                                        <rect key="frame" x="18" y="30" width="339" height="48"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SgU-lo-cKg">
+                                                <rect key="frame" x="11" y="4" width="317" height="44"/>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskExpression" value="{dddd} {dddd} {dddd} {dddd}"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskTemplate" value="•••• •••• •••• ••••"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="tfTextChanged:" destination="NCp-9N-4rH" eventType="editingChanged" id="dy1-Kr-FFW"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="SgU-lo-cKg" firstAttribute="top" secondItem="epw-UY-208" secondAttribute="top" constant="4" id="2GT-it-WMS"/>
+                                            <constraint firstAttribute="bottom" secondItem="SgU-lo-cKg" secondAttribute="bottom" id="BCP-jK-hJS"/>
+                                            <constraint firstItem="SgU-lo-cKg" firstAttribute="leading" secondItem="epw-UY-208" secondAttribute="leading" constant="11" id="WKb-YK-Lws"/>
+                                            <constraint firstAttribute="trailing" secondItem="SgU-lo-cKg" secondAttribute="trailing" constant="11" id="vVX-Wt-9Fc"/>
+                                            <constraint firstAttribute="height" constant="48" id="vrY-Ju-GlQ"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njk-Km-Njb" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="25" width="30" height="9"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
+                                        <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izj-qj-B1k">
+                                        <rect key="frame" x="18" y="108" width="339" height="48"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="AaO-nh-Wur">
+                                                <rect key="frame" x="11" y="4" width="317" height="44"/>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskExpression" value="{dddd} {dddd} {dddd} {dddd}"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskTemplate" value="•••• •••• •••• ••••"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="tfTextChanged:" destination="NCp-9N-4rH" eventType="editingChanged" id="xhb-Ff-oYv"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="AaO-nh-Wur" secondAttribute="trailing" constant="11" id="0Pp-Vu-7sK"/>
+                                            <constraint firstAttribute="bottom" secondItem="AaO-nh-Wur" secondAttribute="bottom" id="cNG-9t-blP"/>
+                                            <constraint firstAttribute="height" constant="48" id="fUv-lV-YG9"/>
+                                            <constraint firstItem="AaO-nh-Wur" firstAttribute="top" secondItem="Izj-qj-B1k" secondAttribute="top" constant="4" id="o7h-QA-REP"/>
+                                            <constraint firstItem="AaO-nh-Wur" firstAttribute="leading" secondItem="Izj-qj-B1k" secondAttribute="leading" constant="11" id="rvQ-uP-1Pe"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Повторите пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ped-Qe-htG" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="103" width="74" height="9"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
+                                        <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сообщение об ошибке" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqv-Ep-D8T" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="234.33333333333334" y="81" width="122.66666666666666" height="12"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="12"/>
+                                        <color key="textColor" red="0.91764705879999997" green="0.019607843140000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сообщение об ошибке" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSn-HR-oh8" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="234.33333333333334" y="159" width="122.66666666666666" height="12"/>
+                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="12"/>
+                                        <color key="textColor" red="0.91764705879999997" green="0.019607843140000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="epw-UY-208" firstAttribute="top" secondItem="hwd-bx-498" secondAttribute="top" constant="30" id="4g7-4b-KWR"/>
+                                    <constraint firstItem="Nqv-Ep-D8T" firstAttribute="top" secondItem="epw-UY-208" secondAttribute="bottom" constant="3" id="8VA-hP-gBg"/>
+                                    <constraint firstAttribute="trailing" secondItem="epw-UY-208" secondAttribute="trailing" constant="18" id="Ny7-VC-Rjz"/>
+                                    <constraint firstItem="MSn-HR-oh8" firstAttribute="top" secondItem="Izj-qj-B1k" secondAttribute="bottom" constant="3" id="UqM-S7-4XE"/>
+                                    <constraint firstItem="Nqv-Ep-D8T" firstAttribute="trailing" secondItem="epw-UY-208" secondAttribute="trailing" id="ZSV-xy-kPY"/>
+                                    <constraint firstItem="Izj-qj-B1k" firstAttribute="leading" secondItem="hwd-bx-498" secondAttribute="leading" constant="18" id="hEd-B4-0mL"/>
+                                    <constraint firstItem="njk-Km-Njb" firstAttribute="leading" secondItem="epw-UY-208" secondAttribute="leading" constant="11" id="iHw-ix-OCo"/>
+                                    <constraint firstItem="njk-Km-Njb" firstAttribute="top" secondItem="epw-UY-208" secondAttribute="top" constant="-5" id="ioe-BA-31t"/>
+                                    <constraint firstItem="epw-UY-208" firstAttribute="leading" secondItem="hwd-bx-498" secondAttribute="leading" constant="18" id="kgo-KR-bbB"/>
+                                    <constraint firstItem="ped-Qe-htG" firstAttribute="top" secondItem="Izj-qj-B1k" secondAttribute="top" constant="-5" id="ldk-Q2-Hzp"/>
+                                    <constraint firstItem="ped-Qe-htG" firstAttribute="leading" secondItem="Izj-qj-B1k" secondAttribute="leading" constant="11" id="mpw-7y-RMN"/>
+                                    <constraint firstItem="MSn-HR-oh8" firstAttribute="trailing" secondItem="Izj-qj-B1k" secondAttribute="trailing" id="nGJ-lg-YEE"/>
+                                    <constraint firstItem="Izj-qj-B1k" firstAttribute="top" secondItem="epw-UY-208" secondAttribute="bottom" constant="30" id="x9S-JX-yjh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Izj-qj-B1k" secondAttribute="trailing" constant="18" id="zVX-vo-qQZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOo-1Z-0Gd">
+                                <rect key="frame" x="18" y="330" width="339" height="62"/>
+                                <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OOo-1Z-0Gd" secondAttribute="height" multiplier="339:62" id="CiI-GK-eSH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                <state key="normal" title="Дальше &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="butNextTapped:" destination="NCp-9N-4rH" eventType="touchUpInside" id="8PV-OM-jr3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Придумайте пароль" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4B-Ii-hX9">
+                                <rect key="frame" x="18" y="53" width="339" height="82"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCa-g9-zZe">
+                                <rect key="frame" x="0.0" y="772" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8Aw-SM-fMg"/>
+                                    <constraint firstAttribute="width" constant="40" id="bQh-uB-M81"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O32-ey-4fX">
+                                <rect key="frame" x="335" y="772" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1H2-r1-DrH"/>
+                                    <constraint firstAttribute="width" constant="40" id="2UY-AU-3KZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11883430927991867" green="0.15990385413169861" blue="0.40786582231521606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="OOo-1Z-0Gd" firstAttribute="leading" secondItem="m0R-oo-t8h" secondAttribute="leading" constant="18" id="3GT-dg-fMd"/>
+                            <constraint firstItem="m0R-oo-t8h" firstAttribute="trailing" secondItem="OOo-1Z-0Gd" secondAttribute="trailing" constant="18" id="3zT-dX-4al"/>
+                            <constraint firstItem="OOo-1Z-0Gd" firstAttribute="top" secondItem="Izj-qj-B1k" secondAttribute="bottom" constant="30" id="80j-m3-Yjh"/>
+                            <constraint firstItem="q4B-Ii-hX9" firstAttribute="leading" secondItem="R9h-90-yH0" secondAttribute="leading" constant="18" id="9iZ-o5-ZfT"/>
+                            <constraint firstAttribute="bottom" secondItem="pCa-g9-zZe" secondAttribute="bottom" id="EWH-RC-Sh5"/>
+                            <constraint firstItem="m0R-oo-t8h" firstAttribute="trailing" secondItem="q4B-Ii-hX9" secondAttribute="trailing" constant="18" id="Gkd-zK-qVJ"/>
+                            <constraint firstItem="O32-ey-4fX" firstAttribute="trailing" secondItem="m0R-oo-t8h" secondAttribute="trailing" id="JSe-ta-hMr"/>
+                            <constraint firstItem="m0R-oo-t8h" firstAttribute="trailing" secondItem="hwd-bx-498" secondAttribute="trailing" id="K5Z-O5-L3W"/>
+                            <constraint firstAttribute="bottom" secondItem="hwd-bx-498" secondAttribute="bottom" id="Krp-UK-WWl"/>
+                            <constraint firstItem="hwd-bx-498" firstAttribute="top" secondItem="m0R-oo-t8h" secondAttribute="top" constant="100" id="QVo-cC-iYL"/>
+                            <constraint firstItem="q4B-Ii-hX9" firstAttribute="top" secondItem="m0R-oo-t8h" secondAttribute="top" constant="9" id="Rjg-rA-4XS"/>
+                            <constraint firstItem="OOo-1Z-0Gd" firstAttribute="width" secondItem="OOo-1Z-0Gd" secondAttribute="height" multiplier="339:62" id="VeO-mq-IzD"/>
+                            <constraint firstItem="hwd-bx-498" firstAttribute="top" secondItem="q4B-Ii-hX9" secondAttribute="bottom" constant="9" id="WB6-Ac-muB"/>
+                            <constraint firstItem="pCa-g9-zZe" firstAttribute="leading" secondItem="m0R-oo-t8h" secondAttribute="leading" id="ci3-Wx-g7r"/>
+                            <constraint firstItem="OOo-1Z-0Gd" firstAttribute="width" secondItem="OOo-1Z-0Gd" secondAttribute="height" multiplier="339:62" id="fc8-9e-KWv"/>
+                            <constraint firstItem="hwd-bx-498" firstAttribute="leading" secondItem="m0R-oo-t8h" secondAttribute="leading" id="j9n-xc-VnI"/>
+                            <constraint firstAttribute="bottom" secondItem="O32-ey-4fX" secondAttribute="bottom" id="vhG-us-Z7F"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="m0R-oo-t8h"/>
                     </view>
+                    <connections>
+                        <outlet property="butNext" destination="OOo-1Z-0Gd" id="8a6-La-C08"/>
+                        <outlet property="labErrorNewPassword" destination="Nqv-Ep-D8T" id="s0k-hr-53y"/>
+                        <outlet property="labErrorRepeatPassword" destination="MSn-HR-oh8" id="MbZ-Oo-26Q"/>
+                        <outlet property="tfNewPassword" destination="SgU-lo-cKg" id="Jgz-A7-Zs8"/>
+                        <outlet property="tfRepeatPassword" destination="AaO-nh-Wur" id="C9l-UD-s7r"/>
+                        <outlet property="viewBigWhite" destination="hwd-bx-498" id="bCG-9j-VXV"/>
+                        <outlet property="viewNewPassword" destination="epw-UY-208" id="5ab-d2-9zv"/>
+                        <outlet property="viewRepeatPassword" destination="Izj-qj-B1k" id="duu-ka-omL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I87-rM-y7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3196" y="72"/>
+            <point key="canvasLocation" x="3196" y="71.674876847290648"/>
         </scene>
         <!--Set New PassVC-->
         <scene sceneID="dVA-A9-LZx">
