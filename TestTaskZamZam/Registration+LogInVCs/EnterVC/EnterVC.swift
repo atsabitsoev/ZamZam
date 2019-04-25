@@ -100,6 +100,20 @@ class EnterVC: UIViewController {
         butNext.layer.shadowPath = CGPath(rect: insetedBounds, transform: nil)
     }
     
+    func getOnlyNumbers(_ string: String?) -> String? {
+        if string == nil {
+            return nil
+        }
+        var newString = ""
+        
+        for c in string! {
+            if "1234567890".contains(c) {
+                newString.append(c)
+            }
+        }
+        return newString
+    }
+    
     
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
         TFService.checkPrefix(prefix: "+", sender)
@@ -110,7 +124,7 @@ class EnterVC: UIViewController {
     
     @IBAction func butEnterTapped(_ sender: UIButton) {
         
-        guard let phone = tfPhoneNumber.text else { return }
+        guard let phone = getOnlyNumbers(tfPhoneNumber.text) else { return }
         guard let password = tfPassword.text else { return }
         guard let rightPassword = keychain.get(phone) else { return }
         

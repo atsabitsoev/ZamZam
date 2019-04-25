@@ -98,7 +98,12 @@ class NewPasswordVC: UIViewController {
     }
     
     func goNext() {
-        print("Перехожу далее")
+        let setNewPinVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "SetNewPINVC")
+        self.navigationController?.show(setNewPinVC, sender: nil)
+    }
+    
+    func rememberPassword(_ password: String) {
+        temporaryPass = password
     }
     
     
@@ -125,6 +130,7 @@ class NewPasswordVC: UIViewController {
                 showError(.differentPasswords)
             } else {
                 hideLabError(tag: sender.tag)
+                rememberPassword(text)
             }
         default:
             print("what")

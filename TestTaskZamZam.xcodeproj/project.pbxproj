@@ -33,6 +33,8 @@
 		AC110AB5223A8AD200D1F8D8 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */; };
 		AC1A5274225B26F70021B79C /* PIN VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1A5273225B26F70021B79C /* PIN VC.swift */; };
 		AC1BA0332270534000E60848 /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1BA0322270534000E60848 /* DotsView.swift */; };
+		AC1FF9B92271CFE4009BE5C7 /* SetNewPINVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1FF9B82271CFE4009BE5C7 /* SetNewPINVC.swift */; };
+		AC1FF9BC2271DB7B009BE5C7 /* TouchFaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1FF9BB2271DB7B009BE5C7 /* TouchFaceVC.swift */; };
 		AC2859EC224CF85E004852C4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2859EB224CF85E004852C4 /* Currency.swift */; };
 		AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */; };
 		AC436CAD224A6503006FA348 /* Pods_TestTaskZamZam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */; };
@@ -47,7 +49,6 @@
 		AC6A5D1D2271A2560004198F /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A5D1C2271A2560004198F /* NewPasswordVC.swift */; };
 		AC6B2B6D225F5DF10057DCE8 /* RecipientTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B2B6C225F5DF10057DCE8 /* RecipientTableview.swift */; };
 		AC6B2B6F225F5E6A0057DCE8 /* RecipientHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B2B6E225F5E6A0057DCE8 /* RecipientHistoryCell.swift */; };
-		AC8D62C122574323004D0323 /* SetNewPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C022574323004D0323 /* SetNewPassVC.swift */; };
 		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
 		AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C82257544F004D0323 /* EnterVC.swift */; };
 		AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */; };
@@ -143,6 +144,8 @@
 		AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "../../../../Library/Fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		AC1A5273225B26F70021B79C /* PIN VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PIN VC.swift"; sourceTree = "<group>"; };
 		AC1BA0322270534000E60848 /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
+		AC1FF9B82271CFE4009BE5C7 /* SetNewPINVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPINVC.swift; sourceTree = "<group>"; };
+		AC1FF9BB2271DB7B009BE5C7 /* TouchFaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchFaceVC.swift; sourceTree = "<group>"; };
 		AC2859EB224CF85E004852C4 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferGoneVC.swift; sourceTree = "<group>"; };
 		AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestTaskZamZam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,7 +160,6 @@
 		AC6A5D1C2271A2560004198F /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
 		AC6B2B6C225F5DF10057DCE8 /* RecipientTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientTableview.swift; sourceTree = "<group>"; };
 		AC6B2B6E225F5E6A0057DCE8 /* RecipientHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientHistoryCell.swift; sourceTree = "<group>"; };
-		AC8D62C022574323004D0323 /* SetNewPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPassVC.swift; sourceTree = "<group>"; };
 		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
 		AC8D62C82257544F004D0323 /* EnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterVC.swift; sourceTree = "<group>"; };
 		AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneInfoCell.swift; sourceTree = "<group>"; };
@@ -365,6 +367,22 @@
 			path = "PIN VC";
 			sourceTree = "<group>";
 		};
+		AC1FF9B72271CFC2009BE5C7 /* SetNewPINVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC1FF9B82271CFE4009BE5C7 /* SetNewPINVC.swift */,
+			);
+			path = SetNewPINVC;
+			sourceTree = "<group>";
+		};
+		AC1FF9BA2271DB47009BE5C7 /* TouchFaceVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC1FF9BB2271DB7B009BE5C7 /* TouchFaceVC.swift */,
+			);
+			path = TouchFaceVC;
+			sourceTree = "<group>";
+		};
 		AC53F9DB225627A30086A0D3 /* Twilio */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,14 +456,6 @@
 			path = RecipientTableview;
 			sourceTree = "<group>";
 		};
-		AC8D62C222574332004D0323 /* SetNewPassVC */ = {
-			isa = PBXGroup;
-			children = (
-				AC8D62C022574323004D0323 /* SetNewPassVC.swift */,
-			);
-			path = SetNewPassVC;
-			sourceTree = "<group>";
-		};
 		AC8D62C72257543F004D0323 /* EnterVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,7 +523,6 @@
 				ACA8A0DD2255F90F00EFBE1A /* RegistrationVCs */,
 				AC8D62C72257543F004D0323 /* EnterVC */,
 				AC1A5272225B26DB0021B79C /* PIN VC */,
-				AC6A5D1B22719EBF0004198F /* NewPasswordVC */,
 			);
 			path = "Registration+LogInVCs";
 			sourceTree = "<group>";
@@ -523,7 +532,9 @@
 			children = (
 				AC9ADCF0226754BF0015FA53 /* WhatIsYourPhoneVC */,
 				ACA8A0E02255FA0900EFBE1A /* VerifyPhoneVC */,
-				AC8D62C222574332004D0323 /* SetNewPassVC */,
+				AC6A5D1B22719EBF0004198F /* NewPasswordVC */,
+				AC1FF9B72271CFC2009BE5C7 /* SetNewPINVC */,
+				AC1FF9BA2271DB47009BE5C7 /* TouchFaceVC */,
 			);
 			path = RegistrationVCs;
 			sourceTree = "<group>";
@@ -985,7 +996,9 @@
 				ACFBAC3E2240FB5D001D9D94 /* CardCell.swift in Sources */,
 				AC98BF8D22689F4F00E35745 /* WithdrawPaymentTableView.swift in Sources */,
 				ACFAF76A223F8B49008C731B /* SenderTableView.swift in Sources */,
+				AC1FF9B92271CFE4009BE5C7 /* SetNewPINVC.swift in Sources */,
 				AC1BA0332270534000E60848 /* DotsView.swift in Sources */,
+				AC1FF9BC2271DB7B009BE5C7 /* TouchFaceVC.swift in Sources */,
 				ACFBAC352240FAF8001D9D94 /* PaymentTableView.swift in Sources */,
 				ACFBAC322240DEB6001D9D94 /* PaymentVC.swift in Sources */,
 				ACC8273F2271A7F1001E5750 /* TFPasswordDelegate.swift in Sources */,
@@ -996,7 +1009,6 @@
 				5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */,
 				ACFBAC382240FB1F001D9D94 /* TotalInfoCell.swift in Sources */,
 				AC98BF8A22689DA300E35745 /* WithdrawPaymentVC.swift in Sources */,
-				AC8D62C122574323004D0323 /* SetNewPassVC.swift in Sources */,
 				ACBC5E13226850400005C355 /* ZamBill.swift in Sources */,
 				AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */,
 				AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */,

@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let userEntered = UserDefaults.standard.bool(forKey: "userEntered")
 
-//        switch userEntered {
-//        case true:
-//            self.window?.rootViewController = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "PINVC")
-//        case false:
-//            self.window?.rootViewController = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
-//        }
-//        
+        switch userEntered {
+        case true:
+            self.window?.rootViewController = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "PINVC")
+        case false:
+            self.window?.rootViewController = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
+        }
+        
         return true
     }
 

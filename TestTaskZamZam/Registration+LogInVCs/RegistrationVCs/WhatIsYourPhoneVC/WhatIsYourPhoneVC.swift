@@ -10,6 +10,9 @@ import UIKit
 import PhoneNumberKit
 import FlagKit
 
+var temporaryPhone = ""
+var temporaryPass = ""
+
 class WhatIsYourPhoneVC: UIViewController {
     
     
@@ -83,6 +86,25 @@ class WhatIsYourPhoneVC: UIViewController {
         return true
     }
     
+    func rememberPhone(_ phone: String) {
+        temporaryPhone = getOnlyNumbers(phone)
+    }
+    
+    func getOnlyNumbers(_ string: String) -> String {
+        var newString = ""
+        for c in string {
+            if "1234567890".contains(c) {
+                newString.append(c)
+            }
+        }
+        return newString
+    }
+    
+    func goNext() {
+        let verifyPhoneVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "verifyPhoneVC")
+        self.navigationController?.show(verifyPhoneVC, sender: nil)
+    }
+    
     
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
         TFService.checkPrefix(prefix: "+", tfPhoneNumber)
@@ -93,5 +115,13 @@ class WhatIsYourPhoneVC: UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func butNextTapped(_ sender: UIButton) {
+        guard let text = tfPhoneNumber.text else { return }
+        rememberPhone(text)
+        goNext()
+    }
+    
     
 }

@@ -14,6 +14,9 @@ class PIN_VC: UIViewController {
 
     
     @IBOutlet weak var tfPin: UITextField!
+    @IBOutlet weak var labUser: myLabel!
+    @IBOutlet weak var dotsView: DotsView!
+    @IBOutlet weak var viewBigWhite: UIView!
     
     
     let keychain = KeychainSwift()
@@ -21,13 +24,34 @@ class PIN_VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        dotsView.totalDots = 4
+        
+        labUser.text = UserDefaults.standard.string(forKey: "userPhone")
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(activateKeyboard))
+        dotsView.addGestureRecognizer(gesture)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        viewBigWhite.layer.cornerRadius = 16
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        touchFaceAuth()
+        let useTouchId = UserDefaults.standard.bool(forKey: "useTouchId")
+        
+        if useTouchId {
+            touchFaceAuth()
+        } else {
+            tfPin.becomeFirstResponder()
+        }
     }
     
+    
+    @objc func activateKeyboard() {
+        print("hello")
+        tfPin.becomeFirstResponder()
+    }
     
     func touchFaceAuth() {
         
@@ -55,8 +79,8 @@ class PIN_VC: UIViewController {
             }
         } else {
             print("Не поддерживается")
+            tfPin.becomeFirstResponder()
         }
-        
         
     }
     
@@ -81,12 +105,36 @@ class PIN_VC: UIViewController {
     func wrongPIN() {
         
         tfPin.backgroundColor = UIColor.red
+        dotsView.color = #colorLiteral(red: 0.9176470588, green: 0.01960784314, blue: 0.231372549, alpha: 1)
+        dotsView.solidDots = 0
+        tfPin.text = ""
+        
+        
+    }
     
+    func showSureAlert() {
+        let alert = UIAlertController(title: "Вы уверены?", message: "Вы хотите поменять аккаунт?", preferredStyle: .alert)
+        let actionYes = UIAlertAction(title: "ДА", style: .default) { (action) in
+            self.logOut()
+        }
+        let actionCancel = UIAlertAction(title: "Отмена", style: .cancel) { (alert) in}
+        alert.addAction(actionYes)
+        alert.addAction(actionCancel)
+        self.show(alert, sender: nil)
+    }
+    
+    func logOut() {
+        UserDefaults.standard.set(false, forKey: "userEntered")
+        let regLogNavCon = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
+        self.show(regLogNavCon, sender: nil)
     }
     
     
     @IBAction func tFPinTextChanged(_ sender: UITextField) {
-        print("do")
+        guard sender.text != nil else { return }
+        
+        dotsView.solidDots = sender.text!.count
+        
         if sender.text?.count == 4 {
             let pin = sender.text!
             if isPinRight(pin: pin) {
@@ -95,8 +143,17 @@ class PIN_VC: UIViewController {
                 wrongPIN()
             }
         }
+        
+        if var text = sender.text, text.count > 4 {
+            text.removeLast()
+        }
     
     }
+    
+    @IBAction func butLogOutTapped(_ sender: UIButton) {
+        showSureAlert()
+    }
+    
     
     
 }
