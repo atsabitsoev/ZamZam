@@ -32,10 +32,10 @@ class BillCell: UITableViewCell {
     func configureViewMain() {
         let layer = viewMain.layer
         layer.cornerRadius = 8
-        layer.shadowOffset = CGSize(width: 0, height: 10)
-        layer.shadowOpacity = 0.65
+        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowOpacity = 1
         layer.shadowColor = UIColor(white: 0.84, alpha: 1).cgColor
-        layer.shadowRadius = 10
+        layer.shadowRadius = 5
     }
 
 }
