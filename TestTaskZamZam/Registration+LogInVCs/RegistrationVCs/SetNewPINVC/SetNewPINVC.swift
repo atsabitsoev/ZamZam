@@ -9,7 +9,7 @@
 import UIKit
 import KeychainSwift
 
-class SetNewPINVC: UIViewController {
+class SetNewPINVC: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var viewBigWhite: UIView!
@@ -21,7 +21,7 @@ class SetNewPINVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tfNewPin.delegate = self
     }
     
     override func viewWillLayoutSubviews() {
@@ -69,6 +69,7 @@ class SetNewPINVC: UIViewController {
         } else {
             dotsViewNewPin.color = #colorLiteral(red: 0.1074947491, green: 0.1614276171, blue: 0.4236208797, alpha: 1)
         }
+        print(sender.text)
     }
     
     @IBAction func tfRepeatPinTextChanged(_ sender: UITextField) {
@@ -94,6 +95,18 @@ class SetNewPINVC: UIViewController {
         } else {
             dotsViewRepeatPin.color = #colorLiteral(red: 0.1074947491, green: 0.1614276171, blue: 0.4236208797, alpha: 1)
         }
+        print(sender.text)
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if textField.text?.count == 4 && string != ""{
+            tfRepeatPin.text?.append(string)
+            dotsViewRepeatPin.solidDots += 1
+            tfRepeatPin.becomeFirstResponder()
+            return false
+        }
+        return true
     }
     
     
