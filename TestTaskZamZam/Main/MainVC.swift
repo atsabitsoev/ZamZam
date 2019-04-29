@@ -81,6 +81,7 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     }
     
     private func startRefreshing() {
+        self.view.isUserInteractionEnabled = false
         stackViewBalanceStandardBounds = stackViewBalance.bounds
         activityIndicator.startAnimating()
         UIView.animate(withDuration: 0.3) {
@@ -96,6 +97,7 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         UIView.animate(withDuration: 0.3) {
             self.stackViewBalance.bounds = self.stackViewBalanceStandardBounds!
         }
+        self.view.isUserInteractionEnabled = true
     }
     
     func setImageToTabBar() {

@@ -66,7 +66,7 @@ class VerifyPhoneVC: UIViewController {
         tfCode.text = ""
         dotsView.showableCode = ""
         dotsView.color = #colorLiteral(red: 0.862745098, green: 0.2078431373, blue: 0.2705882353, alpha: 1)
-        print(tfCode.text?.count)
+        print(tfCode.text?.count ?? "error")
     }
     
     private func sendCode() {
