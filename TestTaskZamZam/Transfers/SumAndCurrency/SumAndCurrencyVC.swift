@@ -39,6 +39,7 @@ class SumAndCurrencyVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addTapGestureToViewCountry()
     }
     
     
@@ -71,6 +72,14 @@ class SumAndCurrencyVC: UIViewController {
         self.view.endEditing(true)
     }
     
+    @objc func goBack() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    private func addTapGestureToViewCountry() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(goBack))
+        viewCountry.addGestureRecognizer(tap)
+    }
     
     func configureButNext() {
         print("Рамка кнопки некст: \(butNext.bounds)")

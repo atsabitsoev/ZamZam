@@ -66,7 +66,8 @@ class DotsView: UIView {
                 if showableCode == "" {
                     drawDot(in: center, solid: true)
                 } else {
-                    setLabel(text: showableCode[String.Index(encodedOffset: i)], center: center, i: i)
+                    setLabel(text: showableCode[String.Index(utf16Offset: i, in: showableCode)], center: center, i: i)
+                    //String.Index(encodedOffset: i)]
                 }
                 
             } else {
