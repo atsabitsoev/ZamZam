@@ -42,7 +42,18 @@ class MainVC: UIViewController, UICollectionViewDelegate {
                            sum: 192.01,
                            first4Numbers: 3948,
                            last4numbers: 3513,
-                           currency: .dollar)]
+                           currency: .dollar),
+                      CardBill(name: "Zam счет EUR",
+                               sum: 1900.041,
+                               first4Numbers: 3948,
+                               last4numbers: 3513,
+                               currency: .euro),
+                      CardBill(name: "Zam счет USD",
+                               sum: 19234.01,
+                               first4Numbers: 3622,
+                               last4numbers: 3513,
+                               currency: .dollar),
+                        ]
 //        let longpress = UILongPressGestureRecognizer(target: self,
 //                                                     action: #selector(longPressGestureRecognized(gestureRecognizer:)))
 //        self.tableView.addGestureRecognizer(longpress)
