@@ -38,6 +38,7 @@
 		AC2859EC224CF85E004852C4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2859EB224CF85E004852C4 /* Currency.swift */; };
 		AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */; };
 		AC436CAD224A6503006FA348 /* Pods_TestTaskZamZam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */; };
+		AC52107822800ADC0069B62D /* CheckRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52107722800ADC0069B62D /* CheckRoundView.swift */; };
 		AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53F9DC225627B70086A0D3 /* NotificationType.swift */; };
 		AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC567564223BC5EE001BBE66 /* SumAndCurrencyVC.swift */; };
 		AC56756C223BE3D2001BBE66 /* AlertViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */; };
@@ -149,6 +150,7 @@
 		AC2859EB224CF85E004852C4 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferGoneVC.swift; sourceTree = "<group>"; };
 		AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestTaskZamZam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC52107722800ADC0069B62D /* CheckRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckRoundView.swift; sourceTree = "<group>"; };
 		AC53F9DC225627B70086A0D3 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
 		AC567564223BC5EE001BBE66 /* SumAndCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAndCurrencyVC.swift; sourceTree = "<group>"; };
 		AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertViewControllers.storyboard; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				AC56756F223BEF0F001BBE66 /* UIColor+Additions.swift */,
+				AC52107722800ADC0069B62D /* CheckRoundView.swift */,
 				ACFBAC2C2240C419001D9D94 /* myLabel.swift */,
 				5B7DFEE022306A8D00ECF0D3 /* Gradient.swift */,
 				ACFAF776223FCBF4008C731B /* BorderAnimation.swift */,
@@ -998,6 +1001,7 @@
 				ACFAF76A223F8B49008C731B /* SenderTableView.swift in Sources */,
 				AC1FF9B92271CFE4009BE5C7 /* SetNewPINVC.swift in Sources */,
 				AC1BA0332270534000E60848 /* DotsView.swift in Sources */,
+				AC52107822800ADC0069B62D /* CheckRoundView.swift in Sources */,
 				AC1FF9BC2271DB7B009BE5C7 /* TouchFaceVC.swift in Sources */,
 				ACFBAC352240FAF8001D9D94 /* PaymentTableView.swift in Sources */,
 				ACFBAC322240DEB6001D9D94 /* PaymentVC.swift in Sources */,

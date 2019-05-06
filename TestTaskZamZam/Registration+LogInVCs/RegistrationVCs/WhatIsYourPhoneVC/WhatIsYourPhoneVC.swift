@@ -18,11 +18,11 @@ class WhatIsYourPhoneVC: UIViewController {
     
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var butNext: UIButton!
-    @IBOutlet weak var butCheck: UIButton!
-    @IBOutlet weak var butPolicy: UIButton!
+    @IBOutlet weak var labPolicy: UILabel!
     @IBOutlet weak var viewPhoneNumber: UIView!
     @IBOutlet weak var imCountry: UIImageView!
     @IBOutlet weak var tfPhoneNumber: PhoneNumberTextField!
+    @IBOutlet weak var viewCheckRound: CheckRoundView!
     
     var currentCode = "+"
     
@@ -43,6 +43,9 @@ class WhatIsYourPhoneVC: UIViewController {
         viewPhoneNumber.layer.borderWidth = 2
         viewPhoneNumber.layer.borderColor = #colorLiteral(red: 0.8745098039, green: 0.8784313725, blue: 0.9254901961, alpha: 1)
         viewPhoneNumber.layer.cornerRadius = 8
+        
+        
+        labPolicy.center = CGPoint(x: labPolicy.center.x, y: viewCheckRound.center.y)
     }
     
     func configureButNext() {

@@ -19,7 +19,6 @@ class SumAndCurrencyVC: UIViewController {
     @IBOutlet weak var labCountry: myLabel!
     @IBOutlet weak var tfSum: UITextField!
     @IBOutlet weak var labCurrency: myLabel!
-    @IBOutlet weak var butRemindAboutTransferStatus: UIButton!
     @IBOutlet weak var labRemindAboutTransferStatus: myLabel!
     @IBOutlet weak var labRates: myLabel!
     @IBOutlet weak var labCommission: myLabel!
@@ -29,6 +28,7 @@ class SumAndCurrencyVC: UIViewController {
     @IBOutlet weak var butBack: UIButton!
     @IBOutlet weak var butClose: UIButton!
     @IBOutlet weak var imCountry: UIImageView!
+    @IBOutlet weak var viewCheckRound: CheckRoundView!
     
     
     var currentRegion: String?
@@ -48,10 +48,10 @@ class SumAndCurrencyVC: UIViewController {
         setBorder(to: [viewSum, viewCountry, viewCurrency])
         viewGreen.layer.cornerRadius = 8
         imCountry.layer.cornerRadius = imCountry.bounds.width/2
-        butRemindAboutTransferStatus.layer.cornerRadius = butRemindAboutTransferStatus.bounds.width/2
         viewMain.layer.cornerRadius = 16
         
         labRemindAboutTransferStatus.sizeToFit()
+        labRemindAboutTransferStatus.center = CGPoint(x: labRemindAboutTransferStatus.center.x, y: viewCheckRound.center.y)
         
         configureButNext()
         configureNavigationButtons()

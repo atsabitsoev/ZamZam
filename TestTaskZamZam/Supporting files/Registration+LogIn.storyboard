@@ -516,46 +516,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzE-7r-JDm">
                                 <rect key="frame" x="0.0" y="100" width="375" height="624"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Eg-vP-qwa">
-                                        <rect key="frame" x="18" y="117" width="21.333333333333329" height="21.333333333333343"/>
-                                        <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="6Eg-vP-qwa" secondAttribute="height" multiplier="1:1" id="bj1-rA-n7O"/>
-                                        </constraints>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-B0-nEI">
-                                        <rect key="frame" x="49.333333333333343" y="121.99999999999999" width="317.66666666666663" height="16.333333333333329"/>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Я соглашаюсь с">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.65490196078431373" green="0.65490196078431373" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
-                                                        <font key="NSOriginalFont" size="12" name="KelsonSans-RegularRU"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" ">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="политикой конфиденциальности">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
-                                                        <font key="NSOriginalFont" size="12" name="KelsonSans-RegularRU"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        <integer key="NSUnderline" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvy-cT-aef">
-                                        <rect key="frame" x="18" y="174.33333333333331" width="339" height="62"/>
+                                        <rect key="frame" x="18" y="176" width="339" height="62"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Uvy-cT-aef" secondAttribute="height" multiplier="339:62" id="85I-SL-A6y"/>
@@ -568,18 +530,128 @@
                                             <action selector="butNextTapped:" destination="xaA-69-aHm" eventType="touchUpInside" id="Ok9-ID-CPR"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZj-W3-9MO" customClass="CheckRoundView" customModule="TestTaskZamZam" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="117" width="24" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="IqJ-iY-uVs"/>
+                                            <constraint firstAttribute="height" constant="24" id="ZJd-Ul-xVa"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isActive" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3C-zD-jKE">
+                                        <rect key="frame" x="64" y="124" width="293" height="12"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Я соглашаюсь с ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.65490000000000004" green="0.65490000000000004" blue="0.65490000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="56">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="84">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="112">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="140">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="168">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="196">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="224">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="252">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="280">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="308">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="336">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="политикой конфиденциальности">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.33724999999999999" green="0.75294000000000005" blue="0.99216000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="56">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="84">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="112">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="140">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="168">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="196">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="224">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="252">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="280">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="308">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="336">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                    <color key="NSUnderlineColor" red="0.33724999999999999" green="0.75294000000000005" blue="0.99216000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="Uvy-cT-aef" firstAttribute="top" secondItem="iZj-W3-9MO" secondAttribute="bottom" constant="35" id="4gM-6u-oqf"/>
+                                    <constraint firstAttribute="trailing" secondItem="I3C-zD-jKE" secondAttribute="trailing" constant="18" id="7h3-jq-BoO"/>
                                     <constraint firstItem="Uvy-cT-aef" firstAttribute="width" secondItem="Uvy-cT-aef" secondAttribute="height" multiplier="339:62" id="7oz-L3-LSG"/>
-                                    <constraint firstItem="D8w-B0-nEI" firstAttribute="top" secondItem="6Eg-vP-qwa" secondAttribute="top" constant="5" id="80D-lx-Eaw"/>
-                                    <constraint firstItem="D8w-B0-nEI" firstAttribute="leading" secondItem="6Eg-vP-qwa" secondAttribute="trailing" constant="10" id="Laf-RK-n5a"/>
-                                    <constraint firstItem="Uvy-cT-aef" firstAttribute="top" secondItem="6Eg-vP-qwa" secondAttribute="bottom" constant="36" id="M35-lg-u0t"/>
-                                    <constraint firstItem="D8w-B0-nEI" firstAttribute="bottom" secondItem="6Eg-vP-qwa" secondAttribute="bottom" id="NcG-RX-EC4"/>
-                                    <constraint firstItem="6Eg-vP-qwa" firstAttribute="leading" secondItem="TzE-7r-JDm" secondAttribute="leading" constant="18" id="Nse-nk-ih2"/>
-                                    <constraint firstAttribute="trailing" secondItem="D8w-B0-nEI" secondAttribute="trailing" constant="8" id="Tov-vP-u7d"/>
                                     <constraint firstAttribute="trailing" secondItem="Uvy-cT-aef" secondAttribute="trailing" constant="18" id="cJm-y9-o9l"/>
                                     <constraint firstItem="Uvy-cT-aef" firstAttribute="leading" secondItem="TzE-7r-JDm" secondAttribute="leading" constant="18" id="nFr-ha-Tey"/>
+                                    <constraint firstItem="I3C-zD-jKE" firstAttribute="leading" secondItem="iZj-W3-9MO" secondAttribute="trailing" constant="18" id="p3k-J8-cbF"/>
+                                    <constraint firstItem="Uvy-cT-aef" firstAttribute="top" secondItem="I3C-zD-jKE" secondAttribute="bottom" constant="40" id="skf-XW-VFV"/>
+                                    <constraint firstItem="iZj-W3-9MO" firstAttribute="leading" secondItem="TzE-7r-JDm" secondAttribute="leading" constant="22" id="x3B-ZS-UyP"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAN-0a-YoW">
@@ -645,11 +717,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.11764705882352941" green="0.16097238659858704" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Eg-vP-qwa" firstAttribute="top" secondItem="PAN-0a-YoW" secondAttribute="bottom" constant="36" id="1Ka-Cz-kq6"/>
                             <constraint firstItem="rh8-7t-Txa" firstAttribute="leading" secondItem="gBl-bm-doG" secondAttribute="leading" constant="18" id="6ch-bl-N3g"/>
                             <constraint firstAttribute="bottom" secondItem="1St-4d-IMY" secondAttribute="bottom" id="CXc-ou-C6l"/>
                             <constraint firstItem="rh8-7t-Txa" firstAttribute="top" secondItem="gBl-bm-doG" secondAttribute="top" constant="10" id="Leu-eh-z50"/>
                             <constraint firstItem="m0g-AX-QJX" firstAttribute="trailing" secondItem="gBl-bm-doG" secondAttribute="trailing" id="MOb-T5-MEo"/>
+                            <constraint firstItem="iZj-W3-9MO" firstAttribute="top" secondItem="PAN-0a-YoW" secondAttribute="bottom" constant="36" id="P99-mT-id6"/>
                             <constraint firstAttribute="bottom" secondItem="TzE-7r-JDm" secondAttribute="bottom" id="Pgg-Fl-Tqm"/>
                             <constraint firstItem="QId-O2-fVQ" firstAttribute="leading" secondItem="PAN-0a-YoW" secondAttribute="leading" constant="11" id="Ta8-fG-deL"/>
                             <constraint firstItem="PAN-0a-YoW" firstAttribute="width" secondItem="PAN-0a-YoW" secondAttribute="height" multiplier="113:16" id="Ukx-eu-rsY"/>
@@ -658,7 +730,6 @@
                             <constraint firstItem="1St-4d-IMY" firstAttribute="leading" secondItem="gBl-bm-doG" secondAttribute="leading" id="YgG-TZ-ajd"/>
                             <constraint firstItem="PAN-0a-YoW" firstAttribute="top" secondItem="TzE-7r-JDm" secondAttribute="top" constant="33" id="b4q-aU-JFG"/>
                             <constraint firstItem="QId-O2-fVQ" firstAttribute="top" secondItem="PAN-0a-YoW" secondAttribute="top" constant="-5" id="dUf-3g-LZp"/>
-                            <constraint firstItem="6Eg-vP-qwa" firstAttribute="width" secondItem="fzx-NL-ZMI" secondAttribute="width" multiplier="1:1.4" id="dWk-PL-B0B"/>
                             <constraint firstAttribute="bottom" secondItem="m0g-AX-QJX" secondAttribute="bottom" id="g3l-eA-xba"/>
                             <constraint firstItem="TzE-7r-JDm" firstAttribute="leading" secondItem="gBl-bm-doG" secondAttribute="leading" id="jeg-m2-IZQ"/>
                             <constraint firstItem="gBl-bm-doG" firstAttribute="trailing" secondItem="PAN-0a-YoW" secondAttribute="trailing" constant="18" id="qwu-cH-rWW"/>
@@ -667,11 +738,11 @@
                         <viewLayoutGuide key="safeArea" id="gBl-bm-doG"/>
                     </view>
                     <connections>
-                        <outlet property="butCheck" destination="6Eg-vP-qwa" id="pWi-SE-ZEp"/>
                         <outlet property="butNext" destination="Uvy-cT-aef" id="gzc-Dp-mcZ"/>
-                        <outlet property="butPolicy" destination="D8w-B0-nEI" id="QC9-1h-OcI"/>
                         <outlet property="imCountry" destination="fzx-NL-ZMI" id="xhY-mT-uM0"/>
+                        <outlet property="labPolicy" destination="I3C-zD-jKE" id="YTj-Q2-xo8"/>
                         <outlet property="tfPhoneNumber" destination="IBk-hL-Hj2" id="8ZY-nJ-Z4d"/>
+                        <outlet property="viewCheckRound" destination="iZj-W3-9MO" id="fPg-OV-1OG"/>
                         <outlet property="viewMain" destination="TzE-7r-JDm" id="6HW-SN-7qS"/>
                         <outlet property="viewPhoneNumber" destination="PAN-0a-YoW" id="K4r-pJ-xSH"/>
                     </connections>
