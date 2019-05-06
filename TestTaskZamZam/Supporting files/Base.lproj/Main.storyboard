@@ -1754,15 +1754,6 @@
                                                     <outlet property="viewWhite" destination="ocs-PF-gYR" id="0Ph-gQ-s7E"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="Ck1-Rh-Sht">
-                                                <rect key="frame" x="0.0" y="229.33333333333337" width="375" height="94"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ck1-Rh-Sht" id="DCO-LJ-AmX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
                                         </prototypes>
                                         <connections>
                                             <outlet property="dataSource" destination="UHQ-Nd-GPC" id="a2t-hm-RXa"/>
