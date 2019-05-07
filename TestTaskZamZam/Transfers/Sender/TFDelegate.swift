@@ -25,6 +25,13 @@ extension SenderVC: UITextFieldDelegate {
             cell.labTitle.alpha = 1
         }
         
+        let bar = UIToolbar()
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let next = UIBarButtonItem(title: "Далее", style: .plain, target: self, action: #selector(nextTapped))
+        bar.items = [flexSpace, next]
+        bar.sizeToFit()
+        textField.inputAccessoryView = bar
+        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {

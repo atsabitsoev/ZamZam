@@ -44,11 +44,12 @@ class SenderVC: UIViewController {
         
     }
     
+    
+    
     override func viewWillLayoutSubviews() {
         configureButNext()
         configureNavigationButtons()
     }
-    
     
     func configureNavigationButtons() {
         
@@ -95,6 +96,23 @@ class SenderVC: UIViewController {
         
     }
     
+    private func goToNextVC() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let paymentVC = storyboard.instantiateViewController(withIdentifier: "PaymentVC")
+        self.navigationController?.show(paymentVC, sender: nil)
+    }
+    
+    
+    @objc func nextTapped() {
+        
+        self.view.endEditing(true)
+        goToNextVC()
+    }
+    
+    
+    @IBAction func butNextTapped(_ sender: Any) {
+        nextTapped()
+    }
     
     @IBAction func butBackTapped(_ sender: UIButton) {
         

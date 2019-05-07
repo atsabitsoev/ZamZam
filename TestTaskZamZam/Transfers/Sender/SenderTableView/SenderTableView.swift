@@ -99,7 +99,7 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
         case 1,2:
             return 34
         default:
-            return 78
+            return 0
         }
     }
     

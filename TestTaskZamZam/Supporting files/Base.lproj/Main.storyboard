@@ -1783,7 +1783,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="h8W-WC-n0u" kind="show" id="cvW-r7-4cS"/>
+                                            <action selector="butNextTapped:" destination="UHQ-Nd-GPC" eventType="touchUpInside" id="iwE-WO-3fP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1880,7 +1880,7 @@
         <!--PaymentVC-->
         <scene sceneID="0GP-pK-61f">
             <objects>
-                <viewController id="h8W-WC-n0u" customClass="PaymentVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaymentVC" id="h8W-WC-n0u" customClass="PaymentVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SFi-d5-wgz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
