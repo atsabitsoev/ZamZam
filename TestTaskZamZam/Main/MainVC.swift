@@ -33,6 +33,7 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         masOfBills = [CardBill(name: "Zam счет RUB",
                            sum: 21324.00,
                            first4Numbers: 4566,
