@@ -33,7 +33,12 @@ class RegistrationService {
                 
             case .success:
                 
-                print("Регистрация прошла успешно")
+                if response.response?.statusCode == 200 {
+                    print("Регистрация прошла успешно")
+                } else {
+                    print(response.result.value!)
+                }
+                print(response.result.value!)
                 
             case .failure:
                 

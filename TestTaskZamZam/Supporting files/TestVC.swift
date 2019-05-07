@@ -41,9 +41,7 @@ class TestVC: UIViewController {
     
     @IBAction func registration(_ sender: UIButton) {
         
-        let accessToken = UserDefaults.standard.string(forKey: "accessToken")
-        
-        registrationService.register(phone: phone, password: password, accessToken: accessToken!)
+        registrationService.register(phone: phone, password: password)
         
     }
 }

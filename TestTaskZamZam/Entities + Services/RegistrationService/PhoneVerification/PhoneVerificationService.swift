@@ -126,8 +126,14 @@ class PhoneVerificationService {
                 
             case .success:
                 
-                print("Код оказался правильный")
-                self.post(.verificationSucceed)
+                if response.response?.statusCode == 200 {
+                    print("Код оказался правильный")
+                    self.post(.verificationSucceed)
+                } else {
+                    print("Ошибка")
+                    print(response.result.value!)
+                    self.post(.verificationFailed)
+                }
                 
             case .failure:
                 
