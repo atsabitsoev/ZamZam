@@ -22,7 +22,7 @@ class PhoneVerificationService {
     
     private var userPhone: String = ""
     
-    private var codeSent = false
+    private var codeIsHere = false
 
     private var appAccessToken = "" {
         didSet {
@@ -34,7 +34,7 @@ class PhoneVerificationService {
     
     func verify(phone: String) {
         
-        codeSent = false
+        codeIsHere = false
         self.getAppAccessToken()
         self.userPhone = phone
         observeToSendCode(.appAccessTokenIsGot)
@@ -106,8 +106,8 @@ class PhoneVerificationService {
     }
     
     
-    @objc private func codeIsSent() {
-        self.codeSent = true
+    @objc private func codeHasCome() {
+        self.codeIsHere = true
         print("Код отправлен")
     }
     
@@ -161,7 +161,7 @@ class PhoneVerificationService {
     
     private func observeIsCodeSent() {
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(codeIsSent),
+                                               selector: #selector(codeHasCome),
                                                name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
                                                object: nil)
     }

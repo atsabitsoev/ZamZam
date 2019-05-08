@@ -15,6 +15,7 @@ class VerifyPhoneVC: UIViewController {
     @IBOutlet weak var dotsView: DotsView!
     @IBOutlet weak var viewBigWhite: UIView!
     @IBOutlet weak var butSendCode: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
     var isButtonAvailable = false {
@@ -25,7 +26,12 @@ class VerifyPhoneVC: UIViewController {
     var secondsToWait = 60
     
     
+    let phoneVerificationService = PhoneVerificationService.standard
+    
+    
     override func viewDidLoad() {
+        addObservers()
+        sendCode()
         sendCodeAndStartTimer()
     }
     
@@ -38,40 +44,42 @@ class VerifyPhoneVC: UIViewController {
     }
     
     
-    private func codeEntered(code: String) {
-        if isCodeRight(code: code) {
-            goNext()
-            print("code is right")
-        } else {
-            wrongCode()
-            print("code is wrong")
-        }
+    private func addObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(codeSent),
+                                               name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(wrongCode),
+                                               name: NSNotification.Name(PhoneVerificationNotificationNames.verificationFailed.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(goNext),
+                                               name: NSNotification.Name(PhoneVerificationNotificationNames.verificationSucceed.rawValue), object: nil)
     }
     
-    private func isCodeRight(code: String) -> Bool {
-        //TODO: Проверка кода
-        if code == "123456" {
-            return true
-        } else {
-            return false
-        }
+    @objc private func codeSent() {
+        tfCode.becomeFirstResponder()
+        activityIndicator.stopAnimating()
     }
     
-    private func goNext() {
+    
+    @objc private func goNext() {
         let newPasswordVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "NewPasswordVC")
         self.navigationController?.show(newPasswordVC, sender: nil)
+        activityIndicator.stopAnimating()
     }
     
-    private func wrongCode() {
+    @objc private func wrongCode() {
         tfCode.text = ""
         dotsView.showableCode = ""
         dotsView.color = #colorLiteral(red: 0.862745098, green: 0.2078431373, blue: 0.2705882353, alpha: 1)
         print(tfCode.text?.count ?? "error")
+        activityIndicator.stopAnimating()
     }
     
     private func sendCode() {
         //TODO: Отправить код
-        print("Отправляю код")
+        phoneVerificationService.verify(phone: temporaryPhone)
+        activityIndicator.startAnimating()
     }
     
     private func startTimer() {
@@ -106,13 +114,13 @@ class VerifyPhoneVC: UIViewController {
     }
     
     
-    
     @IBAction func tFCodeTextChanged(_ sender: UITextField) {
-        guard let text = sender.text else { return }
+        guard sender.text != nil else { return }
         let codeLength = sender.text!.count
         dotsView.showableCode = sender.text!
         if codeLength == dotsView.totalDots {
-            codeEntered(code: sender.text!)
+            phoneVerificationService.checkVerification(code: tfCode.text!)
+            activityIndicator.startAnimating()
         }
     }
     

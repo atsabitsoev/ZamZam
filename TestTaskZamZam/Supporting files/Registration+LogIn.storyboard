@@ -754,12 +754,18 @@
                                     <constraint firstAttribute="width" constant="40" id="jqt-S0-aZx"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zcm-Sh-mpe">
+                                <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.070588235289999995" green="0.094117647060000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.11883430927991867" green="0.15990385413169861" blue="0.40786582231521606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="zcm-Sh-mpe" firstAttribute="centerY" secondItem="tLv-iM-ARZ" secondAttribute="centerY" id="5sU-aS-XWI"/>
                             <constraint firstAttribute="bottom" secondItem="2CB-ij-Ywk" secondAttribute="bottom" id="K5u-tX-hco"/>
                             <constraint firstItem="sIy-q1-O5p" firstAttribute="leading" secondItem="tLv-iM-ARZ" secondAttribute="leading" id="MeR-zr-P8i"/>
                             <constraint firstItem="SQK-fM-0BK" firstAttribute="centerY" secondItem="tLv-iM-ARZ" secondAttribute="centerY" priority="750" constant="-123" id="OYP-d6-k6B"/>
+                            <constraint firstItem="zcm-Sh-mpe" firstAttribute="centerX" secondItem="tLv-iM-ARZ" secondAttribute="centerX" id="Plg-cb-BNh"/>
                             <constraint firstItem="SQK-fM-0BK" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" id="VGZ-eN-bJh"/>
                             <constraint firstItem="KIt-Gl-y3a" firstAttribute="leading" secondItem="ZUW-iK-v3I" secondAttribute="leading" constant="18" id="VKK-Av-BvL"/>
                             <constraint firstItem="SQK-fM-0BK" firstAttribute="trailing" secondItem="ZUW-iK-v3I" secondAttribute="trailing" id="Xj2-5y-4Hd"/>
@@ -778,6 +784,7 @@
                         <viewLayoutGuide key="safeArea" id="ZUW-iK-v3I"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="zcm-Sh-mpe" id="qwU-yM-sV5"/>
                         <outlet property="butSendCode" destination="QSV-Bu-plb" id="63l-td-ia4"/>
                         <outlet property="dotsView" destination="SQK-fM-0BK" id="cPB-KQ-AEt"/>
                         <outlet property="tfCode" destination="NrR-VL-7ME" id="Dnv-of-r4w"/>

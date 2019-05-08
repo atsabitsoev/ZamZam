@@ -90,7 +90,7 @@ class WhatIsYourPhoneVC: UIViewController {
     }
     
     func rememberPhone(_ phone: String) {
-        temporaryPhone = getOnlyNumbers(phone)
+        temporaryPhone = "+\(getOnlyNumbers(phone))"
     }
     
     func getOnlyNumbers(_ string: String) -> String {

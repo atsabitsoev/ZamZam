@@ -14,5 +14,4 @@ enum PhoneVerificationNotificationNames: String {
     case codeSent = "codeSent"
     case verificationSucceed = "verificationSucceed"
     case verificationFailed = "verificationFailed"
-    
 }
