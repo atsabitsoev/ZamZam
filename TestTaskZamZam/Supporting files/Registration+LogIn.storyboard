@@ -234,9 +234,6 @@
                                                 <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="tfPasswordTextChanged:" destination="Q6h-9F-H2b" eventType="editingChanged" id="hU8-ks-rCg"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -338,6 +335,10 @@
                                     <constraint firstAttribute="height" constant="40" id="s4Q-tJ-LPB"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pL0-EU-KXU">
+                                <rect key="frame" x="169" y="343.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.070588235289999995" green="0.094117647060000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.11764705882352941" green="0.16078431372549018" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -346,15 +347,18 @@
                             <constraint firstAttribute="bottom" secondItem="QIo-3s-4tc" secondAttribute="bottom" id="DUA-y8-4Zf"/>
                             <constraint firstAttribute="bottom" secondItem="ZVt-ze-Hpl" secondAttribute="bottom" id="Enc-ro-coj"/>
                             <constraint firstItem="syV-PN-DiP" firstAttribute="leading" secondItem="ClI-Y0-kPw" secondAttribute="leading" id="KAV-lS-nbQ"/>
+                            <constraint firstItem="pL0-EU-KXU" firstAttribute="centerY" secondItem="JJ7-Vu-Onb" secondAttribute="centerY" id="MkS-A9-NPM"/>
                             <constraint firstItem="dPn-Bj-M6I" firstAttribute="leading" secondItem="ClI-Y0-kPw" secondAttribute="leading" constant="18" id="Ov4-8U-im9"/>
                             <constraint firstItem="syV-PN-DiP" firstAttribute="trailing" secondItem="ClI-Y0-kPw" secondAttribute="trailing" id="RXE-y9-CBp"/>
                             <constraint firstItem="dPn-Bj-M6I" firstAttribute="top" secondItem="ClI-Y0-kPw" secondAttribute="top" constant="10" id="SPO-Kp-zlt"/>
+                            <constraint firstItem="pL0-EU-KXU" firstAttribute="centerX" secondItem="JJ7-Vu-Onb" secondAttribute="centerX" id="XDQ-CG-JFU"/>
                             <constraint firstItem="syV-PN-DiP" firstAttribute="top" secondItem="ClI-Y0-kPw" secondAttribute="top" constant="58" id="ZMW-RM-pqS"/>
                             <constraint firstAttribute="trailing" secondItem="ZVt-ze-Hpl" secondAttribute="trailing" id="oZ0-72-M7j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ClI-Y0-kPw"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="pL0-EU-KXU" id="0W4-ee-1OZ"/>
                         <outlet property="butNext" destination="rhl-MH-UuW" id="c5Y-sL-fko"/>
                         <outlet property="labErrorMessage" destination="idP-UL-nln" id="rJY-Nf-1uf"/>
                         <outlet property="tfPassword" destination="kfN-Bz-7sw" id="CUJ-T2-JNN"/>

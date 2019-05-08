@@ -19,13 +19,17 @@ class EnterVC: UIViewController {
     @IBOutlet weak var labErrorMessage: UILabel!
     @IBOutlet weak var viewPhoneNumber: UIView!
     @IBOutlet weak var viewPassword: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
     let keychain = KeychainSwift()
+    let enterService = EnterServise()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addObservers()
         addGestureRec()
     }
     
@@ -33,6 +37,38 @@ class EnterVC: UIViewController {
         configureView()
     }
     
+    
+    private func addObservers() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(enterFailed),
+                                               name: NSNotification.Name(rawValue: EnterNotificationNames.enterFailed.rawValue),
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(wrongPasswordEntered),
+                                               name: NSNotification.Name(rawValue: EnterNotificationNames.wrongCredentials.rawValue),
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(goToMainVC),
+                                               name: NSNotification.Name(rawValue: EnterNotificationNames.enterSucceed.rawValue),
+                                               object: nil)
+        
+    }
+    
+    @objc func enterFailed() {
+        print("error of login")
+        activityIndicator.stopAnimating()
+    }
+    
+    @objc func goToMainVC() {
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        self.present(mainVC!, animated: true, completion: nil)
+        activityIndicator.stopAnimating()
+    }
+    
+    @objc func wrongPasswordEntered() {
+        labErrorMessage.alpha = 1
+        activityIndicator.stopAnimating()
+    }
     
     func addGestureRec() {
         
@@ -62,20 +98,6 @@ class EnterVC: UIViewController {
         viewPassword.layer.cornerRadius = 8
     }
     
-    func goToMainVC() {
-        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        self.present(mainVC!, animated: true, completion: nil)
-    }
-    
-    func rememberUser(phone: String) {
-        UserDefaults.standard.set(true, forKey: "userEntered")
-        UserDefaults.standard.setValue(phone, forKey: "userPhone")
-    }
-    
-    func wrongPasswordEntered() {
-        labErrorMessage.alpha = 1
-    }
-    
     func configureButNext() {
         print("Рамка кнопки некст: \(butNext.bounds)")
         butNext.layer.cornerRadius = 8
@@ -100,40 +122,18 @@ class EnterVC: UIViewController {
         butNext.layer.shadowPath = CGPath(rect: insetedBounds, transform: nil)
     }
     
-    func getOnlyNumbers(_ string: String?) -> String? {
-        if string == nil {
-            return nil
-        }
-        var newString = ""
-        
-        for c in string! {
-            if "1234567890".contains(c) {
-                newString.append(c)
-            }
-        }
-        return newString
-    }
-    
     
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
         TFService.checkPrefix(prefix: "+", sender)
     }
     
-    @IBAction func tfPasswordTextChanged(_ sender: UITextField) {
-    }
-    
     @IBAction func butEnterTapped(_ sender: UIButton) {
         
-        guard let phone = getOnlyNumbers(tfPhoneNumber.text) else { return }
+        guard let phone = tfPhoneNumber.text else { return }
         guard let password = tfPassword.text else { return }
-        guard let rightPassword = keychain.get(phone) else { return }
         
-        if password == rightPassword {
-            rememberUser(phone: phone)
-            goToMainVC()
-        } else {
-            wrongPasswordEntered()
-        }
+        enterService.enter(phone: phone, password: password)
+        activityIndicator.startAnimating()
     }
     
     

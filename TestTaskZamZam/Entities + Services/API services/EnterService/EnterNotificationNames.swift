@@ -13,6 +13,6 @@ enum EnterNotificationNames: String {
     
     case enterSucceed = "enterSucceed"
     case wrongCredentials = "enterFailed"
-    case requestFailed = "requestFailed"
+    case enterFailed = "requestFailed"
     
 }

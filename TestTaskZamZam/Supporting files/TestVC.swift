@@ -31,9 +31,6 @@ class TestVC: UIViewController {
     }
     
     
-    
-    
-    
     @IBAction func sendCode(_ sender: UIButton) {
         guard let code = tfCode.text else { return }
         print("сейчас отправлю код")

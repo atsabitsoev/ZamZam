@@ -29,7 +29,7 @@ class WhatIsYourPhoneVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     override func viewWillLayoutSubviews() {
@@ -121,8 +121,8 @@ class WhatIsYourPhoneVC: UIViewController {
     
     
     @IBAction func butNextTapped(_ sender: UIButton) {
-        guard let text = tfPhoneNumber.text else { return }
-        rememberPhone(text)
+        guard let phone = tfPhoneNumber.text else { return }
+        rememberPhone(phone)
         goNext()
     }
     

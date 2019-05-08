@@ -65,21 +65,21 @@ class EnterServise {
                         
                     } else {
                         
-                        self.post(.requestFailed)
+                        self.post(.enterFailed)
                         
                     }
                     
                 } catch {
                     
                     print(error)
-                    self.post(.requestFailed)
+                    self.post(.enterFailed)
                     
                 }
                 
             case .failure:
                 
                 print(response.result.error!.localizedDescription)
-                self.post(.requestFailed)
+                self.post(.enterFailed)
                 
             }
             
