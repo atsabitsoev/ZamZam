@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let appCredentialsSaved = UserDefaults.standard.bool(forKey: "appCredentialsSaved")
+        if !appCredentialsSaved {
+            saveAppCredentialsToKeychain()
+            UserDefaults.standard.set(true, forKey: "appCredentialsSaved")
+        }
         
 //        let userEntered = UserDefaults.standard.bool(forKey: "userEntered")
 //
@@ -50,6 +57,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    private func saveAppCredentialsToKeychain() {
+        let keychain = KeychainSwift()
+        keychain.set("6ad65fbb-966d-4c41-8ff0-c3262011846d", forKey: TokenKeys.clientId.rawValue)
+        keychain.set("1e568a61-e3e8-45a3-8e80-f099c38d3711", forKey: TokenKeys.clientSecret.rawValue)
+    }
 
 }
 

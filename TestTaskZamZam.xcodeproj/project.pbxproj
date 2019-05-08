@@ -51,6 +51,10 @@
 		AC6A5D1D2271A2560004198F /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A5D1C2271A2560004198F /* NewPasswordVC.swift */; };
 		AC6B2B6D225F5DF10057DCE8 /* RecipientTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B2B6C225F5DF10057DCE8 /* RecipientTableview.swift */; };
 		AC6B2B6F225F5E6A0057DCE8 /* RecipientHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B2B6E225F5E6A0057DCE8 /* RecipientHistoryCell.swift */; };
+		AC6E2F9A2282B660001CB42E /* EnterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E2F992282B660001CB42E /* EnterService.swift */; };
+		AC6E2F9C2282BED8001CB42E /* RegistrationNotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E2F9B2282BED8001CB42E /* RegistrationNotificationNames.swift */; };
+		AC6E2F9E2282C027001CB42E /* TokensKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E2F9D2282C027001CB42E /* TokensKeys.swift */; };
+		AC6E2FA02282CD8E001CB42E /* EnterNotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E2F9F2282CD8E001CB42E /* EnterNotificationNames.swift */; };
 		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
 		AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C82257544F004D0323 /* EnterVC.swift */; };
 		AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */; };
@@ -167,6 +171,10 @@
 		AC6A5D1C2271A2560004198F /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
 		AC6B2B6C225F5DF10057DCE8 /* RecipientTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientTableview.swift; sourceTree = "<group>"; };
 		AC6B2B6E225F5E6A0057DCE8 /* RecipientHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientHistoryCell.swift; sourceTree = "<group>"; };
+		AC6E2F992282B660001CB42E /* EnterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterService.swift; sourceTree = "<group>"; };
+		AC6E2F9B2282BED8001CB42E /* RegistrationNotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationNotificationNames.swift; sourceTree = "<group>"; };
+		AC6E2F9D2282C027001CB42E /* TokensKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensKeys.swift; sourceTree = "<group>"; };
+		AC6E2F9F2282CD8E001CB42E /* EnterNotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNotificationNames.swift; sourceTree = "<group>"; };
 		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
 		AC8D62C82257544F004D0323 /* EnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterVC.swift; sourceTree = "<group>"; };
 		AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneInfoCell.swift; sourceTree = "<group>"; };
@@ -394,13 +402,15 @@
 			path = TouchFaceVC;
 			sourceTree = "<group>";
 		};
-		AC24624922819C9E006C54D4 /* RegistrationService */ = {
+		AC24624922819C9E006C54D4 /* API services */ = {
 			isa = PBXGroup;
 			children = (
-				ACEDB2D02281B39D00A82286 /* PhoneVerification */,
+				AC6E2F9D2282C027001CB42E /* TokensKeys.swift */,
+				ACEDB2D02281B39D00A82286 /* PhoneVerificationService */,
 				ACEDB2D12281B59500A82286 /* RegistrationService */,
+				AC6E2F982282B63C001CB42E /* EnterService */,
 			);
-			path = RegistrationService;
+			path = "API services";
 			sourceTree = "<group>";
 		};
 		AC53F9DB225627A30086A0D3 /* Twilio */ = {
@@ -433,7 +443,7 @@
 				AC2859EB224CF85E004852C4 /* Currency.swift */,
 				ACCF25992257743D0028C16A /* Extensions for String.swift */,
 				ACE7F2C3225DC0E100F001B0 /* TimerService.swift */,
-				AC24624922819C9E006C54D4 /* RegistrationService */,
+				AC24624922819C9E006C54D4 /* API services */,
 				AC53F9DB225627A30086A0D3 /* Twilio */,
 				ACFBAC362240FB01001D9D94 /* PaymentCells */,
 			);
@@ -476,6 +486,15 @@
 				AC6B2B6E225F5E6A0057DCE8 /* RecipientHistoryCell.swift */,
 			);
 			path = RecipientTableview;
+			sourceTree = "<group>";
+		};
+		AC6E2F982282B63C001CB42E /* EnterService */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E2F992282B660001CB42E /* EnterService.swift */,
+				AC6E2F9F2282CD8E001CB42E /* EnterNotificationNames.swift */,
+			);
+			path = EnterService;
 			sourceTree = "<group>";
 		};
 		AC8D62C72257543F004D0323 /* EnterVC */ = {
@@ -707,19 +726,20 @@
 			path = CardIssueCollection;
 			sourceTree = "<group>";
 		};
-		ACEDB2D02281B39D00A82286 /* PhoneVerification */ = {
+		ACEDB2D02281B39D00A82286 /* PhoneVerificationService */ = {
 			isa = PBXGroup;
 			children = (
 				AC24624A22819CBB006C54D4 /* PhoneVerificationService.swift */,
 				ACEDB2CC2281A56800A82286 /* PhoneVerificationNotificationNames.swift */,
 			);
-			path = PhoneVerification;
+			path = PhoneVerificationService;
 			sourceTree = "<group>";
 		};
 		ACEDB2D12281B59500A82286 /* RegistrationService */ = {
 			isa = PBXGroup;
 			children = (
 				ACEDB2D22281B5B100A82286 /* RegistrationService.swift */,
+				AC6E2F9B2282BED8001CB42E /* RegistrationNotificationNames.swift */,
 			);
 			path = RegistrationService;
 			sourceTree = "<group>";
@@ -1006,6 +1026,7 @@
 				AC6A5D1D2271A2560004198F /* NewPasswordVC.swift in Sources */,
 				ACD357ED225CD9BC0018243B /* ReplenSMSVC.swift in Sources */,
 				ACBC5E0D22684E240005C355 /* PayPhoneBillVC.swift in Sources */,
+				AC6E2F9C2282BED8001CB42E /* RegistrationNotificationNames.swift in Sources */,
 				AC0D8568225DE696002C50B1 /* ReplenishGoneVC.swift in Sources */,
 				ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */,
 				AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */,
@@ -1020,6 +1041,7 @@
 				5B7DFECA223012B400ECF0D3 /* CardBill.swift in Sources */,
 				ACBC5E1022684E570005C355 /* PayPhoneBillTableView.swift in Sources */,
 				ACC8273D2271A6E4001E5750 /* PasswordErrors.swift in Sources */,
+				AC6E2F9A2282B660001CB42E /* EnterService.swift in Sources */,
 				AC6B2B6D225F5DF10057DCE8 /* RecipientTableview.swift in Sources */,
 				ACFBAC3C2240FB44001D9D94 /* AddNewCardCell.swift in Sources */,
 				ACC827422271A930001E5750 /* PasswordSymbolManager.swift in Sources */,
@@ -1055,9 +1077,11 @@
 				AC98BF8A22689DA300E35745 /* WithdrawPaymentVC.swift in Sources */,
 				ACBC5E13226850400005C355 /* ZamBill.swift in Sources */,
 				AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */,
+				AC6E2F9E2282C027001CB42E /* TokensKeys.swift in Sources */,
 				AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */,
 				ACBC5E152268590C0005C355 /* PayPhoneTFDelegate.swift in Sources */,
 				AC6B2B6F225F5E6A0057DCE8 /* RecipientHistoryCell.swift in Sources */,
+				AC6E2FA02282CD8E001CB42E /* EnterNotificationNames.swift in Sources */,
 				ACC5CB0B225C96B900B28E62 /* ReplenCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

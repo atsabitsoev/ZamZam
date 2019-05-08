@@ -10,7 +10,7 @@ import Foundation
 
 enum PhoneVerificationNotificationNames: String {
     
-    case accessTokenIsGot = "accessTokenIsGot"
+    case appAccessTokenIsGot = "appAccessTokenIsGot"
     case codeSent = "codeSent"
     case verificationSucceed = "verificationSucceed"
     case verificationFailed = "verificationFailed"

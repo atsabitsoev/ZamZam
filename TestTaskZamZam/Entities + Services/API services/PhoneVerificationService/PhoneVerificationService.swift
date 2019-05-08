@@ -9,24 +9,25 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import KeychainSwift
 
 class PhoneVerificationService {
     
     static let standard = PhoneVerificationService()
     private init() {}
     
-    
-    private let clientId = "6ad65fbb-966d-4c41-8ff0-c3262011846d"
-    private let clientSecret = "1e568a61-e3e8-45a3-8e80-f099c38d3711"
+    private let keychain = KeychainSwift()
+    private lazy var clientId = keychain.get(TokenKeys.clientId.rawValue)
+    private lazy var clientSecret = keychain.get(TokenKeys.clientSecret.rawValue)
     
     private var userPhone: String = ""
     
     private var codeSent = false
 
-    private var accessToken = "" {
+    private var appAccessToken = "" {
         didSet {
             saveToken()
-            post(.accessTokenIsGot)
+            post(.appAccessTokenIsGot)
         }
     }
     
@@ -34,21 +35,21 @@ class PhoneVerificationService {
     func verify(phone: String) {
         
         codeSent = false
-        self.getAccessToken()
+        self.getAppAccessToken()
         self.userPhone = phone
-        observeToSendCode(.accessTokenIsGot)
+        observeToSendCode(.appAccessTokenIsGot)
         
     }
     
     
-    private func getAccessToken() {
+    private func getAppAccessToken() {
         
         let urlString = "http://10.80.80.99:2222/api/token"
         guard let url = URL(string: urlString) else { return }
         
         let parameters: Parameters = ["grant_type":"client_credentials",
-                                      "client_id":clientId,
-                                      "client_secret":clientSecret]
+                                      "client_id":clientId!,
+                                      "client_secret":clientSecret!]
         
         AF.request(url, method: .post, parameters: parameters).responseJSON { (response) in
             
@@ -59,9 +60,9 @@ class PhoneVerificationService {
                 do {
                     
                     let json = try JSON(data: response.data!)
-                    let accessToken = json["access_token"].stringValue
-                    print("accessToken - \(accessToken)")
-                    self.accessToken = accessToken
+                    let appAccessToken = json["access_token"].stringValue
+                    print("appAccessToken - \(appAccessToken)")
+                    self.appAccessToken = appAccessToken
                     
                 } catch {
                     
@@ -87,7 +88,7 @@ class PhoneVerificationService {
         let urlString = "http://10.80.80.99:2222/api/user/phonenumberverifycode"
         guard let url = URL(string: urlString) else { return }
         
-        let headers: HTTPHeaders = ["Authorization": "Bearer \(accessToken)"]
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(appAccessToken)"]
         let parameters: Parameters = ["PhoneNumber": userPhone]
         
         AF.request(url, method: .post, parameters: parameters, headers: headers).responseJSON { (response) in
@@ -116,7 +117,7 @@ class PhoneVerificationService {
         let urlString = "http://10.80.80.99:2222/api/user/verifyphonenumber"
         guard let url = URL(string: urlString) else { return }
         
-        let headers: HTTPHeaders = ["Authorization": "Bearer \(accessToken)"]
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(appAccessToken)"]
         let parameters: Parameters = ["PhoneNumber": userPhone,
                                       "VerifyCode":code]
         
@@ -166,7 +167,7 @@ class PhoneVerificationService {
     }
     
     private func saveToken() {
-        UserDefaults.standard.set(accessToken, forKey: "accessToken")
+        UserDefaults.standard.set(appAccessToken, forKey: TokenKeys.appAccessToken.rawValue)
     }
     
     
