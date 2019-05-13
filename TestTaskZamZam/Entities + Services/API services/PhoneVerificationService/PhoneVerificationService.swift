@@ -13,8 +13,9 @@ import KeychainSwift
 
 class PhoneVerificationService {
     
-    static let standard = PhoneVerificationService()
     private init() {}
+    static let standard = PhoneVerificationService()
+    
     
     private let keychain = KeychainSwift()
     private lazy var clientId = keychain.get(TokenKeys.clientId.rawValue)
@@ -83,6 +84,7 @@ class PhoneVerificationService {
     
     @objc private func sendCode() {
         
+        print("Сейчас отправлю код")
         observeIsCodeSent()
         
         let urlString = "http://10.80.80.99:2222/api/user/phonenumberverifycode"

@@ -31,8 +31,7 @@ class VerifyPhoneVC: UIViewController {
     
     override func viewDidLoad() {
         addObservers()
-        sendCode()
-        sendCodeAndStartTimer()
+        startTimer()
     }
     
     override func viewWillLayoutSubviews() {
@@ -45,6 +44,7 @@ class VerifyPhoneVC: UIViewController {
     
     
     private func addObservers() {
+        
         NotificationCenter.default.addObserver(self, selector: #selector(codeSent),
                                                name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
                                                object: nil)
@@ -56,33 +56,33 @@ class VerifyPhoneVC: UIViewController {
                                                name: NSNotification.Name(PhoneVerificationNotificationNames.verificationSucceed.rawValue), object: nil)
     }
     
-    @objc private func codeSent() {
-        tfCode.becomeFirstResponder()
-        activityIndicator.stopAnimating()
-    }
-    
     
     @objc private func goNext() {
+        
         let newPasswordVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "NewPasswordVC")
         self.navigationController?.show(newPasswordVC, sender: nil)
         activityIndicator.stopAnimating()
+        
+    }
+    
+    @objc private func codeSent() {
+        
+        activityIndicator.stopAnimating()
+        
     }
     
     @objc private func wrongCode() {
+        
         tfCode.text = ""
         dotsView.showableCode = ""
         dotsView.color = #colorLiteral(red: 0.862745098, green: 0.2078431373, blue: 0.2705882353, alpha: 1)
         print(tfCode.text?.count ?? "error")
         activityIndicator.stopAnimating()
-    }
-    
-    private func sendCode() {
-        //TODO: Отправить код
-        phoneVerificationService.verify(phone: temporaryPhone)
-        activityIndicator.startAnimating()
+        
     }
     
     private func startTimer() {
+        
         isButtonAvailable = false
         secondsToWait = 60
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
@@ -108,6 +108,13 @@ class VerifyPhoneVC: UIViewController {
         
     }
     
+    private func sendCode() {
+        
+        phoneVerificationService.verify(phone: temporaryPhone)
+        activityIndicator.startAnimating()
+        
+    }
+    
     private func sendCodeAndStartTimer() {
         sendCode()
         startTimer()
@@ -121,6 +128,8 @@ class VerifyPhoneVC: UIViewController {
         if codeLength == dotsView.totalDots {
             phoneVerificationService.checkVerification(code: tfCode.text!)
             activityIndicator.startAnimating()
+        } else if codeLength > dotsView.totalDots {
+            sender.text = String((sender.text?.dropLast(codeLength - dotsView.totalDots))!)
         }
     }
     

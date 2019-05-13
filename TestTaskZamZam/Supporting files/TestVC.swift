@@ -42,6 +42,6 @@ class TestVC: UIViewController {
     }
     
     @IBAction func enterButTapped(_ sender: UIButton) {
-        EnterServise().enter(phone: tfPhone.text!, password: tfPassword.text!)
+        EnterServise.standard.enter(phone: tfPhone.text!, password: tfPassword.text!)
     }
 }

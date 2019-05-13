@@ -15,6 +15,8 @@ var temporaryPass = ""
 
 class WhatIsYourPhoneVC: UIViewController {
     
+    let phoneVerificationService = PhoneVerificationService.standard
+    
     
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var butNext: UIButton!
@@ -23,6 +25,7 @@ class WhatIsYourPhoneVC: UIViewController {
     @IBOutlet weak var imCountry: UIImageView!
     @IBOutlet weak var tfPhoneNumber: PhoneNumberTextField!
     @IBOutlet weak var viewCheckRound: CheckRoundView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var currentCode = "+"
     
@@ -36,6 +39,22 @@ class WhatIsYourPhoneVC: UIViewController {
         configureView()
     }
 
+    
+    private func addSendingCodeObserver() {
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(goNext),
+                                               name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
+                                               object: nil)
+        
+    }
+    
+    private func removeSendingCodeObserver() {
+        
+        NotificationCenter.default.removeObserver(self,
+                                                  name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
+                                                  object: nil)
+        
+    }
     
     func configureView() {
         configureButNext()
@@ -103,9 +122,20 @@ class WhatIsYourPhoneVC: UIViewController {
         return newString
     }
     
-    func goNext() {
+    @objc func goNext() {
+        
+        activityIndicator.stopAnimating()
         let verifyPhoneVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "verifyPhoneVC")
         self.navigationController?.show(verifyPhoneVC, sender: nil)
+        removeSendingCodeObserver()
+        
+    }
+    
+    private func sendCode() {
+        
+        phoneVerificationService.verify(phone: temporaryPhone)
+        activityIndicator.startAnimating()
+        
     }
     
     
@@ -123,7 +153,9 @@ class WhatIsYourPhoneVC: UIViewController {
     @IBAction func butNextTapped(_ sender: UIButton) {
         guard let phone = tfPhoneNumber.text else { return }
         rememberPhone(phone)
-        goNext()
+        addSendingCodeObserver()
+        sendCode()
+        
     }
     
     

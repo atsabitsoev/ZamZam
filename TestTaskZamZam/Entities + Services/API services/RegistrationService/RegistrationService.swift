@@ -47,7 +47,7 @@ class RegistrationService {
                 } else {
                     
                     print(response.result.value!)
-                    self.post(.registrationFailed)
+                    self.post(.userExists)
                     
                 }
                 

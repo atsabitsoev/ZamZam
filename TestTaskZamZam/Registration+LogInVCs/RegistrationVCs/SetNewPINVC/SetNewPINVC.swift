@@ -75,6 +75,10 @@ class SetNewPINVC: UIViewController, UITextFieldDelegate {
     @IBAction func tfRepeatPinTextChanged(_ sender: UITextField) {
         
         guard let text = sender.text else { return }
+        guard text.count <= 4 else {
+            sender.text = String(text.dropLast(text.count - 4))
+            return
+        }
         if text == "" {
             tfNewPin.becomeFirstResponder()
         }

@@ -23,7 +23,7 @@ class EnterVC: UIViewController {
     
     
     let keychain = KeychainSwift()
-    let enterService = EnterServise()
+    let enterService = EnterServise.standard
     
     
     override func viewDidLoad() {
@@ -56,6 +56,8 @@ class EnterVC: UIViewController {
     
     @objc func enterFailed() {
         print("error of login")
+        labErrorMessage.alpha = 1
+        labErrorMessage.text = "Ошибка сервера"
         activityIndicator.stopAnimating()
     }
     
@@ -67,6 +69,7 @@ class EnterVC: UIViewController {
     
     @objc func wrongPasswordEntered() {
         labErrorMessage.alpha = 1
+        labErrorMessage.text = "Неверный логин или пароль"
         activityIndicator.stopAnimating()
     }
     
@@ -131,6 +134,7 @@ class EnterVC: UIViewController {
         
         guard let phone = tfPhoneNumber.text else { return }
         guard let password = tfPassword.text else { return }
+        print("\(phone)\n\(password)")
         
         enterService.enter(phone: phone, password: password)
         activityIndicator.startAnimating()

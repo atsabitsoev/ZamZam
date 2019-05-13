@@ -13,6 +13,9 @@ import SwiftyJSON
 
 class EnterServise {
     
+    private init() {}
+    static let standard = EnterServise()
+    
     
     let keychain = KeychainSwift()
     

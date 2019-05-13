@@ -10,5 +10,6 @@ import Foundation
 
 enum RegistrationNotificationNames: String {
     case registrationSucceed = "registrationSucceed"
+    case userExists = "userExists"
     case registrationFailed = "registrationFailed"
 }
