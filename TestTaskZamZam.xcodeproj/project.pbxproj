@@ -100,7 +100,6 @@
 		ACE139C622427D40004EDB38 /* CardIssueCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139C522427D40004EDB38 /* CardIssueCollectionCell.swift */; };
 		ACE7F2C4225DC0E100F001B0 /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7F2C3225DC0E100F001B0 /* TimerService.swift */; };
 		ACEDB2CD2281A56800A82286 /* PhoneVerificationNotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDB2CC2281A56800A82286 /* PhoneVerificationNotificationNames.swift */; };
-		ACEDB2CF2281B22200A82286 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDB2CE2281B22200A82286 /* TestVC.swift */; };
 		ACEDB2D32281B5B100A82286 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDB2D22281B5B100A82286 /* RegistrationService.swift */; };
 		ACFAF764223F754A008C731B /* RecipientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF763223F754A008C731B /* RecipientVC.swift */; };
 		ACFAF767223F8B07008C731B /* SenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAF766223F8B07008C731B /* SenderVC.swift */; };
@@ -221,7 +220,6 @@
 		ACE139C522427D40004EDB38 /* CardIssueCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueCollectionCell.swift; sourceTree = "<group>"; };
 		ACE7F2C3225DC0E100F001B0 /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
 		ACEDB2CC2281A56800A82286 /* PhoneVerificationNotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVerificationNotificationNames.swift; sourceTree = "<group>"; };
-		ACEDB2CE2281B22200A82286 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		ACEDB2D22281B5B100A82286 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
 		ACFAF763223F754A008C731B /* RecipientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientVC.swift; sourceTree = "<group>"; };
 		ACFAF766223F8B07008C731B /* SenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderVC.swift; sourceTree = "<group>"; };
@@ -346,7 +344,6 @@
 				AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */,
 				5B7DFEB5222FFAC500ECF0D3 /* LaunchScreen.storyboard */,
 				ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */,
-				ACEDB2CE2281B22200A82286 /* TestVC.swift */,
 				5B7DFEB3222FFAC500ECF0D3 /* Assets.xcassets */,
 			);
 			path = "Supporting files";
@@ -1018,7 +1015,6 @@
 				ACFBAC402240FB6B001D9D94 /* CardDataCell.swift in Sources */,
 				5B7DFECE223014C700ECF0D3 /* BillCell.swift in Sources */,
 				ACFAF770223F8B99008C731B /* SenderCellField.swift in Sources */,
-				ACEDB2CF2281B22200A82286 /* TestVC.swift in Sources */,
 				ACFAF775223F9B94008C731B /* TFDelegate.swift in Sources */,
 				AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */,
 				AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */,
