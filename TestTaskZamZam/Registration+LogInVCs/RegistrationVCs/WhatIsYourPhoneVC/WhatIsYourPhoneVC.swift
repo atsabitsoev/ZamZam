@@ -15,8 +15,6 @@ var temporaryPass = ""
 
 class WhatIsYourPhoneVC: UIViewController {
     
-    let phoneVerificationService = PhoneVerificationService.standard
-    
     
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var butNext: UIButton!
@@ -27,7 +25,9 @@ class WhatIsYourPhoneVC: UIViewController {
     @IBOutlet weak var viewCheckRound: CheckRoundView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    
     var currentCode = "+"
+    let phoneVerificationService = PhoneVerificationService.standard
     
     
     override func viewDidLoad() {

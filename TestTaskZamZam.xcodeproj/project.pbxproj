@@ -64,6 +64,7 @@
 		AC98BF8A22689DA300E35745 /* WithdrawPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF8922689DA300E35745 /* WithdrawPaymentVC.swift */; };
 		AC98BF8D22689F4F00E35745 /* WithdrawPaymentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF8C22689F4F00E35745 /* WithdrawPaymentTableView.swift */; };
 		AC9ADCF2226754FC0015FA53 /* WhatIsYourPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */; };
+		AC9D2C0022898A3200F0DE84 /* SetNewPinEnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D2BFF22898A3200F0DE84 /* SetNewPinEnterVC.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
 		ACBC5E0A22684BFF0005C355 /* PayPhoneBill.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */; };
@@ -184,6 +185,7 @@
 		AC98BF8922689DA300E35745 /* WithdrawPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawPaymentVC.swift; sourceTree = "<group>"; };
 		AC98BF8C22689F4F00E35745 /* WithdrawPaymentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawPaymentTableView.swift; sourceTree = "<group>"; };
 		AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsYourPhoneVC.swift; sourceTree = "<group>"; };
+		AC9D2BFF22898A3200F0DE84 /* SetNewPinEnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPinEnterVC.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
 		ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayPhoneBill.storyboard; sourceTree = "<group>"; };
@@ -501,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				AC8D62C82257544F004D0323 /* EnterVC.swift */,
+				AC9D2BFF22898A3200F0DE84 /* SetNewPinEnterVC.swift */,
 			);
 			path = EnterVC;
 			sourceTree = "<group>";
@@ -993,6 +996,7 @@
 				ACE7F2C4225DC0E100F001B0 /* TimerService.swift in Sources */,
 				ACBF140522670E8C00019545 /* SplashVC.swift in Sources */,
 				ACC5CB03225C963500B28E62 /* ReplenChooseCardTableview.swift in Sources */,
+				AC9D2C0022898A3200F0DE84 /* SetNewPinEnterVC.swift in Sources */,
 				ACFBAC3A2240FB35001D9D94 /* ZamBillCell.swift in Sources */,
 				ACFAF764223F754A008C731B /* RecipientVC.swift in Sources */,
 				ACC5CAF6225C717700B28E62 /* ReplenishCell.swift in Sources */,

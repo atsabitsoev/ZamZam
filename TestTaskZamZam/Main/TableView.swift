@@ -21,7 +21,6 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         
         cell.labName.text = bill.name
         cell.labValuta.text = CurrencyManager.getCurrency(byType: bill.currency).symbol
-        cell.labCard.text = String(bill.last4numbers)
         cell.labSum.text = bill.sum.formattedWithSeparator
         
         return cell

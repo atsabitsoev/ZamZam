@@ -12,12 +12,9 @@ class BillCell: UITableViewCell {
     
     @IBOutlet weak var labName: myLabel!
     @IBOutlet weak var labSum: myLabel!
-    @IBOutlet weak var imChain: UIImageView!
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var viewValuta: UIView!
     @IBOutlet weak var labValuta: myLabel!
-    @IBOutlet weak var viewCard: UIView!
-    @IBOutlet weak var labCard: myLabel!
     
 
     override func awakeFromNib() {
@@ -25,7 +22,6 @@ class BillCell: UITableViewCell {
         
         configureViewMain()
         viewValuta.layer.cornerRadius = 18
-        viewCard.layer.cornerRadius = 5
     }
     
     

@@ -48,7 +48,7 @@ class EnterVC: UIViewController {
                                                name: NSNotification.Name(rawValue: EnterNotificationNames.wrongCredentials.rawValue),
                                                object: nil)
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(goToMainVC),
+                                               selector: #selector(goNext),
                                                name: NSNotification.Name(rawValue: EnterNotificationNames.enterSucceed.rawValue),
                                                object: nil)
         
@@ -61,9 +61,9 @@ class EnterVC: UIViewController {
         activityIndicator.stopAnimating()
     }
     
-    @objc func goToMainVC() {
-        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        self.present(mainVC!, animated: true, completion: nil)
+    @objc func goNext() {
+        let newPinVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "SetNewPinEnterVC")
+        self.navigationController?.show(newPinVC, sender: nil)
         activityIndicator.stopAnimating()
     }
     
@@ -125,6 +125,13 @@ class EnterVC: UIViewController {
         butNext.layer.shadowPath = CGPath(rect: insetedBounds, transform: nil)
     }
     
+    func rememberUser(phone: String) {
+        
+        UserDefaults.standard.set(true, forKey: "userEntered")
+        UserDefaults.standard.setValue(phone, forKey: "userPhone")
+        
+    }
+    
     
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
         TFService.checkPrefix(prefix: "+", sender)
@@ -134,7 +141,7 @@ class EnterVC: UIViewController {
         
         guard let phone = tfPhoneNumber.text else { return }
         guard let password = tfPassword.text else { return }
-        print("\(phone)\n\(password)")
+        rememberUser(phone: phone)
         
         enterService.enter(phone: phone, password: password)
         activityIndicator.startAnimating()
