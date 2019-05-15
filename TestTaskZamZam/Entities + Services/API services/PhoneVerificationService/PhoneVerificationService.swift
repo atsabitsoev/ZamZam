@@ -98,9 +98,14 @@ class PhoneVerificationService {
             switch response.result {
                 
             case .success:
-                self.post(.codeSent)
+                if response.response?.statusCode == 200 {
+                    self.post(.codeSent)
+                } else {
+                    self.post(.userExists)
+                }
             case .failure:
                 print(response.result.error!.localizedDescription)
+                self.post(.sendingCodeError)
             }
             
         }

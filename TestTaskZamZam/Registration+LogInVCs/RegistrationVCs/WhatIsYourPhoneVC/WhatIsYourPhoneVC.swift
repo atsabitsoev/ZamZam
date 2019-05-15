@@ -42,11 +42,37 @@ class WhatIsYourPhoneVC: UIViewController {
     }
 
     
-    private func addSendingCodeObserver() {
+    private func addObservers() {
         
         NotificationCenter.default.addObserver(self, selector: #selector(goNext),
                                                name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
                                                object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(userExists), name: NSNotification.Name(PhoneVerificationNotificationNames.userExists.rawValue), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(sendingCodeFailed), name: NSNotification.Name(PhoneVerificationNotificationNames.sendingCodeError.rawValue), object: nil)
+        
+    }
+    
+    @objc private func userExists() {
+        
+        activityIndicator.stopAnimating()
+        
+        let alert = UIAlertController(title: "Ошибка", message: "Пользователь уже существует", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    @objc private func sendingCodeFailed() {
+        
+        activityIndicator.stopAnimating()
+        
+        let alert = UIAlertController(title: "Ошибка", message: "Ошибка сервера", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
         
     }
     
@@ -166,12 +192,12 @@ class WhatIsYourPhoneVC: UIViewController {
         
         if setNewPasswordModeON {
             
-            addSendingCodeObserver()
+            addObservers()
             sendCodeToResetPassword()
             
         } else {
             
-            addSendingCodeObserver()
+            addObservers()
             sendCode()
             
         }

@@ -40,6 +40,7 @@ class ResetPasswordService {
             return UserDefaults.standard.string(forKey: TokenKeys.userUid.rawValue) ?? ""
         }
         set {
+            print(newValue)
             UserDefaults.standard.set(userUid, forKey: TokenKeys.userUid.rawValue)
         }
     }

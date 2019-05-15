@@ -132,10 +132,10 @@ class EnterVC: UIViewController {
         
     }
     
-    private func goToRegLogNavCon() {
+    private func goToResetPassNavCon() {
         
         let storyboard = UIStoryboard(name: "Registration+LogIn", bundle: nil)
-        let regLogNavCon = storyboard.instantiateViewController(withIdentifier: "RegLogNavCon")
+        let regLogNavCon = storyboard.instantiateViewController(withIdentifier: "ResetPassNavCon")
         self.present(regLogNavCon, animated: true, completion: nil)
         
     }
@@ -158,7 +158,7 @@ class EnterVC: UIViewController {
     
     @IBAction func butForgonPasswordTapped(_ sender: UIButton) {
         
-        goToRegLogNavCon()
+        goToResetPassNavCon()
         setNewPasswordModeON = true
         
     }
