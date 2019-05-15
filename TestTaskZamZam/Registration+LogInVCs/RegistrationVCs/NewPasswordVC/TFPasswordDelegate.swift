@@ -16,7 +16,7 @@ extension NewPasswordVC: UITextFieldDelegate {
         case 0:
             tfRepeatPassword.becomeFirstResponder()
         case 1:
-            self.goNext()
+            self.keyboardReturnButtonTapped()
         default:
             print("what")
         }

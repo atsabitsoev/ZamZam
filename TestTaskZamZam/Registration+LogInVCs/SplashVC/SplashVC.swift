@@ -76,4 +76,10 @@ class SplashVC: UIViewController {
         butNext.layer.shadowPath = CGPath(rect: insetedBounds, transform: nil)
     }
     
+    
+    @IBAction func butRegTapped(_ sender: UIButton) {
+        
+        setNewPasswordModeON = false
+        
+    }
 }

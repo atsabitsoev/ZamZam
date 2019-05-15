@@ -12,8 +12,10 @@ import FlagKit
 
 var temporaryPhone = ""
 var temporaryPass = ""
+var setNewPasswordModeON = false
 
 class WhatIsYourPhoneVC: UIViewController {
+    
     
     
     @IBOutlet weak var viewMain: UIView!
@@ -48,7 +50,7 @@ class WhatIsYourPhoneVC: UIViewController {
         
     }
     
-    private func removeSendingCodeObserver() {
+    private func removeSendingCodeObservers() {
         
         NotificationCenter.default.removeObserver(self,
                                                   name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
@@ -127,13 +129,20 @@ class WhatIsYourPhoneVC: UIViewController {
         activityIndicator.stopAnimating()
         let verifyPhoneVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "verifyPhoneVC")
         self.navigationController?.show(verifyPhoneVC, sender: nil)
-        removeSendingCodeObserver()
+        removeSendingCodeObservers()
         
     }
     
     private func sendCode() {
         
         phoneVerificationService.verify(phone: temporaryPhone)
+        activityIndicator.startAnimating()
+        
+    }
+    
+    private func sendCodeToResetPassword() {
+        
+        ResetPasswordService.standard.sendCode(to: temporaryPhone)
         activityIndicator.startAnimating()
         
     }
@@ -151,10 +160,21 @@ class WhatIsYourPhoneVC: UIViewController {
     
     
     @IBAction func butNextTapped(_ sender: UIButton) {
+        
         guard let phone = tfPhoneNumber.text else { return }
         rememberPhone(phone)
-        addSendingCodeObserver()
-        sendCode()
+        
+        if setNewPasswordModeON {
+            
+            addSendingCodeObserver()
+            sendCodeToResetPassword()
+            
+        } else {
+            
+            addSendingCodeObserver()
+            sendCode()
+            
+        }
         
     }
     

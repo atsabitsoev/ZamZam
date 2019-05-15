@@ -26,7 +26,13 @@ class NewPasswordVC: UIViewController {
         super.viewDidLoad()
         
         settingsForTextFields()
-        addObservers()
+        
+        if setNewPasswordModeON {
+            addResetPasswordObservers()
+        } else {
+            addRegistrationObservers()
+        }
+        
         
     }
     
@@ -39,7 +45,7 @@ class NewPasswordVC: UIViewController {
     }
     
     
-    private func addObservers() {
+    private func addRegistrationObservers() {
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(registrationFailed),
@@ -55,6 +61,38 @@ class NewPasswordVC: UIViewController {
                                                selector: #selector(registrationSucceed),
                                                name: NSNotification.Name(RegistrationNotificationNames.registrationSucceed.rawValue),
                                                object: nil)
+        
+    }
+    
+    private func addResetPasswordObservers() {
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(passwordChanged),
+                                               name: NSNotification.Name(ResetPasswordNotificationNames.passwordChanged.rawValue),
+                                               object: nil)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(passwordNotChanged),
+                                               name: NSNotification.Name(ResetPasswordNotificationNames.passwordNotChanged.rawValue),
+                                               object: nil)
+        
+    }
+    
+    @objc func passwordChanged() {
+        
+        goToRegLogNavCon()
+        activityIndicator.stopAnimating()
+        
+    }
+    
+    @objc func passwordNotChanged() {
+        
+        let alert = UIAlertController(title: "Ошибка", message: "Возникла непредвиденная ошибка!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        
+        activityIndicator.stopAnimating()
         
     }
     
@@ -85,6 +123,14 @@ class NewPasswordVC: UIViewController {
         activityIndicator.stopAnimating()
         
         goNext()
+        
+    }
+    
+    private func goToRegLogNavCon() {
+        
+        let storyboard = UIStoryboard(name: "Registration+LogIn", bundle: nil)
+        let regLogNavCon = storyboard.instantiateViewController(withIdentifier: "RegLogNavCon")
+        self.present(regLogNavCon, animated: true, completion: nil)
         
     }
     
@@ -204,6 +250,12 @@ class NewPasswordVC: UIViewController {
         
     }
     
+    func keyboardReturnButtonTapped() {
+        
+        butNextTapped(butNext)
+        
+    }
+    
     
     @IBAction func tfTextChanged(_ sender: UITextField) {
         
@@ -237,6 +289,7 @@ class NewPasswordVC: UIViewController {
                     
                     hideLabError(tag: sender.tag)
                     activateButNext()
+                    rememberPassword(text)
                     
                 }
                 
@@ -268,7 +321,16 @@ class NewPasswordVC: UIViewController {
     
     @IBAction func butNextTapped(_ sender: UIButton) {
         
-        registerUser(phone: temporaryPhone, password: temporaryPass)
+        if setNewPasswordModeON {
+            
+            activityIndicator.startAnimating()
+            ResetPasswordService.standard.setNewPassword(temporaryPass)
+            
+        } else {
+            
+            registerUser(phone: temporaryPhone, password: temporaryPass)
+            
+        }
         
     }
     

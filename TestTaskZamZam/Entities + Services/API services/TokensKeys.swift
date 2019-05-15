@@ -15,5 +15,6 @@ enum TokenKeys: String {
     case clientSecret = "clientSecret"
     case userRefreshToken = "userRefreshToken"
     case userAccessToken = "userAccessToken"
+    case userUid = "userUid"
     
 }

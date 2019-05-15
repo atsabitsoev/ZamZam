@@ -48,7 +48,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 37
         default:
-            return 0
+            return 30
         }
     }
     
@@ -60,6 +60,8 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             return 80
         case 2:
             return (UIScreen.main.bounds.width - 36) * (16/113) + 10
+        case 3:
+            return 150
         default:
             return 100
         }
@@ -67,16 +69,16 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        //0
-        let viewForAnySection = UIView(frame: tableView.rectForHeader(inSection: section))
         //1
         let viewFor1Section = UIView(frame: tableView.rectForHeader(inSection: section))
+        viewFor1Section.backgroundColor = UIColor.white.withAlphaComponent(0.8)
         let label = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 13, left: 18, bottom: 7, right: 18)))
         label.text = "Выберете способ оплаты"
         label.textColor = #colorLiteral(red: 0.08931172639, green: 0.1388869584, blue: 0.3626311421, alpha: 1)
         label.font = UIFont(name: "KelsonSans-RegularRU", size: 14)
         viewFor1Section.addSubview(label)
-        
+        //Any
+        let viewForAnySection = UIView(frame: tableView.rectForHeader(inSection: section))
         
         switch section {
         case 1:
@@ -107,6 +109,16 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 2:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "SumAndCurrencyCell") as! SumAndCurrencyCell
+            return cell
+            
+        case 3:
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TotalInfoCell") as! TotalInfoCell
+            return cell
+            
+        case 4:
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonNextCell") as! ButtonNextCell
             return cell
             
         default:

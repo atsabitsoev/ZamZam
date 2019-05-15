@@ -132,6 +132,14 @@ class EnterVC: UIViewController {
         
     }
     
+    private func goToRegLogNavCon() {
+        
+        let storyboard = UIStoryboard(name: "Registration+LogIn", bundle: nil)
+        let regLogNavCon = storyboard.instantiateViewController(withIdentifier: "RegLogNavCon")
+        self.present(regLogNavCon, animated: true, completion: nil)
+        
+    }
+    
     
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
         TFService.checkPrefix(prefix: "+", sender)
@@ -146,6 +154,15 @@ class EnterVC: UIViewController {
         enterService.enter(phone: phone, password: password)
         activityIndicator.startAnimating()
     }
+    
+    
+    @IBAction func butForgonPasswordTapped(_ sender: UIButton) {
+        
+        goToRegLogNavCon()
+        setNewPasswordModeON = true
+        
+    }
+    
     
     
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }

@@ -39,6 +39,7 @@
 		AC2859EC224CF85E004852C4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2859EB224CF85E004852C4 /* Currency.swift */; };
 		AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */; };
 		AC436CAD224A6503006FA348 /* Pods_TestTaskZamZam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */; };
+		AC4DF053228C4ACC0053D92D /* ResetPasswordNotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DF052228C4ACC0053D92D /* ResetPasswordNotificationNames.swift */; };
 		AC52107822800ADC0069B62D /* CheckRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52107722800ADC0069B62D /* CheckRoundView.swift */; };
 		AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53F9DC225627B70086A0D3 /* NotificationType.swift */; };
 		AC567565223BC5EE001BBE66 /* SumAndCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC567564223BC5EE001BBE66 /* SumAndCurrencyVC.swift */; };
@@ -91,6 +92,8 @@
 		ACC7588E228BEE250049AB57 /* PaymentNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7588D228BEE250049AB57 /* PaymentNewVC.swift */; };
 		ACC75894228BF32F0049AB57 /* PaymentNewTableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC75893228BF32F0049AB57 /* PaymentNewTableVIew.swift */; };
 		ACC75896228C08BC0049AB57 /* SumAndCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */; };
+		ACC75898228C27E00049AB57 /* ButtonNextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC75897228C27E00049AB57 /* ButtonNextCell.swift */; };
+		ACC7589B228C344B0049AB57 /* ResetPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7589A228C344B0049AB57 /* ResetPasswordService.swift */; };
 		ACC8273D2271A6E4001E5750 /* PasswordErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8273C2271A6E4001E5750 /* PasswordErrors.swift */; };
 		ACC8273F2271A7F1001E5750 /* TFPasswordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8273E2271A7F1001E5750 /* TFPasswordDelegate.swift */; };
 		ACC827422271A930001E5750 /* PasswordSymbolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC827412271A930001E5750 /* PasswordSymbolManager.swift */; };
@@ -162,6 +165,7 @@
 		AC2859EB224CF85E004852C4 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		AC3FBB5B223F6B210080F6A8 /* TransferGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferGoneVC.swift; sourceTree = "<group>"; };
 		AC436CAC224A6503006FA348 /* Pods_TestTaskZamZam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestTaskZamZam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4DF052228C4ACC0053D92D /* ResetPasswordNotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordNotificationNames.swift; sourceTree = "<group>"; };
 		AC52107722800ADC0069B62D /* CheckRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckRoundView.swift; sourceTree = "<group>"; };
 		AC53F9DC225627B70086A0D3 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
 		AC567564223BC5EE001BBE66 /* SumAndCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAndCurrencyVC.swift; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 		ACC7588D228BEE250049AB57 /* PaymentNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentNewVC.swift; sourceTree = "<group>"; };
 		ACC75893228BF32F0049AB57 /* PaymentNewTableVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentNewTableVIew.swift; sourceTree = "<group>"; };
 		ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAndCurrencyCell.swift; sourceTree = "<group>"; };
+		ACC75897228C27E00049AB57 /* ButtonNextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNextCell.swift; sourceTree = "<group>"; };
+		ACC7589A228C344B0049AB57 /* ResetPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordService.swift; sourceTree = "<group>"; };
 		ACC8273C2271A6E4001E5750 /* PasswordErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordErrors.swift; sourceTree = "<group>"; };
 		ACC8273E2271A7F1001E5750 /* TFPasswordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFPasswordDelegate.swift; sourceTree = "<group>"; };
 		ACC827412271A930001E5750 /* PasswordSymbolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSymbolManager.swift; sourceTree = "<group>"; };
@@ -411,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6E2F9D2282C027001CB42E /* TokensKeys.swift */,
+				ACC75899228C34280049AB57 /* ResetPasswordService */,
 				ACEDB2D02281B39D00A82286 /* PhoneVerificationService */,
 				ACEDB2D12281B59500A82286 /* RegistrationService */,
 				AC6E2F982282B63C001CB42E /* EnterService */,
@@ -707,6 +714,15 @@
 			path = PaymentNew;
 			sourceTree = "<group>";
 		};
+		ACC75899228C34280049AB57 /* ResetPasswordService */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7589A228C344B0049AB57 /* ResetPasswordService.swift */,
+				AC4DF052228C4ACC0053D92D /* ResetPasswordNotificationNames.swift */,
+			);
+			path = ResetPasswordService;
+			sourceTree = "<group>";
+		};
 		ACC827402271A8EA001E5750 /* Entities + Servicies */ = {
 			isa = PBXGroup;
 			children = (
@@ -831,6 +847,7 @@
 				ACFAF76F223F8B99008C731B /* SenderCellField.swift */,
 				ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */,
 				ACFBAC372240FB1F001D9D94 /* TotalInfoCell.swift */,
+				ACC75897228C27E00049AB57 /* ButtonNextCell.swift */,
 				ACFBAC392240FB35001D9D94 /* ZamBillCell.swift */,
 				ACFBAC3B2240FB44001D9D94 /* AddNewCardCell.swift */,
 				ACFBAC3D2240FB5D001D9D94 /* CardCell.swift */,
@@ -1005,6 +1022,7 @@
 			files = (
 				5B7DFED4223021AF00ECF0D3 /* CollectionViewCell1.swift in Sources */,
 				AC8D62C422574664004D0323 /* TFService.swift in Sources */,
+				AC4DF053228C4ACC0053D92D /* ResetPasswordNotificationNames.swift in Sources */,
 				AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */,
 				AC110AA2223A5A5100D1F8D8 /* WhatCountryCell.swift in Sources */,
 				ACE7F2C4225DC0E100F001B0 /* TimerService.swift in Sources */,
@@ -1071,6 +1089,7 @@
 				AC1A5274225B26F70021B79C /* PIN VC.swift in Sources */,
 				ACEDB2CD2281A56800A82286 /* PhoneVerificationNotificationNames.swift in Sources */,
 				AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */,
+				ACC75898228C27E00049AB57 /* ButtonNextCell.swift in Sources */,
 				AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */,
 				5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */,
 				ACC7588E228BEE250049AB57 /* PaymentNewVC.swift in Sources */,
@@ -1102,6 +1121,7 @@
 				ACBC5E152268590C0005C355 /* PayPhoneTFDelegate.swift in Sources */,
 				AC6B2B6F225F5E6A0057DCE8 /* RecipientHistoryCell.swift in Sources */,
 				AC6E2FA02282CD8E001CB42E /* EnterNotificationNames.swift in Sources */,
+				ACC7589B228C344B0049AB57 /* ResetPasswordService.swift in Sources */,
 				ACC5CB0B225C96B900B28E62 /* ReplenCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

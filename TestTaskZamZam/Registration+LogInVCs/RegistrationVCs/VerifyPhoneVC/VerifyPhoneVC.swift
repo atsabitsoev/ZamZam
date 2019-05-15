@@ -122,14 +122,26 @@ class VerifyPhoneVC: UIViewController {
     
     
     @IBAction func tFCodeTextChanged(_ sender: UITextField) {
+        
         guard sender.text != nil else { return }
+        
         let codeLength = sender.text!.count
         dotsView.showableCode = sender.text!
+        
         if codeLength == dotsView.totalDots {
-            phoneVerificationService.checkVerification(code: tfCode.text!)
+            
+            if setNewPasswordModeON {
+                ResetPasswordService.standard.checkVerification(code: tfCode.text!)
+            } else {
+                phoneVerificationService.checkVerification(code: tfCode.text!)
+            }
+            
             activityIndicator.startAnimating()
+            
         } else if codeLength > dotsView.totalDots {
+            
             sender.text = String((sender.text?.dropLast(codeLength - dotsView.totalDots))!)
+            
         }
     }
     
