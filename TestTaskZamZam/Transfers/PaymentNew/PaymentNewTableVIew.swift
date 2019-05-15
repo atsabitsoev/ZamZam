@@ -44,11 +44,24 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
         case 0:
-            return 20
-        case 1:
             return 30
+        case 1:
+            return 37
         default:
             return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.section {
+        case 0:
+            return (UIScreen.main.bounds.width - 36) * (16/113) + 10
+        case 1:
+            return 80
+        case 2:
+            return (UIScreen.main.bounds.width - 36) * (16/113) + 10
+        default:
+            return 100
         }
     }
     
@@ -58,19 +71,18 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         let viewForAnySection = UIView(frame: tableView.rectForHeader(inSection: section))
         //1
         let viewFor1Section = UIView(frame: tableView.rectForHeader(inSection: section))
-        let label = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 10, left: 18, bottom: 7, right: 18)))
+        let label = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 13, left: 18, bottom: 7, right: 18)))
         label.text = "Выберете способ оплаты"
+        label.textColor = #colorLiteral(red: 0.08931172639, green: 0.1388869584, blue: 0.3626311421, alpha: 1)
         label.font = UIFont(name: "KelsonSans-RegularRU", size: 14)
         viewFor1Section.addSubview(label)
         
         
         switch section {
-        case 0:
-            return viewForAnySection
         case 1:
             return viewFor1Section
         default:
-            return UIView()
+            return viewForAnySection
         }
     }
     
@@ -81,6 +93,20 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 0:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "SenderCellPhoneNumber") as! SenderCellPhoneNumber
+            return cell
+            
+        case 1:
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! BillCell
+            let currency = CurrencyManager.getCurrency(byType: masZamBills[indexPath.row].currency)
+            cell.labName.text = "Zam счет \(currency.shortName)"
+            cell.labSum.text = "\(masZamBills[indexPath.row].sum) \(currency.symbol)"
+            cell.labValuta.text = currency.symbol
+            return cell
+            
+        case 2:
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SumAndCurrencyCell") as! SumAndCurrencyCell
             return cell
             
         default:

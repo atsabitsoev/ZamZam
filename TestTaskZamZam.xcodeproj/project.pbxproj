@@ -90,6 +90,7 @@
 		ACC5CB11225CBD2C00B28E62 /* ReplenTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CB10225CBD2C00B28E62 /* ReplenTFDelegate.swift */; };
 		ACC7588E228BEE250049AB57 /* PaymentNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7588D228BEE250049AB57 /* PaymentNewVC.swift */; };
 		ACC75894228BF32F0049AB57 /* PaymentNewTableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC75893228BF32F0049AB57 /* PaymentNewTableVIew.swift */; };
+		ACC75896228C08BC0049AB57 /* SumAndCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */; };
 		ACC8273D2271A6E4001E5750 /* PasswordErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8273C2271A6E4001E5750 /* PasswordErrors.swift */; };
 		ACC8273F2271A7F1001E5750 /* TFPasswordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8273E2271A7F1001E5750 /* TFPasswordDelegate.swift */; };
 		ACC827422271A930001E5750 /* PasswordSymbolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC827412271A930001E5750 /* PasswordSymbolManager.swift */; };
@@ -212,6 +213,7 @@
 		ACC5CB10225CBD2C00B28E62 /* ReplenTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenTFDelegate.swift; sourceTree = "<group>"; };
 		ACC7588D228BEE250049AB57 /* PaymentNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentNewVC.swift; sourceTree = "<group>"; };
 		ACC75893228BF32F0049AB57 /* PaymentNewTableVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentNewTableVIew.swift; sourceTree = "<group>"; };
+		ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAndCurrencyCell.swift; sourceTree = "<group>"; };
 		ACC8273C2271A6E4001E5750 /* PasswordErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordErrors.swift; sourceTree = "<group>"; };
 		ACC8273E2271A7F1001E5750 /* TFPasswordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFPasswordDelegate.swift; sourceTree = "<group>"; };
 		ACC827412271A930001E5750 /* PasswordSymbolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSymbolManager.swift; sourceTree = "<group>"; };
@@ -827,6 +829,7 @@
 			children = (
 				ACFAF76B223F8B6C008C731B /* SenderCellPhoneNumber.swift */,
 				ACFAF76F223F8B99008C731B /* SenderCellField.swift */,
+				ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */,
 				ACFBAC372240FB1F001D9D94 /* TotalInfoCell.swift */,
 				ACFBAC392240FB35001D9D94 /* ZamBillCell.swift */,
 				ACFBAC3B2240FB44001D9D94 /* AddNewCardCell.swift */,
@@ -1030,6 +1033,7 @@
 				5B7DFECE223014C700ECF0D3 /* BillCell.swift in Sources */,
 				ACFAF770223F8B99008C731B /* SenderCellField.swift in Sources */,
 				ACFAF775223F9B94008C731B /* TFDelegate.swift in Sources */,
+				ACC75896228C08BC0049AB57 /* SumAndCurrencyCell.swift in Sources */,
 				AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */,
 				AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */,
 				ACBF140E22670FE000019545 /* SplashStruct.swift in Sources */,
