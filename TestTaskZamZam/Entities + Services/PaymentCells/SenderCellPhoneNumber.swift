@@ -21,11 +21,6 @@ class SenderCellPhoneNumber: UITableViewCell, UITextFieldDelegate {
         }
     }
     
-    
-    override func layoutSubviews() {
-        imCountry.layer.cornerRadius = imCountry.bounds.width/2
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         

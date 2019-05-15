@@ -17,20 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let appCredentialsSaved = UserDefaults.standard.bool(forKey: "appCredentialsSaved")
-        if !appCredentialsSaved {
-            saveAppCredentialsToKeychain()
-            UserDefaults.standard.set(true, forKey: "appCredentialsSaved")
-        }
-        
-        let userEntered = UserDefaults.standard.bool(forKey: "userEntered")
-
-        switch userEntered {
-        case true:
-            self.window?.rootViewController = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "PINVC")
-        case false:
-            self.window?.rootViewController = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
-        }
+//        let appCredentialsSaved = UserDefaults.standard.bool(forKey: "appCredentialsSaved")
+//        if !appCredentialsSaved {
+//            saveAppCredentialsToKeychain()
+//            UserDefaults.standard.set(true, forKey: "appCredentialsSaved")
+//        }
+//        
+//        let userEntered = UserDefaults.standard.bool(forKey: "userEntered")
+//
+//        switch userEntered {
+//        case true:
+//            self.window?.rootViewController = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "PINVC")
+//        case false:
+//            self.window?.rootViewController = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
+//        }
         
         return true
     }
