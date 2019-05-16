@@ -91,7 +91,7 @@ class EnterServise {
     }
     
     
-    private func post(_ name: EnterNotificationNames) {
+    private func post(_ name: NotificationNames) {
         NotificationCenter.default.post(name: NSNotification.Name(name.rawValue), object: nil)
     }
 

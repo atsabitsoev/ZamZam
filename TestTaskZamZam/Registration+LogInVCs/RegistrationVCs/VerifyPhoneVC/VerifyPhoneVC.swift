@@ -23,7 +23,7 @@ class VerifyPhoneVC: UIViewController {
             butSendCode.isUserInteractionEnabled = isButtonAvailable
         }
     }
-    var secondsToWait = 60
+    var secondsToWait = 30
     
     
     let phoneVerificationService = PhoneVerificationService.standard
@@ -46,14 +46,14 @@ class VerifyPhoneVC: UIViewController {
     private func addObservers() {
         
         NotificationCenter.default.addObserver(self, selector: #selector(codeSent),
-                                               name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
+                                               name: NSNotification.Name(NotificationNames.codeSent.rawValue),
                                                object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(wrongCode),
-                                               name: NSNotification.Name(PhoneVerificationNotificationNames.verificationFailed.rawValue), object: nil)
+                                               name: NSNotification.Name(NotificationNames.verificationFailed.rawValue), object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(goNext),
-                                               name: NSNotification.Name(PhoneVerificationNotificationNames.verificationSucceed.rawValue), object: nil)
+                                               name: NSNotification.Name(NotificationNames.verificationSucceed.rawValue), object: nil)
     }
     
     
@@ -84,7 +84,7 @@ class VerifyPhoneVC: UIViewController {
     private func startTimer() {
         
         isButtonAvailable = false
-        secondsToWait = 60
+        secondsToWait = 30
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             
             self.secondsToWait -= 1
@@ -96,7 +96,7 @@ class VerifyPhoneVC: UIViewController {
             if self.secondsToWait <= 0 {
                 
                 timer.invalidate()
-                self.secondsToWait = 60
+                self.secondsToWait = 30
                 self.isButtonAvailable = true
                 UIView.setAnimationsEnabled(false)
                 self.butSendCode.setTitle("Отправить код", for: .normal)
@@ -115,8 +115,19 @@ class VerifyPhoneVC: UIViewController {
         
     }
     
+    private func sendCodeToResetPassword() {
+        
+        ResetPasswordService.standard.sendCode(to: temporaryPhone)
+        activityIndicator.startAnimating()
+        
+    }
+    
     private func sendCodeAndStartTimer() {
-        sendCode()
+        if setNewPasswordModeON {
+            sendCodeToResetPassword()
+        } else {
+            sendCode()
+        }
         startTimer()
     }
     

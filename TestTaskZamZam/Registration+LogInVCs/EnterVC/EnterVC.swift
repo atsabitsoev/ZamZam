@@ -41,15 +41,15 @@ class EnterVC: UIViewController {
     private func addObservers() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(enterFailed),
-                                               name: NSNotification.Name(rawValue: EnterNotificationNames.enterFailed.rawValue),
+                                               name: NSNotification.Name(rawValue: NotificationNames.enterFailed.rawValue),
                                                object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(wrongPasswordEntered),
-                                               name: NSNotification.Name(rawValue: EnterNotificationNames.wrongCredentials.rawValue),
+                                               name: NSNotification.Name(rawValue: NotificationNames.wrongCredentials.rawValue),
                                                object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(goNext),
-                                               name: NSNotification.Name(rawValue: EnterNotificationNames.enterSucceed.rawValue),
+                                               name: NSNotification.Name(rawValue: NotificationNames.enterSucceed.rawValue),
                                                object: nil)
         
     }

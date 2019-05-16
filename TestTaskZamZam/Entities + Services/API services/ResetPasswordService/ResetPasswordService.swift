@@ -18,20 +18,12 @@ class ResetPasswordService {
     private init() {}
     
     private let keychain = KeychainSwift()
+    private let tokenService = AppTokenService.standard
     
-    
-    private var appAccessToken: String {
-        get {
-            return UserDefaults.standard.string(forKey: TokenKeys.appAccessToken.rawValue)!
-        }
-        set {
-            UserDefaults.standard.set(newValue, forKey: TokenKeys.appAccessToken.rawValue)
-            post(.appAccessTokenIsGot)
-        }
-    }
     
     private lazy var clientId = keychain.get(TokenKeys.clientId.rawValue)
     private lazy var clientSecret = keychain.get(TokenKeys.clientSecret.rawValue)
+    private lazy var appAccessToken = tokenService.appAccessToken
     
     
     private var currentPhone = ""
@@ -41,7 +33,7 @@ class ResetPasswordService {
         }
         set {
             print(newValue)
-            UserDefaults.standard.set(userUid, forKey: TokenKeys.userUid.rawValue)
+            UserDefaults.standard.set(newValue, forKey: TokenKeys.userUid.rawValue)
         }
     }
     
@@ -50,7 +42,7 @@ class ResetPasswordService {
         
         currentPhone = phone
         addObserverToSendCode()
-        getAppAccessToken()
+        tokenService.sendRequest(.appAccessToken)
         
     }
     
@@ -99,7 +91,7 @@ class ResetPasswordService {
         let parameters: Parameters = ["UserUid": userUid,
                                       "Password": password]
         
-        AF.request(url, method: .post, parameters: parameters, headers: headers).responseJSON { (response) in
+        AF.request(url, method: .post, parameters: parameters, headers: headers).response { (response) in
             
             switch response.result {
                 
@@ -125,7 +117,7 @@ class ResetPasswordService {
     
     private func addObserverToSendCode() {
         
-        NotificationCenter.default.addObserver(self, selector: #selector(sendRequestToSendCode), name: NSNotification.Name(PhoneVerificationNotificationNames.appAccessTokenIsGot.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(sendRequestToSendCode), name: NSNotification.Name(NotificationNames.appAccessTokenIsGot.rawValue), object: nil)
         
     }
     
@@ -148,6 +140,7 @@ class ResetPasswordService {
                 print(uid)
                 self.userUid = uid
                 self.post(.codeSent)
+                print(response.result.value!)
                 
             case .failure:
                 
@@ -159,52 +152,8 @@ class ResetPasswordService {
         
     }
     
-    private func getAppAccessToken() {
-        
-        let urlString = "http://10.80.80.99:2222/api/token"
-        guard let url = URL(string: urlString) else { return }
-        
-        let parameters: Parameters = ["grant_type":"client_credentials",
-                                      "client_id":clientId!,
-                                      "client_secret":clientSecret!]
-        
-        AF.request(url, method: .post, parameters: parameters).responseJSON { (response) in
-            
-            switch response.result {
-                
-            case .success:
-                
-                do {
-                    
-                    let json = try JSON(data: response.data!)
-                    let appAccessToken = json["access_token"].stringValue
-                    print("appAccessToken - \(appAccessToken)")
-                    self.appAccessToken = appAccessToken
-                    
-                } catch {
-                    
-                    print(error)
-                    
-                }
-                
-            case .failure:
-                
-                print(response.result.error!)
-                
-            }
-            
-        }
-        
-    }
     
-    
-    private func post(_ notificationType: PhoneVerificationNotificationNames) {
-        
-        NotificationCenter.default.post(name: NSNotification.Name(notificationType.rawValue), object: nil)
-        
-    }
-    
-    private func post(_ notificationType: ResetPasswordNotificationNames) {
+    private func post(_ notificationType: NotificationNames) {
         
         NotificationCenter.default.post(name: NSNotification.Name(notificationType.rawValue), object: nil)
         

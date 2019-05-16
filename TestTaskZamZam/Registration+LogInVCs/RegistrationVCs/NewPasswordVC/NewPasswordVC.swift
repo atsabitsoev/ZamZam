@@ -49,17 +49,17 @@ class NewPasswordVC: UIViewController {
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(registrationFailed),
-                                               name: NSNotification.Name(RegistrationNotificationNames.registrationFailed.rawValue),
+                                               name: NSNotification.Name(NotificationNames.registrationFailed.rawValue),
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(userExistsError),
-                                               name: NSNotification.Name(RegistrationNotificationNames.userExists.rawValue),
+                                               name: NSNotification.Name(NotificationNames.userExists.rawValue),
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(registrationSucceed),
-                                               name: NSNotification.Name(RegistrationNotificationNames.registrationSucceed.rawValue),
+                                               name: NSNotification.Name(NotificationNames.registrationSucceed.rawValue),
                                                object: nil)
         
     }
@@ -68,12 +68,12 @@ class NewPasswordVC: UIViewController {
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(passwordChanged),
-                                               name: NSNotification.Name(ResetPasswordNotificationNames.passwordChanged.rawValue),
+                                               name: NSNotification.Name(NotificationNames.passwordChanged.rawValue),
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(passwordNotChanged),
-                                               name: NSNotification.Name(ResetPasswordNotificationNames.passwordNotChanged.rawValue),
+                                               name: NSNotification.Name(NotificationNames.passwordNotChanged.rawValue),
                                                object: nil)
         
     }

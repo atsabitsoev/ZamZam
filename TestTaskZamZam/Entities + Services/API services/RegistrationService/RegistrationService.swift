@@ -18,8 +18,10 @@ class RegistrationService {
     
     
     private let keychain = KeychainSwift()
+    private let tokenService = AppTokenService.standard
     private lazy var clientId = keychain.get(TokenKeys.clientId.rawValue)!
     private lazy var clientSecret = keychain.get(TokenKeys.clientSecret.rawValue)!
+    private lazy var appAccessToken = tokenService.appAccessToken
     
     
     func register(phone: String, password: String) {
@@ -27,7 +29,6 @@ class RegistrationService {
         let urlString = "http://10.80.80.99:2222/api/user/register"
         guard let url = URL(string: urlString) else { return }
         
-        let appAccessToken = UserDefaults.standard.string(forKey: TokenKeys.appAccessToken.rawValue) ?? ""
         
         let parameters: Parameters = ["Username":phone,
                                       "Password":password]
@@ -64,7 +65,7 @@ class RegistrationService {
     }
     
     
-    private func post(_ name: RegistrationNotificationNames) {
+    private func post(_ name: NotificationNames) {
         NotificationCenter.default.post(name: NSNotification.Name(name.rawValue), object: nil)
     }
     

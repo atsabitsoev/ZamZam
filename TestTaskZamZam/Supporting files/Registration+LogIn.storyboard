@@ -861,9 +861,9 @@
                                 <rect key="frame" x="0.0" y="144" width="375" height="668"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSV-Bu-plb">
-                                        <rect key="frame" x="97" y="189" width="181" height="26"/>
+                                        <rect key="frame" x="97.666666666666686" y="189" width="180" height="26"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
-                                        <state key="normal" title="Повторный код через 60 сек">
+                                        <state key="normal" title="Повторный код через 30 сек">
                                             <color key="titleColor" red="0.1188343093" green="0.15990385409999999" blue="0.40786582230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>

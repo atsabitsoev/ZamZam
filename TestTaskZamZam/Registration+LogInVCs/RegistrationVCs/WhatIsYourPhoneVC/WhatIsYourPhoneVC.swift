@@ -45,12 +45,12 @@ class WhatIsYourPhoneVC: UIViewController {
     private func addObservers() {
         
         NotificationCenter.default.addObserver(self, selector: #selector(goNext),
-                                               name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
+                                               name: NSNotification.Name(NotificationNames.codeSent.rawValue),
                                                object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(userExists), name: NSNotification.Name(PhoneVerificationNotificationNames.userExists.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(userExists), name: NSNotification.Name(NotificationNames.userExists.rawValue), object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(sendingCodeFailed), name: NSNotification.Name(PhoneVerificationNotificationNames.sendingCodeError.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(sendingCodeFailed), name: NSNotification.Name(NotificationNames.sendingCodeError.rawValue), object: nil)
         
     }
     
@@ -79,7 +79,7 @@ class WhatIsYourPhoneVC: UIViewController {
     private func removeSendingCodeObservers() {
         
         NotificationCenter.default.removeObserver(self,
-                                                  name: NSNotification.Name(PhoneVerificationNotificationNames.codeSent.rawValue),
+                                                  name: NSNotification.Name(NotificationNames.codeSent.rawValue),
                                                   object: nil)
         
     }

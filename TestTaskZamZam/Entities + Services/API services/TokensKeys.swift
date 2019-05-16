@@ -11,10 +11,10 @@ import Foundation
 enum TokenKeys: String {
     
     case appAccessToken = "appAccessToken"
+    case userAccessToken = "userAccessToken"
+    case userRefreshToken = "userRefreshToken"
     case clientId = "clientId"
     case clientSecret = "clientSecret"
-    case userRefreshToken = "userRefreshToken"
-    case userAccessToken = "userAccessToken"
     case userUid = "userUid"
     
 }
