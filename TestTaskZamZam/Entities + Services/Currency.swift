@@ -30,6 +30,19 @@ class CurrencyManager {
         }
     }
     
+    static func getCurrenct(byShortName name: String) -> CurrencyProtocol {
+        switch name {
+        case "RUB":
+            return CurrencyRubble()
+        case "USD":
+            return CurrencyDollar()
+        case "EUR":
+            return CurrencyEuro()
+        default:
+            return CurrencyRubble()
+        }
+    }
+    
 }
 
 protocol CurrencyProtocol {

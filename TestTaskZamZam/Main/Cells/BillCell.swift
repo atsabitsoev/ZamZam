@@ -14,7 +14,7 @@ class BillCell: UITableViewCell {
     @IBOutlet weak var labSum: myLabel!
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var viewValuta: UIView!
-    @IBOutlet weak var labValuta: myLabel!
+    @IBOutlet weak var labCurrency: myLabel!
     
 
     override func awakeFromNib() {

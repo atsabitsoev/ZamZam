@@ -26,38 +26,14 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     }
     
     
-    var masOfBills: [CardBill]?
+    var masOfBills: [ZamBill]?
     var stackViewBalanceStandardBounds: CGRect?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        masOfBills = [CardBill(name: "Zam счет RUB",
-                           sum: 21324.00,
-                           first4Numbers: 4566,
-                           last4numbers: 1111,
-                           currency: .rubble),
-                      CardBill(name: "Zam счет USD",
-                           sum: 192.01,
-                           first4Numbers: 3948,
-                           last4numbers: 3513,
-                           currency: .dollar),
-                      CardBill(name: "Zam счет EUR",
-                               sum: 1900.041,
-                               first4Numbers: 3948,
-                               last4numbers: 3513,
-                               currency: .euro),
-                      CardBill(name: "Zam счет USD",
-                               sum: 19234.01,
-                               first4Numbers: 3622,
-                               last4numbers: 3513,
-                               currency: .dollar),
-                        ]
-//        let longpress = UILongPressGestureRecognizer(target: self,
-//                                                     action: #selector(longPressGestureRecognized(gestureRecognizer:)))
-//        self.tableView.addGestureRecognizer(longpress)
+        fetchBills()
         
         self.tabBarController?.tabBar.unselectedItemTintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.5)
         
@@ -71,6 +47,14 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     override func viewWillLayoutSubviews() {
         setImageToTabBar()
         viewCheta.layer.cornerRadius = 16
+        
+    }
+    
+    private func fetchBills() {
+        
+        masOfBills = [ZamBill(currencyType: .rubble, sum: 190),
+                      ZamBill(currencyType: .dollar, sum: 39393),
+                      ZamBill(currencyType: .euro, sum: 40238)]
         
     }
     
