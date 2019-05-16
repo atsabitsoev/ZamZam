@@ -17,13 +17,17 @@ class PIN_VC: UIViewController {
     @IBOutlet weak var labUser: myLabel!
     @IBOutlet weak var dotsView: DotsView!
     @IBOutlet weak var viewBigWhite: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
     let keychain = KeychainSwift()
+    let userTokenService = UserTokenService.standard
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addObservers()
         
         dotsView.totalDots = 4
         
@@ -67,7 +71,7 @@ class PIN_VC: UIViewController {
                     
                     DispatchQueue.main.async {
                         if success {
-                            self.enterToApp()
+                            self.tryToEnterToApp()
                         } else {
                             print("Неправильный палец или лицо")
                         }
@@ -84,10 +88,36 @@ class PIN_VC: UIViewController {
         
     }
     
-    func enterToApp() {
+    func tryToEnterToApp() {
         
+        activityIndicator.startAnimating()
+        userTokenService.updateTokens()
+        
+    }
+    
+    private func addObservers() {
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(enterToApp), name: NSNotification.Name(NotificationNames.enterSucceed.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showError), name: NSNotification.Name(NotificationNames.enterFailed.rawValue), object: nil)
+        
+    }
+    
+    @objc private func enterToApp() {
+        
+        activityIndicator.stopAnimating()
         let home = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeTBController")
         self.present(home, animated: true, completion: nil)
+        
+    }
+    
+    @objc private func showError() {
+        
+        activityIndicator.stopAnimating()
+        
+        let alert = UIAlertController(title: "Ошибка", message: "Упс, произошла неизвестная ошибка", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ок", style:  .cancel, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
         
     }
     
@@ -138,7 +168,7 @@ class PIN_VC: UIViewController {
         if sender.text?.count == 4 {
             let pin = sender.text!
             if isPinRight(pin: pin) {
-                enterToApp()
+                tryToEnterToApp()
             } else {
                 wrongPIN()
             }

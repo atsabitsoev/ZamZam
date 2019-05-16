@@ -642,6 +642,10 @@
                                     <constraint firstAttribute="width" constant="40" id="wNC-Mg-oHk"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jcQ-Jm-lBM">
+                                <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.070588235289999995" green="0.094117647060000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.1188343093" green="0.15990385409999999" blue="0.40786582230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -649,6 +653,7 @@
                             <constraint firstItem="cYJ-ND-Uao" firstAttribute="trailing" secondItem="Lrl-IP-zSP" secondAttribute="trailing" id="BXd-zd-4pP"/>
                             <constraint firstAttribute="bottom" secondItem="HL4-Cn-k8U" secondAttribute="bottom" id="C6j-tc-LTe"/>
                             <constraint firstItem="HL4-Cn-k8U" firstAttribute="trailing" secondItem="Lrl-IP-zSP" secondAttribute="trailing" id="CGk-HA-waD"/>
+                            <constraint firstItem="jcQ-Jm-lBM" firstAttribute="centerX" secondItem="dgG-XG-Z4g" secondAttribute="centerX" id="H1R-hn-tkg"/>
                             <constraint firstItem="aNB-0e-q0A" firstAttribute="top" secondItem="VWr-kU-DdV" secondAttribute="bottom" constant="9" id="JzA-v2-MzI"/>
                             <constraint firstItem="aNB-0e-q0A" firstAttribute="centerX" secondItem="dgG-XG-Z4g" secondAttribute="centerX" id="gEb-W2-SQT"/>
                             <constraint firstItem="8iq-eG-yaS" firstAttribute="leading" secondItem="Lrl-IP-zSP" secondAttribute="leading" id="gOU-0B-9of"/>
@@ -659,10 +664,12 @@
                             <constraint firstAttribute="bottom" secondItem="cYJ-ND-Uao" secondAttribute="bottom" id="scx-Xb-hWS"/>
                             <constraint firstItem="VWr-kU-DdV" firstAttribute="top" secondItem="Lrl-IP-zSP" secondAttribute="top" constant="9" id="wXi-h2-FrC"/>
                             <constraint firstItem="aNB-0e-q0A" firstAttribute="top" secondItem="Lrl-IP-zSP" secondAttribute="top" constant="100" id="xcF-mD-d8E"/>
+                            <constraint firstItem="jcQ-Jm-lBM" firstAttribute="centerY" secondItem="dgG-XG-Z4g" secondAttribute="centerY" id="zCV-NA-nOw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lrl-IP-zSP"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="jcQ-Jm-lBM" id="QsT-uB-qst"/>
                         <outlet property="dotsView" destination="D6T-IS-R1b" id="xUK-at-bm9"/>
                         <outlet property="labUser" destination="S37-ss-dHY" id="D5f-tU-dBW"/>
                         <outlet property="tfPin" destination="CqQ-Aa-r6i" id="yV2-Zq-4Y1"/>

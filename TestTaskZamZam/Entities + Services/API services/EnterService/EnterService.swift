@@ -27,6 +27,10 @@ class EnterServise {
         
     }
     
+    func enter() {
+        userTokenService.updateTokens()
+    }
+    
     private func getUserTokens(phone: String, password: String) {
         
         let urlString = "http://10.80.80.99:2222/api/token"

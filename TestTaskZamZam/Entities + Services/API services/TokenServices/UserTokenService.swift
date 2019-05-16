@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import KeychainSwift
+import SwiftyJSON
 
 
 class UserTokenService {
@@ -77,9 +78,33 @@ class UserTokenService {
                         
                     case .success:
                         
-                        print(response.result.value!)
+                        switch response.response?.statusCode {
+                            
+                        case 200:
+                            
+                            let accessToken = JSON(response.result.value!)["access_token"].stringValue
+                            let refreshToken = JSON(response.result.value!)["refresh_token"].stringValue
+                            
+                            self.userAccessToken = accessToken
+                            self.userRefreshToken = refreshToken
+                            
+                           self.post(notificationName: .enterSucceed)
+                            
+                            print("access - \(accessToken)")
+                            print("refresh - \(refreshToken)")
+                            
+                        default:
+                            
+                            self.post(notificationName: .enterFailed)
+                            
+                            print(response.result.value!)
+                            
+                        }
+                        
                         
                     case .failure:
+                        
+                        self.post(notificationName: .enterFailed)
                         
                         print(response.result.error!)
                         
@@ -89,9 +114,13 @@ class UserTokenService {
         
     }
     
-    
     func updateTokens() {
         sendUpdateTokensRequest()
+    }
+    
+    
+    private func post(notificationName: NotificationNames) {
+        NotificationCenter.default.post(name: NSNotification.Name(notificationName.rawValue), object: nil)
     }
     
 }
