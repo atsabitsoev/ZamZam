@@ -155,5 +155,6 @@ class PIN_VC: UIViewController {
     }
     
     
+    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     
 }

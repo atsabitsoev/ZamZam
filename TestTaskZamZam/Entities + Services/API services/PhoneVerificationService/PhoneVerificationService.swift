@@ -18,18 +18,18 @@ class PhoneVerificationService {
     
     
     private let keychain = KeychainSwift()
-    private let tokenService = AppTokenService.standard
+    private let appTokenService = AppTokenService.standard
     
     private lazy var clientId = keychain.get(TokenKeys.clientId.rawValue)
     private lazy var clientSecret = keychain.get(TokenKeys.clientSecret.rawValue)
-    private lazy var appAccessToken = tokenService.appAccessToken
+    private lazy var appAccessToken = appTokenService.appAccessToken
     
     private var userPhone: String = ""
     
     
     func verify(phone: String) {
         
-        tokenService.sendRequest(.appAccessToken)
+        appTokenService.sendRequest(.appAccessToken)
         self.userPhone = phone
         observeToSendCode(.appAccessTokenIsGot)
         

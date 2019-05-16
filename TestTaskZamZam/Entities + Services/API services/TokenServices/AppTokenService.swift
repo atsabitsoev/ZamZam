@@ -18,8 +18,9 @@ class AppTokenService {
     private init () {}
     
     private let keychain = KeychainSwift()
-    private lazy var clientId = keychain.get(TokenKeys.clientId.rawValue)
-    private lazy var clientSecret = keychain.get(TokenKeys.clientSecret.rawValue)
+    private let userTokenService = UserTokenService.standard
+    private lazy var clientId = userTokenService.clientId
+    private lazy var clientSecret = userTokenService.clientSecret
     
     
     var appAccessToken: String {
@@ -46,8 +47,8 @@ class AppTokenService {
         guard let url = URL(string: urlString) else { return }
         
         let parameters: Parameters = ["grant_type":"client_credentials",
-                                      "client_id":clientId!,
-                                      "client_secret":clientSecret!]
+                                      "client_id":clientId,
+                                      "client_secret":clientSecret]
         
         AF.request(url, method: .post, parameters: parameters).responseJSON { (response) in
             

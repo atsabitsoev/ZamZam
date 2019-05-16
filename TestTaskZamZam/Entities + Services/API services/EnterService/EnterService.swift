@@ -18,6 +18,7 @@ class EnterServise {
     
     
     let keychain = KeychainSwift()
+    let userTokenService = UserTokenService.standard
     
     
     func enter(phone: String, password: String) {
@@ -57,8 +58,8 @@ class EnterServise {
                         
                         print("Вход прошел успешно")
                         
-                        self.keychain.set(accessToken, forKey: TokenKeys.userAccessToken.rawValue)
-                        self.keychain.set(refreshToken, forKey: TokenKeys.userRefreshToken.rawValue)
+                        self.userTokenService.userAccessToken = accessToken
+                        self.userTokenService.userRefreshToken = refreshToken
                         
                         self.post(.enterSucceed)
                         

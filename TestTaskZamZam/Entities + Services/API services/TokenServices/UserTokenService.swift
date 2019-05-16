@@ -16,12 +16,44 @@ class UserTokenService {
     static let standard = UserTokenService()
     private init() {}
     
-    let keychain = KeychainSwift()
+    private let keychain = KeychainSwift()
     
     
-    lazy var clientId = keychain.get(TokenKeys.clientId.rawValue)!
-    lazy var clientSecret = keychain.get(TokenKeys.clientSecret.rawValue)!
-    lazy var refreshToken = keychain.get(TokenKeys.userRefreshToken.rawValue)!
+    var clientId: String {
+        get {
+            return keychain.get(TokenKeys.clientId.rawValue)!
+        }
+        set {
+            keychain.set(newValue, forKey: TokenKeys.clientId.rawValue)
+        }
+    }
+    
+    var clientSecret: String {
+        get {
+            return keychain.get(TokenKeys.clientSecret.rawValue)!
+        }
+        set {
+            keychain.set(newValue, forKey: TokenKeys.clientSecret.rawValue)
+        }
+    }
+    
+    var userAccessToken: String {
+        get {
+            return keychain.get(TokenKeys.userAccessToken.rawValue)!
+        }
+        set {
+            keychain.set(newValue, forKey: TokenKeys.userAccessToken.rawValue)
+        }
+    }
+    
+    var userRefreshToken: String {
+        get {
+            return keychain.get(TokenKeys.userRefreshToken.rawValue)!
+        }
+        set {
+            keychain.set(newValue, forKey: TokenKeys.userRefreshToken.rawValue)
+        }
+    }
     
     
     private func sendUpdateTokensRequest() {
@@ -29,12 +61,12 @@ class UserTokenService {
         let urlString = "http://10.80.80.99:2222/api/token"
         let url = URL(string: urlString)!
         
-        let headers: HTTPHeaders = []
+        let headers: HTTPHeaders = ["Content-Type": "application/x-www-form-urlencoded"]
         
         let parameters: Parameters = ["client_id": clientId,
                                       "client_secret": clientSecret,
                                       "grant_type": "refresh_token",
-                                      "refresh_token": refreshToken]
+                                      "refresh_token": userRefreshToken]
         
         AF.request(url,
                    method: .post,
@@ -55,6 +87,11 @@ class UserTokenService {
                     
         }
         
+    }
+    
+    
+    func updateTokens() {
+        sendUpdateTokensRequest()
     }
     
 }

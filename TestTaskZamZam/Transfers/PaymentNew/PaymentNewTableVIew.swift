@@ -131,4 +131,12 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard let cell = cell as? ButtonNextCell else { return }
+        cell.configureButNext()
+        
+    }
+    
+    
 }

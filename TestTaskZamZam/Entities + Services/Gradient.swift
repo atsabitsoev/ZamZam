@@ -20,8 +20,7 @@ extension UIView {
         gradient.endPoint = CGPoint(x: coordinatesX[0], y: coordinatesY[1])
         gradient.cornerRadius = cornerRadius
         
-        print("Gradient bounds - \(gradient.bounds)")
-        print("Gradient frame - \(gradient.frame)")
+        print("Сделал градиент")
         
         self.layer.insertSublayer(gradient, at: 0)
     }

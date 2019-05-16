@@ -33,6 +33,8 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UserTokenService.standard.updateTokens()
+        
         
         masOfBills = [CardBill(name: "Zam счет RUB",
                            sum: 21324.00,

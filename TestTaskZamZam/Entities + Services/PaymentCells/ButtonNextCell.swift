@@ -15,23 +15,7 @@ class ButtonNextCell: UITableViewCell {
     @IBOutlet weak var butNext: UIButton!
     
     
-    override func layoutSubviews() {
-        configureButNext()
-    }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    
-    private func configureButNext() {
+    func configureButNext() {
         butNext.layer.cornerRadius = 8
         print("Bounds - \(butNext.bounds)")
         print("Frame - \(butNext.frame)")
