@@ -10,12 +10,12 @@ import Foundation
 
 class ZamBill {
     
-    var currencyType: CurrencyType
+    var currency: CurrencyProtocol
     var sum: Float
     
-    init(currencyType: CurrencyType,
+    init(currency: CurrencyProtocol,
          sum: Float) {
-        self.currencyType = currencyType
+        self.currency = currency
         self.sum = sum
     }
     

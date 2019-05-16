@@ -26,4 +26,6 @@ enum NotificationNames: String {
     
     case registrationSucceed = "registrationSucceed"
     case registrationFailed = "registrationFailed"
+    
+    case zamBillsUpdated = "zamBillsUpdated"
 }

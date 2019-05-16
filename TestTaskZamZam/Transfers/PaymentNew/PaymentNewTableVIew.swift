@@ -100,7 +100,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 1:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! BillCell
-            let currency = CurrencyManager.getCurrency(byType: masZamBills[indexPath.row].currencyType)
+            let currency = masZamBills[indexPath.row].currency
             cell.labName.text = "Zam счет \(currency.shortName)"
             cell.labSum.text = "\(masZamBills[indexPath.row].sum) \(currency.symbol)"
             cell.labCurrency.text = currency.symbol

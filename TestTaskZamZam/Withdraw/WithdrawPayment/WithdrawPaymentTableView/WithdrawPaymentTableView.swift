@@ -53,8 +53,8 @@ extension WithdrawPaymentVC: UITableViewDelegate, UITableViewDataSource {
             // СЧЕТА ЗАМ
             let cell = tableView.dequeueReusableCell(withIdentifier: "ZamBillCell") as! ZamBillCell
             
-            let currencyType = masZamBills![indexPath.row].currencyType
-            let currencyShort = CurrencyManager.getCurrency(byType: currencyType).shortName
+            let currency = masZamBills![indexPath.row].currency
+            let currencyShort = currency.shortName
             cell.labBillKind.text = "Zam счет \(currencyShort)"
             
             cell.labBillSum.text = String(masZamBills![indexPath.row].sum)

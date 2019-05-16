@@ -35,8 +35,8 @@ class WithdrawPaymentVC: UIViewController {
     
     func fetchBills() {
         
-        masZamBills = [ZamBill(currencyType: .dollar, sum: 38923),
-                       ZamBill(currencyType: .euro, sum: 74839)]
+        masZamBills = [ZamBill(currency: CurrencyManager.getCurrency(byType: .rubble), sum: 38923),
+                       ZamBill(currency: CurrencyManager.getCurrency(byType: .euro), sum: 74839)]
     }
     
     func configureButNext() {

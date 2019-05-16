@@ -32,9 +32,10 @@ class PaymentNewVC: UIViewController {
     
     private func fetchBills() {
         
-        masZamBills = [ZamBill(currencyType: .rubble, sum: 21324),
-                       ZamBill(currencyType: .dollar, sum: 192.01),
-                       ZamBill(currencyType: .euro, sum: 0)]
+        
+        masZamBills = [ZamBill(currency: CurrencyManager.getCurrency(byType: .rubble), sum: 21324),
+                       ZamBill(currency: CurrencyManager.getCurrency(byType: .dollar), sum: 192.01),
+                       ZamBill(currency: CurrencyManager.getCurrency(byType: .euro), sum: 0)]
         
     }
     

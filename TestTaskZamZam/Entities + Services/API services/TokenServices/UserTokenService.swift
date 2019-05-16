@@ -43,6 +43,7 @@ class UserTokenService {
             return keychain.get(TokenKeys.userAccessToken.rawValue)!
         }
         set {
+            print(newValue)
             keychain.set(newValue, forKey: TokenKeys.userAccessToken.rawValue)
         }
     }

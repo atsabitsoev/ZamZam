@@ -12,15 +12,15 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return masOfBills?.count ?? 0
+        return zamBills?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! BillCell
-        let bill = masOfBills![indexPath.row]
+        let bill = zamBills![indexPath.row]
         
-        cell.labName.text = "ZAM счет \(CurrencyManager.getCurrency(byType: bill.currencyType))"
-        cell.labCurrency.text = CurrencyManager.getCurrency(byType: bill.currencyType).symbol
+        cell.labName.text = "ZAM счет \(bill.currency.shortName)"
+        cell.labCurrency.text = bill.currency.symbol
         cell.labSum.text = bill.sum.formattedWithSeparator
         
         return cell
