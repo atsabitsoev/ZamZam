@@ -96,7 +96,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             
         case 1:
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! BillCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! ZamBillCheckCell
             let bill = masZamBills[indexPath.row]
             
             cell.labName.text = "Zam счет \(bill.currency.shortName)"
@@ -121,6 +121,14 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
             
         }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        guard indexPath.section == 1 else { return }
+        
+        self.billSelected(indexPath.row)
         
     }
     

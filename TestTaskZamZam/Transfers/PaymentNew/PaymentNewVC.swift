@@ -20,6 +20,12 @@ class PaymentNewVC: UIViewController {
     
     
     var masZamBills: [ZamBill] = []
+    var transferList: [String: String] = ["phone": "",
+                                           "sum": "0",
+                                           "convertedSum": "0",
+                                           "cashBack":"0",
+                                           "senderCurrency": "",
+                                           "recipientCurrency": "USD"]
     
     
     override func viewDidLoad() {
@@ -44,6 +50,9 @@ class PaymentNewVC: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(zamBillsUpdated), name: NSNotification.Name(rawValue: NotificationNames.zamBillsUpdated.rawValue), object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(transferSucceed), name: Notification.Name(NotificationNames.zamZamTransferSucceed.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(transferFailed), name: Notification.Name(NotificationNames.zamZamTransferFailed.rawValue), object: nil)
+        
     }
     
     @objc private func zamBillsUpdated() {
@@ -59,9 +68,41 @@ class PaymentNewVC: UIViewController {
         } else if oldCount > newCount {
             deleteOldBills(count: oldCount - newCount, startIndex: newCount)
         }
-        tableView.reloadData()
+        
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
+            self.tableView.reloadData()
+        }
         
     }
+    
+    @objc private func transferSucceed() {
+        
+        activityIndicator.stopAnimating()
+        
+        let storyBoard = UIStoryboard(name: "AlertViewControllers", bundle: nil)
+        let transferGoneVC = storyBoard.instantiateViewController(withIdentifier: "TransferGoneVC") as! TransferGoneVC
+        
+        transferGoneVC.phone = transferList["phone"]
+        transferGoneVC.sum = transferList["sum"]
+        transferGoneVC.cashBack = transferList["cashBack"]!
+        transferGoneVC.convertedSum = transferList["convertedSum"]
+        
+        
+        self.present(transferGoneVC, animated: true, completion: nil)
+        
+    }
+    
+    @objc private func transferFailed() {
+        
+        activityIndicator.stopAnimating()
+        
+        let alert = UIAlertController(title: "Ошибка", message: "Не удалось выполнить перевод!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
     
     private func insertNewBills(count: Int, startIndex: Int) {
         
@@ -88,6 +129,12 @@ class PaymentNewVC: UIViewController {
         tableView.beginUpdates()
         tableView.deleteRows(at: indexPathsForOldBills, with: .automatic)
         tableView.endUpdates()
+        
+    }
+    
+    func billSelected(_ index: Int) {
+        
+        transferList["senderCurrency"] = masZamBills[index].currency.shortName
         
     }
 
@@ -144,6 +191,17 @@ class PaymentNewVC: UIViewController {
     }
     
     
+    
+    @IBAction func butNextTapped(_ sender: UIButton) {
+        
+        activityIndicator.startAnimating()
+        ZamZamTransferService().sendMoney(to: transferList["phone"]!,
+                                          sum: (transferList["sum"]! as NSString).floatValue,
+                                          senderCurrency: transferList["senderCurrency"]!,
+                                          recipientCurrency: transferList["recipientCurrency"]!)
+        
+    }
+    
     @IBAction func butBackTapped(_ sender: UIButton) {
         
         self.navigationController?.dismiss(animated: true, completion: nil)
@@ -153,6 +211,21 @@ class PaymentNewVC: UIViewController {
     @IBAction func butCloseTapped(_ sender: UIButton) {
         
         self.navigationController?.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func tfPhoneNumberTextChanged(_ sender: UITextField) {
+        
+        guard let phone = sender.text else { return }
+        transferList["phone"] = phone
+        
+    }
+    
+    @IBAction func tfSumTextChanged(_ sender: UITextField) {
+        
+        guard let sumString = sender.text else { return }
+        
+        transferList["sum"] = sumString
         
     }
     

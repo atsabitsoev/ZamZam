@@ -70,6 +70,8 @@
 		ACBC5E1022684E570005C355 /* PayPhoneBillTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E0F22684E570005C355 /* PayPhoneBillTableView.swift */; };
 		ACBC5E13226850400005C355 /* ZamBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E12226850400005C355 /* ZamBill.swift */; };
 		ACBC5E152268590C0005C355 /* PayPhoneTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E142268590C0005C355 /* PayPhoneTFDelegate.swift */; };
+		ACBD435F228EA693002D0CF5 /* ZamZamTranferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD435E228EA693002D0CF5 /* ZamZamTranferService.swift */; };
+		ACBD4361228EB23D002D0CF5 /* ZamBillCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD4360228EB23D002D0CF5 /* ZamBillCheckCell.swift */; };
 		ACBF140522670E8C00019545 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140422670E8C00019545 /* SplashVC.swift */; };
 		ACBF140A22670ECB00019545 /* SplashCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140922670ECB00019545 /* SplashCollectionView.swift */; };
 		ACBF140E22670FE000019545 /* SplashStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140D22670FE000019545 /* SplashStruct.swift */; };
@@ -195,6 +197,8 @@
 		ACBC5E0F22684E570005C355 /* PayPhoneBillTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneBillTableView.swift; sourceTree = "<group>"; };
 		ACBC5E12226850400005C355 /* ZamBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZamBill.swift; sourceTree = "<group>"; };
 		ACBC5E142268590C0005C355 /* PayPhoneTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneTFDelegate.swift; sourceTree = "<group>"; };
+		ACBD435E228EA693002D0CF5 /* ZamZamTranferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZamZamTranferService.swift; sourceTree = "<group>"; };
+		ACBD4360228EB23D002D0CF5 /* ZamBillCheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZamBillCheckCell.swift; sourceTree = "<group>"; };
 		ACBF140422670E8C00019545 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		ACBF140922670ECB00019545 /* SplashCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCollectionView.swift; sourceTree = "<group>"; };
 		ACBF140D22670FE000019545 /* SplashStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashStruct.swift; sourceTree = "<group>"; };
@@ -844,6 +848,7 @@
 				ACFAF76F223F8B99008C731B /* SenderCellField.swift */,
 				ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */,
 				ACFBAC372240FB1F001D9D94 /* TotalInfoCell.swift */,
+				ACBD4360228EB23D002D0CF5 /* ZamBillCheckCell.swift */,
 				ACFBAC392240FB35001D9D94 /* ZamBillCell.swift */,
 				ACFBAC3B2240FB44001D9D94 /* AddNewCardCell.swift */,
 				ACFBAC3D2240FB5D001D9D94 /* CardCell.swift */,
@@ -858,6 +863,7 @@
 			isa = PBXGroup;
 			children = (
 				ACFC9B7C228D3CE2009F5798 /* GetUserAccountsService.swift */,
+				ACBD435E228EA693002D0CF5 /* ZamZamTranferService.swift */,
 			);
 			path = UserOperations;
 			sourceTree = "<group>";
@@ -1037,6 +1043,7 @@
 				AC8D62C422574664004D0323 /* TFService.swift in Sources */,
 				AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */,
 				AC110AA2223A5A5100D1F8D8 /* WhatCountryCell.swift in Sources */,
+				ACBD435F228EA693002D0CF5 /* ZamZamTranferService.swift in Sources */,
 				ACE7F2C4225DC0E100F001B0 /* TimerService.swift in Sources */,
 				ACBF140522670E8C00019545 /* SplashVC.swift in Sources */,
 				ACC5CB03225C963500B28E62 /* ReplenChooseCardTableview.swift in Sources */,
@@ -1098,6 +1105,7 @@
 				ACC827422271A930001E5750 /* PasswordSymbolManager.swift in Sources */,
 				ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */,
 				AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */,
+				ACBD4361228EB23D002D0CF5 /* ZamBillCheckCell.swift in Sources */,
 				AC2859EC224CF85E004852C4 /* Currency.swift in Sources */,
 				ACFAF76E223F8B82008C731B /* SenderCellCountry.swift in Sources */,
 				AC1A5274225B26F70021B79C /* PIN VC.swift in Sources */,

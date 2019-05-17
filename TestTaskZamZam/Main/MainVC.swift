@@ -87,7 +87,10 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         } else if oldCount > newCount {
             deleteOldBills(count: oldCount - newCount, startIndex: newCount)
         }
-        tableView.reloadData()
+        
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
+            self.tableView.reloadData()
+        }
         
         
         

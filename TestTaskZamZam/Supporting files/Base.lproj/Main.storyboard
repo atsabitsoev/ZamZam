@@ -389,13 +389,14 @@
                                                                         <constraint firstAttribute="width" secondItem="gsz-kH-Ulc" secondAttribute="height" multiplier="1:1" id="9hy-zY-DRr"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+33 6-89-017383" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-tl-rBS">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+79284983000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-tl-rBS">
                                                                     <rect key="frame" x="58" y="3" width="273" height="45"/>
                                                                     <nil key="textColor"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad" returnKeyType="done"/>
                                                                     <connections>
                                                                         <action selector="tfEditingChanged:" destination="UhQ-pb-gYp" eventType="editingChanged" id="uNH-4H-1XR"/>
+                                                                        <action selector="tfPhoneNumberTextChanged:" destination="uB6-u2-q4H" eventType="editingChanged" id="EKz-Vh-xyH"/>
                                                                         <action selector="tfValueChanged:" destination="UhQ-pb-gYp" eventType="valueChanged" id="eU9-wk-nNk"/>
                                                                     </connections>
                                                                 </textField>
@@ -441,7 +442,7 @@
                                                     <outlet property="viewWhite" destination="26B-gR-h3G" id="iom-NB-C3C"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellBill" rowHeight="80" id="Fka-6Y-6ms" customClass="BillCell" customModule="TestTaskZamZam" customModuleProvider="target">
+                                            <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellBill" rowHeight="80" id="Fka-6Y-6ms" customClass="ZamBillCheckCell" customModule="TestTaskZamZam" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fka-6Y-6ms" id="6pq-FF-Tg5">
@@ -457,7 +458,7 @@
                                                                         <constraint firstAttribute="height" constant="12" id="Ggf-sM-CJM"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="12"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.070588235289999995" green="0.094117647060000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21,324.00 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oL-5b-oaP" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
@@ -486,14 +487,36 @@
                                                                         <constraint firstItem="Yys-ZR-ipK" firstAttribute="top" secondItem="kMp-Oe-jCd" secondAttribute="top" id="xtT-HG-mYd"/>
                                                                     </constraints>
                                                                 </view>
+                                                                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTf-bk-28x">
+                                                                    <rect key="frame" x="294" y="20.666666666666671" width="27" height="27"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="3i3-d0-mgx">
+                                                                            <rect key="frame" x="1.6666666666666856" y="1.3333333333333321" width="24" height="24"/>
+                                                                            <color key="tintColor" red="0.50196078430000002" green="0.92156862750000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="24" id="8vM-1r-u7W"/>
+                                                                                <constraint firstAttribute="height" constant="24" id="A55-zz-mNf"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="3i3-d0-mgx" firstAttribute="centerX" secondItem="OTf-bk-28x" secondAttribute="centerX" id="ITe-vN-mdi"/>
+                                                                        <constraint firstAttribute="width" constant="27" id="MbG-yf-xUh"/>
+                                                                        <constraint firstAttribute="height" constant="27" id="V2o-q9-okN"/>
+                                                                        <constraint firstItem="3i3-d0-mgx" firstAttribute="centerY" secondItem="OTf-bk-28x" secondAttribute="centerY" id="xm8-YI-RHj"/>
+                                                                    </constraints>
+                                                                </view>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
+                                                                <constraint firstItem="OTf-bk-28x" firstAttribute="centerY" secondItem="01l-sx-qV4" secondAttribute="centerY" id="Gcq-b8-1XW"/>
                                                                 <constraint firstItem="kMp-Oe-jCd" firstAttribute="leading" secondItem="01l-sx-qV4" secondAttribute="leading" constant="18" id="Pov-ew-OLl"/>
                                                                 <constraint firstItem="kMp-Oe-jCd" firstAttribute="centerY" secondItem="01l-sx-qV4" secondAttribute="centerY" id="TlI-ru-Ces"/>
                                                                 <constraint firstItem="FeN-q3-KES" firstAttribute="top" secondItem="01l-sx-qV4" secondAttribute="top" constant="17" id="fA1-7b-E2m"/>
                                                                 <constraint firstItem="FeN-q3-KES" firstAttribute="leading" secondItem="kMp-Oe-jCd" secondAttribute="trailing" constant="14" id="n1H-19-p3H"/>
                                                                 <constraint firstItem="1oL-5b-oaP" firstAttribute="top" secondItem="FeN-q3-KES" secondAttribute="bottom" constant="7" id="rLr-UR-dLF"/>
+                                                                <constraint firstAttribute="trailing" secondItem="OTf-bk-28x" secondAttribute="trailing" constant="18" id="rMj-gJ-K2G"/>
                                                                 <constraint firstItem="1oL-5b-oaP" firstAttribute="leading" secondItem="kMp-Oe-jCd" secondAttribute="trailing" constant="13" id="zG2-GZ-GYN"/>
                                                             </constraints>
                                                         </view>
@@ -508,10 +531,12 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
+                                                    <outlet property="imCheck" destination="3i3-d0-mgx" id="XdF-7F-V7H"/>
                                                     <outlet property="labCurrency" destination="Yys-ZR-ipK" id="7iO-sk-bWZ"/>
                                                     <outlet property="labName" destination="FeN-q3-KES" id="O4K-Je-GNj"/>
                                                     <outlet property="labSum" destination="1oL-5b-oaP" id="mXQ-Ij-zEA"/>
                                                     <outlet property="viewMain" destination="01l-sx-qV4" id="4WC-zl-OJr"/>
+                                                    <outlet property="viewUnderCheck" destination="OTf-bk-28x" id="bWt-js-Nph"/>
                                                     <outlet property="viewValuta" destination="kMp-Oe-jCd" id="ocd-BR-1D7"/>
                                                 </connections>
                                             </tableViewCell>
@@ -532,6 +557,7 @@
                                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" textContentType="tel"/>
                                                                     <connections>
                                                                         <action selector="tfEditingChanged:" destination="UhQ-pb-gYp" eventType="editingChanged" id="HOY-m4-iSu"/>
+                                                                        <action selector="tfSumTextChanged:" destination="uB6-u2-q4H" eventType="editingChanged" id="BxH-kY-9zD"/>
                                                                         <action selector="tfValueChanged:" destination="UhQ-pb-gYp" eventType="valueChanged" id="DhD-Ks-OYk"/>
                                                                     </connections>
                                                                 </textField>
@@ -729,6 +755,9 @@
                                         <state key="normal" title="Далее &gt;">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="butNextTapped:" destination="uB6-u2-q4H" eventType="touchUpInside" id="GrT-uA-o6q"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="r2C-Yk-n2f">
                                         <rect key="frame" x="141.66666666666666" y="600" width="92" height="40"/>

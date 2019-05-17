@@ -116,7 +116,7 @@
         <!--Transfer GoneVC-->
         <scene sceneID="sWB-MS-AvD">
             <objects>
-                <viewController id="IOW-Vb-ZKc" customClass="TransferGoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransferGoneVC" id="IOW-Vb-ZKc" customClass="TransferGoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yFa-Bq-2es">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,6 +296,8 @@
                         <outlet property="imCountry" destination="XS8-C8-prc" id="rsd-Y6-0Hu"/>
                         <outlet property="imOk" destination="jAh-32-igC" id="ehV-mR-agE"/>
                         <outlet property="labCashBack" destination="65g-TH-BgA" id="ZG2-ro-xaQ"/>
+                        <outlet property="labInfoCashBackMain" destination="4bF-id-MJg" id="WBv-Ed-AAv"/>
+                        <outlet property="labInfoCashBackSecond" destination="RE5-oL-5Rl" id="zU4-cY-MC5"/>
                         <outlet property="labPhone" destination="juS-Nc-9Bx" id="o4u-Ml-sdq"/>
                         <outlet property="labSum" destination="cSK-F2-XzC" id="cck-nO-1el"/>
                         <outlet property="labSumSmall" destination="o3z-XD-nbz" id="rfZ-MJ-H2n"/>
