@@ -48,10 +48,19 @@ class PaymentNewVC: UIViewController {
     
     private func addObservers() {
         
-        NotificationCenter.default.addObserver(self, selector: #selector(zamBillsUpdated), name: NSNotification.Name(rawValue: NotificationNames.zamBillsUpdated.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(zamBillsUpdated),
+                                               name: NSNotification.Name(rawValue: NotificationNames.zamBillsUpdated.rawValue),
+                                               object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(transferSucceed), name: Notification.Name(NotificationNames.zamZamTransferSucceed.rawValue), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(transferFailed), name: Notification.Name(NotificationNames.zamZamTransferFailed.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(transferSucceed),
+                                               name: Notification.Name(NotificationNames.zamZamTransferSucceed.rawValue),
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(transferFailed),
+                                               name: Notification.Name(NotificationNames.zamZamTransferFailed.rawValue),
+                                               object: nil)
         
     }
     
@@ -96,10 +105,16 @@ class PaymentNewVC: UIViewController {
         
         activityIndicator.stopAnimating()
         
-        let alert = UIAlertController(title: "Ошибка", message: "Не удалось выполнить перевод!", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
+        let alert = UIAlertController(title: "Ошибка",
+                                      message: "Не удалось выполнить перевод!",
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ок",
+                                     style: .cancel,
+                                     handler: nil)
         alert.addAction(okAction)
-        self.present(alert, animated: true, completion: nil)
+        self.present(alert,
+                     animated: true,
+                     completion: nil)
         
     }
     
