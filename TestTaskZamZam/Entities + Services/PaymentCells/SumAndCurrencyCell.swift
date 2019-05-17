@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SumAndCurrencyCell: UITableViewCell {
+class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
     
     
     @IBOutlet weak var viewSum: UIView! {
@@ -16,7 +16,11 @@ class SumAndCurrencyCell: UITableViewCell {
             setBorder(to: viewSum)
         }
     }
-    @IBOutlet weak var tfSum: UITextField!
+    @IBOutlet weak var tfSum: UITextField! {
+        didSet {
+            tfSum.delegate = self
+        }
+    }
     @IBOutlet weak var viewCurrency: UIView! {
         didSet {
             setBorder(to: viewCurrency)
@@ -41,6 +45,12 @@ class SumAndCurrencyCell: UITableViewCell {
         view.layer.borderWidth = 2
         view.layer.borderColor = #colorLiteral(red: 0.8745098039, green: 0.8784313725, blue: 0.9254901961, alpha: 1)
         view.layer.cornerRadius = 8
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
 }

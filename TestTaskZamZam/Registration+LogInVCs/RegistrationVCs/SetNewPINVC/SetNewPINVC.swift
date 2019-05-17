@@ -38,12 +38,6 @@ class SetNewPINVC: UIViewController, UITextFieldDelegate {
         keychain.set(pin, forKey: "PIN")
     }
     
-    func savePhoneAndPassword() {
-        let keychain = KeychainSwift()
-        keychain.set(temporaryPass, forKey: temporaryPhone)
-        rememberUser(phone: temporaryPhone)
-    }
-    
     func goNext() {
         let touchFaceVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "TouchFaceVC")
         self.navigationController?.show(touchFaceVC, sender: nil)
@@ -91,7 +85,6 @@ class SetNewPINVC: UIViewController, UITextFieldDelegate {
             if text == tfNewPin.text {
                 dotsViewRepeatPin.color = #colorLiteral(red: 0.5098039216, green: 0.9254901961, blue: 0.462745098, alpha: 1)
                 savePin(text)
-                savePhoneAndPassword()
                 goNext()
             } else {
                 dotsViewRepeatPin.color = #colorLiteral(red: 0.9176470588, green: 0.01960784314, blue: 0.231372549, alpha: 1)

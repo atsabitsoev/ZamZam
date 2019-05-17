@@ -42,8 +42,8 @@ class SetNewPinEnterVC: UIViewController, UITextFieldDelegate {
     
     func goNext() {
         
-        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        self.present(mainVC!, animated: true, completion: nil)
+        let touchFaceVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "TouchFaceVC")
+        self.navigationController?.show(touchFaceVC, sender: nil)
         
     }
     

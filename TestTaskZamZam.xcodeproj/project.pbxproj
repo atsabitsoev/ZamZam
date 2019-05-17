@@ -89,7 +89,6 @@
 		ACC7588E228BEE250049AB57 /* PaymentNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7588D228BEE250049AB57 /* PaymentNewVC.swift */; };
 		ACC75894228BF32F0049AB57 /* PaymentNewTableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC75893228BF32F0049AB57 /* PaymentNewTableVIew.swift */; };
 		ACC75896228C08BC0049AB57 /* SumAndCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */; };
-		ACC75898228C27E00049AB57 /* ButtonNextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC75897228C27E00049AB57 /* ButtonNextCell.swift */; };
 		ACC7589B228C344B0049AB57 /* ResetPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7589A228C344B0049AB57 /* ResetPasswordService.swift */; };
 		ACC8273D2271A6E4001E5750 /* PasswordErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8273C2271A6E4001E5750 /* PasswordErrors.swift */; };
 		ACC8273F2271A7F1001E5750 /* TFPasswordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8273E2271A7F1001E5750 /* TFPasswordDelegate.swift */; };
@@ -215,7 +214,6 @@
 		ACC7588D228BEE250049AB57 /* PaymentNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentNewVC.swift; sourceTree = "<group>"; };
 		ACC75893228BF32F0049AB57 /* PaymentNewTableVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentNewTableVIew.swift; sourceTree = "<group>"; };
 		ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAndCurrencyCell.swift; sourceTree = "<group>"; };
-		ACC75897228C27E00049AB57 /* ButtonNextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNextCell.swift; sourceTree = "<group>"; };
 		ACC7589A228C344B0049AB57 /* ResetPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordService.swift; sourceTree = "<group>"; };
 		ACC8273C2271A6E4001E5750 /* PasswordErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordErrors.swift; sourceTree = "<group>"; };
 		ACC8273E2271A7F1001E5750 /* TFPasswordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFPasswordDelegate.swift; sourceTree = "<group>"; };
@@ -846,7 +844,6 @@
 				ACFAF76F223F8B99008C731B /* SenderCellField.swift */,
 				ACC75895228C08BC0049AB57 /* SumAndCurrencyCell.swift */,
 				ACFBAC372240FB1F001D9D94 /* TotalInfoCell.swift */,
-				ACC75897228C27E00049AB57 /* ButtonNextCell.swift */,
 				ACFBAC392240FB35001D9D94 /* ZamBillCell.swift */,
 				ACFBAC3B2240FB44001D9D94 /* AddNewCardCell.swift */,
 				ACFBAC3D2240FB5D001D9D94 /* CardCell.swift */,
@@ -1106,7 +1103,6 @@
 				AC1A5274225B26F70021B79C /* PIN VC.swift in Sources */,
 				ACEDB2CD2281A56800A82286 /* NotificationNames.swift in Sources */,
 				AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */,
-				ACC75898228C27E00049AB57 /* ButtonNextCell.swift in Sources */,
 				AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */,
 				5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */,
 				ACC7588E228BEE250049AB57 /* PaymentNewVC.swift in Sources */,

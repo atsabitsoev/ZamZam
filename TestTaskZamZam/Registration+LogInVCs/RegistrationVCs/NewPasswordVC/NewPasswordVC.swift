@@ -220,8 +220,8 @@ class NewPasswordVC: UIViewController {
     
     func goNext() {
         
-        let setNewPinVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "SetNewPINVC")
-        self.navigationController?.show(setNewPinVC, sender: nil)
+        let regLogNavCon = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
+        self.present(regLogNavCon, animated: true, completion: nil)
         
     }
     

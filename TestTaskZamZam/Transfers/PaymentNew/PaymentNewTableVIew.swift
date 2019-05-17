@@ -17,7 +17,6 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         let numberBillCells = masZamBills.count
         let sumAndCurrencyCells = 1
         let totalInfoCells = 1
-        let butNextCells = 1
         
         switch section {
         case 0:
@@ -28,8 +27,6 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             return sumAndCurrencyCells
         case 3:
             return totalInfoCells
-        case 4:
-            return butNextCells
         default:
             print("Error")
             return 0
@@ -100,10 +97,12 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 1:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! BillCell
-            let currency = masZamBills[indexPath.row].currency
-            cell.labName.text = "Zam счет \(currency.shortName)"
-            cell.labSum.text = "\(masZamBills[indexPath.row].sum) \(currency.symbol)"
-            cell.labCurrency.text = currency.symbol
+            let bill = masZamBills[indexPath.row]
+            
+            cell.labName.text = "Zam счет \(bill.currency.shortName)"
+            cell.labSum.text = "\(bill.sum) \(bill.currency.symbol)"
+            cell.labCurrency.text = bill.currency.symbol
+            
             return cell
             
         case 2:
@@ -116,25 +115,12 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TotalInfoCell") as! TotalInfoCell
             return cell
             
-        case 4:
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonNextCell") as! ButtonNextCell
-            return cell
-            
         default:
             
             print("error")
             return UITableViewCell()
             
         }
-        
-    }
-    
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
-        guard let cell = cell as? ButtonNextCell else { return }
-        cell.configureButNext()
         
     }
     

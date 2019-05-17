@@ -33,6 +33,7 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     
     var zamBills: [ZamBill]?
     var stackViewBalanceStandardBounds: CGRect?
+    var shouldUpdate = false
     
     
     override func viewDidLoad() {
@@ -42,11 +43,16 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         
         self.tabBarController?.tabBar.unselectedItemTintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.5)
         configurePullToRefresh()
+        
+        shouldUpdate = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
-        startRefreshing()
+        if shouldUpdate {
+            startRefreshing()
+        }
+        shouldUpdate = false
         
         self.tabBarController?.tabBar.isHidden = false
     }
@@ -72,8 +78,46 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         
         labTotalSum.text = "\(getUserAccountsService.sumOfAllAccounts)"
         
-        self.zamBills = getUserAccountsService.zamBills
+        let oldCount = zamBills?.count ?? 0
+        zamBills = GetUserAccountsService.standard.zamBills
+        let newCount = zamBills?.count ?? 0
+        
+        if oldCount < newCount {
+            insertNewBills(count: newCount - oldCount, startIndex: oldCount)
+        } else if oldCount > newCount {
+            deleteOldBills(count: oldCount - newCount, startIndex: newCount)
+        }
         tableView.reloadData()
+        
+        
+        
+    }
+    
+    private func insertNewBills(count: Int, startIndex: Int) {
+        
+        var indexPathsForNewBills: [IndexPath] = []
+        
+        for i in startIndex..<count + startIndex {
+            indexPathsForNewBills.append([0,i])
+        }
+        
+        tableView.beginUpdates()
+        tableView.insertRows(at: indexPathsForNewBills, with: .automatic)
+        tableView.endUpdates()
+        
+    }
+    
+    private func deleteOldBills(count: Int, startIndex: Int) {
+        
+        var indexPathsForOldBills: [IndexPath] = []
+        
+        for i in startIndex..<count + startIndex {
+            indexPathsForOldBills.append([0,i])
+        }
+        
+        tableView.beginUpdates()
+        tableView.deleteRows(at: indexPathsForOldBills, with: .automatic)
+        tableView.endUpdates()
         
     }
     
