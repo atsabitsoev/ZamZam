@@ -15,9 +15,6 @@ class GetUserAccountsService {
     static let standard = GetUserAccountsService()
     private init() {}
     
-    private let userTokenService = UserTokenService.standard
-    private lazy var userAccessToken = userTokenService.userAccessToken
-    
     
     var zamBills: [ZamBill] = [] {
         didSet {
@@ -29,10 +26,12 @@ class GetUserAccountsService {
     
     func sendGetZamBillsRequest() {
         
+        print("Посылаю запрос ГЕТ с токеном - \(UserTokenService.standard.userAccessToken)")
+        
         let  urlString = "http://10.80.80.99:2222/api/accounts"
         let url = URL(string: urlString)!
         
-        let headers: HTTPHeaders = ["Authorization": "Bearer \(userAccessToken)"]
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(UserTokenService.standard.userAccessToken)"]
         let parameters: Parameters = [:]
         
         AF.request(url,
@@ -68,6 +67,12 @@ class GetUserAccountsService {
                             self.zamBills = zamBills
                             
                             print(json)
+                            
+                        case 401:
+                            
+                            print("Устарел аксесс токен")
+                            self.post(notificationName: .userAccessTokenIsOutOfDate)
+                            print(response.result.value!)
                             
                         default:
                             

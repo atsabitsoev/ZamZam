@@ -35,16 +35,11 @@ class ZamBillCheckCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        if selected {
-            addCheck()
-        } else {
-            deleteCheck()
-        }
-        
     }
     
     
     func addCheck() {
+        print("\(viewUnderCheck.alpha)")
         viewUnderCheck.alpha = 1
     }
     

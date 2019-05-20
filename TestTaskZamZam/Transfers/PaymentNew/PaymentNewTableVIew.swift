@@ -103,11 +103,18 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             cell.labSum.text = "\(bill.sum) \(bill.currency.symbol)"
             cell.labCurrency.text = bill.currency.symbol
             
+            if bill.currency.shortName == transferList["senderCurrency"]! {
+                cell.addCheck()
+            } else {
+                cell.deleteCheck()
+            }
+            
             return cell
             
         case 2:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "SumAndCurrencyCell") as! SumAndCurrencyCell
+            cell.labCurrency.text = self.transferList["recipientCurrency"]
             return cell
             
         case 3:

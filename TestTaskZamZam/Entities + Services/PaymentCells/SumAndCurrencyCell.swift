@@ -23,21 +23,25 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
     }
     @IBOutlet weak var viewCurrency: UIView! {
         didSet {
-            setBorder(to: viewCurrency)
+            configureViewCurrency()
         }
     }
     @IBOutlet weak var labCurrency: myLabel!
     
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    private func configureViewCurrency() {
+        
+        let gestureRec = UITapGestureRecognizer(target: self, action: #selector(ViewCurrencyTapped))
+        viewCurrency.addGestureRecognizer(gestureRec)
+        
+        setBorder(to: viewCurrency)
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @objc private func ViewCurrencyTapped() {
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "viewCurrencyTapped"), object: nil)
+        
     }
     
     

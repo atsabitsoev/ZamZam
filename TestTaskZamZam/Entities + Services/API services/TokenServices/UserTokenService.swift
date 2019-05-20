@@ -43,7 +43,6 @@ class UserTokenService {
             return keychain.get(TokenKeys.userAccessToken.rawValue)!
         }
         set {
-            print(newValue)
             keychain.set(newValue, forKey: TokenKeys.userAccessToken.rawValue)
         }
     }
@@ -86,13 +85,19 @@ class UserTokenService {
                             let accessToken = JSON(response.result.value!)["access_token"].stringValue
                             let refreshToken = JSON(response.result.value!)["refresh_token"].stringValue
                             
+                            print("Сохраняю токен - \(accessToken)")
+                            
                             self.userAccessToken = accessToken
                             self.userRefreshToken = refreshToken
                             
                            self.post(notificationName: .enterSucceed)
                             
-                            print("access - \(accessToken)")
-                            print("refresh - \(refreshToken)")
+                            print("Сохранил токен - \(self.userAccessToken)")
+                            
+                        case 401:
+                            
+                            print("Устарел аксесс токен")
+                            self.post(notificationName: .userAccessTokenIsOutOfDate)
                             
                         default:
                             

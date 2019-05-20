@@ -24,6 +24,8 @@ enum NotificationNames: String {
     case wrongCredentials = "enterFailed"
     case enterFailed = "requestFailed"
     
+    case userAccessTokenIsOutOfDate = "tokenIsOutOfDate"
+    
     case registrationSucceed = "registrationSucceed"
     case registrationFailed = "registrationFailed"
     

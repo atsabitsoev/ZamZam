@@ -19,6 +19,8 @@ enum CurrencyType {
 class CurrencyManager {
     private init() {}
     
+    static let currencies: [CurrencyProtocol] = [CurrencyRubble(), CurrencyDollar(), CurrencyEuro()]
+    
     static func getCurrency(byType type: CurrencyType) -> CurrencyProtocol {
         switch type {
         case .rubble:

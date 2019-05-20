@@ -21,7 +21,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         
         cell.labName.text = "ZAM счет \(bill.currency.shortName)"
         cell.labCurrency.text = bill.currency.symbol
-        cell.labSum.text = "\(bill.sum.formattedWithSeparator) \(bill.currency.symbol)"
+        cell.labSum.text = "\(bill.sum) \(bill.currency.symbol)"
         
         return cell
     }

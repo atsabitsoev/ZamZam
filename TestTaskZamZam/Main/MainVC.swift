@@ -17,11 +17,6 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var labTotalSum: myLabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var viewCheta: UIView!
-    @IBOutlet weak var viewCashBack: UIView! {
-        didSet{
-            viewCashBack.layer.cornerRadius = 8
-        }
-    }
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var stackViewBalance: UIStackView!
     @IBOutlet weak var pageControl: UIPageControl! {
@@ -32,7 +27,7 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     
     
     var zamBills: [ZamBill]?
-    var stackViewBalanceStandardBounds: CGRect?
+    var stackViewBalanceStandardCenter: CGPoint?
     var shouldUpdate = false
     
     
@@ -66,6 +61,30 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(stopRefreshing), name: NSNotification.Name(rawValue: NotificationNames.zamBillsUpdated.rawValue), object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(userAccessTokenIsOutOfDate), name: NSNotification.Name(NotificationNames.userAccessTokenIsOutOfDate.rawValue), object: nil)
+        
+    }
+    
+    @objc private func userAccessTokenIsOutOfDate() {
+        
+        showSessionLimitAlert()
+    }
+    
+    private func showSessionLimitAlert() {
+        
+        let alert = UIAlertController(title: "Сессия закончена", message: "", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ок", style: .default) { (_) in self.goToPinVC() }
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func goToPinVC() {
+        
+        let storyBoard = UIStoryboard(name: "Registration+LogIn", bundle: nil)
+        let pinVC = storyBoard.instantiateViewController(withIdentifier: "PINVC")
+        
+        self.present(pinVC, animated: true, completion: nil)
     }
     
     private func fetchBills() {
@@ -136,14 +155,13 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     }
     
     private func startRefreshing() {
+        
         self.view.isUserInteractionEnabled = false
-        stackViewBalanceStandardBounds = stackViewBalance.bounds
+        stackViewBalanceStandardCenter = stackViewBalance.center
         activityIndicator.startAnimating()
+        
         UIView.animate(withDuration: 0.3) {
-            self.stackViewBalance.bounds = CGRect(x: self.stackViewBalance.bounds.minX,
-                                             y: self.stackViewBalance.bounds.minY - 13,
-                                             width: self.stackViewBalance.bounds.width,
-                                             height: self.stackViewBalance.bounds.height)
+            self.stackViewBalance.center = CGPoint(x: self.stackViewBalanceStandardCenter!.x, y: self.stackViewBalanceStandardCenter!.y + 13)
         }
         
         fetchBills()
@@ -152,7 +170,7 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     @objc private func stopRefreshing() {
         activityIndicator.stopAnimating()
         UIView.animate(withDuration: 0.3) {
-            self.stackViewBalance.bounds = self.stackViewBalanceStandardBounds!
+            self.stackViewBalance.center = self.stackViewBalanceStandardCenter!
         }
         self.view.isUserInteractionEnabled = true
         

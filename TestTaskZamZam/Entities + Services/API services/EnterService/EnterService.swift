@@ -65,6 +65,7 @@ class EnterServise {
                         self.userTokenService.userAccessToken = accessToken
                         self.userTokenService.userRefreshToken = refreshToken
                         
+                        
                         self.post(.enterSucceed)
                         
                     } else if response.response?.statusCode == 400 {

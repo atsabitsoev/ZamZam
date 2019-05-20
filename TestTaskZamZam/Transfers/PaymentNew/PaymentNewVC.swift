@@ -8,7 +8,24 @@
 
 import UIKit
 
-class PaymentNewVC: UIViewController {
+class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    //Picker
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return masCurrencies.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let strings = masCurrencies.map { (currency) -> NSAttributedString in
+            return NSAttributedString(string: currency.shortName)
+        }
+        return strings[row]
+    }
+    
 
     
     @IBOutlet weak var viewBigWhite: UIView!
@@ -24,8 +41,13 @@ class PaymentNewVC: UIViewController {
                                            "sum": "0",
                                            "convertedSum": "0",
                                            "cashBack":"0",
-                                           "senderCurrency": "",
-                                           "recipientCurrency": "USD"]
+                                           "senderCurrency": "RUB",
+                                           "recipientCurrency": "RUB"]
+    var masCurrencies: [CurrencyProtocol] {
+        get {
+            return CurrencyManager.currencies
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -62,7 +84,38 @@ class PaymentNewVC: UIViewController {
                                                name: Notification.Name(NotificationNames.zamZamTransferFailed.rawValue),
                                                object: nil)
         
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(userAccessTokenIsOutOfDate), name: NSNotification.Name(rawValue: NotificationNames.userAccessTokenIsOutOfDate.rawValue), object: nil)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(chooseCurrency),
+                                               name: NSNotification.Name(rawValue: "viewCurrencyTapped"),
+                                               object: nil)
+        
     }
+    
+    @objc private func userAccessTokenIsOutOfDate() {
+        
+        showSessionLimitAlert()
+    }
+    
+    private func showSessionLimitAlert() {
+        
+        let alert = UIAlertController(title: "Сессия закончена", message: "", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ок", style: .default) { (_) in self.goToPinVC() }
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func goToPinVC() {
+        
+        let storyBoard = UIStoryboard(name: "Registration+LogIn", bundle: nil)
+        let pinVC = storyBoard.instantiateViewController(withIdentifier: "PINVC")
+        
+        self.present(pinVC, animated: true, completion: nil)
+    }
+    
     
     @objc private func zamBillsUpdated() {
         
@@ -150,6 +203,36 @@ class PaymentNewVC: UIViewController {
     func billSelected(_ index: Int) {
         
         transferList["senderCurrency"] = masZamBills[index].currency.shortName
+        tableView.reloadData()
+        
+    }
+    
+    @objc private func chooseCurrency() {
+        
+        let vc = UIViewController()
+        vc.preferredContentSize = CGSize(width: 250,height: 150)
+        let pickerView = UIPickerView(frame: CGRect(x: 0, y: 0, width: 250, height: 150))
+        
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        
+        vc.view.addSubview(pickerView)
+        
+        let editRadiusAlert = UIAlertController(title: "Выберете валюту", message: "", preferredStyle: UIAlertController.Style.alert)
+        editRadiusAlert.setValue(vc, forKey: "contentViewController")
+        
+        let doneAction = UIAlertAction(title: "Готово", style: .default) { (action) in
+            
+            let selectedCurrency = self.masCurrencies[pickerView.selectedRow(inComponent: 0)]
+            let shortName = selectedCurrency.shortName
+            
+            self.transferList["recipientCurrency"] = shortName
+            self.tableView.reloadData()
+        }
+        
+        editRadiusAlert.addAction(doneAction)
+        editRadiusAlert.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler: nil))
+        self.present(editRadiusAlert, animated: true)
         
     }
 
