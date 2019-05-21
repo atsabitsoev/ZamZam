@@ -12,15 +12,16 @@ extension Formatter {
     
     static let withSeparator: NumberFormatter = {
         let formatter = NumberFormatter()
-        formatter.groupingSeparator = ","
-        formatter.numberStyle = .decimal
-        formatter.decimalSeparator = "."
+        formatter.groupingSeparator = " "
+        formatter.numberStyle = NumberFormatter.Style.decimal
+        formatter.currencySymbol = ""
+        formatter.decimalSeparator = ","
         return formatter
     }()
     
 }
 
-extension Float {
+extension Double {
     
     var formattedWithSeparator: String {
         return Formatter.withSeparator.string(for: self) ?? ""

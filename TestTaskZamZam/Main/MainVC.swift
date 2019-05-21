@@ -95,7 +95,7 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     
     private func billsUpdated() {
         
-        labTotalSum.text = "\(getUserAccountsService.sumOfAllAccounts)"
+        labTotalSum.text = "\(getUserAccountsService.sumOfAllAccounts.formattedWithSeparator)"
         
         let oldCount = zamBills?.count ?? 0
         zamBills = GetUserAccountsService.standard.zamBills

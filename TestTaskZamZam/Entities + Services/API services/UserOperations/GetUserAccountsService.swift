@@ -21,7 +21,7 @@ class GetUserAccountsService {
             post(notificationName: .zamBillsUpdated)
         }
     }
-    var sumOfAllAccounts: Float = 0
+    var sumOfAllAccounts: Double = 0
     
     
     func sendGetZamBillsRequest() {
@@ -49,7 +49,7 @@ class GetUserAccountsService {
                             
                             let json = JSON(response.result.value!)
                             
-                            self.sumOfAllAccounts = json["summOfAllAccounts"].floatValue
+                            self.sumOfAllAccounts = json["summOfAllAccounts"].doubleValue
                             
                             var zamBills: [ZamBill] = []
                             
@@ -59,7 +59,7 @@ class GetUserAccountsService {
                                 
                                 let currencyShortName = zamBillsInJson[i]["currency"].stringValue.uppercased()
                                 let currency = CurrencyManager.getCurrenct(byShortName: currencyShortName)
-                                let sum = zamBillsInJson[i]["balance"].floatValue
+                                let sum = zamBillsInJson[i]["balance"].doubleValue
                                 
                                 zamBills.append(ZamBill(currency: currency, sum: sum))
                             }

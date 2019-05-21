@@ -100,7 +100,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             let bill = masZamBills[indexPath.row]
             
             cell.labName.text = "Zam счет \(bill.currency.shortName)"
-            cell.labSum.text = "\(bill.sum) \(bill.currency.symbol)"
+            cell.labSum.text = "\(bill.sum.formattedWithSeparator) \(bill.currency.symbol)"
             cell.labCurrency.text = bill.currency.symbol
             
             if bill.currency.shortName == transferList["senderCurrency"]! {
