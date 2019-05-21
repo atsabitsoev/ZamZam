@@ -392,7 +392,7 @@
                                                                         <constraint firstAttribute="width" secondItem="gsz-kH-Ulc" secondAttribute="height" multiplier="1:1" id="9hy-zY-DRr"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+79284983000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-tl-rBS">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+79284983000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-tl-rBS" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
                                                                     <rect key="frame" x="58" y="3" width="273" height="45"/>
                                                                     <nil key="textColor"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>

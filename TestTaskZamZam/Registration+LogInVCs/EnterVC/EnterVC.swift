@@ -147,8 +147,10 @@ class EnterVC: UIViewController {
     
     @IBAction func butEnterTapped(_ sender: UIButton) {
         
-        guard let phone = tfPhoneNumber.text else { return }
+        guard var phone = tfPhoneNumber.text else { return }
         guard let password = tfPassword.text else { return }
+        phone = "+\(phone.onlyNumbers())"
+        
         rememberUser(phone: phone)
         
         enterService.enter(phone: phone, password: password)

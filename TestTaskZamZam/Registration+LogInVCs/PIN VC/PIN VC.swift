@@ -9,6 +9,7 @@
 import UIKit
 import KeychainSwift
 import LocalAuthentication
+import PhoneNumberKit
 
 class PIN_VC: UIViewController {
 
@@ -31,7 +32,7 @@ class PIN_VC: UIViewController {
         
         dotsView.totalDots = 4
         
-        labUser.text = UserDefaults.standard.string(forKey: "userPhone")
+        setTextToLabUser()
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(activateKeyboard))
         dotsView.addGestureRecognizer(gesture)
@@ -49,6 +50,17 @@ class PIN_VC: UIViewController {
         } else {
             tfPin.becomeFirstResponder()
         }
+    }
+    
+    
+    private func setTextToLabUser() {
+        
+        guard let userName = UserDefaults.standard.string(forKey: "userPhone") else { return }
+        
+        let formattedUserName = PartialFormatter().formatPartial(userName)
+        
+        labUser.text = formattedUserName
+        
     }
     
     

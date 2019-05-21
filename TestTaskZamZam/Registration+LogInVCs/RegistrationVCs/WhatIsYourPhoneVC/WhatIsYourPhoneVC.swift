@@ -137,17 +137,7 @@ class WhatIsYourPhoneVC: UIViewController {
     }
     
     func rememberPhone(_ phone: String) {
-        temporaryPhone = "+\(getOnlyNumbers(phone))"
-    }
-    
-    func getOnlyNumbers(_ string: String) -> String {
-        var newString = ""
-        for c in string {
-            if "1234567890".contains(c) {
-                newString.append(c)
-            }
-        }
-        return newString
+        temporaryPhone = "+\(phone.onlyNumbers())"
     }
     
     @objc func goNext() {
