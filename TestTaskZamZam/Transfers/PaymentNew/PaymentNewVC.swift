@@ -315,7 +315,9 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBAction func tfPhoneNumberTextChanged(_ sender: UITextField) {
         
         guard let phone = sender.text else { return }
-        transferList["phone"] = phone
+        let formattedPhone = "+\(phone.onlyNumbers())"
+        
+        transferList["phone"] = formattedPhone
         
     }
     
