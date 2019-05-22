@@ -31,7 +31,8 @@ class GetUserAccountsService {
         let  urlString = "http://10.80.80.99:2222/api/accounts"
         let url = URL(string: urlString)!
         
-        let headers: HTTPHeaders = ["Authorization": "Bearer \(UserTokenService.standard.userAccessToken)"]
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(UserTokenService.standard.userAccessToken)",
+                                    "Content-Type":"application/json"]
         let parameters: Parameters = [:]
         
         AF.request(url,

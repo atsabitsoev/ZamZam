@@ -37,11 +37,22 @@ class ZamZamTransferService {
                         
                     case .success:
                         
-                        if response.response?.statusCode == 200 {
+                        switch response.response?.statusCode {
+                            
+                        case 200:
+                            
                             self.post(notificationName: .zamZamTransferSucceed)
-                        } else {
+                            
+                        case 401:
+                            
+                            self.post(notificationName: .userAccessTokenIsOutOfDate)
+                            
+                        default:
+                            
                             self.post(notificationName: .zamZamTransferFailed)
+                            
                         }
+                        
                         print(response.result.value!)
                         
                     case .failure:
