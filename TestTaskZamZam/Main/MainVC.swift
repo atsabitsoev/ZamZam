@@ -177,8 +177,7 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         activityIndicator.startAnimating()
         
         UIView.animate(withDuration: 0.3) {
-            self.stackViewBalance.center = CGPoint(x: self.stackViewBalanceStandardCenter!.x,
-                                                   y: self.stackViewBalanceStandardCenter!.y + 13)
+            self.stackViewBalance.center = CGPoint(x: self.stackViewBalanceStandardCenter!.x, y: self.stackViewBalanceStandardCenter!.y + 13)
         }
         
         fetchBills()
