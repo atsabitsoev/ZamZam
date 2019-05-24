@@ -59,9 +59,15 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     
     private func addObservers() {
         
-        NotificationCenter.default.addObserver(self, selector: #selector(stopRefreshing), name: NSNotification.Name(rawValue: NotificationNames.zamBillsUpdated.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(stopRefreshing),
+                                               name: NSNotification.Name(rawValue: NotificationNames.zamBillsUpdated.rawValue),
+                                               object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(userAccessTokenIsOutOfDate), name: NSNotification.Name(NotificationNames.userAccessTokenIsOutOfDate.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(userAccessTokenIsOutOfDate),
+                                               name: NSNotification.Name(NotificationNames.userAccessTokenIsOutOfDate.rawValue),
+                                               object: nil)
         
     }
     
@@ -72,19 +78,27 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     
     private func showSessionLimitAlert() {
         
-        let alert = UIAlertController(title: "Сессия закончена", message: "", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ок", style: .default) { (_) in self.goToPinVC() }
+        let alert = UIAlertController(title: "Сессия закончена",
+                                      message: "",
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ок",
+                                     style: .default) { (_) in self.goToPinVC() }
         alert.addAction(okAction)
         
-        self.present(alert, animated: true, completion: nil)
+        self.present(alert,
+                     animated: true,
+                     completion: nil)
     }
     
     private func goToPinVC() {
         
-        let storyBoard = UIStoryboard(name: "Registration+LogIn", bundle: nil)
+        let storyBoard = UIStoryboard(name: "Registration+LogIn",
+                                      bundle: nil)
         let pinVC = storyBoard.instantiateViewController(withIdentifier: "PINVC")
         
-        self.present(pinVC, animated: true, completion: nil)
+        self.present(pinVC,
+                     animated: true,
+                     completion: nil)
     }
     
     private func fetchBills() {
@@ -124,7 +138,8 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         }
         
         tableView.beginUpdates()
-        tableView.insertRows(at: indexPathsForNewBills, with: .automatic)
+        tableView.insertRows(at: indexPathsForNewBills,
+                             with: .automatic)
         tableView.endUpdates()
         
     }
@@ -144,7 +159,8 @@ class MainVC: UIViewController, UICollectionViewDelegate {
     }
     
     private func configurePullToRefresh() {
-        let swipeRec = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureRecognized(gestureRecognizer:)))
+        let swipeRec = UISwipeGestureRecognizer(target: self,
+                                                action: #selector(swipeGestureRecognized(gestureRecognizer:)))
         swipeRec.direction = .down
         self.view.addGestureRecognizer(swipeRec)
         print("Добавил")
