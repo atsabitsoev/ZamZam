@@ -48,7 +48,7 @@ class ResetPasswordService {
     
     func checkVerification(code: String) {
         
-        let urlString = "http://10.80.80.99:2222/api/user/verify"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/user/verify"
         guard let url = URL(string: urlString) else { return }
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(appAccessToken)"]
@@ -83,7 +83,7 @@ class ResetPasswordService {
     
     func setNewPassword(_ password: String) {
         
-        let urlString = "http://10.80.80.99:2222/api/user/resetPassword"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/user/resetPassword"
         let url = URL(string: urlString)!
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(appAccessToken)"]
@@ -123,7 +123,7 @@ class ResetPasswordService {
     
     @objc private func sendRequestToSendCode() {
         
-        let urlString = "http://10.80.80.99:2222/api/user/checkphonenumber"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/user/checkphonenumber"
         let url = URL(string: urlString)!
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(appAccessToken)"]

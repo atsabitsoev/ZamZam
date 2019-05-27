@@ -33,7 +33,7 @@ class EnterServise {
     
     private func getUserTokens(phone: String, password: String) {
         
-        let urlString = "http://10.80.80.99:2222/api/token"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/token"
         let url = URL(string: urlString)!
         
         let clientId = keychain.get(TokenKeys.clientId.rawValue)!
@@ -53,6 +53,8 @@ class EnterServise {
                 
                 do {
                     
+                     print(response.response!.statusCode)
+                    
                     let json = try JSON(data: response.data!)
                     
                     if response.response?.statusCode == 200 {
@@ -71,6 +73,7 @@ class EnterServise {
                     } else if response.response?.statusCode == 400 {
                         
                         self.post(.wrongCredentials)
+                       
                         
                     } else {
                         
@@ -86,6 +89,8 @@ class EnterServise {
                 }
                 
             case .failure:
+                
+                print(response.response!.statusCode)
                 
                 print(response.result.error!.localizedDescription)
                 self.post(.enterFailed)

@@ -41,7 +41,7 @@ class PhoneVerificationService {
         print("Сейчас отправлю код")
         observeIsCodeSent()
         
-        let urlString = "http://10.80.80.99:2222/api/user/phonenumberverifycode"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/user/phonenumberverifycode"
         guard let url = URL(string: urlString) else { return }
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(appAccessToken)"]
@@ -74,7 +74,7 @@ class PhoneVerificationService {
     
     func checkVerification(code: String) {
         
-        let urlString = "http://10.80.80.99:2222/api/user/verifyphonenumber"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/user/verifyphonenumber"
         guard let url = URL(string: urlString) else { return }
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(appAccessToken)"]

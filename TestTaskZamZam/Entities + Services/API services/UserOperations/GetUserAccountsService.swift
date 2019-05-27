@@ -28,7 +28,7 @@ class GetUserAccountsService {
         
         print("Посылаю запрос ГЕТ с токеном - \(UserTokenService.standard.userAccessToken)")
         
-        let  urlString = "http://10.80.80.99:2222/api/accounts"
+        let  urlString = "http://test.setclapp.com/zamzamapi/api/accounts"
         let url = URL(string: urlString)!
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(UserTokenService.standard.userAccessToken)",

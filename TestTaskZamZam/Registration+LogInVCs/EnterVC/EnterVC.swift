@@ -62,6 +62,12 @@ class EnterVC: UIViewController {
     }
     
     @objc func goNext() {
+        
+        guard var phone = tfPhoneNumber.text else { return }
+        guard let password = tfPassword.text else { return }
+        phone = "+\(phone.onlyNumbers())"
+        rememberUser(phone: phone)
+        
         let newPinVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "SetNewPinEnterVC")
         self.navigationController?.show(newPinVC, sender: nil)
         activityIndicator.stopAnimating()
@@ -150,8 +156,6 @@ class EnterVC: UIViewController {
         guard var phone = tfPhoneNumber.text else { return }
         guard let password = tfPassword.text else { return }
         phone = "+\(phone.onlyNumbers())"
-        
-        rememberUser(phone: phone)
         
         enterService.enter(phone: phone, password: password)
         activityIndicator.startAnimating()
