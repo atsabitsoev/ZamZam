@@ -51,7 +51,7 @@ class ReplenSumAndCurrencyVC: UIViewController {
     }
     
     func configureButNext() {
-        print("Рамка кнопки некст: \(butNext.bounds)")
+        
         butNext.layer.cornerRadius = 8
         butNext.addGradient(colors: [UIColor(red: 86/255,
                                              green: 192/255,

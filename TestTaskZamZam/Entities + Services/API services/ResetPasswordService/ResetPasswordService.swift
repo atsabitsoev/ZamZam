@@ -32,7 +32,6 @@ class ResetPasswordService {
             return UserDefaults.standard.string(forKey: TokenKeys.userUid.rawValue) ?? ""
         }
         set {
-            print(newValue)
             UserDefaults.standard.set(newValue, forKey: TokenKeys.userUid.rawValue)
         }
     }
@@ -137,10 +136,11 @@ class ResetPasswordService {
             case .success:
                 
                 let uid = response.result.value! as! String
+                print()
                 print(uid)
+                print()
                 self.userUid = uid
                 self.post(.codeSent)
-                print(response.result.value!)
                 
             case .failure:
                 
@@ -149,6 +149,8 @@ class ResetPasswordService {
             }
             
         }
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(NotificationNames.appAccessTokenIsGot.rawValue), object: nil)
         
     }
     

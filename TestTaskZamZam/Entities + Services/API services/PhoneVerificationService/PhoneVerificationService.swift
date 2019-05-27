@@ -54,6 +54,7 @@ class PhoneVerificationService {
             case .success:
                 if response.response?.statusCode == 200 {
                     self.post(.codeSent)
+                    print("Отправил код")
                 } else {
                     self.post(.userExists)
                 }
@@ -69,6 +70,7 @@ class PhoneVerificationService {
     
     @objc private func codeHasCome() {
         print("Код отправлен")
+        NotificationCenter.default.removeObserver(self)
     }
     
     

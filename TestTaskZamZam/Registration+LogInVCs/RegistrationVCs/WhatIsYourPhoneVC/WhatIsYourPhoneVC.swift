@@ -78,9 +78,7 @@ class WhatIsYourPhoneVC: UIViewController {
     
     private func removeSendingCodeObservers() {
         
-        NotificationCenter.default.removeObserver(self,
-                                                  name: NSNotification.Name(NotificationNames.codeSent.rawValue),
-                                                  object: nil)
+        NotificationCenter.default.removeObserver(self)
         
     }
     
@@ -96,7 +94,7 @@ class WhatIsYourPhoneVC: UIViewController {
     }
     
     func configureButNext() {
-        print("Рамка кнопки некст: \(butNext.bounds)")
+        
         butNext.layer.cornerRadius = 8
         butNext.addGradient(colors: [UIColor(red: 86/255,
                                              green: 192/255,
@@ -142,6 +140,7 @@ class WhatIsYourPhoneVC: UIViewController {
     
     @objc func goNext() {
         
+        print("Код отправлен")
         activityIndicator.stopAnimating()
         let verifyPhoneVC = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "verifyPhoneVC")
         self.navigationController?.show(verifyPhoneVC, sender: nil)

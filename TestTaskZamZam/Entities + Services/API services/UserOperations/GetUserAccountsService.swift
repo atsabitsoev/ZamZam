@@ -67,7 +67,7 @@ class GetUserAccountsService {
                             
                             self.zamBills = zamBills
                             
-                            print(json)
+                            print("json - \(json)")
                             
                         case 401:
                             

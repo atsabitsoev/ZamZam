@@ -52,8 +52,6 @@ class RegistrationService {
                     
                 }
                 
-                print(response.result.value!)
-                
             case .failure:
                 self.post(.registrationFailed)
                 print(response.result.error!.localizedDescription)

@@ -53,7 +53,7 @@ class ZamZamTransferService {
                             
                         }
                         
-                        print(response.result.value!)
+                        print("json - \(response.result.value!)")
                         
                     case .failure:
                         

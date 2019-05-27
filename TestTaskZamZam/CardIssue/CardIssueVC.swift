@@ -115,7 +115,7 @@ class CardIssueVC: UIViewController {
     }
     
     func configureButNext() {
-        print("Рамка кнопки некст: \(butNext.bounds)")
+        
         butNext.layer.cornerRadius = 8
         
         butNext.addGradient(colors: [UIColor(red: 128/255,

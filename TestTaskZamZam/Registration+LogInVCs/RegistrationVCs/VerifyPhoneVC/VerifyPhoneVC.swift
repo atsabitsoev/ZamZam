@@ -67,7 +67,9 @@ class VerifyPhoneVC: UIViewController {
     
     @objc private func codeSent() {
         
+        print("Код отправлен")
         activityIndicator.stopAnimating()
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(NotificationNames.codeSent.rawValue), object: nil)
         
     }
     
