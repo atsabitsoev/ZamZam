@@ -54,7 +54,6 @@
 		AC6E2F9A2282B660001CB42E /* EnterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E2F992282B660001CB42E /* EnterService.swift */; };
 		AC6E2F9E2282C027001CB42E /* TokensKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E2F9D2282C027001CB42E /* TokensKeys.swift */; };
 		AC829D18229D524B0019C19B /* MaterialTextFieldWithFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */; };
-		AC829D1A229D534C0019C19B /* PersonalDataFlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC829D19229D534C0019C19B /* PersonalDataFlagCell.swift */; };
 		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
 		AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C82257544F004D0323 /* EnterVC.swift */; };
 		AC92424C229D0DFC00299D51 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC92424B229D0DFC00299D51 /* Profile.storyboard */; };
@@ -68,8 +67,6 @@
 		AC92425D229D195800299D51 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92425C229D195800299D51 /* ProfileCell.swift */; };
 		AC92425F229D1DD300299D51 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92425E229D1DD300299D51 /* MaterialTextField.swift */; };
 		AC924262229D358E00299D51 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC924261229D358E00299D51 /* PersonalDataVC.swift */; };
-		AC924264229D359D00299D51 /* PersonalDataTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC924263229D359D00299D51 /* PersonalDataTableView.swift */; };
-		AC924266229D35C000299D51 /* PersonalDataTFCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC924265229D35C000299D51 /* PersonalDataTFCell.swift */; };
 		AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */; };
 		AC98BF80226891BC00E35745 /* Withdraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC98BF7F226891BC00E35745 /* Withdraw.storyboard */; };
 		AC98BF832268935100E35745 /* WithdrawHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF822268935100E35745 /* WithdrawHomeVC.swift */; };
@@ -196,7 +193,6 @@
 		AC6E2F992282B660001CB42E /* EnterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterService.swift; sourceTree = "<group>"; };
 		AC6E2F9D2282C027001CB42E /* TokensKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensKeys.swift; sourceTree = "<group>"; };
 		AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldWithFlag.swift; sourceTree = "<group>"; };
-		AC829D19229D534C0019C19B /* PersonalDataFlagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataFlagCell.swift; sourceTree = "<group>"; };
 		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
 		AC8D62C82257544F004D0323 /* EnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterVC.swift; sourceTree = "<group>"; };
 		AC92424B229D0DFC00299D51 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -210,8 +206,6 @@
 		AC92425C229D195800299D51 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		AC92425E229D1DD300299D51 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		AC924261229D358E00299D51 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
-		AC924263229D359D00299D51 /* PersonalDataTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataTableView.swift; sourceTree = "<group>"; };
-		AC924265229D35C000299D51 /* PersonalDataTFCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataTFCell.swift; sourceTree = "<group>"; };
 		AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneInfoCell.swift; sourceTree = "<group>"; };
 		AC98BF7F226891BC00E35745 /* Withdraw.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Withdraw.storyboard; sourceTree = "<group>"; };
 		AC98BF822268935100E35745 /* WithdrawHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawHomeVC.swift; sourceTree = "<group>"; };
@@ -576,9 +570,6 @@
 			isa = PBXGroup;
 			children = (
 				AC924261229D358E00299D51 /* PersonalDataVC.swift */,
-				AC924263229D359D00299D51 /* PersonalDataTableView.swift */,
-				AC924265229D35C000299D51 /* PersonalDataTFCell.swift */,
-				AC829D19229D534C0019C19B /* PersonalDataFlagCell.swift */,
 			);
 			path = PersonalData;
 			sourceTree = "<group>";
@@ -1165,8 +1156,6 @@
 				ACC5CAF2225C714100B28E62 /* ReplenishTableview.swift in Sources */,
 				5B7DFED6223027D300ECF0D3 /* CollectionViewCell2.swift in Sources */,
 				AC98BF832268935100E35745 /* WithdrawHomeVC.swift in Sources */,
-				AC924266229D35C000299D51 /* PersonalDataTFCell.swift in Sources */,
-				AC829D1A229D534C0019C19B /* PersonalDataFlagCell.swift in Sources */,
 				AC92425B229D190A00299D51 /* ProfileTableView.swift in Sources */,
 				ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */,
 				ACFBAC2F2240DB8E001D9D94 /* WhatCountryTFDelegate.swift in Sources */,
@@ -1199,7 +1188,6 @@
 				AC1FF9BC2271DB7B009BE5C7 /* TouchFaceVC.swift in Sources */,
 				ACFBAC352240FAF8001D9D94 /* PaymentTableView.swift in Sources */,
 				ACEDB2D32281B5B100A82286 /* RegistrationService.swift in Sources */,
-				AC924264229D359D00299D51 /* PersonalDataTableView.swift in Sources */,
 				ACFBAC322240DEB6001D9D94 /* PaymentVC.swift in Sources */,
 				ACC8273F2271A7F1001E5750 /* TFPasswordDelegate.swift in Sources */,
 				AC24624B22819CBB006C54D4 /* PhoneVerificationService.swift in Sources */,

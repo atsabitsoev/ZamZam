@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Kelson Sans Regular RU.otf">
+            <string>KelsonSans-RegularRU</string>
+        </array>
         <array key="PTS55F.ttf">
             <string>PTSans-Regular</string>
         </array>
@@ -202,96 +205,325 @@
             <objects>
                 <viewController id="Dt2-n2-TcK" customClass="PersonalDataVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cHI-lV-GvZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLS-An-UJe">
-                                <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzt-WI-9w0">
+                                <rect key="frame" x="0.0" y="101" width="414" height="1049"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rpC-FU-xfo">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="787"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4b-Nn-wfa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1041"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LoE-uA-gVw" customClass="MaterialTextFieldWithFlag" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="31" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="HD7-j0-jp7"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Номер телефона"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФИО и дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="q2M-Tz-oPO">
+                                                <rect key="frame" x="23" y="115" width="138.5" height="14"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9K-Cy-asx" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="144" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="duR-VK-GC0"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Имя"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6S-Qp-lUM" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="202" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Mxs-2u-V8O"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Фамилия"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYO-df-kxL" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="260" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="EZ2-Ya-F6Z"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Отчество"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата рождения ДД/ММ/ГГ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-T5-67K" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="318" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="C7C-jt-Fp2"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Дата рождения ДД/ММ/ГГ"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адрес регистрации" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="LoL-Hc-uFS">
+                                                <rect key="frame" x="23" y="402" width="379" height="14"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S71-9y-46R">
+                                                <rect key="frame" x="18" y="431" width="378" height="48"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="pqW-4c-ik3"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Город регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-jZ-miB" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="489" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="vi8-gW-Y25"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Город регистрации"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Адрес регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUb-MS-JPx" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="547" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Lkl-P8-sPp"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Адрес регистрации"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФИО и дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-un-jWA">
+                                                <rect key="frame" x="23" y="631" width="373" height="14"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Серия и номер паспорта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jql-9p-r5W" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="660" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="mNZ-HQ-DWA"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Серия и номер паспорта"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Кем выдан" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fhq-vm-pQS" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="718" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="gi6-cU-nSp"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Кем выдан"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата выдачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AzP-EX-4uL" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="776" width="378" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Q3r-xt-4hn"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Дата выдачи"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7B-dd-d3g">
+                                                <rect key="frame" x="26" y="838" width="375" height="38.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Данные должны полностью совпадать с документом. Обязательно перепроверьте данные перед отправкой.">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="NSColor" red="0.65490196078431373" green="0.65490196078431373" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.6000000000000001" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywl-j5-guo">
+                                                <rect key="frame" x="18" y="898.5" width="378" height="69"/>
+                                                <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ywl-j5-guo" secondAttribute="height" multiplier="339:62" id="4uh-WM-s6X"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                                <state key="normal" title="Сохранить">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RT6-YQ-L72">
+                                                <rect key="frame" x="161" y="975" width="92" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="By0-h6-KRa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="eMX-mb-nU8"/>
+                                                            <constraint firstAttribute="width" constant="40" id="sfs-6b-QEm"/>
+                                                        </constraints>
+                                                        <state key="normal" image="chevronRight"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRF-lV-I7L">
+                                                        <rect key="frame" x="52" y="0.0" width="40" height="40"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="HBK-W0-nsu"/>
+                                                            <constraint firstAttribute="height" constant="40" id="b7t-ok-3rW"/>
+                                                        </constraints>
+                                                        <state key="normal" image="x"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="Fma-nG-gmN"/>
+                                                    <constraint firstAttribute="height" constant="40" id="j8S-Y5-fvj"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PersonalDataTFCell" rowHeight="58" id="dIb-tB-ht8" customClass="PersonalDataTFCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="58"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dIb-tB-ht8" id="8VD-3o-KNx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Заголовок" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5U0-74-4Sq" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="23" y="10" width="379" height="48"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="5U0-74-4Sq" secondAttribute="trailing" constant="12" id="2pT-mj-oCl"/>
-                                                        <constraint firstAttribute="bottom" secondItem="5U0-74-4Sq" secondAttribute="bottom" id="XDA-wN-9Wz"/>
-                                                        <constraint firstItem="5U0-74-4Sq" firstAttribute="leading" secondItem="8VD-3o-KNx" secondAttribute="leading" constant="23" id="bcP-uY-WHl"/>
-                                                        <constraint firstItem="5U0-74-4Sq" firstAttribute="top" secondItem="8VD-3o-KNx" secondAttribute="top" constant="10" id="fX1-vM-0Zq"/>
-                                                    </constraints>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PersonalDataFlagCell" rowHeight="58" id="aQ2-0E-Xte" customClass="PersonalDataFlagCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="86" width="414" height="58"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aQ2-0E-Xte" id="ZnT-MK-6fI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Заголовок" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PlG-0T-WCN" customClass="MaterialTextFieldWithFlag" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="23" y="10" width="379" height="48"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="PlG-0T-WCN" firstAttribute="top" secondItem="ZnT-MK-6fI" secondAttribute="top" constant="10" id="5VH-zw-dYJ"/>
-                                                        <constraint firstItem="PlG-0T-WCN" firstAttribute="leading" secondItem="ZnT-MK-6fI" secondAttribute="leading" constant="23" id="7cB-1f-bJD"/>
-                                                        <constraint firstAttribute="bottom" secondItem="PlG-0T-WCN" secondAttribute="bottom" id="Qgv-D5-j51"/>
-                                                        <constraint firstAttribute="trailing" secondItem="PlG-0T-WCN" secondAttribute="trailing" constant="12" id="feZ-9q-Uhp"/>
-                                                    </constraints>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="Dt2-n2-TcK" id="mjo-Y2-U7Z"/>
-                                            <outlet property="delegate" destination="Dt2-n2-TcK" id="S2q-pZ-Y7v"/>
-                                        </connections>
-                                    </tableView>
+                                        <constraints>
+                                            <constraint firstItem="5VI-un-jWA" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="23" id="07N-jX-7ww"/>
+                                            <constraint firstItem="ahd-T5-67K" firstAttribute="top" secondItem="mYO-df-kxL" secondAttribute="bottom" constant="10" id="0LX-x5-ga8"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fhq-vm-pQS" secondAttribute="trailing" constant="18" id="1ST-2f-kzd"/>
+                                            <constraint firstAttribute="trailing" secondItem="O9K-Cy-asx" secondAttribute="trailing" constant="18" id="1eD-YI-0Bl"/>
+                                            <constraint firstItem="LoL-Hc-uFS" firstAttribute="top" secondItem="ahd-T5-67K" secondAttribute="bottom" constant="36" id="2ay-LR-e0p"/>
+                                            <constraint firstAttribute="trailing" secondItem="ahd-T5-67K" secondAttribute="trailing" constant="18" id="2dl-oV-UZe"/>
+                                            <constraint firstAttribute="trailing" secondItem="LoE-uA-gVw" secondAttribute="trailing" constant="18" id="5uv-Ux-VPA"/>
+                                            <constraint firstItem="LoL-Hc-uFS" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="23" id="6TK-Kr-Siy"/>
+                                            <constraint firstAttribute="trailing" secondItem="ywl-j5-guo" secondAttribute="trailing" constant="18" id="7by-32-3tq"/>
+                                            <constraint firstItem="q2M-Tz-oPO" firstAttribute="top" secondItem="LoE-uA-gVw" secondAttribute="bottom" constant="36" id="8yV-5H-lwS"/>
+                                            <constraint firstItem="5VI-un-jWA" firstAttribute="top" secondItem="TUb-MS-JPx" secondAttribute="bottom" constant="36" id="CCK-kC-hAE"/>
+                                            <constraint firstAttribute="trailing" secondItem="S6S-Qp-lUM" secondAttribute="trailing" constant="18" id="Ch4-4P-bJ1"/>
+                                            <constraint firstItem="jql-9p-r5W" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="Dy1-pm-527"/>
+                                            <constraint firstAttribute="height" constant="1041" id="EQe-e7-AQs"/>
+                                            <constraint firstAttribute="trailing" secondItem="5VI-un-jWA" secondAttribute="trailing" constant="18" id="FkM-Yp-Vi6"/>
+                                            <constraint firstItem="S6S-Qp-lUM" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="GmV-TA-IpN"/>
+                                            <constraint firstItem="q2M-Tz-oPO" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="23" id="H6u-b8-qLO"/>
+                                            <constraint firstItem="LoE-uA-gVw" firstAttribute="top" secondItem="D4b-Nn-wfa" secondAttribute="top" constant="31" id="HQY-b9-yGm"/>
+                                            <constraint firstItem="e7B-dd-d3g" firstAttribute="top" secondItem="AzP-EX-4uL" secondAttribute="bottom" constant="14" id="IVn-dD-SiK"/>
+                                            <constraint firstAttribute="trailing" secondItem="mYO-df-kxL" secondAttribute="trailing" constant="18" id="JMX-Da-EcD"/>
+                                            <constraint firstAttribute="trailing" secondItem="LoL-Hc-uFS" secondAttribute="trailing" constant="12" id="KC1-yN-g8t"/>
+                                            <constraint firstItem="N0d-jZ-miB" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="KSA-Hc-hCb"/>
+                                            <constraint firstItem="e7B-dd-d3g" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="26" id="KZB-5l-Rfx"/>
+                                            <constraint firstItem="AzP-EX-4uL" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="MK1-yo-aOL"/>
+                                            <constraint firstAttribute="trailing" secondItem="S71-9y-46R" secondAttribute="trailing" constant="18" id="MzO-a8-xHp"/>
+                                            <constraint firstItem="LoE-uA-gVw" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="Nf8-kP-gqB"/>
+                                            <constraint firstItem="ahd-T5-67K" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="Nfv-yz-BPW"/>
+                                            <constraint firstItem="N0d-jZ-miB" firstAttribute="top" secondItem="S71-9y-46R" secondAttribute="bottom" constant="10" id="PBc-go-QHT"/>
+                                            <constraint firstItem="TUb-MS-JPx" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="PDh-8Q-gXy"/>
+                                            <constraint firstAttribute="bottom" secondItem="RT6-YQ-L72" secondAttribute="bottom" constant="26" id="PJu-Zp-SGR"/>
+                                            <constraint firstItem="O9K-Cy-asx" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="R9m-f4-Jwz"/>
+                                            <constraint firstItem="AzP-EX-4uL" firstAttribute="top" secondItem="Fhq-vm-pQS" secondAttribute="bottom" constant="10" id="RfJ-FS-k6N"/>
+                                            <constraint firstItem="ywl-j5-guo" firstAttribute="top" secondItem="e7B-dd-d3g" secondAttribute="bottom" constant="22" id="U42-hP-G3G"/>
+                                            <constraint firstItem="S6S-Qp-lUM" firstAttribute="top" secondItem="O9K-Cy-asx" secondAttribute="bottom" constant="10" id="aKk-N2-61a"/>
+                                            <constraint firstItem="S71-9y-46R" firstAttribute="top" secondItem="LoL-Hc-uFS" secondAttribute="bottom" constant="15" id="apl-1J-SBu"/>
+                                            <constraint firstItem="mYO-df-kxL" firstAttribute="top" secondItem="S6S-Qp-lUM" secondAttribute="bottom" constant="10" id="dKc-il-ZAv"/>
+                                            <constraint firstItem="O9K-Cy-asx" firstAttribute="top" secondItem="q2M-Tz-oPO" secondAttribute="bottom" constant="15" id="gpz-N7-cxa"/>
+                                            <constraint firstItem="jql-9p-r5W" firstAttribute="top" secondItem="5VI-un-jWA" secondAttribute="bottom" constant="15" id="jE8-Vx-RAO"/>
+                                            <constraint firstItem="Fhq-vm-pQS" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="kGj-II-qQR"/>
+                                            <constraint firstAttribute="trailing" secondItem="N0d-jZ-miB" secondAttribute="trailing" constant="18" id="kK8-Mz-gss"/>
+                                            <constraint firstAttribute="trailing" secondItem="jql-9p-r5W" secondAttribute="trailing" constant="18" id="nY2-zv-JE8"/>
+                                            <constraint firstAttribute="trailing" secondItem="TUb-MS-JPx" secondAttribute="trailing" constant="18" id="oGq-be-8Qx"/>
+                                            <constraint firstItem="TUb-MS-JPx" firstAttribute="top" secondItem="N0d-jZ-miB" secondAttribute="bottom" constant="10" id="ovP-Zw-qkW"/>
+                                            <constraint firstItem="ywl-j5-guo" firstAttribute="width" secondItem="ywl-j5-guo" secondAttribute="height" multiplier="339:62" id="u1p-Es-qjU"/>
+                                            <constraint firstItem="ywl-j5-guo" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="utF-oZ-RYb"/>
+                                            <constraint firstItem="RT6-YQ-L72" firstAttribute="centerX" secondItem="D4b-Nn-wfa" secondAttribute="centerX" id="wAu-8E-xTp"/>
+                                            <constraint firstItem="Fhq-vm-pQS" firstAttribute="top" secondItem="jql-9p-r5W" secondAttribute="bottom" constant="10" id="x1g-Fy-gwm"/>
+                                            <constraint firstAttribute="trailing" secondItem="e7B-dd-d3g" secondAttribute="trailing" constant="13" id="xah-tn-Jkg"/>
+                                            <constraint firstItem="mYO-df-kxL" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="yIY-24-q2f"/>
+                                            <constraint firstAttribute="trailing" secondItem="AzP-EX-4uL" secondAttribute="trailing" constant="18" id="ylQ-JV-kpb"/>
+                                            <constraint firstItem="S71-9y-46R" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="zm5-97-oeX"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="rpC-FU-xfo" secondAttribute="bottom" id="BDZ-hs-Wos"/>
-                                    <constraint firstItem="rpC-FU-xfo" firstAttribute="top" secondItem="CLS-An-UJe" secondAttribute="top" id="D0N-aG-gZf"/>
-                                    <constraint firstItem="rpC-FU-xfo" firstAttribute="leading" secondItem="CLS-An-UJe" secondAttribute="leading" id="G6Z-tZ-W3r"/>
-                                    <constraint firstAttribute="trailing" secondItem="rpC-FU-xfo" secondAttribute="trailing" id="NUg-nl-Duu"/>
+                                    <constraint firstAttribute="bottom" secondItem="D4b-Nn-wfa" secondAttribute="bottom" id="FUB-7l-WVj"/>
+                                    <constraint firstItem="D4b-Nn-wfa" firstAttribute="leading" secondItem="Vzt-WI-9w0" secondAttribute="leading" id="Wf5-Cm-zOx"/>
+                                    <constraint firstAttribute="trailing" secondItem="D4b-Nn-wfa" secondAttribute="trailing" id="WxU-dP-VWs"/>
+                                    <constraint firstItem="D4b-Nn-wfa" firstAttribute="top" secondItem="Vzt-WI-9w0" secondAttribute="top" id="dI5-22-jUP"/>
+                                    <constraint firstItem="D4b-Nn-wfa" firstAttribute="width" secondItem="Vzt-WI-9w0" secondAttribute="width" id="enP-H2-NCL"/>
                                 </constraints>
-                            </view>
+                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Персональные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sSe-Ll-cyO">
-                                <rect key="frame" x="18" y="61" width="378" height="35"/>
-                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="27"/>
+                                <rect key="frame" x="18" y="61" width="378" height="27"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UH-o2-hzq">
+                                <rect key="frame" x="0.0" y="1134" width="16" height="16"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="ki7-Ba-UfU"/>
+                                    <constraint firstAttribute="width" constant="16" id="uKC-ck-JMa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjd-cB-7kA">
+                                <rect key="frame" x="398" y="1134" width="16" height="16"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="3PH-2P-h6m"/>
+                                    <constraint firstAttribute="height" constant="16" id="gc0-Mb-3HU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="8ak-vV-qiS" firstAttribute="trailing" secondItem="CLS-An-UJe" secondAttribute="trailing" id="FN1-X0-Cx9"/>
-                            <constraint firstItem="CLS-An-UJe" firstAttribute="top" secondItem="sSe-Ll-cyO" secondAttribute="bottom" constant="13" id="HWg-Yf-FO4"/>
+                            <constraint firstAttribute="trailing" secondItem="Pjd-cB-7kA" secondAttribute="trailing" id="2U4-a0-Rrp"/>
+                            <constraint firstAttribute="bottom" secondItem="Pjd-cB-7kA" secondAttribute="bottom" id="69i-4t-A7K"/>
+                            <constraint firstAttribute="bottom" secondItem="7UH-o2-hzq" secondAttribute="bottom" id="7s2-sf-4aS"/>
+                            <constraint firstAttribute="bottom" secondItem="Vzt-WI-9w0" secondAttribute="bottom" id="AsY-zm-lsY"/>
+                            <constraint firstItem="7UH-o2-hzq" firstAttribute="leading" secondItem="cHI-lV-GvZ" secondAttribute="leading" id="IBh-do-sVy"/>
                             <constraint firstItem="sSe-Ll-cyO" firstAttribute="top" secondItem="8ak-vV-qiS" secondAttribute="top" constant="17" id="JuM-j3-A12"/>
                             <constraint firstItem="sSe-Ll-cyO" firstAttribute="leading" secondItem="8ak-vV-qiS" secondAttribute="leading" constant="18" id="MEb-op-bTJ"/>
-                            <constraint firstItem="CLS-An-UJe" firstAttribute="leading" secondItem="8ak-vV-qiS" secondAttribute="leading" id="WhR-L9-wm0"/>
                             <constraint firstItem="8ak-vV-qiS" firstAttribute="trailing" secondItem="sSe-Ll-cyO" secondAttribute="trailing" constant="18" id="XXV-Un-2wc"/>
-                            <constraint firstAttribute="bottom" secondItem="CLS-An-UJe" secondAttribute="bottom" id="vNd-u5-ZOF"/>
+                            <constraint firstItem="Vzt-WI-9w0" firstAttribute="trailing" secondItem="8ak-vV-qiS" secondAttribute="trailing" id="adw-fw-OSR"/>
+                            <constraint firstItem="Vzt-WI-9w0" firstAttribute="top" secondItem="sSe-Ll-cyO" secondAttribute="bottom" constant="13" id="eWq-Qh-tR0"/>
+                            <constraint firstItem="Vzt-WI-9w0" firstAttribute="leading" secondItem="8ak-vV-qiS" secondAttribute="leading" id="uSs-qX-N80"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8ak-vV-qiS"/>
                     </view>
+                    <size key="freeformSize" width="414" height="1150"/>
+                    <connections>
+                        <outlet property="butBack" destination="By0-h6-KRa" id="4fX-de-jyD"/>
+                        <outlet property="butClose" destination="SRF-lV-I7L" id="8NG-cL-Obh"/>
+                        <outlet property="butNext" destination="ywl-j5-guo" id="vud-He-9Fr"/>
+                        <outlet property="scrlView" destination="Vzt-WI-9w0" id="CXx-Ay-HO6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qd-It-i5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,5 +534,6 @@
         <image name="chevronRight" width="24" height="24"/>
         <image name="clipboard" width="24" height="24"/>
         <image name="share" width="24" height="24"/>
+        <image name="x" width="24" height="24"/>
     </resources>
 </document>

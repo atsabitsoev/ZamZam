@@ -14,7 +14,7 @@ import PhoneNumberKit
 class MaterialTextFieldWithFlag: MaterialTextField {
     
     
-    private let padding = UIEdgeInsets(top: 0, left: 54, bottom: 0, right: 5)
+    private let pading = UIEdgeInsets(top: 0, left: 54, bottom: 0, right: 5)
     
     let imageFlag = UIImageView()
     private var code: String?
@@ -23,24 +23,31 @@ class MaterialTextFieldWithFlag: MaterialTextField {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
+        self.placeholder = title
+        
         addTarget(self, action: #selector(setCountryFlag), for: .editingChanged)
     }
     
     
     override func layoutSubviews() {
         configureImage()
+        super.configureLabTitle()
     }
     
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+        let newBounds = bounds.inset(by: pading)
+        return newBounds
     }
-    
+
     override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+        let newBounds = bounds.inset(by: pading)
+        print(newBounds)
+        return newBounds
     }
-    
+
     override open func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+        let newBounds = bounds.inset(by: pading)
+        return newBounds
     }
     
     

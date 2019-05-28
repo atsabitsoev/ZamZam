@@ -18,10 +18,10 @@ class MaterialTextField: UITextField {
     @IBInspectable var title: String = "Заголовок"
     
     
-    private let padding = UIEdgeInsets(top: 0, left: 11, bottom: 0, right: 5)
+    var padding = UIEdgeInsets(top: 0, left: 11, bottom: 0, right: 5)
     
     
-    private var labTitle: MaterialTextFieldLabTitle = MaterialTextFieldLabTitle()
+    private lazy var labTitle: MaterialTextFieldLabTitle = MaterialTextFieldLabTitle()
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -62,7 +62,7 @@ class MaterialTextField: UITextField {
     }
     
     
-    private func configureLabTitle() {
+    func configureLabTitle() {
         
         superview!.addSubview(labTitle)
         
@@ -98,7 +98,7 @@ class MaterialTextField: UITextField {
 class MaterialTextFieldLabTitle: UILabel {
     
     override func drawText(in rect: CGRect) {
-        let newRect = rect.inset(by: UIEdgeInsets(top: 3, left: 0, bottom: 3, right: 0))
+        let newRect = rect.inset(by: UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0))
         super.drawText(in: newRect)
     }
 }
