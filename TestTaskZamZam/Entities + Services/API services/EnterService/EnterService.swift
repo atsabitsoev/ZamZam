@@ -33,7 +33,7 @@ class EnterServise {
     
     private func getUserTokens(phone: String, password: String) {
         
-        let urlString = "http://test.setclapp.com/zamzamapi/api/token"
+        let urlString = "http://10.80.80.99:2222/api/token"
         let url = URL(string: urlString)!
         
         let clientId = keychain.get(TokenKeys.clientId.rawValue)!

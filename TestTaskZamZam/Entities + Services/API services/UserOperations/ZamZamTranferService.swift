@@ -18,7 +18,7 @@ class ZamZamTransferService {
     
     func sendMoney(to phone: String, sum: Float, senderCurrency: String, recipientCurrency: String) {
         
-        let urlString = "http://test.setclapp.com/zamzamapi/api/funds/zamzamtransfer"
+        let urlString = "http://10.80.80.99:2222/api/funds/zamzamtransfer"
         let url = URL(string: urlString)!
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(userAccessToken)"]

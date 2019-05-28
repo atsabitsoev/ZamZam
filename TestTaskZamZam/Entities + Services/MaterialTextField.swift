@@ -18,10 +18,10 @@ class MaterialTextField: UITextField {
     @IBInspectable var title: String = "Заголовок"
     
     
-    let padding = UIEdgeInsets(top: 0, left: 11, bottom: 0, right: 5)
+    private let padding = UIEdgeInsets(top: 0, left: 11, bottom: 0, right: 5)
     
     
-    var labTitle: MaterialTextFieldLabTitle = MaterialTextFieldLabTitle()
+    private var labTitle: MaterialTextFieldLabTitle = MaterialTextFieldLabTitle()
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,6 +30,7 @@ class MaterialTextField: UITextField {
         layer.cornerRadius = 8
         layer.borderColor = inActiveColor.cgColor
         layer.borderWidth = 2
+        labTitle.isHidden = true
         
         addTarget(self, action: #selector(editingBegan), for: .editingDidBegin)
         addTarget(self, action: #selector(editingEnded), for: .editingDidEnd)
@@ -46,12 +47,16 @@ class MaterialTextField: UITextField {
     
     @objc private func editingBegan() {
         
+        labTitle.isHidden = false
         layer.borderColor = activeColor.cgColor
         setNeedsDisplay()
     }
     
     @objc private func editingEnded() {
         
+        if text == nil || text == "" {
+            labTitle.isHidden = true
+        }
         layer.borderColor = inActiveColor.cgColor
         setNeedsDisplay()
     }
