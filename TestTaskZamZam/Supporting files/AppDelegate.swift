@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         case false:
             self.window?.rootViewController = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
         }
-        
+
         return true
     }
 

@@ -55,6 +55,19 @@
 		AC6E2F9E2282C027001CB42E /* TokensKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E2F9D2282C027001CB42E /* TokensKeys.swift */; };
 		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
 		AC8D62C92257544F004D0323 /* EnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C82257544F004D0323 /* EnterVC.swift */; };
+		AC92424C229D0DFC00299D51 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC92424B229D0DFC00299D51 /* Profile.storyboard */; };
+		AC92424F229D0E2F00299D51 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92424E229D0E2F00299D51 /* ProfileVC.swift */; };
+		AC924254229D142700299D51 /* PTS55F.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC924250229D142700299D51 /* PTS55F.ttf */; };
+		AC924255229D142700299D51 /* PTS56F.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC924251229D142700299D51 /* PTS56F.ttf */; };
+		AC924256229D142700299D51 /* PTS76F.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC924252229D142700299D51 /* PTS76F.ttf */; };
+		AC924257229D142700299D51 /* PTS75F.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC924253229D142700299D51 /* PTS75F.ttf */; };
+		AC924259229D15C000299D51 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC924258229D15C000299D51 /* ShadowView.swift */; };
+		AC92425B229D190A00299D51 /* ProfileTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92425A229D190A00299D51 /* ProfileTableView.swift */; };
+		AC92425D229D195800299D51 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92425C229D195800299D51 /* ProfileCell.swift */; };
+		AC92425F229D1DD300299D51 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92425E229D1DD300299D51 /* MaterialTextField.swift */; };
+		AC924262229D358E00299D51 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC924261229D358E00299D51 /* PersonalDataVC.swift */; };
+		AC924264229D359D00299D51 /* PersonalDataTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC924263229D359D00299D51 /* PersonalDataTableView.swift */; };
+		AC924266229D35C000299D51 /* PersonalDataTFCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC924265229D35C000299D51 /* PersonalDataTFCell.swift */; };
 		AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */; };
 		AC98BF80226891BC00E35745 /* Withdraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC98BF7F226891BC00E35745 /* Withdraw.storyboard */; };
 		AC98BF832268935100E35745 /* WithdrawHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF822268935100E35745 /* WithdrawHomeVC.swift */; };
@@ -182,6 +195,19 @@
 		AC6E2F9D2282C027001CB42E /* TokensKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensKeys.swift; sourceTree = "<group>"; };
 		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
 		AC8D62C82257544F004D0323 /* EnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterVC.swift; sourceTree = "<group>"; };
+		AC92424B229D0DFC00299D51 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		AC92424E229D0E2F00299D51 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		AC924250229D142700299D51 /* PTS55F.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTS55F.ttf; sourceTree = "<group>"; };
+		AC924251229D142700299D51 /* PTS56F.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTS56F.ttf; sourceTree = "<group>"; };
+		AC924252229D142700299D51 /* PTS76F.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTS76F.ttf; sourceTree = "<group>"; };
+		AC924253229D142700299D51 /* PTS75F.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTS75F.ttf; sourceTree = "<group>"; };
+		AC924258229D15C000299D51 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		AC92425A229D190A00299D51 /* ProfileTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableView.swift; sourceTree = "<group>"; };
+		AC92425C229D195800299D51 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		AC92425E229D1DD300299D51 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		AC924261229D358E00299D51 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
+		AC924263229D359D00299D51 /* PersonalDataTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataTableView.swift; sourceTree = "<group>"; };
+		AC924265229D35C000299D51 /* PersonalDataTFCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataTFCell.swift; sourceTree = "<group>"; };
 		AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneInfoCell.swift; sourceTree = "<group>"; };
 		AC98BF7F226891BC00E35745 /* Withdraw.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Withdraw.storyboard; sourceTree = "<group>"; };
 		AC98BF822268935100E35745 /* WithdrawHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawHomeVC.swift; sourceTree = "<group>"; };
@@ -292,6 +318,8 @@
 			children = (
 				5B7DFED72230682700ECF0D3 /* Main */,
 				ACB26A0C22606B64007AD399 /* Transfers */,
+				AC92424D229D0E1600299D51 /* Profile */,
+				AC924260229D357300299D51 /* PersonalData */,
 				ACB26A0D22606BB9007AD399 /* Replenish */,
 				ACE139BD224259D8004EDB38 /* CardIssue */,
 				ACBC5E0B22684DFF0005C355 /* PayPhoneBill */,
@@ -308,6 +336,10 @@
 		5B7DFEC02230078A00ECF0D3 /* Шрифты */ = {
 			isa = PBXGroup;
 			children = (
+				AC924250229D142700299D51 /* PTS55F.ttf */,
+				AC924251229D142700299D51 /* PTS56F.ttf */,
+				AC924253229D142700299D51 /* PTS75F.ttf */,
+				AC924252229D142700299D51 /* PTS76F.ttf */,
 				AC110AA5223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf */,
 				AC110AA4223A6E0100D1F8D8 /* Kelson Sans Light RU.otf */,
 				AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */,
@@ -351,6 +383,7 @@
 			children = (
 				5B7DFEAC222FFAC200ECF0D3 /* AppDelegate.swift */,
 				5B7DFEB0222FFAC200ECF0D3 /* Main.storyboard */,
+				AC92424B229D0DFC00299D51 /* Profile.storyboard */,
 				ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */,
 				AC98BF7F226891BC00E35745 /* Withdraw.storyboard */,
 				ACC5CAEB225C6CB500B28E62 /* Replenish.storyboard */,
@@ -460,6 +493,8 @@
 				AC2859EB224CF85E004852C4 /* Currency.swift */,
 				ACCF25992257743D0028C16A /* Extensions for String.swift */,
 				ACE7F2C3225DC0E100F001B0 /* TimerService.swift */,
+				AC924258229D15C000299D51 /* ShadowView.swift */,
+				AC92425E229D1DD300299D51 /* MaterialTextField.swift */,
 				AC24624922819C9E006C54D4 /* API services */,
 				AC53F9DB225627A30086A0D3 /* Twilio */,
 				ACFBAC362240FB01001D9D94 /* PaymentCells */,
@@ -520,6 +555,26 @@
 				AC9D2BFF22898A3200F0DE84 /* SetNewPinEnterVC.swift */,
 			);
 			path = EnterVC;
+			sourceTree = "<group>";
+		};
+		AC92424D229D0E1600299D51 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AC92424E229D0E2F00299D51 /* ProfileVC.swift */,
+				AC92425A229D190A00299D51 /* ProfileTableView.swift */,
+				AC92425C229D195800299D51 /* ProfileCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AC924260229D357300299D51 /* PersonalData */ = {
+			isa = PBXGroup;
+			children = (
+				AC924261229D358E00299D51 /* PersonalDataVC.swift */,
+				AC924263229D359D00299D51 /* PersonalDataTableView.swift */,
+				AC924265229D35C000299D51 /* PersonalDataTFCell.swift */,
+			);
+			path = PersonalData;
 			sourceTree = "<group>";
 		};
 		AC98BF812268933000E35745 /* Withdraw */ = {
@@ -958,6 +1013,7 @@
 			files = (
 				ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */,
 				AC110AB5223A8AD200D1F8D8 /* NotoSans-Regular.ttf in Resources */,
+				AC924255229D142700299D51 /* PTS56F.ttf in Resources */,
 				5B7DFEB7222FFAC500ECF0D3 /* LaunchScreen.storyboard in Resources */,
 				AC110AA8223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf in Resources */,
 				5B7DFEE62230702B00ECF0D3 /* .gitignore in Resources */,
@@ -967,7 +1023,11 @@
 				5B7DFEB4222FFAC500ECF0D3 /* Assets.xcassets in Resources */,
 				5B7DFEB2222FFAC200ECF0D3 /* Main.storyboard in Resources */,
 				ACC5CAEC225C6CB500B28E62 /* Replenish.storyboard in Resources */,
+				AC924256229D142700299D51 /* PTS76F.ttf in Resources */,
 				AC56756C223BE3D2001BBE66 /* AlertViewControllers.storyboard in Resources */,
+				AC92424C229D0DFC00299D51 /* Profile.storyboard in Resources */,
+				AC924257229D142700299D51 /* PTS75F.ttf in Resources */,
+				AC924254229D142700299D51 /* PTS55F.ttf in Resources */,
 				AC110AA7223A6E0100D1F8D8 /* Kelson Sans Light RU.otf in Resources */,
 				ACBC5E0A22684BFF0005C355 /* PayPhoneBill.storyboard in Resources */,
 			);
@@ -1067,9 +1127,12 @@
 				ACFAF76C223F8B6C008C731B /* SenderCellPhoneNumber.swift in Sources */,
 				ACBF14102267117D00019545 /* SplashCollectionCell.swift in Sources */,
 				AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */,
+				AC924259229D15C000299D51 /* ShadowView.swift in Sources */,
 				ACFAF777223FCBF4008C731B /* BorderAnimation.swift in Sources */,
 				ACFBAC402240FB6B001D9D94 /* CardDataCell.swift in Sources */,
+				AC92424F229D0E2F00299D51 /* ProfileVC.swift in Sources */,
 				5B7DFECE223014C700ECF0D3 /* BillCell.swift in Sources */,
+				AC92425D229D195800299D51 /* ProfileCell.swift in Sources */,
 				ACFAF770223F8B99008C731B /* SenderCellField.swift in Sources */,
 				ACFAF775223F9B94008C731B /* TFDelegate.swift in Sources */,
 				ACC75896228C08BC0049AB57 /* SumAndCurrencyCell.swift in Sources */,
@@ -1081,6 +1144,7 @@
 				ACFC9B83228D505E009F5798 /* UserTokenService.swift in Sources */,
 				ACCF259A2257743D0028C16A /* Extensions for String.swift in Sources */,
 				ACC5CAEF225C711600B28E62 /* ReplenishVC.swift in Sources */,
+				AC92425F229D1DD300299D51 /* MaterialTextField.swift in Sources */,
 				AC6A5D1D2271A2560004198F /* NewPasswordVC.swift in Sources */,
 				ACD357ED225CD9BC0018243B /* ReplenSMSVC.swift in Sources */,
 				ACBC5E0D22684E240005C355 /* PayPhoneBillVC.swift in Sources */,
@@ -1094,6 +1158,8 @@
 				ACC5CAF2225C714100B28E62 /* ReplenishTableview.swift in Sources */,
 				5B7DFED6223027D300ECF0D3 /* CollectionViewCell2.swift in Sources */,
 				AC98BF832268935100E35745 /* WithdrawHomeVC.swift in Sources */,
+				AC924266229D35C000299D51 /* PersonalDataTFCell.swift in Sources */,
+				AC92425B229D190A00299D51 /* ProfileTableView.swift in Sources */,
 				ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */,
 				ACFBAC2F2240DB8E001D9D94 /* WhatCountryTFDelegate.swift in Sources */,
 				5B7DFECA223012B400ECF0D3 /* CardBill.swift in Sources */,
@@ -1125,6 +1191,7 @@
 				AC1FF9BC2271DB7B009BE5C7 /* TouchFaceVC.swift in Sources */,
 				ACFBAC352240FAF8001D9D94 /* PaymentTableView.swift in Sources */,
 				ACEDB2D32281B5B100A82286 /* RegistrationService.swift in Sources */,
+				AC924264229D359D00299D51 /* PersonalDataTableView.swift in Sources */,
 				ACFBAC322240DEB6001D9D94 /* PaymentVC.swift in Sources */,
 				ACC8273F2271A7F1001E5750 /* TFPasswordDelegate.swift in Sources */,
 				AC24624B22819CBB006C54D4 /* PhoneVerificationService.swift in Sources */,
@@ -1134,6 +1201,7 @@
 				ACE139C622427D40004EDB38 /* CardIssueCollectionCell.swift in Sources */,
 				5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */,
 				ACFBAC382240FB1F001D9D94 /* TotalInfoCell.swift in Sources */,
+				AC924262229D358E00299D51 /* PersonalDataVC.swift in Sources */,
 				AC98BF8A22689DA300E35745 /* WithdrawPaymentVC.swift in Sources */,
 				ACBC5E13226850400005C355 /* ZamBill.swift in Sources */,
 				AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */,

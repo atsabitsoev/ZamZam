@@ -2946,7 +2946,7 @@
                     <connections>
                         <segue destination="iZW-OY-6MV" kind="relationship" relationship="viewControllers" id="fR3-uL-jhK"/>
                         <segue destination="9dF-AC-1FG" kind="relationship" relationship="viewControllers" id="fpu-9U-UME"/>
-                        <segue destination="Wxm-DW-h5u" kind="relationship" relationship="viewControllers" id="mZF-GO-fPK"/>
+                        <segue destination="2FQ-wa-Y6b" kind="relationship" relationship="viewControllers" id="Ahl-vf-6gV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obG-6M-Ypu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2999,23 +2999,32 @@
             </objects>
             <point key="canvasLocation" x="984.79999999999995" y="88.669950738916256"/>
         </scene>
-        <!--Еще-->
-        <scene sceneID="gbK-m1-njn">
+        <!--ProfileVC-->
+        <scene sceneID="b8u-VC-fWn">
             <objects>
-                <viewController id="Wxm-DW-h5u" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jw0-6A-fu5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ry4-AB-JgY"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Еще" image="more" id="wq8-tZ-yG2">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IEN-C7-DFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileVC" id="dp9-YG-ykv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UuT-bG-0TF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIU-t3-746" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-881" y="845"/>
+            <point key="canvasLocation" x="-722" y="1334"/>
+        </scene>
+        <!--Еще-->
+        <scene sceneID="OYe-rj-cau">
+            <objects>
+                <navigationController id="2FQ-wa-Y6b" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Еще" image="more" id="lu1-CS-CLm"/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="0Mn-qG-nRo">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dp9-YG-ykv" kind="relationship" relationship="rootViewController" id="Gc4-yH-LwB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfa-7i-UA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="845"/>
         </scene>
         <!--Пункты-->
         <scene sceneID="2Hz-Ro-OCu">
