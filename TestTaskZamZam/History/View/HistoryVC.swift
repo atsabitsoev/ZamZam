@@ -9,22 +9,29 @@
 import UIKit
 
 class HistoryVC: UIViewController {
+    
+    
+    @IBOutlet weak var viewBigWhite: UIView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        fetchHistory()
+        
+        roundView(viewBigWhite, rad: 16)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    private func fetchHistory() {
+        GetTransactionHistoryService.standard.getHistory()
     }
-    */
+    
+    
+    private func roundView(_ view: UIView, rad: CGFloat) {
+        
+        view.layer.cornerRadius = rad
+        view.clipsToBounds = true
+    }
 
 }

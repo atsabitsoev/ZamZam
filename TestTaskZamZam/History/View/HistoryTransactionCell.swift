@@ -9,6 +9,13 @@
 import UIKit
 
 class HistoryTransactionCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var labPhoneOrName: UILabel!
+    @IBOutlet weak var labSumBig: UILabel!
+    @IBOutlet weak var labSumSmall: UILabel!
+    @IBOutlet weak var zam2ZamLogosView: Zam2ZamLogosView!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

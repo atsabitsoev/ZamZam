@@ -58,6 +58,7 @@
 		AC71D928229E787F00001C29 /* HistoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D927229E787F00001C29 /* HistoryTableView.swift */; };
 		AC71D92A229E789900001C29 /* HistoryTransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D929229E789900001C29 /* HistoryTransactionCell.swift */; };
 		AC71D92E229E7AE900001C29 /* Zam2ZamLogosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D92D229E7AE900001C29 /* Zam2ZamLogosView.swift */; };
+		AC71D930229E918B00001C29 /* GetTransactionHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D92F229E918B00001C29 /* GetTransactionHistoryService.swift */; };
 		AC829D18229D524B0019C19B /* MaterialTextFieldWithFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */; };
 		AC829D1C229D804C0019C19B /* ButtonChooseCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC829D1B229D804C0019C19B /* ButtonChooseCountry.swift */; };
 		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
@@ -203,6 +204,7 @@
 		AC71D927229E787F00001C29 /* HistoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableView.swift; sourceTree = "<group>"; };
 		AC71D929229E789900001C29 /* HistoryTransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactionCell.swift; sourceTree = "<group>"; };
 		AC71D92D229E7AE900001C29 /* Zam2ZamLogosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zam2ZamLogosView.swift; sourceTree = "<group>"; };
+		AC71D92F229E918B00001C29 /* GetTransactionHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTransactionHistoryService.swift; sourceTree = "<group>"; };
 		AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldWithFlag.swift; sourceTree = "<group>"; };
 		AC829D1B229D804C0019C19B /* ButtonChooseCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChooseCountry.swift; sourceTree = "<group>"; };
 		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
@@ -958,6 +960,7 @@
 			children = (
 				ACFC9B7C228D3CE2009F5798 /* GetUserAccountsService.swift */,
 				ACBD435E228EA693002D0CF5 /* ZamZamTranferService.swift */,
+				AC71D92F229E918B00001C29 /* GetTransactionHistoryService.swift */,
 			);
 			path = UserOperations;
 			sourceTree = "<group>";
@@ -1190,6 +1193,7 @@
 				AC92425F229D1DD300299D51 /* MaterialTextField.swift in Sources */,
 				AC6A5D1D2271A2560004198F /* NewPasswordVC.swift in Sources */,
 				ACD357ED225CD9BC0018243B /* ReplenSMSVC.swift in Sources */,
+				AC71D930229E918B00001C29 /* GetTransactionHistoryService.swift in Sources */,
 				ACBC5E0D22684E240005C355 /* PayPhoneBillVC.swift in Sources */,
 				ACC75894228BF32F0049AB57 /* PaymentNewTableVIew.swift in Sources */,
 				AC0D8568225DE696002C50B1 /* ReplenishGoneVC.swift in Sources */,
