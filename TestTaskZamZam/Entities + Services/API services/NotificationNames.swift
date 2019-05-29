@@ -33,4 +33,7 @@ enum NotificationNames: String {
     
     case zamZamTransferSucceed = "zamZamTransferSucceed"
     case zamZamTransferFailed = "zamZamTransferFailed"
+    
+    case historyGot = "historyGot"
+    case historyGetFailed = "historyGetFailed"
 }

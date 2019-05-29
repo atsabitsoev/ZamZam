@@ -24,6 +24,7 @@ class Zam2ZamLogosView: UIView {
     
     var direction: TransferDirection = .out {
         didSet {
+            setColorsToViews()
             setNeedsDisplay()
         }
     }

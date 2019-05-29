@@ -59,6 +59,7 @@
 		AC71D92A229E789900001C29 /* HistoryTransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D929229E789900001C29 /* HistoryTransactionCell.swift */; };
 		AC71D92E229E7AE900001C29 /* Zam2ZamLogosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D92D229E7AE900001C29 /* Zam2ZamLogosView.swift */; };
 		AC71D930229E918B00001C29 /* GetTransactionHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D92F229E918B00001C29 /* GetTransactionHistoryService.swift */; };
+		AC71D933229EA61700001C29 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D932229EA61700001C29 /* Transaction.swift */; };
 		AC829D18229D524B0019C19B /* MaterialTextFieldWithFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */; };
 		AC829D1C229D804C0019C19B /* ButtonChooseCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC829D1B229D804C0019C19B /* ButtonChooseCountry.swift */; };
 		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
@@ -205,6 +206,7 @@
 		AC71D929229E789900001C29 /* HistoryTransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactionCell.swift; sourceTree = "<group>"; };
 		AC71D92D229E7AE900001C29 /* Zam2ZamLogosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zam2ZamLogosView.swift; sourceTree = "<group>"; };
 		AC71D92F229E918B00001C29 /* GetTransactionHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTransactionHistoryService.swift; sourceTree = "<group>"; };
+		AC71D932229EA61700001C29 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldWithFlag.swift; sourceTree = "<group>"; };
 		AC829D1B229D804C0019C19B /* ButtonChooseCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChooseCountry.swift; sourceTree = "<group>"; };
 		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
@@ -568,6 +570,7 @@
 			isa = PBXGroup;
 			children = (
 				AC71D92B229E7A9C00001C29 /* View */,
+				AC71D932229EA61700001C29 /* Transaction.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -1160,6 +1163,7 @@
 				ACC5CAF8225C718A00B28E62 /* ReplenishDescribtionCell.swift in Sources */,
 				ACC5CAFB225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift in Sources */,
 				AC98BF862268946E00E35745 /* WithdrawTableView.swift in Sources */,
+				AC71D933229EA61700001C29 /* Transaction.swift in Sources */,
 				AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */,
 				ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */,
 				AC71D92A229E789900001C29 /* HistoryTransactionCell.swift in Sources */,

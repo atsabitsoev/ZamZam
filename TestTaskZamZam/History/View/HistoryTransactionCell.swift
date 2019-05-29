@@ -11,7 +11,8 @@ import UIKit
 class HistoryTransactionCell: UITableViewCell {
     
     
-    @IBOutlet weak var labPhoneOrName: UILabel!
+    @IBOutlet weak var labSender: UILabel!
+    @IBOutlet weak var labRecipient: UILabel!
     @IBOutlet weak var labSumBig: UILabel!
     @IBOutlet weak var labSumSmall: UILabel!
     @IBOutlet weak var zam2ZamLogosView: Zam2ZamLogosView!

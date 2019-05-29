@@ -59,7 +59,7 @@ class GetUserAccountsService {
                             for i in 0..<zamBillsInJson.count {
                                 
                                 let currencyShortName = zamBillsInJson[i]["currency"].stringValue.uppercased()
-                                let currency = CurrencyManager.getCurrenct(byShortName: currencyShortName)
+                                let currency = CurrencyManager.getCurrency(byShortName: currencyShortName)
                                 let sum = zamBillsInJson[i]["balance"].doubleValue
                                 
                                 zamBills.append(ZamBill(currency: currency, sum: sum))

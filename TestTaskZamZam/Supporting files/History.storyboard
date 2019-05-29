@@ -40,7 +40,7 @@
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryTransactionCell" rowHeight="60" id="dEs-W1-ew9" customClass="HistoryTransactionCell" customModule="TestTaskZamZam" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryTransactionCell" rowHeight="60" id="dEs-W1-ew9" customClass="HistoryTransactionCell" customModule="TestTaskZamZam" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dEs-W1-ew9" id="FNe-c7-bzX">
@@ -85,7 +85,7 @@
                                                             <color key="textColor" red="0.62409341760000003" green="0.63186055149999998" blue="0.69192965870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-100 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYs-oX-Rlp">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-100 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="HYs-oX-Rlp">
                                                             <rect key="frame" x="304.5" y="21.5" width="66.5" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="shX-8u-ig1"/>
@@ -114,7 +114,8 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="labPhoneOrName" destination="ZLW-h4-8VG" id="q9g-uA-Ing"/>
+                                                    <outlet property="labRecipient" destination="ZLW-h4-8VG" id="q9g-uA-Ing"/>
+                                                    <outlet property="labSender" destination="7cA-U8-xc0" id="TQZ-YC-AUk"/>
                                                     <outlet property="labSumBig" destination="HYs-oX-Rlp" id="GXa-6n-Jig"/>
                                                     <outlet property="labSumSmall" destination="cAU-rd-qgK" id="YST-aO-0b9"/>
                                                     <outlet property="zam2ZamLogosView" destination="j5x-eX-im1" id="gTz-YP-BAa"/>
@@ -157,12 +158,18 @@
                                     <constraint firstAttribute="width" constant="16" id="k86-GN-Ud0"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="P2E-br-kPe">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="rVq-N7-bdW" secondAttribute="bottom" id="6o7-4X-As4"/>
+                            <constraint firstItem="P2E-br-kPe" firstAttribute="centerX" secondItem="lFK-AF-Zse" secondAttribute="centerX" id="GYN-Y4-OHP"/>
                             <constraint firstItem="0kP-DW-Zy7" firstAttribute="top" secondItem="3J3-qL-fba" secondAttribute="top" constant="20" id="Omk-JO-rVR"/>
                             <constraint firstItem="0kP-DW-Zy7" firstAttribute="leading" secondItem="3J3-qL-fba" secondAttribute="leading" constant="18" id="Phl-Ez-rb7"/>
+                            <constraint firstItem="P2E-br-kPe" firstAttribute="centerY" secondItem="lFK-AF-Zse" secondAttribute="centerY" id="PwY-g5-YP5"/>
                             <constraint firstItem="U9s-Me-zjq" firstAttribute="top" secondItem="0kP-DW-Zy7" secondAttribute="bottom" constant="13" id="QYj-rM-LlK"/>
                             <constraint firstAttribute="trailing" secondItem="s6E-EK-VDn" secondAttribute="trailing" id="XJK-yU-FQX"/>
                             <constraint firstAttribute="bottom" secondItem="U9s-Me-zjq" secondAttribute="bottom" id="XrQ-po-qNB"/>
@@ -175,6 +182,8 @@
                         <viewLayoutGuide key="safeArea" id="3J3-qL-fba"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="P2E-br-kPe" id="ozg-Hw-FkU"/>
+                        <outlet property="tableView" destination="lgD-ee-1L3" id="m58-eH-AWM"/>
                         <outlet property="viewBigWhite" destination="U9s-Me-zjq" id="4qv-dr-nKd"/>
                     </connections>
                 </viewController>

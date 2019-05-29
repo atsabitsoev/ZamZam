@@ -32,7 +32,7 @@ class CurrencyManager {
         }
     }
     
-    static func getCurrenct(byShortName name: String) -> CurrencyProtocol {
+    static func getCurrency(byShortName name: String) -> CurrencyProtocol {
         switch name {
         case "RUB":
             return CurrencyRubble()

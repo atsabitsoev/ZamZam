@@ -125,8 +125,6 @@ class MainVC: UIViewController, UICollectionViewDelegate {
             self.tableView.reloadData()
         }
         
-        
-        
     }
     
     private func insertNewBills(count: Int, startIndex: Int) {
