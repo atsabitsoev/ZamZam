@@ -41,6 +41,12 @@ extension WhatCountryVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        if let personalDataVC = self.personalDataVC {
+            personalDataVC.country = countries[indexPath.row]
+            personalDataVC.updateButCountry()
+            self.navigationController?.popViewController(animated: true)
+        }
+        
         tableView.deselectRow(at: indexPath, animated: true)
         
     }

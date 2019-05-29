@@ -13,6 +13,9 @@
         <array key="Kelson Sans Regular RU.otf">
             <string>KelsonSans-RegularRU</string>
         </array>
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </array>
         <array key="PTS55F.ttf">
             <string>PTSans-Regular</string>
         </array>
@@ -293,6 +296,9 @@
                                                     <constraint firstAttribute="height" constant="48" id="pqW-4c-ik3"/>
                                                 </constraints>
                                                 <state key="normal" title="РОССИЯ"/>
+                                                <connections>
+                                                    <segue destination="E5Y-av-nZj" kind="show" identifier="PersonalDataToCountries" id="HQt-vk-oiu"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Город регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-jZ-miB" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
                                                 <rect key="frame" x="18" y="489" width="378" height="48"/>
@@ -521,6 +527,7 @@
                     <connections>
                         <outlet property="butBack" destination="By0-h6-KRa" id="4fX-de-jyD"/>
                         <outlet property="butClose" destination="SRF-lV-I7L" id="8NG-cL-Obh"/>
+                        <outlet property="butCountry" destination="S71-9y-46R" id="PVO-wd-guj"/>
                         <outlet property="butNext" destination="ywl-j5-guo" id="vud-He-9Fr"/>
                         <outlet property="scrlView" destination="Vzt-WI-9w0" id="CXx-Ay-HO6"/>
                     </connections>
@@ -528,6 +535,176 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qd-It-i5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="61.607142857142854"/>
+        </scene>
+        <!--What CountryVC-->
+        <scene sceneID="ga8-dD-5gw">
+            <objects>
+                <viewController storyboardIdentifier="whatCountryVC" id="E5Y-av-nZj" customClass="WhatCountryVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IIA-JL-t1c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbN-jH-9bH">
+                                <rect key="frame" x="0.0" y="856" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="1aZ-Pu-U0e"/>
+                                    <constraint firstAttribute="height" constant="40" id="n2W-fc-1oK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yg7-yo-d4o">
+                                <rect key="frame" x="374" y="856" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Yqq-qz-7ed"/>
+                                    <constraint firstAttribute="width" constant="40" id="vwV-f0-5Wc"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5g-Sm-IaL">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="49" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d5e-Bq-MqM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="whatCountryCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="whatCountryCell" rowHeight="49" id="IK1-yc-lNr" customClass="WhatCountryCell" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="49"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IK1-yc-lNr" id="FPX-hy-2Wk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Россия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWA-cw-l43" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                            <rect key="frame" x="64" y="16.5" width="51" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="16" id="Njf-qk-d12"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                            <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AM6-9V-br7">
+                                                            <rect key="frame" x="18" y="9" width="31" height="31"/>
+                                                            <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="31" id="Daa-cb-3Jh"/>
+                                                                <constraint firstAttribute="height" constant="31" id="YKu-tJ-Geu"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="AM6-9V-br7" firstAttribute="leading" secondItem="FPX-hy-2Wk" secondAttribute="leading" constant="18" id="BMJ-e9-dLv"/>
+                                                        <constraint firstItem="YWA-cw-l43" firstAttribute="centerY" secondItem="FPX-hy-2Wk" secondAttribute="centerY" id="Q6x-MZ-7hT"/>
+                                                        <constraint firstItem="YWA-cw-l43" firstAttribute="leading" secondItem="AM6-9V-br7" secondAttribute="trailing" constant="15" id="YNC-Hl-nmn"/>
+                                                        <constraint firstItem="AM6-9V-br7" firstAttribute="centerY" secondItem="FPX-hy-2Wk" secondAttribute="centerY" id="srd-02-cgo"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="imageOfCountry" destination="AM6-9V-br7" id="ntd-fT-4Tb"/>
+                                                    <outlet property="labNameOfCountry" destination="YWA-cw-l43" id="w1J-Xh-910"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="E5Y-av-nZj" id="wqw-yV-llG"/>
+                                            <outlet property="delegate" destination="E5Y-av-nZj" id="aSi-KL-Go7"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="d5e-Bq-MqM" secondAttribute="bottom" id="0lq-sd-LPp"/>
+                                    <constraint firstItem="d5e-Bq-MqM" firstAttribute="top" secondItem="h5g-Sm-IaL" secondAttribute="top" id="CK4-Y9-IQo"/>
+                                    <constraint firstAttribute="trailing" secondItem="d5e-Bq-MqM" secondAttribute="trailing" id="FaZ-vZ-9EJ"/>
+                                    <constraint firstItem="d5e-Bq-MqM" firstAttribute="leading" secondItem="h5g-Sm-IaL" secondAttribute="leading" id="Vlc-Cc-qc3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куда?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhN-Tp-3C6" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                <rect key="frame" x="18" y="52" width="95" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="6gb-g8-oWX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск, например, Россия" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ur3-zk-Drr" customClass="WhatCountryTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                <rect key="frame" x="18" y="99" width="378" height="30"/>
+                                <color key="backgroundColor" red="0.36470588240000001" green="0.46274509800000002" blue="0.95294117649999999" alpha="0.30331205989999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="0.90366417249999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YRk-aw-7qd">
+                                <rect key="frame" x="161" y="829" width="92" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP2-Am-ZLp">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="5QO-8p-zZ0"/>
+                                            <constraint firstAttribute="height" constant="40" id="NS9-V5-vs5"/>
+                                        </constraints>
+                                        <state key="normal" image="chevronRight"/>
+                                        <connections>
+                                            <action selector="butBackTapped:" destination="E5Y-av-nZj" eventType="touchUpInside" id="N88-qE-Z9t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSW-Le-h0t">
+                                        <rect key="frame" x="52" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="4oA-GD-c5a"/>
+                                            <constraint firstAttribute="height" constant="40" id="h9j-eM-GNI"/>
+                                        </constraints>
+                                        <state key="normal" image="x"/>
+                                        <connections>
+                                            <action selector="butCloseTapped:" destination="E5Y-av-nZj" eventType="touchUpInside" id="2c5-GI-pGZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="JcS-HO-XQw"/>
+                                    <constraint firstAttribute="height" constant="40" id="Tth-Gm-Duc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ur3-zk-Drr" firstAttribute="leading" secondItem="5my-w5-2yJ" secondAttribute="leading" constant="18" id="2hH-of-dEC"/>
+                            <constraint firstAttribute="bottom" secondItem="h5g-Sm-IaL" secondAttribute="bottom" id="5YH-Nc-qZp"/>
+                            <constraint firstAttribute="bottom" secondItem="YRk-aw-7qd" secondAttribute="bottom" constant="27" id="CZI-4o-acy"/>
+                            <constraint firstAttribute="bottom" secondItem="Yg7-yo-d4o" secondAttribute="bottom" id="D7X-Aa-B8b"/>
+                            <constraint firstItem="yhN-Tp-3C6" firstAttribute="leading" secondItem="5my-w5-2yJ" secondAttribute="leading" constant="18" id="HCn-wo-1u9"/>
+                            <constraint firstItem="yhN-Tp-3C6" firstAttribute="top" secondItem="5my-w5-2yJ" secondAttribute="top" constant="8" id="Ocs-qv-e5v"/>
+                            <constraint firstAttribute="bottom" secondItem="wbN-jH-9bH" secondAttribute="bottom" id="PK0-xa-XOD"/>
+                            <constraint firstItem="wbN-jH-9bH" firstAttribute="leading" secondItem="5my-w5-2yJ" secondAttribute="leading" id="UxI-4Q-mSL"/>
+                            <constraint firstItem="wbN-jH-9bH" firstAttribute="leading" secondItem="5my-w5-2yJ" secondAttribute="leading" id="XQT-wu-hVC"/>
+                            <constraint firstItem="h5g-Sm-IaL" firstAttribute="trailing" secondItem="5my-w5-2yJ" secondAttribute="trailing" id="hOS-jF-BSV"/>
+                            <constraint firstItem="h5g-Sm-IaL" firstAttribute="leading" secondItem="5my-w5-2yJ" secondAttribute="leading" id="i6Y-0k-5mU"/>
+                            <constraint firstItem="ur3-zk-Drr" firstAttribute="top" secondItem="yhN-Tp-3C6" secondAttribute="bottom" constant="8" id="kEt-1a-8Z4"/>
+                            <constraint firstItem="YRk-aw-7qd" firstAttribute="centerX" secondItem="IIA-JL-t1c" secondAttribute="centerX" id="nJz-Z0-wBt"/>
+                            <constraint firstItem="h5g-Sm-IaL" firstAttribute="top" secondItem="ur3-zk-Drr" secondAttribute="bottom" constant="11" id="nte-FE-3fk"/>
+                            <constraint firstAttribute="bottom" secondItem="Yg7-yo-d4o" secondAttribute="bottom" id="oo9-mJ-geV"/>
+                            <constraint firstItem="Yg7-yo-d4o" firstAttribute="trailing" secondItem="5my-w5-2yJ" secondAttribute="trailing" id="qjJ-yM-huZ"/>
+                            <constraint firstItem="5my-w5-2yJ" firstAttribute="trailing" secondItem="ur3-zk-Drr" secondAttribute="trailing" constant="18" id="qjr-KO-UoD"/>
+                            <constraint firstAttribute="bottom" secondItem="wbN-jH-9bH" secondAttribute="bottom" id="zID-dt-Y3U"/>
+                            <constraint firstItem="5my-w5-2yJ" firstAttribute="trailing" secondItem="Yg7-yo-d4o" secondAttribute="trailing" id="ztQ-Wz-PV8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5my-w5-2yJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="bigWhiteView" destination="h5g-Sm-IaL" id="8DS-jI-p1l"/>
+                        <outlet property="butBack" destination="MP2-Am-ZLp" id="0l1-gN-2QA"/>
+                        <outlet property="butClose" destination="gSW-Le-h0t" id="T47-WL-kQP"/>
+                        <outlet property="tableView" destination="d5e-Bq-MqM" id="9LH-Rq-oY4"/>
+                        <outlet property="textField" destination="ur3-zk-Drr" id="Piy-nh-4Ae"/>
+                        <outlet property="textFieldSearch" destination="ur3-zk-Drr" id="CXU-Z5-pia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSC-iP-bQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="62"/>
         </scene>
     </scenes>
     <resources>

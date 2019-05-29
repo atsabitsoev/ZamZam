@@ -15,6 +15,10 @@ class PersonalDataVC: UIViewController {
     @IBOutlet weak var butNext: UIButton!
     @IBOutlet weak var butBack: UIButton!
     @IBOutlet weak var butClose: UIButton!
+    @IBOutlet weak var butCountry: ButtonChooseCountry!
+    
+    
+    var country = "РОССИЯ"
     
     
     override func viewDidLoad() {
@@ -76,6 +80,22 @@ class PersonalDataVC: UIViewController {
         butClose.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         butClose.layer.shadowOpacity = 0.18
         butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
+    }
+    
+    func updateButCountry() {
+        butCountry.setTitle(country, for: .normal)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "PersonalDataToCountries" {
+            
+            let whatCountriesVC = segue.destination as! WhatCountryVC
+            whatCountriesVC.personalDataVC = self
+            
+        }
+        
     }
 
 }

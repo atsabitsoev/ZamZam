@@ -18,6 +18,9 @@ class WhatCountryVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
+    var personalDataVC: PersonalDataVC?
+    
+    
     var countries = [String]()
     var countryCodes = [String]()
     
