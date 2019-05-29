@@ -53,6 +53,11 @@
 		AC6B2B6F225F5E6A0057DCE8 /* RecipientHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B2B6E225F5E6A0057DCE8 /* RecipientHistoryCell.swift */; };
 		AC6E2F9A2282B660001CB42E /* EnterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E2F992282B660001CB42E /* EnterService.swift */; };
 		AC6E2F9E2282C027001CB42E /* TokensKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E2F9D2282C027001CB42E /* TokensKeys.swift */; };
+		AC71D923229E784300001C29 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC71D922229E784300001C29 /* History.storyboard */; };
+		AC71D926229E787300001C29 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D925229E787300001C29 /* HistoryVC.swift */; };
+		AC71D928229E787F00001C29 /* HistoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D927229E787F00001C29 /* HistoryTableView.swift */; };
+		AC71D92A229E789900001C29 /* HistoryTransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D929229E789900001C29 /* HistoryTransactionCell.swift */; };
+		AC71D92E229E7AE900001C29 /* Zam2ZamLogosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71D92D229E7AE900001C29 /* Zam2ZamLogosView.swift */; };
 		AC829D18229D524B0019C19B /* MaterialTextFieldWithFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */; };
 		AC829D1C229D804C0019C19B /* ButtonChooseCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC829D1B229D804C0019C19B /* ButtonChooseCountry.swift */; };
 		AC8D62C422574664004D0323 /* TFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D62C322574664004D0323 /* TFService.swift */; };
@@ -193,6 +198,11 @@
 		AC6B2B6E225F5E6A0057DCE8 /* RecipientHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientHistoryCell.swift; sourceTree = "<group>"; };
 		AC6E2F992282B660001CB42E /* EnterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterService.swift; sourceTree = "<group>"; };
 		AC6E2F9D2282C027001CB42E /* TokensKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensKeys.swift; sourceTree = "<group>"; };
+		AC71D922229E784300001C29 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		AC71D925229E787300001C29 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		AC71D927229E787F00001C29 /* HistoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableView.swift; sourceTree = "<group>"; };
+		AC71D929229E789900001C29 /* HistoryTransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactionCell.swift; sourceTree = "<group>"; };
+		AC71D92D229E7AE900001C29 /* Zam2ZamLogosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zam2ZamLogosView.swift; sourceTree = "<group>"; };
 		AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldWithFlag.swift; sourceTree = "<group>"; };
 		AC829D1B229D804C0019C19B /* ButtonChooseCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChooseCountry.swift; sourceTree = "<group>"; };
 		AC8D62C322574664004D0323 /* TFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFService.swift; sourceTree = "<group>"; };
@@ -319,6 +329,7 @@
 				5B7DFED72230682700ECF0D3 /* Main */,
 				ACB26A0C22606B64007AD399 /* Transfers */,
 				AC92424D229D0E1600299D51 /* Profile */,
+				AC71D924229E785A00001C29 /* History */,
 				AC924260229D357300299D51 /* PersonalData */,
 				ACB26A0D22606BB9007AD399 /* Replenish */,
 				ACE139BD224259D8004EDB38 /* CardIssue */,
@@ -384,6 +395,7 @@
 				5B7DFEAC222FFAC200ECF0D3 /* AppDelegate.swift */,
 				5B7DFEB0222FFAC200ECF0D3 /* Main.storyboard */,
 				AC92424B229D0DFC00299D51 /* Profile.storyboard */,
+				AC71D922229E784300001C29 /* History.storyboard */,
 				ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */,
 				AC98BF7F226891BC00E35745 /* Withdraw.storyboard */,
 				ACC5CAEB225C6CB500B28E62 /* Replenish.storyboard */,
@@ -548,6 +560,33 @@
 				AC6E2F992282B660001CB42E /* EnterService.swift */,
 			);
 			path = EnterService;
+			sourceTree = "<group>";
+		};
+		AC71D924229E785A00001C29 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				AC71D92B229E7A9C00001C29 /* View */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		AC71D92B229E7A9C00001C29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC71D92C229E7AA500001C29 /* Entities */,
+				AC71D925229E787300001C29 /* HistoryVC.swift */,
+				AC71D927229E787F00001C29 /* HistoryTableView.swift */,
+				AC71D929229E789900001C29 /* HistoryTransactionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC71D92C229E7AA500001C29 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AC71D92D229E7AE900001C29 /* Zam2ZamLogosView.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		AC8D62C72257543F004D0323 /* EnterVC */ = {
@@ -1014,6 +1053,7 @@
 				ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */,
 				AC110AB5223A8AD200D1F8D8 /* NotoSans-Regular.ttf in Resources */,
 				AC924255229D142700299D51 /* PTS56F.ttf in Resources */,
+				AC71D923229E784300001C29 /* History.storyboard in Resources */,
 				5B7DFEB7222FFAC500ECF0D3 /* LaunchScreen.storyboard in Resources */,
 				AC110AA8223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf in Resources */,
 				5B7DFEE62230702B00ECF0D3 /* .gitignore in Resources */,
@@ -1119,6 +1159,7 @@
 				AC98BF862268946E00E35745 /* WithdrawTableView.swift in Sources */,
 				AC98BF7E226862F000E35745 /* PayPhoneInfoCell.swift in Sources */,
 				ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */,
+				AC71D92A229E789900001C29 /* HistoryTransactionCell.swift in Sources */,
 				ACC5CB11225CBD2C00B28E62 /* ReplenTFDelegate.swift in Sources */,
 				AC829D1C229D804C0019C19B /* ButtonChooseCountry.swift in Sources */,
 				ACC5CB0F225C96DA00B28E62 /* ReplenNewCardCell.swift in Sources */,
@@ -1171,6 +1212,8 @@
 				ACFBAC3C2240FB44001D9D94 /* AddNewCardCell.swift in Sources */,
 				ACC827422271A930001E5750 /* PasswordSymbolManager.swift in Sources */,
 				ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */,
+				AC71D928229E787F00001C29 /* HistoryTableView.swift in Sources */,
+				AC71D92E229E7AE900001C29 /* Zam2ZamLogosView.swift in Sources */,
 				AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */,
 				ACBD4361228EB23D002D0CF5 /* ZamBillCheckCell.swift in Sources */,
 				AC2859EC224CF85E004852C4 /* Currency.swift in Sources */,
@@ -1197,6 +1240,7 @@
 				AC24624B22819CBB006C54D4 /* PhoneVerificationService.swift in Sources */,
 				ACFBAC2D2240C419001D9D94 /* myLabel.swift in Sources */,
 				5B7DFEAD222FFAC200ECF0D3 /* AppDelegate.swift in Sources */,
+				AC71D926229E787300001C29 /* HistoryVC.swift in Sources */,
 				AC9ADCF2226754FC0015FA53 /* WhatIsYourPhoneVC.swift in Sources */,
 				ACE139C622427D40004EDB38 /* CardIssueCollectionCell.swift in Sources */,
 				5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */,
