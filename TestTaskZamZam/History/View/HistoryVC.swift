@@ -20,7 +20,7 @@ class HistoryVC: UIViewController {
     let phoneNumberKit = PhoneNumberKit()
     
     
-    var masTransactions: [Transaction]?
+    var masTransactions: [[Transaction]]?
     
     
     lazy var refreshControl: UIRefreshControl = {

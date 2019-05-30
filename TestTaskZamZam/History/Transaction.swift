@@ -17,18 +17,21 @@ class Transaction {
     var direction: TransferDirection
     var recipientPhone: String
     var senderPhone: String
+    var date: Date
     
     
     init(sum: Double,
          currency: CurrencyProtocol,
          direction: TransferDirection,
          recipientPhone: String,
-         senderPhone: String) {
+         senderPhone: String,
+         date: Date) {
         
         self.sum = sum
         self.currency = currency
         self.direction = direction
         self.recipientPhone = recipientPhone
         self.senderPhone = senderPhone
+        self.date = date
     }
 }

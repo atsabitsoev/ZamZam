@@ -17,7 +17,7 @@ class GetTransactionHistoryService {
     static let standard = GetTransactionHistoryService()
     
     
-    var masTransactions: [Transaction]?
+    var masTransactions: [[Transaction]]?
     
     
     func fetchHistory() {
@@ -42,7 +42,8 @@ class GetTransactionHistoryService {
                         
                     case 200:
                         
-                        self.masTransactions = self.convertToTransactions(json)
+                        let transactions = self.convertToTransactions(json)
+                        self.masTransactions = self.sortByDate(transactions)
                         self.post(notificationName: .historyGot)
                         
                     case 401:
@@ -88,13 +89,57 @@ class GetTransactionHistoryService {
             let direction: TransferDirection = jsonTransaction["cashFlow"].stringValue == "Outgoing" ? .out : .into
             let recipientPhone = jsonTransaction["recipientPhoneNumber"].stringValue
             let senderPhone = jsonTransaction["senderPhoneNumber"].stringValue
+            let date = Date(timeIntervalSince1970: jsonTransaction["createdDate"].doubleValue)
             
-            let transaction = Transaction(sum: sum, currency: currency, direction: direction, recipientPhone: recipientPhone, senderPhone: senderPhone)
+            let transaction = Transaction(sum: sum, currency: currency, direction: direction, recipientPhone: recipientPhone, senderPhone: senderPhone, date: date)
             
             transactions.append(transaction)
         }
         
         return transactions
+    }
+    
+    private func sortByDate(_ transactions: [Transaction]) -> [[Transaction]]? {
+        
+        var masSortedTransacitons: [[Transaction]] = []
+        var masDayTransactions: [Transaction] = []
+        var currentDateComponents: DateComponents?
+        var i = 0
+        
+        for trans in transactions {
+            
+            i += 1
+            let calendar = Calendar.current
+            let transComponents = calendar.dateComponents([.day, .month, .year], from: trans.date)
+            
+            if currentDateComponents == nil {
+                
+                masDayTransactions.append(trans)
+                currentDateComponents = transComponents
+                
+            } else if currentDateComponents == transComponents {
+                
+                masDayTransactions.append(trans)
+                
+                if i == transactions.count {
+                    
+                    masSortedTransacitons.append(masDayTransactions)
+                }
+                
+            } else if currentDateComponents != transComponents {
+                
+                masSortedTransacitons.append(masDayTransactions)
+                masDayTransactions = []
+                masDayTransactions.append(trans)
+                currentDateComponents = transComponents
+                
+            } else {
+                return nil
+            }
+            
+        }
+        
+        return masSortedTransacitons
     }
     
     
