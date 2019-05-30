@@ -17,12 +17,13 @@ class GetTransactionHistoryService {
     static let standard = GetTransactionHistoryService()
     
     
-    var masTransactions: [[Transaction]]?
+    var masSortedTransactions: [[Transaction]]?
+    var masTransactions: [Transaction] = []
     
     
-    func fetchHistory() {
+    func fetchHistory(page: Int) {
         
-        let urlString = "http://10.80.80.99:2222/api/accounts/transactionhistory"
+        let urlString = "http://10.80.80.99:2222/api/accounts/transactionhistory/\(page)"
         let url = URL(string: urlString)!
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(UserTokenService.standard.userAccessToken)",
@@ -43,7 +44,8 @@ class GetTransactionHistoryService {
                     case 200:
                         
                         let transactions = self.convertToTransactions(json)
-                        self.masTransactions = self.sortByDate(transactions)
+                        self.masTransactions = page == 0 ? transactions : self.masTransactions + transactions
+                        self.masSortedTransactions = self.sortByDate(self.masTransactions)
                         self.post(notificationName: .historyGot)
                         
                     case 401:

@@ -36,4 +36,6 @@ enum NotificationNames: String {
     
     case historyGot = "historyGot"
     case historyGetFailed = "historyGetFailed"
+    
+    case loadPageBegining = "loadingBegan"
 }

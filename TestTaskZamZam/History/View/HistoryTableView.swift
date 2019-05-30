@@ -16,6 +16,10 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
         
         guard let masTransactions = self.masTransactions else { return 0 }
         
+        if section == masTransactions.count - 1 {
+            return masTransactions[section].count + 1
+        }
+        
         return masTransactions[section].count
     }
     
@@ -28,8 +32,16 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        guard let masTransactions = self.masTransactions else { return UITableViewCell() }
+        
+        if indexPath == IndexPath(row: masTransactions.last!.count, section: masTransactions.count - 1) {
+            
+            let loadingCell = tableView.dequeueReusableCell(withIdentifier: "loadingCell")!
+            return loadingCell
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryTransactionCell") as! HistoryTransactionCell
-        guard let transaction = masTransactions?[indexPath.section][indexPath.row] else { return cell }
+        let transaction = masTransactions[indexPath.section][indexPath.row]
         
         let prefixOfSum = transaction.direction == .out ? "-" : "+"
         
@@ -68,6 +80,7 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
         return 44
     }
     
@@ -92,6 +105,14 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
         
         view.addSubview(label)
         return view
+    }
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        guard let masTransactions = self.masTransactions else { return }
+        print(masTransactions.count)
+        
     }
     
     

@@ -21,6 +21,7 @@ class HistoryVC: UIViewController {
     
     
     var masTransactions: [[Transaction]]?
+    var numberOfLoadedPages: Int = 0
     
     
     lazy var refreshControl: UIRefreshControl = {
@@ -39,7 +40,7 @@ class HistoryVC: UIViewController {
         
         tableView.addSubview(refreshControl)
         addObservers()
-        fetchHistory()
+        fetchNextPageHistory()
         
         roundView(viewBigWhite, rad: 16)
     }
@@ -50,10 +51,11 @@ class HistoryVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(setNewHistoryArr), name: NSNotification.Name(NotificationNames.historyGot.rawValue), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(userAccessTokenIsOutOfDate), name: NSNotification.Name(NotificationNames.userAccessTokenIsOutOfDate.rawValue), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(loadingFailed), name: NSNotification.Name(NotificationNames.historyGetFailed.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(fetchNextPageHistory), name: NSNotification.Name(NotificationNames.loadPageBegining.rawValue), object: nil)
     }
     
-    private func fetchHistory() {
-        GetTransactionHistoryService.standard.fetchHistory()
+    @objc private func fetchNextPageHistory() {
+        GetTransactionHistoryService.standard.fetchHistory(page: numberOfLoadedPages)
     }
     
     
@@ -91,15 +93,17 @@ class HistoryVC: UIViewController {
     
     @objc func setNewHistoryArr() {
         
-        masTransactions = GetTransactionHistoryService.standard.masTransactions
+        masTransactions = GetTransactionHistoryService.standard.masSortedTransactions
         tableView.reloadData()
         refreshControl.endRefreshing()
         activityIndicator.stopAnimating()
+        numberOfLoadedPages += 1
     }
     
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         
-        fetchHistory()
+        numberOfLoadedPages = 0
+        fetchNextPageHistory()
     }
     
     @objc private func userAccessTokenIsOutOfDate() {

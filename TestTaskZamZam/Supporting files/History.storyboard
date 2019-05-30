@@ -27,15 +27,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9s-Me-zjq">
-                                <rect key="frame" x="0.0" y="103" width="414" height="793"/>
+                                <rect key="frame" x="0.0" y="107.5" width="414" height="788.5"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lgD-ee-1L3">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="793"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="788.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="19" minY="0.0" maxX="19" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="Bd0-mf-ffM">
-                                            <rect key="frame" x="0.0" y="88" width="414" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="148" width="414" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -48,7 +48,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перевод со счета ZAM RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cA-U8-xc0">
-                                                            <rect key="frame" x="19" y="10" width="119" height="13"/>
+                                                            <rect key="frame" x="19" y="10" width="131.5" height="13"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="13" id="RIL-Mh-vlh"/>
                                                             </constraints>
@@ -57,7 +57,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Алексей Зайцев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLW-h4-8VG">
-                                                            <rect key="frame" x="19" y="27" width="111.5" height="23.5"/>
+                                                            <rect key="frame" x="19" y="27" width="121.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
@@ -86,7 +86,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-100 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="HYs-oX-Rlp">
-                                                            <rect key="frame" x="304.5" y="21.5" width="66.5" height="17"/>
+                                                            <rect key="frame" x="302.5" y="21.5" width="68.5" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="shX-8u-ig1"/>
                                                             </constraints>
@@ -121,6 +121,27 @@
                                                     <outlet property="zam2ZamLogosView" destination="j5x-eX-im1" id="gTz-YP-BAa"/>
                                                 </connections>
                                             </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="loadingCell" rowHeight="60" id="rRW-3k-XuN" customClass="LoadingCell" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="88" width="414" height="60"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rRW-3k-XuN" id="YPY-3w-al9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-Zx-VO3">
+                                                            <rect key="frame" x="189" y="11" width="37" height="37"/>
+                                                            <color key="color" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="rqE-Zx-VO3" firstAttribute="centerY" secondItem="YPY-3w-al9" secondAttribute="centerY" id="Nw7-gk-vwS"/>
+                                                        <constraint firstItem="rqE-Zx-VO3" firstAttribute="centerX" secondItem="YPY-3w-al9" secondAttribute="centerX" id="jPN-eH-fIb"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="activityIndicator" destination="rqE-Zx-VO3" id="LnR-BH-i8u"/>
+                                                </connections>
+                                            </tableViewCell>
                                         </prototypes>
                                         <connections>
                                             <outlet property="dataSource" destination="4xj-MD-gqo" id="I3N-Vr-k3r"/>
@@ -137,7 +158,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="События" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kP-DW-Zy7" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="64" width="100" height="26"/>
+                                <rect key="frame" x="18" y="64" width="108" height="30.5"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

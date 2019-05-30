@@ -96,6 +96,7 @@
 		ACBF140A22670ECB00019545 /* SplashCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140922670ECB00019545 /* SplashCollectionView.swift */; };
 		ACBF140E22670FE000019545 /* SplashStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140D22670FE000019545 /* SplashStruct.swift */; };
 		ACBF14102267117D00019545 /* SplashCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140F2267117D00019545 /* SplashCollectionCell.swift */; };
+		ACBFD217229FDA6B009A1696 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFD216229FDA6B009A1696 /* LoadingCell.swift */; };
 		ACC5CAEC225C6CB500B28E62 /* Replenish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC5CAEB225C6CB500B28E62 /* Replenish.storyboard */; };
 		ACC5CAEF225C711600B28E62 /* ReplenishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CAEE225C711600B28E62 /* ReplenishVC.swift */; };
 		ACC5CAF2225C714100B28E62 /* ReplenishTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5CAF1225C714100B28E62 /* ReplenishTableview.swift */; };
@@ -243,6 +244,7 @@
 		ACBF140922670ECB00019545 /* SplashCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCollectionView.swift; sourceTree = "<group>"; };
 		ACBF140D22670FE000019545 /* SplashStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashStruct.swift; sourceTree = "<group>"; };
 		ACBF140F2267117D00019545 /* SplashCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCollectionCell.swift; sourceTree = "<group>"; };
+		ACBFD216229FDA6B009A1696 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		ACC5CAEB225C6CB500B28E62 /* Replenish.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Replenish.storyboard; sourceTree = "<group>"; };
 		ACC5CAEE225C711600B28E62 /* ReplenishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenishVC.swift; sourceTree = "<group>"; };
 		ACC5CAF1225C714100B28E62 /* ReplenishTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenishTableview.swift; sourceTree = "<group>"; };
@@ -582,6 +584,7 @@
 				AC71D925229E787300001C29 /* HistoryVC.swift */,
 				AC71D927229E787F00001C29 /* HistoryTableView.swift */,
 				AC71D929229E789900001C29 /* HistoryTransactionCell.swift */,
+				ACBFD216229FDA6B009A1696 /* LoadingCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1156,6 +1159,7 @@
 				AC9D2C0022898A3200F0DE84 /* SetNewPinEnterVC.swift in Sources */,
 				ACFBAC3A2240FB35001D9D94 /* ZamBillCell.swift in Sources */,
 				ACFAF764223F754A008C731B /* RecipientVC.swift in Sources */,
+				ACBFD217229FDA6B009A1696 /* LoadingCell.swift in Sources */,
 				ACC5CAF6225C717700B28E62 /* ReplenishCell.swift in Sources */,
 				ACFBAC4622412ECF001D9D94 /* PaymentTFDelegate.swift in Sources */,
 				AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */,
@@ -1422,7 +1426,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ZamZamNewProfile;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1444,7 +1448,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ZamZamNewProfile;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
