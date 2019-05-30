@@ -36,7 +36,7 @@ class HistoryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.addSubview(refreshControl)
         addObservers()
         fetchHistory()

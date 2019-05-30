@@ -83,7 +83,7 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
         
         let formatter = DateFormatter()
         formatter.setLocalizedDateFormatFromTemplate("dd MMMM")
-        formatter.locale = Locale.autoupdatingCurrent
+        formatter.locale = Locale.current
         let dateString = formatter.string(from: date!)
         label.text = dateString
         
