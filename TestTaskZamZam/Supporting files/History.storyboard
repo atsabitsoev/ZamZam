@@ -128,8 +128,8 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-Zx-VO3">
-                                                            <rect key="frame" x="189" y="11" width="37" height="37"/>
+                                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-Zx-VO3">
+                                                            <rect key="frame" x="188.5" y="11.5" width="37" height="37"/>
                                                             <color key="color" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </activityIndicatorView>
                                                     </subviews>

@@ -14,7 +14,15 @@ class LoadingCell: UITableViewCell {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
+    private var observerAdded = false
+    
+    
     override func layoutSubviews() {
+        
+        if !observerAdded {
+            NotificationCenter.default.addObserver(self, selector: #selector(loadPageEnding), name: NSNotification.Name(NotificationNames.loadPageEnding.rawValue), object: nil)
+            observerAdded = true
+        }
         
         if !activityIndicator.isAnimating {
             
@@ -25,8 +33,11 @@ class LoadingCell: UITableViewCell {
     }
     
     
+    @objc private func loadPageEnding() {
+        activityIndicator.stopAnimating()
+    }
+    
     private func post(_ notification: NotificationNames) {
-        
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: notification.rawValue), object: nil)
     }
 

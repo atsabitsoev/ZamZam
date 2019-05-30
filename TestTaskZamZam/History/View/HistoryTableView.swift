@@ -108,12 +108,4 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        guard let masTransactions = self.masTransactions else { return }
-        print(masTransactions.count)
-        
-    }
-    
-    
 }

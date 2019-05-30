@@ -19,6 +19,7 @@ class GetTransactionHistoryService {
     
     var masSortedTransactions: [[Transaction]]?
     var masTransactions: [Transaction] = []
+    var pagesCount: Int = 1
     
     
     func fetchHistory(page: Int) {
@@ -43,6 +44,8 @@ class GetTransactionHistoryService {
                         
                     case 200:
                         
+                        let pagesCount = json["pagesCount"].intValue
+                        self.pagesCount = pagesCount
                         let transactions = self.convertToTransactions(json)
                         self.masTransactions = page == 0 ? transactions : self.masTransactions + transactions
                         self.masSortedTransactions = self.sortByDate(self.masTransactions)

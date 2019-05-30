@@ -18,10 +18,12 @@ class HistoryVC: UIViewController {
     
     
     let phoneNumberKit = PhoneNumberKit()
+    let historyService = GetTransactionHistoryService.standard
     
     
     var masTransactions: [[Transaction]]?
     var numberOfLoadedPages: Int = 0
+    var totalPages: Int = 1
     
     
     lazy var refreshControl: UIRefreshControl = {
@@ -55,7 +57,13 @@ class HistoryVC: UIViewController {
     }
     
     @objc private func fetchNextPageHistory() {
-        GetTransactionHistoryService.standard.fetchHistory(page: numberOfLoadedPages)
+        
+        if totalPages > numberOfLoadedPages {
+            historyService.fetchHistory(page: numberOfLoadedPages)
+        } else if totalPages == numberOfLoadedPages {
+            NotificationCenter.default.post(name: NSNotification.Name(NotificationNames.loadPageEnding.rawValue), object: nil)
+        }
+        
     }
     
     
@@ -93,7 +101,8 @@ class HistoryVC: UIViewController {
     
     @objc func setNewHistoryArr() {
         
-        masTransactions = GetTransactionHistoryService.standard.masSortedTransactions
+        masTransactions = historyService.masSortedTransactions
+        totalPages = historyService.pagesCount
         tableView.reloadData()
         refreshControl.endRefreshing()
         activityIndicator.stopAnimating()
