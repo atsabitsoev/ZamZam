@@ -122,7 +122,7 @@ class PersonalDataVC: UIViewController {
         
         var emptyFields: [UITextField] = []
         
-        let allFields = [tfPhone, tfFirstName, tfLastName, tfFathersName, tfBirthDate, tfCity, tfAddress, tfPassportNumber, tfPassportAuthority, tfPassportIssueDate]
+        let allFields = [tfPhone, tfFirstName, tfLastName, tfBirthDate, tfCity, tfAddress, tfPassportNumber, tfPassportAuthority, tfPassportIssueDate]
         
         for tf in allFields {
             
