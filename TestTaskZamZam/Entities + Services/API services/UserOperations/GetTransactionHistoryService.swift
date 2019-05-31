@@ -97,6 +97,7 @@ class GetTransactionHistoryService {
             let date = Date(timeIntervalSince1970: jsonTransaction["createdDate"].doubleValue)
             
             let transaction = Transaction(sum: sum, currency: currency, direction: direction, recipientPhone: recipientPhone, senderPhone: senderPhone, date: date)
+            print("transactionAdded with date: \(transaction.date)")
             
             transactions.append(transaction)
         }
@@ -121,6 +122,10 @@ class GetTransactionHistoryService {
                 
                 masDayTransactions.append(trans)
                 currentDateComponents = transComponents
+                
+                if i == transactions.count {
+                    masSortedTransacitons.append(masDayTransactions)
+                }
                 
             } else if currentDateComponents == transComponents {
                 

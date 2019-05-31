@@ -60,7 +60,7 @@ class HistoryVC: UIViewController {
         
         if totalPages > numberOfLoadedPages {
             historyService.fetchHistory(page: numberOfLoadedPages)
-        } else if totalPages == numberOfLoadedPages {
+        } else if totalPages <= numberOfLoadedPages {
             NotificationCenter.default.post(name: NSNotification.Name(NotificationNames.loadPageEnding.rawValue), object: nil)
         }
         
