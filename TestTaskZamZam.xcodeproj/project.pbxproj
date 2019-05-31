@@ -83,6 +83,8 @@
 		AC98BF8D22689F4F00E35745 /* WithdrawPaymentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98BF8C22689F4F00E35745 /* WithdrawPaymentTableView.swift */; };
 		AC9ADCF2226754FC0015FA53 /* WhatIsYourPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */; };
 		AC9D2C0022898A3200F0DE84 /* SetNewPinEnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D2BFF22898A3200F0DE84 /* SetNewPinEnterVC.swift */; };
+		ACA1685822A1073E0050971A /* UserProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1685722A1073E0050971A /* UserProfileService.swift */; };
+		ACA1685B22A107AB0050971A /* UserPriofileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1685A22A107AB0050971A /* UserPriofileInfo.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
 		ACBC5E0A22684BFF0005C355 /* PayPhoneBill.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */; };
@@ -231,6 +233,8 @@
 		AC98BF8C22689F4F00E35745 /* WithdrawPaymentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawPaymentTableView.swift; sourceTree = "<group>"; };
 		AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsYourPhoneVC.swift; sourceTree = "<group>"; };
 		AC9D2BFF22898A3200F0DE84 /* SetNewPinEnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPinEnterVC.swift; sourceTree = "<group>"; };
+		ACA1685722A1073E0050971A /* UserProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileService.swift; sourceTree = "<group>"; };
+		ACA1685A22A107AB0050971A /* UserPriofileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPriofileInfo.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
 		ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayPhoneBill.storyboard; sourceTree = "<group>"; };
@@ -515,6 +519,7 @@
 				AC92425E229D1DD300299D51 /* MaterialTextField.swift */,
 				AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */,
 				AC829D1B229D804C0019C19B /* ButtonChooseCountry.swift */,
+				ACA1685922A107930050971A /* API Entities */,
 				AC24624922819C9E006C54D4 /* API services */,
 				AC53F9DB225627A30086A0D3 /* Twilio */,
 				ACFBAC362240FB01001D9D94 /* PaymentCells */,
@@ -673,6 +678,14 @@
 				AC9ADCF1226754FC0015FA53 /* WhatIsYourPhoneVC.swift */,
 			);
 			path = WhatIsYourPhoneVC;
+			sourceTree = "<group>";
+		};
+		ACA1685922A107930050971A /* API Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ACA1685A22A107AB0050971A /* UserPriofileInfo.swift */,
+			);
+			path = "API Entities";
 			sourceTree = "<group>";
 		};
 		ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */ = {
@@ -967,6 +980,7 @@
 				ACFC9B7C228D3CE2009F5798 /* GetUserAccountsService.swift */,
 				ACBD435E228EA693002D0CF5 /* ZamZamTranferService.swift */,
 				AC71D92F229E918B00001C29 /* GetTransactionHistoryService.swift */,
+				ACA1685722A1073E0050971A /* UserProfileService.swift */,
 			);
 			path = UserOperations;
 			sourceTree = "<group>";
@@ -1236,6 +1250,7 @@
 				AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */,
 				5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */,
 				ACC7588E228BEE250049AB57 /* PaymentNewVC.swift in Sources */,
+				ACA1685B22A107AB0050971A /* UserPriofileInfo.swift in Sources */,
 				ACFAF767223F8B07008C731B /* SenderVC.swift in Sources */,
 				5B7DFEDD2230698200ECF0D3 /* CollectionView.swift in Sources */,
 				ACFBAC3E2240FB5D001D9D94 /* CardCell.swift in Sources */,
@@ -1264,6 +1279,7 @@
 				AC6E2F9E2282C027001CB42E /* TokensKeys.swift in Sources */,
 				AC53F9DD225627B70086A0D3 /* NotificationType.swift in Sources */,
 				ACBC5E152268590C0005C355 /* PayPhoneTFDelegate.swift in Sources */,
+				ACA1685822A1073E0050971A /* UserProfileService.swift in Sources */,
 				AC6B2B6F225F5E6A0057DCE8 /* RecipientHistoryCell.swift in Sources */,
 				ACC7589B228C344B0049AB57 /* ResetPasswordService.swift in Sources */,
 				ACC5CB0B225C96B900B28E62 /* ReplenCardCell.swift in Sources */,

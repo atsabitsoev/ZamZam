@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PhoneNumberKit
 
 class PersonalDataVC: UIViewController {
 
@@ -18,6 +19,18 @@ class PersonalDataVC: UIViewController {
     @IBOutlet weak var butCountry: ButtonChooseCountry!
     
     
+    @IBOutlet weak var tfPhone: MaterialTextFieldWithFlag!
+    @IBOutlet weak var tfFirstName: MaterialTextField!
+    @IBOutlet weak var tfLastName: MaterialTextField!
+    @IBOutlet weak var tfFathersName: MaterialTextField!
+    @IBOutlet weak var tfBirthDate: MaterialTextField!
+    @IBOutlet weak var tfCity: MaterialTextField!
+    @IBOutlet weak var tfAddress: MaterialTextField!
+    @IBOutlet weak var tfPassportNumber: MaterialTextField!
+    @IBOutlet weak var tfPassportAuthority: MaterialTextField!
+    @IBOutlet weak var tfPassportIssueDate: MaterialTextField!
+    
+    
     var country = "РОССИЯ"
     
     
@@ -25,6 +38,7 @@ class PersonalDataVC: UIViewController {
         super.viewDidLoad()
 
         configureScrollView()
+        setUserProfileInfo()
     }
     
     override func viewWillLayoutSubviews() {
@@ -82,8 +96,85 @@ class PersonalDataVC: UIViewController {
         butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
     }
     
+    private func setUserProfileInfo() {
+        
+        guard let userProfileInfo = UserProfileService.standard.userProfileInfo else { return }
+        
+        let userPhone = UserDefaults.standard.string(forKey: "userPhone")
+        tfPhone.text = userPhone
+        
+        guard userProfileInfo.firstName != "" else {
+            return
+        }
+        
+        tfFirstName.text = userProfileInfo.firstName
+        tfLastName.text = userProfileInfo.lastName
+        tfFathersName.text = userProfileInfo.middleName
+        tfBirthDate.text = userProfileInfo.birthDate
+        tfCity.text = userProfileInfo.city
+        tfAddress.text = userProfileInfo.address
+        tfPassportNumber.text = userProfileInfo.passportNumber
+        tfPassportAuthority.text = userProfileInfo.passportAuthority
+        tfPassportIssueDate.text = userProfileInfo.passportIssueDate
+    }
+    
+    private func emptyFields() -> [UITextField] {
+        
+        var emptyFields: [UITextField] = []
+        
+        let allFields = [tfPhone, tfFirstName, tfLastName, tfFathersName, tfBirthDate, tfCity, tfAddress, tfPassportNumber, tfPassportAuthority, tfPassportIssueDate]
+        
+        for tf in allFields {
+            
+            if tf!.text == nil || tf!.text == "" || tf!.text == " " {
+                emptyFields.append(tf!)
+            }
+        }
+        
+        return emptyFields
+    }
+    
+    private func makeRed(_ masTextFields: [MaterialTextField]) {
+        
+        for tf in masTextFields {
+            
+            tf.inActiveColor = #colorLiteral(red: 0.9803921569, green: 0.4666666667, blue: 0.5294117647, alpha: 1)
+            tf.layer.borderColor = #colorLiteral(red: 0.9803921569, green: 0.4666666667, blue: 0.5294117647, alpha: 1)
+        }
+    }
+    
+    
     func updateButCountry() {
         butCountry.setTitle(country, for: .normal)
+    }
+    
+    
+    @IBAction func butSaveTapped(_ sender: UIButton) {
+        
+        guard emptyFields().isEmpty else {
+            makeRed(emptyFields() as! [MaterialTextField])
+            return
+        }
+        
+        let phoneNumberKit = PhoneNumberKit()
+        let userPhone = UserDefaults.standard.string(forKey: "userPhone")!
+        let phone = try! phoneNumberKit.parse(userPhone)
+        let countryCode = phoneNumberKit.getRegionCode(of: phone)
+        
+        let userProfileInfo = UserProfileInfo(lastName: tfLastName.text!,
+                                              firstName: tfFirstName.text!,
+                                              middleName: tfFathersName.text!,
+                                              birthDate: tfBirthDate.text!,
+                                              countryCode: countryCode!,
+                                              city: tfCity.text!,
+                                              address: tfAddress.text!,
+                                              passportNumber: tfPassportNumber.text!,
+                                              passportIssueDate: tfPassportIssueDate.text!,
+                                              passportAuthority: tfPassportAuthority.text!)
+        print(userProfileInfo.firstName)
+        
+        UserProfileService.standard.postUserInfoRequest(userProfileInfo: userProfileInfo)
+        
     }
     
     

@@ -28,9 +28,10 @@ class MaterialTextField: UITextField {
         super.init(coder: aDecoder)
         
         layer.cornerRadius = 8
-        layer.borderColor = inActiveColor.cgColor
         layer.borderWidth = 2
         labTitle.isHidden = true
+        
+        layer.borderColor = inActiveColor.cgColor
         
         addTarget(self, action: #selector(editingBegan), for: .editingDidBegin)
         addTarget(self, action: #selector(editingEnded), for: .editingDidEnd)

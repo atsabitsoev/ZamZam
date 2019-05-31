@@ -83,6 +83,7 @@ class UserTokenService {
                         case 200:
                             
                             let accessToken = JSON(response.result.value!)["access_token"].stringValue
+                            print(accessToken)
                             let refreshToken = JSON(response.result.value!)["refresh_token"].stringValue
                             
                             print("Сохраняю токен - \(accessToken)")

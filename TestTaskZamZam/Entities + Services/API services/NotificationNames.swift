@@ -39,4 +39,10 @@ enum NotificationNames: String {
     
     case loadPageBegining = "loadingBegan"
     case loadPageEnding = "loadingPageEnding"
+    
+    case userProfileGot = "userProfileGot"
+    case userProfileGettingFailed = "userProfileGettingFailed"
+    
+    case userProfilePostSucceed = "userProfilePostSucceed"
+    case userProfilePostFailed = "userProfilePostFailed"
 }

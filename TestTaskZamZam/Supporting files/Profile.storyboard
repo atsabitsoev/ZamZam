@@ -390,6 +390,9 @@
                                                 <state key="normal" title="Сохранить">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="butSaveTapped:" destination="Dt2-n2-TcK" eventType="touchUpInside" id="uOV-sf-Q5b"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RT6-YQ-L72">
                                                 <rect key="frame" x="161" y="975" width="92" height="40"/>
@@ -530,6 +533,16 @@
                         <outlet property="butCountry" destination="S71-9y-46R" id="PVO-wd-guj"/>
                         <outlet property="butNext" destination="ywl-j5-guo" id="vud-He-9Fr"/>
                         <outlet property="scrlView" destination="Vzt-WI-9w0" id="CXx-Ay-HO6"/>
+                        <outlet property="tfAddress" destination="TUb-MS-JPx" id="Sz9-4r-ky9"/>
+                        <outlet property="tfBirthDate" destination="ahd-T5-67K" id="gXu-VW-9M9"/>
+                        <outlet property="tfCity" destination="N0d-jZ-miB" id="2Fy-69-cPw"/>
+                        <outlet property="tfFathersName" destination="mYO-df-kxL" id="6je-pD-c4U"/>
+                        <outlet property="tfFirstName" destination="O9K-Cy-asx" id="HKw-fU-Zht"/>
+                        <outlet property="tfLastName" destination="S6S-Qp-lUM" id="GUP-ZO-0F4"/>
+                        <outlet property="tfPassportAuthority" destination="Fhq-vm-pQS" id="myK-U9-BmR"/>
+                        <outlet property="tfPassportIssueDate" destination="AzP-EX-4uL" id="71t-hB-d65"/>
+                        <outlet property="tfPassportNumber" destination="jql-9p-r5W" id="D4R-1t-um8"/>
+                        <outlet property="tfPhone" destination="LoE-uA-gVw" id="5xU-Ti-9s0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qd-It-i5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -575,7 +588,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Россия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWA-cw-l43" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="64" y="16.5" width="51" height="16"/>
+                                                            <rect key="frame" x="64" y="16.5" width="54.5" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="16" id="Njf-qk-d12"/>
                                                             </constraints>
@@ -620,7 +633,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куда?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhN-Tp-3C6" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="52" width="95" height="39"/>
+                                <rect key="frame" x="18" y="52" width="103" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="6gb-g8-oWX"/>
                                 </constraints>
