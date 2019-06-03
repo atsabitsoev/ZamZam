@@ -31,12 +31,18 @@ class PersonalDataVC: UIViewController {
     @IBOutlet weak var tfPassportIssueDate: MaterialTextField!
     
     
-    var country = "РОССИЯ"
+    var datePicker:UIDatePicker = UIDatePicker()
+    let toolBar = UIToolbar()
+    
+    
+    var country: String = "Россия"
+    var countryCode: String = "RU"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setTFDelegates()
         configureScrollView()
         setUserProfileInfo()
     }
@@ -46,6 +52,12 @@ class PersonalDataVC: UIViewController {
         configureNavigationButtons()
     }
     
+    
+    private func setTFDelegates() {
+        
+        tfBirthDate.delegate = self
+        tfPassportIssueDate.delegate = self
+    }
     
     private func configureScrollView() {
         
@@ -96,6 +108,69 @@ class PersonalDataVC: UIViewController {
         butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
     }
     
+    func showDatePicker(_ textField: MaterialTextField) {
+        
+        //1. Create the alert controller.
+        let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
+        
+        //2. Add the text field. You can configure it however you need.
+        alert.addTextField { (textField) in
+            self.doDatePicker()
+            textField.inputView = self.datePicker
+            textField.inputAccessoryView = self.toolBar
+        }
+        
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            if textField?.text != ""{
+                print("Text field: \(textField?.text!)")
+            }
+        }))
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func doDatePicker() {
+    
+    self.datePicker = UIDatePicker(frame:CGRect(x: 0, y: self.view.frame.size.height - 220, width:self.view.frame.size.width, height: 216))
+    self.datePicker.backgroundColor = UIColor.white
+    datePicker.datePickerMode = .date
+    
+    // ToolBar
+    
+    toolBar.barStyle = .default
+    toolBar.isTranslucent = true
+    toolBar.tintColor = #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.5058823529, alpha: 1)
+    toolBar.sizeToFit()
+    
+    // Adding Button ToolBar
+    let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneClick))
+    let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+    let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelClick))
+    toolBar.setItems([cancelButton, spaceButton, doneButton], animated: true)
+    toolBar.isUserInteractionEnabled = true
+    
+    self.toolBar.isHidden = false
+    
+    }
+    
+    @objc func doneClick() {
+        let dateFormatter1 = DateFormatter()
+        dateFormatter1.dateStyle = .medium
+        dateFormatter1.timeStyle = .none
+        
+        datePicker.isHidden = true
+        self.toolBar.isHidden = true
+    }
+    
+    @objc func cancelClick() {
+        datePicker.isHidden = true
+        self.toolBar.isHidden = true
+    }
+    
     private func setUserProfileInfo() {
         
         guard let userProfileInfo = UserProfileService.standard.userProfileInfo else { return }
@@ -107,6 +182,8 @@ class PersonalDataVC: UIViewController {
             return
         }
         
+        setSavedCountry()
+        
         tfFirstName.text = userProfileInfo.firstName
         tfLastName.text = userProfileInfo.lastName
         tfFathersName.text = userProfileInfo.middleName
@@ -116,6 +193,14 @@ class PersonalDataVC: UIViewController {
         tfPassportNumber.text = userProfileInfo.passportNumber
         tfPassportAuthority.text = userProfileInfo.passportAuthority
         tfPassportIssueDate.text = userProfileInfo.passportIssueDate
+        butCountry.setTitle(country, for: .normal)
+    }
+    
+    private func setSavedCountry() {
+        
+        country = UserDefaults.standard.string(forKey: "PersonalDataCountryName") ?? "Россия"
+        countryCode = UserDefaults.standard.string(forKey: "PersonalDataCountryCode") ?? "RU"
+        
     }
     
     private func emptyFields() -> [UITextField] {
@@ -156,22 +241,19 @@ class PersonalDataVC: UIViewController {
             return
         }
         
-        let phoneNumberKit = PhoneNumberKit()
-        let userPhone = UserDefaults.standard.string(forKey: "userPhone")!
-        let phone = try! phoneNumberKit.parse(userPhone)
-        let countryCode = phoneNumberKit.getRegionCode(of: phone)
-        
         let userProfileInfo = UserProfileInfo(lastName: tfLastName.text!,
                                               firstName: tfFirstName.text!,
                                               middleName: tfFathersName.text!,
                                               birthDate: tfBirthDate.text!,
-                                              countryCode: countryCode!,
+                                              countryCode: countryCode,
                                               city: tfCity.text!,
                                               address: tfAddress.text!,
                                               passportNumber: tfPassportNumber.text!,
                                               passportIssueDate: tfPassportIssueDate.text!,
                                               passportAuthority: tfPassportAuthority.text!)
-        print(userProfileInfo.firstName)
+        print(countryCode)
+        UserDefaults.standard.set(countryCode, forKey: "PersonalDataCountryCode")
+        UserDefaults.standard.set(country, forKey: "PersonalDataCountryName")
         
         UserProfileService.standard.postUserInfoRequest(userProfileInfo: userProfileInfo)
         

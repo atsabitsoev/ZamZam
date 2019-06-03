@@ -47,7 +47,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfD-Fu-4pg" customClass="ShadowView" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="18" y="0.0" width="378" height="52"/>
+                                                            <rect key="frame" x="18" y="0.0" width="564" height="52"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clipboard" translatesAutoresizingMaskIntoConstraints="NO" id="BjR-ai-Sj4">
                                                                     <rect key="frame" x="15" y="14" width="24" height="24"/>
@@ -57,13 +57,13 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Персональные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOC-cK-8cH">
-                                                                    <rect key="frame" x="57" y="16" width="150" height="20"/>
+                                                                    <rect key="frame" x="57" y="16.5" width="149.5" height="19.5"/>
                                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="15"/>
                                                                     <color key="textColor" red="0.11764705882352941" green="0.16078431372549018" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="wKU-4v-4js">
-                                                                    <rect key="frame" x="348" y="16" width="20" height="20"/>
+                                                                    <rect key="frame" x="534" y="16" width="20" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="20" id="Wrh-F6-2La"/>
                                                                         <constraint firstAttribute="height" constant="20" id="bDl-g6-bi5"/>
@@ -588,7 +588,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Россия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWA-cw-l43" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="64" y="16.5" width="54.5" height="16"/>
+                                                            <rect key="frame" x="64" y="16.5" width="51" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="16" id="Njf-qk-d12"/>
                                                             </constraints>
@@ -633,7 +633,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куда?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhN-Tp-3C6" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="52" width="103" height="39"/>
+                                <rect key="frame" x="18" y="52" width="95" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="6gb-g8-oWX"/>
                                 </constraints>

@@ -92,6 +92,7 @@
 		ACBC5E1022684E570005C355 /* PayPhoneBillTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E0F22684E570005C355 /* PayPhoneBillTableView.swift */; };
 		ACBC5E13226850400005C355 /* ZamBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E12226850400005C355 /* ZamBill.swift */; };
 		ACBC5E152268590C0005C355 /* PayPhoneTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E142268590C0005C355 /* PayPhoneTFDelegate.swift */; };
+		ACBCC94B22A504F7008DEFCB /* DatePickerTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBCC94A22A504F7008DEFCB /* DatePickerTFDelegate.swift */; };
 		ACBD435F228EA693002D0CF5 /* ZamZamTranferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD435E228EA693002D0CF5 /* ZamZamTranferService.swift */; };
 		ACBD4361228EB23D002D0CF5 /* ZamBillCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD4360228EB23D002D0CF5 /* ZamBillCheckCell.swift */; };
 		ACBF140522670E8C00019545 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF140422670E8C00019545 /* SplashVC.swift */; };
@@ -242,6 +243,7 @@
 		ACBC5E0F22684E570005C355 /* PayPhoneBillTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneBillTableView.swift; sourceTree = "<group>"; };
 		ACBC5E12226850400005C355 /* ZamBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZamBill.swift; sourceTree = "<group>"; };
 		ACBC5E142268590C0005C355 /* PayPhoneTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneTFDelegate.swift; sourceTree = "<group>"; };
+		ACBCC94A22A504F7008DEFCB /* DatePickerTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatePickerTFDelegate.swift; path = /Users/atsamaz/Desktop/IOS/TestTaskZamZam/PersonalData/DatePickerTFDelegate.swift; sourceTree = "<absolute>"; };
 		ACBD435E228EA693002D0CF5 /* ZamZamTranferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZamZamTranferService.swift; sourceTree = "<group>"; };
 		ACBD4360228EB23D002D0CF5 /* ZamBillCheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZamBillCheckCell.swift; sourceTree = "<group>"; };
 		ACBF140422670E8C00019545 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
@@ -625,6 +627,7 @@
 			isa = PBXGroup;
 			children = (
 				AC924261229D358E00299D51 /* PersonalDataVC.swift */,
+				ACBCC94A22A504F7008DEFCB /* DatePickerTFDelegate.swift */,
 			);
 			path = PersonalData;
 			sourceTree = "<group>";
@@ -1200,6 +1203,7 @@
 				AC92424F229D0E2F00299D51 /* ProfileVC.swift in Sources */,
 				5B7DFECE223014C700ECF0D3 /* BillCell.swift in Sources */,
 				AC92425D229D195800299D51 /* ProfileCell.swift in Sources */,
+				ACBCC94B22A504F7008DEFCB /* DatePickerTFDelegate.swift in Sources */,
 				ACFAF770223F8B99008C731B /* SenderCellField.swift in Sources */,
 				ACFAF775223F9B94008C731B /* TFDelegate.swift in Sources */,
 				ACC75896228C08BC0049AB57 /* SumAndCurrencyCell.swift in Sources */,

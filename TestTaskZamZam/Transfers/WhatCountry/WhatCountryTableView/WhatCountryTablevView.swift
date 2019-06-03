@@ -43,6 +43,7 @@ extension WhatCountryVC: UITableViewDelegate, UITableViewDataSource {
         
         if let personalDataVC = self.personalDataVC {
             personalDataVC.country = countries[indexPath.row]
+            personalDataVC.countryCode = countryCodes[indexPath.row]
             personalDataVC.updateButCountry()
             self.navigationController?.popViewController(animated: true)
         }
