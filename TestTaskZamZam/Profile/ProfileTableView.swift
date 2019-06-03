@@ -34,5 +34,18 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
         return UIView()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+        case 0:
+            
+            UserProfileService.standard.getUserInfoRequest()
+            self.startLoading()
+            
+        default:
+            print("what")
+        }
+    }
+    
     
 }

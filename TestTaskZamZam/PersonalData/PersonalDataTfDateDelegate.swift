@@ -13,7 +13,14 @@ extension PersonalDataVC: UITextFieldDelegate {
     
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        showDatePicker(textField as! MaterialTextField)
+        if textField.tag == 1 {
+            showDatePicker(textField as! MaterialTextField)
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
 }

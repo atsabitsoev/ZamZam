@@ -57,6 +57,15 @@ class PersonalDataVC: UIViewController {
         
         tfBirthDate.delegate = self
         tfPassportIssueDate.delegate = self
+        tfBirthDate.tag = 1
+        tfPassportIssueDate.tag = 1
+        tfFirstName.delegate = self
+        tfLastName.delegate = self
+        tfFathersName.delegate = self
+        tfCity.delegate = self
+        tfAddress.delegate = self
+        tfPassportNumber.delegate = self
+        tfPassportAuthority.delegate = self
     }
     
     private func configureScrollView() {
@@ -110,26 +119,10 @@ class PersonalDataVC: UIViewController {
     
     func showDatePicker(_ textField: MaterialTextField) {
         
-        //1. Create the alert controller.
-        let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
-        
         //2. Add the text field. You can configure it however you need.
-        alert.addTextField { (textField) in
             self.doDatePicker()
             textField.inputView = self.datePicker
             textField.inputAccessoryView = self.toolBar
-        }
-        
-        // 3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
-            if textField?.text != ""{
-                print("Text field: \(textField?.text!)")
-            }
-        }))
-        
-        // 4. Present the alert.
-        self.present(alert, animated: true, completion: nil)
         
     }
     
@@ -147,9 +140,9 @@ class PersonalDataVC: UIViewController {
     toolBar.sizeToFit()
     
     // Adding Button ToolBar
-    let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneClick))
+    let doneButton = UIBarButtonItem(title: "Выбрать", style: .plain, target: self, action: #selector(doneClick))
     let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-    let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelClick))
+    let cancelButton = UIBarButtonItem(title: "Отмена", style: .plain, target: self, action: #selector(cancelClick))
     toolBar.setItems([cancelButton, spaceButton, doneButton], animated: true)
     toolBar.isUserInteractionEnabled = true
     
@@ -158,17 +151,28 @@ class PersonalDataVC: UIViewController {
     }
     
     @objc func doneClick() {
+        
         let dateFormatter1 = DateFormatter()
-        dateFormatter1.dateStyle = .medium
-        dateFormatter1.timeStyle = .none
+        dateFormatter1.dateFormat = "dd/MM/yyyy"
+        
+        let dateString = dateFormatter1.string(from: datePicker.date)
+        if tfBirthDate.isEditing {
+            tfBirthDate.text = dateString
+        } else if tfPassportIssueDate.isEditing {
+            tfPassportIssueDate.text = dateString
+        }
+        print(dateString)
         
         datePicker.isHidden = true
         self.toolBar.isHidden = true
+        self.view.endEditing(true)
     }
     
     @objc func cancelClick() {
+        
         datePicker.isHidden = true
         self.toolBar.isHidden = true
+        self.view.endEditing(true)
     }
     
     private func setUserProfileInfo() {
@@ -241,6 +245,8 @@ class PersonalDataVC: UIViewController {
             return
         }
         
+        
+        
         let userProfileInfo = UserProfileInfo(lastName: tfLastName.text!,
                                               firstName: tfFirstName.text!,
                                               middleName: tfFathersName.text!,
@@ -254,6 +260,8 @@ class PersonalDataVC: UIViewController {
         print(countryCode)
         UserDefaults.standard.set(countryCode, forKey: "PersonalDataCountryCode")
         UserDefaults.standard.set(country, forKey: "PersonalDataCountryName")
+        UserDefaults.standard.set(tfFirstName.text, forKey: "userFirstName")
+        UserDefaults.standard.set(tfLastName.text, forKey: "userLastName")
         
         UserProfileService.standard.postUserInfoRequest(userProfileInfo: userProfileInfo)
         

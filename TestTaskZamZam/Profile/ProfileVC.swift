@@ -17,6 +17,7 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var labName: UILabel!
     @IBOutlet weak var labPhone: UILabel!
     @IBOutlet weak var viewBigWhite: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
 
     override func viewDidLoad() {
@@ -24,7 +25,7 @@ class ProfileVC: UIViewController {
         
         addObservers()
         
-        UserProfileService.standard.getUserInfoRequest()
+        setUserInfo()
     }
     
     override func viewWillLayoutSubviews() {
@@ -35,17 +36,18 @@ class ProfileVC: UIViewController {
     
     private func addObservers() {
         
-        NotificationCenter.default.addObserver(self, selector: #selector(setUserInfo), name: NSNotification.Name(rawValue: NotificationNames.userProfileGot.rawValue), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(userProfileGot), name: NSNotification.Name(rawValue: NotificationNames.userProfileGot.rawValue), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showSessionLimitAlert), name: NSNotification.Name(rawValue: NotificationNames.userAccessTokenIsOutOfDate.rawValue), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showErrorAlert), name: NSNotification.Name(rawValue: NotificationNames.userProfileGettingFailed.rawValue), object: nil)
     }
     
     @objc private func setUserInfo() {
         
-        let userProfileInfo = UserProfileService.standard.userProfileInfo
         let phoneFormatter = PartialFormatter()
         
-        var nameTitle = "\(userProfileInfo!.firstName) \(userProfileInfo!.lastName)"
+        let firstName = UserDefaults.standard.string(forKey: "userFirstName") ?? ""
+        let lastName = UserDefaults.standard.string(forKey: "userLastName") ?? ""
+        let nameTitle = "\(firstName) \(lastName)"
         
         let userPhone = UserDefaults.standard.string(forKey: "userPhone")!
         let parsedPhone = phoneFormatter.formatPartial(userPhone)
@@ -58,13 +60,22 @@ class ProfileVC: UIViewController {
             return
         }
         
-        let firstNameInitial = userProfileInfo?.firstName.first?.uppercased()
-        let lastNameInitial = userProfileInfo?.lastName.first?.uppercased()
+        let firstNameInitial = firstName.first?.uppercased()
+        let lastNameInitial = lastName.first?.uppercased()
         let initialsString = "\(firstNameInitial!)\(lastNameInitial!)"
         
         labName.text = nameTitle
         labPhone.text = parsedPhone
         labInitials.text = initialsString
+    }
+    
+    @objc private func userProfileGot() {
+        
+        stopLoading()
+        
+        let personalDataVC = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "PersonalDataVC")
+        self.navigationController?.show(personalDataVC, sender: nil)
+        
     }
     
     @objc private func showSessionLimitAlert() {
@@ -83,7 +94,12 @@ class ProfileVC: UIViewController {
     
     @objc private func showErrorAlert() {
         
+        stopLoading()
         
+        let alert = UIAlertController(title: "Ошибка", message: "Произошла неизвестная ошибка, попробуйте еще раз", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
     
@@ -96,6 +112,17 @@ class ProfileVC: UIViewController {
         self.present(pinVC,
                      animated: true,
                      completion: nil)
+    }
+    
+    
+    func startLoading() {
+        
+        activityIndicator.startAnimating()
+    }
+    
+    private func stopLoading() {
+        
+        activityIndicator.stopAnimating()
     }
 
 }

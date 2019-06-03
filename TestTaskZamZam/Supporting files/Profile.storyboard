@@ -105,9 +105,6 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <connections>
-                                                    <segue destination="Dt2-n2-TcK" kind="show" id="cCg-HX-cr4"/>
-                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
@@ -179,11 +176,17 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="24r-Op-K9O">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="oI5-aw-C6R" secondAttribute="bottom" id="AZc-29-thE"/>
+                            <constraint firstItem="24r-Op-K9O" firstAttribute="centerY" secondItem="msc-lq-Sts" secondAttribute="centerY" id="G3q-6k-OEV"/>
                             <constraint firstItem="oI5-aw-C6R" firstAttribute="leading" secondItem="msc-lq-Sts" secondAttribute="leading" id="GRW-8k-6A6"/>
+                            <constraint firstItem="24r-Op-K9O" firstAttribute="centerX" secondItem="msc-lq-Sts" secondAttribute="centerX" id="GUp-I1-MtQ"/>
                             <constraint firstItem="7GQ-Qx-N5w" firstAttribute="bottom" secondItem="cQP-ka-wf4" secondAttribute="bottom" constant="35" id="QbB-LA-hu3"/>
                             <constraint firstItem="oI5-aw-C6R" firstAttribute="top" secondItem="7GQ-Qx-N5w" secondAttribute="top" id="XAH-k6-0fQ"/>
                             <constraint firstAttribute="trailing" secondItem="oI5-aw-C6R" secondAttribute="trailing" id="oMm-Uh-GeU"/>
@@ -192,6 +195,7 @@
                         <viewLayoutGuide key="safeArea" id="7GQ-Qx-N5w"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="24r-Op-K9O" id="MSG-Oc-X3N"/>
                         <outlet property="labInitials" destination="G2c-JX-IvZ" id="0Rf-iL-8yM"/>
                         <outlet property="labName" destination="DYb-t4-Tew" id="fXH-cq-CgA"/>
                         <outlet property="labPhone" destination="aS4-kp-KCP" id="bEJ-BN-0s6"/>
@@ -206,7 +210,7 @@
         <!--Personal DataVC-->
         <scene sceneID="pKG-hK-s3E">
             <objects>
-                <viewController id="Dt2-n2-TcK" customClass="PersonalDataVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonalDataVC" id="Dt2-n2-TcK" customClass="PersonalDataVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cHI-lV-GvZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
