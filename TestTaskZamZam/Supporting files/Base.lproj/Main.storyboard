@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IDH-rR-tYB">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IDH-rR-tYB">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +22,7 @@
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="MainVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +153,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="168" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipg-BP-rjZ">
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipg-BP-rjZ">
                                                             <rect key="frame" x="8" y="10" width="40" height="40"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-AY-FzO">
@@ -172,7 +170,7 @@
                                                                 <constraint firstItem="NLI-AY-FzO" firstAttribute="leading" secondItem="ipg-BP-rjZ" secondAttribute="leading" constant="8" id="omR-Bt-cBA"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Виртуальная карта" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-Ol-mch">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Виртуальная карта" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-Ol-mch">
                                                             <rect key="frame" x="56" y="17" width="104" height="26"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="13"/>
                                                             <nil key="textColor"/>
@@ -214,7 +212,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <view key="tableFooterView" contentMode="scaleToFill" id="Vva-0r-YMC">
-                                                    <rect key="frame" x="0.0" y="108" width="375" height="0.0"/>
+                                                    <rect key="frame" x="0.0" y="136" width="375" height="0.0"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
@@ -357,7 +355,7 @@
         <!--Payment NewVC-->
         <scene sceneID="yrm-H3-xBN">
             <objects>
-                <viewController storyboardIdentifier="PaymentNewVC" id="uB6-u2-q4H" customClass="PaymentNewVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaymentNewVC" modalPresentationStyle="fullScreen" id="uB6-u2-q4H" customClass="PaymentNewVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="muZ-k9-GqK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -370,7 +368,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="fVf-HS-5MH">
-                                            <rect key="frame" x="0.0" y="434" width="375" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="462" width="375" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -546,15 +544,15 @@
                                             <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SumAndCurrencyCell" rowHeight="80" id="pgC-7T-sEp" customClass="SumAndCurrencyCell" customModule="TestTaskZamZam" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="188" width="375" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pgC-7T-sEp" id="k8v-ea-9rW">
+                                                <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pgC-7T-sEp" id="k8v-ea-9rW">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZR-gA-bri">
-                                                            <rect key="frame" x="18.333333333333343" y="16" width="249.00000000000003" height="48"/>
+                                                            <rect key="frame" x="17.999999999999986" y="16.333333333333332" width="246.66666666666663" height="47.333333333333343"/>
                                                             <subviews>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1f4-2L-SbR">
-                                                                    <rect key="frame" x="11" y="3" width="230" height="45"/>
+                                                                    <rect key="frame" x="11" y="3" width="227.66666666666666" height="44.333333333333336"/>
                                                                     <nil key="textColor"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" textContentType="tel"/>
@@ -575,10 +573,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHm-NJ-GCm">
-                                                            <rect key="frame" x="275.33333333333337" y="16" width="85" height="48"/>
+                                                            <rect key="frame" x="272.66666666666669" y="16.333333333333332" width="84.333333333333314" height="47.333333333333343"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXl-hN-Ax4" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                    <rect key="frame" x="8" y="16" width="69" height="16"/>
+                                                                    <rect key="frame" x="8" y="15.666666666666668" width="68.333333333333329" height="16"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                     <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -593,7 +591,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Сумма к получению " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eem-Hh-haU" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29.333333333333336" y="12" width="84.666666666666657" height="9"/>
+                                                            <rect key="frame" x="29.000000000000007" y="12.333333333333336" width="84.666666666666686" height="9"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="9" id="qc2-U8-kep"/>
@@ -877,7 +875,7 @@
         <!--TransfersVC-->
         <scene sceneID="B1I-0b-vjj">
             <objects>
-                <viewController storyboardIdentifier="transferVC" id="Fez-aQ-tnl" customClass="TransfersVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="transferVC" modalPresentationStyle="fullScreen" id="Fez-aQ-tnl" customClass="TransfersVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WHP-X4-b6I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -905,7 +903,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="519"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="Oa7-Tm-cWL">
-                                            <rect key="frame" x="0.0" y="215" width="375" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="243" width="375" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -1172,7 +1170,7 @@
         <!--What CountryVC-->
         <scene sceneID="oYu-fL-IFe">
             <objects>
-                <viewController storyboardIdentifier="whatCountryVC" id="9wf-ex-grq" customClass="WhatCountryVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="whatCountryVC" modalPresentationStyle="fullScreen" id="9wf-ex-grq" customClass="WhatCountryVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TzR-Lb-zwh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1194,10 +1192,10 @@
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYk-bI-6b8">
-                                <rect key="frame" x="0.0" y="140" width="375" height="672"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="668"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="49" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3GI-NG-veB">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="whatCountryCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="whatCountryCell" rowHeight="49" id="U0D-Ae-93P" customClass="WhatCountryCell" customModule="TestTaskZamZam" customModuleProvider="target">
@@ -1263,7 +1261,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск, например, Россия" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sbm-Tr-Q18" customClass="WhatCountryTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="99" width="339" height="30"/>
+                                <rect key="frame" x="18" y="99" width="339" height="34"/>
                                 <color key="backgroundColor" red="0.36470588235294116" green="0.46274509803921571" blue="0.95294117647058818" alpha="0.30331205985915494" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="0.90366417253521125" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
@@ -1343,7 +1341,7 @@
         <!--Sum And CurrencyVC-->
         <scene sceneID="XNH-wt-bHd">
             <objects>
-                <viewController id="L9a-1p-zrJ" customClass="SumAndCurrencyVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="L9a-1p-zrJ" customClass="SumAndCurrencyVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VMd-L6-Lw0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1735,7 +1733,7 @@
         <!--RecipientVC-->
         <scene sceneID="Dre-Nw-jTZ">
             <objects>
-                <viewController id="UhQ-pb-gYp" customClass="RecipientVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="UhQ-pb-gYp" customClass="RecipientVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LwA-Se-p4k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1795,7 +1793,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="18" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="J4E-E9-UeG">
-                                            <rect key="frame" x="0.0" y="108" width="375" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="136" width="375" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -1804,7 +1802,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="375" height="40"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vdb-JV-8KM" id="KNE-nn-ceb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="39.666666666666664"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+988 32-123-4567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ag4-d1-yp8" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
@@ -1837,11 +1835,11 @@
                                                 <rect key="frame" x="0.0" y="68" width="375" height="40"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kxx-EW-H2T" id="uqP-vF-nyl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="39.666666666666664"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предыдущие переводы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM9-QZ-Ijj">
-                                                            <rect key="frame" x="18" y="12.666666666666664" width="149.66666666666666" height="14"/>
+                                                            <rect key="frame" x="18" y="13" width="149.66666666666666" height="14"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
@@ -1981,7 +1979,7 @@
         <!--SenderVC-->
         <scene sceneID="ZPl-Xg-3LG">
             <objects>
-                <viewController id="UHQ-Nd-GPC" customClass="SenderVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="UHQ-Nd-GPC" customClass="SenderVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j9g-4e-f9S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2003,7 +2001,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SenderCellPhoneNumber" rowHeight="58" id="9HK-aM-kEf" customClass="SenderCellPhoneNumber" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="58"/>
+                                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="58"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9HK-aM-kEf" id="NpL-Zm-QIV">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
@@ -2063,7 +2061,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SenderCellField" rowHeight="58" id="tK1-ye-wJZ" customClass="SenderCellField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="113.33333333333334" width="375" height="58"/>
+                                                <rect key="frame" x="0.0" y="113.33333206176758" width="375" height="58"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tK1-ye-wJZ" id="HN9-VO-94Y">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
@@ -2112,7 +2110,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SenderCellCountry" rowHeight="58" id="m2T-EN-xmm" customClass="SenderCellCountry" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="171.33333333333334" width="375" height="58"/>
+                                                <rect key="frame" x="0.0" y="171.33333206176758" width="375" height="58"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m2T-EN-xmm" id="Z7j-Kv-fyY">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
@@ -2283,7 +2281,7 @@
         <!--PaymentVC-->
         <scene sceneID="0GP-pK-61f">
             <objects>
-                <viewController storyboardIdentifier="PaymentVC" id="h8W-WC-n0u" customClass="PaymentVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaymentVC" modalPresentationStyle="fullScreen" id="h8W-WC-n0u" customClass="PaymentVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SFi-d5-wgz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2307,7 +2305,7 @@
                                         <inset key="separatorInset" minX="21" minY="0.0" maxX="17" maxY="0.0"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ZamBillCell" rowHeight="71" id="IRf-nA-YdO" customClass="ZamBillCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="71"/>
+                                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="71"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IRf-nA-YdO" id="31C-sR-K9O">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
@@ -2389,7 +2387,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardCell" rowHeight="71" id="RVD-Nh-DiW" customClass="CardCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="126.33333333333334" width="375" height="71"/>
+                                                <rect key="frame" x="0.0" y="126.33333206176758" width="375" height="71"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RVD-Nh-DiW" id="9CT-wl-czK">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
@@ -2461,7 +2459,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddNewCardCell" rowHeight="71" id="nuA-8o-3d4" customClass="AddNewCardCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="197.33333333333334" width="375" height="71.000000000000028"/>
+                                                <rect key="frame" x="0.0" y="197.33333206176758" width="375" height="71"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nuA-8o-3d4" id="VSo-9Z-gUX">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
@@ -2532,7 +2530,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardDataCell" rowHeight="205" id="aDB-IM-F11" customClass="CardDataCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="268.33333333333337" width="375" height="205"/>
+                                                <rect key="frame" x="0.0" y="268.33333206176758" width="375" height="205"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aDB-IM-F11" id="qz9-o3-pBf">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
@@ -2711,7 +2709,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TotalInfoCell" rowHeight="150" id="k2y-Mo-lhQ" customClass="TotalInfoCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="473.33333333333337" width="375" height="150"/>
+                                                <rect key="frame" x="0.0" y="473.33333206176758" width="375" height="150"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k2y-Mo-lhQ" id="2FZ-0F-jOC">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
@@ -2934,7 +2932,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="DOY-5L-atg">
             <objects>
-                <tabBarController storyboardIdentifier="HomeTBController" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="IDH-rR-tYB" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeTBController" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="IDH-rR-tYB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="vOB-kK-9gi">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="49"/>
@@ -2978,7 +2976,7 @@
         <!--Главная-->
         <scene sceneID="fVv-IS-oEb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iZW-OY-6MV" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="iZW-OY-6MV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Главная" image="briefcaseCopy" id="0YC-ae-yjf">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
@@ -3029,7 +3027,7 @@
         <!--Пункты-->
         <scene sceneID="2Hz-Ro-OCu">
             <objects>
-                <viewController id="SFG-GI-LAO" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="SFG-GI-LAO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m1c-jX-nhh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3047,7 +3045,7 @@
         <!--События-->
         <scene sceneID="nrX-5R-Dzd">
             <objects>
-                <navigationController id="t9K-lO-6ld" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="t9K-lO-6ld" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="События" image="transaction" id="r6a-eq-oTr"/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="mtp-Ge-cMH">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r1g-Zp-8nU">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r1g-Zp-8nU">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +19,7 @@
         <!--ReplenishVC-->
         <scene sceneID="ZdN-gs-u97">
             <objects>
-                <viewController id="o8e-BX-jGZ" customClass="ReplenishVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="o8e-BX-jGZ" customClass="ReplenishVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gaN-wQ-gR8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +40,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="476"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="Yrt-AW-3Wx">
-                                            <rect key="frame" x="0.0" y="124" width="375" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="152" width="375" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -315,7 +313,7 @@
         <!--Replen Sum And CurrencyVC-->
         <scene sceneID="Dv1-wr-Y0p">
             <objects>
-                <viewController storyboardIdentifier="ReplenSumAndCurrencyVC" id="W2x-ug-KvM" customClass="ReplenSumAndCurrencyVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReplenSumAndCurrencyVC" modalPresentationStyle="fullScreen" id="W2x-ug-KvM" customClass="ReplenSumAndCurrencyVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vj5-bh-d0i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -580,7 +578,7 @@
         <!--Replen Choose CardVC-->
         <scene sceneID="Fah-4H-7QY">
             <objects>
-                <viewController id="rBv-F8-2la" customClass="ReplenChooseCardVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="rBv-F8-2la" customClass="ReplenChooseCardVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YQA-M4-n7i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -601,7 +599,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="558"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="MRo-9f-N7X">
-                                            <rect key="frame" x="0.0" y="451" width="375" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="479" width="375" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -1028,7 +1026,7 @@
         <!--ReplenSMSVC-->
         <scene sceneID="ux3-t4-vud">
             <objects>
-                <viewController id="R4x-08-AJE" customClass="ReplenSMSVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="R4x-08-AJE" customClass="ReplenSMSVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKC-xR-Qk9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1207,7 +1205,7 @@
         <!--Navigation Controller-->
         <scene sceneID="9Aa-Hy-m8B">
             <objects>
-                <navigationController storyboardIdentifier="ReplenishNav" automaticallyAdjustsScrollViewInsets="NO" id="r1g-Zp-8nU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ReplenishNav" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="r1g-Zp-8nU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="SOV-ps-aJW">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

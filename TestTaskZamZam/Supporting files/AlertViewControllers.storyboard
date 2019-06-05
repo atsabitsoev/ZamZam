@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U0Y-r4-D6S">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U0Y-r4-D6S">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +19,7 @@
         <!--Something WrongVC-->
         <scene sceneID="CDO-U9-4us">
             <objects>
-                <viewController id="U0Y-r4-D6S" customClass="SomethingWrongVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="U0Y-r4-D6S" customClass="SomethingWrongVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PRA-vw-QS1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +114,7 @@
         <!--Transfer GoneVC-->
         <scene sceneID="sWB-MS-AvD">
             <objects>
-                <viewController storyboardIdentifier="TransferGoneVC" id="IOW-Vb-ZKc" customClass="TransferGoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransferGoneVC" modalPresentationStyle="fullScreen" id="IOW-Vb-ZKc" customClass="TransferGoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yFa-Bq-2es">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,7 +311,7 @@
         <!--Replenish GoneVC-->
         <scene sceneID="nC7-99-pMb">
             <objects>
-                <viewController storyboardIdentifier="ReplenishGoneVC" id="JRT-h9-1aC" customClass="ReplenishGoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReplenishGoneVC" modalPresentationStyle="fullScreen" id="JRT-h9-1aC" customClass="ReplenishGoneVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qve-Ve-UrV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
