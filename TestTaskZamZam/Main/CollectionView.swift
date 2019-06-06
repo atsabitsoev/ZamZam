@@ -11,7 +11,7 @@ import UIKit
 extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -25,10 +25,10 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             
             cell1.viewImage.backgroundColor = #colorLiteral(red: 0.337254902, green: 0.7529411765, blue: 0.9921568627, alpha: 1)
             let layer = cell1.viewImage.layer
-            layer.cornerRadius = 20
+            layer.cornerRadius = 16
             layer.shadowRadius = 12
             layer.shadowColor = #colorLiteral(red: 0.337254902, green: 0.7529411765, blue: 0.9921568627, alpha: 1)
-            layer.shadowOpacity = 0.4
+            layer.shadowOpacity = 0.5
             layer.shadowOffset = CGSize(width: 0, height: 4)
             cell1.image.image = UIImage(named: "arrowUpRight")
             
@@ -36,19 +36,32 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             
         case 1:
             
-            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
+            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem1", for: indexPath) as! CollectionViewCell1
             
             cell1.viewImage.backgroundColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
             let layer = cell1.viewImage.layer
-            layer.cornerRadius = 20
+            layer.cornerRadius = 16
             layer.shadowRadius = 12
             layer.shadowColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
-            layer.shadowOpacity = 0.4
+            layer.shadowOpacity = 0.5
             layer.shadowOffset = CGSize(width: 0, height: 4)
             cell1.image.image = UIImage(named: "arrowDownLeft")
-            cell1.labTitle.text = "Пополнить"
             
             cell = cell1
+//
+//            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
+//
+//            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
+//            let layer = cell1.viewImage.layer
+//            layer.cornerRadius = 16
+//            layer.shadowRadius = 12
+//            layer.shadowColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
+//            layer.shadowOpacity = 0.4
+//            layer.shadowOffset = CGSize(width: 0, height: 4)
+//            cell1.image.image = UIImage(named: "arrowDownLeft")
+//            cell1.labTitle.text = "Пополнить"
+//
+//            cell = cell1
             
 //            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
 //
@@ -63,21 +76,34 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 //
 //            cell = cell1
             
-        case 2:
+          case 2:
             
-            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
+            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem1", for: indexPath) as! CollectionViewCell1
             
-            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
+            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.9843137255, green: 0.8117647059, blue: 0.5294117647, alpha: 1)
             let layer = cell1.viewImage.layer
-            layer.cornerRadius = 20
+            layer.cornerRadius = 16
             layer.shadowRadius = 12
-            layer.shadowColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
-            layer.shadowOpacity = 0.4
+            layer.shadowColor = #colorLiteral(red: 0.9843137255, green: 0.8117647059, blue: 0.5294117647, alpha: 1)
+            layer.shadowOpacity = 0.5
             layer.shadowOffset = CGSize(width: 0, height: 4)
-            cell1.image.image = UIImage(named: "arrowDownLeft")
-            cell1.labTitle.text = "Пополнить"
+            cell1.image.image = UIImage(named: "cornerUpRight")?.withRenderingMode(.alwaysTemplate)
             
             cell = cell1
+//
+//            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem2", for: indexPath) as! CollectionViewCell2
+//
+//            cell1.viewImage.backgroundColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
+//            let layer = cell1.viewImage.layer
+//            layer.cornerRadius = 20
+//            layer.shadowRadius = 12
+//            layer.shadowColor = #colorLiteral(red: 0.5019607843, green: 0.9215686275, blue: 0.4549019608, alpha: 1)
+//            layer.shadowOpacity = 0.4
+//            layer.shadowOffset = CGSize(width: 0, height: 4)
+//            cell1.image.image = UIImage(named: "arrowDownLeft")
+//            cell1.labTitle.text = "Пополнить"
+//
+//            cell = cell1
             
         case 3:
             
@@ -139,11 +165,16 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = (UIScreen.main.bounds.width - 40)/2
-        let height = (collectionView.bounds.height - 4) // /2
-        let size = CGSize(width: width, height: height)
+            let width = 100
+            let height = 76
+            let size = CGSize(width: width, height: height)
+            return size
         
-        return size
+//        let width = (UIScreen.main.bounds.width - 40)/2
+//        let height = (collectionView.bounds.height - 4) // /2
+//        let size = CGSize(width: width, height: height)
+        
+//        return size
     }
     
 }

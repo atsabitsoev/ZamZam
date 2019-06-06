@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +21,7 @@
         <!--HistoryVC-->
         <scene sceneID="5LX-kh-YYU">
             <objects>
-                <viewController storyboardIdentifier="HistoryVC" modalPresentationStyle="fullScreen" id="4xj-MD-gqo" customClass="HistoryVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryVC" id="4xj-MD-gqo" customClass="HistoryVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lFK-AF-Zse">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +35,7 @@
                                         <color key="separatorColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="19" minY="0.0" maxX="19" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="Bd0-mf-ffM">
-                                            <rect key="frame" x="0.0" y="176" width="414" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="148" width="414" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -42,11 +44,11 @@
                                                 <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dEs-W1-ew9" id="FNe-c7-bzX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перевод со счета ZAM RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cA-U8-xc0">
-                                                            <rect key="frame" x="19" y="10" width="119" height="13"/>
+                                                            <rect key="frame" x="53" y="10" width="119" height="13"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="13" id="RIL-Mh-vlh"/>
                                                             </constraints>
@@ -55,25 +57,11 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Алексей Зайцев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLW-h4-8VG">
-                                                            <rect key="frame" x="19" y="27" width="111.5" height="24"/>
+                                                            <rect key="frame" x="53" y="27" width="111.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5x-eX-im1" customClass="Zam2ZamLogosView" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="209" y="17" width="36" height="26"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="j5x-eX-im1" secondAttribute="height" multiplier="7:5" id="Qjk-uF-mQK"/>
-                                                            </constraints>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="color" keyPath="thisUserColor">
-                                                                    <color key="value" red="0.17254901960784313" green="0.64313725490196072" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="color" keyPath="anotherUserColor">
-                                                                    <color key="value" red="0.50196078431372548" green="0.92156862745098034" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAU-rd-qgK">
                                                             <rect key="frame" x="372" y="26.5" width="23" height="12"/>
                                                             <constraints>
@@ -92,23 +80,34 @@
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5x-eX-im1" customClass="Zam2ZamLogosView" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                            <rect key="frame" x="19" y="17" width="26" height="26"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="26" id="g57-fz-4Ee"/>
+                                                                <constraint firstAttribute="height" constant="26" id="waT-MH-vDT"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="thisUserColor">
+                                                                    <color key="value" red="0.17254901960784313" green="0.64313725490196072" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="anotherUserColor">
+                                                                    <color key="value" red="0.50196078431372548" green="0.92156862745098034" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="HYs-oX-Rlp" firstAttribute="centerY" secondItem="FNe-c7-bzX" secondAttribute="centerY" id="2m1-dO-zSn"/>
-                                                        <constraint firstItem="HYs-oX-Rlp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="j5x-eX-im1" secondAttribute="trailing" constant="8" id="7WI-vn-4Dh"/>
                                                         <constraint firstAttribute="trailing" secondItem="cAU-rd-qgK" secondAttribute="trailing" constant="19" id="DOc-A1-hkn"/>
-                                                        <constraint firstItem="j5x-eX-im1" firstAttribute="centerY" secondItem="FNe-c7-bzX" secondAttribute="centerY" id="NUX-5E-2Hf"/>
+                                                        <constraint firstItem="j5x-eX-im1" firstAttribute="leading" secondItem="FNe-c7-bzX" secondAttribute="leading" constant="19" id="Lsf-DC-RGb"/>
                                                         <constraint firstItem="cAU-rd-qgK" firstAttribute="bottom" secondItem="HYs-oX-Rlp" secondAttribute="bottom" id="P0J-fr-WJO"/>
-                                                        <constraint firstItem="j5x-eX-im1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZLW-h4-8VG" secondAttribute="trailing" constant="8" id="T7d-gR-obI"/>
                                                         <constraint firstItem="cAU-rd-qgK" firstAttribute="leading" secondItem="HYs-oX-Rlp" secondAttribute="trailing" constant="1" id="WU9-RH-trB"/>
                                                         <constraint firstAttribute="bottom" secondItem="ZLW-h4-8VG" secondAttribute="bottom" constant="9" id="cUU-nB-ajN"/>
-                                                        <constraint firstItem="j5x-eX-im1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7cA-U8-xc0" secondAttribute="trailing" constant="8" id="e9k-dJ-Xq6"/>
-                                                        <constraint firstItem="ZLW-h4-8VG" firstAttribute="leading" secondItem="FNe-c7-bzX" secondAttribute="leading" constant="19" id="iVo-jx-MtL"/>
+                                                        <constraint firstItem="ZLW-h4-8VG" firstAttribute="leading" secondItem="j5x-eX-im1" secondAttribute="trailing" constant="8" id="eHU-9z-ZEm"/>
                                                         <constraint firstItem="7cA-U8-xc0" firstAttribute="top" secondItem="FNe-c7-bzX" secondAttribute="top" constant="10" id="kng-T6-izd"/>
-                                                        <constraint firstItem="j5x-eX-im1" firstAttribute="centerX" secondItem="FNe-c7-bzX" secondAttribute="centerX" constant="20" id="lna-xU-Ua5"/>
                                                         <constraint firstItem="ZLW-h4-8VG" firstAttribute="top" secondItem="7cA-U8-xc0" secondAttribute="bottom" constant="4" id="p2A-7M-hb0"/>
-                                                        <constraint firstAttribute="bottom" secondItem="j5x-eX-im1" secondAttribute="bottom" constant="17" id="y24-Fs-1IB"/>
-                                                        <constraint firstItem="7cA-U8-xc0" firstAttribute="leading" secondItem="FNe-c7-bzX" secondAttribute="leading" constant="19" id="zcF-o6-fmr"/>
+                                                        <constraint firstItem="7cA-U8-xc0" firstAttribute="leading" secondItem="j5x-eX-im1" secondAttribute="trailing" constant="8" id="spo-mY-KOo"/>
+                                                        <constraint firstItem="j5x-eX-im1" firstAttribute="centerY" secondItem="FNe-c7-bzX" secondAttribute="centerY" id="zCW-56-Yfk"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -123,7 +122,7 @@
                                                 <rect key="frame" x="0.0" y="88" width="414" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rRW-3k-XuN" id="YPY-3w-al9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-Zx-VO3">

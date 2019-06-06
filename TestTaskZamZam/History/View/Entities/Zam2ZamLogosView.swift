@@ -63,7 +63,7 @@ class Zam2ZamLogosView: UIView {
     private func addSubviews() {
         
         addSubview(viewBack)
-        addSubview(viewFront)
+       // addSubview(viewFront)
         viewBack.addSubview(imageZamLogo1)
         viewFront.addSubview(imageZamLogo2)
     }
@@ -90,7 +90,7 @@ class Zam2ZamLogosView: UIView {
                                 y: 0,
                                 width: frame.height,
                                 height: frame.height)
-        viewFront.frame = CGRect(x: -frame.height + frame.width,
+        viewFront.frame = CGRect(x: frame.width - frame.height,
                                  y: 0,
                                  width: frame.height,
                                  height: frame.height)

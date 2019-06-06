@@ -12,10 +12,20 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return zamBills?.count ?? 0
+        
+        let billsCount = zamBills?.count ?? 0
+        
+        return billsCount + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row == zamBills?.count ?? 0 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "tableCollectionCell")!
+            return cell
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! BillCell
         let bill = zamBills![indexPath.row]
         
@@ -24,6 +34,15 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         cell.labSum.text = "\(bill.sum.formattedWithSeparator) \(bill.currency.symbol)"
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == zamBills?.count ?? 0 {
+            
+            return 120
+        } else {
+            return 80
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
