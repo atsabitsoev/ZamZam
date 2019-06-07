@@ -46,6 +46,8 @@
 		AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56756D223BE652001BBE66 /* SomethingWrongVC.swift */; };
 		AC567570223BEF0F001BBE66 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56756F223BEF0F001BBE66 /* UIColor+Additions.swift */; };
 		AC57896B22AA4609002043F8 /* CurrencySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57896A22AA4609002043F8 /* CurrencySelectView.swift */; };
+		AC57896D22AA856F002043F8 /* CardCellNewPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57896C22AA856F002043F8 /* CardCellNewPayment.swift */; };
+		AC57897222AA9F1D002043F8 /* PaymentNewTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57897122AA9F1D002043F8 /* PaymentNewTFDelegate.swift */; };
 		AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA1682239353700EDA066 /* TransfersVC.swift */; };
 		AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */; };
 		AC5EA173223940C900EDA066 /* TransCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5EA172223940C900EDA066 /* TransCell.swift */; };
@@ -198,6 +200,8 @@
 		AC56756D223BE652001BBE66 /* SomethingWrongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingWrongVC.swift; sourceTree = "<group>"; };
 		AC56756F223BEF0F001BBE66 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Additions.swift"; path = "TestTaskZamZam/UIColor+Additions.swift"; sourceTree = SOURCE_ROOT; };
 		AC57896A22AA4609002043F8 /* CurrencySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectView.swift; sourceTree = "<group>"; };
+		AC57896C22AA856F002043F8 /* CardCellNewPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellNewPayment.swift; sourceTree = "<group>"; };
+		AC57897122AA9F1D002043F8 /* PaymentNewTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentNewTFDelegate.swift; sourceTree = "<group>"; };
 		AC5EA1682239353700EDA066 /* TransfersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersVC.swift; sourceTree = "<group>"; };
 		AC5EA16F22393F1D00EDA066 /* TransfersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersTableView.swift; sourceTree = "<group>"; };
 		AC5EA172223940C900EDA066 /* TransCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransCell.swift; sourceTree = "<group>"; };
@@ -835,6 +839,7 @@
 			children = (
 				ACC7588D228BEE250049AB57 /* PaymentNewVC.swift */,
 				ACC75893228BF32F0049AB57 /* PaymentNewTableVIew.swift */,
+				AC57897122AA9F1D002043F8 /* PaymentNewTFDelegate.swift */,
 			);
 			path = PaymentNew;
 			sourceTree = "<group>";
@@ -975,6 +980,7 @@
 				ACFBAC3D2240FB5D001D9D94 /* CardCell.swift */,
 				ACFBAC3F2240FB6B001D9D94 /* CardDataCell.swift */,
 				AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */,
+				AC57896C22AA856F002043F8 /* CardCellNewPayment.swift */,
 			);
 			name = PaymentCells;
 			path = "/Users/atsamaz/Desktop/IOS/TestTaskZamZam/Entities + Services/PaymentCells";
@@ -1197,6 +1203,7 @@
 				AC5EA173223940C900EDA066 /* TransCell.swift in Sources */,
 				ACFC9B7D228D3CE2009F5798 /* GetUserAccountsService.swift in Sources */,
 				ACFC9B80228D3E81009F5798 /* AppTokenService.swift in Sources */,
+				AC57896D22AA856F002043F8 /* CardCellNewPayment.swift in Sources */,
 				ACFAF76C223F8B6C008C731B /* SenderCellPhoneNumber.swift in Sources */,
 				ACBF14102267117D00019545 /* SplashCollectionCell.swift in Sources */,
 				AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */,
@@ -1220,6 +1227,7 @@
 				ACC5CAEF225C711600B28E62 /* ReplenishVC.swift in Sources */,
 				AC92425F229D1DD300299D51 /* MaterialTextField.swift in Sources */,
 				AC6A5D1D2271A2560004198F /* NewPasswordVC.swift in Sources */,
+				AC57897222AA9F1D002043F8 /* PaymentNewTFDelegate.swift in Sources */,
 				ACD357ED225CD9BC0018243B /* ReplenSMSVC.swift in Sources */,
 				AC71D930229E918B00001C29 /* GetTransactionHistoryService.swift in Sources */,
 				ACBC5E0D22684E240005C355 /* PayPhoneBillVC.swift in Sources */,

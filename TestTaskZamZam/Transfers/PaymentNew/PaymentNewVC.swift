@@ -37,6 +37,13 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     
     var masZamBills: [ZamBill] = []
+    var cards: [CardBill] = [CardBill(name: "VISA",
+                                      sum: 0,
+                                      first4Numbers: 1234,
+                                      last4numbers: 4321,
+                                      currency: .rubble)]
+    var selectedCardIndex: Int?
+    var newCardAdding = false
     var transferList: [String: String] = ["phone": "",
                                            "sum": "0",
                                            "convertedSum": "0",
@@ -197,9 +204,28 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         
     }
     
-    func billSelected(_ index: Int) {
-        
+    func zamBillSelected(_ index: Int) {
+        selectedCardIndex = nil
+        newCardAdding = false
         transferList["senderCurrency"] = masZamBills[index].currency.shortName
+        tableView.reloadData()
+        
+    }
+    
+    func cardBillSelected(_ index: Int) {
+        
+        transferList["senderCurrency"] = "card"
+        newCardAdding = false
+        selectedCardIndex = index
+        tableView.reloadData()
+        
+    }
+    
+    func newCardAddingSelected() {
+        
+        selectedCardIndex = nil
+        transferList["senderCurrency"] = "card"
+        newCardAdding = true
         tableView.reloadData()
         
     }

@@ -89,7 +89,6 @@ extension PayPhoneBillVC: UITableViewDelegate, UITableViewDataSource {
                     cell.tfCardNumber.tag = 0
                     cell.tfDate.tag = 1
                     cell.tfCVV.tag = 2
-                    cell.tfHolderOfCard.tag = 3
                     
                     return cell
                 } else {

@@ -25,9 +25,6 @@ extension PaymentVC: AKMaskFieldDelegate {
         case 2:
             view = cell.viewCVV
             lab = cell.labCVV
-        case 3:
-            view = cell.viewHolderOfCard
-            lab = cell.labHolderOfCard
         default:
             print("error")
         }
@@ -55,9 +52,6 @@ extension PaymentVC: AKMaskFieldDelegate {
             case 2:
                 view = cell.viewCVV
                 lab = cell.labCVV
-            case 3:
-                view = cell.viewHolderOfCard
-                lab = cell.labHolderOfCard
             default:
                 print("error")
             }

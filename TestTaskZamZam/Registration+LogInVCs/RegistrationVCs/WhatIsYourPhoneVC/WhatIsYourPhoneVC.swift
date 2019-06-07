@@ -121,11 +121,9 @@ class WhatIsYourPhoneVC: UIViewController {
         let phoneNumberKit = PhoneNumberKit()
         
         guard let countryCode = UInt64(code) else {
-            imCountry.image = UIImage()
             return false
         }
         guard let country = phoneNumberKit.mainCountry(forCode: countryCode) else {
-            imCountry.image = UIImage()
             return false
         }
         
@@ -133,6 +131,7 @@ class WhatIsYourPhoneVC: UIViewController {
         imCountry.image = flagImage
         return true
     }
+
     
     func rememberPhone(_ phone: String) {
         temporaryPhone = "+\(phone.onlyNumbers())"
@@ -166,9 +165,13 @@ class WhatIsYourPhoneVC: UIViewController {
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
         TFService.checkPrefix(prefix: "+", tfPhoneNumber)
         guard let text = sender.text else { return }
-        if text.count <= currentCode.count + 1 {
-            if setCountryFlag(code: text) {
-                currentCode = text
+        if setCountryFlag(code: text) {
+            currentCode = text
+        } else {
+            if text.count > currentCode.count && text.dropLast(text.count - currentCode.count) != currentCode {
+                print(text.dropFirst(currentCode.count))
+                print(currentCode)
+                imCountry.image = UIImage()
             }
         }
     }

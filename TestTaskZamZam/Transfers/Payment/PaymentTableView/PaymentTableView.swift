@@ -89,7 +89,6 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
                 myCell.tfCardNumber.tag = 0
                 myCell.tfDate.tag = 1
                 myCell.tfCVV.tag = 2
-                myCell.tfHolderOfCard.tag = 3
                 
                 cell = myCell
                 

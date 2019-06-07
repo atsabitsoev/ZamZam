@@ -15,6 +15,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         
         let numberSenderCellPhoneNumberCells = 1
         let numberBillCells = masZamBills.count
+        let numberCards = cards.count
         let sumAndCurrencyCells = 1
         let totalInfoCells = 1
         
@@ -22,10 +23,12 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return numberSenderCellPhoneNumberCells
         case 1:
-            return numberBillCells
+            return numberBillCells + numberCards
         case 2:
-            return sumAndCurrencyCells
+            return 1
         case 3:
+            return sumAndCurrencyCells
+        case 4:
             return totalInfoCells
         default:
             print("Error")
@@ -35,7 +38,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -44,6 +47,8 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             return 30
         case 1:
             return 37
+        case 2:
+            return 0
         default:
             return 30
         }
@@ -54,10 +59,19 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return (UIScreen.main.bounds.width - 36) * (16/113) + 10
         case 1:
+            if indexPath.row >= masZamBills.count {
+                return 70
+            }
             return 80
         case 2:
-            return 80 //(UIScreen.main.bounds.width - 36) * (16/113) + 10
+            if newCardAdding {
+                return 158
+            } else {
+                return 48
+            }
         case 3:
+            return 80 //(UIScreen.main.bounds.width - 36) * (16/113) + 10
+        case 4:
             return 150
         default:
             return 100
@@ -96,6 +110,19 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             
         case 1:
             
+            if indexPath.row >= masZamBills.count {
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCellNewPayment") as! CardCellNewPayment
+                
+                if let index = self.selectedCardIndex, index == indexPath.row - masZamBills.count {
+                    cell.addCheck()
+                } else {
+                    cell.deleteCheck()
+                }
+                
+                return cell
+            }
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! ZamBillCheckCell
             let bill = masZamBills[indexPath.row]
             
@@ -113,12 +140,31 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             
         case 2:
             
+            if newCardAdding {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardDataCell") as! CardDataCell
+                for tf in cell.textFields {
+                    tf.maskDelegate = self
+                }
+                // TAGS OF TFs
+                
+                cell.tfCardNumber.tag = 0
+                cell.tfDate.tag = 1
+                cell.tfCVV.tag = 2
+                return cell
+            } else {
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "AddNewCardCell") as! AddNewCardCell
+                return cell
+            }
+            
+        case 3:
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "SumAndCurrencyCell") as! SumAndCurrencyCell
             
             cell.viewCurrency.delegate = self
             return cell
             
-        case 3:
+        case 4:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "TotalInfoCell") as! TotalInfoCell
             return cell
@@ -134,14 +180,19 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        guard indexPath.section == 1 else { return }
+        if indexPath.section == 1 {
         
-        self.billSelected(indexPath.row)
-        
-    }
-    
-    private func lfd() {
-        
+            if indexPath.row < masZamBills.count {
+                self.zamBillSelected(indexPath.row)
+            } else {
+                self.cardBillSelected(indexPath.row - masZamBills.count)
+            }
+            
+        } else if indexPath.section == 2 {
+            
+            self.newCardAddingSelected()
+            
+        }
     }
     
     

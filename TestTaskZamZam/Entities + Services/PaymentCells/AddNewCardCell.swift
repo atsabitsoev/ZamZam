@@ -53,7 +53,7 @@ class AddNewCardCell: UITableViewCell {
     
     func configureViewBackground() {
         viewBackground.layer.borderWidth = 2
-        viewBackground.layer.borderColor = #colorLiteral(red: 0.1245268062, green: 0.1670093238, blue: 0.3904778957, alpha: 1)
+        viewBackground.layer.borderColor = #colorLiteral(red: 0.8006885648, green: 0.8094769716, blue: 0.8824560046, alpha: 1)
         viewBackground.layer.cornerRadius = 8
     }
     

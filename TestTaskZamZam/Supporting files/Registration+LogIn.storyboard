@@ -209,7 +209,6 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p8u-GK-dW9">
                                                 <rect key="frame" x="11" y="9" width="30" height="30"/>
-                                                <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="p8u-GK-dW9" secondAttribute="height" multiplier="1:1" id="SGK-zm-v7Q"/>
                                                 </constraints>
@@ -380,6 +379,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="pL0-EU-KXU" id="0W4-ee-1OZ"/>
                         <outlet property="butNext" destination="rhl-MH-UuW" id="c5Y-sL-fko"/>
+                        <outlet property="imCountry" destination="p8u-GK-dW9" id="SjM-c8-WfB"/>
                         <outlet property="labErrorMessage" destination="idP-UL-nln" id="rJY-Nf-1uf"/>
                         <outlet property="tfPassword" destination="kfN-Bz-7sw" id="CUJ-T2-JNN"/>
                         <outlet property="tfPhoneNumber" destination="EqQ-rS-xMk" id="u55-o0-RGL"/>
@@ -717,7 +717,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3C-zD-jKE">
-                                        <rect key="frame" x="64" y="124" width="293" height="12"/>
+                                        <rect key="frame" x="64" y="122" width="293" height="14"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Я соглашаюсь с ">
                                                 <attributes>
@@ -783,14 +783,14 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Номер телефона " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QId-O2-fVQ">
-                                <rect key="frame" x="29" y="128" width="73" height="9"/>
+                                <rect key="frame" x="29" y="128" width="77" height="10.666666666666657"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Укажите Ваш номер телефона" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh8-7t-Txa">
-                                <rect key="frame" x="18" y="10" width="270.66666666666669" height="72"/>
+                                <rect key="frame" x="18" y="10" width="281" height="84"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

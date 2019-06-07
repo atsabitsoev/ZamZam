@@ -1,10 +1,10 @@
 import UIKit
 import AKMaskField
 
-extension PayPhoneBillVC: AKMaskFieldDelegate {
+extension PaymentNewVC: AKMaskFieldDelegate {
     
     func maskFieldDidBeginEditing(_ maskField: AKMaskField) {
-        let cell = tableView.cellForRow(at: indexPathForCardDataCell) as! CardDataCell
+        let cell = tableView.cellForRow(at: [2,0]) as! CardDataCell
         var view = UIView()
         var lab = UILabel()
         switch maskField.tag {
@@ -29,7 +29,7 @@ extension PayPhoneBillVC: AKMaskFieldDelegate {
     
     func maskFieldDidEndEditing(_ maskField: AKMaskField) {
         
-        if let cell = tableView.cellForRow(at: indexPathForCardDataCell) as? CardDataCell {
+        if let cell = tableView.cellForRow(at: [2,0]) as? CardDataCell {
             
             var view = UIView()
             var lab = UILabel()

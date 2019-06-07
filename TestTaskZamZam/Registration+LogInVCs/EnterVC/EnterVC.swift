@@ -8,6 +8,8 @@
 
 import UIKit
 import KeychainSwift
+import PhoneNumberKit
+import FlagKit
 
 class EnterVC: UIViewController {
     
@@ -20,10 +22,14 @@ class EnterVC: UIViewController {
     @IBOutlet weak var viewPhoneNumber: UIView!
     @IBOutlet weak var viewPassword: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var imCountry: UIImageView!
     
     
     let keychain = KeychainSwift()
     let enterService = EnterServise.standard
+    
+    
+    private var currentCode = "+"
     
     
     override func viewDidLoad() {
@@ -147,8 +153,34 @@ class EnterVC: UIViewController {
     }
     
     
+    func setCountryFlag(code: String) -> Bool {
+        let phoneNumberKit = PhoneNumberKit()
+        
+        guard let countryCode = UInt64(code) else {
+            return false
+        }
+        guard let country = phoneNumberKit.mainCountry(forCode: countryCode) else {
+            return false
+        }
+        
+        let flagImage = Flag(countryCode: country)?.image(style: .circle)
+        imCountry.image = flagImage
+        return true
+    }
+    
+    
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
-        TFService.checkPrefix(prefix: "+", sender)
+        TFService.checkPrefix(prefix: "+", tfPhoneNumber)
+        guard let text = sender.text else { return }
+        if setCountryFlag(code: text) {
+            currentCode = text
+        } else {
+            if text.count > currentCode.count && text.dropLast(text.count - currentCode.count) != currentCode {
+                print(text.dropFirst(currentCode.count))
+                print(currentCode)
+                imCountry.image = UIImage()
+            }
+        }
     }
     
     @IBAction func butEnterTapped(_ sender: UIButton) {

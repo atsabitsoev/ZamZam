@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import PhoneNumberKit
+import FlagKit
 
 class SenderCellPhoneNumber: UITableViewCell, UITextFieldDelegate {
+    
+    
+    let phoneNumberKit = PhoneNumberKit()
+    private var currentCode = "+" 
+    
     
     @IBOutlet weak var imUser: UIImageView! {
         didSet {
@@ -33,9 +40,41 @@ class SenderCellPhoneNumber: UITableViewCell, UITextFieldDelegate {
     }
     
     
+    func setCountryFlag(code: String) -> Bool {
+        let phoneNumberKit = PhoneNumberKit()
+        
+        guard let countryCode = UInt64(code) else {
+            return false
+        }
+        guard let country = phoneNumberKit.mainCountry(forCode: countryCode) else {
+            return false
+        }
+        
+        let flagImage = Flag(countryCode: country)?.image(style: .circle)
+        imCountry.image = flagImage
+        return true
+    }
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.contentView.endEditing(true)
         return true
     }
-
+    
+    
+    @IBAction func phoneChanged(_ sender: UITextField) {
+        
+        TFService.checkPrefix(prefix: "+", tfPhoneNumber)
+        guard let text = sender.text else { return }
+        if setCountryFlag(code: text) {
+            currentCode = text
+        } else {
+            if text.count > currentCode.count && text.dropLast(text.count - currentCode.count) != currentCode {
+                print(text.dropFirst(currentCode.count))
+                print(currentCode)
+                imCountry.image = UIImage()
+            }
+        }
+    }
+    
 }
