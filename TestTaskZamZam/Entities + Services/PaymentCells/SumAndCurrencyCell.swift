@@ -13,7 +13,7 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
     
     @IBOutlet weak var viewSum: UIView! {
         didSet {
-            setBorder(to: viewSum)
+            //setBorder(to: viewSum)
         }
     }
     @IBOutlet weak var tfSum: UITextField! {
@@ -21,28 +21,7 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
             tfSum.delegate = self
         }
     }
-    @IBOutlet weak var viewCurrency: UIView! {
-        didSet {
-            configureViewCurrency()
-        }
-    }
-    @IBOutlet weak var labCurrency: myLabel!
-    
-
-    private func configureViewCurrency() {
-        
-        let gestureRec = UITapGestureRecognizer(target: self, action: #selector(ViewCurrencyTapped))
-        viewCurrency.addGestureRecognizer(gestureRec)
-        
-        setBorder(to: viewCurrency)
-        
-    }
-    
-    @objc private func ViewCurrencyTapped() {
-        
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "viewCurrencyTapped"), object: nil)
-        
-    }
+    @IBOutlet weak var viewCurrency: CurrencySelectView!
     
     
     private func setBorder(to view: UIView) {

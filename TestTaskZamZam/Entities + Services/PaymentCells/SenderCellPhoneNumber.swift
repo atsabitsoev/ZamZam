@@ -10,6 +10,11 @@ import UIKit
 
 class SenderCellPhoneNumber: UITableViewCell, UITextFieldDelegate {
     
+    @IBOutlet weak var imUser: UIImageView! {
+        didSet {
+            imUser.image = imUser.image?.withRenderingMode(.alwaysTemplate)
+        }
+    }
     @IBOutlet weak var tfPhoneNumber: UITextField!
     @IBOutlet weak var labTitle: myLabel!
     @IBOutlet weak var imCountry: UIImageView!

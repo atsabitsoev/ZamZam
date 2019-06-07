@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CurrencySelectViewDelegate {
     
     //Picker
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -85,11 +85,8 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(userAccessTokenIsOutOfDate), name: NSNotification.Name(rawValue: NotificationNames.userAccessTokenIsOutOfDate.rawValue), object: nil)
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(chooseCurrency),
-                                               name: NSNotification.Name(rawValue: "viewCurrencyTapped"),
+                                               selector: #selector(userAccessTokenIsOutOfDate),
+                                               name: NSNotification.Name(rawValue: NotificationNames.userAccessTokenIsOutOfDate.rawValue),
                                                object: nil)
         
     }
@@ -207,33 +204,11 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         
     }
     
-    @objc private func chooseCurrency() {
+    
+    func currencySelected(currency: CurrencyProtocol) {
         
-        let vc = UIViewController()
-        vc.preferredContentSize = CGSize(width: 250,height: 150)
-        let pickerView = UIPickerView(frame: CGRect(x: 0, y: 0, width: 250, height: 150))
-        
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        
-        vc.view.addSubview(pickerView)
-        
-        let editRadiusAlert = UIAlertController(title: "Выберете валюту", message: "", preferredStyle: UIAlertController.Style.alert)
-        editRadiusAlert.setValue(vc, forKey: "contentViewController")
-        
-        let doneAction = UIAlertAction(title: "Готово", style: .default) { (action) in
-            
-            let selectedCurrency = self.masCurrencies[pickerView.selectedRow(inComponent: 0)]
-            let shortName = selectedCurrency.shortName
-            
-            self.transferList["recipientCurrency"] = shortName
-            self.tableView.reloadData()
-        }
-        
-        editRadiusAlert.addAction(doneAction)
-        editRadiusAlert.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler: nil))
-        self.present(editRadiusAlert, animated: true)
-        
+        transferList["recipientCurrency"] = currency.shortName
+        tableView.reloadData()
     }
 
     

@@ -56,7 +56,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 80
         case 2:
-            return (UIScreen.main.bounds.width - 36) * (16/113) + 10
+            return 80 //(UIScreen.main.bounds.width - 36) * (16/113) + 10
         case 3:
             return 150
         default:
@@ -114,7 +114,8 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 2:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "SumAndCurrencyCell") as! SumAndCurrencyCell
-            cell.labCurrency.text = self.transferList["recipientCurrency"]
+            
+            cell.viewCurrency.delegate = self
             return cell
             
         case 3:
@@ -136,6 +137,10 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         guard indexPath.section == 1 else { return }
         
         self.billSelected(indexPath.row)
+        
+    }
+    
+    private func lfd() {
         
     }
     

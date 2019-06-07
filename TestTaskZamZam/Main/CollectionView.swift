@@ -31,6 +31,7 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             layer.shadowOpacity = 0.5
             layer.shadowOffset = CGSize(width: 0, height: 4)
             cell1.image.image = UIImage(named: "arrowUpRight")
+            cell1.labTitle.text = "Перевести"
             
             cell = cell1
             
@@ -46,6 +47,7 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             layer.shadowOpacity = 0.5
             layer.shadowOffset = CGSize(width: 0, height: 4)
             cell1.image.image = UIImage(named: "arrowDownLeft")
+            cell1.labTitle.text = "Пополнить"
             
             cell = cell1
 //
@@ -88,6 +90,7 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             layer.shadowOpacity = 0.5
             layer.shadowOffset = CGSize(width: 0, height: 4)
             cell1.image.image = UIImage(named: "cornerUpRight")?.withRenderingMode(.alwaysTemplate)
+            cell1.labTitle.text = "Вывести"
             
             cell = cell1
 //
