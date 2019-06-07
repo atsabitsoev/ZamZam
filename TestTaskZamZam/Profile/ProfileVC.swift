@@ -125,4 +125,12 @@ class ProfileVC: UIViewController {
         activityIndicator.stopAnimating()
     }
 
+    
+    
+    @IBAction func butChangeUserTapped(_ sender: UIButton) {
+        
+        UserDefaults.standard.set(false, forKey: "userEntered")
+        let regLogNavCon = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
+        self.show(regLogNavCon, sender: nil)
+    }
 }
