@@ -166,7 +166,8 @@ class PIN_VC: UIViewController {
     }
     
     func logOut() {
-        UserDefaults.standard.set(false, forKey: "userEntered")
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
         let regLogNavCon = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
         self.show(regLogNavCon, sender: nil)
     }

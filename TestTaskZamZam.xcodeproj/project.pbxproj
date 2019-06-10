@@ -27,10 +27,7 @@
 		AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */; };
 		AC110A9E223A59DD00D1F8D8 /* WhatCountryTablevView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A9D223A59DD00D1F8D8 /* WhatCountryTablevView.swift */; };
 		AC110AA2223A5A5100D1F8D8 /* WhatCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110AA1223A5A5100D1F8D8 /* WhatCountryCell.swift */; };
-		AC110AA7223A6E0100D1F8D8 /* Kelson Sans Light RU.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AA4223A6E0100D1F8D8 /* Kelson Sans Light RU.otf */; };
-		AC110AA8223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AA5223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf */; };
 		AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */; };
-		AC110AB5223A8AD200D1F8D8 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */; };
 		AC1A5274225B26F70021B79C /* PIN VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1A5273225B26F70021B79C /* PIN VC.swift */; };
 		AC1BA0332270534000E60848 /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1BA0322270534000E60848 /* DotsView.swift */; };
 		AC1FF9B92271CFE4009BE5C7 /* SetNewPINVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1FF9B82271CFE4009BE5C7 /* SetNewPINVC.swift */; };
@@ -181,10 +178,7 @@
 		AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryVC.swift; sourceTree = "<group>"; };
 		AC110A9D223A59DD00D1F8D8 /* WhatCountryTablevView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryTablevView.swift; sourceTree = "<group>"; };
 		AC110AA1223A5A5100D1F8D8 /* WhatCountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryCell.swift; sourceTree = "<group>"; };
-		AC110AA4223A6E0100D1F8D8 /* Kelson Sans Light RU.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kelson Sans Light RU.otf"; path = "../../../../Library/Fonts/Kelson Sans Light RU.otf"; sourceTree = "<group>"; };
-		AC110AA5223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kelson Sans Bold RU.otf"; path = "../../../../Library/Fonts/Kelson Sans Bold RU.otf"; sourceTree = "<group>"; };
 		AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryTextField.swift; sourceTree = "<group>"; };
-		AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "../../../../Library/Fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		AC1A5273225B26F70021B79C /* PIN VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PIN VC.swift"; sourceTree = "<group>"; };
 		AC1BA0322270534000E60848 /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
 		AC1FF9B82271CFE4009BE5C7 /* SetNewPINVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPINVC.swift; sourceTree = "<group>"; };
@@ -369,9 +363,6 @@
 				AC924251229D142700299D51 /* PTS56F.ttf */,
 				AC924253229D142700299D51 /* PTS75F.ttf */,
 				AC924252229D142700299D51 /* PTS76F.ttf */,
-				AC110AA5223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf */,
-				AC110AA4223A6E0100D1F8D8 /* Kelson Sans Light RU.otf */,
-				AC110AB4223A8AD200D1F8D8 /* NotoSans-Regular.ttf */,
 				5B7DFEC7223007D500ECF0D3 /* Kelson Sans Regular RU.otf */,
 			);
 			path = "Шрифты";
@@ -983,7 +974,7 @@
 				AC57896C22AA856F002043F8 /* CardCellNewPayment.swift */,
 			);
 			name = PaymentCells;
-			path = "/Users/atsamaz/Desktop/IOS/TestTaskZamZam/Entities + Services/PaymentCells";
+			path = "/Users/atsamaz/Desktop/ZamZam/TestTaskZamZam/Entities + Services/PaymentCells";
 			sourceTree = "<absolute>";
 		};
 		ACFC9B7E228D3CE7009F5798 /* UserOperations */ = {
@@ -1086,11 +1077,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */,
-				AC110AB5223A8AD200D1F8D8 /* NotoSans-Regular.ttf in Resources */,
 				AC924255229D142700299D51 /* PTS56F.ttf in Resources */,
 				AC71D923229E784300001C29 /* History.storyboard in Resources */,
 				5B7DFEB7222FFAC500ECF0D3 /* LaunchScreen.storyboard in Resources */,
-				AC110AA8223A6E0100D1F8D8 /* Kelson Sans Bold RU.otf in Resources */,
 				5B7DFEE62230702B00ECF0D3 /* .gitignore in Resources */,
 				ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */,
 				AC98BF80226891BC00E35745 /* Withdraw.storyboard in Resources */,
@@ -1103,7 +1092,6 @@
 				AC92424C229D0DFC00299D51 /* Profile.storyboard in Resources */,
 				AC924257229D142700299D51 /* PTS75F.ttf in Resources */,
 				AC924254229D142700299D51 /* PTS55F.ttf in Resources */,
-				AC110AA7223A6E0100D1F8D8 /* Kelson Sans Light RU.otf in Resources */,
 				ACBC5E0A22684BFF0005C355 /* PayPhoneBill.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

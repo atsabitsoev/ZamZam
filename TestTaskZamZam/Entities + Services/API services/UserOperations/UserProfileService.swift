@@ -23,7 +23,7 @@ class UserProfileService {
     
     func getUserInfoRequest() {
         
-        let urlString = "http://10.80.80.99:2222/api/user/details"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/user/details"
         let url = URL(string: urlString)!
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(UserTokenService.standard.userAccessToken)",
@@ -68,7 +68,7 @@ class UserProfileService {
     
     func postUserInfoRequest(userProfileInfo: UserProfileInfo) {
         
-        let urlString = "http://10.80.80.99:2222/api/user/details"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/user/details"
         let url = URL(string: urlString)!
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(UserTokenService.standard.userAccessToken)"]

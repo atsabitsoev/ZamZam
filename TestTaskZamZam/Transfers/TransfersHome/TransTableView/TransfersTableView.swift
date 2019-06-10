@@ -59,7 +59,7 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
                 
                 attributedString = NSMutableAttributedString(string: "- Комиссия 0% за валютные переводы\n- Кэшбэк 1% от суммы перевода \n- Оплачивайте перевод картой любого банка\n- Получить перевод можно в одной из 3000 точек обслуживания",
                                                              attributes: [
-                                                                .font: UIFont(name: "KelsonSans-RegularRU",
+                                                                .font: UIFont(name: "PT Sans",
                                                                               size: 10.0)!,
                                                                 .foregroundColor: UIColor(red: 10.0 / 255.0,
                                                                                           green: 12.0 / 255.0,
@@ -68,11 +68,11 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
                                                                 .kern: 0.0
                     ])
                 attributedString.addAttribute(.font,
-                                              value: UIFont(name: "KelsonSans-BoldRU",
+                                              value: UIFont(name: "PT Sans",
                                                             size: 10.0)!, range: NSRange(location: 0,
                                                                                          length: 13))
                 attributedString.addAttribute(.font,
-                                              value: UIFont(name: "KelsonSans-BoldRU",
+                                              value: UIFont(name: "PT Sans",
                                                             size: 10.0)!,
                                               range: NSRange(location: 35,
                                                              length: 11))
@@ -96,7 +96,7 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
                     .kern: 0.0
                     ])
                 attributedString.addAttribute(.font,
-                                              value: UIFont(name: "KelsonSans-BoldRU",
+                                              value: UIFont(name: "PT Sans",
                                                             size: 10.0)!,
                                               range: NSRange(location: 0,
                                                              length: 15))
@@ -157,11 +157,12 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath {
         case [0,0]:
-            let whereVC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "whatCountryVC")
-            self.navigationController?.show(whereVC, sender: nil)
+            // Переводы за рубеж
+            print("Переводы  за рубеж")
         case [1,0]:
             // Открыть экран перевода с счета замзам
-            print("Перевод со счета на счет замЗам")
+            let transferZamZamVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PaymentNewVC")
+            self.navigationController?.show(transferZamZamVC, sender: nil)
         default:
             print("error")
         }

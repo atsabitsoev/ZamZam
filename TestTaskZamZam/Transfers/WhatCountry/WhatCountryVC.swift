@@ -98,7 +98,7 @@ class WhatCountryVC: UIViewController {
         var myPlaceholder = NSMutableAttributedString()
         let text = "Поиск, например, Россия"
         myPlaceholder = NSMutableAttributedString(string: text,
-                                                  attributes: [.font : UIFont(name: "Noto Sans",
+                                                  attributes: [.font : UIFont(name: "PT Sans",
                                                                               size: 16)!])
         myPlaceholder.addAttribute(NSAttributedString.Key.foregroundColor,
                                    value: UIColor(red: 86/255,

@@ -43,7 +43,7 @@ class AppTokenService {
     
     private func getAppAccessToken() {
         
-        let urlString = "http://10.80.80.99:2222/api/token"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/token"
         guard let url = URL(string: urlString) else { return }
         
         let parameters: Parameters = ["grant_type":"client_credentials",

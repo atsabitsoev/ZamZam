@@ -24,7 +24,7 @@ class GetTransactionHistoryService {
     
     func fetchHistory(page: Int) {
         
-        let urlString = "http://10.80.80.99:2222/api/accounts/transactionhistory/\(page)"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/accounts/transactionhistory/\(page)"
         let url = URL(string: urlString)!
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(UserTokenService.standard.userAccessToken)",

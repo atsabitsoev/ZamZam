@@ -26,7 +26,7 @@ class RegistrationService {
     
     func register(phone: String, password: String) {
         
-        let urlString = "http://10.80.80.99:2222/api/user/register"
+        let urlString = "http://test.setclapp.com/zamzamapi/api/user/register"
         guard let url = URL(string: urlString) else { return }
         
         

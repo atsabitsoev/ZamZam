@@ -126,11 +126,27 @@ class ProfileVC: UIViewController {
     }
 
     
+    func showSureAlert() {
+        let alert = UIAlertController(title: "Вы уверены?", message: "Вы хотите поменять аккаунт?", preferredStyle: .alert)
+        let actionYes = UIAlertAction(title: "ДА", style: .default) { (action) in
+            self.logOut()
+        }
+        let actionCancel = UIAlertAction(title: "Отмена", style: .cancel) { (alert) in}
+        alert.addAction(actionYes)
+        alert.addAction(actionCancel)
+        self.show(alert, sender: nil)
+    }
+    
+    func logOut() {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        let regLogNavCon = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
+        self.show(regLogNavCon, sender: nil)
+    }
+    
     
     @IBAction func butChangeUserTapped(_ sender: UIButton) {
         
-        UserDefaults.standard.set(false, forKey: "userEntered")
-        let regLogNavCon = UIStoryboard(name: "Registration+LogIn", bundle: nil).instantiateViewController(withIdentifier: "RegLogNavCon")
-        self.show(regLogNavCon, sender: nil)
+        showSureAlert()
     }
 }
