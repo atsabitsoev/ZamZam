@@ -995,9 +995,8 @@
 				AC98BF7D226862F000E35745 /* PayPhoneInfoCell.swift */,
 				AC57896C22AA856F002043F8 /* CardCellNewPayment.swift */,
 			);
-			name = PaymentCells;
-			path = "/Users/atsamaz/Desktop/IOS/TestTaskZamZam/Entities + Services/PaymentCells";
-			sourceTree = "<absolute>";
+			path = PaymentCells;
+			sourceTree = "<group>";
 		};
 		ACFC9B7E228D3CE7009F5798 /* UserOperations */ = {
 			isa = PBXGroup;
