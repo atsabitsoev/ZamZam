@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IDH-rR-tYB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WLr-2g-WU5">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,17 +39,17 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-Jb-TAk">
-                                        <rect key="frame" x="160.66666666666666" y="0.0" width="54" height="48"/>
+                                        <rect key="frame" x="160.33333333333334" y="0.0" width="54.333333333333343" height="48"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="yNJ-2d-aeS" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="36" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="36.333333333333336" height="48"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84i-Yb-mmS" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="39" y="7.3333333333333286" width="15" height="33.666666666666664"/>
+                                                <rect key="frame" x="39.333333333333314" y="8.9999999999999982" width="15" height="30.333333333333329"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="a3T-2j-B23"/>
@@ -71,13 +71,13 @@
                                         <rect key="frame" x="0.0" y="48" width="375" height="676"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои счета" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvK-dw-gnT" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="16" width="99" height="28.666666666666671"/>
+                                                <rect key="frame" x="16.000000000000007" y="16" width="107.66666666666669" height="25.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="22"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rbU-B6-b7T">
-                                                <rect key="frame" x="0.0" y="52.666666666666686" width="375" height="540.33333333333326"/>
+                                                <rect key="frame" x="0.0" y="49.666666666666686" width="375" height="543.33333333333326"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <view key="tableFooterView" contentMode="scaleToFill" id="Vva-0r-YMC">
@@ -97,7 +97,7 @@
                                                                     <rect key="frame" x="18" y="0.0" width="339" height="68"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zam счет RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nX-TH-Fgz" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                            <rect key="frame" x="68" y="17" width="72.333333333333314" height="12"/>
+                                                                            <rect key="frame" x="68" y="17" width="80.666666666666686" height="12"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="12" id="Pvh-fW-BAQ"/>
                                                                             </constraints>
@@ -106,7 +106,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21,324.00 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-dL-YpM" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                            <rect key="frame" x="67" y="29" width="101.33333333333331" height="26"/>
+                                                                            <rect key="frame" x="67" y="29" width="105.66666666666669" height="23.333333333333329"/>
                                                                             <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="20"/>
                                                                             <color key="textColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -191,7 +191,7 @@
                                                                                         <rect key="frame" x="0.0" y="2" width="94" height="76"/>
                                                                                         <subviews>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перевести" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="f0I-gi-aKX" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                                                <rect key="frame" x="12" y="49" width="60" height="16"/>
+                                                                                                <rect key="frame" x="12" y="49" width="65.333333333333329" height="16"/>
                                                                                                 <constraints>
                                                                                                     <constraint firstAttribute="height" constant="16" id="iAS-SD-7wN"/>
                                                                                                 </constraints>
@@ -277,7 +277,7 @@
                                                                                         </constraints>
                                                                                     </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Виртуальная карта" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="mPM-oP-FBq">
-                                                                                        <rect key="frame" x="56" y="17" width="104" height="26"/>
+                                                                                        <rect key="frame" x="56" y="14.999999999999998" width="104" height="30.333333333333329"/>
                                                                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="13"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -305,7 +305,7 @@
                                                                     </connections>
                                                                 </collectionView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Операции" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3L-oo-5Er">
-                                                                    <rect key="frame" x="18" y="9" width="97" height="26"/>
+                                                                    <rect key="frame" x="18" y="9" width="103" height="26"/>
                                                                     <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="22"/>
                                                                     <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
@@ -1054,7 +1054,7 @@
                                                 <rect key="frame" x="0.0" y="648" width="375" height="71"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UEr-PP-1Cj" id="UHe-xW-ihc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70.666666666666671"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkG-R9-Wsv">
@@ -1592,7 +1592,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Россия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3S-Qb-clK" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="64" y="16.666666666666668" width="51" height="16.000000000000004"/>
+                                                            <rect key="frame" x="64" y="16.666666666666668" width="54.666666666666657" height="16.000000000000004"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="16" id="2yu-ge-1Dg"/>
                                                             </constraints>
@@ -1619,7 +1619,6 @@
                                                 <connections>
                                                     <outlet property="imageOfCountry" destination="VJn-bd-ifm" id="8Hn-SY-jHQ"/>
                                                     <outlet property="labNameOfCountry" destination="H3S-Qb-clK" id="cXU-fq-jBM"/>
-                                                    <segue destination="L9a-1p-zrJ" kind="show" identifier="toSumAndCurrency" id="Lpg-AL-hOb"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -1638,7 +1637,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куда?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-1z-Eqk" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18.000000000000007" y="52" width="94.666666666666686" height="39"/>
+                                <rect key="frame" x="18.000000000000007" y="52" width="102.66666666666669" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="AwR-yd-nkA"/>
                                 </constraints>
@@ -1722,7 +1721,225 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ej-gt-eb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3542" y="-658"/>
+            <point key="canvasLocation" x="3495" y="89"/>
+        </scene>
+        <!--Inter Trans RecieverVC-->
+        <scene sceneID="bo6-Hr-g3j">
+            <objects>
+                <viewController id="WLr-2g-WU5" customClass="InterTransRecieverVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eFe-IV-Fid">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUY-GS-dwo">
+                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHG-QI-8Zl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="711"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7T-zG-zI1" customClass="ButtonChooseCountryFlag" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="32" width="339" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="tNZ-Gb-yVA"/>
+                                                </constraints>
+                                                <state key="normal" title="Россия"/>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер телефона получателя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bu6-rW-VgS" customClass="MaterialTextFieldWithFlag" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="94" width="339" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="PHw-FR-ZWr"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Номер телефона получателя"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФИО получателя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a36-S9-dps">
+                                                <rect key="frame" x="18" y="175" width="118" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="lFs-44-hLT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="16"/>
+                                                <color key="textColor" red="0.1215686275" green="0.15686274510000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TuT-eh-LIp" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="208" width="339" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="24m-Eu-dAD"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Имя"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfM-Uv-MTr" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="324" width="339" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="VCn-gj-7YK"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Отчество"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEv-3X-wbx" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="266" width="339" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="IA3-63-l1k"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Фамилия"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="D5j-tt-QV0">
+                                                <rect key="frame" x="141.66666666666666" y="644" width="92" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xw2-ne-oTL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="SLQ-WM-AoA"/>
+                                                            <constraint firstAttribute="height" constant="40" id="Tui-1R-Ukq"/>
+                                                        </constraints>
+                                                        <state key="normal" image="chevronRight"/>
+                                                        <connections>
+                                                            <action selector="butBackTapped:" destination="L9a-1p-zrJ" eventType="touchUpInside" id="sWw-M2-B66"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugm-XU-sFW">
+                                                        <rect key="frame" x="52" y="0.0" width="40" height="40"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="I57-HH-8n3"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Wat-9A-epc"/>
+                                                        </constraints>
+                                                        <state key="normal" image="x"/>
+                                                        <connections>
+                                                            <action selector="butCloseTapped:" destination="L9a-1p-zrJ" eventType="touchUpInside" id="e4e-8I-Ue2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="M9s-WU-Zky"/>
+                                                    <constraint firstAttribute="width" constant="92" id="fuR-cq-WIL"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="TuT-eh-LIp" firstAttribute="top" secondItem="a36-S9-dps" secondAttribute="bottom" constant="15" id="4ba-4g-Kpf"/>
+                                            <constraint firstItem="a36-S9-dps" firstAttribute="top" secondItem="bu6-rW-VgS" secondAttribute="bottom" constant="33" id="5xi-u4-XRB"/>
+                                            <constraint firstAttribute="trailing" secondItem="L7T-zG-zI1" secondAttribute="trailing" constant="18" id="6CF-fq-FDP"/>
+                                            <constraint firstAttribute="height" constant="711" id="FKr-ud-0ns"/>
+                                            <constraint firstItem="KEv-3X-wbx" firstAttribute="top" secondItem="TuT-eh-LIp" secondAttribute="bottom" constant="10" id="FMc-hD-HMp"/>
+                                            <constraint firstAttribute="bottom" secondItem="D5j-tt-QV0" secondAttribute="bottom" constant="27" id="FZ9-8A-Ed5"/>
+                                            <constraint firstItem="L7T-zG-zI1" firstAttribute="leading" secondItem="kHG-QI-8Zl" secondAttribute="leading" constant="18" id="Ite-oG-Zox"/>
+                                            <constraint firstAttribute="trailing" secondItem="TuT-eh-LIp" secondAttribute="trailing" constant="18" id="JiB-rv-zM4"/>
+                                            <constraint firstItem="bu6-rW-VgS" firstAttribute="top" secondItem="L7T-zG-zI1" secondAttribute="bottom" constant="14" id="Nu4-Nx-LRd"/>
+                                            <constraint firstItem="bu6-rW-VgS" firstAttribute="leading" secondItem="kHG-QI-8Zl" secondAttribute="leading" constant="18" id="OWa-YT-Jl1"/>
+                                            <constraint firstItem="D5j-tt-QV0" firstAttribute="centerX" secondItem="kHG-QI-8Zl" secondAttribute="centerX" id="Rsi-UU-AtL"/>
+                                            <constraint firstItem="TuT-eh-LIp" firstAttribute="leading" secondItem="kHG-QI-8Zl" secondAttribute="leading" constant="18" id="Ux9-Ho-3wn"/>
+                                            <constraint firstAttribute="trailing" secondItem="KEv-3X-wbx" secondAttribute="trailing" constant="18" id="W4E-h3-Z9E"/>
+                                            <constraint firstItem="a36-S9-dps" firstAttribute="leading" secondItem="kHG-QI-8Zl" secondAttribute="leading" constant="18" id="aJ2-8K-06q"/>
+                                            <constraint firstItem="L7T-zG-zI1" firstAttribute="top" secondItem="kHG-QI-8Zl" secondAttribute="top" constant="32" id="cUG-xt-7Ho"/>
+                                            <constraint firstItem="bfM-Uv-MTr" firstAttribute="top" secondItem="KEv-3X-wbx" secondAttribute="bottom" constant="10" id="d6V-tO-g2x"/>
+                                            <constraint firstItem="bfM-Uv-MTr" firstAttribute="leading" secondItem="kHG-QI-8Zl" secondAttribute="leading" constant="18" id="d6e-hl-1FN"/>
+                                            <constraint firstAttribute="trailing" secondItem="bu6-rW-VgS" secondAttribute="trailing" constant="18" id="jVu-ih-T2f"/>
+                                            <constraint firstAttribute="trailing" secondItem="bfM-Uv-MTr" secondAttribute="trailing" constant="18" id="vYW-Kg-aCb"/>
+                                            <constraint firstItem="KEv-3X-wbx" firstAttribute="leading" secondItem="kHG-QI-8Zl" secondAttribute="leading" constant="18" id="zCh-rl-KGl"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kHG-QI-8Zl" secondAttribute="bottom" id="3vt-0L-Q6t"/>
+                                    <constraint firstAttribute="trailing" secondItem="kHG-QI-8Zl" secondAttribute="trailing" id="GcB-2c-03u"/>
+                                    <constraint firstItem="kHG-QI-8Zl" firstAttribute="top" secondItem="KUY-GS-dwo" secondAttribute="top" id="Kr5-dD-Yrz"/>
+                                    <constraint firstItem="kHG-QI-8Zl" firstAttribute="leading" secondItem="KUY-GS-dwo" secondAttribute="leading" id="L95-yq-aSo"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8R-tq-IpH">
+                                <rect key="frame" x="18" y="667" width="339" height="62"/>
+                                <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s8R-tq-IpH" secondAttribute="height" multiplier="339:62" id="dSr-WP-Rb2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
+                                <state key="normal" title="Далее &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Получатель" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etm-hl-dQX">
+                                <rect key="frame" x="18" y="53" width="339" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Rr9-k2-ext"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8K-pn-qZg">
+                                <rect key="frame" x="0.0" y="796" width="16" height="16"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="lzh-CU-ulc"/>
+                                    <constraint firstAttribute="height" constant="16" id="r9l-l5-vcv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64C-SF-fIb">
+                                <rect key="frame" x="359" y="796" width="16" height="16"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="0xL-eR-fdS"/>
+                                    <constraint firstAttribute="width" constant="16" id="DCA-RM-OsN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.15686274509803921" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="64C-SF-fIb" secondAttribute="bottom" id="9xS-9e-AMM"/>
+                            <constraint firstItem="KUY-GS-dwo" firstAttribute="trailing" secondItem="4ka-gY-FRy" secondAttribute="trailing" id="AoF-9w-hJ7"/>
+                            <constraint firstAttribute="bottom" secondItem="c8K-pn-qZg" secondAttribute="bottom" id="Bvm-4A-bej"/>
+                            <constraint firstItem="D5j-tt-QV0" firstAttribute="top" secondItem="s8R-tq-IpH" secondAttribute="bottom" constant="16" id="Gkj-hA-Ttx"/>
+                            <constraint firstItem="KUY-GS-dwo" firstAttribute="top" secondItem="Etm-hl-dQX" secondAttribute="bottom" constant="9" id="Jvq-F4-XtX"/>
+                            <constraint firstItem="KUY-GS-dwo" firstAttribute="leading" secondItem="4ka-gY-FRy" secondAttribute="leading" id="NZC-L3-OLP"/>
+                            <constraint firstItem="4ka-gY-FRy" firstAttribute="trailing" secondItem="Etm-hl-dQX" secondAttribute="trailing" constant="18" id="Npl-UK-eVW"/>
+                            <constraint firstItem="s8R-tq-IpH" firstAttribute="width" secondItem="s8R-tq-IpH" secondAttribute="height" multiplier="339:62" id="QYX-cj-nmW"/>
+                            <constraint firstItem="4ka-gY-FRy" firstAttribute="trailing" secondItem="64C-SF-fIb" secondAttribute="trailing" id="W23-WT-fiF"/>
+                            <constraint firstItem="4ka-gY-FRy" firstAttribute="trailing" secondItem="s8R-tq-IpH" secondAttribute="trailing" constant="18" id="XSn-ec-ntU"/>
+                            <constraint firstAttribute="bottom" secondItem="KUY-GS-dwo" secondAttribute="bottom" id="bGI-9h-PR4"/>
+                            <constraint firstItem="Etm-hl-dQX" firstAttribute="top" secondItem="4ka-gY-FRy" secondAttribute="top" constant="9" id="eS2-A6-gZP"/>
+                            <constraint firstItem="Etm-hl-dQX" firstAttribute="leading" secondItem="4ka-gY-FRy" secondAttribute="leading" constant="18" id="r9M-Mr-Nqr"/>
+                            <constraint firstItem="kHG-QI-8Zl" firstAttribute="centerX" secondItem="4ka-gY-FRy" secondAttribute="centerX" id="tQO-EH-0b7"/>
+                            <constraint firstItem="kHG-QI-8Zl" firstAttribute="width" secondItem="eFe-IV-Fid" secondAttribute="width" id="uZg-b1-mGO"/>
+                            <constraint firstItem="s8R-tq-IpH" firstAttribute="leading" secondItem="4ka-gY-FRy" secondAttribute="leading" constant="18" id="v0Z-Mb-9RX"/>
+                            <constraint firstItem="c8K-pn-qZg" firstAttribute="leading" secondItem="eFe-IV-Fid" secondAttribute="leading" id="w3y-aO-e1g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4ka-gY-FRy"/>
+                    </view>
+                    <connections>
+                        <outlet property="butBack" destination="Xw2-ne-oTL" id="kid-1E-oiO"/>
+                        <outlet property="butClose" destination="Ugm-XU-sFW" id="3kA-7f-ru1"/>
+                        <outlet property="butNext" destination="s8R-tq-IpH" id="1Tw-YP-vYJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFP-Ri-WgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4288.8000000000002" y="88.669950738916256"/>
         </scene>
         <!--Sum And CurrencyVC-->
         <scene sceneID="XNH-wt-bHd">
@@ -1733,7 +1950,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма и валюта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrv-Dn-nxG">
-                                <rect key="frame" x="18" y="52" width="257.66666666666669" height="39"/>
+                                <rect key="frame" x="18" y="52" width="276.33333333333331" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="JWZ-Cr-dZI"/>
                                 </constraints>
@@ -1742,7 +1959,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Страна получения " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amy-uu-FA7" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="28.999999999999993" y="128" width="78.333333333333314" height="9"/>
+                                <rect key="frame" x="29.000000000000007" y="128" width="82.666666666666686" height="9"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="9" id="GN5-q3-fwM"/>
@@ -1752,7 +1969,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Сумма к получению " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1X-zK-bm3" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="29.000000000000007" y="200" width="84.666666666666686" height="9"/>
+                                <rect key="frame" x="28.999999999999993" y="200" width="89.333333333333314" height="9"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="9" id="AB3-oo-Pbb"/>
@@ -1763,7 +1980,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Валюта " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfH-ha-sLJ" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="283" y="200" width="34.333333333333314" height="9"/>
+                                <rect key="frame" x="283" y="200" width="37.333333333333314" height="9"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="9" id="0Fe-KQ-YD2"/>
@@ -1850,7 +2067,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Узбекистан" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laW-EO-UX6" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="58" y="14.666666666666657" width="82" height="19"/>
+                                                <rect key="frame" x="58.000000000000007" y="14.666666666666657" width="86.666666666666686" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="19" id="HEV-3U-PI8"/>
                                                 </constraints>
@@ -1904,7 +2121,7 @@
                                         <rect key="frame" x="272" y="103" width="85" height="48"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afk-QC-KE9" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="11" y="16" width="66" height="16"/>
+                                                <rect key="frame" x="11" y="14.666666666666659" width="66" height="18.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                 <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1932,7 +2149,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Курс:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUc-Bq-31a" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="29" y="220" width="28.333333333333329" height="12"/>
+                                        <rect key="frame" x="29" y="220" width="31" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="qFQ-yI-Ns3"/>
                                         </constraints>
@@ -1941,7 +2158,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,00 USD = 67,51 RUB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMl-3g-3vS" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="243.33333333333334" y="220" width="104.66666666666666" height="12"/>
+                                        <rect key="frame" x="224" y="220" width="124" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="B3b-PT-btW"/>
                                         </constraints>
@@ -1950,7 +2167,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Комиссия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YP3-nW-ZQV" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="29.000000000000004" y="250" width="55.333333333333343" height="12"/>
+                                        <rect key="frame" x="28.999999999999996" y="250" width="59.666666666666657" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="vWP-Zp-ayr"/>
                                         </constraints>
@@ -1959,7 +2176,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Без комиссии (0%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1R-oo-Ive" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="248.66666666666666" y="250" width="99.333333333333343" height="12"/>
+                                        <rect key="frame" x="241" y="250" width="107" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="KVv-R7-Gzd"/>
                                         </constraints>
@@ -1968,7 +2185,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кэшбэк 1%:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdq-Zh-GXH" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="29" y="287" width="61" height="12"/>
+                                        <rect key="frame" x="29" y="287" width="68.666666666666671" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="DhW-eC-WPx"/>
                                             <constraint firstAttribute="height" constant="12" id="NOf-49-qam"/>
@@ -2000,13 +2217,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="К оплате:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDh-Gb-2vq" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="29" y="331" width="58" height="14"/>
+                                        <rect key="frame" x="29.000000000000004" y="331" width="62.333333333333343" height="16.333333333333314"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
                                         <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83n-NJ-sxy" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="336.33333333333331" y="327" width="11.666666666666686" height="22"/>
+                                        <rect key="frame" x="335.66666666666669" y="327" width="12.333333333333314" height="25.666666666666686"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="22"/>
                                         <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2192,13 +2409,13 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+988 32-123-4567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ag4-d1-yp8" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="19.999999999999993" y="12" width="125.33333333333331" height="16"/>
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="133.33333333333334" height="18.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                             <color key="textColor" red="0.44705882352941173" green="0.45490196078431372" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 10 126,50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="C0v-Wq-Pp6" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="256.66666666666669" y="9" width="100.33333333333331" height="22"/>
+                                                            <rect key="frame" x="244.33333333333334" y="7.0000000000000018" width="112.66666666666666" height="25.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="22"/>
                                                             <color key="textColor" red="0.11764705882352941" green="0.16078431372549018" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
@@ -2225,7 +2442,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предыдущие переводы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM9-QZ-Ijj">
-                                                            <rect key="frame" x="18" y="12.666666666666664" width="149.66666666666666" height="14"/>
+                                                            <rect key="frame" x="18" y="10.333333333333334" width="155" height="16.333333333333329"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
@@ -2291,7 +2508,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кому?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnS-8U-RBT" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="17.999999999999993" y="53" width="97.333333333333314" height="39"/>
+                                <rect key="frame" x="18.000000000000007" y="53" width="107.66666666666669" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="gD9-RT-NXU"/>
                                 </constraints>
@@ -2300,7 +2517,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Номер телефона получателя " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWw-Uz-PnM">
-                                <rect key="frame" x="29.000000000000007" y="117" width="121.66666666666669" height="9"/>
+                                <rect key="frame" x="28.999999999999993" y="117" width="127.33333333333331" height="9"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="9" id="2k4-TA-LfN"/>
@@ -2371,7 +2588,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отправитель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-5S-eYV" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="53" width="206" height="39"/>
+                                <rect key="frame" x="18" y="53" width="220" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="VW3-Jc-LAx"/>
                                 </constraints>
@@ -2422,7 +2639,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Номер телефона отправителя " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uif-3g-2qb" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29.000000000000007" y="1" width="125.66666666666669" height="9"/>
+                                                            <rect key="frame" x="29" y="1" width="132.66666666666666" height="10.666666666666666"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2472,7 +2689,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Фамилия " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsJ-2a-AYm" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="28.999999999999996" y="1" width="41.666666666666657" height="9"/>
+                                                            <rect key="frame" x="29" y="1" width="44" height="10.666666666666666"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2506,13 +2723,13 @@
                                                             <rect key="frame" x="18" y="5" width="339" height="48"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РОССИЯ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBE-zS-8kf" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                    <rect key="frame" x="13.999999999999996" y="16" width="55.666666666666657" height="16"/>
+                                                                    <rect key="frame" x="14" y="14.666666666666666" width="68.333333333333329" height="18.666666666666671"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                     <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="I1h-Jd-Udh">
-                                                                    <rect key="frame" x="297" y="12" width="24" height="24"/>
+                                                                    <rect key="frame" x="305" y="16" width="16" height="16"/>
                                                                     <color key="tintColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="I1h-Jd-Udh" secondAttribute="height" multiplier="1:1" id="e7f-YI-JhK"/>
@@ -2529,7 +2746,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Страна " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoA-qq-CVm" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="1" width="33" height="9"/>
+                                                            <rect key="frame" x="29" y="1" width="36" height="10.666666666666666"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

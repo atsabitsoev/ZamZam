@@ -121,6 +121,8 @@
 		ACC827422271A930001E5750 /* PasswordSymbolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC827412271A930001E5750 /* PasswordSymbolManager.swift */; };
 		ACCF259A2257743D0028C16A /* Extensions for String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF25992257743D0028C16A /* Extensions for String.swift */; };
 		ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */; };
+		ACD2B8DD22AFDAB600DBDADF /* InterTransRecieverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2B8DC22AFDAB600DBDADF /* InterTransRecieverVC.swift */; };
+		ACD2B8E222AFDD5200DBDADF /* ButtonChooseCountryFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2B8E122AFDD5200DBDADF /* ButtonChooseCountryFlag.swift */; };
 		ACD357ED225CD9BC0018243B /* ReplenSMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD357EC225CD9BC0018243B /* ReplenSMSVC.swift */; };
 		ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE139BB2242549D004EDB38 /* CardIssue.storyboard */; };
 		ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139BE224259F6004EDB38 /* CardIssueVC.swift */; };
@@ -272,6 +274,8 @@
 		ACC827412271A930001E5750 /* PasswordSymbolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSymbolManager.swift; sourceTree = "<group>"; };
 		ACCF25992257743D0028C16A /* Extensions for String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions for String.swift"; sourceTree = "<group>"; };
 		ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Registration+LogIn.storyboard"; sourceTree = "<group>"; };
+		ACD2B8DC22AFDAB600DBDADF /* InterTransRecieverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterTransRecieverVC.swift; sourceTree = "<group>"; };
+		ACD2B8E122AFDD5200DBDADF /* ButtonChooseCountryFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChooseCountryFlag.swift; sourceTree = "<group>"; };
 		ACD357EC225CD9BC0018243B /* ReplenSMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenSMSVC.swift; sourceTree = "<group>"; };
 		ACE139BB2242549D004EDB38 /* CardIssue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardIssue.storyboard; sourceTree = "<group>"; };
 		ACE139BE224259F6004EDB38 /* CardIssueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueVC.swift; sourceTree = "<group>"; };
@@ -518,6 +522,7 @@
 				AC92425E229D1DD300299D51 /* MaterialTextField.swift */,
 				AC829D17229D524B0019C19B /* MaterialTextFieldWithFlag.swift */,
 				AC829D1B229D804C0019C19B /* ButtonChooseCountry.swift */,
+				ACD2B8E122AFDD5200DBDADF /* ButtonChooseCountryFlag.swift */,
 				AC57896A22AA4609002043F8 /* CurrencySelectView.swift */,
 				ACA1685922A107930050971A /* API Entities */,
 				AC24624922819C9E006C54D4 /* API services */,
@@ -726,6 +731,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5EA167223934DA00EDA066 /* TransfersHome */,
+				ACD2B8DB22AFDA7600DBDADF /* InternationalTransfers */,
 				ACC7588C228BEDE60049AB57 /* PaymentNew */,
 				AC110A9A223A599A00D1F8D8 /* WhatCountry */,
 				AC567563223BC5B5001BBE66 /* SumAndCurrency */,
@@ -850,6 +856,22 @@
 				ACC827412271A930001E5750 /* PasswordSymbolManager.swift */,
 			);
 			path = "Entities + Servicies";
+			sourceTree = "<group>";
+		};
+		ACD2B8DB22AFDA7600DBDADF /* InternationalTransfers */ = {
+			isa = PBXGroup;
+			children = (
+				ACD2B8DE22AFDABE00DBDADF /* InterTransReciever */,
+			);
+			path = InternationalTransfers;
+			sourceTree = "<group>";
+		};
+		ACD2B8DE22AFDABE00DBDADF /* InterTransReciever */ = {
+			isa = PBXGroup;
+			children = (
+				ACD2B8DC22AFDAB600DBDADF /* InterTransRecieverVC.swift */,
+			);
+			path = InterTransReciever;
 			sourceTree = "<group>";
 		};
 		ACD357EB225CD9960018243B /* ReplenSMS */ = {
@@ -1236,11 +1258,13 @@
 				ACBC5E1022684E570005C355 /* PayPhoneBillTableView.swift in Sources */,
 				ACC8273D2271A6E4001E5750 /* PasswordErrors.swift in Sources */,
 				AC6E2F9A2282B660001CB42E /* EnterService.swift in Sources */,
+				ACD2B8DD22AFDAB600DBDADF /* InterTransRecieverVC.swift in Sources */,
 				AC6B2B6D225F5DF10057DCE8 /* RecipientTableview.swift in Sources */,
 				ACFBAC3C2240FB44001D9D94 /* AddNewCardCell.swift in Sources */,
 				ACC827422271A930001E5750 /* PasswordSymbolManager.swift in Sources */,
 				ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */,
 				ACBCC94D22A51327008DEFCB /* PersonalDataTfDateDelegate.swift in Sources */,
+				ACD2B8E222AFDD5200DBDADF /* ButtonChooseCountryFlag.swift in Sources */,
 				AC71D928229E787F00001C29 /* HistoryTableView.swift in Sources */,
 				AC71D92E229E7AE900001C29 /* Zam2ZamLogosView.swift in Sources */,
 				AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */,

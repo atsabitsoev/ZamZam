@@ -70,7 +70,7 @@ class MaterialTextFieldWithFlag: UITextField {
         
         superview!.addSubview(imageFlag)
         
-        let titleFrame = CGRect(x: 10 + frame.minX, y: 7 + frame.minY, width: 30, height: 30)
+        let titleFrame = CGRect(x: 10 + frame.minX, y: 10 + frame.minY, width: 30, height: 30)
         imageFlag.frame = titleFrame
         
     }
