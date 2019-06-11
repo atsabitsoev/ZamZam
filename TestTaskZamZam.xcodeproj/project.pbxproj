@@ -996,7 +996,7 @@
 				AC57896C22AA856F002043F8 /* CardCellNewPayment.swift */,
 			);
 			name = PaymentCells;
-			path = "/Users/atsamaz/Desktop/ZamZam/TestTaskZamZam/Entities + Services/PaymentCells";
+			path = "/Users/atsamaz/Desktop/IOS/TestTaskZamZam/Entities + Services/PaymentCells";
 			sourceTree = "<absolute>";
 		};
 		ACFC9B7E228D3CE7009F5798 /* UserOperations */ = {
@@ -1457,9 +1457,9 @@
 			baseConfigurationReference = 4D47AB8E0D67202E50D8162A /* Pods-TestTaskZamZam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 89WB9E7UEU;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GSJ37ZAC59;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1468,7 +1468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = a.s.bitsoev.TestTaskZamZam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = ZamZamNewProfile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1479,9 +1479,9 @@
 			baseConfigurationReference = 6FEFA5C3705F6AB54AA6D217 /* Pods-TestTaskZamZam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 89WB9E7UEU;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GSJ37ZAC59;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1490,7 +1490,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = a.s.bitsoev.TestTaskZamZam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = ZamZamNewProfile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

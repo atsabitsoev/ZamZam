@@ -17,11 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let appCredentialsSaved = UserDefaults.standard.bool(forKey: "appCredentialsSaved")
-        if !appCredentialsSaved {
-            saveAppCredentialsToKeychain()
-            UserDefaults.standard.set(true, forKey: "appCredentialsSaved")
-        }
+        saveAppCredentialsToKeychain()
         
         let userEntered = UserDefaults.standard.bool(forKey: "userEntered")
 
