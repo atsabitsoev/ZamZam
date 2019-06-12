@@ -11,6 +11,9 @@ import UIKit
 class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
     
     
+    var vc: PaymentNewVC!
+    
+    
     @IBOutlet weak var viewSum: UIView! {
         didSet {
             //setBorder(to: viewSum)
@@ -35,5 +38,12 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-
+    
+    
+    @IBAction func sumTextChanged(_ sender: UITextField) {
+        
+        vc.transferList["sum"] = tfSum.text
+        vc.tableView.reloadData()
+    }
+    
 }

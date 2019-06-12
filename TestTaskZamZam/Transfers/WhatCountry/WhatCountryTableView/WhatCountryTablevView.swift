@@ -42,10 +42,25 @@ extension WhatCountryVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let personalDataVC = self.personalDataVC {
+            
             personalDataVC.country = countries[indexPath.row]
             personalDataVC.countryCode = countryCodes[indexPath.row]
             personalDataVC.updateButCountry()
             self.navigationController?.popViewController(animated: true)
+            
+        } else if interTransRecieverVC != nil {
+            
+            interTransRecieverVC!.countryName = countries[indexPath.row]
+            interTransRecieverVC!.countryCode = countryCodes[indexPath.row]
+            interTransRecieverVC!.setCountry()
+            self.navigationController?.popViewController(animated: true)
+            
+        }  else if nextVCIsInterTransReciverVC {
+            
+            let intTransRecVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "interTransRecieverVC") as! InterTransRecieverVC
+            intTransRecVC.countryName = countries[indexPath.row]
+            intTransRecVC.countryCode = countryCodes[indexPath.row]
+            self.navigationController?.show(intTransRecVC, sender: nil)
         }
         
         tableView.deselectRow(at: indexPath, animated: true)

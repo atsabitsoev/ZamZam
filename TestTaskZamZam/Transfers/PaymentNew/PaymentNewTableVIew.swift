@@ -160,13 +160,14 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 3:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "SumAndCurrencyCell") as! SumAndCurrencyCell
-            
+            cell.vc = self
             cell.viewCurrency.delegate = self
             return cell
             
         case 4:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "TotalInfoCell") as! TotalInfoCell
+            cell.labSum.text = "\(self.transferList["sum"]!) ₽"
             return cell
             
         default:

@@ -158,6 +158,9 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath {
         case [0,0]:
             // Переводы за рубеж
+            let whatCountryVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "whatCountryVC") as! WhatCountryVC
+            whatCountryVC.nextVCIsInterTransReciverVC = true
+            self.navigationController?.show(whatCountryVC, sender: nil)
             print("Переводы  за рубеж")
         case [1,0]:
             // Открыть экран перевода с счета замзам

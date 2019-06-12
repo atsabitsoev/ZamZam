@@ -14,12 +14,13 @@ class ButtonChooseCountryFlag: UIButton {
     
     
     private lazy var labTitle: MaterialTextFieldLabTitle = MaterialTextFieldLabTitle()
-    private lazy var labCountry = UILabel()
+    lazy var labCountry = UILabel()
     private lazy var imageViewChevron = UIImageView()
-    private lazy var imageViewCountry = UIImageView()
+    lazy var imageViewCountry = UIImageView()
     
     
     var countryCode = "RU"
+    var countryName = "Россия"
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -35,7 +36,7 @@ class ButtonChooseCountryFlag: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+        print("layout button")
         configureLabTitle()
         configureLabCountry()
         configureImageViewChevron()
@@ -44,7 +45,7 @@ class ButtonChooseCountryFlag: UIButton {
     }
     
     
-    private func configureImageViewCountry() {
+    func configureImageViewCountry() {
         
         superview?.addSubview(imageViewCountry)
         
@@ -72,13 +73,13 @@ class ButtonChooseCountryFlag: UIButton {
         labTitle.sizeToFit()
     }
     
-    private func configureLabCountry() {
+    func configureLabCountry() {
         
         superview!.addSubview(labCountry)
         
         labCountry.frame = frame.inset(by: UIEdgeInsets(top: 13, left: 58, bottom: 13, right: 35))
         titleLabel?.alpha = 0
-        labCountry.text = titleLabel?.text
+        labCountry.text = countryName
         labCountry.font = UIFont(name: "KelsonSans-RegularRU", size: 16)
         labCountry.textColor = #colorLiteral(red: 0.1055946723, green: 0.1623724401, blue: 0.4235801399, alpha: 1)
     }

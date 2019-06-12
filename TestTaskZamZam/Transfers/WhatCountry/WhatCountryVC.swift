@@ -19,6 +19,8 @@ class WhatCountryVC: UIViewController {
     
     
     var personalDataVC: PersonalDataVC?
+    var interTransRecieverVC: InterTransRecieverVC?
+    var nextVCIsInterTransReciverVC = false
     
     
     var countries = [String]()
@@ -140,11 +142,18 @@ class WhatCountryVC: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toSumAndCurrency" {
+        
+        switch segue.identifier {
+            
+        case "toSumAndCurrency":
+            
             let nextVC = segue.destination as! SumAndCurrencyVC
             let indexPath = tableView.indexPathForSelectedRow
             nextVC.currentRegion = countryCodes[(indexPath!.row)]
             nextVC.countryName = countries[indexPath!.row]
+            
+        default:
+            print("куда")
         }
     }
     
