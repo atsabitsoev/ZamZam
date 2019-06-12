@@ -36,7 +36,7 @@ class ButtonChooseCountryFlag: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        print("layout button")
+        
         configureLabTitle()
         configureLabCountry()
         configureImageViewChevron()

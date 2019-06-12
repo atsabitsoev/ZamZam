@@ -17,6 +17,7 @@ class InterTransRecieverVC: UIViewController {
     @IBOutlet weak var butCountry: ButtonChooseCountryFlag!
     @IBOutlet weak var constrHeightOfBigView: NSLayoutConstraint!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var viewBigWhite: UIView!
     
     
     var countryName = ""
@@ -27,7 +28,7 @@ class InterTransRecieverVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     
@@ -36,7 +37,9 @@ class InterTransRecieverVC: UIViewController {
         configureButNext()
         configureNavigationButtons()
         setCountry()
-        
+    }
+    
+    override func viewDidLayoutSubviews() {
         setConstraints()
     }
     
@@ -53,8 +56,12 @@ class InterTransRecieverVC: UIViewController {
         
         if scrollView.frame.height > constrHeightOfBigView.constant {
             
+            view.layoutIfNeeded()
             constrHeightOfBigView.constant = scrollView.frame.height
-            print("work")
+            view.layoutIfNeeded()
+            print(constrHeightOfBigView.constant)
+            print(viewBigWhite.frame.height)
+            print(scrollView.frame.height)
         }
         
     }
@@ -113,4 +120,18 @@ class InterTransRecieverVC: UIViewController {
         
         self.navigationController?.show(whatCountryVC, sender: nil)
     }
+    
+    
+    @IBAction func butCloseTapped(_ sender: UIButton) {
+        
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func butBackTapped(_ sender: UIButton) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
 }
