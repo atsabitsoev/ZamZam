@@ -27,6 +27,7 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "transfersCell") as! TransCell
             
             switch indexPath.section {
+                
             case 0:
                 
                 cell.labTitle.text = "Переводы за рубеж"
