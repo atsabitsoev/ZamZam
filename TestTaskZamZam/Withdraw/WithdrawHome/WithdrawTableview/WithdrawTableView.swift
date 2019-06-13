@@ -15,7 +15,7 @@ extension WithdrawHomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -29,14 +29,16 @@ extension WithdrawHomeVC: UITableViewDelegate, UITableViewDataSource {
             switch indexPath.section {
             case 0:
                 
-                cell.labTitle.text = "На карту"
+                cell.labTitle.text = "На карту любого банка"
                 cell.labDescribtion.text = "180 стран мира"
                 let im = UIImage(named: "creditCard")
                 cell.imSmall.image = im?.withRenderingMode(.alwaysTemplate)
                 
             case 1:
                 
-                cell.labTitle.text = "На баланс телефона"
+                cell.contentView.alpha = 0.5
+                cell.isUserInteractionEnabled = false
+                cell.labTitle.text = "Наличными у партнеров"
                 cell.labDescribtion.text = "Любой оператор"
                 let im = UIImage(named: "phoneIncoming")
                 cell.imSmall.image = im?.withRenderingMode(.alwaysTemplate)
@@ -63,17 +65,18 @@ extension WithdrawHomeVC: UITableViewDelegate, UITableViewDataSource {
             switch indexPath.section {
                 
             case 0:
+                print("\n")
                 
-                attributedString = NSMutableAttributedString(string: "- Комиссия 1%",
-                                                             attributes: [
-                                                                .font: UIFont(name: "KelsonSans-BoldRU",
-                                                                              size: 10.0)!,
-                                                                .foregroundColor: UIColor(red: 10.0 / 255.0,
-                                                                                          green: 12.0 / 255.0,
-                                                                                          blue: 65.0 / 255.0,
-                                                                                          alpha: 1.0),
-                                                                .kern: 0.0
-                    ])
+//                attributedString = NSMutableAttributedString(string: "- Комиссия 1%",
+//                                                             attributes: [
+//                                                                .font: UIFont(name: "PTSans-Bold",
+//                                                                              size: 10.0)!,
+//                                                                .foregroundColor: UIColor(red: 10.0 / 255.0,
+//                                                                                          green: 12.0 / 255.0,
+//                                                                                          blue: 65.0 / 255.0,
+//                                                                                          alpha: 1.0),
+//                                                                .kern: 0.0
+//                    ])
                 
             default:
                 

@@ -151,8 +151,8 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             
         case 2:
             
-            let storyboard = UIStoryboard(name: "Replenish", bundle: nil)
-            let replenishNav = storyboard.instantiateViewController(withIdentifier: "ReplenishNav")
+            let storyboard = UIStoryboard(name: "Withdraw", bundle: nil)
+            let replenishNav = storyboard.instantiateViewController(withIdentifier: "withdrawNav")
             self.tabBarController?.show(replenishNav, sender: nil)
             
         case 3:

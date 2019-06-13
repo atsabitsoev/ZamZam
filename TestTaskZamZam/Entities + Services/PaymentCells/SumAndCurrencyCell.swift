@@ -14,6 +14,7 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
     var paymentNewVC: PaymentNewVC?
     var interTransPaymentVC: InterTransPaymentVC?
     var replenishVC: ReplenishNewVC?
+    var withdrawVC: WithdrawPaymentVC?
     
     
     @IBOutlet weak var viewSum: UIView! {
@@ -53,6 +54,9 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
         } else if let replenishVC = self.replenishVC {
             replenishVC.transferList["sum"] = tfSum.text
             replenishVC.tableView.reloadData()
+        } else if let withdrawVC = self.withdrawVC {
+            withdrawVC.transferList["sum"] = tfSum.text
+            withdrawVC.tableView.reloadData()
         }
     }
     

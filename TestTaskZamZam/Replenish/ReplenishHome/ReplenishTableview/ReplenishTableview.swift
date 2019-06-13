@@ -37,6 +37,7 @@ extension ReplenishVC: UITableViewDelegate, UITableViewDataSource {
             case 1:
                 
                 cell.contentView.alpha = 0.5
+                cell.isUserInteractionEnabled = false
                 cell.labTitle.text = "Наличные"
                 cell.labDescribtion.text = "По номеру телефона"
                 let im = UIImage(named: "repeat")
