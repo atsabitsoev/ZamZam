@@ -37,13 +37,13 @@ class SplashVC: UIViewController {
         
         masSplash = [Splash(title: "Кэшбэк",
                             describtion: "Получи кэшбэк 1% от суммы перевода на счет zamzam реальными деньгами, которые можно потрать на связь или расплатиться картой",
-                            imageName: "first"),
+                            imageName: "1CashBack"),
                      Splash(title: "Contact",
                             describtion: "Отправить и получить перевод можно в любом отделении платежной системы CONTACT, только в Москве их 150",
-                            imageName: "second"),
+                            imageName: "fns"),
                      Splash(title: "Немыслимо!",
                             describtion: "Бесплатные валютные переводы 0% для граждан СНГ и России",
-                            imageName: "third")]
+                            imageName: "0")]
     }
     
     func itemChanged(to item: Int) {
