@@ -31,7 +31,7 @@ class PersonalDataVC: UIViewController {
     @IBOutlet weak var tfPassportIssueDate: MaterialTextField!
     
     
-    var datePicker:UIDatePicker = UIDatePicker()
+    var datePicker: UIDatePicker = UIDatePicker()
     let toolBar = UIToolbar()
     
     
@@ -265,6 +265,17 @@ class PersonalDataVC: UIViewController {
         
         UserProfileService.standard.postUserInfoRequest(userProfileInfo: userProfileInfo)
         
+    }
+    
+    
+    @IBAction func butBackTapped(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func butCloseTapped(_ sender: Any) {
+        
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
     

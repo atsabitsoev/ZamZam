@@ -125,6 +125,7 @@
 		ACD2B8E222AFDD5200DBDADF /* ButtonChooseCountryFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2B8E122AFDD5200DBDADF /* ButtonChooseCountryFlag.swift */; };
 		ACD357ED225CD9BC0018243B /* ReplenSMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD357EC225CD9BC0018243B /* ReplenSMSVC.swift */; };
 		ACD99B8E22B1BF78006FB4F8 /* InterTransSenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD99B8D22B1BF78006FB4F8 /* InterTransSenderVC.swift */; };
+		ACD99B9022B1D36D006FB4F8 /* InterTransSenderTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD99B8F22B1D36D006FB4F8 /* InterTransSenderTFDelegate.swift */; };
 		ACE139BC2242549D004EDB38 /* CardIssue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE139BB2242549D004EDB38 /* CardIssue.storyboard */; };
 		ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139BE224259F6004EDB38 /* CardIssueVC.swift */; };
 		ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */; };
@@ -279,6 +280,7 @@
 		ACD2B8E122AFDD5200DBDADF /* ButtonChooseCountryFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChooseCountryFlag.swift; sourceTree = "<group>"; };
 		ACD357EC225CD9BC0018243B /* ReplenSMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenSMSVC.swift; sourceTree = "<group>"; };
 		ACD99B8D22B1BF78006FB4F8 /* InterTransSenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterTransSenderVC.swift; sourceTree = "<group>"; };
+		ACD99B8F22B1D36D006FB4F8 /* InterTransSenderTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterTransSenderTFDelegate.swift; sourceTree = "<group>"; };
 		ACE139BB2242549D004EDB38 /* CardIssue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardIssue.storyboard; sourceTree = "<group>"; };
 		ACE139BE224259F6004EDB38 /* CardIssueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueVC.swift; sourceTree = "<group>"; };
 		ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueCollectionView.swift; sourceTree = "<group>"; };
@@ -889,6 +891,7 @@
 			isa = PBXGroup;
 			children = (
 				ACD99B8D22B1BF78006FB4F8 /* InterTransSenderVC.swift */,
+				ACD99B8F22B1D36D006FB4F8 /* InterTransSenderTFDelegate.swift */,
 			);
 			path = InterTransSender;
 			sourceTree = "<group>";
@@ -1211,6 +1214,7 @@
 				AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */,
 				ACC5CB0D225C96CC00B28E62 /* ReplenAddCardCell.swift in Sources */,
 				ACC5CAF8225C718A00B28E62 /* ReplenishDescribtionCell.swift in Sources */,
+				ACD99B9022B1D36D006FB4F8 /* InterTransSenderTFDelegate.swift in Sources */,
 				ACC5CAFB225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift in Sources */,
 				AC98BF862268946E00E35745 /* WithdrawTableView.swift in Sources */,
 				AC71D933229EA61700001C29 /* Transaction.swift in Sources */,

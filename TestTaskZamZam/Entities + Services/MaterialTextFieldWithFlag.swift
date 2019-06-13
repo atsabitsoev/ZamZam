@@ -25,7 +25,7 @@ class MaterialTextFieldWithFlag: UITextField {
     private lazy var labTitle: MaterialTextFieldLabTitle = MaterialTextFieldLabTitle()
     
     let imageFlag = UIImageView()
-    private var code: String?
+    var code: String?
     
     
     required init?(coder aDecoder: NSCoder) {

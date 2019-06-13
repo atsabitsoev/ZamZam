@@ -393,7 +393,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ywl-j5-guo" secondAttribute="height" multiplier="339:62" id="4uh-WM-s6X"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
                                                 <state key="normal" title="Сохранить">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -412,6 +412,9 @@
                                                             <constraint firstAttribute="width" constant="40" id="sfs-6b-QEm"/>
                                                         </constraints>
                                                         <state key="normal" image="chevronRight"/>
+                                                        <connections>
+                                                            <action selector="butBackTapped:" destination="Dt2-n2-TcK" eventType="touchUpInside" id="nJF-kh-BYs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRF-lV-I7L">
                                                         <rect key="frame" x="52" y="0.0" width="40" height="40"/>
@@ -421,6 +424,9 @@
                                                             <constraint firstAttribute="height" constant="40" id="b7t-ok-3rW"/>
                                                         </constraints>
                                                         <state key="normal" image="x"/>
+                                                        <connections>
+                                                            <action selector="butCloseTapped:" destination="Dt2-n2-TcK" eventType="touchUpInside" id="LAj-Ue-f1d"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>

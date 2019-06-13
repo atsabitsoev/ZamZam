@@ -1919,6 +1919,10 @@
                                     <constraint firstAttribute="width" constant="16" id="DCA-RM-OsN"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Z9o-Up-icQ">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.1215686275" green="0.15686274510000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.12156862745098039" green="0.15686274509803921" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1934,15 +1938,18 @@
                             <constraint firstItem="4ka-gY-FRy" firstAttribute="trailing" secondItem="s8R-tq-IpH" secondAttribute="trailing" constant="18" id="XSn-ec-ntU"/>
                             <constraint firstAttribute="bottom" secondItem="KUY-GS-dwo" secondAttribute="bottom" id="bGI-9h-PR4"/>
                             <constraint firstItem="Etm-hl-dQX" firstAttribute="top" secondItem="4ka-gY-FRy" secondAttribute="top" constant="9" id="eS2-A6-gZP"/>
+                            <constraint firstItem="Z9o-Up-icQ" firstAttribute="centerY" secondItem="eFe-IV-Fid" secondAttribute="centerY" id="eW1-VL-TqU"/>
                             <constraint firstItem="Etm-hl-dQX" firstAttribute="leading" secondItem="4ka-gY-FRy" secondAttribute="leading" constant="18" id="r9M-Mr-Nqr"/>
                             <constraint firstItem="kHG-QI-8Zl" firstAttribute="centerX" secondItem="4ka-gY-FRy" secondAttribute="centerX" id="tQO-EH-0b7"/>
                             <constraint firstItem="kHG-QI-8Zl" firstAttribute="width" secondItem="eFe-IV-Fid" secondAttribute="width" id="uZg-b1-mGO"/>
                             <constraint firstItem="s8R-tq-IpH" firstAttribute="leading" secondItem="4ka-gY-FRy" secondAttribute="leading" constant="18" id="v0Z-Mb-9RX"/>
                             <constraint firstItem="c8K-pn-qZg" firstAttribute="leading" secondItem="eFe-IV-Fid" secondAttribute="leading" id="w3y-aO-e1g"/>
+                            <constraint firstItem="Z9o-Up-icQ" firstAttribute="centerX" secondItem="eFe-IV-Fid" secondAttribute="centerX" id="yb0-w2-7KJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4ka-gY-FRy"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Z9o-Up-icQ" id="w51-MD-x5D"/>
                         <outlet property="butBack" destination="Xw2-ne-oTL" id="kid-1E-oiO"/>
                         <outlet property="butClose" destination="Ugm-XU-sFW" id="3kA-7f-ru1"/>
                         <outlet property="butCountry" destination="L7T-zG-zI1" id="p3I-3v-DMk"/>
@@ -2147,6 +2154,9 @@
                                                             <constraint firstAttribute="height" constant="40" id="jDl-ro-XeZ"/>
                                                         </constraints>
                                                         <state key="normal" image="chevronRight"/>
+                                                        <connections>
+                                                            <action selector="butBackTapped:" destination="Lho-tN-p45" eventType="touchUpInside" id="R22-Oo-vlC"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aB-jx-Z8M">
                                                         <rect key="frame" x="52" y="0.0" width="40" height="40"/>
@@ -2156,6 +2166,9 @@
                                                             <constraint firstAttribute="height" constant="40" id="zvG-J3-ZXg"/>
                                                         </constraints>
                                                         <state key="normal" image="x"/>
+                                                        <connections>
+                                                            <action selector="butCloseTapped:" destination="Lho-tN-p45" eventType="touchUpInside" id="uiP-mi-ocS"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>

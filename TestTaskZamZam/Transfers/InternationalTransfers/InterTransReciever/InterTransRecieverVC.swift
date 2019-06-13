@@ -18,6 +18,7 @@ class InterTransRecieverVC: UIViewController {
     @IBOutlet weak var constrHeightOfBigView: NSLayoutConstraint!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var viewBigWhite: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
     var countryName = ""
@@ -48,12 +49,18 @@ class InterTransRecieverVC: UIViewController {
     
     @objc private func userProfileGot() {
         
+        activityIndicator.stopAnimating()
+        butNext.isUserInteractionEnabled = true
+        
         let senderVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InterTransSenderVC") as! InterTransSenderVC
         senderVC.userProfile = UserProfileService.standard.userProfileInfo!
         self.navigationController?.show(senderVC, sender: nil)
     }
     
     @objc private func userProfileGettingFailed() {
+        
+        activityIndicator.stopAnimating()
+        butNext.isUserInteractionEnabled = true
         
         let senderVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InterTransSenderVC") as! InterTransSenderVC
         senderVC.userProfile = UserProfileInfo(lastName: "",
@@ -175,6 +182,8 @@ class InterTransRecieverVC: UIViewController {
     @IBAction func butNextTapped(_ sender: UIButton) {
         
         UserProfileService.standard.getUserInfoRequest()
+        activityIndicator.startAnimating()
+        butNext.isUserInteractionEnabled = false
     }
     
     
