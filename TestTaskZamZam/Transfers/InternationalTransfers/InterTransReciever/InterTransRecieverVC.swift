@@ -29,6 +29,44 @@ class InterTransRecieverVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addObservers()
+    }
+    
+    
+    private func addObservers() {
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(userProfileGot),
+                                               name: NSNotification.Name(NotificationNames.userProfileGot.rawValue),
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(userProfileGettingFailed),
+                                               name: NSNotification.Name(NotificationNames.userProfileGettingFailed.rawValue),
+                                               object: nil)
+    }
+    
+    
+    @objc private func userProfileGot() {
+        
+        let senderVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InterTransSenderVC") as! InterTransSenderVC
+        senderVC.userProfile = UserProfileService.standard.userProfileInfo!
+        self.navigationController?.show(senderVC, sender: nil)
+    }
+    
+    @objc private func userProfileGettingFailed() {
+        
+        let senderVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InterTransSenderVC") as! InterTransSenderVC
+        senderVC.userProfile = UserProfileInfo(lastName: "",
+                                               firstName: "",
+                                               middleName: "",
+                                               birthDate: "",
+                                               countryCode: "",
+                                               city: "",
+                                               address: "",
+                                               passportNumber: "",
+                                               passportIssueDate: "",
+                                               passportAuthority: "")
+        self.navigationController?.show(senderVC, sender: nil)
     }
     
     
@@ -132,6 +170,13 @@ class InterTransRecieverVC: UIViewController {
         
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
+    @IBAction func butNextTapped(_ sender: UIButton) {
+        
+        UserProfileService.standard.getUserInfoRequest()
+    }
+    
     
     
 }

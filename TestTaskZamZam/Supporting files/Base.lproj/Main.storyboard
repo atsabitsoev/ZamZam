@@ -1891,7 +1891,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Lho-tN-p45" kind="show" id="mie-8i-dmv"/>
+                                    <action selector="butNextTapped:" destination="WLr-2g-WU5" eventType="touchUpInside" id="nJl-Oo-CIY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Получатель" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etm-hl-dQX">
@@ -1959,7 +1959,7 @@
         <!--Inter Trans SenderVC-->
         <scene sceneID="XPk-mD-Fyk">
             <objects>
-                <viewController id="Lho-tN-p45" customClass="InterTransSenderVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InterTransSenderVC" id="Lho-tN-p45" customClass="InterTransSenderVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kBp-1s-9JQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1968,10 +1968,13 @@
                                 <rect key="frame" x="0.0" y="93" width="414" height="1057"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNq-de-qvj">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1041"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7d-Ec-aPE" customClass="MaterialTextFieldWithFlag" customModule="TestTaskZamZam" customModuleProvider="target">
                                                 <rect key="frame" x="18" y="31" width="378" height="48"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="28E-ia-ipm"/>
                                                 </constraints>
@@ -2042,16 +2045,8 @@
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whc-zU-Wh3" customClass="ButtonChooseCountry" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="431" width="378" height="48"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="R8v-s9-pDS"/>
-                                                </constraints>
-                                                <state key="normal" title="РОССИЯ"/>
-                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Город регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-Wu-NdO" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="489" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="436" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="eQs-ND-g6U"/>
                                                 </constraints>
@@ -2063,7 +2058,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Адрес регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgy-a2-gOh" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="547" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="494" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="FYr-wn-XdC"/>
                                                 </constraints>
@@ -2075,13 +2070,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Паспортные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="XpI-Ew-PYo">
-                                                <rect key="frame" x="23" y="631" width="373" height="14"/>
+                                                <rect key="frame" x="23" y="578" width="373" height="14"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Серия и номер паспорта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ita-u9-qn6" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="660" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="607" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="XbA-aa-t4A"/>
                                                 </constraints>
@@ -2093,7 +2088,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Кем выдан" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-Ac-rAf" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="718" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="665" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="D6d-bY-mD7"/>
                                                 </constraints>
@@ -2105,7 +2100,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата выдачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZP-CY-5hQ" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="776" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="723" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="fRh-9g-rE3"/>
                                                 </constraints>
@@ -2117,7 +2112,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyn-g3-8N6">
-                                                <rect key="frame" x="26" y="838" width="375" height="38.5"/>
+                                                <rect key="frame" x="26" y="785" width="375" height="38.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Данные должны полностью совпадать с документом. Обязательно перепроверьте данные перед отправкой.">
                                                         <attributes>
@@ -2131,18 +2126,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aus-Fj-5xX">
-                                                <rect key="frame" x="18" y="898.5" width="378" height="69"/>
+                                                <rect key="frame" x="18" y="845.5" width="378" height="69"/>
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Aus-Fj-5xX" secondAttribute="height" multiplier="339:62" id="9gU-K1-c9z"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                                <state key="normal" title="Сохранить">
+                                                <state key="normal" title="Далее &gt;">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YXy-xT-fC8">
-                                                <rect key="frame" x="161" y="975" width="92" height="40"/>
+                                                <rect key="frame" x="161" y="934" width="92" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fQ-g1-iuF">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -2172,12 +2167,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Aus-Fj-5xX" firstAttribute="leading" secondItem="xNq-de-qvj" secondAttribute="leading" constant="18" id="0Db-hh-cSd"/>
-                                            <constraint firstAttribute="height" constant="1041" id="14Q-yU-SAH"/>
-                                            <constraint firstItem="hSf-Wu-NdO" firstAttribute="top" secondItem="Whc-zU-Wh3" secondAttribute="bottom" constant="10" id="1As-Oz-UBM"/>
+                                            <constraint firstAttribute="height" constant="1000" id="14Q-yU-SAH"/>
                                             <constraint firstItem="Tyn-g3-8N6" firstAttribute="leading" secondItem="xNq-de-qvj" secondAttribute="leading" constant="26" id="29L-3v-KYX"/>
                                             <constraint firstItem="c6Z-Io-EJC" firstAttribute="top" secondItem="rQg-Ex-ekT" secondAttribute="bottom" constant="15" id="4xf-jq-eP4"/>
                                             <constraint firstAttribute="trailing" secondItem="ita-u9-qn6" secondAttribute="trailing" constant="18" id="6Ec-Jp-cpQ"/>
-                                            <constraint firstItem="Whc-zU-Wh3" firstAttribute="leading" secondItem="xNq-de-qvj" secondAttribute="leading" constant="18" id="8ON-Sk-11s"/>
                                             <constraint firstItem="qgy-a2-gOh" firstAttribute="leading" secondItem="xNq-de-qvj" secondAttribute="leading" constant="18" id="9dp-WJ-Fnp"/>
                                             <constraint firstAttribute="trailing" secondItem="Z2k-zH-yNr" secondAttribute="trailing" constant="18" id="BYy-pO-64X"/>
                                             <constraint firstItem="O8o-HZ-1aS" firstAttribute="top" secondItem="c6Z-Io-EJC" secondAttribute="bottom" constant="10" id="C1B-Fq-BtI"/>
@@ -2191,12 +2184,12 @@
                                             <constraint firstItem="Tyn-g3-8N6" firstAttribute="top" secondItem="SZP-CY-5hQ" secondAttribute="bottom" constant="14" id="LLs-RZ-4BW"/>
                                             <constraint firstItem="Z2k-zH-yNr" firstAttribute="leading" secondItem="xNq-de-qvj" secondAttribute="leading" constant="18" id="LjD-YM-Bb5"/>
                                             <constraint firstItem="XpI-Ew-PYo" firstAttribute="top" secondItem="qgy-a2-gOh" secondAttribute="bottom" constant="36" id="MYo-ub-kGo"/>
+                                            <constraint firstItem="hSf-Wu-NdO" firstAttribute="top" secondItem="899-DU-wIq" secondAttribute="bottom" constant="20" id="NBD-fe-KFy"/>
                                             <constraint firstItem="899-DU-wIq" firstAttribute="leading" secondItem="xNq-de-qvj" secondAttribute="leading" constant="23" id="NbB-rH-XY2"/>
                                             <constraint firstItem="rQg-Ex-ekT" firstAttribute="top" secondItem="d7d-Ec-aPE" secondAttribute="bottom" constant="36" id="Ov7-Rw-M0g"/>
                                             <constraint firstAttribute="trailing" secondItem="Aus-Fj-5xX" secondAttribute="trailing" constant="18" id="Qyp-1f-ROU"/>
                                             <constraint firstItem="p4Z-Ac-rAf" firstAttribute="leading" secondItem="xNq-de-qvj" secondAttribute="leading" constant="18" id="R3I-XJ-0ql"/>
                                             <constraint firstItem="4RE-hM-Xm5" firstAttribute="top" secondItem="O8o-HZ-1aS" secondAttribute="bottom" constant="10" id="RmV-G3-ovj"/>
-                                            <constraint firstAttribute="trailing" secondItem="Whc-zU-Wh3" secondAttribute="trailing" constant="18" id="TLp-lU-ugX"/>
                                             <constraint firstAttribute="trailing" secondItem="Tyn-g3-8N6" secondAttribute="trailing" constant="13" id="UOA-dE-KhR"/>
                                             <constraint firstAttribute="bottom" secondItem="YXy-xT-fC8" secondAttribute="bottom" constant="26" id="UUb-y9-zYO"/>
                                             <constraint firstItem="Aus-Fj-5xX" firstAttribute="width" secondItem="Aus-Fj-5xX" secondAttribute="height" multiplier="339:62" id="Um0-fa-DvK"/>
@@ -2213,7 +2206,6 @@
                                             <constraint firstItem="d7d-Ec-aPE" firstAttribute="leading" secondItem="xNq-de-qvj" secondAttribute="leading" constant="18" id="hfG-0K-HUO"/>
                                             <constraint firstAttribute="trailing" secondItem="899-DU-wIq" secondAttribute="trailing" constant="12" id="kYf-jd-mrP"/>
                                             <constraint firstAttribute="trailing" secondItem="p4Z-Ac-rAf" secondAttribute="trailing" constant="18" id="lhM-zF-kS7"/>
-                                            <constraint firstItem="Whc-zU-Wh3" firstAttribute="top" secondItem="899-DU-wIq" secondAttribute="bottom" constant="15" id="lnm-0J-3Yq"/>
                                             <constraint firstItem="YXy-xT-fC8" firstAttribute="centerX" secondItem="xNq-de-qvj" secondAttribute="centerX" id="opa-Bc-HI8"/>
                                             <constraint firstItem="hSf-Wu-NdO" firstAttribute="leading" secondItem="xNq-de-qvj" secondAttribute="leading" constant="18" id="q1n-cm-3yu"/>
                                             <constraint firstAttribute="trailing" secondItem="O8o-HZ-1aS" secondAttribute="trailing" constant="18" id="qED-X0-7Q2"/>
@@ -2279,6 +2271,22 @@
                         <viewLayoutGuide key="safeArea" id="dk9-tX-sKo"/>
                     </view>
                     <size key="freeformSize" width="414" height="1150"/>
+                    <connections>
+                        <outlet property="butBack" destination="7fQ-g1-iuF" id="yZ3-ad-Lk1"/>
+                        <outlet property="butClose" destination="0aB-jx-Z8M" id="LtP-xh-JbN"/>
+                        <outlet property="butNext" destination="Aus-Fj-5xX" id="0iC-IM-ssF"/>
+                        <outlet property="scrollView" destination="AKK-MW-KkC" id="Rpi-pt-9He"/>
+                        <outlet property="tfAdress" destination="qgy-a2-gOh" id="8sb-H8-LaY"/>
+                        <outlet property="tfBirthDate" destination="Z2k-zH-yNr" id="mWF-aR-5TG"/>
+                        <outlet property="tfCity" destination="hSf-Wu-NdO" id="knY-BQ-dRi"/>
+                        <outlet property="tfLastName" destination="O8o-HZ-1aS" id="4fB-Lt-nII"/>
+                        <outlet property="tfMiddleName" destination="4RE-hM-Xm5" id="piK-0A-iFD"/>
+                        <outlet property="tfName" destination="c6Z-Io-EJC" id="IV2-iK-v2F"/>
+                        <outlet property="tfPasportNumber" destination="ita-u9-qn6" id="vbL-QN-RYd"/>
+                        <outlet property="tfPassportAuthority" destination="p4Z-Ac-rAf" id="Y4B-5c-Lmz"/>
+                        <outlet property="tfPassportDate" destination="SZP-CY-5hQ" id="HPd-RE-oFT"/>
+                        <outlet property="tfPhone" destination="d7d-Ec-aPE" id="no9-7y-wIc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7I0-y4-fKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

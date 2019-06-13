@@ -9,11 +9,93 @@
 import UIKit
 
 class InterTransSenderVC: UIViewController {
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var butClose: UIButton!
+    @IBOutlet weak var butBack: UIButton!
+    @IBOutlet weak var butNext: UIButton!
+    
+    @IBOutlet weak var tfPhone: MaterialTextFieldWithFlag!
+    @IBOutlet weak var tfName: MaterialTextField!
+    @IBOutlet weak var tfLastName: MaterialTextField!
+    @IBOutlet weak var tfMiddleName: MaterialTextField!
+    @IBOutlet weak var tfBirthDate: MaterialTextField!
+    @IBOutlet weak var tfCity: MaterialTextField!
+    @IBOutlet weak var tfAdress: MaterialTextField!
+    @IBOutlet weak var tfPasportNumber: MaterialTextField!
+    @IBOutlet weak var tfPassportAuthority: MaterialTextField!
+    @IBOutlet weak var tfPassportDate: MaterialTextField!
+    
+    
+    var userProfile: UserProfileInfo!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setData()
+        scrollView.delaysContentTouches = false
+    }
+    
+    
+    private func setData() {
+        
+        tfPhone.text = UserDefaults.standard.string(forKey: "userPhone")
+        
+        tfName.text = userProfile.firstName
+        tfLastName.text = userProfile.lastName
+        tfMiddleName.text = userProfile.middleName
+        tfBirthDate.text = userProfile.birthDate
+        tfCity.text = userProfile.city
+        tfAdress.text = userProfile.address
+        tfPasportNumber.text = userProfile.passportNumber
+        tfPassportAuthority.text = userProfile.passportAuthority
+        tfPassportDate.text = userProfile.passportIssueDate
+    }
+    
+    
+    private func configureButNext() {
+        
+        butNext.layer.cornerRadius = 8
+        butNext.addGradient(colors: [UIColor(red: 86/255,
+                                             green: 192/255,
+                                             blue: 253/255,
+                                             alpha: 1).cgColor,
+                                     UIColor(red: 40/255,
+                                             green: 161/255,
+                                             blue: 231/255,
+                                             alpha: 1).cgColor],
+                            coordinatesX: [0,0],
+                            coordinatesY: [0,1],
+                            cornerRadius: butNext.layer.cornerRadius)
+        
+        butNext.layer.shadowColor = #colorLiteral(red: 0.2509803922, green: 0.6980392157, blue: 0.9529411765, alpha: 1)
+        butNext.layer.shadowOpacity = 0.64
+        butNext.layer.shadowRadius = 10
+        let bounds = butNext.bounds
+        let insetedBounds = bounds.inset(by: UIEdgeInsets(top: 20, left: 10, bottom: -10, right: 10))
+        
+        butNext.layer.shadowPath = CGPath(rect: insetedBounds, transform: nil)
+    }
+    
+    private func configureNavigationButtons() {
+        
+        butBack.layer.cornerRadius = butBack.bounds.height/2
+        butBack.layer.shadowOffset = CGSize(width: 0, height: 6)
+        butBack.layer.shadowRadius = 16
+        butBack.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        butBack.layer.shadowOpacity = 0.18
+        let rightImage = UIImage(named: "chevronRight")?.cgImage
+        let leftImage = UIImage(cgImage: rightImage!, scale: 0, orientation: UIImage.Orientation.down)
+        butBack.setImage(leftImage, for: .normal)
+        butBack.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
+        
+        butClose.layer.cornerRadius = butClose.bounds.height/2
+        butClose.layer.shadowOffset = CGSize(width: 0, height: 6)
+        butClose.layer.shadowRadius = 16
+        butClose.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        butClose.layer.shadowOpacity = 0.18
+        butClose.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
     }
 
 }
