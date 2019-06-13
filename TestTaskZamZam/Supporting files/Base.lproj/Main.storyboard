@@ -71,7 +71,7 @@
                                         <rect key="frame" x="0.0" y="48" width="414" height="760"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои счета" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvK-dw-gnT" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="16" width="99" height="28.5"/>
+                                                <rect key="frame" x="18" y="16" width="99" height="28.5"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="22"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -305,7 +305,7 @@
                                                                     </connections>
                                                                 </collectionView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Операции" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3L-oo-5Er">
-                                                                    <rect key="frame" x="18" y="9" width="97" height="26"/>
+                                                                    <rect key="frame" x="18" y="9" width="97" height="12"/>
                                                                     <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="22"/>
                                                                     <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
@@ -313,7 +313,7 @@
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="Srw-uX-Uf4" firstAttribute="top" secondItem="n3L-oo-5Er" secondAttribute="bottom" constant="9" id="33e-nL-PWZ"/>
+                                                                <constraint firstItem="Srw-uX-Uf4" firstAttribute="top" secondItem="n3L-oo-5Er" secondAttribute="bottom" constant="23" id="33e-nL-PWZ"/>
                                                                 <constraint firstItem="Srw-uX-Uf4" firstAttribute="leading" secondItem="cwc-Pl-0G9" secondAttribute="leading" constant="18" id="7sk-KO-r80"/>
                                                                 <constraint firstItem="n3L-oo-5Er" firstAttribute="leading" secondItem="cwc-Pl-0G9" secondAttribute="leading" constant="18" id="Grn-Yt-X7P"/>
                                                                 <constraint firstItem="n3L-oo-5Er" firstAttribute="top" secondItem="cwc-Pl-0G9" secondAttribute="top" constant="9" id="Oq7-tG-46t"/>
@@ -337,7 +337,7 @@
                                             <constraint firstItem="rbU-B6-b7T" firstAttribute="leading" secondItem="U5x-uO-oZ3" secondAttribute="leading" id="N8E-gR-fjk"/>
                                             <constraint firstAttribute="bottom" secondItem="rbU-B6-b7T" secondAttribute="bottom" constant="83" id="Wyp-Q8-BfF"/>
                                             <constraint firstAttribute="trailing" secondItem="rbU-B6-b7T" secondAttribute="trailing" id="qBe-Vj-qTU"/>
-                                            <constraint firstItem="hvK-dw-gnT" firstAttribute="leading" secondItem="U5x-uO-oZ3" secondAttribute="leading" constant="16" id="rC1-xe-qVn"/>
+                                            <constraint firstItem="hvK-dw-gnT" firstAttribute="leading" secondItem="U5x-uO-oZ3" secondAttribute="leading" constant="18" id="rC1-xe-qVn"/>
                                         </constraints>
                                     </view>
                                     <activityIndicatorView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="5yk-M0-tJf">
@@ -1762,7 +1762,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФИО получателя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a36-S9-dps">
-                                                <rect key="frame" x="18" y="175" width="118" height="18"/>
+                                                <rect key="frame" x="18" y="175" width="128" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="lFs-44-hLT"/>
                                                 </constraints>
@@ -1956,6 +1956,10 @@
                         <outlet property="butNext" destination="s8R-tq-IpH" id="1Tw-YP-vYJ"/>
                         <outlet property="constrHeightOfBigView" destination="FKr-ud-0ns" id="HE9-mk-Cu0"/>
                         <outlet property="scrollView" destination="KUY-GS-dwo" id="EYj-3V-VqT"/>
+                        <outlet property="tfLastName" destination="KEv-3X-wbx" id="0Af-id-Fph"/>
+                        <outlet property="tfMiddleName" destination="bfM-Uv-MTr" id="tNh-83-o3b"/>
+                        <outlet property="tfName" destination="TuT-eh-LIp" id="Ddc-fW-JZN"/>
+                        <outlet property="tfPhone" destination="bu6-rW-VgS" id="VSt-pq-BGw"/>
                         <outlet property="viewBigWhite" destination="kHG-QI-8Zl" id="XPZ-I5-KqY"/>
                     </connections>
                 </viewController>
@@ -2955,7 +2959,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отправитель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-5S-eYV" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="53" width="206" height="39"/>
+                                <rect key="frame" x="18" y="53" width="220" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="VW3-Jc-LAx"/>
                                 </constraints>
@@ -3006,7 +3010,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Номер телефона отправителя " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uif-3g-2qb" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="1" width="126" height="9"/>
+                                                            <rect key="frame" x="29" y="1" width="132.5" height="10.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3056,7 +3060,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Фамилия " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsJ-2a-AYm" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="1" width="42" height="9"/>
+                                                            <rect key="frame" x="29" y="1" width="44" height="10.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3090,7 +3094,7 @@
                                                             <rect key="frame" x="18" y="5" width="378" height="48"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РОССИЯ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBE-zS-8kf" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                    <rect key="frame" x="14" y="16" width="56" height="16"/>
+                                                                    <rect key="frame" x="14" y="14.5" width="68.5" height="19"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                     <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -3113,7 +3117,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Страна " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoA-qq-CVm" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="1" width="33" height="9"/>
+                                                            <rect key="frame" x="29" y="1" width="36" height="10.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

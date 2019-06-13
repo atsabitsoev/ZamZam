@@ -275,7 +275,7 @@ class PersonalDataVC: UIViewController {
     
     @IBAction func butCloseTapped(_ sender: Any) {
         
-        self.navigationController?.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     

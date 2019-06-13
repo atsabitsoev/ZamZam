@@ -39,7 +39,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == zamBills?.count ?? 0 {
             
-            return 120
+            return 135
         } else {
             return 80
         }
@@ -50,6 +50,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
         return UIView()
     }
     

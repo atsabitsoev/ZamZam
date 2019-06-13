@@ -51,7 +51,6 @@
                                                 <color key="NSColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                <integer key="NSUnderline" value="1"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>

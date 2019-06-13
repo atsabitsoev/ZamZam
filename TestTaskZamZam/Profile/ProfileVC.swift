@@ -134,7 +134,7 @@ class ProfileVC: UIViewController {
         let actionCancel = UIAlertAction(title: "Отмена", style: .cancel) { (alert) in}
         alert.addAction(actionYes)
         alert.addAction(actionCancel)
-        self.show(alert, sender: nil)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func logOut() {

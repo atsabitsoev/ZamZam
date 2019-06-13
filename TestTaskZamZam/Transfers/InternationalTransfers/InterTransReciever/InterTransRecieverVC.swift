@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InterTransRecieverVC: UIViewController {
+class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var butNext: UIButton!
@@ -19,6 +19,11 @@ class InterTransRecieverVC: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var viewBigWhite: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    @IBOutlet weak var tfPhone: MaterialTextFieldWithFlag!
+    @IBOutlet weak var tfName: MaterialTextField!
+    @IBOutlet weak var tfLastName: MaterialTextField!
+    @IBOutlet weak var tfMiddleName: MaterialTextField!
     
     
     var countryName = ""
@@ -31,6 +36,7 @@ class InterTransRecieverVC: UIViewController {
         super.viewDidLoad()
         
         addObservers()
+        setDelegates()
     }
     
     
@@ -44,6 +50,15 @@ class InterTransRecieverVC: UIViewController {
                                                selector: #selector(userProfileGettingFailed),
                                                name: NSNotification.Name(NotificationNames.userProfileGettingFailed.rawValue),
                                                object: nil)
+    }
+    
+    
+    private func setDelegates() {
+        
+        tfPhone.delegate = self
+        tfName.delegate = self
+        tfLastName.delegate = self
+        tfMiddleName.delegate = self
     }
     
     
@@ -186,6 +201,14 @@ class InterTransRecieverVC: UIViewController {
         butNext.isUserInteractionEnabled = false
     }
     
+    
+    
+    //TFDELEGATE
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
     
     
 }
