@@ -130,6 +130,9 @@
 		ACE139BF224259F6004EDB38 /* CardIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139BE224259F6004EDB38 /* CardIssueVC.swift */; };
 		ACE139C222427C72004EDB38 /* CardIssueCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */; };
 		ACE139C622427D40004EDB38 /* CardIssueCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE139C522427D40004EDB38 /* CardIssueCollectionCell.swift */; };
+		ACE3F5B622B23E540054733E /* InterTransPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3F5B522B23E540054733E /* InterTransPaymentVC.swift */; };
+		ACE3F5B822B23F670054733E /* InterTransPaymentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3F5B722B23F670054733E /* InterTransPaymentTableView.swift */; };
+		ACE3F5BA22B23FBF0054733E /* InterTransPaymentTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3F5B922B23FBF0054733E /* InterTransPaymentTFDelegate.swift */; };
 		ACE7F2C4225DC0E100F001B0 /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7F2C3225DC0E100F001B0 /* TimerService.swift */; };
 		ACEDB2CD2281A56800A82286 /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDB2CC2281A56800A82286 /* NotificationNames.swift */; };
 		ACEDB2D32281B5B100A82286 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDB2D22281B5B100A82286 /* RegistrationService.swift */; };
@@ -285,6 +288,9 @@
 		ACE139BE224259F6004EDB38 /* CardIssueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueVC.swift; sourceTree = "<group>"; };
 		ACE139C122427C72004EDB38 /* CardIssueCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueCollectionView.swift; sourceTree = "<group>"; };
 		ACE139C522427D40004EDB38 /* CardIssueCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssueCollectionCell.swift; sourceTree = "<group>"; };
+		ACE3F5B522B23E540054733E /* InterTransPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterTransPaymentVC.swift; sourceTree = "<group>"; };
+		ACE3F5B722B23F670054733E /* InterTransPaymentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterTransPaymentTableView.swift; sourceTree = "<group>"; };
+		ACE3F5B922B23FBF0054733E /* InterTransPaymentTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterTransPaymentTFDelegate.swift; sourceTree = "<group>"; };
 		ACE7F2C3225DC0E100F001B0 /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
 		ACEDB2CC2281A56800A82286 /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
 		ACEDB2D22281B5B100A82286 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
@@ -867,6 +873,7 @@
 			children = (
 				ACD2B8DE22AFDABE00DBDADF /* InterTransReciever */,
 				ACD99B8C22B1BF59006FB4F8 /* InterTransSender */,
+				ACE3F5B422B23E330054733E /* InterTransPayment */,
 			);
 			path = InternationalTransfers;
 			sourceTree = "<group>";
@@ -912,6 +919,16 @@
 				ACE139C522427D40004EDB38 /* CardIssueCollectionCell.swift */,
 			);
 			path = CardIssueCollection;
+			sourceTree = "<group>";
+		};
+		ACE3F5B422B23E330054733E /* InterTransPayment */ = {
+			isa = PBXGroup;
+			children = (
+				ACE3F5B522B23E540054733E /* InterTransPaymentVC.swift */,
+				ACE3F5B722B23F670054733E /* InterTransPaymentTableView.swift */,
+				ACE3F5B922B23FBF0054733E /* InterTransPaymentTFDelegate.swift */,
+			);
+			path = InterTransPayment;
 			sourceTree = "<group>";
 		};
 		ACEDB2D02281B39D00A82286 /* PhoneVerificationService */ = {
@@ -1204,6 +1221,7 @@
 				ACBD435F228EA693002D0CF5 /* ZamZamTranferService.swift in Sources */,
 				ACE7F2C4225DC0E100F001B0 /* TimerService.swift in Sources */,
 				ACBF140522670E8C00019545 /* SplashVC.swift in Sources */,
+				ACE3F5B622B23E540054733E /* InterTransPaymentVC.swift in Sources */,
 				ACC5CB03225C963500B28E62 /* ReplenChooseCardTableview.swift in Sources */,
 				AC9D2C0022898A3200F0DE84 /* SetNewPinEnterVC.swift in Sources */,
 				ACFBAC3A2240FB35001D9D94 /* ZamBillCell.swift in Sources */,
@@ -1243,6 +1261,7 @@
 				AC5EA1692239353700EDA066 /* TransfersVC.swift in Sources */,
 				AC3FBB5C223F6B210080F6A8 /* TransferGoneVC.swift in Sources */,
 				ACBF140E22670FE000019545 /* SplashStruct.swift in Sources */,
+				ACE3F5BA22B23FBF0054733E /* InterTransPaymentTFDelegate.swift in Sources */,
 				5B7DFEAF222FFAC200ECF0D3 /* MainVC.swift in Sources */,
 				ACC5CB01225C962100B28E62 /* ReplenChooseCardVC.swift in Sources */,
 				ACFC9B83228D505E009F5798 /* UserTokenService.swift in Sources */,
@@ -1325,6 +1344,7 @@
 				ACA1685822A1073E0050971A /* UserProfileService.swift in Sources */,
 				AC6B2B6F225F5E6A0057DCE8 /* RecipientHistoryCell.swift in Sources */,
 				ACC7589B228C344B0049AB57 /* ResetPasswordService.swift in Sources */,
+				ACE3F5B822B23F670054733E /* InterTransPaymentTableView.swift in Sources */,
 				ACC5CB0B225C96B900B28E62 /* ReplenCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

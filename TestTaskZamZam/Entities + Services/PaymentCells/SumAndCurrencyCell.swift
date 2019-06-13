@@ -11,7 +11,8 @@ import UIKit
 class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
     
     
-    var vc: PaymentNewVC!
+    var paymentNewVC: PaymentNewVC?
+    var interTransPaymentVC: InterTransPaymentVC?
     
     
     @IBOutlet weak var viewSum: UIView! {
@@ -42,8 +43,13 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
     
     @IBAction func sumTextChanged(_ sender: UITextField) {
         
-        vc.transferList["sum"] = tfSum.text
-        vc.tableView.reloadData()
+        if let paymentNewVC = self.paymentNewVC {
+            paymentNewVC.transferList["sum"] = tfSum.text
+            paymentNewVC.tableView.reloadData()
+        } else if let interTransPaymentVC = self.interTransPaymentVC {
+            interTransPaymentVC.transferList["sum"] = tfSum.text
+            interTransPaymentVC.tableView.reloadData()
+        }
     }
     
 }

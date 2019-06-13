@@ -38,12 +38,25 @@ class InterTransSenderVC: UIViewController {
 
         setTFDelegates()
         setData()
+        addRecognizer()
     }
     
     override func viewWillLayoutSubviews() {
         
         configureButNext()
         configureNavigationButtons()
+    }
+    
+    
+    private func addRecognizer() {
+        
+        let rec = UITapGestureRecognizer(target: self, action: #selector(backgroundTapped))
+        self.view.addGestureRecognizer(rec)
+    }
+    
+    @objc private func backgroundTapped() {
+        
+        self.view.endEditing(true)
     }
     
     

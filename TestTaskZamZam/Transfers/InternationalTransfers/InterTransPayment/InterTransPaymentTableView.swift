@@ -1,15 +1,15 @@
 //
-//  PaymentNewTableVIew.swift
+//  InterTransPaymentTableView.swift
 //  TestTaskZamZam
 //
-//  Created by Ацамаз Бицоев on 15/05/2019.
+//  Created by Ацамаз Бицоев on 13/06/2019.
 //  Copyright © 2019 a.s.bitsoev. All rights reserved.
 //
 
 import UIKit
 
-extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
-    
+
+extension InterTransPaymentVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -160,7 +160,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 3:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "SumAndCurrencyCell") as! SumAndCurrencyCell
-            cell.paymentNewVC = self
+            cell.interTransPaymentVC = self
             cell.viewCurrency.delegate = self
             return cell
             
@@ -182,7 +182,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.section == 1 {
-        
+            
             if indexPath.row < masZamBills.count {
                 self.zamBillSelected(indexPath.row)
             } else {
@@ -195,6 +195,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             
         }
     }
+    
     
     
 }
