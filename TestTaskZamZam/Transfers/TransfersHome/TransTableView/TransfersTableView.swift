@@ -36,7 +36,7 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
                 
             case 1:
                 
-                cell.labTitle.text = "Со счета на счет ZAM"
+                cell.labTitle.text = "Клиенту ZamZAm"
                 cell.labDescribtion.text = "По номеру телефона"
                 let im = UIImage(named: "repeat")
                 cell.imSmall.image = im?.withRenderingMode(.alwaysTemplate)
@@ -85,7 +85,7 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
                 
             case 1:
                 
-                attributedString = NSMutableAttributedString(string: "- Комиссия 0%\n- Переводите по номеру телефона\n- Оплачивайте перевод картой любого банка\n- Получить перевод можно в одной из 3000 точек обслуживания",
+                attributedString = NSMutableAttributedString(string: "- Комиссия 0%\n- Переводите по номеру телефона",
                                                                  attributes: [
                     .font: UIFont(name: "KelsonSans-RegularRU",
                                   size: 10.0)!,
@@ -100,13 +100,6 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
                                                             size: 10.0)!,
                                               range: NSRange(location: 0,
                                                              length: 15))
-                attributedString.addAttribute(.foregroundColor,
-                                              value: UIColor(red: 86/255,
-                                                             green: 192/255,
-                                                             blue: 253/255,
-                                                             alpha: 1),
-                                              range: NSRange(location: 129,
-                                                             length: 18))
                 
             default:
                 
