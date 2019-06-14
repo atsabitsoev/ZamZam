@@ -81,7 +81,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <view key="tableFooterView" contentMode="scaleToFill" id="Vva-0r-YMC">
-                                                    <rect key="frame" x="0.0" y="228" width="414" height="0.0"/>
+                                                    <rect key="frame" x="0.0" y="348" width="414" height="0.0"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
@@ -320,6 +320,16 @@
                                                                 <constraint firstAttribute="trailing" secondItem="Srw-uX-Uf4" secondAttribute="trailing" constant="8" id="dn6-Xo-Ho8"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Srw-uX-Uf4" secondAttribute="bottom" id="vEC-V9-8qT"/>
                                                             </constraints>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </tableViewCell>
+                                                    <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="120" id="PAy-JY-RWH">
+                                                        <rect key="frame" x="0.0" y="228" width="414" height="120"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PAy-JY-RWH" id="C4x-fy-wac">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </tableViewCellContentView>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </tableViewCell>
@@ -4936,7 +4946,7 @@
         <image name="briefcaseCopy" width="22" height="20"/>
         <image name="check" width="24" height="24"/>
         <image name="chevronRight" width="24" height="24"/>
-        <image name="creditCard" width="24" height="24"/>
+        <image name="creditCard" width="20" height="20"/>
         <image name="logo" width="12" height="12"/>
         <image name="more" width="24" height="24"/>
         <image name="plusCircle" width="24" height="24"/>
