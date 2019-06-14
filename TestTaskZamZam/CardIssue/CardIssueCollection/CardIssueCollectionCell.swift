@@ -13,9 +13,12 @@ class CardIssueCollectionCell: UICollectionViewCell {
     @IBOutlet weak var imCard: UIImageView! {
         didSet {
             imCard.layer.cornerRadius = 14
-            imCard.clipsToBounds = true
         }
     }
-    @IBOutlet weak var viewShadow: UIView!
+    @IBOutlet weak var viewShadow: UIView! {
+        didSet {
+            viewShadow.alpha = 0
+        }
+    }
     
 }

@@ -23,9 +23,9 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return numberSenderCellPhoneNumberCells
         case 1:
-            return numberBillCells + numberCards
+            return numberBillCells
         case 2:
-            return 1
+            return numberCards + 1
         case 3:
             return sumAndCurrencyCells
         case 4:
@@ -44,11 +44,11 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
         case 0:
-            return 30
+            return 0//30
         case 1:
             return 37
         case 2:
-            return 0
+            return 37
         default:
             return 30
         }
@@ -57,13 +57,15 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            return (UIScreen.main.bounds.width - 36) * (16/113) + 10
+            return 0//(UIScreen.main.bounds.width - 36) * (16/113) + 10
         case 1:
-            if indexPath.row >= masZamBills.count {
-                return 70
-            }
             return 80
         case 2:
+            
+            if indexPath.row < cards.count {
+                return 70
+            }
+            
             if newCardAdding {
                 return 158
             } else {
@@ -82,18 +84,28 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
         
         //1
         let viewFor1Section = UIView(frame: tableView.rectForHeader(inSection: section))
-        viewFor1Section.backgroundColor = UIColor.white.withAlphaComponent(0.8)
-        let label = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 13, left: 18, bottom: 7, right: 18)))
+        viewFor1Section.backgroundColor = .clear
+        let label = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 9, left: 18, bottom: 7, right: 18)))
         label.text = "Выберете счет"
         label.textColor = #colorLiteral(red: 0.08931172639, green: 0.1388869584, blue: 0.3626311421, alpha: 1)
-        label.font = UIFont(name: "KelsonSans-RegularRU", size: 14)
+        label.font = UIFont(name: "PTSans-Bold", size: 16)
         viewFor1Section.addSubview(label)
+        //2
+        let viewFor2Section = UIView(frame: tableView.rectForHeader(inSection: section))
+        viewFor2Section.backgroundColor = .clear
+        let label2 = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 9, left: 18, bottom: 7, right: 18)))
+        label2.text = "Выберете способ оплаты"
+        label2.textColor = #colorLiteral(red: 0.08931172639, green: 0.1388869584, blue: 0.3626311421, alpha: 1)
+        label2.font = UIFont(name: "PTSans-Bold", size: 16)
+        viewFor2Section.addSubview(label2)
         //Any
         let viewForAnySection = UIView(frame: tableView.rectForHeader(inSection: section))
         
         switch section {
         case 1:
             return viewFor1Section
+        case 2:
+            return viewFor2Section
         default:
             return viewForAnySection
         }
@@ -105,23 +117,10 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
             
         case 0:
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SenderCellPhoneNumber") as! SenderCellPhoneNumber
+            let cell = UITableViewCell()//tableView.dequeueReusableCell(withIdentifier: "SenderCellPhoneNumber") as! SenderCellPhoneNumber
             return cell
             
         case 1:
-            
-            if indexPath.row >= masZamBills.count {
-                
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCellNewPayment") as! CardCellNewPayment
-                
-                if let index = self.selectedCardIndex, index == indexPath.row - masZamBills.count {
-                    cell.addCheck()
-                } else {
-                    cell.deleteCheck()
-                }
-                
-                return cell
-            }
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! ZamBillCheckCell
             let bill = masZamBills[indexPath.row]
@@ -139,6 +138,19 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
             return cell
             
         case 2:
+            
+            if indexPath.row < cards.count {
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCellNewPayment") as! CardCellNewPayment
+                
+                if let index = self.selectedCardIndex, index == indexPath.row {
+                    cell.addCheck()
+                } else {
+                    cell.deleteCheck()
+                }
+                
+                return cell
+            }
             
             if newCardAdding {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardDataCell") as! CardDataCell
@@ -183,15 +195,15 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.section == 1 {
             
-            if indexPath.row < masZamBills.count {
-                self.zamBillSelected(indexPath.row)
-            } else {
-                self.cardBillSelected(indexPath.row - masZamBills.count)
-            }
+            self.zamBillSelected(indexPath.row)
             
         } else if indexPath.section == 2 {
             
-            self.newCardAddingSelected()
+            if indexPath.row < cards.count {
+                self.cardBillSelected(indexPath.row)
+            } else {
+                self.newCardAddingSelected()
+            }
             
         }
     }

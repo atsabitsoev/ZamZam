@@ -175,6 +175,9 @@
                                                             <constraint firstAttribute="width" constant="40" id="UbX-7Q-D7m"/>
                                                         </constraints>
                                                         <state key="normal" image="chevronRight"/>
+                                                        <connections>
+                                                            <action selector="butBackTapped:" destination="4j6-zd-31P" eventType="touchUpInside" id="io5-fI-KPU"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgf-HG-gWM">
                                                         <rect key="frame" x="52" y="0.0" width="40" height="40"/>
@@ -184,6 +187,9 @@
                                                             <constraint firstAttribute="height" constant="40" id="mHE-4o-wkv"/>
                                                         </constraints>
                                                         <state key="normal" image="x"/>
+                                                        <connections>
+                                                            <action selector="butCloseTapped:" destination="4j6-zd-31P" eventType="touchUpInside" id="WYG-8N-9QT"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1091,7 +1097,7 @@
                                     <constraint firstItem="q9d-RC-BM0" firstAttribute="top" secondItem="dKM-jL-yhB" secondAttribute="bottom" constant="16" id="wRb-nI-8IB"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пополнить счет" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="six-ig-AyD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На карту" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="six-ig-AyD">
                                 <rect key="frame" x="18" y="53" width="339" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="Fg1-lZ-qZQ"/>

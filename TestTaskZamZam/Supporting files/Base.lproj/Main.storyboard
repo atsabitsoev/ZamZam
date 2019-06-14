@@ -1762,7 +1762,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФИО получателя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a36-S9-dps">
-                                                <rect key="frame" x="18" y="175" width="128" height="18"/>
+                                                <rect key="frame" x="18" y="175" width="118" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="lFs-44-hLT"/>
                                                 </constraints>
@@ -2959,7 +2959,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отправитель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-5S-eYV" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="53" width="220" height="39"/>
+                                <rect key="frame" x="18" y="53" width="206" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="VW3-Jc-LAx"/>
                                 </constraints>
@@ -3010,7 +3010,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Номер телефона отправителя " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uif-3g-2qb" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="1" width="132.5" height="10.5"/>
+                                                            <rect key="frame" x="29" y="1" width="126" height="9"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3060,7 +3060,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Фамилия " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsJ-2a-AYm" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="1" width="44" height="10.5"/>
+                                                            <rect key="frame" x="29" y="1" width="42" height="9"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3094,7 +3094,7 @@
                                                             <rect key="frame" x="18" y="5" width="378" height="48"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РОССИЯ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBE-zS-8kf" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                    <rect key="frame" x="14" y="14.5" width="68.5" height="19"/>
+                                                                    <rect key="frame" x="14" y="16" width="56" height="16"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                                                     <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -3117,7 +3117,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Страна " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoA-qq-CVm" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="1" width="36" height="10.5"/>
+                                                            <rect key="frame" x="29" y="1" width="33" height="9"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3918,6 +3918,7 @@
                     <connections>
                         <segue destination="iZW-OY-6MV" kind="relationship" relationship="viewControllers" id="fR3-uL-jhK"/>
                         <segue destination="t9K-lO-6ld" kind="relationship" relationship="viewControllers" id="hGG-CW-Ni0"/>
+                        <segue destination="whM-sV-7Bd" kind="relationship" relationship="viewControllers" id="atB-uy-dea"/>
                         <segue destination="2FQ-wa-Y6b" kind="relationship" relationship="viewControllers" id="Ahl-vf-6gV"/>
                     </connections>
                 </tabBarController>
@@ -3981,6 +3982,16 @@
             </objects>
             <point key="canvasLocation" x="-722" y="1334"/>
         </scene>
+        <!--CardIssueMain-->
+        <scene sceneID="s4K-Uq-bcg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CardIssue" referencedIdentifier="CardIssueMain" id="sxJ-tU-aQW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fCk-7Y-PGE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdZ-Gd-2zp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="1334"/>
+        </scene>
         <!--Еще-->
         <scene sceneID="OYe-rj-cau">
             <objects>
@@ -3998,23 +4009,22 @@
             </objects>
             <point key="canvasLocation" x="-722" y="845"/>
         </scene>
-        <!--Пункты-->
-        <scene sceneID="2Hz-Ro-OCu">
+        <!--Карты-->
+        <scene sceneID="Pib-mI-hGc">
             <objects>
-                <viewController id="SFG-GI-LAO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m1c-jX-nhh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="HgE-j1-STo"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Пункты" image="usersCopy" id="0Pq-dv-y81">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="30" vertical="-3"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UDD-In-hN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="whM-sV-7Bd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Карты" image="creditCard" id="uzJ-GS-f4g"/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="zQI-wy-7MY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sxJ-tU-aQW" kind="relationship" relationship="rootViewController" id="ezs-kt-1ap"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OL7-Ur-heG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="845"/>
+            <point key="canvasLocation" x="70" y="844"/>
         </scene>
         <!--События-->
         <scene sceneID="nrX-5R-Dzd">
@@ -4926,12 +4936,12 @@
         <image name="briefcaseCopy" width="22" height="20"/>
         <image name="check" width="24" height="24"/>
         <image name="chevronRight" width="24" height="24"/>
+        <image name="creditCard" width="24" height="24"/>
         <image name="logo" width="12" height="12"/>
         <image name="more" width="24" height="24"/>
         <image name="plusCircle" width="24" height="24"/>
         <image name="transaction" width="24" height="24"/>
         <image name="userPlus" width="24" height="24"/>
-        <image name="usersCopy" width="24" height="24"/>
         <image name="x" width="24" height="24"/>
     </resources>
 </document>

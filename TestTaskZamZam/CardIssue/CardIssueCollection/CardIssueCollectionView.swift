@@ -11,14 +11,15 @@ import UIKit
 extension CardIssueVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return masCardsColors.count
+        return cardImageNames.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardIssueCell", for: indexPath) as! CardIssueCollectionCell
         
-        cell.imCard.backgroundColor = masCardsColors[indexPath.row]
+        let cardImageName = cardImageNames[indexPath.row]
+        cell.imCard.image = UIImage(named: cardImageName)
         
         cell.viewShadow.layer.cornerRadius = cell.imCard.layer.cornerRadius
         cell.viewShadow.layer.shadowRadius = 10

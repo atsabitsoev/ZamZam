@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oAd-5J-IYX">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oAd-5J-IYX">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +18,7 @@
         <!--Card IssueVC-->
         <scene sceneID="Wux-zU-vxT">
             <objects>
-                <viewController storyboardIdentifier="CardIssueMain" modalPresentationStyle="fullScreen" id="oAd-5J-IYX" customClass="CardIssueVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardIssueMain" id="oAd-5J-IYX" customClass="CardIssueVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6k0-Df-gT0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,10 +50,11 @@
                                         </constraints>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Выпустить карту &gt;">
+                                                <fragment content="Встать на очередь &gt;">
                                                     <attributes>
                                                         <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <font key="NSFont" size="24" name="KelsonSans-RegularRU"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
@@ -80,6 +83,7 @@
                                                         </view>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dev-ue-Jji">
                                                             <rect key="frame" x="18" y="0.0" width="300" height="185"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                     </subviews>
                                                 </view>
@@ -106,7 +110,7 @@
                                         </connections>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaN-xk-HAB">
-                                        <rect key="frame" x="18" y="286.66666666666669" width="339" height="248.33333333333331"/>
+                                        <rect key="frame" x="18" y="236.66666666666671" width="339" height="298.33333333333326"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тариф &quot;По-братски&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8P-3H-WTF" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                                 <rect key="frame" x="33.999999999999986" y="0.0" width="213.66666666666663" height="26"/>
@@ -118,7 +122,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1u-vk-VVu">
-                                                <rect key="frame" x="35" y="36.000000000000014" width="296" height="194.33333333333337"/>
+                                                <rect key="frame" x="35" y="36.000000000000014" width="296" height="244.33333333333337"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
@@ -155,7 +159,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обслуживание &quot;По-братски&quot; 99 руб в месяц" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpI-sn-bW5" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="51.666666666666686" y="236.33333333333331" width="236" height="12"/>
+                                                <rect key="frame" x="51.666666666666686" y="286.33333333333331" width="236" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="12" id="Rzg-HF-ALV"/>
                                                 </constraints>
@@ -196,7 +200,7 @@
                                 <constraints>
                                     <constraint firstItem="mIV-iO-Mo6" firstAttribute="top" secondItem="GaN-xk-HAB" secondAttribute="bottom" constant="18" id="4GQ-QL-rNg"/>
                                     <constraint firstItem="mIV-iO-Mo6" firstAttribute="centerX" secondItem="dkz-tx-8PV" secondAttribute="centerX" id="IJA-EC-0WG"/>
-                                    <constraint firstItem="GaN-xk-HAB" firstAttribute="top" secondItem="nyQ-VY-DGs" secondAttribute="bottom" constant="50" id="KSq-C4-ejC"/>
+                                    <constraint firstItem="GaN-xk-HAB" firstAttribute="top" secondItem="nyQ-VY-DGs" secondAttribute="bottom" id="KSq-C4-ejC"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="IaR-DU-dFn" secondAttribute="bottom" id="NBu-Cj-T3Q"/>
                                     <constraint firstAttribute="trailing" secondItem="nyQ-VY-DGs" secondAttribute="trailing" id="Otj-9B-ASI"/>
                                     <constraint firstItem="IaR-DU-dFn" firstAttribute="top" secondItem="mIV-iO-Mo6" secondAttribute="bottom" id="RNq-DA-utX"/>
@@ -221,7 +225,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ajy-Vq-aDF">
-                                <rect key="frame" x="176" y="337.66666666666669" width="23" height="37"/>
+                                <rect key="frame" x="176" y="302.66666666666669" width="23" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.0" alpha="0.1990047089041096" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
@@ -240,7 +244,7 @@
                             <constraint firstItem="nyQ-VY-DGs" firstAttribute="height" secondItem="6k0-Df-gT0" secondAttribute="height" multiplier="190:712" id="oJd-gd-Ytu"/>
                             <constraint firstItem="bNw-ET-Iak" firstAttribute="top" secondItem="HIi-TP-VZM" secondAttribute="top" constant="9" id="pAw-sK-clo"/>
                             <constraint firstItem="Ajy-Vq-aDF" firstAttribute="centerX" secondItem="6k0-Df-gT0" secondAttribute="centerX" id="peZ-b5-QYg"/>
-                            <constraint firstItem="Ajy-Vq-aDF" firstAttribute="top" secondItem="nyQ-VY-DGs" secondAttribute="bottom" id="pi5-wZ-RFz"/>
+                            <constraint firstItem="Ajy-Vq-aDF" firstAttribute="top" secondItem="nyQ-VY-DGs" secondAttribute="bottom" constant="-35" id="pi5-wZ-RFz"/>
                             <constraint firstItem="dkz-tx-8PV" firstAttribute="trailing" secondItem="HIi-TP-VZM" secondAttribute="trailing" id="rDk-JQ-BHp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HIi-TP-VZM"/>

@@ -21,7 +21,7 @@ class CardIssueVC: UIViewController {
     
     
     var currentItem = Int()
-    var masCardsColors = [#colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1), #colorLiteral(red: 0.337254902, green: 0.7529411765, blue: 0.9921568627, alpha: 1)]
+    var cardImageNames = ["ZamBroCard", "ZamVirtualCard"]
     
     var describtionAttrStrings = [NSAttributedString]()
     var arrayOfTitles = [String]()

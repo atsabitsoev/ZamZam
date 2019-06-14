@@ -162,8 +162,7 @@ class ReplenishNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func zamBillSelected(_ index: Int) {
-        selectedCardIndex = nil
-        newCardAdding = false
+        
         transferList["senderCurrency"] = masZamBills[index].currency.shortName
         tableView.reloadData()
         
@@ -171,7 +170,6 @@ class ReplenishNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func cardBillSelected(_ index: Int) {
         
-        transferList["senderCurrency"] = "card"
         newCardAdding = false
         selectedCardIndex = index
         tableView.reloadData()
@@ -181,7 +179,6 @@ class ReplenishNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func newCardAddingSelected() {
         
         selectedCardIndex = nil
-        transferList["senderCurrency"] = "card"
         newCardAdding = true
         tableView.reloadData()
         
