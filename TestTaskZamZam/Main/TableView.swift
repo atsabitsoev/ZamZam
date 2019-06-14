@@ -15,7 +15,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         
         let billsCount = zamBills?.count ?? 0
         
-        return billsCount + 1
+        return billsCount + 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -23,6 +23,11 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == zamBills?.count ?? 0 {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "tableCollectionCell")!
+            return cell
+            
+        } else if indexPath.row > zamBills?.count ?? 0 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "uslugiCell")!
             return cell
         }
         
@@ -40,6 +45,11 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == zamBills?.count ?? 0 {
             
             return 135
+            
+        } else if indexPath.row > zamBills?.count ?? 0 {
+          
+            return 226
+            
         } else {
             return 80
         }
