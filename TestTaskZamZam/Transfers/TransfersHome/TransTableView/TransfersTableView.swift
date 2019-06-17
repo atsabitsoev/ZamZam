@@ -37,7 +37,7 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
                 
             case 1:
                 
-                cell.labTitle.text = "Клиенту ZamZAm"
+                cell.labTitle.text = "Клиенту Zamzam"
                 cell.labDescribtion.text = "По номеру телефона"
                 let im = UIImage(named: "repeat")
                 cell.imSmall.image = im?.withRenderingMode(.alwaysTemplate)

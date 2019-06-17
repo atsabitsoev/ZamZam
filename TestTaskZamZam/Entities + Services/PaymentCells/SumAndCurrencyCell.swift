@@ -37,6 +37,11 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
     }
     
     
+    override func awakeFromNib() {
+        viewCurrency.currencies = [CurrencyRubble()]
+    }
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

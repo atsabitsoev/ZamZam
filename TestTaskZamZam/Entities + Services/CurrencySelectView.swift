@@ -18,7 +18,15 @@ protocol CurrencySelectViewDelegate {
 class CurrencySelectView: UIView {
     
     
-    var currencies: [CurrencyProtocol] = [CurrencyEuro(), CurrencyDollar(), CurrencyRubble()]
+    var currencies: [CurrencyProtocol] = [CurrencyEuro(), CurrencyDollar(), CurrencyRubble()] {
+        didSet {
+            buttons = []
+            configureLabels()
+            setTitleColors()
+            setFrames()
+            setTags()
+        }
+    }
     
     var selectedTag = 0 {
         didSet {

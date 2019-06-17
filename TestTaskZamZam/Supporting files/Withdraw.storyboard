@@ -501,7 +501,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rps-cV-hmJ">
                                                             <rect key="frame" x="18" y="24" width="249" height="48"/>
                                                             <subviews>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6x-KY-TkX">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Сумма" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6x-KY-TkX">
                                                                     <rect key="frame" x="11" y="3" width="230" height="47"/>
                                                                     <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="36"/>
@@ -608,7 +608,7 @@
                                                             <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кэшбэк 1%:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4E-jf-p0U" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кэшбэк 1%:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4E-jf-p0U" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                                             <rect key="frame" x="29" y="78" width="61" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="6g1-MI-o3v"/>
@@ -618,7 +618,7 @@
                                                             <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQW-cj-tl8">
+                                                        <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQW-cj-tl8">
                                                             <rect key="frame" x="262" y="64" width="86" height="34"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ₽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="RAX-ZI-iTD" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
@@ -639,13 +639,13 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="К оплате:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbn-rK-ghX" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="122.00000000000001" width="57" height="18.666666666666671"/>
+                                                            <rect key="frame" x="29" y="78" width="57" height="18.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
                                                             <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 126,50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkr-Fa-ej1" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="249.66666666666666" y="118.00000000000001" width="98.333333333333343" height="28.666666666666671"/>
+                                                            <rect key="frame" x="249.66666666666666" y="73" width="98.333333333333343" height="28.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="22"/>
                                                             <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -653,24 +653,24 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="Dbn-rK-ghX" firstAttribute="top" secondItem="I4E-jf-p0U" secondAttribute="bottom" constant="32" id="0yh-GW-NUS"/>
                                                         <constraint firstAttribute="trailing" secondItem="TeQ-4B-1t9" secondAttribute="trailing" constant="27" id="32Q-gi-fEf"/>
                                                         <constraint firstAttribute="trailing" secondItem="ztP-7p-HVq" secondAttribute="trailing" constant="27" id="AaZ-5P-BiI"/>
                                                         <constraint firstItem="Dbn-rK-ghX" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="CgF-Cc-ez5"/>
                                                         <constraint firstItem="vmO-FB-691" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="DHn-8d-D5y"/>
                                                         <constraint firstItem="vQW-cj-tl8" firstAttribute="width" secondItem="vQW-cj-tl8" secondAttribute="height" multiplier="43:17" id="LNz-MC-DtN"/>
-                                                        <constraint firstItem="TeQ-4B-1t9" firstAttribute="top" secondItem="Jc8-Di-cBv" secondAttribute="topMargin" id="Qwj-6i-MDH"/>
-                                                        <constraint firstItem="ztP-7p-HVq" firstAttribute="top" secondItem="TeQ-4B-1t9" secondAttribute="bottom" constant="18" id="Wpz-A0-GmJ"/>
+                                                        <constraint firstItem="TeQ-4B-1t9" firstAttribute="centerY" secondItem="vmO-FB-691" secondAttribute="centerY" id="U86-Ps-pLC"/>
                                                         <constraint firstItem="vQW-cj-tl8" firstAttribute="width" secondItem="vQW-cj-tl8" secondAttribute="height" multiplier="43:17" id="Xmd-5m-iJB"/>
                                                         <constraint firstItem="I4E-jf-p0U" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="YCV-6I-E45"/>
                                                         <constraint firstItem="7xC-Yw-b0Y" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="YJg-pY-kTk"/>
                                                         <constraint firstItem="vmO-FB-691" firstAttribute="top" secondItem="Jc8-Di-cBv" secondAttribute="topMargin" id="YmP-Yz-oLS"/>
                                                         <constraint firstItem="I4E-jf-p0U" firstAttribute="top" secondItem="7xC-Yw-b0Y" secondAttribute="bottom" constant="25" id="Yr1-ip-QFO"/>
+                                                        <constraint firstItem="Dbn-rK-ghX" firstAttribute="top" secondItem="7xC-Yw-b0Y" secondAttribute="bottom" constant="25" id="aPK-aP-Vpz"/>
                                                         <constraint firstAttribute="trailing" secondItem="vQW-cj-tl8" secondAttribute="trailing" constant="27" id="apb-Ou-DNC"/>
                                                         <constraint firstItem="7xC-Yw-b0Y" firstAttribute="top" secondItem="vmO-FB-691" secondAttribute="bottom" constant="18" id="gdd-Nt-0hF"/>
-                                                        <constraint firstItem="Jkr-Fa-ej1" firstAttribute="top" secondItem="vQW-cj-tl8" secondAttribute="bottom" constant="20" id="mXm-uo-6O4"/>
+                                                        <constraint firstItem="ztP-7p-HVq" firstAttribute="centerY" secondItem="7xC-Yw-b0Y" secondAttribute="centerY" id="jgT-bE-XYY"/>
                                                         <constraint firstItem="vQW-cj-tl8" firstAttribute="top" secondItem="ztP-7p-HVq" secondAttribute="bottom" constant="11" id="njq-Gn-8Ze"/>
                                                         <constraint firstAttribute="trailing" secondItem="Jkr-Fa-ej1" secondAttribute="trailing" constant="27" id="vFS-u6-Gs5"/>
+                                                        <constraint firstItem="Jkr-Fa-ej1" firstAttribute="centerY" secondItem="Dbn-rK-ghX" secondAttribute="centerY" id="zOM-o9-1cI"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
