@@ -4,7 +4,7 @@ import AKMaskField
 extension WithdrawPaymentVC: AKMaskFieldDelegate {
     
     func maskFieldDidBeginEditing(_ maskField: AKMaskField) {
-        let cell = tableView.cellForRow(at: [2,0]) as! CardDataCell
+        let cell = tableView.cellForRow(at: [2,1]) as! CardDataCell
         var view = UIView()
         var lab = UILabel()
         switch maskField.tag {
@@ -29,7 +29,7 @@ extension WithdrawPaymentVC: AKMaskFieldDelegate {
     
     func maskFieldDidEndEditing(_ maskField: AKMaskField) {
         
-        if let cell = tableView.cellForRow(at: [2,0]) as? CardDataCell {
+        if let cell = tableView.cellForRow(at: [2,1]) as? CardDataCell {
             
             var view = UIView()
             var lab = UILabel()
