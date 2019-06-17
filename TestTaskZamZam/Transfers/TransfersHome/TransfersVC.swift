@@ -11,7 +11,6 @@ import UIKit
 class TransfersVC: UIViewController {
 
     @IBOutlet weak var bigWhiteView: UIView!
-    @IBOutlet weak var viewCashBack: UIView!
     @IBOutlet weak var butBack: UIButton!
     @IBOutlet weak var butClose: UIButton!
     
@@ -22,17 +21,6 @@ class TransfersVC: UIViewController {
     }
     
     override func viewWillLayoutSubviews() {
-        viewCashBack.addGradient(colors: [_ColorLiteralType(red: 0.9176470588,
-                                                            green: 0.01960784314,
-                                                            blue: 0.231372549,
-                                                            alpha: 1).cgColor,
-                                          _ColorLiteralType(red: 0.6823529412,
-                                                            green: 0.03529411765,
-                                                            blue: 0.9019607843,
-                                                            alpha: 1).cgColor],
-                                 coordinatesX: [0,1],
-                                 coordinatesY: [0,0])
-        viewCashBack.layer.cornerRadius = 8
         bigWhiteView.layer.cornerRadius = 16
         configureNavigationButtons()
     }

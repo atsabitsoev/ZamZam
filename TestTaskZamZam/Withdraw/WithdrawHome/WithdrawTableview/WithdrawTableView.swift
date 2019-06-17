@@ -11,7 +11,7 @@ import UIKit
 extension WithdrawHomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -123,7 +123,7 @@ extension WithdrawHomeVC: UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             return 20
         } else {
-            return 0
+            return 20
         }
     }
     

@@ -21,11 +21,11 @@ class ReplenishCell: UITableViewCell {
         super.awakeFromNib()
         
         viewMain.layer.cornerRadius = 8
-        viewMain.layer.shadowColor = #colorLiteral(red: 0.7843137255, green: 0.7843137255, blue: 0.7843137255, alpha: 1)
-        viewMain.layer.shadowOpacity = 0.65
+        viewMain.layer.shadowColor = UIColor.black.cgColor //#colorLiteral(red: 0.7843137255, green: 0.7843137255, blue: 0.7843137255, alpha: 1)
+        viewMain.layer.shadowOpacity = 0.3
         viewMain.layer.shadowOffset = CGSize(width: 0,
-                                             height: 10)
-        viewMain.layer.shadowRadius = 30
+                                             height: 3)
+        viewMain.layer.shadowRadius = 3
         
         viewUnderPicture.layer.cornerRadius = 20
     }
