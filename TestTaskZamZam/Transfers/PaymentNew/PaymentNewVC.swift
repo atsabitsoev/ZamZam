@@ -47,7 +47,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                                       currency: .rubble)]
     var selectedCardIndex: Int?
     var newCardAdding = false
-    var transferList: [String: String] = ["phone": "+7",
+    var transferList: [String: String] = ["phone": "+",
                                            "sum": "0",
                                            "convertedSum": "0",
                                            "cashBack":"0",
@@ -314,7 +314,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBAction func butNextTapped(_ sender: UIButton) {
         
         activityIndicator.startAnimating()
-        ZamZamTransferService().sendMoney(to: transferList["phone"]!,
+        ZamZamTransferService().sendMoney(to: "+\(transferList["phone"]!.onlyNumbers())",
                                           sum: (transferList["sum"]! as NSString).floatValue,
                                           senderCurrency: transferList["senderCurrency"]!,
                                           recipientCurrency: transferList["recipientCurrency"]!)
