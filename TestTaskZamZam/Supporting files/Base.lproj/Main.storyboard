@@ -535,26 +535,26 @@
                                                                         <action selector="tfValueChanged:" destination="UhQ-pb-gYp" eventType="valueChanged" id="eU9-wk-nNk"/>
                                                                     </connections>
                                                                 </textField>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userPlus" translatesAutoresizingMaskIntoConstraints="NO" id="wql-ea-r7H">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFX-aS-L62">
                                                                     <rect key="frame" x="302" y="12" width="24" height="24"/>
-                                                                    <color key="tintColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="24" id="EIW-1Y-HrF"/>
-                                                                        <constraint firstAttribute="width" constant="24" id="sSG-rL-AGc"/>
+                                                                        <constraint firstAttribute="width" constant="24" id="rJI-fs-Ees"/>
+                                                                        <constraint firstAttribute="height" constant="24" id="wDf-Wx-jNv"/>
                                                                     </constraints>
-                                                                </imageView>
+                                                                    <state key="normal" title="Button" image="userPlus"/>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstItem="ffa-tl-rBS" firstAttribute="top" secondItem="26B-gR-h3G" secondAttribute="top" constant="3" id="5v8-ZM-kOM"/>
                                                                 <constraint firstItem="gsz-kH-Ulc" firstAttribute="centerY" secondItem="26B-gR-h3G" secondAttribute="centerY" id="6Rd-zz-pkL"/>
-                                                                <constraint firstAttribute="trailing" secondItem="wql-ea-r7H" secondAttribute="trailing" constant="13" id="6ZR-n2-QSi"/>
-                                                                <constraint firstItem="wql-ea-r7H" firstAttribute="centerY" secondItem="26B-gR-h3G" secondAttribute="centerY" id="NNf-1O-UfX"/>
+                                                                <constraint firstItem="cFX-aS-L62" firstAttribute="leading" secondItem="ffa-tl-rBS" secondAttribute="trailing" constant="8" id="9T3-OV-1Cr"/>
+                                                                <constraint firstItem="cFX-aS-L62" firstAttribute="centerY" secondItem="26B-gR-h3G" secondAttribute="centerY" id="Je6-EZ-fpJ"/>
                                                                 <constraint firstAttribute="bottom" secondItem="ffa-tl-rBS" secondAttribute="bottom" id="TgC-vt-0j2"/>
                                                                 <constraint firstAttribute="height" constant="48" id="TzE-xe-EXb"/>
                                                                 <constraint firstItem="ffa-tl-rBS" firstAttribute="leading" secondItem="gsz-kH-Ulc" secondAttribute="trailing" constant="17" id="lIn-9P-txC"/>
                                                                 <constraint firstAttribute="bottom" secondItem="gsz-kH-Ulc" secondAttribute="bottom" constant="9" id="lLu-my-IuJ"/>
-                                                                <constraint firstItem="wql-ea-r7H" firstAttribute="leading" secondItem="ffa-tl-rBS" secondAttribute="trailing" constant="8" id="n40-0T-keB"/>
+                                                                <constraint firstAttribute="trailing" secondItem="cFX-aS-L62" secondAttribute="trailing" constant="13" id="pb1-d9-bxb"/>
                                                                 <constraint firstItem="gsz-kH-Ulc" firstAttribute="leading" secondItem="26B-gR-h3G" secondAttribute="leading" constant="11" id="wzs-NH-Zvs"/>
                                                             </constraints>
                                                         </view>
@@ -581,8 +581,8 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
+                                                    <outlet property="butContacts" destination="cFX-aS-L62" id="O4a-el-st4"/>
                                                     <outlet property="imCountry" destination="gsz-kH-Ulc" id="GE1-n5-MWi"/>
-                                                    <outlet property="imUser" destination="wql-ea-r7H" id="xGL-uR-05b"/>
                                                     <outlet property="labTitle" destination="kda-Dz-SP8" id="Je4-mM-urT"/>
                                                     <outlet property="tfPhoneNumber" destination="ffa-tl-rBS" id="wgN-hK-df4"/>
                                                     <outlet property="viewWhite" destination="26B-gR-h3G" id="iom-NB-C3C"/>
@@ -1430,13 +1430,13 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Переводы за рубеж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GC-S9-iDh" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                    <rect key="frame" x="65" y="18" width="131.5" height="19"/>
+                                                                    <rect key="frame" x="65" y="18" width="125.5" height="19"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
                                                                     <color key="textColor" red="0.054901960784313725" green="0.066666666666666666" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="180 стран мира" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEb-h1-QKr" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                    <rect key="frame" x="65" y="41" width="66" height="9"/>
+                                                                    <rect key="frame" x="65" y="41" width="61" height="9"/>
                                                                     <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                                                     <color key="textColor" red="0.039215686274509803" green="0.047058823529411764" blue="0.27058823529411763" alpha="0.59669344190140849" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -4157,27 +4157,27 @@
                                                                         <action selector="tfValueChanged:" destination="UhQ-pb-gYp" eventType="valueChanged" id="jrc-2I-89p"/>
                                                                     </connections>
                                                                 </textField>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userPlus" translatesAutoresizingMaskIntoConstraints="NO" id="Bwv-va-pzK">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWu-1M-t6r">
                                                                     <rect key="frame" x="302" y="12" width="24" height="24"/>
-                                                                    <color key="tintColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="24" id="4vK-Ek-oYW"/>
-                                                                        <constraint firstAttribute="width" constant="24" id="vmj-fZ-hJ9"/>
+                                                                        <constraint firstAttribute="height" constant="24" id="5dT-dN-2Lj"/>
+                                                                        <constraint firstAttribute="width" constant="24" id="nct-Ah-O9I"/>
                                                                     </constraints>
-                                                                </imageView>
+                                                                    <state key="normal" image="userPlus"/>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="48" id="2Lz-tu-Iqu"/>
                                                                 <constraint firstAttribute="bottom" secondItem="dcm-Lr-1a0" secondAttribute="bottom" id="2Yx-ks-SBC"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Wit-23-NZV" secondAttribute="bottom" constant="9" id="3Iz-8H-T1T"/>
-                                                                <constraint firstItem="Bwv-va-pzK" firstAttribute="leading" secondItem="dcm-Lr-1a0" secondAttribute="trailing" constant="8" id="BDb-Qh-oSE"/>
                                                                 <constraint firstItem="dcm-Lr-1a0" firstAttribute="leading" secondItem="Wit-23-NZV" secondAttribute="trailing" constant="17" id="BuO-Pb-IQS"/>
                                                                 <constraint firstItem="Wit-23-NZV" firstAttribute="centerY" secondItem="cie-UH-BIM" secondAttribute="centerY" id="Nfb-h1-VB5"/>
                                                                 <constraint firstItem="Wit-23-NZV" firstAttribute="leading" secondItem="cie-UH-BIM" secondAttribute="leading" constant="11" id="Sfa-RQ-ktO"/>
                                                                 <constraint firstItem="dcm-Lr-1a0" firstAttribute="top" secondItem="cie-UH-BIM" secondAttribute="top" constant="3" id="gNt-pn-b2y"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Bwv-va-pzK" secondAttribute="trailing" constant="13" id="pbf-X5-Jgv"/>
-                                                                <constraint firstItem="Bwv-va-pzK" firstAttribute="centerY" secondItem="cie-UH-BIM" secondAttribute="centerY" id="wDV-8m-pqk"/>
+                                                                <constraint firstItem="hWu-1M-t6r" firstAttribute="centerY" secondItem="cie-UH-BIM" secondAttribute="centerY" id="uKX-Ey-oiX"/>
+                                                                <constraint firstItem="hWu-1M-t6r" firstAttribute="leading" secondItem="dcm-Lr-1a0" secondAttribute="trailing" constant="8" id="uhU-fH-DKM"/>
+                                                                <constraint firstAttribute="trailing" secondItem="hWu-1M-t6r" secondAttribute="trailing" constant="13" id="xOc-9V-7k7"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Номер телефона получателя " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry2-D1-hlH" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
@@ -4203,8 +4203,8 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
+                                                    <outlet property="butContacts" destination="hWu-1M-t6r" id="qL9-fn-TT0"/>
                                                     <outlet property="imCountry" destination="Wit-23-NZV" id="23Y-K9-zIn"/>
-                                                    <outlet property="imUser" destination="Bwv-va-pzK" id="xya-UW-Lgh"/>
                                                     <outlet property="labTitle" destination="ry2-D1-hlH" id="Sr7-ZV-sYt"/>
                                                     <outlet property="tfPhoneNumber" destination="dcm-Lr-1a0" id="Ap9-7r-82L"/>
                                                     <outlet property="viewWhite" destination="cie-UH-BIM" id="ss7-mY-9h5"/>

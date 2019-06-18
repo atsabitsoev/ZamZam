@@ -8,6 +8,8 @@
 
 
 import UIKit
+import ContactsUI
+
 
 class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CurrencySelectViewDelegate {
     
@@ -45,7 +47,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                                       currency: .rubble)]
     var selectedCardIndex: Int?
     var newCardAdding = false
-    var transferList: [String: String] = ["phone": "",
+    var transferList: [String: String] = ["phone": "+7",
                                            "sum": "0",
                                            "convertedSum": "0",
                                            "cashBack":"0",
@@ -288,6 +290,23 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         activityIndicator.startAnimating()
         GetUserAccountsService.standard.sendGetZamBillsRequest()
         
+    }
+    
+    
+    //MARK: Контакты
+    @objc func openContacts() {
+        
+        let contactsVC = CNContactPickerViewController()
+        contactsVC.delegate = self
+        self.present(contactsVC, animated: true, completion: nil)
+    }
+    
+    func setNumber(of contact: CNContact) {
+        
+        let phone = contact.phoneNumbers
+        let phoneNumber = phone.first?.value.stringValue.onlyNumbers()
+        transferList["phone"] = "+\(phoneNumber ?? "")"
+        tableView.reloadData()
     }
     
     

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ContactsUI
+
 
 class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CurrencySelectViewDelegate {
     
@@ -244,6 +246,13 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
         activityIndicator.startAnimating()
         GetUserAccountsService.standard.sendGetZamBillsRequest()
         
+    }
+    
+    
+    @objc func openContacts() {
+        
+        let contactsVC = CNContactPickerViewController()
+        self.present(contactsVC, animated: true, completion: nil)
     }
     
     

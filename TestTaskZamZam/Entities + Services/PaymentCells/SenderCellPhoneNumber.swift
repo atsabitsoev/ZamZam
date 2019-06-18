@@ -32,6 +32,8 @@ class SenderCellPhoneNumber: UITableViewCell, UITextFieldDelegate {
             viewWhite.layer.cornerRadius = 8
         }
     }
+    @IBOutlet weak var butContacts: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -76,5 +78,8 @@ class SenderCellPhoneNumber: UITableViewCell, UITextFieldDelegate {
             }
         }
     }
+    
+    
+    
     
 }

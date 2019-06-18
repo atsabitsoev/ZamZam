@@ -30,6 +30,7 @@
 		AC110AAF223A83AC00D1F8D8 /* WhatCountryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */; };
 		AC1A5274225B26F70021B79C /* PIN VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1A5273225B26F70021B79C /* PIN VC.swift */; };
 		AC1BA0332270534000E60848 /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1BA0322270534000E60848 /* DotsView.swift */; };
+		AC1E5E4322B90A8900B7E09D /* PaymentNewContactsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1E5E4222B90A8900B7E09D /* PaymentNewContactsDelegate.swift */; };
 		AC1FF9B92271CFE4009BE5C7 /* SetNewPINVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1FF9B82271CFE4009BE5C7 /* SetNewPINVC.swift */; };
 		AC1FF9BC2271DB7B009BE5C7 /* TouchFaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1FF9BB2271DB7B009BE5C7 /* TouchFaceVC.swift */; };
 		AC24624B22819CBB006C54D4 /* PhoneVerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24624A22819CBB006C54D4 /* PhoneVerificationService.swift */; };
@@ -193,6 +194,7 @@
 		AC110AAE223A83AC00D1F8D8 /* WhatCountryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryTextField.swift; sourceTree = "<group>"; };
 		AC1A5273225B26F70021B79C /* PIN VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PIN VC.swift"; sourceTree = "<group>"; };
 		AC1BA0322270534000E60848 /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
+		AC1E5E4222B90A8900B7E09D /* PaymentNewContactsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentNewContactsDelegate.swift; sourceTree = "<group>"; };
 		AC1FF9B82271CFE4009BE5C7 /* SetNewPINVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPINVC.swift; sourceTree = "<group>"; };
 		AC1FF9BB2271DB7B009BE5C7 /* TouchFaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchFaceVC.swift; sourceTree = "<group>"; };
 		AC24624A22819CBB006C54D4 /* PhoneVerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVerificationService.swift; sourceTree = "<group>"; };
@@ -854,6 +856,7 @@
 				ACC7588D228BEE250049AB57 /* PaymentNewVC.swift */,
 				ACC75893228BF32F0049AB57 /* PaymentNewTableVIew.swift */,
 				AC57897122AA9F1D002043F8 /* PaymentNewTFDelegate.swift */,
+				AC1E5E4222B90A8900B7E09D /* PaymentNewContactsDelegate.swift */,
 			);
 			path = PaymentNew;
 			sourceTree = "<group>";
@@ -1237,6 +1240,7 @@
 				ACBFD217229FDA6B009A1696 /* LoadingCell.swift in Sources */,
 				ACC5CAF6225C717700B28E62 /* ReplenishCell.swift in Sources */,
 				ACFBAC4622412ECF001D9D94 /* PaymentTFDelegate.swift in Sources */,
+				AC1E5E4322B90A8900B7E09D /* PaymentNewContactsDelegate.swift in Sources */,
 				AC5EA17022393F1D00EDA066 /* TransfersTableView.swift in Sources */,
 				ACC5CB0D225C96CC00B28E62 /* ReplenAddCardCell.swift in Sources */,
 				ACC5CAF8225C718A00B28E62 /* ReplenishDescribtionCell.swift in Sources */,
