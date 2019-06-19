@@ -46,7 +46,7 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
                                       currency: .rubble)]
     var selectedCardIndex: Int?
     var newCardAdding = false
-    var transferList: [String: String] = ["phone": "",
+    var transferList: [String: String] = ["phone": "+",
                                           "sum": "0",
                                           "convertedSum": "0",
                                           "cashBack":"0",
@@ -249,10 +249,20 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     
+    //MARK: Контакты
     @objc func openContacts() {
         
         let contactsVC = CNContactPickerViewController()
+        contactsVC.delegate = self
         self.present(contactsVC, animated: true, completion: nil)
+    }
+    
+    func setNumber(of contact: CNContact) {
+        
+        let phone = contact.phoneNumbers
+        let phoneNumber = phone.first?.value.stringValue.onlyNumbers()
+        transferList["phone"] = "+\(phoneNumber ?? "")"
+        tableView.reloadData()
     }
     
     

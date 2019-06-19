@@ -76,8 +76,8 @@
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rbU-B6-b7T">
-                                                <rect key="frame" x="0.0" y="52.5" width="414" height="624.5"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rbU-B6-b7T">
+                                                <rect key="frame" x="0.0" y="44.5" width="414" height="632.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <view key="tableFooterView" contentMode="scaleToFill" id="Vva-0r-YMC">
@@ -437,7 +437,7 @@
                                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="hvK-dw-gnT" firstAttribute="top" secondItem="U5x-uO-oZ3" secondAttribute="top" constant="16" id="Dio-aL-8xk"/>
-                                            <constraint firstItem="rbU-B6-b7T" firstAttribute="top" secondItem="hvK-dw-gnT" secondAttribute="bottom" constant="8" id="G45-0C-9eT"/>
+                                            <constraint firstItem="rbU-B6-b7T" firstAttribute="top" secondItem="hvK-dw-gnT" secondAttribute="bottom" id="G45-0C-9eT"/>
                                             <constraint firstItem="rbU-B6-b7T" firstAttribute="leading" secondItem="U5x-uO-oZ3" secondAttribute="leading" id="N8E-gR-fjk"/>
                                             <constraint firstAttribute="bottom" secondItem="rbU-B6-b7T" secondAttribute="bottom" constant="83" id="Wyp-Q8-BfF"/>
                                             <constraint firstAttribute="trailing" secondItem="rbU-B6-b7T" secondAttribute="trailing" id="qBe-Vj-qTU"/>
@@ -496,7 +496,7 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hs1-3f-Iiq">
                                 <rect key="frame" x="0.0" y="101" width="414" height="795"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-PH-Ubh">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-PH-Ubh">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="635"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1635,7 +1635,7 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYk-bI-6b8">
                                 <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="49" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3GI-NG-veB">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="49" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3GI-NG-veB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>

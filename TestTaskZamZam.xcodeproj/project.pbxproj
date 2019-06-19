@@ -93,6 +93,7 @@
 		ACA415E722B2558900DDA14D /* WithdrawPaymentTFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA415E622B2558900DDA14D /* WithdrawPaymentTFDelegate.swift */; };
 		ACA8A0DF2255F93600EFBE1A /* VerifyPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */; };
 		ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E32256024400EFBE1A /* TwilioService.swift */; };
+		ACA9C7F822BA151A00AA4BC8 /* InterTransPaymentContactsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9C7F722BA151A00AA4BC8 /* InterTransPaymentContactsDelegate.swift */; };
 		ACBC5E0A22684BFF0005C355 /* PayPhoneBill.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */; };
 		ACBC5E0D22684E240005C355 /* PayPhoneBillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E0C22684E240005C355 /* PayPhoneBillVC.swift */; };
 		ACBC5E1022684E570005C355 /* PayPhoneBillTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC5E0F22684E570005C355 /* PayPhoneBillTableView.swift */; };
@@ -257,6 +258,7 @@
 		ACA415E622B2558900DDA14D /* WithdrawPaymentTFDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawPaymentTFDelegate.swift; sourceTree = "<group>"; };
 		ACA8A0DE2255F93600EFBE1A /* VerifyPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneVC.swift; sourceTree = "<group>"; };
 		ACA8A0E32256024400EFBE1A /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
+		ACA9C7F722BA151A00AA4BC8 /* InterTransPaymentContactsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterTransPaymentContactsDelegate.swift; sourceTree = "<group>"; };
 		ACBC5E0922684BFF0005C355 /* PayPhoneBill.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayPhoneBill.storyboard; sourceTree = "<group>"; };
 		ACBC5E0C22684E240005C355 /* PayPhoneBillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneBillVC.swift; sourceTree = "<group>"; };
 		ACBC5E0F22684E570005C355 /* PayPhoneBillTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPhoneBillTableView.swift; sourceTree = "<group>"; };
@@ -937,6 +939,7 @@
 				ACE3F5B522B23E540054733E /* InterTransPaymentVC.swift */,
 				ACE3F5B722B23F670054733E /* InterTransPaymentTableView.swift */,
 				ACE3F5B922B23FBF0054733E /* InterTransPaymentTFDelegate.swift */,
+				ACA9C7F722BA151A00AA4BC8 /* InterTransPaymentContactsDelegate.swift */,
 			);
 			path = InterTransPayment;
 			sourceTree = "<group>";
@@ -1252,6 +1255,7 @@
 				ACA8A0E42256024400EFBE1A /* TwilioService.swift in Sources */,
 				AC71D92A229E789900001C29 /* HistoryTransactionCell.swift in Sources */,
 				ACC5CB11225CBD2C00B28E62 /* ReplenTFDelegate.swift in Sources */,
+				ACA9C7F822BA151A00AA4BC8 /* InterTransPaymentContactsDelegate.swift in Sources */,
 				AC829D1C229D804C0019C19B /* ButtonChooseCountry.swift in Sources */,
 				ACC5CB0F225C96DA00B28E62 /* ReplenNewCardCell.swift in Sources */,
 				AC5EA173223940C900EDA066 /* TransCell.swift in Sources */,

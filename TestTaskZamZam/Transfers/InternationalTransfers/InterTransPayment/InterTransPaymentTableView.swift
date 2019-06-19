@@ -108,6 +108,7 @@ extension InterTransPaymentVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SenderCellPhoneNumber") as! SenderCellPhoneNumber
             
             cell.butContacts.addTarget(self, action: #selector(openContacts), for: .touchUpInside)
+            cell.tfPhoneNumber.text = transferList["phone"]
             
             return cell
             

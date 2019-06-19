@@ -50,7 +50,7 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
         let sumSmall: Int = Int(transaction.sum * 100) - sumBig * 100
         
         cell.labSumBig.text = "\(prefixOfSum)\(sumBigString),"
-        cell.labSumSmall.text = "\(sumSmall)" == "0" ? "00" : "\(sumSmall)"
+        cell.labSumSmall.text = "\(sumSmall)" == "0" ? "00 \(transaction.currency.symbol)" : "\(sumSmall) \(transaction.currency.symbol)"
         
         let colorOfLabSum = transaction.direction == .out ? #colorLiteral(red: 0.1055946723, green: 0.1623724401, blue: 0.4235801399, alpha: 1) : #colorLiteral(red: 0.3568627451, green: 0.6823529412, blue: 0, alpha: 1)
         cell.labSumBig.textColor = colorOfLabSum
@@ -96,7 +96,7 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
         
         let formatter = DateFormatter()
         formatter.setLocalizedDateFormatFromTemplate("dd MMMM")
-        formatter.locale = Locale.current
+        formatter.locale = Locale(identifier: "RU")
         let dateString = formatter.string(from: date!)
         label.text = dateString
         
