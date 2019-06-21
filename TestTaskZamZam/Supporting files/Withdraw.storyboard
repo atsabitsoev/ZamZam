@@ -303,7 +303,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="dU1-gW-EcR">
-                                            <rect key="frame" x="0.0" y="719" width="375" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="607" width="375" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -565,33 +565,15 @@
                                                     <outlet property="viewSum" destination="rps-cV-hmJ" id="EIl-D6-5Tn"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TotalInfoCell" rowHeight="166" id="9JA-OX-afL" customClass="TotalInfoCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="268" width="375" height="166"/>
+                                            <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TotalInfoCell" rowHeight="54" id="9JA-OX-afL" customClass="TotalInfoCell" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="268" width="375" height="54"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9JA-OX-afL" id="Jc8-Di-cBv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Курс:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmO-FB-691" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="11" width="27.666666666666671" height="12"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="12" id="3hK-3M-6ZX"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
-                                                            <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,00 USD = 67,51 RUB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeQ-4B-1t9" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="235" y="11" width="113" height="12"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="12" id="kxH-Oi-KdK"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
-                                                            <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Комиссия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-Yw-b0Y" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="41" width="53" height="12"/>
+                                                            <rect key="frame" x="29" y="0.0" width="53" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="WvV-by-u1p"/>
                                                             </constraints>
@@ -600,7 +582,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Без комиссии (0%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztP-7p-HVq" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="251" y="41" width="97" height="12"/>
+                                                            <rect key="frame" x="251" y="0.0" width="97" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="uGU-9w-lgZ"/>
                                                             </constraints>
@@ -609,7 +591,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кэшбэк 1%:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4E-jf-p0U" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="78" width="61" height="12"/>
+                                                            <rect key="frame" x="29" y="37" width="61" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="6g1-MI-o3v"/>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="vn8-Qf-hsP"/>
@@ -619,7 +601,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQW-cj-tl8">
-                                                            <rect key="frame" x="262" y="64" width="86" height="34"/>
+                                                            <rect key="frame" x="262" y="23" width="86" height="34"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ₽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="RAX-ZI-iTD" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                                                     <rect key="frame" x="13" y="8" width="57" height="18"/>
@@ -639,13 +621,13 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="К оплате:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbn-rK-ghX" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="78" width="57" height="18.666666666666671"/>
+                                                            <rect key="frame" x="29" y="37" width="57" height="18.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
                                                             <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 126,50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkr-Fa-ej1" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="249.66666666666666" y="73" width="98.333333333333343" height="28.666666666666671"/>
+                                                            <rect key="frame" x="249.66666666666666" y="32" width="98.333333333333343" height="28.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="22"/>
                                                             <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -653,20 +635,16 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="TeQ-4B-1t9" secondAttribute="trailing" constant="27" id="32Q-gi-fEf"/>
                                                         <constraint firstAttribute="trailing" secondItem="ztP-7p-HVq" secondAttribute="trailing" constant="27" id="AaZ-5P-BiI"/>
                                                         <constraint firstItem="Dbn-rK-ghX" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="CgF-Cc-ez5"/>
-                                                        <constraint firstItem="vmO-FB-691" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="DHn-8d-D5y"/>
+                                                        <constraint firstItem="7xC-Yw-b0Y" firstAttribute="top" secondItem="Jc8-Di-cBv" secondAttribute="top" id="IvB-tC-Kzw"/>
                                                         <constraint firstItem="vQW-cj-tl8" firstAttribute="width" secondItem="vQW-cj-tl8" secondAttribute="height" multiplier="43:17" id="LNz-MC-DtN"/>
-                                                        <constraint firstItem="TeQ-4B-1t9" firstAttribute="centerY" secondItem="vmO-FB-691" secondAttribute="centerY" id="U86-Ps-pLC"/>
                                                         <constraint firstItem="vQW-cj-tl8" firstAttribute="width" secondItem="vQW-cj-tl8" secondAttribute="height" multiplier="43:17" id="Xmd-5m-iJB"/>
                                                         <constraint firstItem="I4E-jf-p0U" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="YCV-6I-E45"/>
                                                         <constraint firstItem="7xC-Yw-b0Y" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="YJg-pY-kTk"/>
-                                                        <constraint firstItem="vmO-FB-691" firstAttribute="top" secondItem="Jc8-Di-cBv" secondAttribute="topMargin" id="YmP-Yz-oLS"/>
                                                         <constraint firstItem="I4E-jf-p0U" firstAttribute="top" secondItem="7xC-Yw-b0Y" secondAttribute="bottom" constant="25" id="Yr1-ip-QFO"/>
                                                         <constraint firstItem="Dbn-rK-ghX" firstAttribute="top" secondItem="7xC-Yw-b0Y" secondAttribute="bottom" constant="25" id="aPK-aP-Vpz"/>
                                                         <constraint firstAttribute="trailing" secondItem="vQW-cj-tl8" secondAttribute="trailing" constant="27" id="apb-Ou-DNC"/>
-                                                        <constraint firstItem="7xC-Yw-b0Y" firstAttribute="top" secondItem="vmO-FB-691" secondAttribute="bottom" constant="18" id="gdd-Nt-0hF"/>
                                                         <constraint firstItem="ztP-7p-HVq" firstAttribute="centerY" secondItem="7xC-Yw-b0Y" secondAttribute="centerY" id="jgT-bE-XYY"/>
                                                         <constraint firstItem="vQW-cj-tl8" firstAttribute="top" secondItem="ztP-7p-HVq" secondAttribute="bottom" constant="11" id="njq-Gn-8Ze"/>
                                                         <constraint firstAttribute="trailing" secondItem="Jkr-Fa-ej1" secondAttribute="trailing" constant="27" id="vFS-u6-Gs5"/>
@@ -677,13 +655,12 @@
                                                 <connections>
                                                     <outlet property="Comission" destination="ztP-7p-HVq" id="dvX-cq-hXw"/>
                                                     <outlet property="labCashBack" destination="RAX-ZI-iTD" id="KwN-Rq-zVw"/>
-                                                    <outlet property="labCurrencies" destination="TeQ-4B-1t9" id="PId-Vs-H2X"/>
                                                     <outlet property="labSum" destination="Jkr-Fa-ej1" id="MrP-xC-bub"/>
                                                     <outlet property="viewGreenUnderCashBack" destination="vQW-cj-tl8" id="Gon-ME-e2n"/>
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardCellNewPayment" rowHeight="70" id="jLX-OX-Mwy" customClass="CardCellNewPayment" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="434" width="375" height="70"/>
+                                                <rect key="frame" x="0.0" y="322" width="375" height="70"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jLX-OX-Mwy" id="57l-Ax-ZmR">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
@@ -784,7 +761,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardDataCell" rowHeight="144" id="k8S-tO-Np2" customClass="CardDataCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="504" width="375" height="144"/>
+                                                <rect key="frame" x="0.0" y="392" width="375" height="144"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k8S-tO-Np2" id="3Nw-6x-PBo">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
@@ -954,17 +931,17 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddNewCardCell" rowHeight="71" id="eRy-sK-Guh" customClass="AddNewCardCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="648" width="375" height="71"/>
+                                                <rect key="frame" x="0.0" y="536" width="375" height="71"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eRy-sK-Guh" id="iYq-nd-3TT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70.666666666666671"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7e2-L3-q6q">
-                                                            <rect key="frame" x="18" y="0.0" width="339" height="70.666666666666671"/>
+                                                            <rect key="frame" x="18" y="0.0" width="339" height="71"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusCircle" translatesAutoresizingMaskIntoConstraints="NO" id="PkN-bQ-flO">
-                                                                    <rect key="frame" x="20" y="21.333333333333329" width="28" height="28"/>
+                                                                    <rect key="frame" x="20" y="21.666666666666671" width="28" height="28"/>
                                                                     <color key="tintColor" red="0.50196078430000002" green="0.92156862750000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="28" id="pWg-Nn-5mN"/>
@@ -981,7 +958,7 @@
                                                                     <rect key="frame" x="294" y="22" width="27" height="27"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="fSx-tc-vgo">
-                                                                            <rect key="frame" x="1.6666666666666856" y="1.3333333333333321" width="24" height="24"/>
+                                                                            <rect key="frame" x="1.6666666666666856" y="1.6666666666666679" width="24" height="24"/>
                                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="24" id="DzW-hu-i9z"/>
@@ -1154,7 +1131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="la4-jf-eOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466" y="-75"/>
+            <point key="canvasLocation" x="1464.8" y="-75.369458128078819"/>
         </scene>
     </scenes>
     <resources>

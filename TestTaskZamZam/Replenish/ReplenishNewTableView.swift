@@ -74,7 +74,7 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
         case 3:
             return 80 //(UIScreen.main.bounds.width - 36) * (16/113) + 10
         case 4:
-            return 150
+            return 54
         default:
             return 100
         }

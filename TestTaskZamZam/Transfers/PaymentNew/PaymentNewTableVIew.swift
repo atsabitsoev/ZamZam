@@ -173,7 +173,11 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 4:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "TotalInfoCell") as! TotalInfoCell
-            cell.labSum.text = "\(self.transferList["sum"]!) ₽"
+            cell.labSum.text = transferList["sum"] == "" ? "0 ₽" : "\(self.transferList["sum"]!) ₽"
+            let cashBack: Float = (Float(self.transferList["sum"]!) ?? 0) / Float(100)
+            let cashBackString: String!
+            cashBackString = cashBack == 0.0 ? "0 ₽" : "\(cashBack) ₽"
+            cell.labCashBack?.text = cashBackString
             return cell
             
         default:
