@@ -180,7 +180,7 @@ extension PayPhoneBillVC: UITableViewDelegate, UITableViewDataSource {
                                               width: UIScreen.main.bounds.width - 21 - 20,
                                               height: 15))
             label.text = "Выберите счет или карту с которого хотите оплатить"
-            label.font = UIFont(name: "KelsonSans-RegularRU", size: 14)
+            label.font = UIFont(name: "PTSans-Regular", size: 14)
             label.numberOfLines = 0
             label.textColor = #colorLiteral(red: 0.1055305973, green: 0.1625663936, blue: 0.4235753119, alpha: 1)
             label.adjustsFontSizeToFitWidth = true

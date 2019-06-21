@@ -117,7 +117,7 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
                                           width: tableView.bounds.width,
                                           height: 15))
         let myString = NSMutableAttributedString(string: self.masSectionNames[section],
-                                                 attributes: [NSAttributedString.Key.font : UIFont(name: "KelsonSans-RegularRU",
+                                                 attributes: [NSAttributedString.Key.font : UIFont(name: "PTSans-Regular",
                                                                                                    size: 14)!,
                                                               NSAttributedString.Key.foregroundColor: UIColor(red: 30/255,
                                                                                                               green: 41/255,
@@ -145,7 +145,7 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 4
             let myString = NSMutableAttributedString(string: "На этот номер будет отправлено уведомление.",
-                                                     attributes: [NSAttributedString.Key.font : UIFont(name: "KelsonSans-RegularRU",
+                                                     attributes: [NSAttributedString.Key.font : UIFont(name: "PTSans-Regular",
                                                                                                        size: 12)!,
                                                                   NSAttributedString.Key.foregroundColor: UIColor(red: 167/255,
                                                                                                                   green: 167/255,
@@ -171,7 +171,7 @@ extension SenderVC: UITableViewDelegate, UITableViewDataSource {
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 4
             let myString = NSMutableAttributedString(string: "Данные должны полностью совпадать с документом. Обязательно перепроверьте данные перед отправкой.",
-                                                     attributes: [NSAttributedString.Key.font : UIFont(name: "KelsonSans-RegularRU",
+                                                     attributes: [NSAttributedString.Key.font : UIFont(name: "PTSans-Regular",
                                                                                                        size: 12)!,
                                                                   NSAttributedString.Key.foregroundColor: UIColor(red: 167/255,
                                                                                                                   green: 167/255,

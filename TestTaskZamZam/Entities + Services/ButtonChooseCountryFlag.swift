@@ -80,7 +80,7 @@ class ButtonChooseCountryFlag: UIButton {
         labCountry.frame = frame.inset(by: UIEdgeInsets(top: 13, left: 58, bottom: 13, right: 35))
         titleLabel?.alpha = 0
         labCountry.text = countryName
-        labCountry.font = UIFont(name: "KelsonSans-RegularRU", size: 16)
+        labCountry.font = UIFont(name: "PTSans-Regular", size: 16)
         labCountry.textColor = #colorLiteral(red: 0.1055946723, green: 0.1623724401, blue: 0.4235801399, alpha: 1)
     }
     

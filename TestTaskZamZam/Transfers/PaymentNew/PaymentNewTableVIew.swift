@@ -86,7 +86,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         let label = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 13, left: 18, bottom: 7, right: 18)))
         label.text = "Выберете способ оплаты"
         label.textColor = #colorLiteral(red: 0.08931172639, green: 0.1388869584, blue: 0.3626311421, alpha: 1)
-        label.font = UIFont(name: "KelsonSans-RegularRU", size: 14)
+        label.font = UIFont(name: "PTSans-Regular", size: 14)
         viewFor1Section.addSubview(label)
         //Any
         let viewForAnySection = UIView(frame: tableView.rectForHeader(inSection: section))

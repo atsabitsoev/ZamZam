@@ -88,7 +88,7 @@ extension TransfersVC: UITableViewDelegate, UITableViewDataSource {
                 
                 attributedString = NSMutableAttributedString(string: "- Комиссия 0%\n- Переводите по номеру телефона",
                                                                  attributes: [
-                    .font: UIFont(name: "KelsonSans-RegularRU",
+                    .font: UIFont(name: "PTSans-Regular",
                                   size: 10.0)!,
                     .foregroundColor: UIColor(red: 10.0 / 255.0,
                                               green: 12.0 / 255.0,

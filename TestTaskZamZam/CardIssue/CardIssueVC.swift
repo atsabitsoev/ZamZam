@@ -72,7 +72,7 @@ class CardIssueVC: UIViewController {
         
         let attributedString0 = NSMutableAttributedString(string: "- Именная карта\n- Бесконтактные платежи\n- Мультивалютная карта с доступом к наличным в RUB, USD, EUR\n- Конвертация валюты по курсу ЦБ +1%\n- Бесплатная оплата покупок за рубежом в валютах USD, EUR\n- Интеграция с apple pay и android pay\n- Приоритетная поддержка \n- Бесплатный выпуск и доставка карты\n- Снимайте без комиссии до 15 000₽ или 200$ в месяц",
                                                           attributes: [
-            .font: UIFont(name: "KelsonSans-RegularRU", size: 12.0)!,
+            .font: UIFont(name: "PTSans-Regular", size: 12.0)!,
             .foregroundColor: UIColor(red: 160.0 / 255.0, green: 161.0 / 255.0, blue: 173.0 / 255.0, alpha: 1.0),
             .kern: 0.0
             ])
@@ -83,7 +83,7 @@ class CardIssueVC: UIViewController {
 - Мгновенный выпуск карты
 """,
                                                           attributes: [
-                                                            .font: UIFont(name: "KelsonSans-RegularRU",
+                                                            .font: UIFont(name: "PTSans-Regular",
                                                                           size: 12.0)!,
                                                             .foregroundColor: UIColor(red: 160.0 / 255.0,
                                                                                       green: 161.0 / 255.0,

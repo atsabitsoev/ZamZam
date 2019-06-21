@@ -184,7 +184,7 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         var view = UIView()
-        let font = UIFont(name: "KelsonSans-RegularRU",
+        let font = UIFont(name: "PTSans-Regular",
                           size: 14)!
         
         switch section {

@@ -27,7 +27,7 @@ class DotsView: UIView {
             setNeedsDisplay()
         }
     }
-    @IBInspectable var fontName: String = "KelsonSans-RegularRU"
+    @IBInspectable var fontName: String = "PTSans-Regular"
     private var betweenCenters: CGFloat = 30
     private var radius: CGFloat = 8
     
