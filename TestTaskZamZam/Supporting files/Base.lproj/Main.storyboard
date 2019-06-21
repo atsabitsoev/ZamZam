@@ -494,10 +494,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hs1-3f-Iiq">
-                                <rect key="frame" x="0.0" y="101" width="414" height="795"/>
+                                <rect key="frame" x="0.0" y="98.5" width="414" height="797.5"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-PH-Ubh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="635"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="637.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="fVf-HS-5MH">
@@ -1238,7 +1238,7 @@
                                         </connections>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIi-ez-xxT">
-                                        <rect key="frame" x="18" y="643" width="378" height="69"/>
+                                        <rect key="frame" x="18" y="645.5" width="378" height="69"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WIi-ez-xxT" secondAttribute="height" multiplier="339:62" id="Zo1-tL-MPd"/>
@@ -1252,7 +1252,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="r2C-Yk-n2f">
-                                        <rect key="frame" x="161" y="728" width="92" height="40"/>
+                                        <rect key="frame" x="161" y="730.5" width="92" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZh-A7-xsH">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -1302,11 +1302,8 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Получатель" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8x-z5-WgI">
-                                <rect key="frame" x="18" y="53" width="378" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="k0h-Wj-0mf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="36"/>
+                                <rect key="frame" x="18" y="53" width="378" height="36.5"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1633,10 +1630,10 @@
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYk-bI-6b8">
-                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <rect key="frame" x="0.0" y="137.5" width="414" height="758.5"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="49" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3GI-NG-veB">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="758.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="whatCountryCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="whatCountryCell" rowHeight="49" id="U0D-Ae-93P" customClass="WhatCountryCell" customModule="TestTaskZamZam" customModuleProvider="target">
@@ -1692,16 +1689,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куда?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-1z-Eqk" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="52" width="95" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="AwR-yd-nkA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <rect key="frame" x="18" y="52" width="72" height="36.5"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск, например, Россия" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sbm-Tr-Q18" customClass="WhatCountryTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="99" width="378" height="30"/>
+                                <rect key="frame" x="18" y="96.5" width="378" height="30"/>
                                 <color key="backgroundColor" red="0.36470588235294116" green="0.46274509803921571" blue="0.95294117647058818" alpha="0.30331205985915494" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="0.90366417253521125" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
@@ -2030,7 +2024,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKK-MW-KkC">
-                                <rect key="frame" x="0.0" y="93" width="414" height="1000"/>
+                                <rect key="frame" x="0.0" y="102.5" width="414" height="990.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNq-de-qvj">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
@@ -2306,8 +2300,8 @@
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отправитель" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="pLh-fI-Uh6">
-                                <rect key="frame" x="18" y="53" width="378" height="27"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="27"/>
+                                <rect key="frame" x="18" y="53" width="378" height="36.5"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4116,10 +4110,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEt-Uw-K0v">
-                                <rect key="frame" x="0.0" y="101" width="414" height="795"/>
+                                <rect key="frame" x="0.0" y="98.5" width="414" height="797.5"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="bpO-Ai-fsN">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="635"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="637.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="u7v-BM-mLd">
@@ -4860,7 +4854,7 @@
                                         </connections>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAf-L5-hYe">
-                                        <rect key="frame" x="18" y="643" width="378" height="69"/>
+                                        <rect key="frame" x="18" y="645.5" width="378" height="69"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="qAf-L5-hYe" secondAttribute="height" multiplier="339:62" id="hm2-6G-BPa"/>
@@ -4874,7 +4868,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fVs-7m-uRR">
-                                        <rect key="frame" x="161" y="728" width="92" height="40"/>
+                                        <rect key="frame" x="161" y="730.5" width="92" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glY-E1-4sd">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -4924,11 +4918,8 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оптала перевода" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-we-eOB">
-                                <rect key="frame" x="18" y="53" width="378" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="JYp-ZG-0oA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="36"/>
+                                <rect key="frame" x="18" y="53" width="378" height="36.5"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>

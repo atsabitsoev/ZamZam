@@ -13,6 +13,9 @@
         <array key="Kelson Sans Regular RU.otf">
             <string>KelsonSans-RegularRU</string>
         </array>
+        <array key="PTS75F.ttf">
+            <string>PTSans-Bold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Card IssueVC-->
@@ -40,10 +43,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkz-tx-8PV">
-                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
+                                <rect key="frame" x="0.0" y="98.333333333333314" width="375" height="713.66666666666674"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-iO-Mo6">
-                                        <rect key="frame" x="18" y="553" width="339" height="62"/>
+                                        <rect key="frame" x="18" y="555.66666666666663" width="339" height="62"/>
                                         <color key="backgroundColor" red="0.50196078430000002" green="0.92156862750000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mIV-iO-Mo6" secondAttribute="height" multiplier="339:62" id="orb-Yr-vP4"/>
@@ -110,7 +113,7 @@
                                         </connections>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaN-xk-HAB">
-                                        <rect key="frame" x="18" y="236.66666666666671" width="339" height="298.33333333333326"/>
+                                        <rect key="frame" x="18" y="236.66666666666669" width="339" height="301.00000000000006"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тариф &quot;По-братски&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8P-3H-WTF" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                                 <rect key="frame" x="33.999999999999986" y="0.0" width="213.66666666666663" height="26"/>
@@ -122,7 +125,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1u-vk-VVu">
-                                                <rect key="frame" x="35" y="36.000000000000014" width="296" height="244.33333333333337"/>
+                                                <rect key="frame" x="35" y="36" width="296" height="247"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
@@ -159,7 +162,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обслуживание &quot;По-братски&quot; 99 руб в месяц" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpI-sn-bW5" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="51.666666666666686" y="286.33333333333331" width="236" height="12"/>
+                                                <rect key="frame" x="51.666666666666686" y="289" width="236" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="12" id="Rzg-HF-ALV"/>
                                                 </constraints>
@@ -182,7 +185,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaR-DU-dFn">
-                                        <rect key="frame" x="111.66666666666669" y="615" width="152" height="54"/>
+                                        <rect key="frame" x="111.66666666666669" y="617.66666666666663" width="152" height="54"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Подробнее о лимитах карты">
@@ -215,17 +218,14 @@
                                     <constraint firstItem="mIV-iO-Mo6" firstAttribute="leading" secondItem="dkz-tx-8PV" secondAttribute="leading" constant="18" id="pxN-1a-oLq"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выпуск карты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-ET-Iak" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18.000000000000014" y="53" width="227.33333333333337" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="6Fk-9A-5Vf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Забронировать тариф" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-ET-Iak" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
+                                <rect key="frame" x="18" y="53" width="339" height="36.333333333333343"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ajy-Vq-aDF">
-                                <rect key="frame" x="176" y="302.66666666666669" width="23" height="37"/>
+                                <rect key="frame" x="176" y="300" width="23" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.0" alpha="0.1990047089041096" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
@@ -237,6 +237,7 @@
                             <constraint firstItem="bNw-ET-Iak" firstAttribute="leading" secondItem="HIi-TP-VZM" secondAttribute="leading" constant="18" id="AX6-ZG-LsY"/>
                             <constraint firstItem="dkz-tx-8PV" firstAttribute="top" secondItem="bNw-ET-Iak" secondAttribute="bottom" constant="9" id="Ao4-3e-d1Q"/>
                             <constraint firstItem="Fum-p4-P8G" firstAttribute="leading" secondItem="HIi-TP-VZM" secondAttribute="leading" id="Hfy-FS-aRg"/>
+                            <constraint firstItem="HIi-TP-VZM" firstAttribute="trailing" secondItem="bNw-ET-Iak" secondAttribute="trailing" constant="18" id="LZh-l7-drS"/>
                             <constraint firstAttribute="trailing" secondItem="4d1-d1-YwW" secondAttribute="trailing" id="Z9H-aR-2S3"/>
                             <constraint firstItem="dkz-tx-8PV" firstAttribute="leading" secondItem="HIi-TP-VZM" secondAttribute="leading" id="ZCD-lY-IAp"/>
                             <constraint firstAttribute="bottom" secondItem="dkz-tx-8PV" secondAttribute="bottom" id="gkb-Jl-SwP"/>
