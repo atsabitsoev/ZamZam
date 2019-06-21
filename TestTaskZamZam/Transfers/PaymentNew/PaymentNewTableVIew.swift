@@ -72,7 +72,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 3:
             return 80 //(UIScreen.main.bounds.width - 36) * (16/113) + 10
         case 4:
-            return 150
+            return 54
         default:
             return 100
         }
@@ -174,10 +174,6 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "TotalInfoCell") as! TotalInfoCell
             cell.labSum.text = transferList["sum"] == "" ? "0 ₽" : "\(self.transferList["sum"]!) ₽"
-            let cashBack: Float = (Float(self.transferList["sum"]!) ?? 0) / Float(100)
-            let cashBackString: String!
-            cashBackString = cashBack == 0.0 ? "0 ₽" : "\(cashBack) ₽"
-            cell.labCashBack?.text = cashBackString
             return cell
             
         default:

@@ -37,6 +37,7 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
         
         addObservers()
         setDelegates()
+        addTapRecognizer()
     }
     
     
@@ -124,6 +125,19 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
             print(scrollView.frame.height)
         }
         
+    }
+    
+    
+    private func addTapRecognizer() {
+        
+        let tapRec = UITapGestureRecognizer(target: self,
+                                            action: #selector(tap))
+        self.scrollView.addGestureRecognizer(tapRec)
+    }
+    
+    @objc private func tap() {
+        
+        self.view.endEditing(true)
     }
     
     

@@ -501,7 +501,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="fVf-HS-5MH">
-                                            <rect key="frame" x="0.0" y="719" width="414" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="607" width="414" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -767,33 +767,15 @@
                                                     <outlet property="viewSum" destination="oZR-gA-bri" id="zcI-CB-led"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TotalInfoCell" rowHeight="166" id="zau-gJ-a05" customClass="TotalInfoCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="268" width="414" height="166"/>
+                                            <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TotalInfoCell" rowHeight="54" id="zau-gJ-a05" customClass="TotalInfoCell" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="268" width="414" height="54"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zau-gJ-a05" id="BGL-NQ-avP">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Курс:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgz-Bz-xsz" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="11" width="27.5" height="12"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="12" id="Km8-ch-9F4"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
-                                                            <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,00 USD = 67,51 RUB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stt-vT-MUy" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="274" y="11" width="113" height="12"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="12" id="heE-St-DYV"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
-                                                            <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Комиссия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKk-rb-eSN" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="41" width="53" height="12"/>
+                                                            <rect key="frame" x="29" y="0.0" width="53" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="4VX-5X-gF8"/>
                                                             </constraints>
@@ -802,7 +784,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Без комиссии (0%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xq-ep-pJo" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="290" y="41" width="97" height="12"/>
+                                                            <rect key="frame" x="290" y="0.0" width="97" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="8rm-eL-vpK"/>
                                                             </constraints>
@@ -810,44 +792,14 @@
                                                             <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кэшбэк 1%:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrF-v2-cfl" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="78" width="61" height="12"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="12" id="0cI-gD-wJf"/>
-                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="FDD-4w-dVd"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
-                                                            <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcF-yV-uvH">
-                                                            <rect key="frame" x="301" y="64" width="86" height="34"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ₽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-Mf-gr6" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                                    <rect key="frame" x="13" y="8" width="57" height="18"/>
-                                                                    <fontDescription key="fontDescription" name="KelsonSans-BoldRU" family="Kelson Sans RU" pointSize="14"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <color key="backgroundColor" red="0.50196078430000002" green="0.92156862750000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <constraints>
-                                                                <constraint firstItem="Buq-Mf-gr6" firstAttribute="leading" secondItem="lcF-yV-uvH" secondAttribute="leading" constant="13" id="21r-0B-Ufd"/>
-                                                                <constraint firstAttribute="width" secondItem="lcF-yV-uvH" secondAttribute="height" multiplier="43:17" id="6Ti-JX-8Zx"/>
-                                                                <constraint firstItem="Buq-Mf-gr6" firstAttribute="top" secondItem="lcF-yV-uvH" secondAttribute="top" constant="8" id="Ibo-Ld-p2o"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Buq-Mf-gr6" secondAttribute="trailing" constant="16" id="JUd-hI-Auv"/>
-                                                                <constraint firstAttribute="bottom" secondItem="Buq-Mf-gr6" secondAttribute="bottom" constant="8" id="d63-5U-KN5"/>
-                                                                <constraint firstAttribute="height" constant="34" id="uKd-7P-wyQ"/>
-                                                            </constraints>
-                                                        </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="К оплате:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTh-2A-uWj" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="122" width="57" height="18.5"/>
+                                                            <rect key="frame" x="29" y="30" width="57" height="18.5"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
                                                             <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 126,50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwR-zK-J2d" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="288.5" y="118" width="98.5" height="28.5"/>
+                                                            <rect key="frame" x="288.5" y="20" width="98.5" height="28.5"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="22"/>
                                                             <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -855,37 +807,24 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="Stt-vT-MUy" secondAttribute="trailing" constant="27" id="0Q0-q9-JLH"/>
-                                                        <constraint firstItem="UwR-zK-J2d" firstAttribute="top" secondItem="lcF-yV-uvH" secondAttribute="bottom" constant="20" id="0Rj-w1-an6"/>
+                                                        <constraint firstItem="hTh-2A-uWj" firstAttribute="top" secondItem="QKk-rb-eSN" secondAttribute="bottom" constant="18" id="1nl-2X-lqV"/>
                                                         <constraint firstItem="QKk-rb-eSN" firstAttribute="leading" secondItem="BGL-NQ-avP" secondAttribute="leading" constant="29" id="3zp-O9-SJP"/>
-                                                        <constraint firstItem="jrF-v2-cfl" firstAttribute="leading" secondItem="BGL-NQ-avP" secondAttribute="leading" constant="29" id="5Gi-Dk-b3s"/>
-                                                        <constraint firstItem="lgz-Bz-xsz" firstAttribute="top" secondItem="BGL-NQ-avP" secondAttribute="topMargin" id="73r-Jc-DLt"/>
-                                                        <constraint firstAttribute="trailing" secondItem="lcF-yV-uvH" secondAttribute="trailing" constant="27" id="G3r-y3-Q8k"/>
-                                                        <constraint firstItem="QKk-rb-eSN" firstAttribute="top" secondItem="lgz-Bz-xsz" secondAttribute="bottom" constant="18" id="GDi-E6-pv4"/>
-                                                        <constraint firstItem="Stt-vT-MUy" firstAttribute="top" secondItem="BGL-NQ-avP" secondAttribute="topMargin" id="HuY-BD-ziB"/>
                                                         <constraint firstAttribute="trailing" secondItem="8Xq-ep-pJo" secondAttribute="trailing" constant="27" id="MpS-Am-sPS"/>
+                                                        <constraint firstItem="QKk-rb-eSN" firstAttribute="top" secondItem="BGL-NQ-avP" secondAttribute="top" id="NEQ-oX-R8d"/>
                                                         <constraint firstItem="hTh-2A-uWj" firstAttribute="leading" secondItem="BGL-NQ-avP" secondAttribute="leading" constant="29" id="Oig-zk-vAr"/>
-                                                        <constraint firstItem="lcF-yV-uvH" firstAttribute="width" secondItem="lcF-yV-uvH" secondAttribute="height" multiplier="43:17" id="Scu-9x-yGo"/>
-                                                        <constraint firstItem="lcF-yV-uvH" firstAttribute="width" secondItem="lcF-yV-uvH" secondAttribute="height" multiplier="43:17" id="aeK-DY-d1w"/>
-                                                        <constraint firstItem="jrF-v2-cfl" firstAttribute="top" secondItem="QKk-rb-eSN" secondAttribute="bottom" constant="25" id="b3q-Mg-iEA"/>
-                                                        <constraint firstItem="hTh-2A-uWj" firstAttribute="top" secondItem="jrF-v2-cfl" secondAttribute="bottom" constant="32" id="fDV-PX-ujD"/>
                                                         <constraint firstAttribute="trailing" secondItem="UwR-zK-J2d" secondAttribute="trailing" constant="27" id="gAW-C6-UJn"/>
-                                                        <constraint firstItem="lcF-yV-uvH" firstAttribute="top" secondItem="8Xq-ep-pJo" secondAttribute="bottom" constant="11" id="mRz-uY-55W"/>
-                                                        <constraint firstItem="lgz-Bz-xsz" firstAttribute="leading" secondItem="BGL-NQ-avP" secondAttribute="leading" constant="29" id="mf6-hK-62X"/>
-                                                        <constraint firstItem="8Xq-ep-pJo" firstAttribute="top" secondItem="Stt-vT-MUy" secondAttribute="bottom" constant="18" id="nqB-w5-yXj"/>
+                                                        <constraint firstItem="UwR-zK-J2d" firstAttribute="bottom" secondItem="hTh-2A-uWj" secondAttribute="bottom" id="kwG-02-Y6a"/>
+                                                        <constraint firstItem="8Xq-ep-pJo" firstAttribute="centerY" secondItem="QKk-rb-eSN" secondAttribute="centerY" id="yVW-a9-doM"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <outlet property="Comission" destination="8Xq-ep-pJo" id="IWe-zC-jsd"/>
-                                                    <outlet property="labCashBack" destination="Buq-Mf-gr6" id="UVh-SN-VgB"/>
-                                                    <outlet property="labCurrencies" destination="Stt-vT-MUy" id="Glw-wO-uuF"/>
                                                     <outlet property="labSum" destination="UwR-zK-J2d" id="9dg-KV-QiF"/>
-                                                    <outlet property="viewGreenUnderCashBack" destination="lcF-yV-uvH" id="fSI-eg-3MJ"/>
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardCellNewPayment" rowHeight="70" id="voh-xO-kM5" customClass="CardCellNewPayment" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="434" width="414" height="70"/>
+                                                <rect key="frame" x="0.0" y="322" width="414" height="70"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="voh-xO-kM5" id="fRw-3u-LeO">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
@@ -986,7 +925,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardDataCell" rowHeight="144" id="hYJ-do-q0z" customClass="CardDataCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="504" width="414" height="144"/>
+                                                <rect key="frame" x="0.0" y="392" width="414" height="144"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hYJ-do-q0z" id="nFX-Ia-lyB">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
@@ -1156,14 +1095,14 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddNewCardCell" rowHeight="71" id="UEr-PP-1Cj" customClass="AddNewCardCell" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="648" width="414" height="71"/>
+                                                <rect key="frame" x="0.0" y="536" width="414" height="71"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UEr-PP-1Cj" id="UHe-xW-ihc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkG-R9-Wsv">
-                                                            <rect key="frame" x="18" y="0.0" width="378" height="70.5"/>
+                                                            <rect key="frame" x="18" y="0.0" width="378" height="71"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusCircle" translatesAutoresizingMaskIntoConstraints="NO" id="aIe-JR-HC7">
                                                                     <rect key="frame" x="20" y="21.5" width="28" height="28"/>
@@ -1358,7 +1297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13X-Y2-aoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2704.8000000000002" y="88.669950738916256"/>
+            <point key="canvasLocation" x="2704.347826086957" y="88.392857142857139"/>
         </scene>
         <!--TransfersVC-->
         <scene sceneID="B1I-0b-vjj">
@@ -2038,140 +1977,140 @@
                                                     <constraint firstAttribute="height" constant="48" id="28E-ia-ipm"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Номер телефона"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФИО и дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="rQg-Ex-ekT">
-                                                <rect key="frame" x="23" y="115" width="138.5" height="14"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                                <rect key="frame" x="23" y="115" width="148" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6Z-Io-EJC" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="144" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="149.5" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="aKV-5l-zJ5"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Имя"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O8o-HZ-1aS" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="202" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="207.5" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="9Ka-Ze-g7A"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Фамилия"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4RE-hM-Xm5" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="260" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="265.5" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="qgm-Tr-z9j"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Отчество"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата рождения ДД/ММ/ГГ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z2k-zH-yNr" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="318" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="323.5" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="iaN-vR-TY8"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Дата рождения ДД/ММ/ГГ"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адрес регистрации" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="899-DU-wIq">
-                                                <rect key="frame" x="23" y="402" width="379" height="14"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                                <rect key="frame" x="23" y="407.5" width="379" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Город регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-Wu-NdO" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="436" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="447" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="eQs-ND-g6U"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Город регистрации"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Адрес регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgy-a2-gOh" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="494" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="505" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="FYr-wn-XdC"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Адрес регистрации"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Паспортные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="XpI-Ew-PYo">
-                                                <rect key="frame" x="23" y="578" width="373" height="14"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="14"/>
+                                                <rect key="frame" x="23" y="589" width="373" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Серия и номер паспорта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ita-u9-qn6" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="607" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="623.5" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="XbA-aa-t4A"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Серия и номер паспорта"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Кем выдан" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-Ac-rAf" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="665" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="681.5" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="D6d-bY-mD7"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Кем выдан"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата выдачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZP-CY-5hQ" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="723" width="378" height="48"/>
+                                                <rect key="frame" x="18" y="739.5" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="fRh-9g-rE3"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Дата выдачи"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyn-g3-8N6">
-                                                <rect key="frame" x="26" y="785" width="375" height="38.5"/>
+                                                <rect key="frame" x="26" y="801.5" width="375" height="38.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Данные должны полностью совпадать с документом. Обязательно перепроверьте данные перед отправкой.">
                                                         <attributes>
@@ -2185,7 +2124,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aus-Fj-5xX">
-                                                <rect key="frame" x="18" y="845.5" width="378" height="69"/>
+                                                <rect key="frame" x="18" y="862" width="378" height="69"/>
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Aus-Fj-5xX" secondAttribute="height" multiplier="339:62" id="9gU-K1-c9z"/>
@@ -3148,7 +3087,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="I1h-Jd-Udh">
-                                                                    <rect key="frame" x="336" y="12" width="24" height="24"/>
+                                                                    <rect key="frame" x="344" y="16" width="16" height="16"/>
                                                                     <color key="tintColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="I1h-Jd-Udh" secondAttribute="height" multiplier="1:1" id="e7f-YI-JhK"/>
@@ -4000,9 +3939,7 @@
         <scene sceneID="fVv-IS-oEb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iZW-OY-6MV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Главная" image="briefcaseCopy" id="0YC-ae-yjf">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Главная" image="briefcaseCopy" id="0YC-ae-yjf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="gL5-np-Yha">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
