@@ -3087,7 +3087,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="I1h-Jd-Udh">
-                                                                    <rect key="frame" x="344" y="16" width="16" height="16"/>
+                                                                    <rect key="frame" x="336" y="12" width="24" height="24"/>
                                                                     <color key="tintColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="I1h-Jd-Udh" secondAttribute="height" multiplier="1:1" id="e7f-YI-JhK"/>
