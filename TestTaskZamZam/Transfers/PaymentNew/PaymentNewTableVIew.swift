@@ -62,7 +62,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             if indexPath.row >= masZamBills.count {
                 return 70
             }
-            return 80
+            return 84
         case 2:
             if newCardAdding {
                 return 158
@@ -82,11 +82,12 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         
         //1
         let viewFor1Section = UIView(frame: tableView.rectForHeader(inSection: section))
-        viewFor1Section.backgroundColor = UIColor.white.withAlphaComponent(0.8)
-        let label = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 13, left: 18, bottom: 7, right: 18)))
+        viewFor1Section.backgroundColor = .clear
+        let label = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 9, left: 18, bottom: 7, right: 18)))
+        label.backgroundColor = UIColor.white.withAlphaComponent(0.8)
         label.text = "Выберете способ оплаты"
         label.textColor = #colorLiteral(red: 0.08931172639, green: 0.1388869584, blue: 0.3626311421, alpha: 1)
-        label.font = UIFont(name: "PTSans-Regular", size: 14)
+        label.font = UIFont(name: "PTSans-Bold", size: 15)
         viewFor1Section.addSubview(label)
         //Any
         let viewForAnySection = UIView(frame: tableView.rectForHeader(inSection: section))

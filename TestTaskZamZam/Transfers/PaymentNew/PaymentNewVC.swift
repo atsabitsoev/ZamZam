@@ -9,6 +9,8 @@
 
 import UIKit
 import ContactsUI
+import PhoneNumberKit
+import FlagKit
 
 
 class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CurrencySelectViewDelegate {
@@ -65,7 +67,6 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         
         addObservers()
         fetchBills()
-
     }
     
     override func viewWillLayoutSubviews() {
@@ -302,11 +303,27 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     func setNumber(of contact: CNContact) {
+
+        let phoneNumberKit = PhoneNumberKit()
+        let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! SenderCellPhoneNumber
         
         let phone = contact.phoneNumbers
-        let phoneNumber = phone.first?.value.stringValue.onlyNumbers()
-        transferList["phone"] = "+\(phoneNumber ?? "")"
+        var phoneNumber = phone.first!.value.stringValue.onlyNumbers()
+        if phoneNumber.first! == "8" {
+            phoneNumber.removeFirst()
+            phoneNumber = "+7\(phoneNumber)"
+        }
+        guard let parsedPhoneNumber = try? phoneNumberKit.parse(phoneNumber) else { return }
+
         tableView.reloadData()
+        transferList["phone"] = phoneNumberKit.format(parsedPhoneNumber,
+                                                        toType: .international)
+
+        let phoneNumberPNKit = try? phoneNumberKit.parse(transferList["phone"]!)
+        guard let region = phoneNumberPNKit?.regionID else { return }
+        let image = Flag(countryCode: region)?.image(style: .circle)
+
+        cell.imCountry.image = image
     }
     
     
@@ -318,7 +335,6 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                                           sum: (transferList["sum"]! as NSString).floatValue,
                                           senderCurrency: transferList["senderCurrency"]!,
                                           recipientCurrency: transferList["recipientCurrency"]!)
-        
     }
     
     @IBAction func butBackTapped(_ sender: UIButton) {

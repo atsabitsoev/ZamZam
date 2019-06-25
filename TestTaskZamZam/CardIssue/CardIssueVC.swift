@@ -69,22 +69,34 @@ class CardIssueVC: UIViewController {
     }
     
     func setAttributedStrings() {
+
+        let string0 = """
+Медицинская страховка (ДМС)
+Оплата миграционного патента без комиссий
+Именная дебетовая карта Zamzam
+Международные переводы за 0%
+Кэшбэк 1% на валютные переводы
+Переводы внутри Zamzam бесплатно
+Виртуальная карта
+"""
+        let string1 = """
+Международные переводы за 0%
+Кэшбэк 1% на валютные переводы
+Переводы внутри Zamzam бесплатно
+Виртуальная карта
+"""
         
-        let attributedString0 = NSMutableAttributedString(string: "- Именная карта\n- Бесконтактные платежи\n- Мультивалютная карта с доступом к наличным в RUB, USD, EUR\n- Конвертация валюты по курсу ЦБ +1%\n- Бесплатная оплата покупок за рубежом в валютах USD, EUR\n- Интеграция с apple pay и android pay\n- Приоритетная поддержка \n- Бесплатный выпуск и доставка карты\n- Снимайте без комиссии до 15 000₽ или 200$ в месяц",
+        let attributedString0 = NSMutableAttributedString(string: string0,
                                                           attributes: [
-            .font: UIFont(name: "PTSans-Regular", size: 12.0)!,
+            .font: UIFont(name: "PTSans-Regular", size: 14.0)!,
             .foregroundColor: UIColor(red: 160.0 / 255.0, green: 161.0 / 255.0, blue: 173.0 / 255.0, alpha: 1.0),
             .kern: 0.0
             ])
         
-        let attributedString1 = NSMutableAttributedString(string: """
-- Подходит для онлайн покупок и бесконтактных платежей с помощью apple pay и android pay
-- Бесплатный выпус и обслуживание
-- Мгновенный выпуск карты
-""",
+        let attributedString1 = NSMutableAttributedString(string: string1,
                                                           attributes: [
                                                             .font: UIFont(name: "PTSans-Regular",
-                                                                          size: 12.0)!,
+                                                                          size: 14)!,
                                                             .foregroundColor: UIColor(red: 160.0 / 255.0,
                                                                                       green: 161.0 / 255.0,
                                                                                       blue: 173.0 / 255.0,
@@ -92,7 +104,11 @@ class CardIssueVC: UIViewController {
                                                             .kern: 0.0
                                                             ])
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 1
+        paragraphStyle.lineSpacing = 2
+        attributedString0.addAttribute(NSAttributedString.Key.paragraphStyle,
+                                       value: paragraphStyle,
+                                       range: NSRange(location: 0,
+                                                      length: attributedString1.length))
         attributedString1.addAttribute(NSAttributedString.Key.paragraphStyle,
                                        value: paragraphStyle,
                                        range: NSRange(location: 0,

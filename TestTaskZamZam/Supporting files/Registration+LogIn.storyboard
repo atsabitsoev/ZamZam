@@ -13,6 +13,12 @@
         <array key="Kelson Sans Regular RU.otf">
             <string>KelsonSans-RegularRU</string>
         </array>
+        <array key="PTS55F.ttf">
+            <string>PTSans-Regular</string>
+        </array>
+        <array key="PTS75F.ttf">
+            <string>PTSans-Bold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--SplashVC-->
@@ -29,7 +35,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="44c-FN-Ckd" secondAttribute="height" multiplier="339:62" id="28o-q8-5dH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
                                 <state key="normal" title="Регистрация &gt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -49,7 +55,7 @@
                                         <fragment content="Вход">
                                             <attributes>
                                                 <color key="NSColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" size="16" name="PTSans-Regular"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -92,7 +98,7 @@
                                                                 <fragment content="Кэшбэк">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.070588235294117646" green="0.094117647058823528" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="34" name="KelsonSans-RegularRU"/>
+                                                                        <font key="NSFont" size="34" name="PTSans-Bold"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -105,8 +111,8 @@
                                                                 <fragment content="Получи кэшбэк 1% от суммы перевода на счет zamzam реальными деньгами, которые можно потрать на связь или расплатиться картой">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.11764705882352941" green="0.16078431372549018" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="16" name="KelsonSans-RegularRU"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                                                        <font key="NSFont" size="16" name="PTSans-Regular"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.1000000000000001" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -215,7 +221,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqQ-rS-xMk" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
                                                 <rect key="frame" x="58" y="3" width="273" height="45"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
                                                 <connections>
                                                     <action selector="tFPhoneNumberTextChanged:" destination="Q6h-9F-H2b" eventType="editingChanged" id="r3u-ab-GrX"/>
@@ -247,7 +253,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kfN-Bz-7sw">
                                                 <rect key="frame" x="11" y="8" width="320" height="32"/>
                                                 <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
@@ -267,13 +273,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kM6-yi-QPn">
-                                        <rect key="frame" x="18" y="185" width="76" height="26"/>
+                                        <rect key="frame" x="18" y="185" width="73" height="30"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Забыл пароль">
                                                     <attributes>
                                                         <color key="NSColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                        <font key="NSFont" size="12" name="PTSans-Regular"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.1599999999999999" tighteningFactorForTruncation="0.0"/>
                                                         <integer key="NSUnderline" value="1"/>
                                                     </attributes>
@@ -285,12 +291,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-MH-UuW">
-                                        <rect key="frame" x="18" y="244" width="339" height="62"/>
+                                        <rect key="frame" x="18" y="248" width="339" height="62"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rhl-MH-UuW" secondAttribute="height" multiplier="339:62" id="oJl-Ir-Hki"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
                                         <state key="normal" title="Войти">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -332,8 +338,8 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вход" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPn-Bj-M6I" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="10" width="77" height="36"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <rect key="frame" x="18" y="10" width="60" height="35"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -416,16 +422,16 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Придумайте PIN код для входа" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcH-Cz-TYu">
-                                <rect key="frame" x="18" y="53" width="339" height="72"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <rect key="frame" x="18" y="53" width="339" height="70"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6X-Od-ea4">
-                                <rect key="frame" x="0.0" y="134" width="375" height="678"/>
+                                <rect key="frame" x="0.0" y="132" width="375" height="680"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Si3-KK-7eV">
-                                        <rect key="frame" x="0.0" y="128" width="375" height="85"/>
+                                        <rect key="frame" x="0.0" y="129" width="375" height="85"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFE-EA-QGS" customClass="DotsView" customModule="TestTaskZamZam" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
@@ -461,7 +467,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df9-Gw-t3c">
-                                        <rect key="frame" x="165.66666666666666" y="243" width="44" height="28"/>
+                                        <rect key="frame" x="165.66666666666666" y="244" width="44" height="28"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
                                         <state key="normal" title="Назад">
                                             <color key="titleColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -471,7 +477,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M7m-Ib-n6i">
-                                        <rect key="frame" x="0.0" y="271" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="272" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
@@ -480,7 +486,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfW-mc-bzt">
-                                        <rect key="frame" x="0.0" y="301" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="302" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
@@ -571,13 +577,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 (928) 498-30-00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S37-ss-dHY" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
                                         <rect key="frame" x="18" y="0.0" width="339" height="193.66666666666666"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="25"/>
                                         <color key="textColor" red="0.1188343093" green="0.15990385409999999" blue="0.40786582230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpq-3c-6JY">
-                                        <rect key="frame" x="164.66666666666666" y="258.66666666666669" width="46" height="28"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                        <rect key="frame" x="165" y="258.66666666666669" width="45" height="33"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                         <state key="normal" title="Выход">
                                             <color key="titleColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -586,7 +592,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CqQ-Aa-r6i">
-                                        <rect key="frame" x="107.66666666666669" y="316.66666666666669" width="160" height="38"/>
+                                        <rect key="frame" x="107.66666666666669" y="321.66666666666669" width="160" height="38"/>
                                         <color key="backgroundColor" red="0.1259082258" green="0.16076499220000001" blue="0.39217829700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="3R7-AI-tP4"/>
@@ -621,7 +627,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вход" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWr-kU-DdV">
                                 <rect key="frame" x="18" y="53" width="339" height="82"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -696,7 +702,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Uvy-cT-aef" secondAttribute="height" multiplier="339:62" id="85I-SL-A6y"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
                                         <state key="normal" title="Дальше &gt;">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -716,19 +722,19 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3C-zD-jKE">
-                                        <rect key="frame" x="64" y="124" width="293" height="12"/>
+                                        <rect key="frame" x="64" y="120.33333333333333" width="293" height="15.666666666666671"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Я соглашаюсь с ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.65490000000000004" green="0.65490000000000004" blue="0.65490000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                    <font key="NSFont" size="12" name="PTSans-Regular"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="политикой конфиденциальности">
                                                 <attributes>
                                                     <color key="NSColor" red="0.33724999999999999" green="0.75294000000000005" blue="0.99216000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                    <font key="NSFont" size="12" name="PTSans-Regular"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                     <integer key="NSUnderline" value="1"/>
                                                     <color key="NSUnderlineColor" red="0.33724999999999999" green="0.75294000000000005" blue="0.99216000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -762,7 +768,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IBk-hL-Hj2" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
                                         <rect key="frame" x="58" y="3" width="273" height="45"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
                                         <connections>
                                             <action selector="tFPhoneNumberTextChanged:" destination="xaA-69-aHm" eventType="editingChanged" id="Lpp-Tu-PaQ"/>
@@ -782,15 +788,15 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Номер телефона " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QId-O2-fVQ">
-                                <rect key="frame" x="29.000000000000007" y="128" width="72.666666666666686" height="9"/>
+                                <rect key="frame" x="29" y="128" width="78" height="13"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="10"/>
                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Укажите Ваш номер телефона" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh8-7t-Txa">
-                                <rect key="frame" x="18" y="10" width="270.66666666666669" height="72"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <rect key="frame" x="18" y="10" width="195" height="70"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -897,7 +903,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код из СМС" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIt-Gl-y3a">
                                 <rect key="frame" x="18" y="53" width="357" height="82"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1097,7 +1103,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Придумайте пароль" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4B-Ii-hX9">
                                 <rect key="frame" x="18" y="53" width="339" height="82"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1256,7 +1262,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Придумайте PIN код для входа" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVP-KS-fCG">
                                 <rect key="frame" x="18" y="53" width="339" height="82"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1378,7 +1384,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Использовать отпечаток" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9w-pj-lZv">
                                 <rect key="frame" x="18" y="53" width="339" height="82"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>

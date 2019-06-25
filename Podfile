@@ -14,6 +14,5 @@ target 'TestTaskZamZam' do
   pod 'Alamofire', '~> 5.0.0-beta.3'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'KeychainSwift'
-  pod 'FlagPhoneNumber'
 
 end

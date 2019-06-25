@@ -10,8 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Kelson Sans Regular RU.otf">
-            <string>KelsonSans-RegularRU</string>
+        <array key="PTS55F.ttf">
+            <string>PTSans-Regular</string>
         </array>
         <array key="PTS75F.ttf">
             <string>PTSans-Bold</string>
@@ -43,10 +43,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkz-tx-8PV">
-                                <rect key="frame" x="0.0" y="98.333333333333314" width="375" height="713.66666666666674"/>
+                                <rect key="frame" x="0.0" y="97" width="375" height="715"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-iO-Mo6">
-                                        <rect key="frame" x="18" y="555.66666666666663" width="339" height="62"/>
+                                        <rect key="frame" x="18" y="557" width="339" height="62"/>
                                         <color key="backgroundColor" red="0.50196078430000002" green="0.92156862750000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mIV-iO-Mo6" secondAttribute="height" multiplier="339:62" id="orb-Yr-vP4"/>
@@ -56,7 +56,7 @@
                                                 <fragment content="Встать на очередь &gt;">
                                                     <attributes>
                                                         <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" size="24" name="KelsonSans-RegularRU"/>
+                                                        <font key="NSFont" size="24" name="PTSans-Regular"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -113,60 +113,48 @@
                                         </connections>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaN-xk-HAB">
-                                        <rect key="frame" x="18" y="236.66666666666669" width="339" height="301.00000000000006"/>
+                                        <rect key="frame" x="18" y="236.66666666666671" width="339" height="302.33333333333326"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тариф &quot;По-братски&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8P-3H-WTF" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="33.999999999999986" y="0.0" width="213.66666666666663" height="26"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="26" id="0kt-mi-FhE"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тариф &quot;По-братски&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8P-3H-WTF">
+                                                <rect key="frame" x="33.999999999999986" y="0.0" width="208.66666666666663" height="31.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="24"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1u-vk-VVu">
-                                                <rect key="frame" x="35" y="36" width="296" height="247"/>
+                                                <rect key="frame" x="35" y="41.333333333333314" width="296" height="243"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">- Именная карта
-- Бесконтактные платежи
-- Мультивалютная карта с доступом к наличным в RUB, USD, EUR
-- Конвертация валюты по курсу ЦБ +1%
-- Бесплатная оплата покупок за рубежом в валютах USD, EUR
-- Интеграция с apple pay и android pay
-- Приоритетная поддержка 
-- Бесплатный выпуск и доставка карты
-- Снимайте без комиссии до 15 000</string>
+                                                        <string key="content">Медицинская страховка (ДМС)
+Оплата миграционного патента без комиссий
+Именная дебетовая карта Zamzam
+Международные переводы за 0%
+Кэшбэк 1% на валютные переводы
+Переводы внутри Zamzam бесплатно
+Виртуальная карта</string>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.62745098039215685" green="0.63137254901960782" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="1" paragraphSpacingBefore="1" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="₽">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.62745098039215685" green="0.63137254901960782" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="12" name="SFMono-Regular"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="1" paragraphSpacingBefore="1" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" или 200$ в месяц">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.62745098039215685" green="0.63137254901960782" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="1" paragraphSpacingBefore="1" tighteningFactorForTruncation="0.0"/>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="NSColor" red="0.69026821851730347" green="0.69360911846160889" blue="0.72942048311233521" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="14" name="PTSans-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="42" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="42">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обслуживание &quot;По-братски&quot; 99 руб в месяц" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpI-sn-bW5" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="51.666666666666686" y="289" width="236" height="12"/>
+                                                <rect key="frame" x="46.000000000000014" y="290.33333333333331" width="247.33333333333337" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="12" id="Rzg-HF-ALV"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="13"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -185,13 +173,13 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaR-DU-dFn">
-                                        <rect key="frame" x="111.66666666666669" y="617.66666666666663" width="152" height="54"/>
+                                        <rect key="frame" x="113" y="619" width="149" height="54"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Подробнее о лимитах карты">
                                                     <attributes>
                                                         <color key="NSColor" red="0.62745098039215685" green="0.63137254901960782" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="12" name="KelsonSans-RegularRU"/>
+                                                        <font key="NSFont" size="12" name="PTSans-Regular"/>
                                                         <integer key="NSUnderline" value="1"/>
                                                     </attributes>
                                                 </fragment>
@@ -219,13 +207,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Забронировать тариф" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-ET-Iak" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="53" width="339" height="36.333333333333343"/>
-                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="28"/>
+                                <rect key="frame" x="18" y="53" width="339" height="35"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ajy-Vq-aDF">
-                                <rect key="frame" x="176" y="300" width="23" height="37"/>
+                                <rect key="frame" x="176" y="298.66666666666669" width="23" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.0" alpha="0.1990047089041096" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
