@@ -48,7 +48,7 @@ class GetUserAccountsService {
                             
                         case 200:
                             
-                            let json = JSON(response.result.value!)
+                            let json = JSON(response.value!)
                             
                             self.sumOfAllAccounts = json["summOfAllAccounts"].doubleValue
                             
@@ -73,17 +73,17 @@ class GetUserAccountsService {
                             
                             print("Устарел аксесс токен")
                             self.post(notificationName: .userAccessTokenIsOutOfDate)
-                            print(response.result.value!)
+                            print(response.value!)
                             
                         default:
                             
-                            print(response.result.value!)
+                            print(response.value!)
                             
                         }
                         
                     case .failure:
                         
-                        print(response.result.error!)
+                        print(response.error!)
                         
                     }
                     

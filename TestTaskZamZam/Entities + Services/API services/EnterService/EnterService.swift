@@ -48,7 +48,7 @@ class EnterServise {
         AF.request(url, method: .post, parameters: parameters).responseJSON { (response) in
             
             switch response.result {
-                
+
             case .success:
                 
                 do {
@@ -92,7 +92,7 @@ class EnterServise {
                 
                 print(response.response!.statusCode)
                 
-                print(response.result.error!.localizedDescription)
+                print(response.error!.localizedDescription)
                 self.post(.enterFailed)
                 
             }

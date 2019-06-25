@@ -73,7 +73,7 @@ class GetTransactionHistoryService {
             case .failure:
                 
                 self.post(notificationName: .historyGetFailed)
-                print(response.result.error!)
+                print(response.error!)
                 
             }
         }

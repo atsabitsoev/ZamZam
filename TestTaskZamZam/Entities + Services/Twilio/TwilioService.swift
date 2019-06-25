@@ -67,7 +67,7 @@ class TwilioService {
                         self.shortCodeSent = false
                     }
                 case .failure:
-                    print(response.result.error!.localizedDescription)
+                    print(response.error!.localizedDescription)
                 }
         }
         
@@ -105,7 +105,7 @@ class TwilioService {
                             print(error)
                         }
                     case .failure:
-                        print(response.result.error!.localizedDescription)
+                        print(response.error!.localizedDescription)
                     }
             }
         }

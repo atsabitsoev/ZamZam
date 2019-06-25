@@ -51,14 +51,14 @@ class UserProfileService {
                     
                 default:
                     
-                    print(print(response.result.value!))
+                    print(print(response.value!))
                     self.post(notificationName: .userProfileGettingFailed)
                     
                 }
                 
             case .failure:
                 
-                print(response.result.error!)
+                print(response.error!)
                 self.post(notificationName: .userProfileGettingFailed)
                 
             }
@@ -94,24 +94,24 @@ class UserProfileService {
                     
                 case 200:
                     
-                    print(response.result.value!)
+                    print(response.value!)
                     self.post(notificationName: .userProfilePostSucceed)
                     
                 case 401:
                     
-                    print(response.result.value!)
+                    print(response.value!)
                     self.post(notificationName: .userAccessTokenIsOutOfDate)
                     
                 default:
                     
-                    print(response.result.value!)
+                    print(response.value!)
                     self.post(notificationName: .userProfilePostFailed)
                     
                 }
                 
             case .failure:
                 
-                print(response.result.error!)
+                print(response.error!)
                 self.post(notificationName: .userProfilePostFailed)
                 
             }

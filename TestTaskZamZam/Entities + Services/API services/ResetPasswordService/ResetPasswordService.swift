@@ -65,13 +65,13 @@ class ResetPasswordService {
                     self.post(.verificationSucceed)
                 } else {
                     print("Ошибка")
-                    print(response.result.value!)
+                    print(response.value!)
                     self.post(.verificationFailed)
                 }
                 
             case .failure:
                 
-                print(response.result.error!.localizedDescription)
+                print(response.error!.localizedDescription)
                 self.post(.verificationFailed)
                 
             }
@@ -99,13 +99,13 @@ class ResetPasswordService {
                 if response.response?.statusCode == 200 {
                     self.post(.passwordChanged)
                 } else {
-                    print(response.result.value!)
+                    print(response.value!)
                     self.post(.passwordNotChanged)
                 }
                 
             case .failure:
                 
-                print(response.result.error!.localizedDescription)
+                print(response.error!.localizedDescription)
                 self.post(.passwordNotChanged)
                 
             }
@@ -135,7 +135,7 @@ class ResetPasswordService {
                 
             case .success:
                 
-                let uid = response.result.value! as! String
+                let uid = response.value! as! String
                 print()
                 print(uid)
                 print()
@@ -144,7 +144,7 @@ class ResetPasswordService {
                 
             case .failure:
                 
-                print(response.result.error!.localizedDescription)
+                print(response.error!.localizedDescription)
                 
             }
             

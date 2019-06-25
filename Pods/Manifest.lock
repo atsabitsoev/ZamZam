@@ -1,7 +1,10 @@
 PODS:
   - AKMaskField (2.0.3)
-  - Alamofire (5.0.0-beta.3)
+  - Alamofire (5.0.0-beta.6)
   - FlagKit (2.0.1)
+  - FlagPhoneNumber (0.7.6):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.7.6)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.7.6)
   - Hero (1.4.0)
   - KeychainSwift (13.0.0)
   - PhoneNumberKit (2.6.0):
@@ -16,6 +19,7 @@ DEPENDENCIES:
   - AKMaskField
   - Alamofire (~> 5.0.0-beta.3)
   - FlagKit (~> 2.0.1)
+  - FlagPhoneNumber
   - Hero
   - KeychainSwift
   - PhoneNumberKit (~> 2.6)
@@ -26,6 +30,7 @@ SPEC REPOS:
     - AKMaskField
     - Alamofire
     - FlagKit
+    - FlagPhoneNumber
     - Hero
     - KeychainSwift
     - PhoneNumberKit
@@ -33,13 +38,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AKMaskField: b6d147524813e62cd3f15475fa2200ce7a3d2620
-  Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
   FlagKit: 75c64346179f254d1753bebdc5b1f9cbe7890748
+  FlagPhoneNumber: ee8d015e7e92b776a3598e6a36718196e0d0dcf5
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
   PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 87a7bcebffe4f4ca8e9cbaf8931a369011653de6
+PODFILE CHECKSUM: 29c3fe05e9c362754b65cc3746a537c85ed0b977
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.2

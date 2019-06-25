@@ -86,7 +86,7 @@ class MaterialTextFieldWithFlag: UITextField {
         labTitle.sizeToFit()
         labTitle.backgroundColor = .white
         labTitle.font = UIFont(name: "PT Sans", size: 9)
-        labTitle.textColor = isEditing ? activeColor : inActiveColor
+        labTitle.textColor = isEditing ? activeColor : #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
         
     }
     

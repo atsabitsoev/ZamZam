@@ -82,9 +82,9 @@ class UserTokenService {
                             
                         case 200:
                             
-                            let accessToken = JSON(response.result.value!)["access_token"].stringValue
+                            let accessToken = JSON(response.value!)["access_token"].stringValue
                             print(accessToken)
-                            let refreshToken = JSON(response.result.value!)["refresh_token"].stringValue
+                            let refreshToken = JSON(response.value!)["refresh_token"].stringValue
                             
                             print("Сохраняю токен - \(accessToken)")
                             
@@ -104,7 +104,7 @@ class UserTokenService {
                             
                             self.post(notificationName: .enterFailed)
                             
-                            print(response.result.value!)
+                            print(response.value!)
                             
                         }
                         
@@ -113,7 +113,7 @@ class UserTokenService {
                         
                         self.post(notificationName: .enterFailed)
                         
-                        print(response.result.error!)
+                        print(response.error!)
                         
                     }
                     

@@ -33,9 +33,7 @@ class ZamZamTransferService {
                    parameters: parameters,
                    headers: headers).responseJSON { (response) in
                     
-                    switch response.result {
-                        
-                    case .success:
+                    do {
                         
                         switch response.response?.statusCode {
                             
@@ -53,11 +51,11 @@ class ZamZamTransferService {
                             
                         }
                         
-                        print("json - \(response.result.value!)")
+                        print("json - \(try response.result.get())")
                         
-                    case .failure:
+                    } catch {
                         
-                        print(response.result.error!)
+                        print(error.localizedDescription)
                         self.post(notificationName: .zamZamTransferFailed)
                         
                     }

@@ -71,7 +71,7 @@ class AppTokenService {
                 
             case .failure:
                 
-                print(response.result.error!)
+                print(response.error!)
                 
             }
             

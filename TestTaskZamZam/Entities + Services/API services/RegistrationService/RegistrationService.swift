@@ -47,14 +47,14 @@ class RegistrationService {
                     
                 } else {
                     
-                    print(response.result.value!)
+                    print(response.value!)
                     self.post(.userExists)
                     
                 }
                 
             case .failure:
                 self.post(.registrationFailed)
-                print(response.result.error!.localizedDescription)
+                print(response.error!.localizedDescription)
                 
             }
             

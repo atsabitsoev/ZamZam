@@ -59,7 +59,7 @@ class PhoneVerificationService {
                     self.post(.userExists)
                 }
             case .failure:
-                print(response.result.error!.localizedDescription)
+                print(response.error!.localizedDescription)
                 self.post(.sendingCodeError)
             }
             
@@ -94,13 +94,13 @@ class PhoneVerificationService {
                     self.post(.verificationSucceed)
                 } else {
                     print("Ошибка")
-                    print(response.result.value!)
+                    print(response.value!)
                     self.post(.verificationFailed)
                 }
                 
             case .failure:
                 
-                print(response.result.error!.localizedDescription)
+                print(response.error!.localizedDescription)
                 self.post(.verificationFailed)
                 
             }

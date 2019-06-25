@@ -64,18 +64,21 @@ class MaterialTextField: UITextField {
     
     
     func configureLabTitle() {
-        
+
         superview!.addSubview(labTitle)
         
         let titleFrame = CGRect(x: 11 + frame.minX, y: -5 + frame.minY, width: bounds.width - 22, height: 9)
         labTitle.frame = titleFrame
+        labTitle.isHidden = (text == nil || text == "")
         labTitle.text = title
         labTitle.adjustsFontSizeToFitWidth = true
-        labTitle.sizeToFit()
         labTitle.backgroundColor = .white
         labTitle.font = UIFont(name: "PT Sans", size: 9)
-        labTitle.textColor = isEditing ? activeColor : inActiveColor
-        
+        labTitle.textColor = isEditing ? activeColor : #colorLiteral(red: 0.1176470588, green: 0.1607843137, blue: 0.4078431373, alpha: 1)
+        labTitle.sizeToFit()
+
+        print(labTitle.text!)
+        print(labTitle.isHidden)
     }
     
     
