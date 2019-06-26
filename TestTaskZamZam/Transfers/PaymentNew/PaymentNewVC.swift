@@ -64,7 +64,8 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        setCurrentRegion()
         addObservers()
         fetchBills()
     }
@@ -76,6 +77,14 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     override func viewWillAppear(_ animated: Bool) {
         viewBigWhite.layer.cornerRadius = 16
+    }
+
+
+    private func setCurrentRegion() {
+
+        let region = Locale.current.regionCode
+        let code = PhoneNumberKit().countryCode(for: region!)
+        print(code)
     }
     
     

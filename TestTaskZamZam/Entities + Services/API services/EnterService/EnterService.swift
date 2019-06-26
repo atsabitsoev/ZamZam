@@ -44,13 +44,13 @@ class EnterServise {
                                       "password": password,
                                       "client_id": clientId,
                                       "client_secret": clientSecret]
-        
+        print("посылаю запрос")
         AF.request(url, method: .post, parameters: parameters).responseJSON { (response) in
-            
+            print("получил ответ")
             switch response.result {
 
             case .success:
-                
+
                 do {
                     
                      print(response.response!.statusCode)
@@ -90,7 +90,6 @@ class EnterServise {
                 
             case .failure:
                 
-                print(response.response!.statusCode)
                 
                 print(response.error!.localizedDescription)
                 self.post(.enterFailed)
