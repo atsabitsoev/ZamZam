@@ -81,12 +81,15 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKX-UA-J94">
-                                                            <rect key="frame" x="28" y="0.0" width="280" height="185"/>
+                                                            <rect key="frame" x="28" y="0.0" width="280" height="187"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </view>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dev-ue-Jji">
-                                                            <rect key="frame" x="18" y="0.0" width="300" height="185"/>
+                                                            <rect key="frame" x="18" y="0.0" width="300" height="187"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="Dev-ue-Jji" secondAttribute="height" multiplier="340:212" id="Uam-8a-MLd"/>
+                                                            </constraints>
                                                         </imageView>
                                                     </subviews>
                                                 </view>
@@ -94,12 +97,11 @@
                                                 <constraints>
                                                     <constraint firstItem="AKX-UA-J94" firstAttribute="trailing" secondItem="Dev-ue-Jji" secondAttribute="trailing" constant="-10" id="3HR-R5-l5t"/>
                                                     <constraint firstItem="AKX-UA-J94" firstAttribute="top" secondItem="Dev-ue-Jji" secondAttribute="top" id="FAW-r9-bMb"/>
-                                                    <constraint firstItem="Dev-ue-Jji" firstAttribute="leading" secondItem="oqD-Ae-f3B" secondAttribute="leading" constant="18" id="J6t-vl-aLr"/>
                                                     <constraint firstItem="AKX-UA-J94" firstAttribute="leading" secondItem="Dev-ue-Jji" secondAttribute="leading" constant="10" id="LEu-W3-Feh"/>
                                                     <constraint firstItem="AKX-UA-J94" firstAttribute="bottom" secondItem="Dev-ue-Jji" secondAttribute="bottom" id="Qdo-KL-fIG"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Dev-ue-Jji" secondAttribute="bottom" id="aee-PT-dYa"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Dev-ue-Jji" secondAttribute="trailing" constant="18" id="fPR-Mx-Ahf"/>
+                                                    <constraint firstItem="Dev-ue-Jji" firstAttribute="centerX" secondItem="oqD-Ae-f3B" secondAttribute="centerX" id="iH6-sw-S68"/>
                                                     <constraint firstItem="Dev-ue-Jji" firstAttribute="top" secondItem="oqD-Ae-f3B" secondAttribute="top" id="ozC-go-3Fz"/>
+                                                    <constraint firstItem="Dev-ue-Jji" firstAttribute="leading" secondItem="oqD-Ae-f3B" secondAttribute="leading" constant="18" id="w0g-aO-K0z"/>
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="imCard" destination="Dev-ue-Jji" id="V2R-to-Ymi"/>
@@ -158,6 +160,11 @@
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ajy-Vq-aDF">
+                                                <rect key="frame" x="154" y="-32" width="23" height="37"/>
+                                                <color key="pageIndicatorTintColor" white="0.0" alpha="0.1990047089041096" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </pageControl>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -168,8 +175,10 @@
                                             <constraint firstItem="m1u-vk-VVu" firstAttribute="leading" secondItem="GaN-xk-HAB" secondAttribute="leading" constant="35" id="cX7-mD-Nr4"/>
                                             <constraint firstAttribute="bottom" secondItem="FpI-sn-bW5" secondAttribute="bottom" id="d7P-jH-kAX"/>
                                             <constraint firstAttribute="bottom" secondItem="m1u-vk-VVu" secondAttribute="bottom" constant="18" id="dLI-3B-I9P"/>
+                                            <constraint firstItem="Ajy-Vq-aDF" firstAttribute="centerX" secondItem="GaN-xk-HAB" secondAttribute="centerX" constant="-4" id="hXE-BE-Ow7"/>
                                             <constraint firstItem="FpI-sn-bW5" firstAttribute="centerX" secondItem="GaN-xk-HAB" secondAttribute="centerX" id="kbR-LZ-Tt1"/>
                                             <constraint firstItem="C8P-3H-WTF" firstAttribute="top" secondItem="GaN-xk-HAB" secondAttribute="top" id="r4X-Ks-2C5"/>
+                                            <constraint firstItem="C8P-3H-WTF" firstAttribute="top" secondItem="Ajy-Vq-aDF" secondAttribute="bottom" constant="-5" id="wKV-6Z-0jG"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaR-DU-dFn">
@@ -212,11 +221,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ajy-Vq-aDF">
-                                <rect key="frame" x="176" y="298.66666666666669" width="23" height="37"/>
-                                <color key="pageIndicatorTintColor" white="0.0" alpha="0.1990047089041096" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -232,8 +236,6 @@
                             <constraint firstItem="dkz-tx-8PV" firstAttribute="top" secondItem="bNw-ET-Iak" secondAttribute="bottom" constant="9" id="lSv-Kv-2ep"/>
                             <constraint firstItem="nyQ-VY-DGs" firstAttribute="height" secondItem="6k0-Df-gT0" secondAttribute="height" multiplier="190:712" id="oJd-gd-Ytu"/>
                             <constraint firstItem="bNw-ET-Iak" firstAttribute="top" secondItem="HIi-TP-VZM" secondAttribute="top" constant="9" id="pAw-sK-clo"/>
-                            <constraint firstItem="Ajy-Vq-aDF" firstAttribute="centerX" secondItem="6k0-Df-gT0" secondAttribute="centerX" id="peZ-b5-QYg"/>
-                            <constraint firstItem="Ajy-Vq-aDF" firstAttribute="top" secondItem="nyQ-VY-DGs" secondAttribute="bottom" constant="-35" id="pi5-wZ-RFz"/>
                             <constraint firstItem="dkz-tx-8PV" firstAttribute="trailing" secondItem="HIi-TP-VZM" secondAttribute="trailing" id="rDk-JQ-BHp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HIi-TP-VZM"/>
