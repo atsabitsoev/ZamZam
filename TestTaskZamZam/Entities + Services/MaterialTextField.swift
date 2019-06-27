@@ -50,6 +50,7 @@ class MaterialTextField: UITextField {
         
         labTitle.isHidden = false
         layer.borderColor = activeColor.cgColor
+        print("hello")
         setNeedsDisplay()
     }
     

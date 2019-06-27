@@ -10,9 +10,15 @@ import UIKit
 
 class ProfileCell: UITableViewCell {
 
+    
+    @IBOutlet var labTitle: UILabel!
+    @IBOutlet var imageMain: UIImageView!
+    @IBOutlet var shadowView: ShadowView!
+
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        shadowView.shadowOffset = CGSize(width: 0, height: 2)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

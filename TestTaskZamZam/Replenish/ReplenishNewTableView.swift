@@ -94,7 +94,7 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
         let viewFor2Section = UIView(frame: tableView.rectForHeader(inSection: section))
         viewFor2Section.backgroundColor = .clear
         let label2 = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 9, left: 18, bottom: 7, right: 18)))
-        label2.text = "Выберете способ оплаты"
+        label2.text = "Выберите способ оплаты"
         label2.textColor = #colorLiteral(red: 0.08931172639, green: 0.1388869584, blue: 0.3626311421, alpha: 1)
         label2.font = UIFont(name: "PTSans-Bold", size: 16)
         viewFor2Section.addSubview(label2)
@@ -125,7 +125,7 @@ extension ReplenishNewVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! ZamBillCheckCell
             let bill = masZamBills[indexPath.row]
             
-            cell.labName.text = "Zam счет \(bill.currency.shortName)"
+            cell.labName.text = "ZAM счет \(bill.currency.shortName)"
             cell.labSum.text = "\(bill.sum.formattedWithSeparator) \(bill.currency.symbol)"
             cell.labCurrency.text = bill.currency.symbol
             

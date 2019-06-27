@@ -56,7 +56,7 @@ extension PayPhoneBillVC: UITableViewDelegate, UITableViewDataSource {
                 
                 let currency = masZamBills![indexPath.row].currency
                 let currencyShort = currency.shortName
-                cell.labBillKind.text = "Zam счет \(currencyShort)"
+                cell.labBillKind.text = "ZAM счет \(currencyShort)"
                 
                 cell.labBillSum.text = String(masZamBills![indexPath.row].sum)
                 return cell

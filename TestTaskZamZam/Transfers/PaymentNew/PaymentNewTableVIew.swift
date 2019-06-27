@@ -86,7 +86,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         viewFor1Section.backgroundColor = .clear
         let label = myLabel(frame: viewFor1Section.bounds.inset(by: UIEdgeInsets(top: 9, left: 18, bottom: 7, right: 18)))
         label.backgroundColor = UIColor.white.withAlphaComponent(0.8)
-        label.text = "Выберете способ оплаты"
+        label.text = "Выберите способ оплаты"
         label.textColor = #colorLiteral(red: 0.08931172639, green: 0.1388869584, blue: 0.3626311421, alpha: 1)
         label.font = UIFont(name: "PTSans-Bold", size: 15)
         viewFor1Section.addSubview(label)
@@ -135,7 +135,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellBill") as! ZamBillCheckCell
             let bill = masZamBills[indexPath.row]
             
-            cell.labName.text = "Zam счет \(bill.currency.shortName)"
+            cell.labName.text = "ZAM счет \(bill.currency.shortName)"
             cell.labSum.text = "\(bill.sum.formattedWithSeparator) \(bill.currency.symbol)"
             cell.labCurrency.text = bill.currency.symbol
             

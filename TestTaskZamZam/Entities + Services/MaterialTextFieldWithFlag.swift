@@ -34,9 +34,9 @@ class MaterialTextFieldWithFlag: UITextField {
         layer.cornerRadius = 8
         layer.borderColor = inActiveColor.cgColor
         layer.borderWidth = 2
-        labTitle.isHidden = true
 
         setCurrentRegion()
+        configureLabTitle()
         
         addTarget(self, action: #selector(setCountryFlag), for: .editingChanged)
         addTarget(self, action: #selector(editingBegan), for: .editingDidBegin)
@@ -79,10 +79,11 @@ class MaterialTextFieldWithFlag: UITextField {
     
     func configureLabTitle() {
         
-        superview!.addSubview(labTitle)
+        superview?.addSubview(labTitle)
         
         let titleFrame = CGRect(x: 11 + frame.minX, y: -5 + frame.minY, width: bounds.width - 22, height: 9)
         labTitle.frame = titleFrame
+        print(titleFrame)
         labTitle.text = title
         labTitle.adjustsFontSizeToFitWidth = true
         labTitle.sizeToFit()

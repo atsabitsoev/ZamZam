@@ -3088,7 +3088,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="I1h-Jd-Udh">
-                                                                    <rect key="frame" x="336" y="12" width="24" height="24"/>
+                                                                    <rect key="frame" x="344" y="16" width="16" height="16"/>
                                                                     <color key="tintColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="I1h-Jd-Udh" secondAttribute="height" multiplier="1:1" id="e7f-YI-JhK"/>
@@ -4855,7 +4855,7 @@
                                     <constraint firstAttribute="bottom" secondItem="fVs-7m-uRR" secondAttribute="bottom" constant="27" id="lYe-1c-sgD"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оптала перевода" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-we-eOB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплата перевода" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-we-eOB">
                                 <rect key="frame" x="18" y="53" width="378" height="35"/>
                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
