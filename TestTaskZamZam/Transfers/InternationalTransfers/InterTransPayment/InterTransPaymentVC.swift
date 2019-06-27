@@ -8,6 +8,7 @@
 
 import UIKit
 import ContactsUI
+import PhoneNumberKit
 
 
 class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CurrencySelectViewDelegate {
@@ -46,7 +47,7 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
                                       currency: .rubble)]
     var selectedCardIndex: Int?
     var newCardAdding = false
-    var transferList: [String: String] = ["phone": "+",
+    var transferList: [String: String] = ["phone": "+\(PhoneNumberKit().countryCode(for: Locale.current.regionCode!)!)",
                                           "sum": "0",
                                           "convertedSum": "0",
                                           "cashBack":"0",
@@ -129,7 +130,8 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
         }
         
         Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
-            self.tableView.reloadData()
+            self.tableView.beginUpdates()
+            self.tableView.endUpdates()
         }
         
     }

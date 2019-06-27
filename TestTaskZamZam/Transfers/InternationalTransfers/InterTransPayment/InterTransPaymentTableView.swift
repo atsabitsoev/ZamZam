@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FlagKit
 
 extension InterTransPaymentVC: UITableViewDelegate, UITableViewDataSource {
     
@@ -38,7 +38,7 @@ extension InterTransPaymentVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return 5
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -109,6 +109,7 @@ extension InterTransPaymentVC: UITableViewDelegate, UITableViewDataSource {
             
             cell.butContacts.addTarget(self, action: #selector(openContacts), for: .touchUpInside)
             cell.tfPhoneNumber.text = transferList["phone"]
+            cell.imCountry.image = Flag(countryCode: Locale.current.regionCode!)?.image(style: .circle)
             
             return cell
             

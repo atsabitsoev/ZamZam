@@ -35,6 +35,8 @@ class MaterialTextFieldWithFlag: UITextField {
         layer.borderColor = inActiveColor.cgColor
         layer.borderWidth = 2
         labTitle.isHidden = true
+
+        setCurrentRegion()
         
         addTarget(self, action: #selector(setCountryFlag), for: .editingChanged)
         addTarget(self, action: #selector(editingBegan), for: .editingDidBegin)
@@ -138,6 +140,19 @@ class MaterialTextFieldWithFlag: UITextField {
     
     private func showFlag() {
         imageFlag.isHidden = false
+    }
+
+
+    private func setCurrentRegion() {
+        print("jfdikfsifns")
+        let region = Locale.current.regionCode
+        let code = PhoneNumberKit().countryCode(for: region!)
+
+        let flag = Flag(countryCode: region!)
+        let codeString = "+\(code!)"
+
+        text = codeString
+        imageFlag.image = flag?.image(style: .circle)
     }
     
 }

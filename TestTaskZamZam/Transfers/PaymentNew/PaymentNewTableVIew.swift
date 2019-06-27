@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FlagKit
 
 extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
     
@@ -31,14 +32,14 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
         case 4:
             return totalInfoCells
         default:
-            print("Error")
+            print("\(section)")
             return 0
         }
         
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return 5
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -112,6 +113,7 @@ extension PaymentNewVC: UITableViewDelegate, UITableViewDataSource {
                                        action: #selector(openContacts),
                                        for: .touchUpInside)
             cell.tfPhoneNumber.text = transferList["phone"]
+            cell.imCountry.image = Flag(countryCode: Locale.current.regionCode!)?.image(style: .circle)
             
             return cell
             

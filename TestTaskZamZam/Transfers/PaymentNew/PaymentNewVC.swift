@@ -49,7 +49,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                                       currency: .rubble)]
     var selectedCardIndex: Int?
     var newCardAdding = false
-    var transferList: [String: String] = ["phone": "+",
+    var transferList: [String: String] = ["phone": "+\(PhoneNumberKit().countryCode(for: Locale.current.regionCode!)!)",
                                            "sum": "0",
                                            "convertedSum": "0",
                                            "cashBack":"0",
@@ -65,7 +65,6 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setCurrentRegion()
         addObservers()
         fetchBills()
     }
@@ -77,14 +76,6 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     override func viewWillAppear(_ animated: Bool) {
         viewBigWhite.layer.cornerRadius = 16
-    }
-
-
-    private func setCurrentRegion() {
-
-        let region = Locale.current.regionCode
-        let code = PhoneNumberKit().countryCode(for: region!)
-        print(code)
     }
     
     
@@ -149,7 +140,8 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         }
         
         Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
-            self.tableView.reloadData()
+            self.tableView.beginUpdates()
+            self.tableView.endUpdates()
         }
         
     }
