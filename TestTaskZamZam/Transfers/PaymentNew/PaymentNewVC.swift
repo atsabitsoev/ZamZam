@@ -213,7 +213,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         selectedCardIndex = nil
         newCardAdding = false
         transferList["senderCurrency"] = masZamBills[index].currency.shortName
-        tableView.reloadData()
+        self.tableView.reloadData()
         
     }
     
@@ -222,7 +222,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         transferList["senderCurrency"] = "card"
         newCardAdding = false
         selectedCardIndex = index
-        tableView.reloadData()
+        self.tableView.reloadData()
         
     }
     
@@ -231,7 +231,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         selectedCardIndex = nil
         transferList["senderCurrency"] = "card"
         newCardAdding = true
-        tableView.reloadData()
+        self.tableView.reloadData()
         
     }
     
@@ -239,7 +239,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     func currencySelected(currency: CurrencyProtocol) {
         
         transferList["recipientCurrency"] = currency.shortName
-        tableView.reloadData()
+        self.tableView.reloadData()
     }
 
     
@@ -316,7 +316,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         }
         guard let parsedPhoneNumber = try? phoneNumberKit.parse(phoneNumber) else { return }
 
-        tableView.reloadData()
+        self.tableView.reloadData()
         transferList["phone"] = phoneNumberKit.format(parsedPhoneNumber,
                                                         toType: .international)
 

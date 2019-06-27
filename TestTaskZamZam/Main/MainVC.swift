@@ -122,7 +122,8 @@ class MainVC: UIViewController, UICollectionViewDelegate {
         }
         
         Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
-            self.tableView.reloadData()
+            self.tableView.beginUpdates()
+            self.tableView.endUpdates()
         }
         
     }
