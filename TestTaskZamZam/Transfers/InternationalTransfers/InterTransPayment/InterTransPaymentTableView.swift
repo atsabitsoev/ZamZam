@@ -8,6 +8,7 @@
 
 import UIKit
 import FlagKit
+import PhoneNumberKit
 
 extension InterTransPaymentVC: UITableViewDelegate, UITableViewDataSource {
     
@@ -109,7 +110,15 @@ extension InterTransPaymentVC: UITableViewDelegate, UITableViewDataSource {
             
             cell.butContacts.addTarget(self, action: #selector(openContacts), for: .touchUpInside)
             cell.tfPhoneNumber.text = transferList["phone"]
-            cell.imCountry.image = Flag(countryCode: Locale.current.regionCode!)?.image(style: .circle)
+            if transferList["phone"] != "+" {
+                let phone = try? PhoneNumberKit().parse(transferList["phone"]!)
+                if let phone = phone {
+                    if let regionCode = PhoneNumberKit().getRegionCode(of: phone) {
+                        cell.imCountry.image = Flag(countryCode: regionCode)?.image(style: .circle)
+                    }
+                }
+            }
+
             
             return cell
             

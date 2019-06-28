@@ -47,7 +47,7 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
                                       currency: .rubble)]
     var selectedCardIndex: Int?
     var newCardAdding = false
-    var transferList: [String: String] = ["phone": "+\(PhoneNumberKit().countryCode(for: Locale.current.regionCode!)!)",
+    var transferList: [String: String] = ["phone": "\(temporaryRecieverPhone)",
                                           "sum": "0",
                                           "convertedSum": "0",
                                           "cashBack":"0",

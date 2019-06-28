@@ -52,7 +52,7 @@ extension WhatCountryVC: UITableViewDelegate, UITableViewDataSource {
             
             interTransRecieverVC!.countryName = countries[indexPath.row]
             interTransRecieverVC!.countryCode = countryCodes[indexPath.row]
-            interTransRecieverVC!.setCountry()
+            interTransRecieverVC!.setCountryToButton()
             self.navigationController?.popViewController(animated: true)
             
         }  else if nextVCIsInterTransReciverVC {

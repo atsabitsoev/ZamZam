@@ -10,6 +10,10 @@ import UIKit
 import PhoneNumberKit
 import FlagKit
 
+
+var temporaryRecieverPhone = ""
+
+
 class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
     
     
@@ -40,6 +44,8 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
         addObservers()
         setDelegates()
         addTapRecognizer()
+        
+        setCountryPhone()
     }
     
     
@@ -66,7 +72,8 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
     
     
     @objc private func userProfileGot() {
-        
+
+        saveRecieverPhone()
         activityIndicator.stopAnimating()
         butNext.isUserInteractionEnabled = true
         
@@ -99,26 +106,35 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
         
         configureButNext()
         configureNavigationButtons()
-        setCountry()
+        setCountryToButton()
     }
     
     override func viewDidLayoutSubviews() {
         setConstraints()
     }
+
+
+    private func saveRecieverPhone() {
+
+        guard let phone = tfPhone.text, phone.count > 4 else { return }
+        temporaryRecieverPhone = phone
+    }
+
     
-    
-    func setCountry() {
+    func setCountryToButton() {
         
         butCountry.countryName = countryName
         butCountry.countryCode = countryCode
         butCountry.layoutSubviews()
+    }
+
+    private func setCountryPhone() {
 
         tfPhone.imageFlag.image = Flag(countryCode: self.countryCode)?.image(style: .circle)
         let phoneCode = PhoneNumberKit().countryCode(for: countryCode)
         if phoneCode != nil {
             tfPhone.text = "+\(phoneCode!)"
         }
-
     }
     
     
