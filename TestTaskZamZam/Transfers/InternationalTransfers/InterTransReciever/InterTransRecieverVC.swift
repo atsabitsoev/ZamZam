@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import PhoneNumberKit
+import FlagKit
 
 class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
     
@@ -34,7 +36,7 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         addObservers()
         setDelegates()
         addTapRecognizer()
@@ -49,7 +51,7 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
                                                object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(userProfileGettingFailed),
-                                               name: NSNotification.Name(NotificationNames.userProfileGettingFailed.rawValue),
+                                                name: NSNotification.Name(NotificationNames.userProfileGettingFailed.rawValue),
                                                object: nil)
     }
     
@@ -110,6 +112,13 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
         butCountry.countryName = countryName
         butCountry.countryCode = countryCode
         butCountry.layoutSubviews()
+
+        tfPhone.imageFlag.image = Flag(countryCode: self.countryCode)?.image(style: .circle)
+        let phoneCode = PhoneNumberKit().countryCode(for: countryCode)
+        if phoneCode != nil {
+            tfPhone.text = "+\(phoneCode!)"
+        }
+
     }
     
     

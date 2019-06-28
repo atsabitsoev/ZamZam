@@ -99,8 +99,8 @@ class Zam2ZamLogosView: UIView {
     
     private func configureImageViews() {
         
-        imageZamLogo1.frame = viewBack.bounds.inset(by: UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4))
-        imageZamLogo2.frame = viewFront.bounds.inset(by: UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4))
+        imageZamLogo1.frame = viewBack.bounds.inset(by: UIEdgeInsets(top: 7, left: 7, bottom: 7, right: 7))
+        imageZamLogo2.frame = viewFront.bounds.inset(by: UIEdgeInsets(top: 7, left: 7, bottom: 7, right: 7))
     }
     
     private func setImages() {

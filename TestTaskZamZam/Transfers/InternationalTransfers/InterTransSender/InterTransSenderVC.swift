@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FlagKit
+import PhoneNumberKit
 
 class InterTransSenderVC: UIViewController {
     
@@ -81,6 +83,12 @@ class InterTransSenderVC: UIViewController {
         
         let phone = UserDefaults.standard.string(forKey: "userPhone")!
         tfPhone.text = "\(phone)"
+        let phoneNumber = try? PhoneNumberKit().parse(phone)
+        if phoneNumber != nil {
+            let countryCode = PhoneNumberKit().getRegionCode(of: phoneNumber!)
+            tfPhone.imageFlag.image = Flag(countryCode: countryCode ?? "RU")?.image(style: .circle)
+        }
+
         
         tfName.text = userProfile.firstName
         tfLastName.text = userProfile.lastName

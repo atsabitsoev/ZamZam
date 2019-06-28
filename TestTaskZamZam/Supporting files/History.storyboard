@@ -27,10 +27,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9s-Me-zjq">
-                                <rect key="frame" x="0.0" y="112" width="414" height="784"/>
+                                <rect key="frame" x="0.0" y="97" width="414" height="799"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lgD-ee-1L3">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="784"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="799"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="19" minY="0.0" maxX="19" maxY="0.0"/>
@@ -48,7 +48,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перевод со счета ZAM RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cA-U8-xc0">
-                                                            <rect key="frame" x="53" y="10" width="119" height="13"/>
+                                                            <rect key="frame" x="63" y="10" width="119" height="13"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="13" id="RIL-Mh-vlh"/>
                                                             </constraints>
@@ -57,7 +57,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Алексей Зайцев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLW-h4-8VG">
-                                                            <rect key="frame" x="53" y="27" width="111.5" height="23.5"/>
+                                                            <rect key="frame" x="63" y="27" width="111.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
                                                             <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
@@ -81,10 +81,10 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5x-eX-im1" customClass="Zam2ZamLogosView" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="19" y="17" width="26" height="26"/>
+                                                            <rect key="frame" x="19" y="12" width="36" height="36"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="26" id="g57-fz-4Ee"/>
-                                                                <constraint firstAttribute="height" constant="26" id="waT-MH-vDT"/>
+                                                                <constraint firstAttribute="width" constant="36" id="g57-fz-4Ee"/>
+                                                                <constraint firstAttribute="height" constant="36" id="waT-MH-vDT"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="thisUserColor">
@@ -155,7 +155,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="События" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kP-DW-Zy7" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                <rect key="frame" x="18" y="64" width="102" height="35"/>
+                                <rect key="frame" x="18" y="53" width="102" height="35"/>
                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -185,10 +185,10 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="rVq-N7-bdW" secondAttribute="bottom" id="6o7-4X-As4"/>
                             <constraint firstItem="P2E-br-kPe" firstAttribute="centerX" secondItem="lFK-AF-Zse" secondAttribute="centerX" id="GYN-Y4-OHP"/>
-                            <constraint firstItem="0kP-DW-Zy7" firstAttribute="top" secondItem="3J3-qL-fba" secondAttribute="top" constant="20" id="Omk-JO-rVR"/>
+                            <constraint firstItem="0kP-DW-Zy7" firstAttribute="top" secondItem="3J3-qL-fba" secondAttribute="top" constant="9" id="Omk-JO-rVR"/>
                             <constraint firstItem="0kP-DW-Zy7" firstAttribute="leading" secondItem="3J3-qL-fba" secondAttribute="leading" constant="18" id="Phl-Ez-rb7"/>
                             <constraint firstItem="P2E-br-kPe" firstAttribute="centerY" secondItem="lFK-AF-Zse" secondAttribute="centerY" id="PwY-g5-YP5"/>
-                            <constraint firstItem="U9s-Me-zjq" firstAttribute="top" secondItem="0kP-DW-Zy7" secondAttribute="bottom" constant="13" id="QYj-rM-LlK"/>
+                            <constraint firstItem="U9s-Me-zjq" firstAttribute="top" secondItem="0kP-DW-Zy7" secondAttribute="bottom" constant="9" id="QYj-rM-LlK"/>
                             <constraint firstAttribute="trailing" secondItem="s6E-EK-VDn" secondAttribute="trailing" id="XJK-yU-FQX"/>
                             <constraint firstAttribute="bottom" secondItem="U9s-Me-zjq" secondAttribute="bottom" id="XrQ-po-qNB"/>
                             <constraint firstAttribute="bottom" secondItem="s6E-EK-VDn" secondAttribute="bottom" id="hSS-5h-ukR"/>

@@ -224,7 +224,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzt-WI-9w0">
-                                <rect key="frame" x="0.0" y="109" width="414" height="1041"/>
+                                <rect key="frame" x="0.0" y="97" width="414" height="1053"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4b-Nn-wfa">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1059"/>
@@ -507,7 +507,7 @@
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Персональные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sSe-Ll-cyO">
-                                <rect key="frame" x="18" y="61" width="378" height="35"/>
+                                <rect key="frame" x="18" y="53" width="378" height="35"/>
                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -536,11 +536,11 @@
                             <constraint firstAttribute="bottom" secondItem="7UH-o2-hzq" secondAttribute="bottom" id="7s2-sf-4aS"/>
                             <constraint firstAttribute="bottom" secondItem="Vzt-WI-9w0" secondAttribute="bottom" id="AsY-zm-lsY"/>
                             <constraint firstItem="7UH-o2-hzq" firstAttribute="leading" secondItem="cHI-lV-GvZ" secondAttribute="leading" id="IBh-do-sVy"/>
-                            <constraint firstItem="sSe-Ll-cyO" firstAttribute="top" secondItem="8ak-vV-qiS" secondAttribute="top" constant="17" id="JuM-j3-A12"/>
+                            <constraint firstItem="sSe-Ll-cyO" firstAttribute="top" secondItem="8ak-vV-qiS" secondAttribute="top" constant="9" id="JuM-j3-A12"/>
                             <constraint firstItem="sSe-Ll-cyO" firstAttribute="leading" secondItem="8ak-vV-qiS" secondAttribute="leading" constant="18" id="MEb-op-bTJ"/>
                             <constraint firstItem="8ak-vV-qiS" firstAttribute="trailing" secondItem="sSe-Ll-cyO" secondAttribute="trailing" constant="18" id="XXV-Un-2wc"/>
                             <constraint firstItem="Vzt-WI-9w0" firstAttribute="trailing" secondItem="8ak-vV-qiS" secondAttribute="trailing" id="adw-fw-OSR"/>
-                            <constraint firstItem="Vzt-WI-9w0" firstAttribute="top" secondItem="sSe-Ll-cyO" secondAttribute="bottom" constant="13" id="eWq-Qh-tR0"/>
+                            <constraint firstItem="Vzt-WI-9w0" firstAttribute="top" secondItem="sSe-Ll-cyO" secondAttribute="bottom" constant="9" id="eWq-Qh-tR0"/>
                             <constraint firstItem="Vzt-WI-9w0" firstAttribute="leading" secondItem="8ak-vV-qiS" secondAttribute="leading" id="uSs-qX-N80"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8ak-vV-qiS"/>
