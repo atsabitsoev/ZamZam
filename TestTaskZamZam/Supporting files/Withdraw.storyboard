@@ -507,7 +507,7 @@
                                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="36"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" textContentType="tel"/>
                                                                     <connections>
-                                                                        <action selector="sumTextChanged:" destination="xZP-b0-iKS" eventType="editingDidEnd" id="0xZ-84-KjG"/>
+                                                                        <action selector="sumTextChanged:" destination="xZP-b0-iKS" eventType="editingChanged" id="8cM-Nc-hVg"/>
                                                                         <action selector="tfSumTextChanged:" destination="pJY-Kd-zHK" eventType="editingChanged" id="8Mx-XP-Ude"/>
                                                                     </connections>
                                                                 </textField>

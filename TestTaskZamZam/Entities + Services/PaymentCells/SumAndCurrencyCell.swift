@@ -49,19 +49,27 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
     
     
     @IBAction func sumTextChanged(_ sender: UITextField) {
-        
+
         if let paymentNewVC = self.paymentNewVC {
+
             paymentNewVC.transferList["sum"] = tfSum.text
-            paymentNewVC.tableView.reloadData()
+            paymentNewVC.tableView.reloadSections([4], with: .automatic)
+
         } else if let interTransPaymentVC = self.interTransPaymentVC {
+
             interTransPaymentVC.transferList["sum"] = tfSum.text
-            interTransPaymentVC.tableView.reloadData()
+            interTransPaymentVC.tableView.reloadSections([4], with: .automatic)
+
         } else if let replenishVC = self.replenishVC {
+
             replenishVC.transferList["sum"] = tfSum.text
-            replenishVC.tableView.reloadData()
+            replenishVC.tableView.reloadSections([4], with: .automatic)
+
         } else if let withdrawVC = self.withdrawVC {
+
             withdrawVC.transferList["sum"] = tfSum.text
-            withdrawVC.tableView.reloadData()
+            withdrawVC.tableView.reloadSections([4], with: .automatic)
+
         }
     }
     

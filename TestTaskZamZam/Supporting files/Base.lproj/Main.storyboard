@@ -716,10 +716,8 @@
                                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="36"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" textContentType="tel"/>
                                                                     <connections>
-                                                                        <action selector="sumTextChanged:" destination="pgC-7T-sEp" eventType="editingDidEnd" id="cR5-px-g5g"/>
-                                                                        <action selector="tfEditingChanged:" destination="UhQ-pb-gYp" eventType="editingChanged" id="HOY-m4-iSu"/>
+                                                                        <action selector="sumTextChanged:" destination="pgC-7T-sEp" eventType="editingChanged" id="pzf-ED-31E"/>
                                                                         <action selector="tfSumTextChanged:" destination="uB6-u2-q4H" eventType="editingChanged" id="BxH-kY-9zD"/>
-                                                                        <action selector="tfValueChanged:" destination="UhQ-pb-gYp" eventType="valueChanged" id="DhD-Ks-OYk"/>
                                                                     </connections>
                                                                 </textField>
                                                             </subviews>
@@ -4269,9 +4267,9 @@
                                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="36"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" textContentType="tel"/>
                                                                     <connections>
-                                                                        <action selector="sumTextChanged:" destination="Qxa-Bl-ukY" eventType="editingDidEnd" id="4pV-5a-AIt"/>
+                                                                        <action selector="sumTextChanged:" destination="Qxa-Bl-ukY" eventType="editingChanged" id="S0a-zq-nUy"/>
                                                                         <action selector="tfEditingChanged:" destination="UhQ-pb-gYp" eventType="editingChanged" id="fov-u5-dmW"/>
-                                                                        <action selector="tfSumTextChanged:" destination="7hQ-W8-x3L" eventType="editingChanged" id="1lD-jo-ph0"/>
+                                                                        <action selector="tfSumTextChanged:" destination="7hQ-W8-x3L" eventType="editingChanged" id="dhc-pc-io8"/>
                                                                         <action selector="tfValueChanged:" destination="UhQ-pb-gYp" eventType="valueChanged" id="8ct-hA-Xor"/>
                                                                     </connections>
                                                                 </textField>

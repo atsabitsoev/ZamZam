@@ -556,7 +556,7 @@
                                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="36"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" textContentType="tel"/>
                                                                     <connections>
-                                                                        <action selector="sumTextChanged:" destination="RXV-Gc-F8j" eventType="editingDidEnd" id="Nlj-CG-XOh"/>
+                                                                        <action selector="sumTextChanged:" destination="RXV-Gc-F8j" eventType="editingChanged" id="ukI-LU-bI5"/>
                                                                         <action selector="tfSumTextChanged:" destination="E24-48-9ee" eventType="editingChanged" id="yAI-HX-RPA"/>
                                                                     </connections>
                                                                 </textField>
