@@ -49,7 +49,7 @@ class ButtonChooseCountry: UIButton {
         labTitle.sizeToFit()
         labTitle.backgroundColor = .white
         labTitle.font = UIFont(name: "PT Sans", size: 9)
-        labTitle.textColor = #colorLiteral(red: 0.8745098039, green: 0.8784313725, blue: 0.9254901961, alpha: 1)
+        labTitle.textColor = #colorLiteral(red: 0.1134102717, green: 0.1596722603, blue: 0.4236576557, alpha: 1)
         labTitle.sizeToFit()
     }
     

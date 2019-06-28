@@ -227,7 +227,7 @@
                                 <rect key="frame" x="0.0" y="97" width="414" height="1053"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4b-Nn-wfa">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1059"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1080"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LoE-uA-gVw" customClass="MaterialTextFieldWithFlag" customModule="TestTaskZamZam" customModuleProvider="target">
                                                 <rect key="frame" x="18" y="31" width="378" height="48"/>
@@ -241,14 +241,14 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Номер телефона"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ФИО и дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="q2M-Tz-oPO">
-                                                <rect key="frame" x="23" y="97" width="158" height="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФИО и дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="q2M-Tz-oPO">
+                                                <rect key="frame" x="23" y="115" width="158" height="21"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="16"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9K-Cy-asx" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="126" width="378" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9K-Cy-asx" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="151" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="duR-VK-GC0"/>
                                                 </constraints>
@@ -259,8 +259,8 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Имя"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6S-Qp-lUM" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="184" width="378" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6S-Qp-lUM" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="209" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="Mxs-2u-V8O"/>
                                                 </constraints>
@@ -271,8 +271,8 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Фамилия"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYO-df-kxL" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="242" width="378" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYO-df-kxL" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="267" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="EZ2-Ya-F6Z"/>
                                                 </constraints>
@@ -283,8 +283,8 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Отчество"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата рождения ДД/ММ/ГГ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-T5-67K" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="300" width="378" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата рождения ДД/ММ/ГГ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-T5-67K" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="325" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="C7C-jt-Fp2"/>
                                                 </constraints>
@@ -295,14 +295,14 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Дата рождения ДД/ММ/ГГ"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Адрес регистрации" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="LoL-Hc-uFS">
-                                                <rect key="frame" x="23" y="384" width="379" height="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адрес регистрации" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="LoL-Hc-uFS">
+                                                <rect key="frame" x="23" y="409" width="379" height="21"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="16"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S71-9y-46R" customClass="ButtonChooseCountry" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="413" width="378" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S71-9y-46R" customClass="ButtonChooseCountry" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="445" width="378" height="48"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="pqW-4c-ik3"/>
@@ -312,8 +312,8 @@
                                                     <segue destination="E5Y-av-nZj" kind="show" identifier="PersonalDataToCountries" id="HQt-vk-oiu"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Город регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-jZ-miB" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="471" width="378" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Город регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-jZ-miB" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="503" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="vi8-gW-Y25"/>
                                                 </constraints>
@@ -324,8 +324,8 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Город регистрации"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Адрес регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUb-MS-JPx" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="529" width="378" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Адрес регистрации" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUb-MS-JPx" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="561" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="Lkl-P8-sPp"/>
                                                 </constraints>
@@ -336,14 +336,14 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Адрес регистрации"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Паспортные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-un-jWA">
-                                                <rect key="frame" x="23" y="613" width="373" height="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Паспортные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-un-jWA">
+                                                <rect key="frame" x="23" y="645" width="373" height="21"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="16"/>
                                                 <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Серия и номер паспорта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jql-9p-r5W" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="642" width="378" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Серия и номер паспорта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jql-9p-r5W" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="681" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="mNZ-HQ-DWA"/>
                                                 </constraints>
@@ -354,8 +354,8 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Серия и номер паспорта"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Кем выдан" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fhq-vm-pQS" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="700" width="378" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Кем выдан" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fhq-vm-pQS" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="739" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="gi6-cU-nSp"/>
                                                 </constraints>
@@ -366,8 +366,8 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Кем выдан"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата выдачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AzP-EX-4uL" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="758" width="378" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата выдачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AzP-EX-4uL" customClass="MaterialTextField" customModule="TestTaskZamZam" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="797" width="378" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="Q3r-xt-4hn"/>
                                                 </constraints>
@@ -378,8 +378,8 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Дата выдачи"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7B-dd-d3g">
-                                                <rect key="frame" x="26" y="820" width="375" height="46"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7B-dd-d3g">
+                                                <rect key="frame" x="26" y="859" width="375" height="46"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Данные должны полностью совпадать с документом. Обязательно перепроверьте данные перед отправкой.">
                                                         <attributes>
@@ -393,7 +393,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywl-j5-guo">
-                                                <rect key="frame" x="18" y="906" width="378" height="69"/>
+                                                <rect key="frame" x="18" y="927" width="378" height="69"/>
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ywl-j5-guo" secondAttribute="height" multiplier="339:62" id="4uh-WM-s6X"/>
@@ -407,7 +407,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RT6-YQ-L72">
-                                                <rect key="frame" x="161" y="993" width="92" height="40"/>
+                                                <rect key="frame" x="161" y="1014" width="92" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="By0-h6-KRa">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -451,11 +451,10 @@
                                             <constraint firstAttribute="trailing" secondItem="LoE-uA-gVw" secondAttribute="trailing" constant="18" id="5uv-Ux-VPA"/>
                                             <constraint firstItem="LoL-Hc-uFS" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="23" id="6TK-Kr-Siy"/>
                                             <constraint firstAttribute="trailing" secondItem="ywl-j5-guo" secondAttribute="trailing" constant="18" id="7by-32-3tq"/>
-                                            <constraint firstItem="q2M-Tz-oPO" firstAttribute="top" secondItem="LoE-uA-gVw" secondAttribute="bottom" constant="36" id="8yV-5H-lwS"/>
                                             <constraint firstItem="5VI-un-jWA" firstAttribute="top" secondItem="TUb-MS-JPx" secondAttribute="bottom" constant="36" id="CCK-kC-hAE"/>
                                             <constraint firstAttribute="trailing" secondItem="S6S-Qp-lUM" secondAttribute="trailing" constant="18" id="Ch4-4P-bJ1"/>
                                             <constraint firstItem="jql-9p-r5W" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="Dy1-pm-527"/>
-                                            <constraint firstAttribute="height" constant="1059" id="EQe-e7-AQs"/>
+                                            <constraint firstAttribute="height" constant="1080" id="EQe-e7-AQs"/>
                                             <constraint firstAttribute="trailing" secondItem="5VI-un-jWA" secondAttribute="trailing" constant="18" id="FkM-Yp-Vi6"/>
                                             <constraint firstItem="S6S-Qp-lUM" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="GmV-TA-IpN"/>
                                             <constraint firstItem="q2M-Tz-oPO" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="23" id="H6u-b8-qLO"/>
@@ -475,6 +474,7 @@
                                             <constraint firstItem="O9K-Cy-asx" firstAttribute="leading" secondItem="D4b-Nn-wfa" secondAttribute="leading" constant="18" id="R9m-f4-Jwz"/>
                                             <constraint firstItem="AzP-EX-4uL" firstAttribute="top" secondItem="Fhq-vm-pQS" secondAttribute="bottom" constant="10" id="RfJ-FS-k6N"/>
                                             <constraint firstItem="ywl-j5-guo" firstAttribute="top" secondItem="e7B-dd-d3g" secondAttribute="bottom" constant="22" id="U42-hP-G3G"/>
+                                            <constraint firstItem="q2M-Tz-oPO" firstAttribute="top" relation="lessThanOrEqual" secondItem="LoE-uA-gVw" secondAttribute="bottom" constant="36" id="aFx-Oo-TT8"/>
                                             <constraint firstItem="S6S-Qp-lUM" firstAttribute="top" secondItem="O9K-Cy-asx" secondAttribute="bottom" constant="10" id="aKk-N2-61a"/>
                                             <constraint firstItem="S71-9y-46R" firstAttribute="top" secondItem="LoL-Hc-uFS" secondAttribute="bottom" constant="15" id="apl-1J-SBu"/>
                                             <constraint firstItem="mYO-df-kxL" firstAttribute="top" secondItem="S6S-Qp-lUM" secondAttribute="bottom" constant="10" id="dKc-il-ZAv"/>

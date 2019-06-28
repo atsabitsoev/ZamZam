@@ -621,13 +621,13 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="К оплате:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbn-rK-ghX" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="29" y="37" width="57" height="18.666666666666671"/>
+                                                            <rect key="frame" x="29" y="30" width="57" height="18.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
                                                             <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 126,50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkr-Fa-ej1" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                                            <rect key="frame" x="249.66666666666666" y="32" width="98.333333333333343" height="28.666666666666671"/>
+                                                            <rect key="frame" x="249.66666666666666" y="20" width="98.333333333333343" height="28.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="22"/>
                                                             <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -639,16 +639,16 @@
                                                         <constraint firstItem="Dbn-rK-ghX" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="CgF-Cc-ez5"/>
                                                         <constraint firstItem="7xC-Yw-b0Y" firstAttribute="top" secondItem="Jc8-Di-cBv" secondAttribute="top" id="IvB-tC-Kzw"/>
                                                         <constraint firstItem="vQW-cj-tl8" firstAttribute="width" secondItem="vQW-cj-tl8" secondAttribute="height" multiplier="43:17" id="LNz-MC-DtN"/>
+                                                        <constraint firstItem="Jkr-Fa-ej1" firstAttribute="bottom" secondItem="Dbn-rK-ghX" secondAttribute="bottom" id="OBS-eO-zcf"/>
                                                         <constraint firstItem="vQW-cj-tl8" firstAttribute="width" secondItem="vQW-cj-tl8" secondAttribute="height" multiplier="43:17" id="Xmd-5m-iJB"/>
                                                         <constraint firstItem="I4E-jf-p0U" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="YCV-6I-E45"/>
                                                         <constraint firstItem="7xC-Yw-b0Y" firstAttribute="leading" secondItem="Jc8-Di-cBv" secondAttribute="leading" constant="29" id="YJg-pY-kTk"/>
                                                         <constraint firstItem="I4E-jf-p0U" firstAttribute="top" secondItem="7xC-Yw-b0Y" secondAttribute="bottom" constant="25" id="Yr1-ip-QFO"/>
-                                                        <constraint firstItem="Dbn-rK-ghX" firstAttribute="top" secondItem="7xC-Yw-b0Y" secondAttribute="bottom" constant="25" id="aPK-aP-Vpz"/>
+                                                        <constraint firstItem="Dbn-rK-ghX" firstAttribute="top" secondItem="7xC-Yw-b0Y" secondAttribute="bottom" constant="18" id="aPK-aP-Vpz"/>
                                                         <constraint firstAttribute="trailing" secondItem="vQW-cj-tl8" secondAttribute="trailing" constant="27" id="apb-Ou-DNC"/>
                                                         <constraint firstItem="ztP-7p-HVq" firstAttribute="centerY" secondItem="7xC-Yw-b0Y" secondAttribute="centerY" id="jgT-bE-XYY"/>
                                                         <constraint firstItem="vQW-cj-tl8" firstAttribute="top" secondItem="ztP-7p-HVq" secondAttribute="bottom" constant="11" id="njq-Gn-8Ze"/>
                                                         <constraint firstAttribute="trailing" secondItem="Jkr-Fa-ej1" secondAttribute="trailing" constant="27" id="vFS-u6-Gs5"/>
-                                                        <constraint firstItem="Jkr-Fa-ej1" firstAttribute="centerY" secondItem="Dbn-rK-ghX" secondAttribute="centerY" id="zOM-o9-1cI"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
