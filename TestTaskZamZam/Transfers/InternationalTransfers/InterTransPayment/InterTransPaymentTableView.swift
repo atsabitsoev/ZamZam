@@ -110,15 +110,20 @@ extension InterTransPaymentVC: UITableViewDelegate, UITableViewDataSource {
             
             cell.butContacts.addTarget(self, action: #selector(openContacts), for: .touchUpInside)
             cell.tfPhoneNumber.text = transferList["phone"]
+
             if transferList["phone"] != "+" {
+
                 let phone = try? PhoneNumberKit().parse(transferList["phone"]!)
-                if let phone = phone {
-                    if let regionCode = PhoneNumberKit().getRegionCode(of: phone) {
+                if let phone = phone,
+                    let regionCode = PhoneNumberKit().getRegionCode(of: phone) {
+
                         cell.imCountry.image = Flag(countryCode: regionCode)?.image(style: .circle)
-                    }
                 }
             }
 
+            cell.tfPhoneNumber.addTarget(self,
+                                         action: #selector(checkFill),
+                                         for: .editingChanged)
             
             return cell
             
@@ -176,6 +181,9 @@ extension InterTransPaymentVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SumAndCurrencyCell") as! SumAndCurrencyCell
             cell.interTransPaymentVC = self
             cell.viewCurrency.delegate = self
+            cell.tfSum.addTarget(self,
+                                 action: #selector(checkFill),
+                                 for: .editingChanged)
             return cell
             
         case 4:

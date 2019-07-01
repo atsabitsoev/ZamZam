@@ -190,6 +190,28 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
         tableView.reloadData()
         
     }
+
+
+    @objc func checkFill() {
+        print("Проверка")
+        let phone = transferList["phone"]!
+        guard let sum = Int(transferList["sum"]!) else {
+            activateButNext(false)
+            return
+        }
+
+        if (try? PhoneNumberKit().parse(phone)) != nil && sum > 0 {
+            activateButNext(true)
+        } else {
+            activateButNext(false)
+        }
+    }
+
+    private func activateButNext(_ activate: Bool) {
+
+        butNext.alpha = activate ? 1 : 0.5
+        butNext.isUserInteractionEnabled = activate
+    }
     
     
     func currencySelected(currency: CurrencyProtocol) {
@@ -265,6 +287,7 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
         let phoneNumber = phone.first?.value.stringValue.onlyNumbers()
         transferList["phone"] = "+\(phoneNumber ?? "")"
         tableView.reloadData()
+        checkFill()
     }
     
     

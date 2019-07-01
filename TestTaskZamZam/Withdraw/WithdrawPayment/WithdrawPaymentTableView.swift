@@ -174,6 +174,11 @@ extension WithdrawPaymentVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SumAndCurrencyCell") as! SumAndCurrencyCell
             cell.withdrawVC = self
             cell.viewCurrency.delegate = self
+
+            cell.tfSum.addTarget(self,
+                                 action: #selector(checkFill),
+                                 for: .editingChanged)
+
             return cell
             
         case 4:

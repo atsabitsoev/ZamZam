@@ -173,7 +173,7 @@ class WithdrawPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         newCardAdding = false
         selectedCardIndex = index
         tableView.reloadData()
-        
+        checkFill()
     }
     
     func newCardAddingSelected() {
@@ -181,7 +181,28 @@ class WithdrawPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         selectedCardIndex = nil
         newCardAdding = true
         tableView.reloadData()
-        
+        checkFill()
+    }
+
+
+    @objc func checkFill() {
+        print("Проверка")
+        guard let sum = Int(transferList["sum"]!) else {
+            activateButNext(false)
+            return
+        }
+
+        if (selectedCardIndex != nil || newCardAdding) && sum > 0 {
+            activateButNext(true)
+        } else {
+            activateButNext(false)
+        }
+    }
+
+    private func activateButNext(_ activate: Bool) {
+
+        butNext.alpha = activate ? 1 : 0.5
+        butNext.isUserInteractionEnabled = activate
     }
     
     

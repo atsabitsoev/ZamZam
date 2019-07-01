@@ -242,6 +242,28 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         self.tableView.reloadData()
     }
 
+
+    @objc func checkFill() {
+        print("Проверка")
+        let phone = transferList["phone"]!
+        guard let sum = Int(transferList["sum"]!) else {
+            activateButNext(false)
+            return
+        }
+
+        if (try? PhoneNumberKit().parse(phone)) != nil && sum > 0 {
+            activateButNext(true)
+        } else {
+            activateButNext(false)
+        }
+    }
+
+    private func activateButNext(_ activate: Bool) {
+
+        butNext.alpha = activate ? 1 : 0.5
+        butNext.isUserInteractionEnabled = activate
+    }
+
     
     func configureButNext() {
         
@@ -325,6 +347,8 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         let image = Flag(countryCode: region)?.image(style: .circle)
 
         cell.imCountry.image = image
+
+        checkFill()
     }
     
     

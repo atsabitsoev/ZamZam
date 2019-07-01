@@ -945,7 +945,7 @@
                                                 <rect key="frame" x="0.0" y="536" width="375" height="71"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NwQ-6v-W3e" id="e9V-Wd-TEe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70.666666666666671"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZL-8S-06C">
@@ -1023,7 +1023,7 @@
                                             <outlet property="delegate" destination="E24-48-9ee" id="ssU-f2-dTE"/>
                                         </connections>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vI7-bI-CAn">
+                                    <button opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vI7-bI-CAn">
                                         <rect key="frame" x="18" y="526" width="339" height="62"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
