@@ -98,10 +98,11 @@ class MaterialTextFieldWithFlag: UITextField {
         
         let phoneNumberKit = PhoneNumberKit()
         
-        guard let code = text else {
+        guard var code = text?.onlyNumbers() else {
             hideFlag()
             return false
         }
+        code = "+\(code)"
         
         guard let countryCode = UInt64(code) else {
             hideFlag()

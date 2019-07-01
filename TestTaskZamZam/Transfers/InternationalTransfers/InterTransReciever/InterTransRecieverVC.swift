@@ -276,7 +276,9 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
     }
 
 
-    @IBAction func tfPhoneTextChanged(_ sender: UITextField) {
+    @IBAction func tfPhoneTextChanged(_ sender: MaterialTextFieldWithFlag) {
+        sender.text = PartialFormatter().formatPartial(sender.text!)
+        print(sender.text!)
         checkFill()
     }
 

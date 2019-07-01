@@ -1758,7 +1758,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФИО получателя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a36-S9-dps">
-                                                <rect key="frame" x="18" y="175" width="118" height="18"/>
+                                                <rect key="frame" x="18" y="175" width="128" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="lFs-44-hLT"/>
                                                 </constraints>
