@@ -8,6 +8,7 @@
 
 import UIKit
 import PhoneNumberKit
+import FlagKit
 
 class PersonalDataVC: UIViewController {
 
@@ -45,6 +46,7 @@ class PersonalDataVC: UIViewController {
         setTFDelegates()
         configureScrollView()
         setUserProfileInfo()
+        setCountryToTFPhone()
     }
     
     override func viewWillLayoutSubviews() {
@@ -72,6 +74,17 @@ class PersonalDataVC: UIViewController {
         
         scrlView.layer.cornerRadius = 16
     }
+
+
+    private func setCountryToTFPhone() {
+
+        guard let phone = tfPhone.text, phone != "" else { return }
+        guard let phoneNumber = try? PhoneNumberKit().parse(phone) else { return }
+        guard let countryCode = PhoneNumberKit().getRegionCode(of: phoneNumber) else { return }
+        let flag = Flag(countryCode: countryCode)
+        tfPhone.imageFlag.image = flag?.image(style: .circle)
+    }
+
     
     private func configureButNext() {
         

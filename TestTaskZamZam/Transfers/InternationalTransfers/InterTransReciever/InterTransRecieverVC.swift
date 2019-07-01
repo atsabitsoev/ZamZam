@@ -164,6 +164,41 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
         
         self.view.endEditing(true)
     }
+
+
+    private func checkFill() {
+
+        if phoneIsValid() &&
+            tfName.text != nil &&
+            tfName.text != "" &&
+            tfLastName.text != nil &&
+            tfLastName.text != "" {
+
+            activateButNext(true)
+        } else {
+
+            activateButNext(false)
+        }
+    }
+
+    private func phoneIsValid() -> Bool {
+
+        guard let phoneText = tfPhone.text, phoneText != "" else { return false }
+
+        do {
+            try PhoneNumberKit().parse(phoneText)
+            return true
+        } catch {
+            print(error.localizedDescription)
+            return false
+        }
+    }
+
+    private func activateButNext(_ activate: Bool) {
+
+        butNext.alpha = activate ? 1 : 0.5
+        butNext.isUserInteractionEnabled = activate
+    }
     
     
     func configureButNext() {
@@ -239,8 +274,20 @@ class InterTransRecieverVC: UIViewController, UITextFieldDelegate {
         activityIndicator.startAnimating()
         butNext.isUserInteractionEnabled = false
     }
-    
-    
+
+
+    @IBAction func tfPhoneTextChanged(_ sender: UITextField) {
+        checkFill()
+    }
+
+    @IBAction func tfNameTextChanged(_ sender: UITextField) {
+        checkFill()
+    }
+
+    @IBAction func tfLastNameTextChanged(_ sender: UITextField) {
+        checkFill()
+    }
+
     
     //TFDELEGATE
     
