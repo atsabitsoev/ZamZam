@@ -246,7 +246,8 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @objc func checkFill() {
         print("Проверка")
         let phone = transferList["phone"]!
-        guard let sum = Int(transferList["sum"]!) else {
+        guard let sum = Double(transferList["sum"]!) else {
+            print("\(transferList["sum"]!) Вот это ты пытаешься преобразовать в дабл?")
             activateButNext(false)
             return
         }
@@ -387,7 +388,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         
         guard let sumString = sender.text else { return }
         
-        transferList["sum"] = sumString
+        transferList["sum"] = sumString.withoutSpaces().replaceCommasToDots()
         
     }
     

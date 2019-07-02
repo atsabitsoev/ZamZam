@@ -194,7 +194,7 @@ class ReplenishNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @objc func checkFill() {
         print("Проверка")
-        guard let sum = Int(transferList["sum"]!) else {
+        guard let sum = Double(transferList["sum"]!) else {
             activateButNext(false)
             return
         }
@@ -295,7 +295,7 @@ class ReplenishNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         guard let sumString = sender.text else { return }
         
-        transferList["sum"] = sumString
+        transferList["sum"] = sumString.withoutSpaces().replaceCommasToDots()
         
     }
     

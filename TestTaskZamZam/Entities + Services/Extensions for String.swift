@@ -46,5 +46,19 @@ extension String {
         
         return string
     }
+
+    func replaceCommasToDots() -> String {
+
+        var string = self
+
+        for i in string {
+            if i == "," {
+                let index = self.firstIndex(of: i)!
+                string.remove(at: index)
+                string.insert(".", at: index)
+            }
+        }
+        return string
+    }
     
 }

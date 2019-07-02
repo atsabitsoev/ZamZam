@@ -195,7 +195,7 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @objc func checkFill() {
         print("Проверка")
         let phone = transferList["phone"]!
-        guard let sum = Int(transferList["sum"]!) else {
+        guard let sum = Double(transferList["sum"]!) else {
             activateButNext(false)
             return
         }
@@ -321,7 +321,7 @@ class InterTransPaymentVC: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         guard let sumString = sender.text else { return }
         
-        transferList["sum"] = sumString
+        transferList["sum"] = sumString.withoutSpaces().replaceCommasToDots()
         
     }
     
