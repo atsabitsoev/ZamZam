@@ -22,6 +22,7 @@
 		5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEE022306A8D00ECF0D3 /* Gradient.swift */; };
 		5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEE322306CC800ECF0D3 /* SeparatorForNumbers.swift */; };
 		5B7DFEE62230702B00ECF0D3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEE52230702B00ECF0D3 /* .gitignore */; };
+		8CBA571522CB5277004DB2A1 /* SumTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA571422CB5277004DB2A1 /* SumTextField.swift */; };
 		AC0D8568225DE696002C50B1 /* ReplenishGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D8567225DE696002C50B1 /* ReplenishGoneVC.swift */; };
 		AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */; };
 		AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */; };
@@ -189,6 +190,7 @@
 		5B7DFEE322306CC800ECF0D3 /* SeparatorForNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorForNumbers.swift; sourceTree = "<group>"; };
 		5B7DFEE52230702B00ECF0D3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		6FEFA5C3705F6AB54AA6D217 /* Pods-TestTaskZamZam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskZamZam.release.xcconfig"; path = "Target Support Files/Pods-TestTaskZamZam/Pods-TestTaskZamZam.release.xcconfig"; sourceTree = "<group>"; };
+		8CBA571422CB5277004DB2A1 /* SumTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumTextField.swift; sourceTree = "<group>"; };
 		AC0D8567225DE696002C50B1 /* ReplenishGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenishGoneVC.swift; sourceTree = "<group>"; };
 		AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransDescribtionCell.swift; sourceTree = "<group>"; };
 		AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryVC.swift; sourceTree = "<group>"; };
@@ -536,6 +538,7 @@
 			isa = PBXGroup;
 			children = (
 				AC56756F223BEF0F001BBE66 /* UIColor+Additions.swift */,
+				8CBA571422CB5277004DB2A1 /* SumTextField.swift */,
 				AC52107722800ADC0069B62D /* CheckRoundView.swift */,
 				ACFBAC2C2240C419001D9D94 /* myLabel.swift */,
 				5B7DFEE022306A8D00ECF0D3 /* Gradient.swift */,
@@ -1281,6 +1284,7 @@
 				AC110A9E223A59DD00D1F8D8 /* WhatCountryTablevView.swift in Sources */,
 				ACBF140A22670ECB00019545 /* SplashCollectionView.swift in Sources */,
 				5B7DFEDB2230685A00ECF0D3 /* TableView.swift in Sources */,
+				8CBA571522CB5277004DB2A1 /* SumTextField.swift in Sources */,
 				ACC5CAF2225C714100B28E62 /* ReplenishTableview.swift in Sources */,
 				5B7DFED6223027D300ECF0D3 /* CollectionViewCell2.swift in Sources */,
 				AC98BF832268935100E35745 /* WithdrawHomeVC.swift in Sources */,

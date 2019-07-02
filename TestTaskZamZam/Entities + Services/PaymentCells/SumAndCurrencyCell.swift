@@ -53,22 +53,30 @@ class SumAndCurrencyCell: UITableViewCell, UITextFieldDelegate {
         if let paymentNewVC = self.paymentNewVC {
 
             paymentNewVC.transferList["sum"] = tfSum.text
-            paymentNewVC.tableView.reloadSections([4], with: .automatic)
+            UIView.setAnimationsEnabled(false)
+            paymentNewVC.tableView.reloadSections([4], with: .none)
+            UIView.setAnimationsEnabled(true)
 
         } else if let interTransPaymentVC = self.interTransPaymentVC {
 
             interTransPaymentVC.transferList["sum"] = tfSum.text
-            interTransPaymentVC.tableView.reloadSections([4], with: .automatic)
+            UIView.setAnimationsEnabled(false)
+            interTransPaymentVC.tableView.reloadSections([4], with: .none)
+            UIView.setAnimationsEnabled(true)
 
         } else if let replenishVC = self.replenishVC {
 
             replenishVC.transferList["sum"] = tfSum.text
-            replenishVC.tableView.reloadSections([4], with: .automatic)
+            UIView.setAnimationsEnabled(false)
+            replenishVC.tableView.reloadSections([4], with: .none)
+            UIView.setAnimationsEnabled(true)
 
         } else if let withdrawVC = self.withdrawVC {
 
             withdrawVC.transferList["sum"] = tfSum.text
-            withdrawVC.tableView.reloadSections([4], with: .automatic)
+            UIView.setAnimationsEnabled(false)
+            withdrawVC.tableView.reloadSections([4], with: .none)
+            UIView.setAnimationsEnabled(true)
 
         }
     }
