@@ -54,6 +54,13 @@ class PIN_VC: UIViewController {
     
     
     private func setTextToLabUser() {
+
+        if let userName = UserDefaults.standard.string(forKey: "userFirstName") {
+            let userLastName = UserDefaults.standard.string(forKey: "userLastName")!
+            let helloString = "\(userName) \(userLastName) 👋"
+            labUser.text = helloString
+            return
+        }
         
         guard let userName = UserDefaults.standard.string(forKey: "userPhone") else { return }
         
