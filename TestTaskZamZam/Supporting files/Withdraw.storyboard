@@ -1019,7 +1019,7 @@
                                             <constraint firstAttribute="width" secondItem="dKM-jL-yhB" secondAttribute="height" multiplier="339:62" id="zoi-In-Xwj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
-                                        <state key="normal" title="Пополнить &gt;">
+                                        <state key="normal" title="Пополнить">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>

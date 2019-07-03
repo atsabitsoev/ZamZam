@@ -72,6 +72,7 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
             UserProfileService.standard.getUserInfoRequest()
             self.startLoading()
             
+            
         default:
             print("what")
         }

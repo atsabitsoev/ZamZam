@@ -1190,7 +1190,7 @@
                                             <constraint firstAttribute="width" secondItem="WIi-ez-xxT" secondAttribute="height" multiplier="339:62" id="Zo1-tL-MPd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
-                                        <state key="normal" title="Перевести &gt;">
+                                        <state key="normal" title="Перевести">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -1889,7 +1889,7 @@
                                     <constraint firstAttribute="width" secondItem="s8R-tq-IpH" secondAttribute="height" multiplier="339:62" id="dSr-WP-Rb2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
-                                <state key="normal" title="Далее &gt;">
+                                <state key="normal" title="Далее">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -2145,7 +2145,7 @@
                                                     <constraint firstAttribute="width" secondItem="Aus-Fj-5xX" secondAttribute="height" multiplier="339:62" id="9gU-K1-c9z"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
-                                                <state key="normal" title="Далее &gt;">
+                                                <state key="normal" title="Далее">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -2390,7 +2390,7 @@
                                             <constraint firstAttribute="width" secondItem="pup-xz-4Ug" secondAttribute="height" multiplier="339:62" id="rUS-jD-CFj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                        <state key="normal" title="Далее &gt;">
+                                        <state key="normal" title="Далее">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -2725,7 +2725,7 @@
                                             <constraint firstAttribute="width" secondItem="W9y-lP-Jwb" secondAttribute="height" multiplier="339:62" id="qAG-54-XWz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                        <state key="normal" title="Далее &gt;">
+                                        <state key="normal" title="Далее">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -3157,7 +3157,7 @@
                                             <constraint firstAttribute="width" secondItem="9AD-Ws-qB1" secondAttribute="height" multiplier="339:62" id="sm8-lq-VXd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                        <state key="normal" title="Далее &gt;">
+                                        <state key="normal" title="Далее">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -3810,7 +3810,7 @@
                                         <rect key="frame" x="18" y="643" width="378" height="69"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                        <state key="normal" title="Далее &gt;">
+                                        <state key="normal" title="Далее">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -4813,7 +4813,7 @@
                                             <constraint firstAttribute="width" secondItem="qAf-L5-hYe" secondAttribute="height" multiplier="339:62" id="hm2-6G-BPa"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
-                                        <state key="normal" title="Перевести &gt;">
+                                        <state key="normal" title="Перевести">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>

@@ -218,7 +218,7 @@
         <!--Personal DataVC-->
         <scene sceneID="pKG-hK-s3E">
             <objects>
-                <viewController storyboardIdentifier="PersonalDataVC" id="Dt2-n2-TcK" customClass="PersonalDataVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonalDataVC" hidesBottomBarWhenPushed="YES" id="Dt2-n2-TcK" customClass="PersonalDataVC" customModule="TestTaskZamZam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cHI-lV-GvZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

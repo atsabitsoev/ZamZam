@@ -118,11 +118,13 @@ class ProfileVC: UIViewController {
     func startLoading() {
         
         activityIndicator.startAnimating()
+        self.view.isUserInteractionEnabled = false
     }
     
     private func stopLoading() {
         
         activityIndicator.stopAnimating()
+        self.view.isUserInteractionEnabled = true
     }
 
     
