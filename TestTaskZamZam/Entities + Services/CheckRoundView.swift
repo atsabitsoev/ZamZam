@@ -11,11 +11,12 @@ import UIKit
 @IBDesignable
 class CheckRoundView: UIView {
     
-    
+    var handler: () -> () = {}
     @IBInspectable var color: UIColor = #colorLiteral(red: 0.337254902, green: 0.7529411765, blue: 0.9921568627, alpha: 1)
     @IBInspectable var isActive: Bool = false {
         didSet {
             setNeedsDisplay()
+            handler()
         }
     }
     

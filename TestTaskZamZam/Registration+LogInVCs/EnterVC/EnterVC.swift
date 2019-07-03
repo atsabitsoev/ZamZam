@@ -37,10 +37,30 @@ class EnterVC: UIViewController {
         
         addObservers()
         addGestureRec()
+
+        setDefaultRegion()
     }
     
     override func viewWillLayoutSubviews() {
         configureView()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        tfPhoneNumber.becomeFirstResponder()
+    }
+
+
+    private func setDefaultRegion() {
+
+        let countryCode = Locale.current.regionCode!
+
+        let phoneCode = PhoneNumberKit().countryCode(for: countryCode)!
+        tfPhoneNumber.text = "+\(phoneCode)"
+
+        let flag = Flag(countryCode: countryCode)
+        imCountry.image = flag?.image(style: .circle)
     }
     
     

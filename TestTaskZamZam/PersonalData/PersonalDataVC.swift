@@ -73,6 +73,7 @@ class PersonalDataVC: UIViewController {
     private func configureScrollView() {
         
         scrlView.layer.cornerRadius = 16
+        scrlView.keyboardDismissMode = .onDrag
     }
 
 

@@ -30,15 +30,52 @@ class WhatIsYourPhoneVC: UIViewController {
     
     var currentCode = "+"
     let phoneVerificationService = PhoneVerificationService.standard
+
+    lazy var viewCheckHandler = {self.checkButNext()}
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        addTapRec()
+        viewCheckRound.handler = viewCheckHandler
+
+        setDefaultRegion()
     }
     
     override func viewWillLayoutSubviews() {
         configureView()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        tfPhoneNumber.becomeFirstResponder()
+    }
+
+
+    private func setDefaultRegion() {
+
+        let countryCode = Locale.current.regionCode!
+
+        let phoneCode = PhoneNumberKit().countryCode(for: countryCode)
+        tfPhoneNumber.text = "+\(phoneCode!)"
+
+        let flag = Flag(countryCode: countryCode)
+        imCountry.image = flag?.image(style: .circle)
+    }
+
+
+    private func addTapRec() {
+
+        let tapRec = UITapGestureRecognizer(target: self,
+                                            action: #selector(tapOnView))
+        view.addGestureRecognizer(tapRec)
+    }
+
+    @objc private func tapOnView() {
+
+        self.view.endEditing(true)
     }
 
     
@@ -160,6 +197,22 @@ class WhatIsYourPhoneVC: UIViewController {
         activityIndicator.startAnimating()
         
     }
+
+
+    private func checkButNext() {
+
+        if let text = tfPhoneNumber.text,
+            (try? PhoneNumberKit().parse(text)) != nil,
+            viewCheckRound.isActive {
+
+            butNext.alpha = 1
+            butNext.isUserInteractionEnabled = true
+        } else {
+            butNext.alpha = 0.5
+            butNext.isUserInteractionEnabled = false
+        }
+
+    }
     
     
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
@@ -174,6 +227,8 @@ class WhatIsYourPhoneVC: UIViewController {
                 imCountry.image = UIImage()
             }
         }
+
+        checkButNext()
     }
     
     

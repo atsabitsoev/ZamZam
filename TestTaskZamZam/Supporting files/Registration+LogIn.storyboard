@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" secondItem="44c-FN-Ckd" secondAttribute="height" multiplier="339:62" id="28o-q8-5dH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
-                                <state key="normal" title="Регистрация &gt;">
+                                <state key="normal" title="Регистрация">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -248,7 +248,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkx-1t-1Md">
-                                        <rect key="frame" x="18" y="112" width="339" height="48"/>
+                                        <rect key="frame" x="18" y="97" width="339" height="48"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kfN-Bz-7sw">
                                                 <rect key="frame" x="11" y="8" width="320" height="32"/>
@@ -266,14 +266,14 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-6Y-hPK">
-                                        <rect key="frame" x="29" y="107" width="29.666666666666671" height="9"/>
+                                        <rect key="frame" x="29" y="92" width="29.666666666666671" height="9"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                         <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kM6-yi-QPn">
-                                        <rect key="frame" x="18" y="185" width="73" height="30"/>
+                                        <rect key="frame" x="18" y="170" width="73" height="30"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Забыл пароль">
@@ -291,7 +291,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-MH-UuW">
-                                        <rect key="frame" x="18" y="248" width="339" height="62"/>
+                                        <rect key="frame" x="18" y="233" width="339" height="62"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rhl-MH-UuW" secondAttribute="height" multiplier="339:62" id="oJl-Ir-Hki"/>
@@ -305,7 +305,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Неверный логин или пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idP-UL-nln">
-                                        <rect key="frame" x="203.66666666666663" y="168" width="153.33333333333337" height="16"/>
+                                        <rect key="frame" x="203.66666666666663" y="153" width="153.33333333333337" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="7MO-LP-2sH"/>
                                         </constraints>
@@ -328,7 +328,7 @@
                                     <constraint firstItem="rhl-MH-UuW" firstAttribute="leading" secondItem="syV-PN-DiP" secondAttribute="leading" constant="18" id="dAF-0D-0AO"/>
                                     <constraint firstItem="hkx-1t-1Md" firstAttribute="width" secondItem="hkx-1t-1Md" secondAttribute="height" multiplier="113:16" id="hwV-uJ-Atc"/>
                                     <constraint firstItem="iuU-6Y-hPK" firstAttribute="top" secondItem="hkx-1t-1Md" secondAttribute="top" constant="-5" id="iZo-wA-EL9"/>
-                                    <constraint firstItem="hkx-1t-1Md" firstAttribute="top" secondItem="d3u-l9-NRG" secondAttribute="bottom" constant="33" id="jX4-X9-uRF"/>
+                                    <constraint firstItem="hkx-1t-1Md" firstAttribute="top" secondItem="d3u-l9-NRG" secondAttribute="bottom" constant="18" id="jX4-X9-uRF"/>
                                     <constraint firstItem="rhl-MH-UuW" firstAttribute="top" secondItem="kM6-yi-QPn" secondAttribute="bottom" constant="33" id="kyt-OC-HuR"/>
                                     <constraint firstItem="kM6-yi-QPn" firstAttribute="leading" secondItem="syV-PN-DiP" secondAttribute="leading" constant="18" id="nCg-lK-Zd8"/>
                                     <constraint firstAttribute="trailing" secondItem="d3u-l9-NRG" secondAttribute="trailing" constant="18" id="nHC-G1-3TK"/>
@@ -696,14 +696,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzE-7r-JDm">
                                 <rect key="frame" x="0.0" y="100" width="375" height="624"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvy-cT-aef">
+                                    <button opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvy-cT-aef">
                                         <rect key="frame" x="18" y="176" width="339" height="62"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Uvy-cT-aef" secondAttribute="height" multiplier="339:62" id="85I-SL-A6y"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
-                                        <state key="normal" title="Дальше &gt;">
+                                        <state key="normal" title="Дальше">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -718,7 +718,7 @@
                                             <constraint firstAttribute="height" constant="24" id="ZJd-Ul-xVa"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isActive" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isActive" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3C-zD-jKE">
@@ -1024,7 +1024,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izj-qj-B1k">
-                                        <rect key="frame" x="18" y="108" width="339" height="48"/>
+                                        <rect key="frame" x="18" y="96" width="339" height="48"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="AaO-nh-Wur">
                                                 <rect key="frame" x="11" y="4" width="317" height="44"/>
@@ -1050,7 +1050,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Повторите пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ped-Qe-htG" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="28.999999999999993" y="103" width="73.333333333333314" height="9"/>
+                                        <rect key="frame" x="28.999999999999993" y="91" width="73.333333333333314" height="9"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
                                         <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1063,7 +1063,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сообщение об ошибке" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSn-HR-oh8" customClass="myLabel" customModule="TestTaskZamZam" customModuleProvider="target">
-                                        <rect key="frame" x="234.33333333333334" y="159" width="122.66666666666666" height="12"/>
+                                        <rect key="frame" x="234.33333333333334" y="147" width="122.66666666666666" height="12"/>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="12"/>
                                         <color key="textColor" red="0.91764705879999997" green="0.019607843140000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1083,18 +1083,18 @@
                                     <constraint firstItem="ped-Qe-htG" firstAttribute="top" secondItem="Izj-qj-B1k" secondAttribute="top" constant="-5" id="ldk-Q2-Hzp"/>
                                     <constraint firstItem="ped-Qe-htG" firstAttribute="leading" secondItem="Izj-qj-B1k" secondAttribute="leading" constant="11" id="mpw-7y-RMN"/>
                                     <constraint firstItem="MSn-HR-oh8" firstAttribute="trailing" secondItem="Izj-qj-B1k" secondAttribute="trailing" id="nGJ-lg-YEE"/>
-                                    <constraint firstItem="Izj-qj-B1k" firstAttribute="top" secondItem="epw-UY-208" secondAttribute="bottom" constant="30" id="x9S-JX-yjh"/>
+                                    <constraint firstItem="Izj-qj-B1k" firstAttribute="top" secondItem="epw-UY-208" secondAttribute="bottom" constant="18" id="x9S-JX-yjh"/>
                                     <constraint firstAttribute="trailing" secondItem="Izj-qj-B1k" secondAttribute="trailing" constant="18" id="zVX-vo-qQZ"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOo-1Z-0Gd">
-                                <rect key="frame" x="18" y="330" width="339" height="62"/>
+                                <rect key="frame" x="18" y="318" width="339" height="62"/>
                                 <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OOo-1Z-0Gd" secondAttribute="height" multiplier="339:62" id="CiI-GK-eSH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="24"/>
-                                <state key="normal" title="Дальше &gt;">
+                                <state key="normal" title="Дальше">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1357,7 +1357,7 @@
                                             <constraint firstAttribute="width" secondItem="NVV-EX-yHo" secondAttribute="height" multiplier="339:62" id="aPq-9M-Ya6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="20"/>
-                                        <state key="normal" title="Да &gt;">
+                                        <state key="normal" title="Да">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
