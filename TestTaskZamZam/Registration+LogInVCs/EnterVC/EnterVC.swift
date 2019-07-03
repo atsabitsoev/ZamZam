@@ -23,7 +23,9 @@ class EnterVC: UIViewController {
     @IBOutlet weak var viewPassword: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var imCountry: UIImageView!
-    
+    @IBOutlet var labTitlePhone: UILabel!
+    @IBOutlet var labTitlePassword: UILabel!
+
     
     let keychain = KeychainSwift()
     let enterService = EnterServise.standard
@@ -187,11 +189,26 @@ class EnterVC: UIViewController {
         imCountry.image = flagImage
         return true
     }
+
+
+    private func activatePhoneTF(_ activate: Bool) {
+
+        labTitlePhone.isHidden = !activate
+    }
+
+    private func activatePasswordTF(_ activate: Bool) {
+
+        labTitlePassword.isHidden = !activate
+    }
     
     
     @IBAction func tFPhoneNumberTextChanged(_ sender: UITextField) {
+
         TFService.checkPrefix(prefix: "+", tfPhoneNumber)
         guard let text = sender.text else { return }
+
+        activatePhoneTF(text.count > 0)
+
         if setCountryFlag(code: text) {
             currentCode = text
         } else {
@@ -202,7 +219,14 @@ class EnterVC: UIViewController {
             }
         }
     }
-    
+
+
+    @IBAction func tfPasswordTextChanged(_ sender: UITextField) {
+
+        activatePasswordTF((sender.text?.count ?? 0) > 0)
+    }
+
+
     @IBAction func butEnterTapped(_ sender: UIButton) {
         
         guard var phone = tfPhoneNumber.text else { return }

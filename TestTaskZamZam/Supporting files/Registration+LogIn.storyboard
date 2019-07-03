@@ -241,9 +241,9 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Номер телефона " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibs-nv-ws2">
-                                        <rect key="frame" x="29" y="26" width="73" height="9"/>
+                                        <rect key="frame" x="29" y="26" width="78" height="13"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="10"/>
                                         <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -255,6 +255,9 @@
                                                 <color key="textColor" red="0.12941176469999999" green="0.17254901959999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="tfPasswordTextChanged:" destination="Q6h-9F-H2b" eventType="editingChanged" id="LYq-g2-wSz"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -265,18 +268,18 @@
                                             <constraint firstItem="kfN-Bz-7sw" firstAttribute="leading" secondItem="hkx-1t-1Md" secondAttribute="leading" constant="11" id="llS-z9-6nA"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-6Y-hPK">
-                                        <rect key="frame" x="29" y="92" width="29.666666666666671" height="9"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Пароль " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-6Y-hPK">
+                                        <rect key="frame" x="29" y="92" width="37" height="13"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="KelsonSans-RegularRU" family="Kelson Sans RU" pointSize="9"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="10"/>
                                         <color key="textColor" red="0.1176470588" green="0.16078431369999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kM6-yi-QPn">
-                                        <rect key="frame" x="18" y="170" width="73" height="30"/>
+                                        <rect key="frame" x="18" y="163" width="85" height="30"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Забыл пароль">
+                                                <fragment content="Забыли пароль?">
                                                     <attributes>
                                                         <color key="NSColor" red="0.33725490196078434" green="0.75294117647058822" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" size="12" name="PTSans-Regular"/>
@@ -291,7 +294,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-MH-UuW">
-                                        <rect key="frame" x="18" y="233" width="339" height="62"/>
+                                        <rect key="frame" x="18" y="226" width="339" height="62"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rhl-MH-UuW" secondAttribute="height" multiplier="339:62" id="oJl-Ir-Hki"/>
@@ -332,7 +335,7 @@
                                     <constraint firstItem="rhl-MH-UuW" firstAttribute="top" secondItem="kM6-yi-QPn" secondAttribute="bottom" constant="33" id="kyt-OC-HuR"/>
                                     <constraint firstItem="kM6-yi-QPn" firstAttribute="leading" secondItem="syV-PN-DiP" secondAttribute="leading" constant="18" id="nCg-lK-Zd8"/>
                                     <constraint firstAttribute="trailing" secondItem="d3u-l9-NRG" secondAttribute="trailing" constant="18" id="nHC-G1-3TK"/>
-                                    <constraint firstItem="kM6-yi-QPn" firstAttribute="top" secondItem="hkx-1t-1Md" secondAttribute="bottom" constant="25" id="pyb-UB-wb1"/>
+                                    <constraint firstItem="kM6-yi-QPn" firstAttribute="top" secondItem="hkx-1t-1Md" secondAttribute="bottom" constant="18" id="pyb-UB-wb1"/>
                                     <constraint firstItem="hkx-1t-1Md" firstAttribute="leading" secondItem="syV-PN-DiP" secondAttribute="leading" constant="18" id="xWc-i4-mGu"/>
                                     <constraint firstItem="iuU-6Y-hPK" firstAttribute="leading" secondItem="hkx-1t-1Md" secondAttribute="leading" constant="11" id="yva-oy-eaa"/>
                                 </constraints>
@@ -386,6 +389,8 @@
                         <outlet property="butNext" destination="rhl-MH-UuW" id="c5Y-sL-fko"/>
                         <outlet property="imCountry" destination="p8u-GK-dW9" id="SjM-c8-WfB"/>
                         <outlet property="labErrorMessage" destination="idP-UL-nln" id="rJY-Nf-1uf"/>
+                        <outlet property="labTitlePassword" destination="iuU-6Y-hPK" id="N85-7v-qFR"/>
+                        <outlet property="labTitlePhone" destination="Ibs-nv-ws2" id="hn8-JF-ZuO"/>
                         <outlet property="tfPassword" destination="kfN-Bz-7sw" id="CUJ-T2-JNN"/>
                         <outlet property="tfPhoneNumber" destination="EqQ-rS-xMk" id="u55-o0-RGL"/>
                         <outlet property="viewMain" destination="syV-PN-DiP" id="nAG-wT-LlW"/>
