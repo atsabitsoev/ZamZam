@@ -348,7 +348,7 @@
                                 <rect key="frame" x="0.0" y="53" width="375" height="671"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="gwj-WJ-iNt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="518"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="532"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="JYd-5I-h81">
@@ -1024,10 +1024,10 @@
                                         </connections>
                                     </tableView>
                                     <button opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vI7-bI-CAn">
-                                        <rect key="frame" x="18" y="526" width="339" height="62"/>
+                                        <rect key="frame" x="18" y="540" width="339" height="48"/>
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="vI7-bI-CAn" secondAttribute="height" multiplier="339:62" id="Y4e-Yq-neH"/>
+                                            <constraint firstAttribute="width" secondItem="vI7-bI-CAn" secondAttribute="height" multiplier="339:48" id="Y4e-Yq-neH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="24"/>
                                         <state key="normal" title="Пополнить">
@@ -1073,7 +1073,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="vI7-bI-CAn" firstAttribute="width" secondItem="vI7-bI-CAn" secondAttribute="height" multiplier="339:62" id="Cmi-2Y-prM"/>
                                     <constraint firstItem="gwj-WJ-iNt" firstAttribute="top" secondItem="UaT-cM-YP5" secondAttribute="top" id="Fo3-wd-o3g"/>
                                     <constraint firstAttribute="trailing" secondItem="vI7-bI-CAn" secondAttribute="trailing" constant="18" id="Kkg-HC-oaF"/>
                                     <constraint firstAttribute="trailing" secondItem="gwj-WJ-iNt" secondAttribute="trailing" id="QFj-X3-FNa"/>
