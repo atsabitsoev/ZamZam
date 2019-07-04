@@ -22,10 +22,10 @@ class TransCell: UITableViewCell {
         
         viewMain.layer.cornerRadius = 8
         viewMain.layer.shadowColor = UIColor.black.cgColor// #colorLiteral(red: 0.7843137255, green: 0.7843137255, blue: 0.7843137255, alpha: 1)
-        viewMain.layer.shadowOpacity = 0.3
+        viewMain.layer.shadowOpacity = 0.2
         viewMain.layer.shadowOffset = CGSize(width: 0,
                                              height: 3)
-        viewMain.layer.shadowRadius = 3
+        viewMain.layer.shadowRadius = 4
         
         viewUnderPicture.layer.cornerRadius = 20
     }
