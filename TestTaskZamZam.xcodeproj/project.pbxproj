@@ -22,6 +22,9 @@
 		5B7DFEE122306A8D00ECF0D3 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEE022306A8D00ECF0D3 /* Gradient.swift */; };
 		5B7DFEE422306CC800ECF0D3 /* SeparatorForNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFEE322306CC800ECF0D3 /* SeparatorForNumbers.swift */; };
 		5B7DFEE62230702B00ECF0D3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DFEE52230702B00ECF0D3 /* .gitignore */; };
+		8CA6FC8B22CDE2D80081ABF9 /* Limits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6FC8A22CDE2D80081ABF9 /* Limits.storyboard */; };
+		8CA6FC8E22CDEB3C0081ABF9 /* LimitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6FC8D22CDEB3C0081ABF9 /* LimitsVC.swift */; };
+		8CA6FC9022CDEB590081ABF9 /* LimitsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6FC8F22CDEB590081ABF9 /* LimitsTableView.swift */; };
 		AC0D8568225DE696002C50B1 /* ReplenishGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D8567225DE696002C50B1 /* ReplenishGoneVC.swift */; };
 		AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */; };
 		AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */; };
@@ -189,6 +192,9 @@
 		5B7DFEE322306CC800ECF0D3 /* SeparatorForNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorForNumbers.swift; sourceTree = "<group>"; };
 		5B7DFEE52230702B00ECF0D3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		6FEFA5C3705F6AB54AA6D217 /* Pods-TestTaskZamZam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskZamZam.release.xcconfig"; path = "Target Support Files/Pods-TestTaskZamZam/Pods-TestTaskZamZam.release.xcconfig"; sourceTree = "<group>"; };
+		8CA6FC8A22CDE2D80081ABF9 /* Limits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Limits.storyboard; sourceTree = "<group>"; };
+		8CA6FC8D22CDEB3C0081ABF9 /* LimitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitsVC.swift; sourceTree = "<group>"; };
+		8CA6FC8F22CDEB590081ABF9 /* LimitsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitsTableView.swift; sourceTree = "<group>"; };
 		AC0D8567225DE696002C50B1 /* ReplenishGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenishGoneVC.swift; sourceTree = "<group>"; };
 		AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransDescribtionCell.swift; sourceTree = "<group>"; };
 		AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryVC.swift; sourceTree = "<group>"; };
@@ -377,6 +383,7 @@
 				ACE139BD224259D8004EDB38 /* CardIssue */,
 				ACBC5E0B22684DFF0005C355 /* PayPhoneBill */,
 				AC98BF812268933000E35745 /* Withdraw */,
+				8CA6FC8C22CDEB150081ABF9 /* Limits */,
 				ACA8A0DA2255F8A700EFBE1A /* Registration+LogInVCs */,
 				ACFAF761223F7239008C731B /* Alerts */,
 				AC567566223BD26D001BBE66 /* Entities + Services */,
@@ -440,12 +447,22 @@
 				AC98BF7F226891BC00E35745 /* Withdraw.storyboard */,
 				ACC5CAEB225C6CB500B28E62 /* Replenish.storyboard */,
 				ACE139BB2242549D004EDB38 /* CardIssue.storyboard */,
+				8CA6FC8A22CDE2D80081ABF9 /* Limits.storyboard */,
 				AC56756B223BE3D2001BBE66 /* AlertViewControllers.storyboard */,
 				5B7DFEB5222FFAC500ECF0D3 /* LaunchScreen.storyboard */,
 				ACCF4ED52255EDA000D90F48 /* Registration+LogIn.storyboard */,
 				5B7DFEB3222FFAC500ECF0D3 /* Assets.xcassets */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		8CA6FC8C22CDEB150081ABF9 /* Limits */ = {
+			isa = PBXGroup;
+			children = (
+				8CA6FC8D22CDEB3C0081ABF9 /* LimitsVC.swift */,
+				8CA6FC8F22CDEB590081ABF9 /* LimitsTableView.swift */,
+			);
+			path = Limits;
 			sourceTree = "<group>";
 		};
 		AC110A9A223A599A00D1F8D8 /* WhatCountry */ = {
@@ -1153,6 +1170,7 @@
 				ACCF4ED62255EDA000D90F48 /* Registration+LogIn.storyboard in Resources */,
 				AC98BF80226891BC00E35745 /* Withdraw.storyboard in Resources */,
 				5B7DFEC8223007D500ECF0D3 /* Kelson Sans Regular RU.otf in Resources */,
+				8CA6FC8B22CDE2D80081ABF9 /* Limits.storyboard in Resources */,
 				5B7DFEB4222FFAC500ECF0D3 /* Assets.xcassets in Resources */,
 				5B7DFEB2222FFAC200ECF0D3 /* Main.storyboard in Resources */,
 				ACC5CAEC225C6CB500B28E62 /* Replenish.storyboard in Resources */,
@@ -1231,6 +1249,7 @@
 				ACC5CB0D225C96CC00B28E62 /* ReplenAddCardCell.swift in Sources */,
 				ACC5CAF8225C718A00B28E62 /* ReplenishDescribtionCell.swift in Sources */,
 				ACD99B9022B1D36D006FB4F8 /* InterTransSenderTFDelegate.swift in Sources */,
+				8CA6FC9022CDEB590081ABF9 /* LimitsTableView.swift in Sources */,
 				ACC5CAFB225C7D3300B28E62 /* ReplenSumAndCurrencyVC.swift in Sources */,
 				AC98BF862268946E00E35745 /* WithdrawTableView.swift in Sources */,
 				AC71D933229EA61700001C29 /* Transaction.swift in Sources */,
@@ -1290,6 +1309,7 @@
 				5B7DFECA223012B400ECF0D3 /* CardBill.swift in Sources */,
 				ACBC5E1022684E570005C355 /* PayPhoneBillTableView.swift in Sources */,
 				ACC8273D2271A6E4001E5750 /* PasswordErrors.swift in Sources */,
+				8CA6FC8E22CDEB3C0081ABF9 /* LimitsVC.swift in Sources */,
 				AC6E2F9A2282B660001CB42E /* EnterService.swift in Sources */,
 				ACD2B8DD22AFDAB600DBDADF /* InterTransRecieverVC.swift in Sources */,
 				AC6B2B6D225F5DF10057DCE8 /* RecipientTableview.swift in Sources */,
