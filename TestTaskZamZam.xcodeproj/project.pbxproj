@@ -25,6 +25,7 @@
 		8CA6FC8B22CDE2D80081ABF9 /* Limits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6FC8A22CDE2D80081ABF9 /* Limits.storyboard */; };
 		8CA6FC8E22CDEB3C0081ABF9 /* LimitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6FC8D22CDEB3C0081ABF9 /* LimitsVC.swift */; };
 		8CA6FC9022CDEB590081ABF9 /* LimitsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6FC8F22CDEB590081ABF9 /* LimitsTableView.swift */; };
+		8CA6FC9222CDEEE60081ABF9 /* MyProgressVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6FC9122CDEEE60081ABF9 /* MyProgressVIew.swift */; };
 		AC0D8568225DE696002C50B1 /* ReplenishGoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D8567225DE696002C50B1 /* ReplenishGoneVC.swift */; };
 		AC110A99223A326500D1F8D8 /* TransDescribtionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */; };
 		AC110A9C223A59C200D1F8D8 /* WhatCountryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */; };
@@ -195,6 +196,7 @@
 		8CA6FC8A22CDE2D80081ABF9 /* Limits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Limits.storyboard; sourceTree = "<group>"; };
 		8CA6FC8D22CDEB3C0081ABF9 /* LimitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitsVC.swift; sourceTree = "<group>"; };
 		8CA6FC8F22CDEB590081ABF9 /* LimitsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitsTableView.swift; sourceTree = "<group>"; };
+		8CA6FC9122CDEEE60081ABF9 /* MyProgressVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgressVIew.swift; sourceTree = "<group>"; };
 		AC0D8567225DE696002C50B1 /* ReplenishGoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplenishGoneVC.swift; sourceTree = "<group>"; };
 		AC110A98223A326500D1F8D8 /* TransDescribtionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransDescribtionCell.swift; sourceTree = "<group>"; };
 		AC110A9B223A59C200D1F8D8 /* WhatCountryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatCountryVC.swift; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 			isa = PBXGroup;
 			children = (
 				AC56756F223BEF0F001BBE66 /* UIColor+Additions.swift */,
+				8CA6FC9122CDEEE60081ABF9 /* MyProgressVIew.swift */,
 				AC52107722800ADC0069B62D /* CheckRoundView.swift */,
 				ACFBAC2C2240C419001D9D94 /* myLabel.swift */,
 				5B7DFEE022306A8D00ECF0D3 /* Gradient.swift */,
@@ -1265,6 +1268,7 @@
 				ACFC9B80228D3E81009F5798 /* AppTokenService.swift in Sources */,
 				AC57896D22AA856F002043F8 /* CardCellNewPayment.swift in Sources */,
 				ACFAF76C223F8B6C008C731B /* SenderCellPhoneNumber.swift in Sources */,
+				8CA6FC9222CDEEE60081ABF9 /* MyProgressVIew.swift in Sources */,
 				ACBF14102267117D00019545 /* SplashCollectionCell.swift in Sources */,
 				AC56756E223BE652001BBE66 /* SomethingWrongVC.swift in Sources */,
 				AC924259229D15C000299D51 /* ShadowView.swift in Sources */,

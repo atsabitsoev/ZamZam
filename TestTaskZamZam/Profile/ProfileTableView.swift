@@ -30,7 +30,6 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
         case 1:
             titleString = "Лимиты"
             imageName = "barChart2"
-            cell.contentView.alpha = 0.5
         case 2:
             titleString = "Точки пополнения/снятия"
             imageName = "mapPin"
@@ -71,7 +70,12 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
             
             UserProfileService.standard.getUserInfoRequest()
             self.startLoading()
-            
+
+        case 1:
+
+            let storyboard = UIStoryboard(name: "Limits", bundle: nil)
+            let limitsVC = storyboard.instantiateViewController(withIdentifier: "LimitsVC")
+            self.navigationController?.show(limitsVC, sender: nil)
             
         default:
             print("what")

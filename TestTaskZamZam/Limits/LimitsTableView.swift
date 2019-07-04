@@ -16,6 +16,10 @@ extension LimitsVC: UITableViewDelegate, UITableViewDataSource {
         return 3
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 178
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "limitCell")!
