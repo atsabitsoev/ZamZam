@@ -146,14 +146,14 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="spZ-bp-K7a" firstAttribute="centerY" secondItem="Szb-RX-Y99" secondAttribute="centerY" id="5w1-3f-SRm"/>
-                                                        <constraint firstItem="Szb-RX-Y99" firstAttribute="leading" secondItem="7IF-yn-qmP" secondAttribute="leadingMargin" id="9cl-kt-TGr"/>
                                                         <constraint firstItem="uJn-C0-mbZ" firstAttribute="leading" secondItem="7IF-yn-qmP" secondAttribute="leading" constant="20" id="BLt-bf-PWF"/>
                                                         <constraint firstItem="J9l-GU-N8V" firstAttribute="leading" secondItem="7IF-yn-qmP" secondAttribute="leading" constant="20" id="DDo-Pp-joG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="spZ-bp-K7a" secondAttribute="trailing" constant="20" id="Ip3-Ju-5EW"/>
                                                         <constraint firstItem="exy-Bm-5c3" firstAttribute="top" secondItem="m7m-bh-FXk" secondAttribute="bottom" constant="12" id="LSG-0I-y4n"/>
                                                         <constraint firstItem="J9l-GU-N8V" firstAttribute="top" secondItem="exy-Bm-5c3" secondAttribute="bottom" constant="12" id="OW1-26-2Rh"/>
                                                         <constraint firstItem="m7m-bh-FXk" firstAttribute="top" secondItem="uJn-C0-mbZ" secondAttribute="bottom" constant="12" id="RIc-0c-x8a"/>
                                                         <constraint firstItem="m7m-bh-FXk" firstAttribute="leading" secondItem="7IF-yn-qmP" secondAttribute="leading" constant="20" id="Scm-hx-oSD"/>
-                                                        <constraint firstItem="spZ-bp-K7a" firstAttribute="trailing" secondItem="7IF-yn-qmP" secondAttribute="trailingMargin" id="VKX-RJ-oic"/>
+                                                        <constraint firstItem="Szb-RX-Y99" firstAttribute="leading" secondItem="7IF-yn-qmP" secondAttribute="leading" constant="20" id="UR9-yq-rF2"/>
                                                         <constraint firstAttribute="trailing" secondItem="5jR-9N-Woa" secondAttribute="trailing" constant="20" id="d3G-pi-Nb3"/>
                                                         <constraint firstItem="uJn-C0-mbZ" firstAttribute="top" secondItem="7IF-yn-qmP" secondAttribute="top" constant="15" id="fBc-Gf-5J7"/>
                                                         <constraint firstItem="exy-Bm-5c3" firstAttribute="leading" secondItem="7IF-yn-qmP" secondAttribute="leading" constant="20" id="itc-LS-hZ7"/>

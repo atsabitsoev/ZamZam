@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import PhoneNumberKit
+import FlagKit
+
 
 class TransferGoneVC: UIViewController {
     
@@ -26,6 +29,7 @@ class TransferGoneVC: UIViewController {
     
     
     var sum: String?
+    var currency: CurrencyProtocol?
     var convertedSum: String?
     var phone: String?
     var cashBack = "0"
@@ -35,6 +39,7 @@ class TransferGoneVC: UIViewController {
         super.viewDidLoad()
         
         setTextToLabels()
+        setCountryFlag()
     }
     
     override func viewWillLayoutSubviews() {
@@ -52,9 +57,12 @@ class TransferGoneVC: UIViewController {
     
     
     private func setTextToLabels() {
-        
-        labSum.text = sum ?? "Ошибка"
-        labPhone.text = phone ?? "Ошибка"
+
+        let sumString = sum ?? "Ошибка"
+        labSum.text = sumString == "Ошибка" ? "Ошибка" : "\(sumString) \(currency!.symbol)"
+        guard let phone = self.phone else { return }
+        let phoneParsed = PartialFormatter().formatPartial(phone)
+        labPhone.text = phoneParsed
         labSumSmall.text = convertedSum ?? "Ошибка"
         
         if cashBack == "0" {
@@ -65,6 +73,16 @@ class TransferGoneVC: UIViewController {
             labCashBack.text = cashBack
         }
         
+    }
+
+    private func setCountryFlag() {
+
+        guard let phone = labPhone.text else { return }
+        guard let phoneNumber = try? PhoneNumberKit().parse(phone) else { return }
+        guard let countryCode = PhoneNumberKit().getRegionCode(of: phoneNumber) else { return }
+        let flag = Flag(countryCode: countryCode)
+        let flagImage = flag?.image(style: .circle)
+        imCountry.image = flagImage
     }
     
     func setShadowToViewGreen() {

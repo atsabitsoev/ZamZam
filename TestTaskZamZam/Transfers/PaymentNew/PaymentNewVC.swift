@@ -157,6 +157,7 @@ class PaymentNewVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         transferGoneVC.sum = transferList["sum"]
         transferGoneVC.cashBack = transferList["cashBack"]!
         transferGoneVC.convertedSum = transferList["convertedSum"]
+        transferGoneVC.currency = CurrencyManager.getCurrency(byShortName: transferList["senderCurrency"]!)
         
         
         self.present(transferGoneVC, animated: true, completion: nil)
